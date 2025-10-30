@@ -64,11 +64,14 @@
 
 O problema do enovelamento de proteínas — como uma cadeia polipeptídica linear atinge sua complexa e funcional estrutura tridimensional, representa um dos maiores desafios da biologia molecular contemporânea. Avanços notáveis, como o AlphaFold, forneceram soluções preditivas sem precedentes, mas a compreensão fundamental dos mecanismos de enovelamento, regidos pela termodinâmica e pela evolução, permanece um campo de intensa investigação para biólogos, físicos e químicos.
 
-[ADICIONAR IMAGEM EXPLICATIVA AQUI]
-
 ### A Paisagem Energética: O Funil de Enovelamento
 
-[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+<p align="justify">
+  <img src="imgs/funnel.png" alt="Diagrama do funil" width="700">
+</p>
+<p align="justify">
+  <em>Macošek J, Mas G, Hiller S. Redefining Molecular Chaperones as Chaotropes. Front Mol Biosci. 2021 Jun 14;8:683132. doi: 10.3389/fmolb.2021.683132. PMID: 34195228; PMCID: PMC8237284.</em>
+</p>
 
 Para visualizar a complexidade deste processo, utilizamos a metáfora do **funil de enovelamento**. Este modelo descreve a paisagem energética que uma proteína atravessa para atingir sua conformação nativa.
 *   **Topo do Funil (Alta Energia, Alta Entropia):** No topo, a proteína recém-sintetizada (desenovelada) existe em um vasto número de conformações possíveis, caracterizando um estado de alta entropia conformacional e alta energia livre de Gibbs.
@@ -78,8 +81,20 @@ Para visualizar a complexidade deste processo, utilizamos a metáfora do **funil
 ### A Lógica da Energia em Bioquímica
 Em biologia molecular, a estabilidade de um sistema é descrita pela **energia livre de Gibbs (ΔG)**. Processos espontâneos, como o enovelamento de proteínas, ocorrem com uma diminuição da energia livre total do sistema (ΔG < 0). Portanto, um valor de **ΔG mais negativo** indica uma conformação mais estável e energeticamente favorável.
 
-[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+<p align="justify">
+  <img src="imgs/deltg.png" alt="Representação do Delta G" width="700">
+</p>
+<p align="justify">
+<em>The Gibbs free energy change (ΔG) and how it's related to reaction spontaneity and equilibrium. https://www.khanacademy.org/science/biology/energy-and-enzymes/free-energy-tutorial/a/gibbs-free-energy</em>
+</p>
 
+* **G (Energia Livre de Gibbs):** A Energia Livre de Gibbs (ΔG) é um potencial termodinâmico que mede a "utilidade" ou o trabalho máximo e reversível que pode ser realizado por um sistema termodinâmico a temperatura e pressão constantes. Uma mudança negativa em G (ΔG < 0) indica que a reação é espontânea, ou seja, pode ocorrer sem a entrada contínua de energia externa. Uma mudança positiva (ΔG > 0) significa que a reação é não espontânea e requer energia para ocorrer. Se ΔG = 0, o sistema está em equilíbrio.
+
+* **H (Entalpia):** A Entalpia (ΔH) representa o calor total contido em um sistema. Ela mede a mudança de calor absorvida ou liberada em uma reação química a pressão constante.
+* **ΔH < 0 (Exotérmica):** A reação libera calor para o ambiente.
+* **ΔH > 0 (Endotérmica):** A reação absorve calor do ambiente.
+
+A relação entre G, H e S (Entropia) é dada pela equação: **ΔG = ΔH - TΔS**. A entropia (ΔS) mede o grau de aleatoriedade ou desordem de um sistema.
 ### O Paradoxo de Levinthal
 Formulado por Cyrus Levinthal, este paradoxo destaca a impossibilidade de o enovelamento ocorrer por uma busca aleatória. Ele calculou que uma proteína levaria mais tempo que a idade do universo para testar todas as suas conformações possíveis. Isso demonstra que o enovelamento não é um processo aleatório, mas sim um processo altamente direcionado que segue "caminhos" ou "rotas" específicas, otimizadas ao longo da evolução, para atingir o estado nativo em uma escala de tempo biologicamente viável.
 
