@@ -8,9 +8,9 @@
 
 **Contato:** madsondeluna@gmail.com
 
-**Portifólio:** [https://madsondeluna.github.io/](https://madsondeluna.github.io/ "Abrir em nova aba")
+**Portfólio:** [https://madsondeluna.github.io/](https://madsondeluna.github.io/)
 
-**Códigos/Projetos:** [https://github.com/madsondeluna](https://github.com/madsondeluna/ "Abrir em nova aba")
+**Códigos/Projetos:** [https://github.com/madsondeluna](https://github.com/madsondeluna/)
 
 > Este repositório contém o material de referência completo para o curso, incluindo conceitos fundamentais, guias de ferramentas e leituras recomendadas. Qualquer sugestão ou feedback pode ser encaminhada para madsondeluna@gmail.com.
 
