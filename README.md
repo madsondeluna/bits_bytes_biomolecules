@@ -18,7 +18,7 @@ O problema do enovelamento de proteínas — como uma cadeia polipeptídica line
 
 Para visualizar a complexidade deste processo, utilizamos a metáfora do **funil de enovelamento**. Este modelo descreve a paisagem energética que uma proteína atravessa para atingir sua conformação nativa.
 *   **Topo do Funil (Alta Energia, Alta Entropia):** No topo, a proteína recém-sintetizada (desenovelada) existe em um vasto número de conformações possíveis, caracterizando um estado de alta entropia conformacional e alta energia livre de Gibbs.
-*   **Paisagem Rugosa (Estados Intermediários):** À medida que se enovela, a proteína "desce" pelo funil, restringindo seu espaço conformacional e diminuindo sua energia livre. As paredes do funil são **rugosas**, com depressões que representam **estados intermediários metaestáveis**. Alguns destes estados podem possuir atividade biológica, indicando que o próprio processo de enovelamento pode ser funcionalmente relevante.
+*   **Paisagem Rugosa (Estados Intermediários):** À medida que se enovela, a proteína "desce" pelo funil, restringindo seu espaço conformacional e diminuindo sua energia livre. As paredes do funil são **rugosas**, com depressões que representam **estados intermediários metaestáveis**. Alguns destes estados podem possuir atividade biológica, indicando que o processo de enovelamento pode ser funcionalmente relevante.
 *   **Fundo do Funil (Mínimo de Energia Livre):** O ponto mais baixo representa o **estado nativo**: a conformação tridimensional termodinamicamente mais estável e biologicamente ativa, caracterizada por seu mínimo global de energia livre.
 
 ### A Lógica da Energia em Bioquímica
@@ -40,49 +40,66 @@ A **estrutura secundária** refere-se aos arranjos locais e regulares da cadeia 
 
 | Estrutura | Descrição e Características |
 |:---|:---|
-| **α-Hélice** | Estrutura helicoidal, geralmente dextrogira. Estabilizada por pontes de hidrogênio **intracadeia** entre o resíduo *i* e o *i+4*. Contém **3.6 resíduos por volta**. |
-| **Hélice 3₁₀** | Uma hélice mais "apertada", com **3 resíduos por volta** (pontes de hidrogênio *i* a *i+3*). Frequentemente encontrada no final de α-hélices. |
-| **Fita-β** | Um segmento quase totalmente estendido da cadeia polipeptídica. Isolada, é instável. |
-| **Folha-β** | Formada pela associação de duas ou mais **fitas-β** adjacentes, estabilizadas por pontes de hidrogênio **intercadeias**. Podem ser **paralelas** ou **antiparalelas**. |
-| **Voltas e Alças** | Regiões não repetitivas que conectam elementos de estrutura secundária. **Voltas-β** são curtas (4 resíduos) e causam uma reversão de 180°. |
+| **α-Hélice** | Estrutura helicoidal, geralmente dextrogira (sentido horário). É estabilizada por pontes de hidrogênio **intracadeia** entre o grupo C=O do resíduo *i* e o grupo N-H do resíduo *i+4*. Contém **3.6 resíduos por volta** e as cadeias laterais se projetam para fora da hélice, evitando impedimento estérico. |
+| **Hélice 3₁₀** | Uma hélice mais "apertada" e menos comum, com **3 resíduos por volta**. As pontes de hidrogênio se formam entre o resíduo *i* e o *i+3*. Frequentemente encontrada no final de α-hélices. |
+| **Fita-β** | Um segmento quase totalmente estendido da cadeia polipeptídica, com conformação em "zigue-zague". Uma fita-β isolada é instável. |
+| **Folha-β** | Formada pela associação de duas ou mais **fitas-β** adjacentes, estabilizadas por pontes de hidrogênio **intercadeias** (entre fitas diferentes). As fitas podem se alinhar de forma **paralela** (mesmo sentido N→C) ou **antiparalela** (sentidos opostos N→C e C→N), sendo a última mais estável devido à geometria linear das pontes de hidrogênio. |
+| **Voltas e Alças (Turns & Loops)** | Regiões não repetitivas que conectam elementos de estrutura secundária. **Voltas-β (β-turns)** são curtas (geralmente 4 resíduos) e causam uma reversão de 180° na cadeia, sendo cruciais na formação de folhas-β antiparalelas. Alças são mais longas e flexíveis. |
 
 #### α-Hélice: Um Fóssil Estrutural
-A α-hélice é considerada um "fóssil estrutural". Sua estabilidade depende apenas de interações locais, tornando-a um módulo estrutural autônomo e robusto, provavelmente um dos primeiros a surgir na evolução de proteínas.
+A α-hélice é considerada um "fóssil estrutural" da evolução. Sua estabilidade depende apenas de interações locais (entre resíduos próximos na sequência), sem a necessidade de interações de longa distância com outras partes da proteína. Isso a torna um módulo estrutural autônomo e robusto, provavelmente um dos primeiros a surgir na evolução de proteínas.
 
 ### Motivos Supersecundários e Domínios Proteicos
 
 [ADICIONAR IMAGEM EXPLICATIVA AQUI]
 <!-- Comentário: Inserir uma imagem mostrando exemplos de motivos supersecundários, como Hélice-Alça-Hélice, Forquilha-β e Barril-β. -->
 
-A combinação de elementos de estrutura secundária forma **motivos supersecundários**, os blocos de construção dos **domínios** (regiões que se enovelam e funcionam de forma independente).
-*   **Hélice-Alça-Hélice:** Comum em fatores de transcrição que se ligam ao DNA.
-*   **Forquilha-β (β-hairpin):** Duas fitas-β antiparalelas conectadas por uma volta-β.
-*   **Motivo β-α-β:** Duas fitas-β paralelas conectadas por uma α-hélice.
-*   **Barril-β:** Uma grande folha-β que se fecha sobre si mesma, formando uma estrutura cilíndrica.
+A combinação de elementos de estrutura secundária forma **motivos supersecundários**, que são os blocos de construção dos **domínios** proteicos (regiões de uma proteína que se enovelam e funcionam de forma independente).
 
-Para explorar a diversidade de dobras, utilizamos bancos de dados como o **CATH (Class, Architecture, Topology, Homologous superfamily)**. O CATH organiza as estruturas do PDB em uma hierarquia evolutiva, permitindo analisar como diferentes combinações (Arquitetura e Topologia) dão origem a famílias de proteínas.
-*   **[Explorar o CATH](https://www.cathdb.info/)**
+| Motivo | Descrição | Função/Exemplos |
+|:---|:---|:---|
+| **Hélice-Alça-Hélice** | Duas α-hélices conectadas por uma alça. | Comum em fatores de transcrição que se ligam ao DNA. |
+| **Forquilha-β (β-hairpin)** | Duas fitas-β antiparalelas conectadas por uma volta-β curta. | Um dos motivos mais simples e comuns, presente em quase todas as proteínas com folhas-β. |
+| **Motivo β-α-β** | Duas fitas-β paralelas conectadas por uma α-hélice que cruza o plano das fitas. | Componente central de muitas dobras, como o *Rossmann fold* em enzimas que ligam nucleotídeos. |
+| **Barril-β** | Uma grande folha-β que se curva e se fecha sobre si mesma, formando uma estrutura cilíndrica. | Característico de porinas de membrana, que formam canais, e de algumas enzimas. |
+
+Para explorar a vasta diversidade de dobras proteicas, utilizamos bancos de dados como o **CATH (Class, Architecture, Topology, Homologous superfamily)**. O CATH organiza as estruturas do PDB em uma hierarquia que nos ajuda a entender as relações evolutivas entre as proteínas, mostrando como diferentes combinações de arquitetura e topologia dão origem a famílias funcionais.
+*   **[Explorar o CATH](https://www.cathdb.info/ "Abrir em nova aba")**
 
 ### Propriedades dos Aminoácidos Canônicos
 | Aminoácido | Propriedades | Tendência Estrutural |
 |:---|:---|:---|
 | Alanina (Ala) | Apolar, hidrofóbico | Forte formador de α-hélice |
 | Arginina (Arg) | Polar, carregado positivamente | Superfície, formação de pontes salinas |
+| Asparagina (Asn) | Polar, não carregado | Superfície, formação de pontes de hidrogênio |
+| Ácido aspártico (Asp) | Polar, carregado negativamente | Superfície, formação de pontes salinas |
+| Cisteína (Cys) | Polar, pode formar pontes dissulfeto | Estabilização covalente de dobras |
+| Glutamina (Gln) | Polar, não carregado | Superfície, interação com água |
+| Ácido glutâmico (Glu) | Polar, carregado negativamente | Superfície, formação de pontes salinas |
 | Glicina (Gly) | Apolar, muito flexível | Regiões de curvas (turns) e loops |
+| Histidina (His) | Polar, pode ser neutra ou positiva em pH fisiológico | Sítios catalíticos, interações metal-proteína |
+| Isoleucina (Ile) | Apolar, hidrofóbico, cadeia lateral β-ramificada | Núcleo hidrofóbico, formação de folhas-β |
+| Leucina (Leu) | Apolar, hidrofóbico | Forte formador de α-hélices e núcleo hidrofóbico |
+| Lisina (Lys) | Polar, carregado positivamente | Superfície, formação de pontes salinas |
+| Metionina (Met) | Apolar, hidrofóbico | Núcleo hidrofóbico, início da tradução |
+| Fenilalanina (Phe) | Aromático, hidrofóbico | Núcleo hidrofóbico, interações de empilhamento (pi-stacking) |
 | Prolina (Pro) | Cíclico, conformacionalmente restrito | "Quebrador" de estruturas secundárias, comum em curvas |
-| Leucina (Leu), Valina (Val), Isoleucina (Ile) | Apolares, hidrofóbicos | Núcleo hidrofóbico |
-| Fenilalanina (Phe), Triptófano (Trp), Tirosina (Tyr) | Aromáticos | Núcleo hidrofóbico, interações de empilhamento (pi-stacking) |
+| Serina (Ser) | Polar, não carregado | Superfície, formação de pontes de hidrogênio |
+| Treonina (Thr) | Polar, não carregado | Superfície, interações hidrofílicas |
+| Triptófano (Trp) | Aromático, o mais hidrofóbico | Núcleo hidrofóbico, âncora de membrana |
+| Tirosina (Tyr) | Aromático, polar | Superfície e núcleo, pode ser fosforilada |
+| Valina (Val) | Apolar, hidrofóbico, cadeia lateral β-ramificada | Núcleo hidrofóbico, formação de folhas-β |
 
 ### Interações Intermoleculares Estabilizadoras
 | Interação | Distância (Å) | Natureza da Força | Aminoácidos Frequentes |
 |:---|:---:|:---|:---|
 | Ponte de Hidrogênio | 2.7–3.2 | Eletrostática (dipolo-dipolo forte) | Ser, Thr, Tyr, Asn, Gln, His e esqueleto peptídico |
-| Ponte Salina (Iônica) | 2.8–4.0 | Eletrostática entre cargas opostas | Arg, Lys, His (+) com Asp, Glu (-) |
+| Ponte Salina (Iônica) | 2.8–4.0 | Eletrostática entre grupos com cargas opostas | Arg, Lys, His (+) com Asp, Glu (-) |
 | Empilhamento Pi (π-π Stacking) | 3.4–4.0 | Interação entre as nuvens de elétrons de anéis aromáticos | Phe, Tyr, Trp, His |
 | Forças de van der Waals | 3.5–4.0 | Flutuações de dipolos instantâneos | Todos os resíduos, crucial no empacotamento do núcleo |
 
 ### Ferramentas e Bancos de Dados Essenciais
-*   **[UniProt](https://www.uniprot.org/)**, **[PDB](https://www.rcsb.org/)**, **[InterProScan](https://www.ebi.ac.uk/interpro/)**, **[ExPASy ProtParam](https://web.expasy.org/protparam/)**.
+*   **[UniProt](https://www.uniprot.org/ "Abrir em nova aba")**, **[PDB](https://www.rcsb.org/ "Abrir em nova aba")**, **[InterProScan](https://www.ebi.ac.uk/interpro/ "Abrir em nova aba")**, **[ExPASy ProtParam](https://web.expasy.org/protparam/ "Abrir em nova aba")**.
 
 ---
 
@@ -90,7 +107,7 @@ Para explorar a diversidade de dobras, utilizamos bancos de dados como o **CATH 
 
 ### Modelagem por Homologia (Comparativa)
 Baseada no princípio de que proteínas com identidade de sequência significativa (>30%) conservam sua estrutura tridimensional.
-*   **Servidor Principal:** **[SWISS-MODEL](https://swissmodel.expasy.org/)**.
+*   **Servidor Principal:** **[SWISS-MODEL](https://swissmodel.expasy.org/ "Abrir em nova aba")**.
 
 ### Modelagem *Ab Initio*
 Busca prever a estrutura 3D a partir de princípios físico-químicos.
@@ -100,55 +117,50 @@ Busca prever a estrutura 3D a partir de princípios físico-químicos.
 ### Threading (Reconhecimento de Dobra)
 Para proteínas sem homólogos de sequência, mas cuja dobra pode ser semelhante a uma já conhecida.
 *   **Como Funciona:** O algoritmo realiza um alinhamento sequência-estrutura, avaliando a compatibilidade de uma sequência com cada dobra de uma biblioteca.
-*   **I-TASSER:** O **[I-TASSER](https://zhanggroup.org/I-TASSER/)** combina Threading com montagem e refino.
+*   **I-TASSER:** O **[I-TASSER](https://zhanggroup.org/I-TASSER/ "Abrir em nova aba")** combina Threading com montagem e refino.
 
 ---
 
 ## Módulo 3: A Revolução do Aprendizado de Máquina
 
 ### Comparativo de Ferramentas de Aprendizado de Máquina
-| Ferramenta | Descrição | Aplicação |
-|:---|:---|:---|
-| AlphaFold 2 | Predição de estruturas monoméricas usando redes neurais e MSAs. | Estruturas monoméricas. |
-| AlphaFold-Multimer | Extensão para prever estruturas de complexos proteicos. | Complexos proteína-proteína. |
-| AlphaFold 3 | Versão mais recente para diversos tipos de biomoléculas. | Monômeros, multímeros, interações com DNA/RNA. |
-| RoseTTAFold | Modelo que integra informações de sequência, estrutura e contato. | Predição estrutural, incluindo multímeros. |
-| ESM Atlas | Modelo baseado em linguagem de proteínas para predição. | Interações proteína-proteína usando embeddings. |
-| ESM Cambrian | Modelo de linguagem de última geração para predição detalhada. | Estruturas e interações complexas. |
+| Ferramenta | Descrição | Aplicação | Link |
+|:---|:---|:---|:---|
+| AlphaFold 2 | Predição de estruturas monoméricas usando redes neurais e MSAs. | Estruturas monoméricas. | [Artigo](https://www.nature.com/articles/s41586-021-03819-2 "Abrir em nova aba") |
+| AlphaFold-Multimer | Extensão para prever estruturas de complexos proteicos. | Complexos proteína-proteína. | [Artigo](https://www.nature.com/articles/s41467-021-24462-3 "Abrir em nova aba") |
+| AlphaFold 3 | Versão mais recente para diversos tipos de biomoléculas. | Monômeros, multímeros, interações com DNA/RNA. | [Site Oficial](https://alphafold.ebi.ac.uk/ "Abrir em nova aba") |
+| RoseTTAFold | Modelo que integra informações de sequência, estrutura e contato. | Predição estrutural, incluindo multímeros. | [Site Oficial](https://robetta.bakerlab.org/ "Abrir em nova aba") |
+| ESM Atlas | Modelo baseado em linguagem de proteínas para predição. | Interações proteína-proteína usando embeddings. | [Site Oficial](https://esmatlas.com/ "Abrir em nova aba") |
+| ESM Cambrian | Modelo de linguagem de última geração para predição detalhada. | Estruturas e interações complexas. | [Site Oficial](https://esmatlas.com/ "Abrir em nova aba") |
 
 ---
 
 ## Módulo 4: Análise, Validação e Interpretação de Modelos Estruturais
 
-Uma vez que um modelo 3D é gerado, seja por métodos clássicos ou de aprendizado de máquina, a análise crítica é uma etapa indispensável. Modelos teóricos são hipóteses que precisam ser rigorosamente validadas e interpretadas.
+Uma vez que um modelo 3D é gerado, a análise crítica é uma etapa indispensável. Modelos teóricos são hipóteses que precisam ser rigorosamente validadas.
 
 ### Princípios de Visualização Molecular
-A visualização é o primeiro passo para a compreensão de uma estrutura.
 *   **Representações:**
-    *   **Cartoon/Ribbon:** Ideal para visualizar a topologia geral e os elementos de estrutura secundária (hélices e fitas).
-    *   **Sticks:** Mostra todos os átomos e ligações, útil para analisar a conformação de cadeias laterais ou um sítio ativo em detalhe.
-    *   **Spheres (van der Waals):** Representa o volume ocupado por cada átomo, excelente para visualizar o empacotamento e a superfície da proteína.
-*   **Coloração:** A cor pode ser usada para transmitir informação. Pode-se colorir por estrutura secundária, por cadeia (em um complexo), por hidrofobicidade, por potencial eletrostático ou por métricas de confiança como o pLDDT do AlphaFold.
-*   **Ferramentas:** **[PyMOL](https://pymol.org/2/)**, **[VMD](https://www.ks.uiuc.edu/Research/vmd/)**, e **[ChimeraX](https://www.cgl.ucsf.edu/chimerax/)**.
+    *   **Cartoon/Ribbon:** Ideal para visualizar a topologia geral.
+    *   **Sticks:** Mostra todos os átomos e ligações, útil para analisar um sítio ativo.
+    *   **Spheres (van der Waals):** Representa o volume ocupado por cada átomo.
+*   **Ferramentas:** **[PyMOL](https://pymol.org/2/ "Abrir em nova aba")**, **[VMD](https://www.ks.uiuc.edu/Research/vmd/ "Abrir em nova aba")**, e **[ChimeraX](https://www.cgl.ucsf.edu/chimerax/ "Abrir em nova aba")**.
 
 ### Métodos de Validação de Modelos
-Validação é o processo de checar se um modelo teórico é plausível do ponto de vista físico-químico.
-*   **Qualidade Estereoquímica:** Avalia se os parâmetros geométricos (comprimentos de ligação, ângulos) estão dentro dos valores esperados, observados em estruturas de alta resolução. O **Gráfico de Ramachandran** é a ferramenta central, verificando se os ângulos diédricos (phi/psi) dos resíduos estão em regiões energeticamente favoráveis.
-*   **Empacotamento e Energia:** Analisa a qualidade das interações dentro da proteína. Um bom modelo deve ter um núcleo hidrofóbico bem empacotado, sem cavidades anormais ou "clashes" (sobreposições estéricas) entre átomos. Ferramentas como o MolProbity são excelentes para detectar esses problemas.
+*   **Qualidade Estereoquímica:** O **Gráfico de Ramachandran** é a ferramenta central, verificando se os ângulos diédricos (phi/psi) estão em regiões energeticamente favoráveis.
+*   **Empacotamento e Energia:** Analisa a qualidade das interações dentro da proteína. Um bom modelo deve ter um núcleo hidrofóbico bem empacotado, sem "clashes" (sobreposições estéricas).
 *   **Servidores de Validação:**
-    *   **[SAVES](https://saves.mbi.ucla.edu/)**: Integra PROCHECK (estereoquímica), ERRAT (qualidade de interações), e outros.
-    *   **[MolProbity](http://molprobity.biochem.duke.edu/)**: Focado em contatos atômicos, geometria e análise de hidrogênios.
-    *   **[QMEANDisCo](https://swissmodel.expasy.org/qmean/)**: Compara o modelo com um conjunto de estruturas experimentais para dar um escore de qualidade global e local.
+    *   **[SAVES](https://saves.mbi.ucla.edu/ "Abrir em nova aba")**: Integra PROCHECK, ERRAT, e outros.
+    *   **[MolProbity](http://molprobity.biochem.duke.edu/ "Abrir em nova aba")**: Focado em contatos atômicos e geometria.
+    *   **[QMEANDisCo](https://swissmodel.expasy.org/qmean/ "Abrir em nova aba")**: Compara o modelo com estruturas experimentais.
 
 ### Análise de Propriedades da Estrutura 3D
-A partir de um modelo validado, podemos inferir propriedades funcionais.
-*   **Mapas de Potencial Eletrostático:** Revela a distribuição de cargas na superfície da proteína (regiões positivas em azul, negativas em vermelho), indicando locais prováveis para interações com outras moléculas.
-*   **Hidrofobicidade de Superfície:** Identifica "patches" hidrofóbicos na superfície, que podem estar envolvidos em interações proteína-proteína.
-*   **Identificação de Cavidades (Pockets):** Algoritmos podem identificar cavidades na superfície que servem como potenciais sítios de ligação para ligantes, cofatores ou drogas. Ferramentas como **CASTp** ou funções integradas no PyMOL e ChimeraX são usadas para isso.
+*   **Mapas de Potencial Eletrostático:** Revela a distribuição de cargas na superfície.
+*   **Hidrofobicidade de Superfície:** Identifica "patches" hidrofóbicos que podem estar envolvidos em interações proteína-proteína.
+*   **Identificação de Cavidades (Pockets):** Algoritmos podem identificar cavidades que servem como potenciais sítios de ligação.
 
-### Análise Comparativa e Geração de Figuras
-*   **Superposição Estrutural:** Para comparar dois modelos (ex: um de homologia e um do AlphaFold) ou um modelo com uma estrutura experimental, realizamos um alinhamento estrutural para superpor as proteínas e calcular o **RMSD (Root Mean Square Deviation)**, uma medida da diferença média entre as posições dos átomos.
-*   **Geração de Figuras para Interpretação:** A visualização molecular permite criar imagens que destacam regiões de interesse (sítios ativos, locais de mutação, domínios específicos), transformando dados estruturais em hipóteses biológicas testáveis.
+### Análise Comparativa
+*   **Superposição Estrutural:** Para comparar modelos, realizamos um alinhamento estrutural para calcular o **RMSD (Root Mean Square Deviation)**, uma medida da diferença média entre as posições dos átomos.
 
 ---
 
@@ -159,5 +171,4 @@ A partir de um modelo validado, podemos inferir propriedades funcionais.
 3.  Jumper, J. et al. (2021). Highly accurate protein structure prediction with AlphaFold. *Nature, 596(7873)*, 583–589.
 4.  Kuhlman, B., Dantas, G., et al. (2003). Design of a novel globular protein fold with atomic-level accuracy. *Science, 302(5649)*, 1364–1368.
 5.  Yang, J., et al. (2015). The I-TASSER Suite: protein structure and function prediction. *Nature Methods, 12(1)*, 7–8.
-6.  [Nobel Prize in Chemistry 2024 - Popular Information](https://www.nobelprize.org/prizes/chemistry/2024/popular-information/)
-
+6.  [Nobel Prize in Chemistry 2024 - Popular Information](https://www.nobelprize.org/prizes/chemistry/2024/popular-information/ "Abrir em nova aba")
