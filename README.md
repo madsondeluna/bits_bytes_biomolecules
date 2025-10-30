@@ -153,8 +153,7 @@ A combinação de elementos de estrutura secundária forma **motivos supersecund
 | **Motivo β-α-β** | Duas fitas-β paralelas conectadas por uma α-hélice. | Componente central de muitas dobras, como o *Rossmann fold*. |
 | **Barril-β** | Uma grande folha-β que se fecha sobre si mesma, formando um cilindro. | Característico de porinas de membrana. |
 
-Para explorar a diversidade de dobras, utilizamos bancos de dados como o **CATH (Class, Architecture, Topology, Homologous superfamily)**. O CATH organiza as estruturas em uma hierarquia que nos ajuda a entender as relações evolutivas entre as proteínas.
-**[Explorar o CATH](https://www.cathdb.info/ "Abrir em nova aba")**
+Para explorar a diversidade de dobras, utilizamos bancos de dados como o **CATH (Class, Architecture, Topology, Homologous superfamily)**. O CATH organiza as estruturas em uma hierarquia que nos ajuda a entender as relações evolutivas entre as proteínas. Fica a sugestão de **[Explorar o CATH](https://www.cathdb.info/ "Abrir em nova aba")**!
 
 ---
 
