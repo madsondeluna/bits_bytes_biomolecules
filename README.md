@@ -55,7 +55,7 @@
   - [Análise Comparativa: RMSD e sua Importância](#análise-comparativa-rmsd-e-sua-importância)
   - [Servidores de Validação de Estrutura](#servidores-de-validação-de-estrutura)
   - [Métricas Chave de Validação Explicadas](#métricas-chave-de-validação-explicadas)
-- [Módulo 5: Da Estrutura à Função — Aplicações Práticas de Modelos Validados](#módulo-5-da-estrutura-à-função--aplicações-práticas-de-modelos-validados)
+- [Módulo 5: Da Estrutura à Função: Aplicações Práticas de Modelos Validados](#módulo-5-da-estrutura-à-função:-aplicações-práticas-de-modelos-validados)
 - [Referências e Leituras Recomendadas](#referências-e-leituras-recomendadas)
 
 ---
