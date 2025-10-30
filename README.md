@@ -70,7 +70,7 @@ O problema do enovelamento de proteínas, como uma cadeia polipeptídica linear 
   <img src="imgs/funnel.png" alt="Diagrama do funil" width="700">
 </p>
 <p align="justify">
-  <em>Macošek J, Mas G, Hiller S. Redefining Molecular Chaperones as Chaotropes. Front Mol Biosci. 2021 Jun 14;8:683132. doi: 10.3389/fmolb.2021.683132. PMID: 34195228; PMCID: PMC8237284.</em>
+  <em>Fonte: Macošek J, Mas G, Hiller S. Redefining Molecular Chaperones as Chaotropes. Front Mol Biosci. 2021 Jun 14;8:683132. doi: 10.3389/fmolb.2021.683132. PMID: 34195228; PMCID: PMC8237284.</em>
 </p>
 
 Para visualizar a complexidade deste processo, utilizamos a metáfora do **funil de enovelamento**. Este modelo descreve a paisagem energética que uma proteína atravessa para atingir sua conformação nativa.
@@ -85,7 +85,7 @@ Em biologia molecular, a estabilidade de um sistema é descrita pela **energia l
   <img src="imgs/deltg.png" alt="Representação do Delta G" width="700">
 </p>
 <p align="justify">
-<em>The Gibbs free energy change (ΔG) and how it's related to reaction spontaneity and equilibrium. https://www.khanacademy.org/science/biology/energy-and-enzymes/free-energy-tutorial/a/gibbs-free-energy</em>
+<em>Fonte: The Gibbs free energy change (ΔG) and how it's related to reaction spontaneity and equilibrium. https://www.khanacademy.org/science/biology/energy-and-enzymes/free-energy-tutorial/a/gibbs-free-energy</em>
 </p>
 
 * **G (Energia Livre de Gibbs):** A Energia Livre de Gibbs (ΔG) é um potencial termodinâmico que mede a "utilidade" ou o trabalho máximo e reversível que pode ser realizado por um sistema termodinâmico a temperatura e pressão constantes. Uma mudança negativa em G (ΔG < 0) indica que a reação é espontânea, ou seja, pode ocorrer sem a entrada contínua de energia externa. Uma mudança positiva (ΔG > 0) significa que a reação é não espontânea e requer energia para ocorrer. Se ΔG = 0, o sistema está em equilíbrio.
@@ -111,7 +111,7 @@ O Paradoxo de Levinthal trata do Problema 2 (`a cinética`).
   <img src="imgs/lewontin.png" alt="Richard Lewontin at the chalkboard" width="700">
 </p>
 <p align="justify">
-<em>Richard Lewontin (1929-2021) na lousa. Parece que ele está explicando a interação e inseparabilidade do genótipo e do ambiente.</em>
+<em>Fonte: Richard Lewontin (1929-2021) na lousa. Parece que ele está explicando a interação e inseparabilidade do genótipo e do ambiente.</em>
 </p>
 
 ---
@@ -282,10 +282,10 @@ Para explorar a diversidade de dobras, utilizamos bancos de dados como o **CATH 
 ---
 
 <p align="justify">
-  <img src="imgs/chart.png" alt="Amino acids width="700">
+  <img src="imgs/aas.png" alt="Amino acids width="700">
 </p>
 <p align="justify">
-<em>A Brief Guide to the Twenty Common Amino Acids. Compound Interest.</em>
+<em>Fonte: JPT Peptide Technologies.</em>
 </p>
 
 ### Propriedades dos Aminoácidos Canônicos
