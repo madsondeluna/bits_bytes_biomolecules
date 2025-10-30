@@ -266,7 +266,32 @@ Este trabalho integra a análise de princípios teóricos da química pré-biót
 
 ### Motivos Supersecundários e Domínios Proteicos
 
-[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+No contexto biológico da síntese proteica (tradução), este processo é energeticamente custoso, consumindo energia (na forma de ATP e GTP) para a ativação dos aminoácidos. Esta ativação ocorre através da ligação covalente entre cada aminoácido e seu tRNA cognato (complementar), catalisada pelas aminoacil-tRNA sintetases, enzimas altamente específicas que reconhecem tanto o aminoácido quanto seu tRNA correspondente. Uma vez formado o aminoacil-tRNA, este complexo é direcionado ao ribossomo para participar da tradução. A formação da ligação peptídica em si é catalisada pelo ribossomo, especificamente pela atividade peptidil transferase, uma função catalítica intrínseca ao RNA ribossômico (rRNA) localizado na subunidade maior. Este mecanismo transfere a cadeia polipeptídica crescente do tRNA localizado no sítio P (Peptidil) para o grupo amino do novo aminoácido que está ligado ao seu tRNA no sítio A (Aminoacil), permitindo assim a elongação da cadeia polipeptídica.
+
+<p align="justify">
+  <img src="imgs/ribo.png" alt="XXXXX" width="700">
+</p>
+<p align="justify">
+<em>Fonte: Amy McDermott, 2024.</em>
+</p>
+
+Ao abordar as interações entre aminoácidos, a ligação primordial e mais forte, que estabelece a estrutura primária de uma proteína, é a ligação peptídica. Esta ligação covalente é formada pela união do grupo α-carboxila de um aminoácido ao grupo α-amino do aminoácido subsequente, caracterizando uma reação de condensação (ou desidratação) na qual uma molécula de água (H₂O) é liberada. 
+
+<p align="justify">
+  <img src="imgs/pep-bond.png" alt="XXXXXXXX" width="700">
+</p>
+<p align="justify">
+<em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham. (Descreva aqui o que a imagem mostra).</em>
+</p>
+
+A ligação peptídica sob outra óptica. 
+
+<p align="justify">
+  <img src="imgs/pep-bond2.png" alt="XXXXXXXX" width="700">
+</p>
+<p align="justify">
+<em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham. (Descreva aqui o que a imagem mostra).</em>
+</p>
 
 A combinação de elementos de estrutura secundária forma **motivos supersecundários**, os blocos de construção dos **domínios** proteicos (regiões que se enovelam e funcionam de forma independente).
 
