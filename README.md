@@ -412,16 +412,26 @@ O QMEAN (Quality Model Energy ANalysis) é um "score de consenso" (ou *scoring f
 
 ## Referências e Leituras Recomendadas
 
-1.  <small><small>Pauling, L., Corey, R. B., & Branson, H. R. (1951). [The structure of proteins: Two hydrogen-bonded helical configurations of the polypeptide chain](https://www.pnas.org/doi/10.1073/pnas.37.4.205). *Proceedings of the National Academy of Sciences, 37(4)*, 205–211.</small></small>
-2.  <small><small>Miller, S. L. (1953). [A Production of Amino Acids Under Possible Primitive Earth Conditions](https://www.science.org/doi/10.1126/science.117.3046.528). *Science, 117(3046)*, 528–529.</small></small>
-3.  <small><small>Ramachandran, G. N., Ramakrishnan, C., & Sasisekharan, V. (1963). [Stereochemistry of polypeptide chain configurations](https://doi.org/10.1016/S0022-2836(63)80023-6). *Journal of Molecular Biology, 7*, 95–99.</small></small>
-4.  <small><small>Anfinsen, C. B. (1973). [Principles that govern the- folding of protein chains](https://www.science.org/doi/10.1126/science.181.4096.223). *Science, 181(4096)*, 223–230.</small></small>
-5.  <small><small>Šali, A., & Blundell, T. L. (1993). [Comparative protein modelling by satisfaction of spatial restraints](https://doi.org/10.1016/0022-2836(93)90134-Y). *Journal of Molecular Biology, 234(3)*, 779–815.</small></small>
-6.  <small><small>Kuhlman, B., Dantas, G., et al. (2003). [Design of a novel globular protein fold with atomic-level accuracy](https://www.science.org/doi/10.1126/science.1089427). *Science, 302(5649)*, 1364–1368.</small></small>
-7.  <small><small>Chen, V. B., Arendall, W. B., et al. (2010). [MolProbity: all-atom structure validation for macromolecular crystallography](https://doi.org/10.1107/S0907444909042073). *Acta Crystallographica Section D, 66(1)*, 12–21.</small></small>
-8.  <small><small>Dill, K. A., & MacCallum, J. L. (2012). [The Protein-Folding Problem, 50 Years On](https://www.science.org/doi/10.1126/science.1219021). *Science, 338(6110)*, 1042–1046.</small></small>
-9.  <small><small>[Nobel Prize in Chemistry 2013 - Popular Information](https://www.nobelprize.org/prizes/chemistry/2013/popular-information/) (Fundamentos da modelagem multiescala / Dinâmica Molecular)</small></small>
-10. <small><small>Yang, J., et al. (2015). [The I-TASSER Suite: protein structure and function prediction](https://doi.org/10.1038/nmeth.3213). *Nature Methods, 12(1)*, 7–8.</small></small>
-11. <small><small>Jumper, J. et al. (2021). [Highly accurate protein structure prediction with AlphaFold](https://doi.org/10.1038/s41586-021-03819-2). *Nature, 596(7873)*, 583–589.</small></small>
-12. <small><small>Baek, M., DiMaio, F., et al. (2021). [Accurate prediction of protein structures and interactions using a three-track neural network](https://www.science.org/doi/10.1126/science.abj8754). *Science, 373(6557)*, 871–876.</small></small>
-13. <small><small>[Nobel Prize in Chemistry 2024 - Popular Information](https://www.nobelprize.org/prizes/chemistry/2024/popular-information/) (Design computacional e predição de estrutura)</small></small>
+<sub>Pauling, L., Corey, R. B., & Branson, H. R. (1951). [The structure of proteins: Two hydrogen-bonded helical configurations of the polypeptide chain](https://www.pnas.org/doi/10.1073/pnas.37.4.205). *Proceedings of the National Academy of Sciences, 37(4)*, 205–211.</sub>
+
+<sub>Miller, S. L. (1953). [A Production of Amino Acids Under Possible Primitive Earth Conditions](https://www.science.org/doi/10.1126/science.117.3046.528). *Science, 117(3046)*, 528–529.</sub>
+
+<sub>Ramachandran, G. N., Ramakrishnan, C., & Sasisekharan, V. (1963). [Stereochemistry of polypeptide chain configurations](https://doi.org/10.1016/S0022-2836(63)80023-6). *Journal of Molecular Biology, 7*, 95–99.</sub>
+<sub>Anfinsen, C. B. (1973). [Principles that govern the- folding of protein chains](https://www.science.org/doi/10.1126/science.181.4096.223). *Science, 181(4096)*, 223–230.</sub>
+
+<sub>Šali, A., & Blundell, T. L. (1993). [Comparative protein modelling by satisfaction of spatial restraints](https://doi.org/10.1016/0022-2836(93)90134-Y). *Journal of Molecular Biology, 234(3)*, 779–815.</sub>
+
+<sub>Kuhlman, B., Dantas, G., et al. (2003). [Design of a novel globular protein fold with atomic-level accuracy](https://www.science.org/doi/10.1126/science.1089427). *Science, 302(5649)*, 1364–1368.</sub>
+
+<sub>Chen, V. B., Arendall, W. B., et al. (2010). [MolProbity: all-atom structure validation for macromolecular crystallography](https://doi.org/10.1107/S0907444909042073). *Acta Crystallographica Section D, 66(1)*, 12–21.</sub>
+<sub>Dill, K. A., & MacCallum, J. L. (2012). [The Protein-Folding Problem, 50 Years On](https://www.science.org/doi/10.1126/science.1219021). *Science, 338(6110)*, 1042–1046.</sub>
+
+<sub>[Nobel Prize in Chemistry 2013 - Popular Information](https://www.nobelprize.org/prizes/chemistry/2013/popular-information/) (Fundamentos da modelagem multiescala / Dinâmica Molecular)</sub>
+
+<sub>Yang, J., et al. (2015). [The I-TASSER Suite: protein structure and function prediction](https://doi.org/10.1038/nmeth.3213). *Nature Methods, 12(1)*, 7–8.</sub>
+
+<sub>Jumper, J. et al. (2021). [Highly accurate protein structure prediction with AlphaFold](https://doi.org/10.1038/s41586-021-03819-2). *Nature, 596(7873)*, 583–589.</sub>
+
+<sub>Baek, M., DiMaio, F., et al. (2021). [Accurate prediction of protein structures and interactions using a three-track neural network](https://www.science.org/doi/10.1126/science.abj8754). *Science, 373(6557)*, 871–876.</sub>
+
+<sub>[Nobel Prize in Chemistry 2024 - Popular Information](https://www.nobelprize.org/prizes/chemistry/2024/popular-information/) (Design computacional e predição de estrutura)</sub>
