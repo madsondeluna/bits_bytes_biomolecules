@@ -24,7 +24,7 @@
   - [O Paradoxo de Levinthal](#o-paradoxo-de-levinthal)
 - [Módulo 1: Fundamentos da Sequência e Estrutura Proteica](#módulo-1-fundamentos-da-sequência-e-estrutura-proteica)
   - [Estrutura Secundária: Os Pilares da Arquitetura Proteica](#estrutura-secundária-os-pilares-da-arquitetura-proteica)
-  - [α-Hélice: Um Fóssil Estrutural](#α-hélice-um-fóssil-estrutural)
+  - [$\alpha$-Hélice: Um Fóssil Estrutural](#α-hélice-um-fóssil-estrutural)
   - [Everything in its Right Place? Talvez o Radiohead estivesse certo esse tempo todos!](#everything-in-its-right-place-talvez-o-radiohead-estivesse-certo-esse-tempo-todos)
   - [O Repertório Pré-biótico e Propensões Conformacionais](#o-repertório-pré-biótico-e-propensões-conformacionais)
   - [Estabilidade Termodinâmica](#estabilidade-termodinâmica)
@@ -55,6 +55,7 @@
   - [Análise Comparativa: RMSD e sua Importância](#análise-comparativa-rmsd-e-sua-importância)
   - [Servidores de Validação de Estrutura](#servidores-de-validação-de-estrutura)
   - [Métricas Chave de Validação Explicadas](#métricas-chave-de-validação-explicadas)
+- [Módulo 5: Da Estrutura à Função — Aplicações Práticas de Modelos Validados](#módulo-5-da-estrutura-à-função--aplicações-práticas-de-modelos-validados)
 - [Referências e Leituras Recomendadas](#referências-e-leituras-recomendadas)
 
 ---
