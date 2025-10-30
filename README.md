@@ -300,9 +300,15 @@ Para explorar a diversidade de dobras, utilizamos bancos de dados como o **CATH 
 
 ---
 
-[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+### Interações Intermoleculares 
 
-### Interações Intermoleculares Estabilizadoras
+<p align="justify">
+  <img src="imgs/aainteractions.png" alt="Matriz de interações de aminoácidos" width="700">
+</p>
+<p align="justify">
+<em>O gráfico mostra a matriz dos aminoácidos naturais: círculos azuis maiores indicam interações mais fortes. Fonte: Cambridge MedChem Consulting, 2029.</em>
+</p>
+
 | Interação | Distância (Å) | Natureza da Força | Aminoácidos Frequentes |
 |:---|:---:|:---|:---|
 | Ponte de Hidrogênio | 2.7–3.2 | Eletrostática (dipolo-dipolo forte) | Ser, Thr, Tyr, Asn, Gln, His e esqueleto peptídico |
