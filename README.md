@@ -281,7 +281,12 @@ Para explorar a diversidade de dobras, utilizamos bancos de dados como o **CATH 
 
 ---
 
-[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+<p align="justify">
+  <img src="imgs/chart.png" alt="Amino acids width="700">
+</p>
+<p align="justify">
+<em>A Brief Guide to the Twenty Common Amino Acids. Compound Interest.</em>
+</p>
 
 ### Propriedades dos Aminoácidos Canônicos
 | Aminoácido | Propriedades | Tendência Estrutural |
