@@ -1,8 +1,8 @@
 # Bits, Bytes e Biomoléculas: Introdução à Modelagem de Proteínas com Métodos Clássicos e de Aprendizado de Máquina
 
-**Instrutor:** Madson Aragão (Bioinformática @ UFMG)
+**Instrutor:** Madson Aragão (Estudante de PhD @ UFMG, MSc em Genética e Biologia Molecular @ UFPE)
 
-**Monitor:** Saulo Penna (Biomedicina @ UFPE, Pesquisador no LGBV/UFPE)
+**Monitor:** Saulo Penna (BSc em Biomedicina @ UFPE, Pesquisador no LGBV/UFPE)
 
 **Evento:** XV Jornada PPGGBM - 19 de Novembro de 2025
 
