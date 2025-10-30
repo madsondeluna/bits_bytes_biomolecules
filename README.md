@@ -484,8 +484,7 @@ O conhecimento estrutural permite o design racional de novas ferramentas biotecn
 * **Exemplo Prático (Diagnóstico):** Ao modelar a interação entre um antígeno viral e um anticorpo, podemos identificar os epítopos-chave. Isso permite o design de peptídeos sintéticos que imitam esse epítopo para criar testes de diagnóstico (ELISA) mais baratos e específicos.
 * **Exemplo Prático (Biotecnologia):** Para criar uma enzima industrial mais resistente ao calor, pode-se usar o modelo para introduzir pontes de dissulfeto em locais estratégicos, "grampeando" a estrutura para aumentar sua termoestabilidade.
 
-> **Nota Final: A Simbiose entre o Teórico e o Experimental**
->
+> **Nota Final:**
 > É fundamental ressaltar que um modelo computacional é, por definição, uma predição. A verdadeira força da biologia estrutural moderna reside na união desses dois mundos. Sempre que há uma validação experimental de um modelo teórico, unimos o melhor do mundo computacional (velocidade e escala) com o melhor da biologia molecular (a prova funcional). Usamos o modelo para guiar o experimento (ex: qual mutação fazer) e usamos o experimento (ex: um ensaio de atividade) para validar o modelo.
 
 ## Referências e Leituras Recomendadas
