@@ -6,13 +6,56 @@
 
 **Evento:** XV Jornada PPGGBM - 19 de Novembro de 2025
 
-**Contato:** `madsondeluna@gmail.com`
+**Contato:** madsondeluna@gmail.com
 
 **Portifólio:** [https://madsondeluna.github.io/](https://madsondeluna.github.io/)
 
-**Códigos/Projetos:** [https://github.io/madsondeluna](https://github.io/madsondeluna)
+**Códigos/Projetos:** [https://github.com/madsondeluna](https://github.com/madsondeluna)
 
-> Este repositório contém o material de referência completo para o curso, incluindo conceitos fundamentais, guias de ferramentas e leituras recomendadas. Qualquer sugestão ou feedback pode ser encaminhada para `madsondeluna@gmail.com`.
+> Este repositório contém o material de referência completo para o curso, incluindo conceitos fundamentais, guias de ferramentas e leituras recomendadas. Qualquer sugestão ou feedback pode ser encaminhada para madsondeluna@gmail.com.
+
+---
+
+# Sumário
+
+- [O Desafio Central: O Enovelamento de Proteínas](#o-desafio-central-o-enovelamento-de-protenas)
+  - [A Paisagem Energética: O Funil de Enovelamento](#a-paisagem-energtica-o-funil-de-enovelamento)
+  - [A Lógica da Energia em Bioquímica](#a-lgica-da-energia-em-bioqumica)
+  - [O Paradoxo de Levinthal](#o-paradoxo-de-levinthal)
+- [Módulo 1: Fundamentos da Sequência e Estrutura Proteica](#mdulo-1-fundamentos-da-sequncia-e-estrutura-proteica)
+  - [Estrutura Secundária: Os Pilares da Arquitetura Proteica](#estrutura-secundria-os-pilares-da-arquitetura-proteica)
+  - [α-Hélice: Um Fóssil Estrutural](#-hlice-um-fssil-estrutural)
+  - [Everything in its Right Place? Talvez o Radiohead estivesse certo esse tempo todos!](#everything-in-its-right-place-talvez-o-radiohead-estivesse-certo-esse-tempo-todos)
+  - [O Repertório Pré-biótico e Propensões Conformacionais](#o-repertrio-pr-bitico-e-propenses-conformacionais)
+  - [Estabilidade Termodinâmica](#estabilidade-termodinmica)
+  - [A Interface Peptídeo-Membrana](#a-interface-peptdeo-membrana)
+  - [Síntese e Análise Contemporânea](#sntese-e-anlise-contempornea)
+  - [Motivos Supersecundários e Domínios Proteicos](#motivos-supersecundrios-e-domnios-proteicos)
+  - [Propriedades dos Aminoácidos Canônicos](#propriedades-dos-aminocidos-cannicos)
+  - [Interações Intermoleculares Estabilizadoras](#interaes-intermoleculares-estabilizadoras)
+  - [Ferramentas e Bancos de Dados Essenciais](#ferramentas-e-bancos-de-dados-essenciais)
+- [Módulo 2: Técnicas Clássicas de Modelagem Molecular](#mdulo-2-tcnicas-clssicas-de-modelagem-molecular)
+  - [Uma Nota Crucial: Identidade vs. Similaridade de Sequência](#uma-nota-crucial-identidade-vs-similaridade-de-sequncia)
+  - [1. Modelagem por Homologia (Modelagem Comparativa)](#1-modelagem-por-homologia-modelagem-comparativa)
+  - [2. Threading (Reconhecimento de Dobra)](#2-threading-reconhecimento-de-dobra)
+  - [3. Modelagem *Ab Initio*](#3-modelagem-ab-initio)
+- [Módulo 3: A Revolução do Aprendizado de Máquina e a Nova Era da Biologia Estrutural](#mdulo-3-a-revoluo-do-aprendizado-de-mquina-e-a-nova-era-da-biologia-estrutural)
+  - [Contexto Histórico: A Longa Estrada do CASP e a Promessa do AlphaFold 1](#contexto-histrico-a-longa-estrada-do-casp-e-a-promessa-do-alphafold-1)
+  - [O Ponto de Inflexão: AlphaFold 2 e o "Problema Resolvido? Nem tanto"](#o-ponto-de-inflexo-alphafold-2-e-o-problema-resolvido-nem-tanto)
+  - [A Próxima Geração: AlphaFold 3 e o Paradoxo do Código Fechado ](#a-prxima-gerao-alphafold-3-e-o-paradoxo-do-cdigo-fechado)
+  - [Comparativo de Ferramentas de Aprendizado de Máquina](#comparativo-de-ferramentas-de-aprendizado-de-mquina)
+- [Métodos Clássicos vs. Métodos de ML/DL? Quando usar?](#mtodos-clssicos-vs-mtodos-de-mldl-quando-usar)
+  - [Extra 1: Estudando a Dinâmica e Variações Estruturais](#extra-1-estudando-a-dinmica-e-variaes-estruturais)
+  - [Extra 2: Modelagem de Sítios Ativos com Ligantes e Cofatores](#extra-2-modelagem-de-stios-ativos-com-ligantes-e-cofatores)
+  - [Extra 3: Design de Proteínas (*De Novo*)](#extra-3-design-de-protenas-de-novo)
+  - [Extra 4: Velocidade, Acessibilidade e Recursos Computacionais](#extra-4-velocidade-acessibilidade-e-recursos-computacionais)
+  - [Tabela Resumo: Quando Usar Qual Ferramenta?](#tabela-resumo-quando-usar-qual-ferramenta)
+- [Módulo 4: Análise, Validação e Interpretação de Modelos Estruturais](#mdulo-4-anlise-validao-e-interpretao-de-modelos-estruturais)
+  - [Ferramentas de Visualização Molecular](#ferramentas-de-visualizao-molecular)
+  - [Análise Comparativa: RMSD e sua Importância](#anlise-comparativa-rmsd-e-sua-importncia)
+  - [Servidores de Validação de Estrutura](#servidores-de-validao-de-estrutura)
+  - [Métricas Chave de Validação Explicadas](#mtricas-chave-de-validao-explicadas)
+- [Referências e Leituras Recomendadas](#referncias-e-leituras-recomendadas)
 
 ---
 
