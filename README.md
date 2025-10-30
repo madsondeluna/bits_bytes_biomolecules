@@ -309,6 +309,8 @@ Para explorar a diversidade de dobras, utilizamos bancos de dados como o **CATH 
 <em>O gráfico mostra a matriz dos aminoácidos naturais: círculos azuis maiores indicam interações mais fortes. Fonte: Cambridge MedChem Consulting, 2029.</em>
 </p>
 
+> O PDB contém muitos exemplos de interações entre aminoácidos. Embora existam interações específicas bem documentadas (aminoácidos básicos com carga positiva se ligam a aminoácidos ácidos com carga negativa), não havia visto um estudo sistemático de todas as combinações de aminoácidos, por isso, o trabalho de [Andrew White](https://crowsandcats.blogspot.com/2012/03/amino-acid-interactions.html) é notável, pois ele contou sistematicamente o número de interações entre cada par de tipos de aminoácidos e, em seguida, converteu essas contagens em energias de interação. 
+
 | Interação | Distância (Å) | Natureza da Força | Aminoácidos Frequentes |
 |:---|:---:|:---|:---|
 | Ponte de Hidrogênio | 2.7–3.2 | Eletrostática (dipolo-dipolo forte) | Ser, Thr, Tyr, Asn, Gln, His e esqueleto peptídico |
@@ -316,6 +318,10 @@ Para explorar a diversidade de dobras, utilizamos bancos de dados como o **CATH 
 | Empilhamento Pi (π-π Stacking) | 3.4–4.0 | Interação entre as nuvens de elétrons de anéis aromáticos | Phe, Tyr, Trp, His |
 | Forças de van der Waals | 3.5–4.0 | Flutuações de dipolos instantâneos | Todos os resíduos, crucial no empacotamento do núcleo |
 | Interação Cátion-π | 3.5–5.0 | Eletrostática entre um cátion e um anel aromático | Arg, Lys com Phe, Tyr, Trp |
+
+> IMAGENS DE INTERACOES ENTRE AAs
+
+[ADICIONAR IMAGEM EXPLICATIVA AQUI]
 
 ### Ferramentas e Bancos de Dados Essenciais
 
