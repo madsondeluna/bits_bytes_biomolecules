@@ -35,7 +35,8 @@
 
 ---
 
-## Os Processos Especiais Ajudam a Vida a Acontecer, Regulando o Dogma Central
+## Os Processos Especiais Ajudam a Vida a Acontecer
+## Regulando o Dogma Central
 
 <p align="justify"> Nos modelos didáticos e nas representações clássicas da biologia molecular, a regulação do RNA costuma ser simplificada ou mesmo omitida, com o objetivo de tornar mais acessível a compreensão dos processos fundamentais da expressão gênica. No entanto, essa simplificação mascara uma complexa e fascinante camada de controle que atua além do DNA e das proteínas. O mRNA não é apenas um intermediário passivo entre o gene e o produto proteico, ele é um verdadeiro campo de regulação dinâmica, onde estruturas secundárias, modificações químicas e interações com proteínas e microRNAs determinam quando, onde e quanto de uma proteína será produzida. </p> <p align="justify"> Compreender esses mecanismos é essencial não apenas para entender a vida em seu nível molecular mais refinado, mas também para o avanço da medicina moderna. As terapias baseadas em RNA, como as vacinas de mRNA e os silenciadores gênicos (siRNAs), só se tornaram possíveis graças ao entendimento aprofundado desses elementos regulatórios. Assim, o estudo dos processos não canônicos do RNA não é um detalhe técnico, é uma chave para decifrar a complexidade biológica e projetar intervenções terapêuticas precisas. </p>
 
