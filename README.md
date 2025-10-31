@@ -27,13 +27,7 @@ Link para o na versão web: <a href="https://madsondeluna.github.io/bits_bytes_b
 
 <figure class="figure-center">
   <img src="imgs/folding-funnel.gif" alt="DreamFold" width="700">
-</figure>
-
----
-
-## Antes de Tudo: O Dogma Central da Biologia Molecular
-
-O Dogma Central da Biologia Molecular descreve o fluxo fundamental da informação genética: o DNA é transcrito em RNA, e o RNA é traduzido em proteína. Esse modelo, proposto por Francis Crick, estabelece a base conceitual sobre como as instruções genéticas são convertidas em função biológica. Assim, o dogma central reúne o grande conjunto de processos canônicos, replicação, transcrição e tradução, que sustentam a herança e a expressão gênica em todos os organismos vivos. No entanto, à medida que a biologia molecular avançou, tornou-se evidente que esses processos estão longe de ser lineares ou simples. Cada etapa do dogma central é regulada por uma imensa rede de mecanismos que modulam a eficiência, a precisão e o contexto da expressão gênica. Fatores como modificações epigenéticas, splicing alternativo, estruturas secundárias de RNA, metilação, interações com proteínas e a ação de pequenos RNAs adicionam camadas de controle que permitem respostas dinâmicas às condições celulares e ambientais. Portanto, embora o dogma central represente o esqueleto conceitual do fluxo de informação genética, é nas suas regulações não canônicas, sutis, versáteis e altamente específicas — que a vida adquire sua complexidade e capacidade de adaptação. 
+</figure>enética: o DNA é transcrito em RNA, e o RNA é traduzido em proteína. Esse modelo, proposto por Francis Crick, estabelece a base conceitual sobre como as instruções genéticas são convertidas em função biológica. Assim, o dogma central reúne o grande conjunto de processos canônicos, replicação, transcrição e tradução, que sustentam a herança e a expressão gênica em todos os organismos vivos. No entanto, à medida que a biologia molecular avançou, tornou-se evidente que esses processos estão longe de ser lineares ou simples. Cada etapa do dogma central é regulada por uma imensa rede de mecanismos que modulam a eficiência, a precisão e o contexto da expressão gênica. Fatores como modificações epigenéticas, splicing alternativo, estruturas secundárias de RNA, metilação, interações com proteínas e a ação de pequenos RNAs adicionam camadas de controle que permitem respostas dinâmicas às condições celulares e ambientais. Portanto, embora o dogma central represente o esqueleto conceitual do fluxo de informação genética, é nas suas regulações não canônicas, sutis, versáteis e altamente específicas — que a vida adquire sua complexidade e capacidade de adaptação. 
 
 <p align="justify">
   <img src="imgs/dogma-central.png" alt="O Dogma Central e a Diversidade Funcional do RNA" width="1000">
@@ -44,7 +38,7 @@ O Dogma Central da Biologia Molecular descreve o fluxo fundamental da informaç�
 
 ---
 
-## Os Processos Especiais, ou não Canônicos, Ajudam a Vida a Acontecer
+## Os Processos Especiais, ou não Canônicos Ajudam a Vida a Acontecer
 
 ---
 
@@ -404,7 +398,27 @@ A combinação de elementos de estrutura secundária forma **motivos secundário
 
 | Motivo | Descrição | Função/Exemplos |
 |:---|:---|:---|
-| **Hélice-Alça-Hélice** | Duas α-hélices conectadas por uma alça. | Comum em fatores de transcrição que se ligam ao DNA. |
+| **Hélice-Alça-Hélice** | Duas α-hélices conectadas por uma alça. | Comum em fatores d
+
+---
+
+<p align="justify">
+  <img src="imgs/motifs-domains.png" alt="XXXXXXXX" width="1000">
+</p>
+<p align="justify">
+<em>Fonte: Elliott J. Stollar & David P. Smith, 2020.</em>
+</p>
+
+---
+
+<figure class="figure-center">
+  <img src="imgs/motifs-domains.png" alt="XXXXXXXX" width="700">
+  <figcaption><em>Fonte: Elliott J. Stollar & David P. Smith, 2020.</em></figcaption>
+</figure>
+
+---
+
+e transcrição que se ligam ao DNA. |
 | **Forquilha-β (β-hairpin)** | Duas fitas-β antiparalelas conectadas por uma volta-β curta. | Um dos motivos mais simples e comuns. |
 | **Motivo β-α-β** | Duas fitas-β paralelas conectadas por uma α-hélice. | Componente central de muitas dobras, como o *Rossmann fold*. |
 | **Barril-β** | Uma grande folha-β que se fecha sobre si mesma, formando um cilindro. | Característico de porinas de membrana. |
@@ -491,7 +505,7 @@ O resultado é:
 ##### Escala de Tempo Física
 
 $$
-t \sim \tau \times \big(C \cdot L^{2/3}\big)
+t \sim \tau \times \exp\!\big(C \cdot L^{2/3}\big)
 $$
 
 Onde:  
@@ -521,7 +535,7 @@ Modelos como AlphaFold (ex.: AF3) não "resolvem" o processo físico do enovelam
 Podemos escrever essa ideia como:
 
 $$
-f_{\text{AlphaFold}}(\text{sequência 1D}) \\longrightarrow\ \text{estrutura 3D prevista}
+f_{\text{AlphaFold}}(\text{sequência 1D}) \;\longrightarrow\; \text{estrutura 3D prevista}
 $$
 
 Ou seja: é predição supervisionada, não simulação físico-química do caminho de enovelamento.
@@ -555,41 +569,28 @@ Antes de mergulharmos nos métodos, é essencial entender a diferença entre doi
 Vamos analisar o seguinte alinhamento entre duas sequências curtas:
 
 ```
-  V L I K G A T D
-   | + | + | | + +
-   V I I R G A W E
+SeqA: V L I K G A T D
+Alinh: | + | + | | +
+SeqB: V I I R G A W E
 ```
 
-> **Identidades (`|`):** As posições com `V`, `I`, `G`, `A` são idênticas.
+[ADICIONAR IMAGEM EXPLICATIVA AQUI]
 
-> **Cálculo:** 4 resíduos idênticos de um total de 8.
-> **Identidade = (4 / 8) * 100 = 50%**
 
----
+*   **Identidades (`|`):** As posições com `V`, `I`, `G`, `A` são idênticas.
+    *   **Cálculo:** 4 resíduos idênticos de um total de 8.
+    *   **Identidade = (4 / 8) * 100 = 50%**
 
-> **Similaridades (`+`):** Além das identidades, temos substituições conservativas:
-
-> `L` e `I` (ambos hidrofóbicos).
-> `K` e `R` (ambos com carga positiva).
-> `D` e `E` (ambos com carga negativa).
-
----
-
-> **Cálculo:** 4 resíduos idênticos + 3 resíduos similares = 7.
-> **Similaridade = (7 / 8) * 100 = 87.5%**
+*   **Similaridades (`+`):** Além das identidades, temos substituições conservativas:
+    *   `L` e `I` (ambos hidrofóbicos).
+    *   `K` e `R` (ambos com carga positiva).
+    *   `D` e `E` (ambos com carga negativa).
+    *   **Cálculo:** 4 resíduos idênticos + 3 resíduos similares = 7.
+    *   **Similaridade = (7 / 8) * 100 = 87.5%**
 
 Note que a substituição de `T` (polar) por `W` (apolar e grande) não é considerada similar neste contexto.
 
-<p align="justify">
-  <img src="imgs/structure-maintain.png" alt="Dois gráficos mostrando a relação entre a identidade de sequência e a estrutura proteica" width="1000">
-</p>
-<p align="justify">
-  <em>Gráficos adaptados de estudos clássicos de Chothia e Lesk, ilustrando a relação entre a porcentagem de resíduos idênticos no núcleo proteico (eixo X) e, respectivamente, o desvio médio quadrático (RMSD) da estrutura do esqueleto (gráfico a) e a fração de resíduos no núcleo conservado (gráfico b).</em>
-</p>
-
-> **Conclusão:** A porcentagem de **similaridade** é sempre maior ou igual à de **identidade**. Para a modelagem por homologia, uma alta similaridade (>50%), mesmo com uma identidade mais baixa (~30%), já pode ser um forte indicativo de que as proteínas compartilham a mesma dobra estrutural.
-
----
+**Conclusão:** A porcentagem de **similaridade** é sempre maior ou igual à de **identidade**. Para a modelagem por homologia, uma alta similaridade (>50%), mesmo com uma identidade mais baixa (~30%), já pode ser um forte indicativo de que as proteínas compartilham a mesma dobra estrutural.
 
 ### Ferramentas e Bancos de Dados para Análise de Sequência e Estrutura
 
