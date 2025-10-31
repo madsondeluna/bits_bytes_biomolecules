@@ -82,8 +82,8 @@ Leitura do mRNA (5'→3') do centro para a borda até o aminoácido corresponden
 
 ### 2) “Charging”: Aminoacilação do tRNA
 
-<p align="justify">
-  <img src="imgs/trna-syntesis.png" alt="Aminoacil-tRNA sintetase ligando aminoácido ao tRNA com consumo de ATP" width="1000">
+<p align="center">
+  <img src="imgs/trna-syntesis.png" alt="Aminoacil-tRNA sintetase ligando aminoácido ao tRNA com consumo de ATP" width="500">
 </p>
 <p align="justify"><em>
 Aminoacil-tRNA sintetases ligam o aminoácido correto ao tRNA cognato usando ATP (ATP → AMP + PPi; custo ~2 ligações de alta energia) e possuem mecanismos de edição.
