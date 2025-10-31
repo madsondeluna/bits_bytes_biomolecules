@@ -216,7 +216,7 @@ A ligação peptídica sob outra óptica.
 ### Interações Intermoleculares 
 
 <p align="justify">
-  <img src="imgs/aainteractions.png" alt="Matriz de interações de aminoácidos" width="1000">
+  <img src="imgs/aainteractions.png" alt="Matriz de interações de aminoácidos" width="800">
 </p>
 <p align="justify">
 <em>O gráfico mostra a matriz dos aminoácidos naturais: círculos azuis maiores indicam interações mais fortes. Fonte: Cambridge MedChem Consulting, 2025.</em>
