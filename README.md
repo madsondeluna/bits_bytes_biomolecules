@@ -50,7 +50,9 @@ Em biologia molecular, a estabilidade de um sistema é descrita pela **energia l
 * **ΔH < 0 (Exotérmica):** A reação libera calor para o ambiente.
 * **ΔH > 0 (Endotérmica):** A reação absorve calor do ambiente.
 
-> Talvez esse exemplo ajude a pensar melhor:
+A relação entre G, H e S (Entropia) é dada pela equação: **ΔG = ΔH - TΔS**. A entropia (ΔS) mede o grau de aleatoriedade ou desordem de um sistema.
+
+Talvez esse exemplo ajude a pensar melhor:
 
 <p align="justify">
   <img src="imgs/ts-th.png" alt="Representação do Delta G" width="700">
@@ -59,7 +61,7 @@ Em biologia molecular, a estabilidade de um sistema é descrita pela **energia l
 <em>Fonte: Dong, Y., et al., 2025</em>
 </p>
 
-A relação entre G, H e S (Entropia) é dada pela equação: **ΔG = ΔH - TΔS**. A entropia (ΔS) mede o grau de aleatoriedade ou desordem de um sistema.
+---
 
 ### O Paradoxo de Levinthal
 Formulado por Cyrus Levinthal, este paradoxo destaca a impossibilidade de o enovelamento ocorrer por uma busca aleatória. Ele calculou que uma proteína levaria mais tempo que a idade do universo para testar todas as suas conformações possíveis. Isso demonstra que o enovelamento não é um processo aleatório, mas sim um processo altamente direcionado que segue "caminhos" ou "rotas" específicas, otimizadas ao longo da evolução, para atingir o estado nativo em uma escala de tempo biologicamente viável.
