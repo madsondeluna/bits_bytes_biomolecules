@@ -217,10 +217,10 @@ Ou seja: é predição supervisionada, não simulação físico-química do cami
 A **estrutura secundária** refere-se aos arranjos locais e regulares da cadeia polipeptídica, estabilizados por um padrão de pontes de hidrogênio entre os átomos do esqueleto peptídico (N-H e C=O).
 
 <p align="justify">
-  <img src="imgs/strucutures-configuration.png alt="XXXXXXXX" width="700">
+  <img src="imgs/strucutures-configuration.png" alt="XXXXXXXX" width="700">
 </p>
 <p align="justify">
-<em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham. (Descreva aqui o que a imagem mostra).</em>
+<em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
 </p>
 
 | Estrutura | Descrição e Características |
@@ -242,7 +242,7 @@ As alças são frequentemente classificadas por seu comprimento e geometria. Os 
   <img src="imgs/loop.png" alt="XXXXXXXX" width="700">
 </p>
 <p align="justify">
-<em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham. (Descreva aqui o que a imagem mostra).</em>
+<em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
 </p>
 
 ### Fitas e Folhas Beta
@@ -255,7 +255,7 @@ Quando múltiplas fitas β se associam lateralmente através de ligações de hi
   <img src="imgs/beta-shet.png" alt="XXXXXXXX" width="700">
 </p>
 <p align="justify">
-<em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham. (Descreva aqui o que a imagem mostra).</em>
+<em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
 </p>
 
 ### Estruturas Helicoidais em Proteínas
@@ -268,7 +268,7 @@ Além da α-hélice, existem outras conformações helicoidais menos frequentes.
   <img src="imgs/helix.png" alt="XXXXXXXX" width="700">
 </p>
 <p align="justify">
-<em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham. (Descreva aqui o que a imagem mostra).</em>
+<em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
 </p>
 
 ### α-Hélice: Um Fóssil Estrutural
@@ -325,7 +325,7 @@ Ao abordar as interações entre aminoácidos, a ligação primordial e mais for
   <img src="imgs/pep-bond.png" alt="XXXXXXXX" width="700">
 </p>
 <p align="justify">
-<em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham. (Descreva aqui o que a imagem mostra).</em>
+<em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
 </p>
 
 A ligação peptídica sob outra óptica. 
@@ -334,10 +334,17 @@ A ligação peptídica sob outra óptica.
   <img src="imgs/pep-bond2.png" alt="XXXXXXXX" width="700">
 </p>
 <p align="justify">
-<em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham. (Descreva aqui o que a imagem mostra).</em>
+<em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
 </p>
 
 A combinação de elementos de estrutura secundária forma **motivos supersecundários**, os blocos de construção dos **domínios** proteicos (regiões que se enovelam e funcionam de forma independente).
+
+<p align="justify">
+  <img src="imgs/prot-diverity" alt="XXXXXXXX" width="700">
+</p>
+<p align="justify">
+<em>Fonte: Esther Braselmann, E., et al., 2013.</em>
+</p>
 
 | Motivo | Descrição | Função/Exemplos |
 |:---|:---|:---|
