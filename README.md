@@ -391,7 +391,7 @@ A combinação de elementos de estrutura secundária forma **motivos secundário
 
 
 <p align="justify">
-  <img src="imgs/motifs-domains.png" alt="XXXXXXXX" width="1000">
+  <img src="imgs/motifs-domains.png" alt="XXXXXXXX" width="800">
 </p>
 <p align="justify">
 <em>Fonte: Elliott J. Stollar & David P. Smith, 2020.</em>
