@@ -26,7 +26,7 @@ Link para o na versão web: <a href="https://madsondeluna.github.io/bits_bytes_b
 <p align="left"><strong>— Richard Lewontin (1929-2021)</strong></p>
 
 <figure class="figure-center">
-  <img src="imgs/folding-funnel.gif" alt="DreamFold" width="500">
+  <img src="imgs/folding-funnel.gif" alt="DreamFold" width="700">
 </figure>
 
 ---
