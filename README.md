@@ -10,7 +10,7 @@
 
 **Portfólio:** <a href="https://madsondeluna.github.io/" target="_blank" rel="noopener noreferrer">https://madsondeluna.github.io/</a>
 
-**Códigos/Projetos:** <a href="https://github.com/madsondeluna" target="_blank" rel="noopener noreferrer">https://github.com/madsondeluna</a>
+**Projetos:** <a href="https://github.com/madsondeluna" target="_blank" rel="noopener noreferrer">https://github.com/madsondeluna</a>
 
 ---
 
@@ -20,8 +20,8 @@ Este repositório contém o material de referência completo para o curso, inclu
 
 ## Take Home Messages
 
-> "We estimate that if a protein were to fold by randomly trying all possible conformations, it would require a time longer than the age of the universe to arrive at its correct native structure."  
-> <p align="left"><strong>— Richard Lewontin</strong></p>
+"We estimate that if a protein were to fold by randomly trying all possible conformations, it would require a time longer than the age of the universe to arrive at its correct native structure."  
+<p align="left"><strong>— Richard Lewontin (1929-2021)</strong></p>
 
 ---
 
@@ -427,7 +427,7 @@ O Paradoxo de Levinthal trata do Problema 2 (`a cinética`).
   <img src="imgs/lewontin.png" alt="Richard Lewontin at the chalkboard" width="1000">
 </p>
 <p align="justify">
-<em>Fonte: Richard Lewontin (1929-2021) na lousa. Parece que ele está explicando a interação e inseparabilidade do genótipo e do ambiente.</em>
+<em>Fonte: Richard Lewontin (1929-2021) na lousa. Explicando a interação e inseparabilidade do genótipo e do ambiente.</em>
 </p>
 
 ---
