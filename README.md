@@ -241,9 +241,13 @@ A ligação peptídica sob outra óptica.
 | Forças de van der Waals | 3.5–4.0 | Flutuações de dipolos instantâneos | Todos os resíduos, crucial no empacotamento do núcleo |
 | Interação Cátion-π | 3.5–5.0 | Eletrostática entre um cátion e um anel aromático | Arg, Lys com Phe, Tyr, Trp |
 
-[IMAGENS DE INTERACOES ENTRE AAs]
 
-[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+<p align="justify">
+  <img src="imgs/pep-interactions.png" alt="XXXXXXXX" width="1000">
+</p>
+<p align="justify">
+<em>Fonte: Luna-Aragão, M.A., 2025.</em>
+</p>
 
 ---
 
