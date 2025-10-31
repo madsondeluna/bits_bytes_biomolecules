@@ -31,7 +31,7 @@ Link para o na versão web: <a href="https://madsondeluna.github.io/bits_bytes_b
 
 ---
 
-## O Início de Tudo - O Dogma Central da Biologia Molecular
+## O Dogma Central da Biologia Molecular
 
 O Dogma Central da Biologia Molecular descreve o fluxo fundamental da informação genética: o DNA é transcrito em RNA, e o RNA é traduzido em proteína. Esse modelo, proposto por Francis Crick, estabelece a base conceitual sobre como as instruções genéticas são convertidas em função biológica. Assim, o dogma central reúne o grande conjunto de processos canônicos, replicação, transcrição e tradução, que sustentam a herança e a expressão gênica em todos os organismos vivos. No entanto, à medida que a biologia molecular avançou, tornou-se evidente que esses processos estão longe de ser lineares ou simples. Cada etapa do dogma central é regulada por uma imensa rede de mecanismos que modulam a eficiência, a precisão e o contexto da expressão gênica. Fatores como modificações epigenéticas, splicing alternativo, estruturas secundárias de RNA, metilação, interações com proteínas e a ação de pequenos RNAs adicionam camadas de controle que permitem respostas dinâmicas às condições celulares e ambientais. Portanto, embora o dogma central represente o esqueleto conceitual do fluxo de informação genética, é nas suas regulações não canônicas, sutis, versáteis e altamente específicas — que a vida adquire sua complexidade e capacidade de adaptação. 
 
