@@ -48,10 +48,10 @@ Nos modelos didáticos e nas representações clássicas da biologia molecular, 
 ### Exemplos: 
 
 - **Internal Ribosome Entry Sites (IRES):**  
-  <p align="justify">Os IRES são estruturas de RNA localizadas principalmente na região 5’-UTR que permitem a iniciação da tradução de forma independente da estrutura de cap. Elas recrutam diretamente o ribossomo ao mRNA, um mecanismo crucial em condições de estresse celular, quando a tradução dependente do cap é inibida.</p>
+  Os IRES são estruturas de RNA localizadas principalmente na região 5’-UTR que permitem a iniciação da tradução de forma independente da estrutura de cap. Elas recrutam diretamente o ribossomo ao mRNA, um mecanismo crucial em condições de estresse celular, quando a tradução dependente do cap é inibida.
 
 - **5’Cap *Hijacking*:**  
-  <p align="justify">Alguns vírus e elementos genéticos móveis exploram o chamado *cap hijacking*, um processo em que o sistema de tradução da célula hospedeira é sequestrado. O RNA viral utiliza ou mimetiza a estrutura de cap do mRNA eucariótico para garantir sua própria tradução, competindo eficientemente com os mRNAs celulares.</p>
+  Alguns vírus e elementos genéticos móveis exploram o chamado *cap hijacking*, um processo em que o sistema de tradução da célula hospedeira é sequestrado. O RNA viral utiliza ou mimetiza a estrutura de cap do mRNA eucariótico para garantir sua própria tradução, competindo eficientemente com os mRNAs celulares.
 
 
 <p align="justify">
@@ -70,10 +70,10 @@ Nos modelos didáticos e nas representações clássicas da biologia molecular, 
 
 ### 1) O Código Genético (O Filho Degenerado da Natureza)
 
-<p align="justify">
-  <img src="imgs/imgs/gene-codeeeeeee.png" alt="Roda do código genético: leitura 5'→3' do mRNA" width="1000">
+<p align="center">
+  <img src="imgs/gene-codeeeeeee.png" alt="Roda do código genético: leitura 5'→3' do mRNA" width="800">
 </p>
-<p align="justify"><em>
+<p align="center"><em>
 Leitura do mRNA (5'→3') do centro para a borda até o aminoácido correspondente. AUG codifica Met (início); UAA/UAG/UGA são códons de parada. Fonte: Christopher R. Donohue (NIH, 2025).
 </em></p>
 
