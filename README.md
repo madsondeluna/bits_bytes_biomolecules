@@ -487,7 +487,7 @@ O resultado é:
 ##### Escala de Tempo Física
 
 $$
-t \sim \tau \times \exp\!\big(C \cdot L^{2/3}\big)
+t \sim \tau \times \big(C \cdot L^{2/3}\big)
 $$
 
 Onde:  
