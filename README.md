@@ -25,6 +25,13 @@ Link para o na versão web: <a href="https://madsondeluna.github.io/bits_bytes_b
 *"We estimate that if a protein were to fold by randomly trying all possible conformations, it would require a time longer than the age of the universe to arrive at its correct native structure."* 
 <p align="left"><strong>— Richard Lewontin (1929-2021)</strong></p>
 
+<p align="justify">
+  <img src="imgs/dreamfold.gif" alt="XXXXXXXX" width="1000">
+</p>
+<p align="justify">
+  <em>Fonte: DreamFold, 2025.</em>
+</p>
+
 ---
 
 ## Antes de Tudo: O Dogma Central da Biologia Molecular
