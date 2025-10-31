@@ -24,7 +24,14 @@
 
 ## Antes de Tudo: O Dogma Central da Biologia Molecular
 
-XXXXXXXX
+<p align="justify"> O Dogma Central da Biologia Molecular descreve o fluxo fundamental da informação genética: o DNA é transcrito em RNA, e o RNA é traduzido em proteína. Esse modelo, proposto por Francis Crick, estabelece a base conceitual sobre como as instruções genéticas são convertidas em função biológica. Assim, o dogma central reúne o grande conjunto de processos **canônicos** — replicação, transcrição e tradução — que sustentam a herança e a expressão gênica em todos os organismos vivos. </p> <p align="justify"> No entanto, à medida que a biologia molecular avançou, tornou-se evidente que esses processos estão longe de ser lineares ou simples. Cada etapa do dogma central é regulada por uma imensa rede de mecanismos que modulam a eficiência, a precisão e o contexto da expressão gênica. Fatores como modificações epigenéticas, splicing alternativo, estruturas secundárias de RNA, metilação, interações com proteínas e a ação de pequenos RNAs adicionam camadas de controle que permitem respostas dinâmicas às condições celulares e ambientais. </p> <p align="justify"> Portanto, embora o dogma central represente o esqueleto conceitual do fluxo de informação genética, é nas suas **regulações não canônicas** — sutis, versáteis e altamente específicas — que a vida adquire sua complexidade e capacidade de adaptação. </p>
+
+<p align="justify">
+  <img src="imgs/dogma-central.png" alt="O Dogma Central e a Diversidade Funcional do RNA" width="700">
+</p>
+<p align="justify">
+  <strong>Figura.</strong> Representação expandida do Dogma Central da Biologia Molecular. O DNA é transcrito em diferentes classes de RNA, incluindo os RNAs clássicos envolvidos na tradução — como o mRNA, tRNA e rRNA —, que juntos participam da síntese proteica. No entanto, a transcrição também gera uma ampla variedade de RNAs não codificantes (ncRNAs), tanto curtos (<200 pb) quanto longos (>200 pb), que desempenham papéis fundamentais na regulação gênica, remodelamento da cromatina, splicing e degradação de RNA. Além disso, alguns vírus utilizam a transcrição reversa para converter RNA em DNA, revelando a flexibilidade e complexidade do fluxo de informação genética. Fonte: Nicolás Delgado Pease, BioRender.
+</p>
 
 ---
 
@@ -35,10 +42,10 @@ XXXXXXXX
 ### Exemplos: 
 
 - **Internal Ribosome Entry Sites (IRES):**  
-  Os IRES são estruturas de RNA localizadas principalmente na região 5’-UTR que permitem a iniciação da tradução de forma independente da estrutura de cap. Elas recrutam diretamente o ribossomo ao mRNA, um mecanismo crucial em condições de estresse celular, quando a tradução dependente do cap é inibida.
+  <p align="justify">Os IRES são estruturas de RNA localizadas principalmente na região 5’-UTR que permitem a iniciação da tradução de forma independente da estrutura de cap. Elas recrutam diretamente o ribossomo ao mRNA, um mecanismo crucial em condições de estresse celular, quando a tradução dependente do cap é inibida.</p>
 
 - **5’ Cap Hijacking:**  
-  Alguns vírus e elementos genéticos móveis exploram o chamado *cap hijacking*, um processo em que o sistema de tradução da célula hospedeira é sequestrado. O RNA viral utiliza ou mimetiza a estrutura de cap do mRNA eucariótico para garantir sua própria tradução, competindo eficientemente com os mRNAs celulares.
+  <p align="justify">Alguns vírus e elementos genéticos móveis exploram o chamado *cap hijacking*, um processo em que o sistema de tradução da célula hospedeira é sequestrado. O RNA viral utiliza ou mimetiza a estrutura de cap do mRNA eucariótico para garantir sua própria tradução, competindo eficientemente com os mRNAs celulares.</p>
 
 
 <p align="justify">
@@ -56,7 +63,7 @@ XXXXXXXX
 
 ### Como Surgem as Proteínas?
 
-No contexto biológico da síntese proteica (tradução), este processo é energeticamente custoso, consumindo energia (na forma de ATP e GTP) para a ativação dos aminoácidos. Esta ativação ocorre através da ligação covalente entre cada aminoácido e seu tRNA cognato (complementar), catalisada pelas aminoacil-tRNA sintetases, enzimas altamente específicas que reconhecem tanto o aminoácido quanto seu tRNA correspondente. Uma vez formado o aminoacil-tRNA, este complexo é direcionado ao ribossomo para participar da tradução. A formação da ligação peptídica em si é catalisada pelo ribossomo, especificamente pela atividade peptidil transferase, uma função catalítica intrínseca ao RNA ribossômico (rRNA) localizado na subunidade maior. Este mecanismo transfere a cadeia polipeptídica crescente do tRNA localizado no sítio P (Peptidil) para o grupo amino do novo aminoácido que está ligado ao seu tRNA no sítio A (Aminoacil), permitindo assim a elongação da cadeia polipeptídica.
+<p align="justify">No contexto biológico da síntese proteica (tradução), este processo é energeticamente custoso, consumindo energia (na forma de ATP e GTP) para a ativação dos aminoácidos. Esta ativação ocorre através da ligação covalente entre cada aminoácido e seu tRNA cognato (complementar), catalisada pelas aminoacil-tRNA sintetases, enzimas altamente específicas que reconhecem tanto o aminoácido quanto seu tRNA correspondente. Uma vez formado o aminoacil-tRNA, este complexo é direcionado ao ribossomo para participar da tradução. A formação da ligação peptídica em si é catalisada pelo ribossomo, especificamente pela atividade peptidil transferase, uma função catalítica intrínseca ao RNA ribossômico (rRNA) localizado na subunidade maior. Este mecanismo transfere a cadeia polipeptídica crescente do tRNA localizado no sítio P (Peptidil) para o grupo amino do novo aminoácido que está ligado ao seu tRNA no sítio A (Aminoacil), permitindo assim a elongação da cadeia polipeptídica.</p>
 
 <p align="justify">
   <img src="imgs/ribo.png" alt="XXXXX" width="700">
@@ -65,7 +72,7 @@ No contexto biológico da síntese proteica (tradução), este processo é energ
 <em>Fonte: Amy McDermott, 2024.</em>
 </p>
 
-Ao abordar as interações entre aminoácidos, a ligação primordial e mais forte, que estabelece a estrutura primária de uma proteína, é a ligação peptídica. Esta ligação covalente é formada pela união do grupo α-carboxila de um aminoácido ao grupo α-amino do aminoácido subsequente, caracterizando uma reação de condensação (ou desidratação) na qual uma molécula de água (H₂O) é liberada. 
+<p align="justify">Ao abordar as interações entre aminoácidos, a ligação primordial e mais forte, que estabelece a estrutura primária de uma proteína, é a ligação peptídica. Esta ligação covalente é formada pela união do grupo α-carboxila de um aminoácido ao grupo α-amino do aminoácido subsequente, caracterizando uma reação de condensação (ou desidratação) na qual uma molécula de água (H₂O) é liberada.</p>
 
 <p align="justify">
   <img src="imgs/pep-bond.png" alt="XXXXXXXX" width="700">
@@ -114,7 +121,7 @@ A ligação peptídica sob outra óptica.
 <em>O gráfico mostra a matriz dos aminoácidos naturais: círculos azuis maiores indicam interações mais fortes. Fonte: Cambridge MedChem Consulting, 2025.</em>
 </p>
 
-O PDB contém muitos exemplos de interações entre aminoácidos. Embora existam interações específicas bem documentadas (aminoácidos básicos com carga positiva se ligam a aminoácidos ácidos com carga negativa), não havia visto um estudo sistemático de todas as combinações de aminoácidos, por isso, o trabalho de [Andrew White](https://crowsandcats.blogspot.com/2012/03/amino-acid-interactions.html) é notável, pois ele contou sistematicamente o número de interações entre cada par de tipos de aminoácidos e, em seguida, converteu essas contagens em energias de interação. 
+<p align="justify">O PDB contém muitos exemplos de interações entre aminoácidos. Embora existam interações específicas bem documentadas (aminoácidos básicos com carga positiva se ligam a aminoácidos ácidos com carga negativa), não havia visto um estudo sistemático de todas as combinações de aminoácidos, por isso, o trabalho de [Andrew White](https://crowsandcats.blogspot.com/2012/03/amino-acid-interactions.html) é notável, pois ele contou sistematicamente o número de interações entre cada par de tipos de aminoácidos e, em seguida, converteu essas contagens em energias de interação.</p>
 
 | Interação | Distância (Å) | Natureza da Força | Aminoácidos Frequentes |
 |:---|:---:|:---|:---|
