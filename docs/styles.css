@@ -7,6 +7,39 @@ header h1{margin:0;font-size:1.4rem}
 main{max-width:var(--max-width);margin:24px auto;padding:0 20px}
 /* Justifica todos os parágrafos renderizados do README */
 main p{ text-align:justify; margin:0 0 1em 0 }
+
+/* Forçar justificação em elementos textuais comuns (exceto código/pre e imagens) */
+#content,
+#content p,
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6,
+#content li,
+#content blockquote,
+#content dd,
+#content dt,
+#content figcaption,
+#content caption {
+	text-align: justify;
+	text-justify: inter-word;
+	/* Ajuste da última linha: use 'left' para comportamento mais comum ou 'justify' para forçar justificação também na última linha */
+	text-align-last: left;
+}
+
+/* Não justificar blocos de código nem inline code */
+#content pre,
+#content code,
+#content kbd,
+#content samp {
+	text-align: left;
+	white-space: pre; /* preserva formatação */
+}
+
+/* Garantir que células de tabela fiquem legíveis */
+th, td{ text-align:left }
 main h2, main h3, main h4{margin-top:1.2em}
 main pre, main code{font-family:SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;background:#f6f8fa;padding:6px;border-radius:4px}
 img{max-width:100%;height:auto}
