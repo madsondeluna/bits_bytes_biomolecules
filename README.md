@@ -38,7 +38,7 @@
     - [Alças](#alças)
     - [Fitas e Folhas Beta](#fitas-e-folhas-beta)
     - [Estruturas Helicoidais em Proteínas](#estruturas-helicoidais-em-proteínas)
-    - [Motivos e Domínios Estrturais](#motivos-e-domínios-estrturais)
+    - [Como Surgem as Proteínas \& Motivos e Domínios Estrturais](#como-surgem-as-proteínas--motivos-e-domínios-estrturais)
     - [Propriedades dos Aminoácidos Canônicos](#propriedades-dos-aminoácidos-canônicos)
     - [Interações Intermoleculares](#interações-intermoleculares)
     - [Ferramentas e Bancos de Dados Essenciais](#ferramentas-e-bancos-de-dados-essenciais)
@@ -328,7 +328,7 @@ Além da α-hélice, existem outras conformações helicoidais menos frequentes.
 
 ---
 
-### Motivos e Domínios Estrturais
+### Como Surgem as Proteínas & Motivos e Domínios Estrturais
 
 No contexto biológico da síntese proteica (tradução), este processo é energeticamente custoso, consumindo energia (na forma de ATP e GTP) para a ativação dos aminoácidos. Esta ativação ocorre através da ligação covalente entre cada aminoácido e seu tRNA cognato (complementar), catalisada pelas aminoacil-tRNA sintetases, enzimas altamente específicas que reconhecem tanto o aminoácido quanto seu tRNA correspondente. Uma vez formado o aminoacil-tRNA, este complexo é direcionado ao ribossomo para participar da tradução. A formação da ligação peptídica em si é catalisada pelo ribossomo, especificamente pela atividade peptidil transferase, uma função catalítica intrínseca ao RNA ribossômico (rRNA) localizado na subunidade maior. Este mecanismo transfere a cadeia polipeptídica crescente do tRNA localizado no sítio P (Peptidil) para o grupo amino do novo aminoácido que está ligado ao seu tRNA no sítio A (Aminoacil), permitindo assim a elongação da cadeia polipeptídica.
 
