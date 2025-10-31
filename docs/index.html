@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bits, Bytes e Biomoléculas — Versão formatada</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Bits, Bytes e Biomoléculas — Versão formatada</h1>
+    <p class="muted">Esta página carrega o `README.md` do repositório e aplica estilo (justificado) e renderização de matemática via MathJax.</p>
+    <p class="muted">Se preferir ver o arquivo bruto, abra <a href="../README.md">README.md</a>.</p>
+  </header>
+
+  <main id="content">Carregando conteúdo do README.md…</main>
+
+  <footer>
+    <p class="muted">Gerado automaticamente. Ative o GitHub Pages (source: <code>main</code> / <code>docs/</code>) para visualizar em <code>https://madsondeluna.github.io/bits_bytes_biomolecules/</code>.</p>
+  </footer>
+
+  <!-- Biblioteca para converter Markdown -> HTML -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <!-- Configuração do MathJax para processar $...$ e $$...$$ -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$']]
+      },
+      options: {
+        skipHtmlTags: ['script','noscript','style','textarea','pre']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+  <script>
+    // Puxa o README.md bruto do GitHub e renderiza
+    async function renderReadme(){
+      const rawUrl = 'https://raw.githubusercontent.com/madsondeluna/bits_bytes_biomolecules/main/README.md';
+      try{
+        const res = await fetch(rawUrl);
+        if(!res.ok) throw new Error('Não foi possível obter README.md: ' + res.status);
+        const md = await res.text();
+
+        // Converte Markdown para HTML
+        const html = marked.parse(md, {gfm:true, breaks:true});
+
+        // Insere no DOM
+        const container = document.getElementById('content');
+        container.innerHTML = html;
+
+        // Após inserir, pede ao MathJax para renderizar fórmulas
+        if(window.MathJax && MathJax.typesetPromise){
+          MathJax.typesetPromise();
+        }
+      }catch(e){
+        document.getElementById('content').textContent = 'Erro ao carregar README.md: ' + e.message;
+      }
+    }
+    renderReadme();
+  </script>
+</body>
+</html>

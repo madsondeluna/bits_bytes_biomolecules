@@ -16,6 +16,14 @@
 
 ---
 
+Nota rápida: se você quer ver esta mesma documentação com parágrafos justificados e fórmulas matemáticas renderizadas (KaTeX/MathJax), ative o GitHub Pages para a pasta `docs/` (veja instruções abaixo) e acesse:
+
+> https://madsondeluna.github.io/bits_bytes_biomolecules/
+
+Isso não altera o `README.md` original: a pasta `docs/` contém uma página que carrega o `README.md` bruto e aplica estilo + MathJax para exibir corretamente caracteres especiais e equações.
+
+---
+
 ## Sumário
 
 [ADD UM ATUALIZADO NO FINAL COMO OUTLINE DA AULA]
