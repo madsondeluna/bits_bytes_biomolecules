@@ -14,7 +14,7 @@
 
 ---
 
-Este repositório contém o material de referência completo para o curso, incluindo conceitos fundamentais, guias de ferramentas e leituras recomendadas. Qualquer sugestão ou feedback pode ser encaminhar uma mensagem para madsondeluna@gmail.com ou saulo.rmpenna@ufpe.br. 
+Este repositório contém o material de referência completo para o curso, incluindo conceitos fundamentais, guias de ferramentas e leituras recomendadas. Qualquer sugestão ou feedback pode ser encaminhar uma mensagem para madsondeluna@gmail.com. 
 
 Link para o na versão web: <a href="https://madsondeluna.github.io/bits_bytes_biomolecules/" target="_blank" rel="noopener noreferrer">Bits, Bytes e Biomoléculas: Introdução à Modelagem de Proteínas com Métodos Clássicos e de Aprendizado de Máquina</a>
 
