@@ -389,18 +389,6 @@ Do ponto de vista estrutural, esse conjunto pré-biótico era intrinsecamente te
 
 A combinação de elementos de estrutura secundária forma **motivos secundários, terciários e quaternários**, os blocos de construção dos **domínios** proteicos (regiões que se enovelam e funcionam de forma independente).
 
-<p align="justify">
-  <img src="imgs/prot-divertisy.png" alt="XXXXXXXX" width="1000">
-</p>
-<p align="justify">
-<em>Fonte: Braselmann, E., et al., 2013.</em>
-</p>
-
-| Motivo | Descrição | Função/Exemplos |
-|:---|:---|:---|
-| **Hélice-Alça-Hélice** | Duas α-hélices conectadas por uma alça. | Comum em fatores d
-
----
 
 <p align="justify">
   <img src="imgs/motifs-domains.png" alt="XXXXXXXX" width="1000">
@@ -409,16 +397,10 @@ A combinação de elementos de estrutura secundária forma **motivos secundário
 <em>Fonte: Elliott J. Stollar & David P. Smith, 2020.</em>
 </p>
 
----
 
-<figure class="figure-center">
-  <img src="imgs/motifs-domains.png" alt="XXXXXXXX" width="700">
-  <figcaption><em>Fonte: Elliott J. Stollar & David P. Smith, 2020.</em></figcaption>
-</figure>
-
----
-
-e transcrição que se ligam ao DNA. |
+| Motivo | Descrição | Função/Exemplos |
+|:---|:---|:---|
+| **Hélice-Alça-Hélice** | Duas α-hélices conectadas por uma alça. | Comum em fatores de transcrição que se ligam ao DNA. |
 | **Forquilha-β (β-hairpin)** | Duas fitas-β antiparalelas conectadas por uma volta-β curta. | Um dos motivos mais simples e comuns. |
 | **Motivo β-α-β** | Duas fitas-β paralelas conectadas por uma α-hélice. | Componente central de muitas dobras, como o *Rossmann fold*. |
 | **Barril-β** | Uma grande folha-β que se fecha sobre si mesma, formando um cilindro. | Característico de porinas de membrana. |
