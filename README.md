@@ -24,12 +24,6 @@
   - [O Paradoxo de Levinthal](#o-paradoxo-de-levinthal)
 - [Módulo 1: Fundamentos da Sequência e Estrutura Proteica](#módulo-1-fundamentos-da-sequência-e-estrutura-proteica)
   - [Estrutura Secundária: Os Pilares da Arquitetura Proteica](#estrutura-secundária-os-pilares-da-arquitetura-proteica)
-  - [$\alpha$-Hélice: Um Fóssil Estrutural](#α-hélice-um-fóssil-estrutural)
-  - [Everything in its Right Place? Talvez o Radiohead estivesse certo esse tempo todos!](#everything-in-its-right-place-talvez-o-radiohead-estivesse-certo-esse-tempo-todos)
-  - [O Repertório Pré-biótico e Propensões Conformacionais](#o-repertório-pré-biótico-e-propensões-conformacionais)
-  - [Estabilidade Termodinâmica](#estabilidade-termodinâmica)
-  - [A Interface Peptídeo-Membrana](#a-interface-peptídeo-membrana)
-  - [Síntese e Análise Contemporânea](#síntese-e-análise-contemporânea)
   - [Motivos Supersecundários e Domínios Proteicos](#motivos-supersecundários-e-domínios-proteicos)
   - [Propriedades dos Aminoácidos Canônicos](#propriedades-dos-aminoácidos-canônicos)
   - [Interações Intermoleculares Estabilizadoras](#interações-intermoleculares-estabilizadoras)
@@ -216,13 +210,6 @@ Ou seja: é predição supervisionada, não simulação físico-química do cami
 
 A **estrutura secundária** refere-se aos arranjos locais e regulares da cadeia polipeptídica, estabilizados por um padrão de pontes de hidrogênio entre os átomos do esqueleto peptídico (N-H e C=O).
 
-<p align="justify">
-  <img src="imgs/strucutures-configuration.png" alt="XXXXXXXX" width="700">
-</p>
-<p align="justify">
-<em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
-</p>
-
 | Estrutura | Descrição e Características |
 |:---|:---|
 | **α-Hélice** | Estrutura helicoidal, geralmente dextrogira. Estabilizada por pontes de hidrogênio **intracadeia** entre o resíduo *i* e o *i+4*. Contém **3.6 resíduos por volta**. |
@@ -231,6 +218,13 @@ A **estrutura secundária** refere-se aos arranjos locais e regulares da cadeia 
 | **Fita-β** | Um segmento quase totalmente estendido da cadeia polipeptídica. Isolada, é instável. |
 | **Folha-β** | Formada pela associação de duas ou mais **fitas-β** adjacentes, estabilizadas por pontes de hidrogênio **intercadeias**. Podem ser **paralelas** ou **antiparalelas**. |
 | **Voltas e Alças** | Regiões não repetitivas que conectam elementos de estrutura secundária. **Voltas-β** são curtas (4 resíduos) e causam uma reversão de 180°. |
+
+<p align="justify">
+  <img src="imgs/strucutures-configuration.png" alt="XXXXXXXX" width="700">
+</p>
+<p align="justify">
+<em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
+</p>
 
 ### Alças 
 
