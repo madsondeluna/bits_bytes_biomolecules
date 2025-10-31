@@ -49,3 +49,17 @@ footer{padding:12px 20px;background:#fafafa;border-top:1px solid #eee;color:var(
 table{border-collapse:collapse;width:100%;margin:12px 0}
 th, td{border:1px solid #ddd;padding:8px}
 blockquote{margin:0 0 1em 0;padding-left:12px;border-left:4px solid #eee;color:#444}
+
+/* Centralizar figuras/legendas e imagens inline */
+.figure-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;   /* centraliza horizontalmente */
+	text-align: center;    /* centraliza texto da legenda */
+	margin: 1em 0;
+}
+.figure-center img { max-width: 100%; height: auto; }
+
+/* Suporte rápido para centralizar imagens geradas em Markdown (parágrafo com classe) */
+p.center-img { display:flex; justify-content:center; margin:1em 0 }
+
