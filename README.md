@@ -16,44 +16,6 @@
 
 ---
 
-## Sumário
-
-- [O Desafio Central: O Enovelamento de Proteínas](#o-desafio-central-o-enovelamento-de-proteínas)
-  - [A Paisagem Energética: O Funil de Enovelamento](#a-paisagem-energética-o-funil-de-enovelamento)
-  - [A Lógica da Energia em Bioquímica](#a-lógica-da-energia-em-bioquímica)
-  - [O Paradoxo de Levinthal](#o-paradoxo-de-levinthal)
-- [Módulo 1: Fundamentos da Sequência e Estrutura Proteica](#módulo-1-fundamentos-da-sequência-e-estrutura-proteica)
-  - [Estrutura Secundária: Os Pilares da Arquitetura Proteica](#estrutura-secundária-os-pilares-da-arquitetura-proteica)
-  - [Motivos Supersecundários e Domínios Proteicos](#motivos-supersecundários-e-domínios-proteicos)
-  - [Propriedades dos Aminoácidos Canônicos](#propriedades-dos-aminoácidos-canônicos)
-  - [Interações Intermoleculares Estabilizadoras](#interações-intermoleculares-estabilizadoras)
-  - [Ferramentas e Bancos de Dados Essenciais](#ferramentas-e-bancos-de-dados-essenciais)
-- [Módulo 2: Técnicas Clássicas de Modelagem Molecular](#módulo-2-técnicas-clássicas-de-modelagem-molecular)
-  - [Uma Nota Crucial: Identidade vs. Similaridade de Sequência](#uma-nota-crucial-identidade-vs-similaridade-de-sequência)
-  - [1. Modelagem por Homologia (Modelagem Comparativa)](#1-modelagem-por-homologia-modelagem-comparativa)
-  - [2. Threading (Reconhecimento de Dobra)](#2-threading-reconhecimento-de-dobra)
-  - [3. Modelagem Ab Initio](#3-modelagem-ab-initio)
-- [Módulo 3: A Revolução do Aprendizado de Máquina e a Nova Era da Biologia Estrutural](#módulo-3-a-revolução-do-aprendizado-de-máquina-e-a-nova-era-da-biologia-estrutural)
-  - [Contexto Histórico: A Longa Estrada do CASP e a Promessa do AlphaFold 1](#contexto-histórico-a-longa-estrada-do-casp-e-a-promessa-do-alphafold-1)
-  - [O Ponto de Inflexão: AlphaFold 2 e o "Problema Resolvido? Nem tanto"](#o-ponto-de-inflexão-alphafold-2-e-o-problema-resolvido-nem-tanto)
-  - [A Próxima Geração: AlphaFold 3 e o Paradoxo do Código Fechado](#a-próxima-geração-alphafold-3-e-o-paradoxo-do-código-fechado)
-  - [Comparativo de Ferramentas de Aprendizado de Máquina](#comparativo-de-ferramentas-de-aprendizado-de-máquina)
-- [Métodos Clássicos vs. Métodos de ML/DL? Quando usar?](#métodos-clássicos-vs-métodos-de-mldl-quando-usar)
-  - [Extra 1: Estudando a Dinâmica e Variações Estruturais](#extra-1-estudando-a-dinâmica-e-variações-estruturais)
-  - [Extra 2: Modelagem de Sítios Ativos com Ligantes e Cofatores](#extra-2-modelagem-de-sítios-ativos-com-ligantes-e-cofatores)
-  - [Extra 3: Design de Proteínas (De Novo)](#extra-3-design-de-proteínas-de-novo)
-  - [Extra 4: Velocidade, Acessibilidade e Recursos Computacionais](#extra-4-velocidade-acessibilidade-e-recursos-computacionais)
-  - [Tabela Resumo: Quando Usar Qual Ferramenta?](#tabela-resumo-quando-usar-qual-ferramenta)
-- [Módulo 4: Análise, Validação e Interpretação de Modelos Estruturais](#módulo-4-análise-validação-e-interpretação-de-modelos-estruturais)
-  - [Ferramentas de Visualização Molecular](#ferramentas-de-visualização-molecular)
-  - [Análise Comparativa: RMSD e sua Importância](#análise-comparativa-rmsd-e-sua-importância)
-  - [Servidores de Validação de Estrutura](#servidores-de-validação-de-estrutura)
-  - [Métricas Chave de Validação Explicadas](#métricas-chave-de-validação-explicadas)
-- [Módulo 5: Da Estrutura à Função: Aplicações Práticas de Modelos Validados](#módulo-5-da-estrutura-à-função-aplicações-práticas-de-modelos-validados)
-- [Referências e Leituras Recomendadas](#referências-e-leituras-recomendadas)
-
----
-
 ## O Desafio Central: O Enovelamento de Proteínas
 
 O problema do enovelamento de proteínas, como uma cadeia polipeptídica linear atinge sua complexa e funcional estrutura tridimensional, representa um dos maiores desafios da biologia molecular contemporânea. Avanços notáveis, como o AlphaFold, forneceram soluções preditivas sem precedentes, mas a compreensão fundamental dos mecanismos de enovelamento, regidos pela termodinâmica e pela evolução, permanece um campo de intensa investigação para biólogos, físicos e químicos.
@@ -64,7 +26,7 @@ O problema do enovelamento de proteínas, como uma cadeia polipeptídica linear 
   <img src="imgs/funnel.png" alt="Diagrama do funil" width="700">
 </p>
 <p align="justify">
-  <em>Fonte: Macošek J, Mas G, Hiller S. Redefining Molecular Chaperones as Chaotropes. Front Mol Biosci. 2021 Jun 14;8:683132. doi: 10.3389/fmolb.2021.683132. PMID: 34195228; PMCID: PMC8237284.</em>
+<em>Fonte: Macošek J, Mas G, Hiller S. Redefining Molecular Chaperones as Chaotropes. Front Mol Biosci. 2021 Jun 14;8:683132. doi: 10.3389/fmolb.2021.683132. PMID: 34195228; PMCID: PMC8237284.</em>
 </p>
 
 Para visualizar a complexidade deste processo, utilizamos a metáfora do **funil de enovelamento**. Este modelo descreve a paisagem energética que uma proteína atravessa para atingir sua conformação nativa.
@@ -87,6 +49,15 @@ Em biologia molecular, a estabilidade de um sistema é descrita pela **energia l
 * **H (Entalpia):** A Entalpia (ΔH) representa o calor total contido em um sistema. Ela mede a mudança de calor absorvida ou liberada em uma reação química a pressão constante.
 * **ΔH < 0 (Exotérmica):** A reação libera calor para o ambiente.
 * **ΔH > 0 (Endotérmica):** A reação absorve calor do ambiente.
+
+> Talvez esse exemplo ajude a pensar melhor:
+
+<p align="justify">
+  <img src="imgs/ts-th.png" alt="Representação do Delta G" width="700">
+</p>
+<p align="justify">
+<em>Fonte: Dong, Y., et al., 2025</em>
+</p>
 
 A relação entre G, H e S (Entropia) é dada pela equação: **ΔG = ΔH - TΔS**. A entropia (ΔS) mede o grau de aleatoriedade ou desordem de um sistema.
 
@@ -269,7 +240,7 @@ Além da α-hélice, existem outras conformações helicoidais menos frequentes.
 
 ---
 
-  ### Motivos e Domínios Estrturais
+### Motivos e Domínios Estrturais
 
 No contexto biológico da síntese proteica (tradução), este processo é energeticamente custoso, consumindo energia (na forma de ATP e GTP) para a ativação dos aminoácidos. Esta ativação ocorre através da ligação covalente entre cada aminoácido e seu tRNA cognato (complementar), catalisada pelas aminoacil-tRNA sintetases, enzimas altamente específicas que reconhecem tanto o aminoácido quanto seu tRNA correspondente. Uma vez formado o aminoacil-tRNA, este complexo é direcionado ao ribossomo para participar da tradução. A formação da ligação peptídica em si é catalisada pelo ribossomo, especificamente pela atividade peptidil transferase, uma função catalítica intrínseca ao RNA ribossômico (rRNA) localizado na subunidade maior. Este mecanismo transfere a cadeia polipeptídica crescente do tRNA localizado no sítio P (Peptidil) para o grupo amino do novo aminoácido que está ligado ao seu tRNA no sítio A (Aminoacil), permitindo assim a elongação da cadeia polipeptídica.
 
@@ -304,7 +275,7 @@ A combinação de elementos de estrutura secundária forma **motivos supersecund
   <img src="imgs/prot-divertisy.png" alt="XXXXXXXX" width="700">
 </p>
 <p align="justify">
-<em>Fonte: Esther Braselmann, E., et al., 2013.</em>
+<em>Fonte: Braselmann, E., et al., 2013.</em>
 </p>
 
 | Motivo | Descrição | Função/Exemplos |
