@@ -340,7 +340,7 @@ A ligação peptídica sob outra óptica.
 A combinação de elementos de estrutura secundária forma **motivos supersecundários**, os blocos de construção dos **domínios** proteicos (regiões que se enovelam e funcionam de forma independente).
 
 <p align="justify">
-  <img src="imgs/prot-diverity" alt="XXXXXXXX" width="700">
+  <img src="imgs/prot-divertisy.png" alt="XXXXXXXX" width="700">
 </p>
 <p align="justify">
 <em>Fonte: Esther Braselmann, E., et al., 2013.</em>
