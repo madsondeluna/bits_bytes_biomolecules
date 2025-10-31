@@ -22,7 +22,7 @@ Link para o na versão web: [https://madsondeluna.github.io/bits_bytes_biomolecu
 
 ## Take Home Messages
 
-"We estimate that if a protein were to fold by randomly trying all possible conformations, it would require a time longer than the age of the universe to arrive at its correct native structure."  
+*"We estimate that if a protein were to fold by randomly trying all possible conformations, it would require a time longer than the age of the universe to arrive at its correct native structure."* 
 <p align="left"><strong>— Richard Lewontin (1929-2021)</strong></p>
 
 ---
