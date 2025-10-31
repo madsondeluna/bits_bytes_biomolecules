@@ -561,13 +561,16 @@ SeqB:  V I I R G A W E
 
 
 *   **Identidades (`|`):** As posições com `V`, `I`, `G`, `A` são idênticas.
+
     *   **Cálculo:** 4 resíduos idênticos de um total de 8.
     *   **Identidade = (4 / 8) * 100 = 50%**
 
 *   **Similaridades (`+`):** Além das identidades, temos substituições conservativas:
+
     *   `L` e `I` (ambos hidrofóbicos).
     *   `K` e `R` (ambos com carga positiva).
     *   `D` e `E` (ambos com carga negativa).
+  
     *   **Cálculo:** 4 resíduos idênticos + 3 resíduos similares = 7.
     *   **Similaridade = (7 / 8) * 100 = 87.5%**
 
