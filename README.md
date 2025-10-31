@@ -202,12 +202,12 @@ As hélices proteicas são estruturas secundárias onde a cadeia polipepeptídic
 </p>
 
 **(A) $3_{10}$-Hélice:** Mais compacta, possui 3.0 resíduos por volta. As ligações de hidrogênio são formadas entre o C=O de *n* e o N-H de *n*+3. O nome "$3_{10}$" indica 3 resíduos por volta e um anel de 10 átomos formado pela ligação de hidrogênio. É menos comum e geralmente curta.
+
 **(B) $\alpha$-Hélice:** É a hélice mais comum e estável, com 3.6 resíduos por volta. As ligações de hidrogênio ocorrem entre o C=O de um resíduo *n* e o N-H do resíduo *n*+4. O nome "$\alpha$" a designa como a principal e primeira hélice caracterizada.
+
 **(C) $\pi$-Hélice:** Mais "aberta", com aproximadamente 4.4 resíduos por volta. As ligações de hidrogênio ocorrem entre o C=O de *n* e o N-H de *n*+5. O nome "$\pi$" refere-se ao anel de 16 átomos formado por essa ligação ou à sua natureza mais "aberta". É a hélice menos frequente e raramente longa.
 
 Em suma, a nomenclatura das hélices reflete diretamente suas características estruturais primárias, como o número de resíduos por volta e o padrão específico das ligações de hidrogênio intramoleculares.
-
-> A estrutura secundária de proteínas refere-se aos padrões regulares de dobramento local da cadeia polipeptídica, estabilizados por ligações de hidrogênio entre os átomos da cadeia principal (grupos C=O e N-H). Os elementos mais comuns incluem as **α-hélices**, estruturas helicoidais dextrogiras com 3,6 resíduos por volta e ligações de hidrogênio entre resíduos \(i\) e \(i+4\), e as **folhas-β**, formadas pela associação lateral de fitas-β estendidas que podem se arranjar de forma paralela ou antiparalela. Hélices menos frequentes como a **3₁₀** (mais compacta, com 3 resíduos por volta) e a **π** (mais larga, com 4,4 resíduos por volta) são energeticamente menos favoráveis e aparecem tipicamente em regiões de transição. As **voltas e alças** conectam esses elementos regulares, permitindo mudanças na direção da cadeia e sendo cruciais para o dobramento tridimensional da proteína.
 
 <p align="justify">
   <img src="imgs/strucutures-configuration.png" alt="XXXXXXXX" width="700">
@@ -215,6 +215,8 @@ Em suma, a nomenclatura das hélices reflete diretamente suas características e
 <p align="justify">
 <em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
 </p>
+
+A estrutura secundária de proteínas refere-se aos padrões regulares de dobramento local da cadeia polipeptídica, estabilizados por ligações de hidrogênio entre os átomos da cadeia principal (grupos C=O e N-H). Os elementos mais comuns incluem as **α-hélices**, estruturas helicoidais dextrogiras com 3,6 resíduos por volta e ligações de hidrogênio entre resíduos \(i\) e \(i+4\), e as **folhas-β**, formadas pela associação lateral de fitas-β estendidas que podem se arranjar de forma paralela ou antiparalela. Hélices menos frequentes como a **3₁₀** (mais compacta, com 3 resíduos por volta) e a **π** (mais larga, com 4,4 resíduos por volta) são energeticamente menos favoráveis e aparecem tipicamente em regiões de transição. As **voltas e alças** conectam esses elementos regulares, permitindo mudanças na direção da cadeia e sendo cruciais para o dobramento tridimensional da proteína.
 
 ### Alças 
 
