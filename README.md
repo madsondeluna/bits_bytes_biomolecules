@@ -65,6 +65,26 @@ A ligação peptídica sob outra óptica.
 
 ---
 
+### Propriedades dos Aminoácidos Canônicos
+
+<p align="justify">
+  <img src="imgs/aas.png" alt="Amino acids width="700">
+</p>
+<p align="justify">
+<em>Fonte: JPT Peptide Technologies.</em>
+</p>
+
+| Aminoácido | Propriedades | Tendência Estrutural |
+|:---|:---|:---|
+| Alanina (Ala) | Apolar, hidrofóbico | Forte formador de α-hélice |
+| Arginina (Arg) | Polar, carregado positivamente | Superfície, formação de pontes salinas |
+| Glicina (Gly) | Apolar, muito flexível | Regiões de curvas (turns) e loops |
+| Prolina (Pro) | Cíclico, conformacionalmente restrito | "Quebrador" de estruturas secundárias |
+| Leucina (Leu), Valina (Val), Isoleucina (Ile) | Apolares, hidrofóbicos | Núcleo hidrofóbico |
+| Fenilalanina (Phe), Triptófano (Trp), Tirosina (Tyr) | Aromáticos | Núcleo hidrofóbico, interações de empilhamento (pi-stacking) |
+
+---
+
 ### Interações Intermoleculares 
 
 <p align="justify">
@@ -259,26 +279,6 @@ Para explorar a diversidade de dobras, utilizamos bancos de dados como o **CATH 
 </p>
 
 A organização hierárquica das estruturas proteicas pode ser explorada através de bases de dados como o **CATH** (Class, Architecture, Topology, Homologous superfamily), que classifica domínios proteicos em níveis que vão desde a composição de estrutura secundária (Classe: α, β ou α/β) até a topologia tridimensional e relações evolutivas. A imagem ilustra a diversidade estrutural dos domínios proteicos representados no CATH, mostrando como diferentes arranjos de α-hélices e folhas-β geram milhares de dobras únicas distribuídas entre os três domínios da vida (bactérias, eucariotos e arqueias). A análise por PCA (componentes principais) revela agrupamentos distintos baseados na composição estrutural, onde domínios predominantemente α (indicados em azul escuro), β (verde) e mistos α/β (roxo) ocupam regiões distintas do espaço conformacional, refletindo tanto restrições físico-químicas do dobramento quanto pressões evolutivas que moldaram o repertório estrutural das proteínas.
-
----
-
-### Propriedades dos Aminoácidos Canônicos
-
-<p align="justify">
-  <img src="imgs/aas.png" alt="Amino acids width="700">
-</p>
-<p align="justify">
-<em>Fonte: JPT Peptide Technologies.</em>
-</p>
-
-| Aminoácido | Propriedades | Tendência Estrutural |
-|:---|:---|:---|
-| Alanina (Ala) | Apolar, hidrofóbico | Forte formador de α-hélice |
-| Arginina (Arg) | Polar, carregado positivamente | Superfície, formação de pontes salinas |
-| Glicina (Gly) | Apolar, muito flexível | Regiões de curvas (turns) e loops |
-| Prolina (Pro) | Cíclico, conformacionalmente restrito | "Quebrador" de estruturas secundárias |
-| Leucina (Leu), Valina (Val), Isoleucina (Ile) | Apolares, hidrofóbicos | Núcleo hidrofóbico |
-| Fenilalanina (Phe), Triptófano (Trp), Tirosina (Tyr) | Aromáticos | Núcleo hidrofóbico, interações de empilhamento (pi-stacking) |
 
 ---
 
