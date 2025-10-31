@@ -22,6 +22,7 @@
   - [Antes de Tudo: O Digma Central da Biologia Molecular](#antes-de-tudo-o-digma-central-da-biologia-molecular)
   - [Os Precrocessos Não-Canônicos Ajudam a Vida a Acontecer](#os-precrocessos-não-canônicos-ajudam-a-vida-a-acontecer)
     - [Como Surgem as Proteínas](#como-surgem-as-proteínas)
+    - [Interações Intermoleculares](#interações-intermoleculares)
   - [O Enovelamento de Proteínas](#o-enovelamento-de-proteínas)
     - [A Paisagem Energética: O Funil de Enovelamento](#a-paisagem-energética-o-funil-de-enovelamento)
     - [A Lógica da Energia em Bioquímica](#a-lógica-da-energia-em-bioquímica)
@@ -32,7 +33,6 @@
     - [Estruturas Helicoidais em Proteínas](#estruturas-helicoidais-em-proteínas)
   - [Motivos e Domínios Estrturais](#motivos-e-domínios-estrturais)
     - [Propriedades dos Aminoácidos Canônicos](#propriedades-dos-aminoácidos-canônicos)
-    - [Interações Intermoleculares](#interações-intermoleculares)
     - [O Paradoxo de Levinthal](#o-paradoxo-de-levinthal)
     - [O Paradoxo do Enovelamento (Levinthal)](#o-paradoxo-do-enovelamento-levinthal)
       - [O Problema - O Cálculo Impossível (A Busca Aleatória)](#o-problema---o-cálculo-impossível-a-busca-aleatória)
@@ -112,6 +112,33 @@ A ligação peptídica sob outra óptica.
 <p align="justify">
 <em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
 </p>
+
+---
+
+### Interações Intermoleculares 
+
+<p align="justify">
+  <img src="imgs/aainteractions.png" alt="Matriz de interações de aminoácidos" width="700">
+</p>
+<p align="justify">
+<em>O gráfico mostra a matriz dos aminoácidos naturais: círculos azuis maiores indicam interações mais fortes. Fonte: Cambridge MedChem Consulting, 2025.</em>
+</p>
+
+O PDB contém muitos exemplos de interações entre aminoácidos. Embora existam interações específicas bem documentadas (aminoácidos básicos com carga positiva se ligam a aminoácidos ácidos com carga negativa), não havia visto um estudo sistemático de todas as combinações de aminoácidos, por isso, o trabalho de [Andrew White](https://crowsandcats.blogspot.com/2012/03/amino-acid-interactions.html) é notável, pois ele contou sistematicamente o número de interações entre cada par de tipos de aminoácidos e, em seguida, converteu essas contagens em energias de interação. 
+
+| Interação | Distância (Å) | Natureza da Força | Aminoácidos Frequentes |
+|:---|:---:|:---|:---|
+| Ponte de Hidrogênio | 2.7–3.2 | Eletrostática (dipolo-dipolo forte) | Ser, Thr, Tyr, Asn, Gln, His e esqueleto peptídico |
+| Ponte Salina (Iônica) | 2.8–4.0 | Eletrostática entre cargas opostas | Arg, Lys, His (+) com Asp, Glu (-) |
+| Empilhamento Pi (π-π Stacking) | 3.4–4.0 | Interação entre as nuvens de elétrons de anéis aromáticos | Phe, Tyr, Trp, His |
+| Forças de van der Waals | 3.5–4.0 | Flutuações de dipolos instantâneos | Todos os resíduos, crucial no empacotamento do núcleo |
+| Interação Cátion-π | 3.5–5.0 | Eletrostática entre um cátion e um anel aromático | Arg, Lys com Phe, Tyr, Trp |
+
+[IMAGENS DE INTERACOES ENTRE AAs]
+
+[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+
+---
 
 ## O Enovelamento de Proteínas
 
@@ -275,6 +302,9 @@ A organização hierárquica das estruturas proteicas pode ser explorada atravé
 
 ---
 
+
+### Propriedades dos Aminoácidos Canônicos
+
 <p align="justify">
   <img src="imgs/aas.png" alt="Amino acids width="700">
 </p>
@@ -282,7 +312,6 @@ A organização hierárquica das estruturas proteicas pode ser explorada atravé
 <em>Fonte: JPT Peptide Technologies.</em>
 </p>
 
-### Propriedades dos Aminoácidos Canônicos
 | Aminoácido | Propriedades | Tendência Estrutural |
 |:---|:---|:---|
 | Alanina (Ala) | Apolar, hidrofóbico | Forte formador de α-hélice |
@@ -291,31 +320,6 @@ A organização hierárquica das estruturas proteicas pode ser explorada atravé
 | Prolina (Pro) | Cíclico, conformacionalmente restrito | "Quebrador" de estruturas secundárias |
 | Leucina (Leu), Valina (Val), Isoleucina (Ile) | Apolares, hidrofóbicos | Núcleo hidrofóbico |
 | Fenilalanina (Phe), Triptófano (Trp), Tirosina (Tyr) | Aromáticos | Núcleo hidrofóbico, interações de empilhamento (pi-stacking) |
-
----
-
-### Interações Intermoleculares 
-
-<p align="justify">
-  <img src="imgs/aainteractions.png" alt="Matriz de interações de aminoácidos" width="700">
-</p>
-<p align="justify">
-<em>O gráfico mostra a matriz dos aminoácidos naturais: círculos azuis maiores indicam interações mais fortes. Fonte: Cambridge MedChem Consulting, 2025.</em>
-</p>
-
-O PDB contém muitos exemplos de interações entre aminoácidos. Embora existam interações específicas bem documentadas (aminoácidos básicos com carga positiva se ligam a aminoácidos ácidos com carga negativa), não havia visto um estudo sistemático de todas as combinações de aminoácidos, por isso, o trabalho de [Andrew White](https://crowsandcats.blogspot.com/2012/03/amino-acid-interactions.html) é notável, pois ele contou sistematicamente o número de interações entre cada par de tipos de aminoácidos e, em seguida, converteu essas contagens em energias de interação. 
-
-| Interação | Distância (Å) | Natureza da Força | Aminoácidos Frequentes |
-|:---|:---:|:---|:---|
-| Ponte de Hidrogênio | 2.7–3.2 | Eletrostática (dipolo-dipolo forte) | Ser, Thr, Tyr, Asn, Gln, His e esqueleto peptídico |
-| Ponte Salina (Iônica) | 2.8–4.0 | Eletrostática entre cargas opostas | Arg, Lys, His (+) com Asp, Glu (-) |
-| Empilhamento Pi (π-π Stacking) | 3.4–4.0 | Interação entre as nuvens de elétrons de anéis aromáticos | Phe, Tyr, Trp, His |
-| Forças de van der Waals | 3.5–4.0 | Flutuações de dipolos instantâneos | Todos os resíduos, crucial no empacotamento do núcleo |
-| Interação Cátion-π | 3.5–5.0 | Eletrostática entre um cátion e um anel aromático | Arg, Lys com Phe, Tyr, Trp |
-
-[IMAGENS DE INTERACOES ENTRE AAs]
-
-[ADICIONAR IMAGEM EXPLICATIVA AQUI]
 
 ---
 
