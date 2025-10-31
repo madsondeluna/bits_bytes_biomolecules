@@ -85,8 +85,8 @@ Leitura do mRNA (5'→3') do centro para a borda até o aminoácido corresponden
 
 ### 2) “Charging”: Aminoacilação do tRNA
 
-<p align="center">
-  <img src="imgs/trna-syntesis.png" alt="Aminoacil-tRNA sintetase ligando aminoácido ao tRNA com consumo de ATP" width="500">
+<p align="justify">
+  <img src="imgs/trna-syntesis.png" alt="Aminoacil-tRNA sintetase ligando aminoácido ao tRNA com consumo de ATP" width="1000">
 </p>
 <p align="justify"><em>
 Aminoacil-tRNA sintetases ligam o aminoácido correto ao tRNA cognato usando ATP (ATP → AMP + PPi; custo ~2 ligações de alta energia) e possuem mecanismos de edição.
@@ -149,10 +149,10 @@ O pareamento entre a 3ª base do códon (mRNA) e a 1ª base do anticódon (posi�
 
 ### 6) “Wobble” com inosina (exemplo mecanístico)
 
-<p align="center">
-  <img src="imgs/wobble-effect2.png" alt="Inosina (I) no anticódon pareando com A/C/U na 3ª base do códon" width="500">
+<p align="justify">
+  <img src="imgs/wobble-effect2.png" alt="Inosina (I) no anticódon pareando com A/C/U na 3ª base do códon" width="1000">
 </p>
-<p align="center"><em>
+<p align="justify"><em>
 A inosina (I) na posição 34 do anticódon pode parear com A, C ou U na 3ª base do códon, permitindo que um tRNA leia múltiplos códons sinônimos.
 </em></p>
 
@@ -346,7 +346,7 @@ As **alças** (loops ou turns) são regiões de estrutura secundária irregular 
 As alças são frequentemente classificadas por seu comprimento e geometria. Os **turns** (voltas) são alças curtas, tipicamente contendo 2 a 5 resíduos, sendo as mais comuns as **β-turns** (4 resíduos) e **γ-turns** (3 resíduos). As β-turns são particularmente importantes em folhas β antiparalelas, permitindo a reversão da direção da cadeia. Já os **loops** são segmentos mais longos e variáveis que conectam elementos estruturais distantes. Além de sua função estrutural, muitas alças estão localizadas na superfície das proteínas e participam ativamente do reconhecimento molecular, interações proteína-proteína e formação de sítios catalíticos. A flexibilidade conformacional destas regiões é crucial para a função biológica, permitindo ajustes induzidos pela ligação de substratos ou cofatores.
 
 <p align="center">
-  <img src="imgs/loop.png" alt="XXXXXXXX" width="500">
+  <img src="imgs/loop.png" alt="XXXXXXXX" width="1000">
 </p>
 <p align="center">
 <em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
@@ -361,7 +361,7 @@ As alças são frequentemente classificadas por seu comprimento e geometria. Os 
 <p align="justify">Quando múltiplas fitas β se associam lateralmente através de ligações de hidrogênio intermoleculares, forma-se uma **folha β** (β-sheet). Esta estrutura pode ser organizada de duas maneiras distintas: **folha β antiparalela**, onde as fitas adjacentes correm em direções opostas (N→C de uma fita alinha-se com C→N da fita vizinha), resultando em um padrão de ligações de hidrogênio direto e mais regular; e **folha β paralela**, onde todas as fitas correm na mesma direção (N→C), criando ligações de hidrogênio mais distorcidas e geometricamente menos favoráveis, tornando esta configuração ligeiramente menos estável. As folhas β podem conter de 2 a mais de 10 fitas, e muitas estruturas proteicas apresentam folhas β mistas, contendo segmentos tanto paralelos quanto antiparalelos. A torção característica das folhas β, observada na maioria das estruturas, resulta em uma conformação levemente helicoidal que otimiza as interações de empacotamento no núcleo hidrofóbico das proteínas.</p>
 
 <p align="center">
-  <img src="imgs/beta-shet.png" alt="XXXXXXXX" width="500">
+  <img src="imgs/beta-shet.png" alt="XXXXXXXX" width="1000">
 </p>
 <p align="center">
 <em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
