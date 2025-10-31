@@ -20,34 +20,35 @@
 - [Bits, Bytes e Biomoléculas: Introdução à Modelagem de Proteínas com Métodos Clássicos e de Aprendizado de Máquina](#bits-bytes-e-biomoléculas-introdução-à-modelagem-de-proteínas-com-métodos-clássicos-e-de-aprendizado-de-máquina)
   - [Sumário](#sumário)
   - [Antes de Tudo: O Digma Central da Biologia Molecular](#antes-de-tudo-o-digma-central-da-biologia-molecular)
-  - [Nada é só Canônico: Os Precrocessos Não-Canônicos Ajudam a Vida a Acontecer](#nada-é-só-canônico-os-precrocessos-não-canônicos-ajudam-a-vida-a-acontecer)
+  - [Os Precrocessos Não-Canônicos Ajudam a Vida a Acontecer](#os-precrocessos-não-canônicos-ajudam-a-vida-a-acontecer)
+    - [Como Surgem as Proteínas](#como-surgem-as-proteínas)
   - [O Enovelamento de Proteínas](#o-enovelamento-de-proteínas)
     - [A Paisagem Energética: O Funil de Enovelamento](#a-paisagem-energética-o-funil-de-enovelamento)
     - [A Lógica da Energia em Bioquímica](#a-lógica-da-energia-em-bioquímica)
-    - [O Paradoxo de Levinthal](#o-paradoxo-de-levinthal)
-    - [O Paradoxo do Enovelamento (Levinthal)](#o-paradoxo-do-enovelamento-levinthal)
-      - [1. O Problema: O Cálculo Impossível (A Busca Aleatória)](#1-o-problema-o-cálculo-impossível-a-busca-aleatória)
-        - [Número de Conformações Possíveis ($C$)](#número-de-conformações-possíveis-c)
-        - [Tempo Total de Amostragem ($T\_{\\text{amostragem}}$)](#tempo-total-de-amostragem-t_textamostragem)
-      - [2. A Solução Física: O Funil de Energia (O Cálculo Real)](#2-a-solução-física-o-funil-de-energia-o-cálculo-real)
-        - [Escala de Tempo Física](#escala-de-tempo-física)
-      - [3. A Solução Computacional: O Atalho (AlphaFold)](#3-a-solução-computacional-o-atalho-alphafold)
-    - [Tabela Comparativa](#tabela-comparativa)
-  - [Módulo 1: Fundamentos da Sequência e Estrutura Proteica](#módulo-1-fundamentos-da-sequência-e-estrutura-proteica)
+  - [Fundamentos da Sequência e Estrutura Proteica](#fundamentos-da-sequência-e-estrutura-proteica)
     - [Estrutura Secundária: Os Pilares da Arquitetura Proteica](#estrutura-secundária-os-pilares-da-arquitetura-proteica)
     - [Alças](#alças)
     - [Fitas e Folhas Beta](#fitas-e-folhas-beta)
     - [Estruturas Helicoidais em Proteínas](#estruturas-helicoidais-em-proteínas)
-    - [Como Surgem as Proteínas \& Motivos e Domínios Estrturais](#como-surgem-as-proteínas--motivos-e-domínios-estrturais)
+  - [Motivos e Domínios Estrturais](#motivos-e-domínios-estrturais)
     - [Propriedades dos Aminoácidos Canônicos](#propriedades-dos-aminoácidos-canônicos)
     - [Interações Intermoleculares](#interações-intermoleculares)
-    - [Ferramentas e Bancos de Dados Essenciais](#ferramentas-e-bancos-de-dados-essenciais)
-  - [Módulo 2: Técnicas Clássicas de Modelagem Molecular](#módulo-2-técnicas-clássicas-de-modelagem-molecular)
+    - [O Paradoxo de Levinthal](#o-paradoxo-de-levinthal)
+    - [O Paradoxo do Enovelamento (Levinthal)](#o-paradoxo-do-enovelamento-levinthal)
+      - [O Problema - O Cálculo Impossível (A Busca Aleatória)](#o-problema---o-cálculo-impossível-a-busca-aleatória)
+        - [Número de Conformações Possíveis ($C$)](#número-de-conformações-possíveis-c)
+        - [Tempo Total de Amostragem ($T\_{\\text{amostragem}}$)](#tempo-total-de-amostragem-t_textamostragem)
+      - [A Solução Física: O Funil de Energia (O Cálculo Real)](#a-solução-física-o-funil-de-energia-o-cálculo-real)
+        - [Escala de Tempo Física](#escala-de-tempo-física)
+      - [A Solução Computacional: O Atalho por Simplificações Matemáticas](#a-solução-computacional-o-atalho-por-simplificações-matemáticas)
+    - [Tabela Comparativa](#tabela-comparativa)
+  - [Módulo 1: Técnicas Clássicas de Modelagem Molecular](#módulo-1-técnicas-clássicas-de-modelagem-molecular)
     - [Uma Nota Crucial: Identidade vs. Similaridade de Sequência](#uma-nota-crucial-identidade-vs-similaridade-de-sequência)
+    - [Ferramentas e Bancos de Dados para Análise de Sequência e Estrutura](#ferramentas-e-bancos-de-dados-para-análise-de-sequência-e-estrutura)
     - [1. Modelagem por Homologia (Modelagem Comparativa)](#1-modelagem-por-homologia-modelagem-comparativa)
-    - [2. Threading (Reconhecimento de Dobra)](#2-threading-reconhecimento-de-dobra)
+    - [2. Threading (Modelagem por Encaixe de Dobras ou *Fold Recognition*)](#2-threading-modelagem-por-encaixe-de-dobras-ou-fold-recognition)
     - [3. Modelagem *Ab Initio*](#3-modelagem-ab-initio)
-  - [Módulo 3: A Revolução do Aprendizado de Máquina e a Nova Era da Biologia Estrutural](#módulo-3-a-revolução-do-aprendizado-de-máquina-e-a-nova-era-da-biologia-estrutural)
+  - [Módulo 2: A Revolução do Aprendizado de Máquina e a Nova Era da Biologia Estrutural](#módulo-2-a-revolução-do-aprendizado-de-máquina-e-a-nova-era-da-biologia-estrutural)
     - [Contexto Histórico: A Longa Estrada do CASP e a Promessa do AlphaFold 1](#contexto-histórico-a-longa-estrada-do-casp-e-a-promessa-do-alphafold-1)
     - [O Ponto de Inflexão: AlphaFold 2 e o "Problema Resolvido? Nem tanto"](#o-ponto-de-inflexão-alphafold-2-e-o-problema-resolvido-nem-tanto)
     - [A Próxima Geração: AlphaFold 3 e o Paradoxo do Código Fechado](#a-próxima-geração-alphafold-3-e-o-paradoxo-do-código-fechado)
@@ -60,7 +61,7 @@
     - [Extra 3: Design de Proteínas (*De Novo*)](#extra-3-design-de-proteínas-de-novo)
     - [Extra 4: Velocidade, Acessibilidade e Recursos Computacionais](#extra-4-velocidade-acessibilidade-e-recursos-computacionais)
     - [Tabela Resumo: Quando Usar Qual Ferramenta?](#tabela-resumo-quando-usar-qual-ferramenta)
-  - [Módulo 4: Análise, Validação e Interpretação de Modelos Estruturais](#módulo-4-análise-validação-e-interpretação-de-modelos-estruturais)
+  - [Módulo 3: Análise, Validação e Interpretação de Modelos Estruturais](#módulo-3-análise-validação-e-interpretação-de-modelos-estruturais)
     - [Ferramentas de Visualização Molecular](#ferramentas-de-visualização-molecular)
     - [Análise Comparativa: RMSD e sua Importância](#análise-comparativa-rmsd-e-sua-importância)
     - [Servidores de Validação de Estrutura](#servidores-de-validação-de-estrutura)
@@ -68,7 +69,7 @@
       - [1. Gráfico de Ramachandran (PROCHECK / MolProbity)](#1-gráfico-de-ramachandran-procheck--molprobity)
       - [2. Z-score (Ex: ProSA-web, parte do SAVES)](#2-z-score-ex-prosa-web-parte-do-saves)
       - [3. QMEAN (QMEANDisCo)](#3-qmean-qmeandisco)
-  - [Módulo 5: Da Estrutura à Função: Aplicações Práticas de Modelos Validados](#módulo-5-da-estrutura-à-função-aplicações-práticas-de-modelos-validados)
+  - [Módulo 4: Da Estrutura à Função: Aplicações Práticas de Modelos Validados](#módulo-4-da-estrutura-à-função-aplicações-práticas-de-modelos-validados)
     - [1. Entendimento de Processos Biológicos e Descrição de Fenômenos](#1-entendimento-de-processos-biológicos-e-descrição-de-fenômenos)
     - [2. Estudo de Doenças (Biologia Estrutural de Patologias)](#2-estudo-de-doenças-biologia-estrutural-de-patologias)
     - [3. Desenvolvimento de Fármacos (Triagem Virtual e Design Racional)](#3-desenvolvimento-de-fármacos-triagem-virtual-e-design-racional)
@@ -79,9 +80,38 @@
 
 XXXXXXXX
 
-##  Nada é só Canônico: Os Precrocessos Não-Canônicos Ajudam a Vida a Acontecer
+## Os Precrocessos Não-Canônicos Ajudam a Vida a Acontecer
 
 XXXXXXX
+
+### Como Surgem as Proteínas 
+
+No contexto biológico da síntese proteica (tradução), este processo é energeticamente custoso, consumindo energia (na forma de ATP e GTP) para a ativação dos aminoácidos. Esta ativação ocorre através da ligação covalente entre cada aminoácido e seu tRNA cognato (complementar), catalisada pelas aminoacil-tRNA sintetases, enzimas altamente específicas que reconhecem tanto o aminoácido quanto seu tRNA correspondente. Uma vez formado o aminoacil-tRNA, este complexo é direcionado ao ribossomo para participar da tradução. A formação da ligação peptídica em si é catalisada pelo ribossomo, especificamente pela atividade peptidil transferase, uma função catalítica intrínseca ao RNA ribossômico (rRNA) localizado na subunidade maior. Este mecanismo transfere a cadeia polipeptídica crescente do tRNA localizado no sítio P (Peptidil) para o grupo amino do novo aminoácido que está ligado ao seu tRNA no sítio A (Aminoacil), permitindo assim a elongação da cadeia polipeptídica.
+
+<p align="justify">
+  <img src="imgs/ribo.png" alt="XXXXX" width="700">
+</p>
+<p align="justify">
+<em>Fonte: Amy McDermott, 2024.</em>
+</p>
+
+Ao abordar as interações entre aminoácidos, a ligação primordial e mais forte, que estabelece a estrutura primária de uma proteína, é a ligação peptídica. Esta ligação covalente é formada pela união do grupo α-carboxila de um aminoácido ao grupo α-amino do aminoácido subsequente, caracterizando uma reação de condensação (ou desidratação) na qual uma molécula de água (H₂O) é liberada. 
+
+<p align="justify">
+  <img src="imgs/pep-bond.png" alt="XXXXXXXX" width="700">
+</p>
+<p align="justify">
+<em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
+</p>
+
+A ligação peptídica sob outra óptica. 
+
+<p align="justify">
+  <img src="imgs/pep-bond2.png" alt="XXXXXXXX" width="700">
+</p>
+<p align="justify">
+<em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
+</p>
 
 ## O Enovelamento de Proteínas
 
@@ -130,121 +160,7 @@ Talvez esse exemplo ajude a pensar melhor:
 
 ---
 
-### O Paradoxo de Levinthal
-Formulado por Cyrus Levinthal, este paradoxo destaca a impossibilidade de o enovelamento ocorrer por uma busca aleatória. Ele calculou que uma proteína levaria mais tempo que a idade do universo para testar todas as suas conformações possíveis. Isso demonstra que o enovelamento não é um processo aleatório, mas sim um processo altamente direcionado que segue "caminhos" ou "rotas" específicas, otimizadas ao longo da evolução, para atingir o estado nativo em uma escala de tempo biologicamente viável.
-
-### O Paradoxo do Enovelamento (Levinthal)
-
-O "problema do enovelamento de proteínas" divide-se em duas questões:
-1.  **Termodinâmica (O "Porquê"):** A estrutura nativa é o estado de menor energia livre ($\Delta G < 0$).
-2.  **Cinética (O "Como"):** Como a proteína encontra esse estado tão rápido?
-
-O Paradoxo de Levinthal trata do Problema 2 (`a cinética`).
-
-<p align="justify">
-  <img src="imgs/lewontin.png" alt="Richard Lewontin at the chalkboard" width="700">
-</p>
-<p align="justify">
-<em>Fonte: Richard Lewontin (1929-2021) na lousa. Parece que ele está explicando a interação e inseparabilidade do genótipo e do ambiente.</em>
-</p>
-
----
-
-#### 1. O Problema: O Cálculo Impossível (A Busca Aleatória)
-
-Levinthal calculou o tempo que uma proteína levaria para se enovelar se ela tentasse *aleatoriamente* todas as conformações possíveis.
-
-- **Proteína (N):** 100 aminoácidos  
-- **Estados por resíduo (k):** 2 (estimativa extremamente conservadora)  
-- **Tempo de transição (τ):** 1 picossegundo = $10^{-12}\,\text{s}$ (escala de vibração molecular rápida)
-
-##### Número de Conformações Possíveis ($C$)
-
-$$
-C = k^N = 2^{100} \approx 1.27 \times 10^{30}\ \text{conformações}
-$$
-
-##### Tempo Total de Amostragem ($T_{\text{amostragem}}$)
-
-$$
-T_{\text{amostragem}} = C \times \tau 
-= \left(1.27 \times 10^{30}\right) \times \left(10^{-12}\,\text{s}\right)
-\approx 1.27 \times 10^{18}\,\text{s}
-$$
-
-Convertendo para anos:
-
-$$
-T_{\text{amostragem}} \approx 10^{10}\ \text{anos}
-$$
-
-**Paradoxo de Levinthal:**  
-Esse tempo estimado ($\sim 10^{10}$ anos) é maior que a idade do universo, mas proteínas reais se enovelam em escalas biológicas ($T_{\text{bio}}$) que vão de microssegundos a minutos. Ou seja: o cenário de "busca aleatória" prevê algo fisicamente impossível.
-
----
-
-#### 2. A Solução Física: O Funil de Energia (O Cálculo Real)
-
-O modelo de Levinthal assume uma busca cega. Isso é fisicamente errado.  
-Proteínas **não** fazem amostragem randômica do espaço conformacional.  
-Elas "descem" um **funil de energia livre**, guiadas por interações favoráveis e pela redução progressiva de energia, e o gargalo cinético é cruzar uma barreira de energia de ativação $\Delta G^{\ddagger}$.
-
-Esse cenário muda a forma como o tempo de enovelamento escala com o tamanho da proteína.
-
-Em vez de depender do "volume" de todas as conformações possíveis (que cresce exponencialmente com o comprimento $L$), o tempo efetivo depende da formação de um núcleo estável. Esse núcleo escala com a **área de superfície**, proporcional a $L^{2/3}$, e não com o volume total.
-
-O resultado é:
-
-##### Escala de Tempo Física
-
-$$
-t \sim \tau \times \exp\!\big(C \cdot L^{2/3}\big)
-$$
-
-Onde:  
-- $t$ = tempo típico de enovelamento  
-- $\tau$ = tempo microscópico elementar (rearranjos locais rápidos)  
-- $L$ = tamanho efetivo do sistema relevante para o núcleo de enovelamento (por exemplo, número de resíduos envolvidos)  
-- $C$ = constante relacionada à altura da barreira de energia $\Delta G^{\ddagger}$
-
-Por que isso resolve o paradoxo?
-
-- $L^{2/3}$ cresce muito mais lentamente que qualquer coisa do tipo $k^L$.  
-- Para proteínas com $N < 100\text{–}200$, essa equação prevê tempos de enovelamento entre microssegundos e minutos — exatamente o que vemos experimentalmente.  
-- Logo, não existe explosão combinatória real. O enovelamento é guiado, não randômico.
-
-Resumo: o "paradoxo" é só prova de que a hipótese inicial (busca aleatória) é ruim.
-
----
-
-#### 3. A Solução Computacional: O Atalho (AlphaFold)
-
-Modelos como AlphaFold (ex.: AF3) não "resolvem" o processo físico do enovelamento. Eles pulam todas as etapas intermediárias e entregam só o estado final.
-
-- AlphaFold **não** simula a busca impossível de $\sim 10^{30}$ conformações (que daria $\sim 10^{10}$ anos).  
-- AlphaFold **não** simula a dinâmica física guiada pelo funil energético (escala $\propto L^{2/3}$). Isso quem tenta fazer é Dinâmica Molecular.  
-- AlphaFold aprende uma função estatística entre sequência e estrutura final estável, usando o histórico evolutivo embutido em bancos de dados estruturais (PDB).
-
-Podemos escrever essa ideia como:
-
-$$
-f_{\text{AlphaFold}}(\text{sequência 1D}) \;\longrightarrow\; \text{estrutura 3D prevista}
-$$
-
-Ou seja: é predição supervisionada, não simulação físico-química do caminho de enovelamento.
-
----
-
-### Tabela Comparativa
-
-| Método                           | Objetivo                                      | Escala de Tempo (Execução)           |
-| :------------------------------ | :------------------------------------------- | :----------------------------------- |
-| **Busca Aleatória (Levinthal)** | Testar $k^N$ estados possíveis                | $\sim 10^{10}$ anos                  |
-| **Física do Enovelamento**      | Ultrapassar a barreira $\propto L^{2/3}$      | microssegundos → minutos             |
-| **AlphaFold (Predição)**        | Prever diretamente o estado final 3D dobrado | segundos → minutos                   |
-
-
-## Módulo 1: Fundamentos da Sequência e Estrutura Proteica
+## Fundamentos da Sequência e Estrutura Proteica
 
 ### Estrutura Secundária: Os Pilares da Arquitetura Proteica
 
@@ -328,36 +244,9 @@ Além da α-hélice, existem outras conformações helicoidais menos frequentes.
 
 ---
 
-### Como Surgem as Proteínas & Motivos e Domínios Estrturais
+## Motivos e Domínios Estrturais
 
-No contexto biológico da síntese proteica (tradução), este processo é energeticamente custoso, consumindo energia (na forma de ATP e GTP) para a ativação dos aminoácidos. Esta ativação ocorre através da ligação covalente entre cada aminoácido e seu tRNA cognato (complementar), catalisada pelas aminoacil-tRNA sintetases, enzimas altamente específicas que reconhecem tanto o aminoácido quanto seu tRNA correspondente. Uma vez formado o aminoacil-tRNA, este complexo é direcionado ao ribossomo para participar da tradução. A formação da ligação peptídica em si é catalisada pelo ribossomo, especificamente pela atividade peptidil transferase, uma função catalítica intrínseca ao RNA ribossômico (rRNA) localizado na subunidade maior. Este mecanismo transfere a cadeia polipeptídica crescente do tRNA localizado no sítio P (Peptidil) para o grupo amino do novo aminoácido que está ligado ao seu tRNA no sítio A (Aminoacil), permitindo assim a elongação da cadeia polipeptídica.
-
-<p align="justify">
-  <img src="imgs/ribo.png" alt="XXXXX" width="700">
-</p>
-<p align="justify">
-<em>Fonte: Amy McDermott, 2024.</em>
-</p>
-
-Ao abordar as interações entre aminoácidos, a ligação primordial e mais forte, que estabelece a estrutura primária de uma proteína, é a ligação peptídica. Esta ligação covalente é formada pela união do grupo α-carboxila de um aminoácido ao grupo α-amino do aminoácido subsequente, caracterizando uma reação de condensação (ou desidratação) na qual uma molécula de água (H₂O) é liberada. 
-
-<p align="justify">
-  <img src="imgs/pep-bond.png" alt="XXXXXXXX" width="700">
-</p>
-<p align="justify">
-<em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
-</p>
-
-A ligação peptídica sob outra óptica. 
-
-<p align="justify">
-  <img src="imgs/pep-bond2.png" alt="XXXXXXXX" width="700">
-</p>
-<p align="justify">
-<em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
-</p>
-
-A combinação de elementos de estrutura secundária forma **motivos supersecundários**, os blocos de construção dos **domínios** proteicos (regiões que se enovelam e funcionam de forma independente).
+A combinação de elementos de estrutura secundária forma **motivos secundários, terciários e quaternários**, os blocos de construção dos **domínios** proteicos (regiões que se enovelam e funcionam de forma independente).
 
 <p align="justify">
   <img src="imgs/prot-divertisy.png" alt="XXXXXXXX" width="700">
@@ -424,17 +313,128 @@ O PDB contém muitos exemplos de interações entre aminoácidos. Embora existam
 | Forças de van der Waals | 3.5–4.0 | Flutuações de dipolos instantâneos | Todos os resíduos, crucial no empacotamento do núcleo |
 | Interação Cátion-π | 3.5–5.0 | Eletrostática entre um cátion e um anel aromático | Arg, Lys com Phe, Tyr, Trp |
 
-> IMAGENS DE INTERACOES ENTRE AAs
+[IMAGENS DE INTERACOES ENTRE AAs]
 
 [ADICIONAR IMAGEM EXPLICATIVA AQUI]
 
-### Ferramentas e Bancos de Dados Essenciais
+---
 
-As mais comuns são: **[UniProt](https://www.uniprot.org/ "Abrir em nova aba")**, **[PDB](https://www.rcsb.org/ "Abrir em nova aba")**, **[InterProScan](https://www.ebi.ac.uk/interpro/ "Abrir em nova aba")**, **[ExPASy ProtParam](https://web.expasy.org/protparam/ "Abrir em nova aba")**, mas não se limitam a essas.
+### O Paradoxo de Levinthal
+Formulado por Cyrus Levinthal, este paradoxo destaca a impossibilidade de o enovelamento ocorrer por uma busca aleatória. Ele calculou que uma proteína levaria mais tempo que a idade do universo para testar todas as suas conformações possíveis. Isso demonstra que o enovelamento não é um processo aleatório, mas sim um processo altamente direcionado que segue "caminhos" ou "rotas" específicas, otimizadas ao longo da evolução, para atingir o estado nativo em uma escala de tempo biologicamente viável.
+
+### O Paradoxo do Enovelamento (Levinthal)
+
+O "problema do enovelamento de proteínas" divide-se em duas questões:
+1.  **Termodinâmica (O "Porquê"):** A estrutura nativa é o estado de menor energia livre ($\Delta G < 0$).
+2.  **Cinética (O "Como"):** Como a proteína encontra esse estado tão rápido?
+
+O Paradoxo de Levinthal trata do Problema 2 (`a cinética`).
+
+<p align="justify">
+  <img src="imgs/lewontin.png" alt="Richard Lewontin at the chalkboard" width="700">
+</p>
+<p align="justify">
+<em>Fonte: Richard Lewontin (1929-2021) na lousa. Parece que ele está explicando a interação e inseparabilidade do genótipo e do ambiente.</em>
+</p>
 
 ---
 
-## Módulo 2: Técnicas Clássicas de Modelagem Molecular
+#### O Problema - O Cálculo Impossível (A Busca Aleatória)
+
+Levinthal calculou o tempo que uma proteína levaria para se enovelar se ela tentasse *aleatoriamente* todas as conformações possíveis.
+
+- **Proteína (N):** 100 aminoácidos  
+- **Estados por resíduo (k):** 2 (estimativa extremamente conservadora)  
+- **Tempo de transição (τ):** 1 picossegundo = $10^{-12}\,\text{s}$ (escala de vibração molecular rápida)
+
+##### Número de Conformações Possíveis ($C$)
+
+$$
+C = k^N = 2^{100} \approx 1.27 \times 10^{30}\ \text{conformações}
+$$
+
+##### Tempo Total de Amostragem ($T_{\text{amostragem}}$)
+
+$$
+T_{\text{amostragem}} = C \times \tau 
+= \left(1.27 \times 10^{30}\right) \times \left(10^{-12}\,\text{s}\right)
+\approx 1.27 \times 10^{18}\,\text{s}
+$$
+
+Convertendo para anos:
+
+$$
+T_{\text{amostragem}} \approx 10^{10}\ \text{anos}
+$$
+
+**Paradoxo de Levinthal:**  
+Esse tempo estimado ($\sim 10^{10}$ anos) é maior que a idade do universo, mas proteínas reais se enovelam em escalas biológicas ($T_{\text{bio}}$) que vão de microssegundos a minutos. Ou seja: o cenário de "busca aleatória" prevê algo fisicamente impossível.
+
+---
+
+#### A Solução Física: O Funil de Energia (O Cálculo Real)
+
+O modelo de Levinthal assume uma busca cega. Isso é fisicamente errado.  
+Proteínas **não** fazem amostragem randômica do espaço conformacional.  
+Elas "descem" um **funil de energia livre**, guiadas por interações favoráveis e pela redução progressiva de energia, e o gargalo cinético é cruzar uma barreira de energia de ativação $\Delta G^{\ddagger}$.
+
+Esse cenário muda a forma como o tempo de enovelamento escala com o tamanho da proteína.
+
+Em vez de depender do "volume" de todas as conformações possíveis (que cresce exponencialmente com o comprimento $L$), o tempo efetivo depende da formação de um núcleo estável. Esse núcleo escala com a **área de superfície**, proporcional a $L^{2/3}$, e não com o volume total.
+
+O resultado é:
+
+##### Escala de Tempo Física
+
+$$
+t \sim \tau \times \exp\!\big(C \cdot L^{2/3}\big)
+$$
+
+Onde:  
+- $t$ = tempo típico de enovelamento  
+- $\tau$ = tempo microscópico elementar (rearranjos locais rápidos)  
+- $L$ = tamanho efetivo do sistema relevante para o núcleo de enovelamento (por exemplo, número de resíduos envolvidos)  
+- $C$ = constante relacionada à altura da barreira de energia $\Delta G^{\ddagger}$
+
+Por que isso resolve o paradoxo?
+
+- $L^{2/3}$ cresce muito mais lentamente que qualquer coisa do tipo $k^L$.  
+- Para proteínas com $N < 100\text{–}200$, essa equação prevê tempos de enovelamento entre microssegundos e minutos — exatamente o que vemos experimentalmente.  
+- Logo, não existe explosão combinatória real. O enovelamento é guiado, não randômico.
+
+Resumo: o "paradoxo" é só prova de que a hipótese inicial (busca aleatória) é ruim.
+
+---
+
+#### A Solução Computacional: O Atalho por Simplificações Matemáticas
+
+Modelos como AlphaFold (ex.: AF3) não "resolvem" o processo físico do enovelamento. Eles pulam todas as etapas intermediárias e entregam só o estado final.
+
+- AlphaFold **não** simula a busca impossível de $\sim 10^{30}$ conformações (que daria $\sim 10^{10}$ anos).  
+- AlphaFold **não** simula a dinâmica física guiada pelo funil energético (escala $\propto L^{2/3}$). Isso quem tenta fazer é Dinâmica Molecular.  
+- AlphaFold aprende uma função estatística entre sequência e estrutura final estável, usando o histórico evolutivo embutido em bancos de dados estruturais (PDB).
+
+Podemos escrever essa ideia como:
+
+$$
+f_{\text{AlphaFold}}(\text{sequência 1D}) \;\longrightarrow\; \text{estrutura 3D prevista}
+$$
+
+Ou seja: é predição supervisionada, não simulação físico-química do caminho de enovelamento.
+
+---
+
+### Tabela Comparativa
+
+| Método                           | Objetivo                                      | Escala de Tempo (Execução)           |
+| :------------------------------ | :------------------------------------------- | :----------------------------------- |
+| **Busca Aleatória (Levinthal)** | Testar $k^N$ estados possíveis                | $\sim 10^{10}$ anos                  |
+| **Física do Enovelamento**      | Ultrapassar a barreira $\propto L^{2/3}$      | microssegundos → minutos             |
+| **AlphaFold (Predição)**        | Prever diretamente o estado final 3D dobrado | segundos → minutos                   |
+
+---
+
+## Módulo 1: Técnicas Clássicas de Modelagem Molecular
 
 Neste módulo, exploramos os três pilares da modelagem de proteínas pré-Deep Learning. Embora ferramentas como o AlphaFold tenham revolucionado a predição de estruturas, os métodos clássicos continuam sendo indispensáveis para cenários específicos, oferecendo controle e abordagens que ainda não são o foco principal das novas tecnologias.
 
@@ -456,6 +456,8 @@ Alinh: | + | + | | +
 SeqB: V I I R G A W E
 ```
 
+[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+
 
 *   **Identidades (`|`):** As posições com `V`, `I`, `G`, `A` são idênticas.
     *   **Cálculo:** 4 resíduos idênticos de um total de 8.
@@ -472,9 +474,15 @@ Note que a substituição de `T` (polar) por `W` (apolar e grande) não é consi
 
 **Conclusão:** A porcentagem de **similaridade** é sempre maior ou igual à de **identidade**. Para a modelagem por homologia, uma alta similaridade (>50%), mesmo com uma identidade mais baixa (~30%), já pode ser um forte indicativo de que as proteínas compartilham a mesma dobra estrutural.
 
+### Ferramentas e Bancos de Dados para Análise de Sequência e Estrutura
+
+As mais comuns são: **[UniProt](https://www.uniprot.org/ "Abrir em nova aba")**, **[PDB](https://www.rcsb.org/ "Abrir em nova aba")**, **[InterProScan](https://www.ebi.ac.uk/interpro/ "Abrir em nova aba")**, **[ExPASy ProtParam](https://web.expasy.org/protparam/ "Abrir em nova aba")**, mas não se limitam a essas.
+
 ---
 
 ### 1. Modelagem por Homologia (Modelagem Comparativa)
+
+[ADICIONAR IMAGEM EXPLICATIVA AQUI]
 
 A modelagem por homologia parte de um princípio evolutivo fundamental: se duas proteínas compartilham uma sequência de aminoácidos similar, elas provavelmente terão estruturas tridimensionais muito parecidas.
 
@@ -489,7 +497,9 @@ A modelagem por homologia parte de um princípio evolutivo fundamental: se duas 
 *   **Aplicação Principal:** É o método mais preciso e confiável quando existe um bom template disponível. Ideal para modelar o efeito de pequenas mutações (SNPs), gerar estruturas de proteínas de espécies próximas e estudar famílias de proteínas com um ancestral comum bem caracterizado.
 *   **Servidor Principal:** **[SWISS-MODEL](https://swissmodel.expasy.org/)** é um servidor web automatizado excelente, que escolhe o melhor template, constrói o modelo e realiza uma minimização de energia para otimizar a geometria.
 
-### 2. Threading (Reconhecimento de Dobra)
+### 2. Threading (Modelagem por Encaixe de Dobras ou *Fold Recognition*)
+
+[ADICIONAR IMAGEM EXPLICATIVA AQUI]
 
 E se não houver um homólogo com sequência similar? O Threading entra em cena. Ele se baseia na observação de que o número total de dobras (folds) proteicos existentes na natureza é limitado. O objetivo do Threading não é alinhar sequências, mas sim verificar se uma sequência de aminoácidos é compatível com uma dobra estrutural já conhecida.
 
@@ -506,6 +516,8 @@ E se não houver um homólogo com sequência similar? O Threading entra em cena.
 
 ### 3. Modelagem *Ab Initio*
 
+[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+
 Este é o "Santo Graal" da modelagem clássica: prever a estrutura de uma proteína a partir unicamente de sua sequência de aminoácidos, sem usar nenhum template. A ideia é simular o processo de enovelamento físico, buscando a conformação de menor energia livre.
 
 *   **Como Funciona:** Algoritmos como o **Rosetta** exploram o vasto espaço conformacional de uma proteína. Ele utiliza uma biblioteca de pequenos fragmentos estruturais (de 3 a 9 resíduos) retirados de proteínas conhecidas e os monta de diferentes maneiras, usando um algoritmo de busca estocástica (como o Monte Carlo) para encontrar o arranjo de menor energia.
@@ -521,7 +533,7 @@ Este é o "Santo Graal" da modelagem clássica: prever a estrutura de uma prote�
 
 ---
 
-## Módulo 3: A Revolução do Aprendizado de Máquina e a Nova Era da Biologia Estrutural
+## Módulo 2: A Revolução do Aprendizado de Máquina e a Nova Era da Biologia Estrutural
 
 [ADICIONAR IMAGEM EXPLICATIVA AQUI]
 
@@ -534,6 +546,8 @@ Por anos, a comunidade científica mediu o progresso na predição de estruturas
 Em 2018, no CASP13, a DeepMind (uma subsidiária da Google) apresentou o **AlphaFold 1**. Ele superou significativamente todos os outros competidores, demonstrando que redes neurais profundas podiam analisar padrões co-evolutivos em alinhamentos de múltiplas sequências (MSAs) para prever distâncias entre resíduos com uma precisão inédita. Embora ainda não atingisse qualidade experimental, o AlphaFold 1 foi a prova de conceito fundamental: o Deep Learning era o caminho a seguir. Ele preparou o terreno para a verdadeira revolução que estava por vir.
 
 ### O Ponto de Inflexão: AlphaFold 2 e o "Problema Resolvido? Nem tanto"
+
+[ADICIONAR IMAGEM EXPLICATIVA AQUI]
 
 No CASP14 em 2020, o **AlphaFold 2** foi apresentado, e os resultados chocaram a comunidade científica. O novo modelo alcançou uma precisão mediana de GDT_TS de 92.4, um score onde 100 representa um encaixe perfeito com a estrutura experimental. Pela primeira vez, um método computacional conseguia, em muitos casos, gerar modelos com precisão comparável à de técnicas experimentais como a cristalografia de raios-X. A revista *Nature* declarou que ele havia "resolvido" o problema do enovelamento de proteínas, um desafio de 50 anos.
 
@@ -621,7 +635,7 @@ Nem toda pergunta de pesquisa exige o poder (e o custo computacional) do AlphaFo
 
 ---
 
-## Módulo 4: Análise, Validação e Interpretação de Modelos Estruturais
+## Módulo 3: Análise, Validação e Interpretação de Modelos Estruturais
 
 [ADICIONAR IMAGEM EXPLICATIVA AQUI]
 
@@ -700,11 +714,13 @@ O QMEAN (Quality Model Energy ANalysis) é um "score de consenso" (ou *scoring f
 
 ---
 
-## Módulo 5: Da Estrutura à Função: Aplicações Práticas de Modelos Validados
+## Módulo 4: Da Estrutura à Função: Aplicações Práticas de Modelos Validados
 
 Um modelo tridimensional de alta qualidade, devidamente validado, não é o objetivo final da pesquisa; é a ferramenta inicial para formular hipóteses biológicas precisas. A seguir, exploramos como esses modelos são aplicados para decifrar a biologia e impulsionar a biotecnologia.
 
 ### 1. Entendimento de Processos Biológicos e Descrição de Fenômenos
+
+[ADICIONAR IMAGEM EXPLICATIVA AQUI]
 
 Um modelo 3D transforma uma sequência linear em um mapa funcional, permitindo-nos "ver" a biologia em ação.
 
@@ -712,17 +728,23 @@ Um modelo 3D transforma uma sequência linear em um mapa funcional, permitindo-n
 
 ### 2. Estudo de Doenças (Biologia Estrutural de Patologias)
 
+[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+
 Modelos estruturais são essenciais para entender como mutações genéticas causam doenças em nível molecular.
 
 * **Exemplo Prático:** Um paciente possui uma mutação de ponto (SNP) em um gene de reparo de DNA. Ao mapear essa mutação no modelo 3D da proteína, podemos descobrir que ela troca um resíduo carregado por um hidrofóbico em uma interface de interação proteína-proteína, explicando por que o complexo de reparo não consegue se formar, levando à doença.
 
 ### 3. Desenvolvimento de Fármacos (Triagem Virtual e Design Racional)
 
+[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+
 Esta é uma das aplicações mais diretas. A estrutura de uma proteína-alvo é usada como um "molde" para encontrar moléculas que se liguem a ela.
 
 * **Exemplo Prático:** Utilizando um modelo validado da protease principal de um vírus (ex: SARS-CoV-2), pode-se realizar um *docking molecular* (triagem virtual) de bibliotecas com milhões de compostos. Os compostos com melhor pontuação (energia de ligação) são selecionados como "hits" promissores para testes *in vitro*, acelerando drasticamente a descoberta de novos inibidores.
 
 ### 4. Desenvolvimento de Plataformas de Diagnóstico e Engenharia de Proteínas
+
+[ADICIONAR IMAGEM EXPLICATIVA AQUI]
 
 O conhecimento estrutural permite o design racional de novas ferramentas biotecnológicas.
 
