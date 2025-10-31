@@ -134,6 +134,7 @@ O tRNA iniciador (anticódon 3'-UAC-5') se pareia antiparalelamente com AUG no s
 <p align="justify">
   <img src="imgs/wobble-effect.png" alt="Um tRNA reconhece múltiplos códons sinônimos via pareamento flexível na 3ª base" width="1000">
 </p>
+
 <p align="justify"><em>
 O pareamento entre a 3ª base do códon (mRNA) e a 1ª base do anticódon (posição 34 do tRNA) é geometricamente mais permissivo que nas duas primeiras posições.
 </em></p>
@@ -148,10 +149,10 @@ O pareamento entre a 3ª base do códon (mRNA) e a 1ª base do anticódon (posi�
 
 ### 6) “Wobble” com inosina (exemplo mecanístico)
 
-<p align="justify">
-  <img src="imgs/wobble-effect2.png" alt="Inosina (I) no anticódon pareando com A/C/U na 3ª base do códon" width="1000">
+<p align="center">
+  <img src="imgs/wobble-effect2.png" alt="Inosina (I) no anticódon pareando com A/C/U na 3ª base do códon" width="500">
 </p>
-<p align="justify"><em>
+<p align="center"><em>
 A inosina (I) na posição 34 do anticódon pode parear com A, C ou U na 3ª base do códon, permitindo que um tRNA leia múltiplos códons sinônimos.
 </em></p>
 
