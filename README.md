@@ -68,7 +68,7 @@ Nos modelos didáticos e nas representações clássicas da biologia molecular, 
 ### 1) O Código Genético (O Filho Degenerado da Natureza)
 
 <p align="justify">
-  <img src="imgs/new-genetic-code.png" alt="Roda do código genético: leitura 5'→3' do mRNA" width="1000">
+  <img src="imgs/imgs/gene-codeeeeeee.png" alt="Roda do código genético: leitura 5'→3' do mRNA" width="1000">
 </p>
 <p align="justify"><em>
 Leitura do mRNA (5'→3') do centro para a borda até o aminoácido correspondente. AUG codifica Met (início); UAA/UAG/UGA são códons de parada. Fonte: Christopher R. Donohue (NIH, 2025).
