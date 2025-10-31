@@ -65,7 +65,7 @@ Nos modelos didáticos e nas representações clássicas da biologia molecular, 
 
 ## Código Genético, tRNA e “Wobble”: Conceitos Não Óbvios que Regulam a Tradução
 
-### 1) O Código Genético (O Degenerado)
+### 1) O Código Genético (O Filho Degenerado da Natureza)
 
 <p align="justify">
   <img src="imgs/new-genetic-code.png" alt="Roda do código genético: leitura 5'→3' do mRNA" width="1000">
