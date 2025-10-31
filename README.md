@@ -580,7 +580,7 @@ Note que a substituição de `T` (polar) por `W` (apolar e grande) não é consi
   <img src="imgs/structure-maintain.png" alt="Dois gráficos mostrando a relação entre a identidade de sequência e a estrutura proteica" width="1000">
 </p>
 <p align="justify">
-  <em>Fonte: Gráficos adaptados de estudos clássicos de Chothia e Lesk, ilustrando a relação entre a porcentagem de resíduos idênticos no núcleo proteico (eixo X) e, respectivamente, o desvio médio quadrático (RMSD) da estrutura do esqueleto (gráfico a) e a fração de resíduos no núcleo conservado (gráfico b).</em>
+  <em>Gráficos adaptados de estudos clássicos de Chothia e Lesk, ilustrando a relação entre a porcentagem de resíduos idênticos no núcleo proteico (eixo X) e, respectivamente, o desvio médio quadrático (RMSD) da estrutura do esqueleto (gráfico a) e a fração de resíduos no núcleo conservado (gráfico b).</em>
 </p>
 
 > **Conclusão:** A porcentagem de **similaridade** é sempre maior ou igual à de **identidade**. Para a modelagem por homologia, uma alta similaridade (>50%), mesmo com uma identidade mais baixa (~30%), já pode ser um forte indicativo de que as proteínas compartilham a mesma dobra estrutural.
