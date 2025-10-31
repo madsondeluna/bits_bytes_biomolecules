@@ -16,6 +16,8 @@
 
 Este repositório contém o material de referência completo para o curso, incluindo conceitos fundamentais, guias de ferramentas e leituras recomendadas. Qualquer sugestão ou feedback pode ser encaminhar uma mensagem para madsondeluna@gmail.com. 
 
+Link para o na versão web: [https://madsondeluna.github.io/bits_bytes_biomolecules/]
+
 ---
 
 ## Take Home Messages
