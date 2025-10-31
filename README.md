@@ -69,7 +69,7 @@
   <img src="imgs/new-genetic-code.png" alt="Roda do código genético: leitura 5'→3' do mRNA" width="1000">
 </p>
 <p align="justify"><em>
-Leitura do mRNA (5'→3') do centro para a borda até o aminoácido correspondente. AUG codifica Met (início); UAA/UAG/UGA são códons de parada.
+Leitura do mRNA (5'→3') do centro para a borda até o aminoácido correspondente. AUG codifica Met (início); UAA/UAG/UGA são códons de parada. Fonte: Christopher R. Donohue (NIH, 2025).
 </em></p>
 
 <p align="justify"><b>Por que importa:</b> a <b>degenerescência</b> do código faz com que, em <b>grande parte</b> dos conjuntos sinônimos, a <b>3ª base</b> do códon seja a mais variável (ligando com a Seção 5, “wobble”). Isso amortece mutações sinônimas e permite viés de códons que modula taxa de tradução e enovelamento co-traducional.</p>
