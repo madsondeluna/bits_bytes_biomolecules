@@ -63,7 +63,7 @@ Nos modelos didáticos e nas representações clássicas da biologia molecular, 
 
 ---
 
-## Código genético, tRNA e “wobble” — sequência visual comentada
+## Código Genético, tRNA e “Wobble”: Conceitos Não Óbvios que Regulam a Tradução
 
 ### 1) O Código Genético (O Degenerado)
 
