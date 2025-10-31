@@ -517,7 +517,7 @@ Modelos como AlphaFold (ex.: AF3) não "resolvem" o processo físico do enovelam
 Podemos escrever essa ideia como:
 
 $$
-f_{\text{AlphaFold}}(\text{sequência 1D}) \;\longrightarrow\; \text{estrutura 3D prevista}
+f_{\text{AlphaFold}}(\text{sequência 1D}) \\longrightarrow\ \text{estrutura 3D prevista}
 $$
 
 Ou seja: é predição supervisionada, não simulação físico-química do caminho de enovelamento.
