@@ -297,7 +297,7 @@ Talvez esse exemplo ajude a pensar melhor:
 
 ### Estrutura Secundária: Os Pilares da Arquitetura Proteica
 
-<p align="justify">A **estrutura secundária** refere-se aos arranjos locais e regulares da cadeia polipeptídica, estabilizados por um padrão de pontes de hidrogênio entre os átomos do esqueleto peptídico (N-H e C=O).</p>
+A **estrutura secundária** refere-se aos arranjos locais e regulares da cadeia polipeptídica, estabilizados por um padrão de pontes de hidrogênio entre os átomos do esqueleto peptídico (N-H e C=O).
 
 | Estrutura | Descrição e Características |
 |:---|:---|
@@ -310,22 +310,22 @@ Talvez esse exemplo ajude a pensar melhor:
 
 > Seriam as hélices fósseis ancestrais das proteínas modernas?
 
-<p align="justify">As hélices proteicas são estruturas secundárias onde a cadeia polipepeptídica se enrola, estabilizada por ligações de hidrogênio. A distinção entre a $3_{10}$-hélice (A), $\alpha$-hélice (B) e $\pi$-hélice (C) reside no número de resíduos por volta e no padrão de suas ligações de hidrogênio.</p>
+As hélices proteicas são estruturas secundárias onde a cadeia polipepeptídica se enrola, estabilizada por ligações de hidrogênio. A distinção entre a $3_{10}$-hélice (A), $\alpha$-hélice (B) e $\pi$-hélice (C) reside no número de resíduos por volta e no padrão de suas ligações de hidrogênio.
 
-<p align="justify">
-  <img src="imgs/helixes.png" alt="XXXXXXXX" width="1000">
+<p align="center">
+  <img src="imgs/helixes.png" alt="XXXXXXXX" width="400">
 </p>
-<p align="justify">
+<p align="center">
 <em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
 </p>
 
-**(A) $3_{10}$-Hélice:** <p align="justify">Mais compacta, possui 3.0 resíduos por volta. As ligações de hidrogênio são formadas entre o C=O de *n* e o N-H de *n*+3. O nome "$3_{10}$" indica 3 resíduos por volta e um anel de 10 átomos formado pela ligação de hidrogênio. É menos comum e geralmente curta.</p>
+**(A) $3_{10}$-Hélice:** Mais compacta, possui 3.0 resíduos por volta. As ligações de hidrogênio são formadas entre o C=O de *n* e o N-H de *n*+3. O nome "$3_{10}$" indica 3 resíduos por volta e um anel de 10 átomos formado pela ligação de hidrogênio. É menos comum e geralmente curta.
 
-**(B) $\alpha$-Hélice:** <p align="justify">É a hélice mais comum e estável, com 3.6 resíduos por volta. As ligações de hidrogênio ocorrem entre o C=O de um resíduo *n* e o N-H do resíduo *n*+4. O nome "$\alpha$" a designa como a principal e primeira hélice caracterizada.</p>
+**(B) $\alpha$-Hélice:** É a hélice mais comum e estável, com 3.6 resíduos por volta. As ligações de hidrogênio ocorrem entre o C=O de um resíduo *n* e o N-H do resíduo *n*+4. O nome "$\alpha$" a designa como a principal e primeira hélice caracterizada.
 
-**(C) $\pi$-Hélice:** <p align="justify">Mais "aberta", com aproximadamente 4.4 resíduos por volta. As ligações de hidrogênio ocorrem entre o C=O de *n* e o N-H de *n*+5. O nome "$\pi$" refere-se ao anel de 16 átomos formado por essa ligação ou à sua natureza mais "aberta". É a hélice menos frequente e raramente longa.</p>
+**(C) $\pi$-Hélice:** Mais "aberta", com aproximadamente 4.4 resíduos por volta. As ligações de hidrogênio ocorrem entre o C=O de *n* e o N-H de *n*+5. O nome "$\pi$" refere-se ao anel de 16 átomos formado por essa ligação ou à sua natureza mais "aberta". É a hélice menos frequente e raramente longa.
 
-<p align="justify">Em suma, a nomenclatura das hélices reflete diretamente suas características estruturais primárias, como o número de resíduos por volta e o padrão específico das ligações de hidrogênio intramoleculares.</p>
+Em suma, a nomenclatura das hélices reflete diretamente suas características estruturais primárias, como o número de resíduos por volta e o padrão específico das ligações de hidrogênio intramoleculares.
 
 <p align="justify">
   <img src="imgs/strucutures-configuration.png" alt="XXXXXXXX" width="1000">
@@ -340,14 +340,14 @@ Talvez esse exemplo ajude a pensar melhor:
 
 ### Alças 
 
-<p align="justify">As **alças** (loops ou turns) são regiões de estrutura secundária irregular que desempenham papel fundamental como conectores estruturais entre elementos regulares da proteína, especialmente entre α-hélices e fitas β. Ao contrário das estruturas regulares, as alças não apresentam padrões repetitivos de ligações de hidrogênio da cadeia principal, permitindo maior flexibilidade conformacional. Funcionalmente, estas regiões atuam como **linkers** (conectores) que possibilitam mudanças na direção da cadeia polipeptídica, sendo essenciais para o dobramento tridimensional da proteína e para a formação de sua arquitetura global.</p>    
+As **alças** (loops ou turns) são regiões de estrutura secundária irregular que desempenham papel fundamental como conectores estruturais entre elementos regulares da proteína, especialmente entre α-hélices e fitas β. Ao contrário das estruturas regulares, as alças não apresentam padrões repetitivos de ligações de hidrogênio da cadeia principal, permitindo maior flexibilidade conformacional. Funcionalmente, estas regiões atuam como **linkers** (conectores) que possibilitam mudanças na direção da cadeia polipeptídica, sendo essenciais para o dobramento tridimensional da proteína e para a formação de sua arquitetura global. 
 
-<p align="justify">As alças são frequentemente classificadas por seu comprimento e geometria. Os **turns** (voltas) são alças curtas, tipicamente contendo 2 a 5 resíduos, sendo as mais comuns as **β-turns** (4 resíduos) e **γ-turns** (3 resíduos). As β-turns são particularmente importantes em folhas β antiparalelas, permitindo a reversão da direção da cadeia. Já os **loops** são segmentos mais longos e variáveis que conectam elementos estruturais distantes. Além de sua função estrutural, muitas alças estão localizadas na superfície das proteínas e participam ativamente do reconhecimento molecular, interações proteína-proteína e formação de sítios catalíticos. A flexibilidade conformacional destas regiões é crucial para a função biológica, permitindo ajustes induzidos pela ligação de substratos ou cofatores.</p>
+As alças são frequentemente classificadas por seu comprimento e geometria. Os **turns** (voltas) são alças curtas, tipicamente contendo 2 a 5 resíduos, sendo as mais comuns as **β-turns** (4 resíduos) e **γ-turns** (3 resíduos). As β-turns são particularmente importantes em folhas β antiparalelas, permitindo a reversão da direção da cadeia. Já os **loops** são segmentos mais longos e variáveis que conectam elementos estruturais distantes. Além de sua função estrutural, muitas alças estão localizadas na superfície das proteínas e participam ativamente do reconhecimento molecular, interações proteína-proteína e formação de sítios catalíticos. A flexibilidade conformacional destas regiões é crucial para a função biológica, permitindo ajustes induzidos pela ligação de substratos ou cofatores.
 
-<p align="justify">
-  <img src="imgs/loop.png" alt="XXXXXXXX" width="1000">
+<p align="center">
+  <img src="imgs/loop.png" alt="XXXXXXXX" width="500">
 </p>
-<p align="justify">
+<p align="center">
 <em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
 </p>
 
@@ -359,10 +359,10 @@ Talvez esse exemplo ajude a pensar melhor:
 
 <p align="justify">Quando múltiplas fitas β se associam lateralmente através de ligações de hidrogênio intermoleculares, forma-se uma **folha β** (β-sheet). Esta estrutura pode ser organizada de duas maneiras distintas: **folha β antiparalela**, onde as fitas adjacentes correm em direções opostas (N→C de uma fita alinha-se com C→N da fita vizinha), resultando em um padrão de ligações de hidrogênio direto e mais regular; e **folha β paralela**, onde todas as fitas correm na mesma direção (N→C), criando ligações de hidrogênio mais distorcidas e geometricamente menos favoráveis, tornando esta configuração ligeiramente menos estável. As folhas β podem conter de 2 a mais de 10 fitas, e muitas estruturas proteicas apresentam folhas β mistas, contendo segmentos tanto paralelos quanto antiparalelos. A torção característica das folhas β, observada na maioria das estruturas, resulta em uma conformação levemente helicoidal que otimiza as interações de empacotamento no núcleo hidrofóbico das proteínas.</p>
 
-<p align="justify">
-  <img src="imgs/beta-shet.png" alt="XXXXXXXX" width="1000">
+<p align="center">
+  <img src="imgs/beta-shet.png" alt="XXXXXXXX" width="500">
 </p>
-<p align="justify">
+<p align="center">
 <em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
 </p>
 
@@ -374,10 +374,10 @@ A gênese das primeiras proteínas funcionais foi fortemente condicionada pela d
 
 Do ponto de vista estrutural, esse conjunto pré-biótico era intrinsecamente tendencioso à formação de determinadas estruturas secundárias. Diferentes aminoácidos exibem propensões intrínsecas distintas para a formação de α-hélices, propriedade esta extensivamente quantificada em estudos experimentais e computacionais. A Alanina (Ala), um dos aminoácidos pré-bióticos mais simples e provavelmente mais abundantes, apresenta a maior propensão helicoidal, servindo como referência para a estabilidade desse tipo de estrutura. A Leucina (Leu) também demonstra elevada capacidade de estabilização de hélices α. Em contraste, a Glicina (Gly), devido à sua alta flexibilidade conformacional, e a Prolina (Pro), cuja estrutura cíclica restringe a rotação da ligação peptídica, atuam como fortes disruptores de hélices. Assim, a presença de aminoácidos formadores de hélices, como Ala e Leu, sugere que mesmo a polimerização estocástica desses monômeros possuía uma probabilidade estatisticamente significativa de originar sequências capazes de adotar conformações helicoidais estáveis.
 
-<p align="justify">
-  <img src="imgs/helix.png" alt="XXXXXXXX" width="1000">
+<p align="center">
+  <img src="imgs/helix.png" alt="XXXXXXXX" width="300">
 </p>
-<p align="justify">
+<p align="center">
 <em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
 </p>
 
@@ -415,6 +415,7 @@ A organização hierárquica das estruturas proteicas pode ser explorada atravé
 ---
 
 ### O Paradoxo de Levinthal
+
 Formulado por Cyrus Levinthal, este paradoxo destaca a impossibilidade de o enovelamento ocorrer por uma busca aleatória. Ele calculou que uma proteína levaria mais tempo que a idade do universo para testar todas as suas conformações possíveis. Isso demonstra que o enovelamento não é um processo aleatório, mas sim um processo altamente direcionado que segue "caminhos" ou "rotas" específicas, otimizadas ao longo da evolução, para atingir o estado nativo em uma escala de tempo biologicamente viável.
 
 ### O Paradoxo do Enovelamento (Levinthal)
