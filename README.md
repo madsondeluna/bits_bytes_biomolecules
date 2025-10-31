@@ -71,7 +71,7 @@ Nos modelos didáticos e nas representações clássicas da biologia molecular, 
 
 ---
 
-## Código Genético, tRNA e “Wobble” - Conceitos Não Óbvios que Regulam a Tradução
+## Código Genético, tRNA e “Wobble”: Conceitos Não Óbvios que Regulam a Tradução
 
 ### 1) O Código Genético (O Filho Degenerado da Natureza)
 
@@ -88,7 +88,7 @@ Leitura do mRNA (5'→3') do centro para a borda até o aminoácido corresponden
 
 ---
 
-### 2) “Charging” - Aminoacilação do tRNA
+### 2) “Charging”: Aminoacilação do tRNA
 
 <p align="justify">
   <img src="imgs/trna-syntesis.png" alt="Aminoacil-tRNA sintetase ligando aminoácido ao tRNA com consumo de ATP" width="1000">
@@ -253,7 +253,7 @@ A ligação peptídica sob outra óptica.
 
 ---
 
-### A Paisagem Energética - O Funil de Enovelamento
+### A Paisagem Energética: O Funil de Enovelamento
 
 <p align="justify">
   <img src="imgs/funnel.png" alt="Diagrama do funil" width="1000">
@@ -301,7 +301,7 @@ Talvez esse exemplo ajude a pensar melhor:
 
 ## Fundamentos da Sequência e Estrutura Proteica
 
-### Estrutura Secundária - Os Pilares da Arquitetura Proteica
+### Estrutura Secundária: Os Pilares da Arquitetura Proteica
 
 A **estrutura secundária** refere-se aos arranjos locais e regulares da cadeia polipeptídica, estabilizados por um padrão de pontes de hidrogênio entre os átomos do esqueleto peptídico (N-H e C=O).
 
@@ -443,7 +443,7 @@ O Paradoxo de Levinthal trata do Problema 2 (`a cinética`).
 
 ---
 
-#### O Problema - O Cálculo Impossível (A Busca Aleatória)
+#### O Problema: O Cálculo Impossível (A Busca Aleatória)
 
 Levinthal calculou o tempo que uma proteína levaria para se enovelar se ela tentasse *aleatoriamente* todas as conformações possíveis.
 
@@ -538,7 +538,7 @@ Ou seja: é predição supervisionada, não simulação físico-química do cami
 
 ---
 
-## Módulo 1 - Técnicas Clássicas de Modelagem Molecular
+## Módulo 1: Técnicas Clássicas de Modelagem Molecular
 
 Neste módulo, exploramos os três pilares da modelagem de proteínas pré-Deep Learning. Embora ferramentas como o AlphaFold tenham revolucionado a predição de estruturas, os métodos clássicos continuam sendo indispensáveis para cenários específicos, oferecendo controle e abordagens que ainda não são o foco principal das novas tecnologias.
 
@@ -641,13 +641,13 @@ Este é o "Santo Graal" da modelagem clássica: prever a estrutura de uma prote�
 
 ---
 
-## Módulo 2 - A Revolução do Aprendizado de Máquina e a Nova Era da Biologia Estrutural
+## Módulo 2: A Revolução do Aprendizado de Máquina e a Nova Era da Biologia Estrutural
 
 [ADICIONAR IMAGEM EXPLICATIVA AQUI]
 
 Se os métodos clássicos foram a base da modelagem molecular por décadas, a chegada do aprendizado de máquina (Deep Learning) não foi apenas uma melhoria: foi um evento transformador que redefiniu os limites do que é possível na biologia estrutural computacional.
 
-### Contexto Histórico - A Longa Estrada do CASP e a Promessa do AlphaFold 1
+### Contexto Histórico: A Longa Estrada do CASP e a Promessa do AlphaFold 1
 
 Por anos, a comunidade científica mediu o progresso na predição de estruturas através do **CASP (Critical Assessment of protein Structure Prediction)**, uma competição bienal onde grupos de pesquisa de todo o mundo tentavam prever estruturas de proteínas que haviam sido resolvidas experimentalmente, mas ainda não publicadas. Por muito tempo, o progresso foi incremental.
 
@@ -655,7 +655,7 @@ Em 2018, no CASP13, a DeepMind (uma subsidiária da Google) apresentou o **Alpha
 
 ---
 
-### O Ponto de Inflexão - AlphaFold 2 e o "Problema Resolvido? Nem tanto"
+### O Ponto de Inflexão: AlphaFold 2 e o "Problema Resolvido? Nem tanto"
 
 [ADICIONAR IMAGEM EXPLICATIVA AQUI]
 
@@ -665,7 +665,7 @@ O impacto do AlphaFold 2 foi amplificado por uma decisão crucial da DeepMind: *
 
 ---
 
-### A Próxima Geração - AlphaFold 3 e o Paradoxo do Código Fechado 
+### A Próxima Geração: AlphaFold 3 e o Paradoxo do Código Fechado 
 
 [ADICIONAR IMAGEM EXPLICATIVA AQUI]
 
@@ -758,7 +758,7 @@ Nem toda pergunta de pesquisa exige o poder (e o custo computacional) do AlphaFo
 
 ---
 
-## Módulo 3 - Análise, Validação e Interpretação de Modelos Estruturais
+## Módulo 3: Análise, Validação e Interpretação de Modelos Estruturais
 
 [ADICIONAR IMAGEM EXPLICATIVA AQUI]
 
@@ -843,7 +843,7 @@ O QMEAN (Quality Model Energy ANalysis) é um "score de consenso" (ou *scoring f
 
 ---
 
-## Módulo 4 - Da Estrutura à Função: Aplicações Práticas de Modelos Validados
+## Módulo 4: Da Estrutura à Função: Aplicações Práticas de Modelos Validados
 
 Um modelo tridimensional de alta qualidade, devidamente validado, não é o objetivo final da pesquisa; é a ferramenta inicial para formular hipóteses biológicas precisas. A seguir, exploramos como esses modelos são aplicados para decifrar a biologia e impulsionar a biotecnologia.
 
