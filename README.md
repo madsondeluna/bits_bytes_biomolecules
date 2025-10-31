@@ -552,8 +552,8 @@ Vamos analisar o seguinte alinhamento entre duas sequências curtas:
 
 ```
   V L I K G A T D
-  | + | + | | + +
-  V I I R G A W E
+   | + | + | | + +
+   V I I R G A W E
 ```
 
 > **Identidades (`|`):** As posições com `V`, `I`, `G`, `A` são idênticas.
