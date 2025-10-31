@@ -76,25 +76,9 @@ Leitura do mRNA (5'→3') do centro para a borda até o aminoácido corresponden
 
 <p align="justify"><b>Quando dá problema:</b> mutações <i>missense</i> alteram o aminoácido; mutações <i>nonsense</i> criam parada prematura e podem acionar <b>NMD</b> (nonsense-mediated decay), degradando o mRNA antes da tradução completa. Exceções importantes: AUG (Met) e UGG (Trp) têm um único códon; alguns grupos (Leu/Arg/Ser) também variam na 1ª base — portanto não é “todos os códons” com 3ª base degenerada.</p>
 
-
 ---
 
-### 2) Pareamento códon–anticódon (exemplo de início)
-
-<p align="justify">
-  <img src="imgs/codon-recognition.png" alt="Pareamento AUG com anticódon UAC no tRNA iniciador" width="1000">
-</p>
-<p align="justify"><em>
-O tRNA iniciador (anticódon 3'-UAC-5') se pareia antiparalelamente com AUG no sítio P na iniciação.
-</em></p>
-
-<p align="justify"><b>Por que importa:</b> o ribossomo monitora rigidamente as <b>duas primeiras bases</b> do códon (geometria Watson–Crick), ancorando a fidelidade do código. Direção de síntese: N→C.</p>
-
-<p align="justify"><b>Quando dá problema:</b> mutações no códon de início ou no contexto Kozak (eucariontes) reduzem a eficiência de iniciação; parada prematura a montante dispara NMD; estruturas secundárias fortes próximas ao start podem bloquear o escaneamento e impedir a tradução.</p>
-
----
-
-### 3) “Charging”: aminoacilação do tRNA
+### 2) “Charging”: Aminoacilação do tRNA
 
 <p align="justify">
   <img src="imgs/trna-syntesis.png" alt="Aminoacil-tRNA sintetase ligando aminoácido ao tRNA com consumo de ATP" width="1000">
@@ -109,7 +93,7 @@ Aminoacil-tRNA sintetases ligam o aminoácido correto ao tRNA cognato usando ATP
 
 ---
 
-### 4) Estrutura do tRNA e modificações
+### 3) Estrutura do tRNA e modificações
 
 <p align="justify">
   <img src="imgs/trna-detail.png" alt="Folha-de-trevo do tRNA com loops D, anticódon, variável e TΨC e posições de modificações" width="1000">
@@ -121,6 +105,22 @@ O tRNA apresenta loops funcionais (D, anticódon, variável, TΨC) e numerosas m
 <p align="justify"><b>Por que importa:</b> modificações estabilizam a estrutura, ajustam a forma do anticódon e afinam a decodificação (eficiência/fidelidade); algumas agem como “aceleradores/freios” finos na elongação, afetando enovelamento co-traducional e montagem de domínios.</p>
 
 <p align="justify"><b>Quando dá problema:</b> perfis de modificação disfuncionais (doença/estresse) mudam a preferência por códons, promovem pausas, <i>readthrough</i> indesejado ou erros; clivagens geram tRNA-fragments que podem <b>reprimir tradução</b>.</p>
+
+---
+
+### 4) Pareamento Códon–Anticódon
+
+<p align="justify">
+  <img src="imgs/codon-recognition.png" alt="Pareamento AUG com anticódon UAC no tRNA iniciador" width="1000">
+</p>
+<p align="justify"><em>
+O tRNA iniciador (anticódon 3'-UAC-5') se pareia antiparalelamente com AUG no sítio P na iniciação.
+</em></p>
+
+<p align="justify"><b>Por que importa:</b> o ribossomo monitora rigidamente as <b>duas primeiras bases</b> do códon (geometria Watson–Crick), ancorando a fidelidade do código. Direção de síntese: N→C.</p>
+
+<p align="justify"><b>Quando dá problema:</b> mutações no códon de início ou no contexto Kozak (eucariontes) reduzem a eficiência de iniciação; parada prematura a montante dispara NMD; estruturas secundárias fortes próximas ao start podem bloquear o escaneamento e impedir a tradução.</p>
+
 
 ---
 
