@@ -82,9 +82,9 @@ Nos modelos didáticos e nas representações clássicas da biologia molecular, 
 Leitura do mRNA (5'→3') do centro para a borda até o aminoácido correspondente. AUG codifica Met (início); UAA/UAG/UGA são códons de parada. Fonte: Christopher R. Donohue (NIH, 2025).
 </em></p>
 
-<p align="justify"><b>Por que importa:</b> a <b>degenerescência</b> do código faz com que, em <b>grande parte</b> dos conjuntos sinônimos, a <b>3ª base</b> do códon seja a mais variável (ligando com a Seção 5, “wobble”). Isso amortece mutações sinônimas e permite viés de códons que modula taxa de tradução e enovelamento co-traducional.</p>
+* Por que importa:</b> a <b>degenerescência</b> do código faz com que, em <b>grande parte</b> dos conjuntos sinônimos, a <b>3ª base</b> do códon seja a mais variável (ligando com a Seção 5, “wobble”). Isso amortece mutações sinônimas e permite viés de códons que modula taxa de tradução e enovelamento co-traducional.
 
-<p align="justify"><b>Quando dá problema:</b> mutações <i>missense</i> alteram o aminoácido; mutações <i>nonsense</i> criam parada prematura e podem acionar <b>NMD</b> (nonsense-mediated decay), degradando o mRNA antes da tradução completa. Exceções importantes: AUG (Met) e UGG (Trp) têm um único códon; alguns grupos (Leu/Arg/Ser) também variam na 1ª base — portanto não é “todos os códons” com 3ª base degenerada.</p>
+* Quando dá problema:</b> mutações <i>missense</i> alteram o aminoácido; mutações <i>nonsense</i> criam parada prematura e podem acionar <b>NMD</b> (nonsense-mediated decay), degradando o mRNA antes da tradução completa. Exceções importantes: AUG (Met) e UGG (Trp) têm um único códon; alguns grupos (Leu/Arg/Ser) também variam na 1ª base — portanto não é “todos os códons” com 3ª base degenerada.
 
 ---
 
@@ -97,9 +97,9 @@ Leitura do mRNA (5'→3') do centro para a borda até o aminoácido corresponden
 Aminoacil-tRNA sintetases ligam o aminoácido correto ao tRNA cognato usando ATP (ATP → AMP + PPi; custo ~2 ligações de alta energia) e possuem mecanismos de edição.
 </em></p>
 
-<p align="justify"><b>Por que importa:</b> define o “vocabulário” físico do código genético; a alta especificidade/edição limita a <i>mistranslation</i>, protegendo estrutura e função proteica.</p>
+* Por que importa:</b> define o “vocabulário” físico do código genético; a alta especificidade/edição limita a <i>mistranslation</i>, protegendo estrutura e função proteica.</p>
 
-<p align="justify"><b>Quando dá problema:</b> defeitos em sintetases ou na edição levam a incorporação errada de aminoácidos (proteínas mal enoveladas, toxicidade); estresse pode alterar níveis de tRNA carregados e reprogramar a priorização traducional.</p>
+* Quando dá problema:</b> defeitos em sintetases ou na edição levam a incorporação errada de aminoácidos (proteínas mal enoveladas, toxicidade); estresse pode alterar níveis de tRNA carregados e reprogramar a priorização traducional.
 
 ---
 
@@ -112,9 +112,9 @@ Aminoacil-tRNA sintetases ligam o aminoácido correto ao tRNA cognato usando ATP
 O tRNA apresenta loops funcionais (D, anticódon, variável, TΨC) e numerosas modificações (Ψ, metilações, queosina, inosina etc.) distribuídas ao longo da molécula.
 </em></p>
 
-<p align="justify"><b>Por que importa:</b> modificações estabilizam a estrutura, ajustam a forma do anticódon e afinam a decodificação (eficiência/fidelidade); algumas agem como “aceleradores/freios” finos na elongação, afetando enovelamento co-traducional e montagem de domínios.</p>
+* Por que importa:</b> modificações estabilizam a estrutura, ajustam a forma do anticódon e afinam a decodificação (eficiência/fidelidade); algumas agem como “aceleradores/freios” finos na elongação, afetando enovelamento co-traducional e montagem de domínios.
 
-<p align="justify"><b>Quando dá problema:</b> perfis de modificação disfuncionais (doença/estresse) mudam a preferência por códons, promovem pausas, <i>readthrough</i> indesejado ou erros; clivagens geram tRNA-fragments que podem <b>reprimir tradução</b>.</p>
+* Quando dá problema:</b> perfis de modificação disfuncionais (doença/estresse) mudam a preferência por códons, promovem pausas, <i>readthrough</i> indesejado ou erros; clivagens geram tRNA-fragments que podem <b>reprimir tradução</b>.
 
 ---
 
@@ -127,9 +127,9 @@ O tRNA apresenta loops funcionais (D, anticódon, variável, TΨC) e numerosas m
 O tRNA iniciador (anticódon 3'-UAC-5') se pareia antiparalelamente com AUG no sítio P na iniciação.
 </em></p>
 
-<p align="justify"><b>Por que importa:</b> o ribossomo monitora rigidamente as <b>duas primeiras bases</b> do códon (geometria Watson–Crick), ancorando a fidelidade do código. Direção de síntese: N→C.</p>
+* Por que importa:</b> o ribossomo monitora rigidamente as <b>duas primeiras bases</b> do códon (geometria Watson–Crick), ancorando a fidelidade do código. Direção de síntese: N→C.
 
-<p align="justify"><b>Quando dá problema:</b> mutações no códon de início ou no contexto Kozak (eucariontes) reduzem a eficiência de iniciação; parada prematura a montante dispara NMD; estruturas secundárias fortes próximas ao start podem bloquear o escaneamento e impedir a tradução.</p>
+* Quando dá problema:</b> mutações no códon de início ou no contexto Kozak (eucariontes) reduzem a eficiência de iniciação; parada prematura a montante dispara NMD; estruturas secundárias fortes próximas ao start podem bloquear o escaneamento e impedir a tradução.
 
 
 ---
@@ -144,11 +144,11 @@ O tRNA iniciador (anticódon 3'-UAC-5') se pareia antiparalelamente com AUG no s
 O pareamento entre a 3ª base do códon (mRNA) e a 1ª base do anticódon (posição 34 do tRNA) é geometricamente mais permissivo que nas duas primeiras posições.
 </em></p>
 
-<p align="justify"><b>Por que a 3ª posição é menos acurada:</b> o sítio de decodificação do ribossomo impõe checagens estéricas e de geometria Watson–Crick sobretudo nas <b>1ª e 2ª bases</b>; na <b>3ª</b>, há tolerância a pares não canônicos como <b>G•U</b> e a presença de <b>inosina (I)</b> no anticódon (hipoxantina) que amplia o reconhecimento (ver Seção 6). Essa arquitetura, e não “xantina”, explica a menor stringência na 3ª base. </p>
+* Por que a 3ª posição é menos acurada:</b> o sítio de decodificação do ribossomo impõe checagens estéricas e de geometria Watson–Crick sobretudo nas <b>1ª e 2ª bases</b>; na <b>3ª</b>, há tolerância a pares não canônicos como <b>G•U</b> e a presença de <b>inosina (I)</b> no anticódon (hipoxantina) que amplia o reconhecimento (ver Seção 6). Essa arquitetura, e não “xantina”, explica a menor stringência na 3ª base. 
 
-<p align="justify"><b>Conexão com a Figura 1:</b> a degenerescência mostrada na roda do código decorre, em grande parte, dessa tolerância no wobble — por isso a 3ª base é frequentemente a mais variável entre códons sinônimos.</p>
+* *Conexão com a Figura 1:</b> a degenerescência mostrada na roda do código decorre, em grande parte, dessa tolerância no wobble — por isso a 3ª base é frequentemente a mais variável entre códons sinônimos.
 
-<p align="justify"><b>Quando dá problema:</b> alterações em modificações do anticódon (ex.: queosina/wybutosina) mudam a janela de tolerância → erros, <i>frameshifting</i> e ruído traducional; viés de códons extremo pode pausar excessivamente e prejudicar enovelamento.</p>
+* *Quando dá problema:</b> alterações em modificações do anticódon (ex.: queosina/wybutosina) mudam a janela de tolerância → erros, <i>frameshifting</i> e ruído traducional; viés de códons extremo pode pausar excessivamente e prejudicar enovelamento.
 
 ---
 
@@ -161,19 +161,19 @@ O pareamento entre a 3ª base do códon (mRNA) e a 1ª base do anticódon (posi�
 A inosina (I) na posição 34 do anticódon pode parear com A, C ou U na 3ª base do códon, permitindo que um tRNA leia múltiplos códons sinônimos.
 </em></p>
 
-<p align="justify"><b>Por que importa:</b> reduz o número total de tRNAs necessários, mantém eficiência de decodificação e explica a ampla variabilidade da 3ª base na maior parte dos códons.</p>
+* Por que importa:</b> reduz o número total de tRNAs necessários, mantém eficiência de decodificação e explica a ampla variabilidade da 3ª base na maior parte dos códons.
 
-<p align="justify"><b>Quando dá problema:</b> perda/ganho de inosina ou outras modificações altera o mapa de reconhecimento → <i>mistranslation</i>, mudança de taxa de elongação e, em casos extremos, ativação de respostas de controle de qualidade (por exemplo, ribosome-associated quality control), reduzindo a produção proteica.</p>
+* Quando dá problema:</b> perda/ganho de inosina ou outras modificações altera o mapa de reconhecimento → <i>mistranslation</i>, mudança de taxa de elongação e, em casos extremos, ativação de respostas de controle de qualidade (por exemplo, ribosome-associated quality control), reduzindo a produção proteica.
 
 ---
 
-<p align="justify"><b>Correção técnica essencial:</b> a menor acurácia na 3ª posição do códon não é “por conta da xantina”. O fenômeno clássico de wobble decorre do relaxamento geométrico no sítio A do ribossomo, do pareamento <b>G•U</b> e, principalmente, da <b>inosina/hipoxantina</b> no anticódon. Xantina não é a base típica envolvida na 1ª posição do anticódon em tRNAs celulares.</p>
+* Correção técnica essencial:</b> a menor acurácia na 3ª posição do códon não é “por conta da xantina”. O fenômeno clássico de wobble decorre do relaxamento geométrico no sítio A do ribossomo, do pareamento <b>G•U</b> e, principalmente, da <b>inosina/hipoxantina</b> no anticódon. Xantina não é a base típica envolvida na 1ª posição do anticódon em tRNAs celulares.
 
 ---
 
 ### Como Surgem as Proteínas?
 
-<p align="justify">No contexto biológico da síntese proteica (tradução), este processo é energeticamente custoso, consumindo energia (na forma de ATP e GTP) para a ativação dos aminoácidos. Esta ativação ocorre através da ligação covalente entre cada aminoácido e seu tRNA cognato (complementar), catalisada pelas aminoacil-tRNA sintetases, enzimas altamente específicas que reconhecem tanto o aminoácido quanto seu tRNA correspondente. Uma vez formado o aminoacil-tRNA, este complexo é direcionado ao ribossomo para participar da tradução. A formação da ligação peptídica em si é catalisada pelo ribossomo, especificamente pela atividade peptidil transferase, uma função catalítica intrínseca ao RNA ribossômico (rRNA) localizado na subunidade maior. Este mecanismo transfere a cadeia polipeptídica crescente do tRNA localizado no sítio P (Peptidil) para o grupo amino do novo aminoácido que está ligado ao seu tRNA no sítio A (Aminoacil), permitindo assim a elongação da cadeia polipeptídica.</p>
+No contexto biológico da síntese proteica (tradução), este processo é energeticamente custoso, consumindo energia (na forma de ATP e GTP) para a ativação dos aminoácidos. Esta ativação ocorre através da ligação covalente entre cada aminoácido e seu tRNA cognato (complementar), catalisada pelas aminoacil-tRNA sintetases, enzimas altamente específicas que reconhecem tanto o aminoácido quanto seu tRNA correspondente. Uma vez formado o aminoacil-tRNA, este complexo é direcionado ao ribossomo para participar da tradução. A formação da ligação peptídica em si é catalisada pelo ribossomo, especificamente pela atividade peptidil transferase, uma função catalítica intrínseca ao RNA ribossômico (rRNA) localizado na subunidade maior. Este mecanismo transfere a cadeia polipeptídica crescente do tRNA localizado no sítio P (Peptidil) para o grupo amino do novo aminoácido que está ligado ao seu tRNA no sítio A (Aminoacil), permitindo assim a elongação da cadeia polipeptídica.
 
 <p align="justify">
   <img src="imgs/ribo.png" alt="XXXXX" width="1000">
@@ -182,7 +182,7 @@ A inosina (I) na posição 34 do anticódon pode parear com A, C ou U na 3ª bas
 <em>Fonte: Amy McDermott, 2024.</em>
 </p>
 
-<p align="justify">Ao abordar as interações entre aminoácidos, a ligação primordial e mais forte, que estabelece a estrutura primária de uma proteína, é a ligação peptídica. Esta ligação covalente é formada pela união do grupo α-carboxila de um aminoácido ao grupo α-amino do aminoácido subsequente, caracterizando uma reação de condensação (ou desidratação) na qual uma molécula de água (H₂O) é liberada.</p>
+Ao abordar as interações entre aminoácidos, a ligação primordial e mais forte, que estabelece a estrutura primária de uma proteína, é a ligação peptídica. Esta ligação covalente é formada pela união do grupo α-carboxila de um aminoácido ao grupo α-amino do aminoácido subsequente, caracterizando uma reação de condensação (ou desidratação) na qual uma molécula de água (H₂O) é liberada.
 
 <p align="justify">
   <img src="imgs/pep-bond.png" alt="XXXXXXXX" width="1000">
@@ -231,7 +231,7 @@ A ligação peptídica sob outra óptica.
 <em>O gráfico mostra a matriz dos aminoácidos naturais: círculos azuis maiores indicam interações mais fortes. Fonte: Cambridge MedChem Consulting, 2025.</em>
 </p>
 
-<p align="justify">O PDB contém muitos exemplos de interações entre aminoácidos. Embora existam interações específicas bem documentadas (aminoácidos básicos com carga positiva se ligam a aminoácidos ácidos com carga negativa), não havia visto um estudo sistemático de todas as combinações de aminoácidos, por isso, o trabalho de [Andrew White](https://crowsandcats.blogspot.com/2012/03/amino-acid-interactions.html) é notável, pois ele contou sistematicamente o número de interações entre cada par de tipos de aminoácidos e, em seguida, converteu essas contagens em energias de interação.</p>
+ PDB contém muitos exemplos de interações entre aminoácidos. Embora existam interações específicas bem documentadas (aminoácidos básicos com carga positiva se ligam a aminoácidos ácidos com carga negativa), não havia visto um estudo sistemático de todas as combinações de aminoácidos, por isso, o trabalho de [Andrew White](https://crowsandcats.blogspot.com/2012/03/amino-acid-interactions.html) é notável, pois ele contou sistematicamente o número de interações entre cada par de tipos de aminoácidos e, em seguida, converteu essas contagens em energias de interação.<
 
 | Interação | Distância (Å) | Natureza da Força | Aminoácidos Frequentes |
 |:---|:---:|:---|:---|
@@ -253,7 +253,7 @@ A ligação peptídica sob outra óptica.
 
 ## O Enovelamento de Proteínas
 
-<p align="justify">O problema do enovelamento de proteínas, como uma cadeia polipeptídica linear atinge sua complexa e funcional estrutura tridimensional, representa um dos maiores desafios da biologia molecular contemporânea. Avanços notáveis, como o AlphaFold, forneceram soluções preditivas sem precedentes, mas a compreensão fundamental dos mecanismos de enovelamento, regidos pela termodinâmica e pela evolução, permanece um campo de intensa investigação para biólogos, físicos e químicos.</p>
+O problema do enovelamento de proteínas, como uma cadeia polipeptídica linear atinge sua complexa e funcional estrutura tridimensional, representa um dos maiores desafios da biologia molecular contemporânea. Avanços notáveis, como o AlphaFold, forneceram soluções preditivas sem precedentes, mas a compreensão fundamental dos mecanismos de enovelamento, regidos pela termodinâmica e pela evolução, permanece um campo de intensa investigação para biólogos, físicos e químicos.
 
 ---
 
@@ -275,7 +275,7 @@ Para visualizar a complexidade deste processo, utilizamos a metáfora do **funil
 
 ### A Lógica da Energia em Bioquímica
 
-<p align="justify">Em biologia molecular, a estabilidade de um sistema é descrita pela **energia livre de Gibbs (ΔG)**. Processos espontâneos, como o enovelamento de proteínas, ocorrem com uma diminuição da energia livre total do sistema (ΔG < 0). Portanto, um valor de **ΔG mais negativo** indica uma conformação mais estável e energeticamente favorável.</p>
+Em biologia molecular, a estabilidade de um sistema é descrita pela **energia livre de Gibbs (ΔG)**. Processos espontâneos, como o enovelamento de proteínas, ocorrem com uma diminuição da energia livre total do sistema (ΔG < 0). Portanto, um valor de **ΔG mais negativo** indica uma conformação mais estável e energeticamente favorável.
 
 <p align="justify">
   <img src="imgs/deltg.png" alt="Representação do Delta G" width="1000">
@@ -284,13 +284,13 @@ Para visualizar a complexidade deste processo, utilizamos a metáfora do **funil
 <em>Fonte: The Gibbs free energy change (ΔG) and how it's related to reaction spontaneity and equilibrium. https://www.khanacademy.org/science/biology/energy-and-enzymes/free-energy-tutorial/a/gibbs-free-energy</em>
 </p>
 
-* **G (Energia Livre de Gibbs):** <p align="justify">A Energia Livre de Gibbs (ΔG) é um potencial termodinâmico que mede a "utilidade" ou o trabalho máximo e reversível que pode ser realizado por um sistema termodinâmico a temperatura e pressão constantes. Uma mudança negativa em G (ΔG < 0) indica que a reação é espontânea, ou seja, pode ocorrer sem a entrada contínua de energia externa. Uma mudança positiva (ΔG > 0) significa que a reação é não espontânea e requer energia para ocorrer. Se ΔG = 0, o sistema está em equilíbrio.</p>
+* **G (Energia Livre de Gibbs):** A Energia Livre de Gibbs (ΔG) é um potencial termodinâmico que mede a "utilidade" ou o trabalho máximo e reversível que pode ser realizado por um sistema termodinâmico a temperatura e pressão constantes. Uma mudança negativa em G (ΔG < 0) indica que a reação é espontânea, ou seja, pode ocorrer sem a entrada contínua de energia externa. Uma mudança positiva (ΔG > 0) significa que a reação é não espontânea e requer energia para ocorrer. Se ΔG = 0, o sistema está em equilíbrio.
 
-* **H (Entalpia):** <p align="justify">A Entalpia (ΔH) representa o calor total contido em um sistema. Ela mede a mudança de calor absorvida ou liberada em uma reação química a pressão constante.</p>
+* **H (Entalpia):** A Entalpia (ΔH) representa o calor total contido em um sistema. Ela mede a mudança de calor absorvida ou liberada em uma reação química a pressão constante.
 * **ΔH < 0 (Exotérmica):** A reação libera calor para o ambiente.
 * **ΔH > 0 (Endotérmica):** A reação absorve calor do ambiente.
 
-<p align="justify">A relação entre G, H e S (Entropia) é dada pela equação: **ΔG = ΔH - TΔS**. A entropia (ΔS) mede o grau de aleatoriedade ou desordem de um sistema.</p>
+A relação entre G, H e S (Entropia) é dada pela equação: **ΔG = ΔH - TΔS**. A entropia (ΔS) mede o grau de aleatoriedade ou desordem de um sistema.
 
 Talvez esse exemplo ajude a pensar melhor:
 
