@@ -1,12 +1,14 @@
 # Everything In Its Right Place: Thermodynamic and Evolutionary Drivers of the Primordial α-Helix Prevalence in Proteins
 
 ## Sumário
-- [α-Hélice: Um Fóssil Estrutural](#α-hélice-um-fóssil-estrutural)
-- [Everything in its Right Place? The first peptides, as a Kid A](#everything-in-its-right-place-the-first-peptides-as-a-kid-a)
-- [O Repertório Pré-biótico e Propensões Conformacionais](#o-repertório-pré-biótico-e-propensões-conformacionais)
-- [Estabilidade Termodinâmica](#estabilidade-termodinâmica)
-- [A Interface Peptídeo-Membrana](#a-interface-peptídeo-membrana)
-- [Síntese e Análise Contemporânea](#síntese-e-análise-contemporânea)
+- [Everything In Its Right Place: Thermodynamic and Evolutionary Drivers of the Primordial α-Helix Prevalence in Proteins](#everything-in-its-right-place-thermodynamic-and-evolutionary-drivers-of-the-primordial-α-helix-prevalence-in-proteins)
+  - [Sumário](#sumário)
+    - [α-Hélice: Um Fóssil Estrutural](#α-hélice-um-fóssil-estrutural)
+    - [Everything in its Right Place? The first peptides, as a Kid A](#everything-in-its-right-place-the-first-peptides-as-a-kid-a)
+    - [O Repertório Pré-biótico e Propensões Conformacionais](#o-repertório-pré-biótico-e-propensões-conformacionais)
+    - [Estabilidade Termodinâmica](#estabilidade-termodinâmica)
+    - [A Interface Peptídeo-Membrana](#a-interface-peptídeo-membrana)
+    - [Síntese e Análise Contemporânea](#síntese-e-análise-contemporânea)
 
 ### α-Hélice: Um Fóssil Estrutural
 A α-hélice é considerada um "fóssil estrutural". Sua estabilidade depende apenas de interações locais, tornando-a um módulo autônomo e robusto, provavelmente um dos primeiros a surgir na evolução de proteínas.
