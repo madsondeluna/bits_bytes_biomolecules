@@ -30,7 +30,27 @@ XXXXXXXX
 
 ## Os Precrocessos Não-Canônicos Ajudam a Vida a Acontecer
 
-XXXXXXX
+<p align="justify"> Nos modelos didáticos e nas representações clássicas da biologia molecular, a regulação do RNA costuma ser simplificada ou mesmo omitida, com o objetivo de tornar mais acessível a compreensão dos processos fundamentais da expressão gênica. No entanto, essa simplificação mascara uma complexa e fascinante camada de controle que atua além do DNA e das proteínas. O mRNA não é apenas um intermediário passivo entre o gene e o produto proteico, ele é um verdadeiro campo de regulação dinâmica, onde estruturas secundárias, modificações químicas e interações com proteínas e microRNAs determinam quando, onde e quanto de uma proteína será produzida. </p> <p align="justify"> Compreender esses mecanismos é essencial não apenas para entender a vida em seu nível molecular mais refinado, mas também para o avanço da medicina moderna. As terapias baseadas em RNA, como as vacinas de mRNA e os silenciadores gênicos (siRNAs), só se tornaram possíveis graças ao entendimento aprofundado desses elementos regulatórios. Assim, o estudo dos processos não canônicos do RNA não é um detalhe técnico, é uma chave para decifrar a complexidade biológica e projetar intervenções terapêuticas precisas. </p>
+
+### Exemplos: 
+
+- **Internal Ribosome Entry Sites (IRES):**  
+  Os IRES são estruturas de RNA localizadas principalmente na região 5’-UTR que permitem a iniciação da tradução de forma independente da estrutura de cap. Elas recrutam diretamente o ribossomo ao mRNA, um mecanismo crucial em condições de estresse celular, quando a tradução dependente do cap é inibida.
+
+- **5’ Cap Hijacking:**  
+  Alguns vírus e elementos genéticos móveis exploram o chamado *cap hijacking*, um processo em que o sistema de tradução da célula hospedeira é sequestrado. O RNA viral utiliza ou mimetiza a estrutura de cap do mRNA eucariótico para garantir sua própria tradução, competindo eficientemente com os mRNAs celulares.
+
+
+<p align="justify">
+  <img src="imgs/mrna-real-life.png" alt="Regulatory elements of eukaryotic mRNA" width="700">
+</p>
+<p align="justify">
+  <strong>mRNA na vida real.</strong> Elementos regulatórios do mRNA eucariótico. A estrutura e os elementos regulatórios dos mRNAs são essenciais para sua função na expressão gênica. Os mRNAs eucarióticos possuem uma estrutura de cap no extremo 5’, seguida por uma região não traduzida 5’ (5’-UTR), onde podem ser encontrados diversos elementos regulatórios: <strong>1.</strong> Complexo ribonucleoproteico (RNP), <strong>2.</strong> Quadros de leitura abertos a montante (uORFs), <strong>3.</strong> Alças em grampo (*hairpin loops*), <strong>4.</strong> Pseudonós (*pseudoknots*), <strong>5.</strong> Sítios internos de entrada do ribossomo (*IRESs*), <strong>6.</strong> Modificações de RNA, <strong>7.</strong> Sítios de ligação e <strong>8.</strong> Códons AUG a montante. A região não traduzida 3’ (3’-UTR) pode conter: <strong>9.</strong> Sinais de poliadenilação (PASs) e <strong>10.</strong> Sítios de ligação de microRNAs. Abreviações: RBP, proteína de ligação ao RNA; AUG, códon de iniciação da tradução; MET, metionina; CDS, sequência codificadora; UAA, códon de parada da tradução; siRNA, RNA de interferência pequeno; AAAA, cauda poli(A). Fonte: Vélez, D.E. et al., 2025.
+</p>
+<p align="justify">
+  <em>Fonte: Amy McDermott, 2024.</em>
+</p>
+
 
 ---
 
