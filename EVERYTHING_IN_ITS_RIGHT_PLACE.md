@@ -1,5 +1,13 @@
 # Everything In Its Right Place: Thermodynamic and Evolutionary Drivers of the Primordial α-Helix Prevalence in Proteins
 
+## Sumário
+- [α-Hélice: Um Fóssil Estrutural](#α-hélice-um-fóssil-estrutural)
+- [Everything in its Right Place? The first peptides, as a Kid A](#everything-in-its-right-place-the-first-peptides-as-a-kid-a)
+- [O Repertório Pré-biótico e Propensões Conformacionais](#o-repertório-pré-biótico-e-propensões-conformacionais)
+- [Estabilidade Termodinâmica](#estabilidade-termodinâmica)
+- [A Interface Peptídeo-Membrana](#a-interface-peptídeo-membrana)
+- [Síntese e Análise Contemporânea](#síntese-e-análise-contemporânea)
+
 ### α-Hélice: Um Fóssil Estrutural
 A α-hélice é considerada um "fóssil estrutural". Sua estabilidade depende apenas de interações locais, tornando-a um módulo autônomo e robusto, provavelmente um dos primeiros a surgir na evolução de proteínas.
 
@@ -37,4 +45,3 @@ Outro ponto da bioquímica pré-biótica é a interface peptídeo-membrana, que 
 ### Síntese e Análise Contemporânea
 
 Este trabalho integra a análise de princípios teóricos da química pré-biótica e termodinâmica proteica com uma investigação quantitativa em larga escala do Protein Data Bank (PDB), visando explorar e comentar a hipótese de que a prevalência contemporânea de motivos helicoidais é um reflexo direto das restrições bioquímicas e vantagens termodinâmicas que consagraram a α-hélice como um bloco de construção arquitetônico fundamental desde as origens da vida.
-
