@@ -246,7 +246,7 @@ A ligação peptídica sob outra óptica.
   <img src="imgs/pep-interactions.png" alt="XXXXXXXX" width="1000">
 </p>
 <p align="justify">
-<em>Representação de interações moleculares não-covalentes entre estruturas proteicas. Os quatro painéis exibem exemplos das diferentes forças que estabilizam complexos proteicos, como pontes de hidrogênio, pontes salinas e interações de empilhamento (π-stacking). Para clareza visual, os parceiros de interação são diferenciados pelas cores **azul** e **amarela**. As linhas pontilhadas destacam os contatos atômicos específicos que formam essas interações. Fonte: Luna-Aragão, M.A., 2025.</em>
+<em>Representação de interações moleculares não-covalentes entre estruturas proteicas. Os quatro painéis exibem exemplos das diferentes forças que estabilizam complexos proteicos, como pontes de hidrogênio, pontes salinas e interações de empilhamento (π-stacking). Para clareza visual, os parceiros de interação são diferenciados pelas cores azul e amarela. As linhas pontilhadas destacam os contatos atômicos específicos que formam essas interações. Fonte: Luna-Aragão, M.A., 2025.</em>
 </p>
 
 ---
