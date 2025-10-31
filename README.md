@@ -59,6 +59,104 @@
   <em>Fonte: Amy McDermott, 2024.</em>
 </p>
 
+---
+
+## Código genético, tRNA e “wobble” — sequência visual comentada
+
+### 1) O Código Genético (O Degenerado)
+
+<p align="justify">
+  <img src="imgs/genetic-code.png" alt="Roda do código genético: leitura 5'→3' do mRNA" width="700">
+</p>
+<p align="justify"><em>
+Leitura do mRNA (5'→3') do centro para a borda até o aminoácido correspondente. AUG codifica Met (início); UAA/UAG/UGA são códons de parada.
+</em></p>
+
+<p align="justify"><b>Por que importa:</b> a <b>degenerescência</b> do código faz com que, em <b>grande parte</b> dos conjuntos sinônimos, a <b>3ª base</b> do códon seja a mais variável (ligando com a Seção 5, “wobble”). Isso amortece mutações sinônimas e permite viés de códons que modula taxa de tradução e enovelamento co-traducional.</p>
+
+<p align="justify"><b>Quando dá problema:</b> mutações <i>missense</i> alteram o aminoácido; mutações <i>nonsense</i> criam parada prematura e podem acionar <b>NMD</b> (nonsense-mediated decay), degradando o mRNA antes da tradução completa. Exceções importantes: AUG (Met) e UGG (Trp) têm um único códon; alguns grupos (Leu/Arg/Ser) também variam na 1ª base — portanto não é “todos os códons” com 3ª base degenerada.</p>
+
+
+---
+
+### 2) Pareamento códon–anticódon (exemplo de início)
+
+<p align="justify">
+  <img src="imgs/codon-recognition.png" alt="Pareamento AUG com anticódon UAC no tRNA iniciador" width="700">
+</p>
+<p align="justify"><em>
+O tRNA iniciador (anticódon 3'-UAC-5') se pareia antiparalelamente com AUG no sítio P na iniciação.
+</em></p>
+
+<p align="justify"><b>Por que importa:</b> o ribossomo monitora rigidamente as <b>duas primeiras bases</b> do códon (geometria Watson–Crick), ancorando a fidelidade do código. Direção de síntese: N→C.</p>
+
+<p align="justify"><b>Quando dá problema:</b> mutações no códon de início ou no contexto Kozak (eucariontes) reduzem a eficiência de iniciação; parada prematura a montante dispara NMD; estruturas secundárias fortes próximas ao start podem bloquear o escaneamento e impedir a tradução.</p>
+
+---
+
+### 3) “Charging”: aminoacilação do tRNA
+
+<p align="justify">
+  <img src="imgs/trna-syntesis.png" alt="Aminoacil-tRNA sintetase ligando aminoácido ao tRNA com consumo de ATP" width="700">
+</p>
+<p align="justify"><em>
+Aminoacil-tRNA sintetases ligam o aminoácido correto ao tRNA cognato usando ATP (ATP → AMP + PPi; custo ~2 ligações de alta energia) e possuem mecanismos de edição.
+</em></p>
+
+<p align="justify"><b>Por que importa:</b> define o “vocabulário” físico do código genético; a alta especificidade/edição limita a <i>mistranslation</i>, protegendo estrutura e função proteica.</p>
+
+<p align="justify"><b>Quando dá problema:</b> defeitos em sintetases ou na edição levam a incorporação errada de aminoácidos (proteínas mal enoveladas, toxicidade); estresse pode alterar níveis de tRNA carregados e reprogramar a priorização traducional.</p>
+
+---
+
+### 4) Estrutura do tRNA e modificações
+
+<p align="justify">
+  <img src="imgs/trna-detail.png" alt="Folha-de-trevo do tRNA com loops D, anticódon, variável e TΨC e posições de modificações" width="700">
+</p>
+<p align="justify"><em>
+O tRNA apresenta loops funcionais (D, anticódon, variável, TΨC) e numerosas modificações (Ψ, metilações, queosina, inosina etc.) distribuídas ao longo da molécula.
+</em></p>
+
+<p align="justify"><b>Por que importa:</b> modificações estabilizam a estrutura, ajustam a forma do anticódon e afinam a decodificação (eficiência/fidelidade); algumas agem como “aceleradores/freios” finos na elongação, afetando enovelamento co-traducional e montagem de domínios.</p>
+
+<p align="justify"><b>Quando dá problema:</b> perfis de modificação disfuncionais (doença/estresse) mudam a preferência por códons, promovem pausas, <i>readthrough</i> indesejado ou erros; clivagens geram tRNA-fragments que podem <b>reprimir tradução</b>.</p>
+
+---
+
+### 5) Efeito Wobble
+
+<p align="justify">
+  <img src="imgs/wobble-effect.png" alt="Um tRNA reconhece múltiplos códons sinônimos via pareamento flexível na 3ª base" width="700">
+</p>
+<p align="justify"><em>
+O pareamento entre a 3ª base do códon (mRNA) e a 1ª base do anticódon (posição 34 do tRNA) é geometricamente mais permissivo que nas duas primeiras posições.
+</em></p>
+
+<p align="justify"><b>Por que a 3ª posição é menos acurada:</b> o sítio de decodificação do ribossomo impõe checagens estéricas e de geometria Watson–Crick sobretudo nas <b>1ª e 2ª bases</b>; na <b>3ª</b>, há tolerância a pares não canônicos como <b>G•U</b> e a presença de <b>inosina (I)</b> no anticódon (hipoxantina) que amplia o reconhecimento (ver Seção 6). Essa arquitetura, e não “xantina”, explica a menor stringência na 3ª base. </p>
+
+<p align="justify"><b>Conexão com a Figura 1:</b> a degenerescência mostrada na roda do código decorre, em grande parte, dessa tolerância no wobble — por isso a 3ª base é frequentemente a mais variável entre códons sinônimos.</p>
+
+<p align="justify"><b>Quando dá problema:</b> alterações em modificações do anticódon (ex.: queosina/wybutosina) mudam a janela de tolerância → erros, <i>frameshifting</i> e ruído traducional; viés de códons extremo pode pausar excessivamente e prejudicar enovelamento.</p>
+
+---
+
+### 6) “Wobble” com inosina (exemplo mecanístico)
+
+<p align="justify">
+  <img src="imgs/wobble-effect2.png" alt="Inosina (I) no anticódon pareando com A/C/U na 3ª base do códon" width="700">
+</p>
+<p align="justify"><em>
+A inosina (I) na posição 34 do anticódon pode parear com A, C ou U na 3ª base do códon, permitindo que um tRNA leia múltiplos códons sinônimos.
+</em></p>
+
+<p align="justify"><b>Por que importa:</b> reduz o número total de tRNAs necessários, mantém eficiência de decodificação e explica a ampla variabilidade da 3ª base na maior parte dos códons.</p>
+
+<p align="justify"><b>Quando dá problema:</b> perda/ganho de inosina ou outras modificações altera o mapa de reconhecimento → <i>mistranslation</i>, mudança de taxa de elongação e, em casos extremos, ativação de respostas de controle de qualidade (por exemplo, ribosome-associated quality control), reduzindo a produção proteica.</p>
+
+---
+
+<p align="justify"><b>Correção técnica essencial:</b> a menor acurácia na 3ª posição do códon não é “por conta da xantina”. O fenômeno clássico de wobble decorre do relaxamento geométrico no sítio A do ribossomo, do pareamento <b>G•U</b> e, principalmente, da <b>inosina/hipoxantina</b> no anticódon. Xantina não é a base típica envolvida na 1ª posição do anticódon em tRNAs celulares.</p>
 
 ---
 
