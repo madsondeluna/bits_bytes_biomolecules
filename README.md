@@ -18,9 +18,10 @@ Este repositório contém o material de referência completo para o curso, inclu
 
 ---
 
-## Sumário
+## Take Home Messages
 
-[ADD UM ATUALIZADO NO FINAL COMO OUTLINE DA AULA]
+> "We estimate that if a protein were to fold by randomly trying all possible conformations, it would require a time longer than the age of the universe to arrive at its correct native structure."  
+> <p align="left"><strong>— Richard Lewontin</strong></p>
 
 ---
 
