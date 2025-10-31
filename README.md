@@ -309,14 +309,14 @@ A **estrutura secundária** refere-se aos arranjos locais e regulares da cadeia 
 | **Folha-β** | Formada pela associação de duas ou mais **fitas-β** adjacentes, estabilizadas por pontes de hidrogênio **intercadeias**. Podem ser **paralelas** ou **antiparalelas**. |
 | **Voltas e Alças** | Regiões não repetitivas que conectam elementos de estrutura secundária. **Voltas-β** são curtas (4 resíduos) e causam uma reversão de 180°. |
 
-> Seriam as hélices fósseis ancestrais das proteínas modernas?
+### Seriam as hélices fósseis ancestrais das proteínas modernas?
 
 As hélices proteicas são estruturas secundárias onde a cadeia polipepeptídica se enrola, estabilizada por ligações de hidrogênio. A distinção entre a $3_{10}$-hélice (A), $\alpha$-hélice (B) e $\pi$-hélice (C) reside no número de resíduos por volta e no padrão de suas ligações de hidrogênio.
 
-<p align="center">
+<p align="justify">
   <img src="imgs/helixes.png" alt="XXXXXXXX" width="400">
 </p>
-<p align="center">
+<p align="justify">
 <em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
 </p>
 
@@ -335,7 +335,7 @@ Em suma, a nomenclatura das hélices reflete diretamente suas características e
 <em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
 </p>
 
-<p align="justify">A estrutura secundária de proteínas refere-se aos padrões regulares de dobramento local da cadeia polipeptídica, estabilizados por ligações de hidrogênio entre os átomos da cadeia principal (grupos C=O e N-H). Os elementos mais comuns incluem as **α-hélices**, estruturas helicoidais dextrogiras com 3,6 resíduos por volta e ligações de hidrogênio entre resíduos \(i\) e \(i+4\), e as **folhas-β**, formadas pela associação lateral de fitas-β estendidas que podem se arranjar de forma paralela ou antiparalela. Hélices menos frequentes como a **3₁₀** (mais compacta, com 3 resíduos por volta) e a **π** (mais larga, com 4,4 resíduos por volta) são energeticamente menos favoráveis e aparecem tipicamente em regiões de transição. As **voltas e alças** conectam esses elementos regulares, permitindo mudanças na direção da cadeia e sendo cruciais para o dobramento tridimensional da proteína.</p>
+A estrutura secundária de proteínas refere-se aos padrões regulares de dobramento local da cadeia polipeptídica, estabilizados por ligações de hidrogênio entre os átomos da cadeia principal (grupos C=O e N-H). Os elementos mais comuns incluem as **α-hélices**, estruturas helicoidais dextrogiras com 3,6 resíduos por volta e ligações de hidrogênio entre resíduos \(i\) e \(i+4\), e as **folhas-β**, formadas pela associação lateral de fitas-β estendidas que podem se arranjar de forma paralela ou antiparalela. Hélices menos frequentes como a **3₁₀** (mais compacta, com 3 resíduos por volta) e a **π** (mais larga, com 4,4 resíduos por volta) são energeticamente menos favoráveis e aparecem tipicamente em regiões de transição. As **voltas e alças** conectam esses elementos regulares, permitindo mudanças na direção da cadeia e sendo cruciais para o dobramento tridimensional da proteína.
 
 ---
 
@@ -345,10 +345,10 @@ As **alças** (loops ou turns) são regiões de estrutura secundária irregular 
 
 As alças são frequentemente classificadas por seu comprimento e geometria. Os **turns** (voltas) são alças curtas, tipicamente contendo 2 a 5 resíduos, sendo as mais comuns as **β-turns** (4 resíduos) e **γ-turns** (3 resíduos). As β-turns são particularmente importantes em folhas β antiparalelas, permitindo a reversão da direção da cadeia. Já os **loops** são segmentos mais longos e variáveis que conectam elementos estruturais distantes. Além de sua função estrutural, muitas alças estão localizadas na superfície das proteínas e participam ativamente do reconhecimento molecular, interações proteína-proteína e formação de sítios catalíticos. A flexibilidade conformacional destas regiões é crucial para a função biológica, permitindo ajustes induzidos pela ligação de substratos ou cofatores.
 
-<p align="center">
+<p align="justify">
   <img src="imgs/loop.png" alt="XXXXXXXX" width="1000">
 </p>
-<p align="center">
+<p align="justify">
 <em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
 </p>
 
@@ -356,14 +356,14 @@ As alças são frequentemente classificadas por seu comprimento e geometria. Os 
 
 ### Fitas e Folhas Beta
 
-<p align="justify">As **fitas β** (β-strands) representam um importante motivo de estrutura secundária, caracterizado por uma conformação mais estendida da cadeia polipeptídica em comparação com as hélices. Nesta conformação, os ângulos diedrais típicos são \(\phi\) ≈ -120° e \(\psi\) ≈ +120°, resultando em uma cadeia quase completamente esticada com aproximadamente 3,5 Å entre resíduos consecutivos. As cadeias laterais dos aminoácidos alternam-se acima e abaixo do plano da fita, criando um padrão em "zigue-zague".</p>
+As **fitas β** (β-strands) representam um importante motivo de estrutura secundária, caracterizado por uma conformação mais estendida da cadeia polipeptídica em comparação com as hélices. Nesta conformação, os ângulos diedrais típicos são \(\phi\) ≈ -120° e \(\psi\) ≈ +120°, resultando em uma cadeia quase completamente esticada com aproximadamente 3,5 Å entre resíduos consecutivos. As cadeias laterais dos aminoácidos alternam-se acima e abaixo do plano da fita, criando um padrão em "zigue-zague".
 
-<p align="justify">Quando múltiplas fitas β se associam lateralmente através de ligações de hidrogênio intermoleculares, forma-se uma **folha β** (β-sheet). Esta estrutura pode ser organizada de duas maneiras distintas: **folha β antiparalela**, onde as fitas adjacentes correm em direções opostas (N→C de uma fita alinha-se com C→N da fita vizinha), resultando em um padrão de ligações de hidrogênio direto e mais regular; e **folha β paralela**, onde todas as fitas correm na mesma direção (N→C), criando ligações de hidrogênio mais distorcidas e geometricamente menos favoráveis, tornando esta configuração ligeiramente menos estável. As folhas β podem conter de 2 a mais de 10 fitas, e muitas estruturas proteicas apresentam folhas β mistas, contendo segmentos tanto paralelos quanto antiparalelos. A torção característica das folhas β, observada na maioria das estruturas, resulta em uma conformação levemente helicoidal que otimiza as interações de empacotamento no núcleo hidrofóbico das proteínas.</p>
+Quando múltiplas fitas β se associam lateralmente através de ligações de hidrogênio intermoleculares, forma-se uma **folha β** (β-sheet). Esta estrutura pode ser organizada de duas maneiras distintas: **folha β antiparalela**, onde as fitas adjacentes correm em direções opostas (N→C de uma fita alinha-se com C→N da fita vizinha), resultando em um padrão de ligações de hidrogênio direto e mais regular; e **folha β paralela**, onde todas as fitas correm na mesma direção (N→C), criando ligações de hidrogênio mais distorcidas e geometricamente menos favoráveis, tornando esta configuração ligeiramente menos estável. As folhas β podem conter de 2 a mais de 10 fitas, e muitas estruturas proteicas apresentam folhas β mistas, contendo segmentos tanto paralelos quanto antiparalelos. A torção característica das folhas β, observada na maioria das estruturas, resulta em uma conformação levemente helicoidal que otimiza as interações de empacotamento no núcleo hidrofóbico das proteínas.
 
-<p align="center">
+<p align="justify">
   <img src="imgs/beta-shet.png" alt="XXXXXXXX" width="1000">
 </p>
-<p align="center">
+<p align="justify">
 <em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
 </p>
 
@@ -375,10 +375,10 @@ A gênese das primeiras proteínas funcionais foi fortemente condicionada pela d
 
 Do ponto de vista estrutural, esse conjunto pré-biótico era intrinsecamente tendencioso à formação de determinadas estruturas secundárias. Diferentes aminoácidos exibem propensões intrínsecas distintas para a formação de α-hélices, propriedade esta extensivamente quantificada em estudos experimentais e computacionais. A Alanina (Ala), um dos aminoácidos pré-bióticos mais simples e provavelmente mais abundantes, apresenta a maior propensão helicoidal, servindo como referência para a estabilidade desse tipo de estrutura. A Leucina (Leu) também demonstra elevada capacidade de estabilização de hélices α. Em contraste, a Glicina (Gly), devido à sua alta flexibilidade conformacional, e a Prolina (Pro), cuja estrutura cíclica restringe a rotação da ligação peptídica, atuam como fortes disruptores de hélices. Assim, a presença de aminoácidos formadores de hélices, como Ala e Leu, sugere que mesmo a polimerização estocástica desses monômeros possuía uma probabilidade estatisticamente significativa de originar sequências capazes de adotar conformações helicoidais estáveis.
 
-<p align="center">
+<p align="justify">
   <img src="imgs/helix.png" alt="XXXXXXXX" width="300">
 </p>
-<p align="center">
+<p align="justify">
 <em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
 </p>
 
