@@ -220,7 +220,7 @@ A ligação peptídica sob outra óptica.
 ### Interações Intermoleculares 
 
 <p align="justify">
-  <img src="imgs/aainteractions.png" alt="Matriz de interações de aminoácidos" width="800">
+  <img src="imgs/aainteractions.png" alt="Matriz de interações de aminoácidos" width="1000">
 </p>
 <p align="justify">
 <em>O gráfico mostra a matriz dos aminoácidos naturais: círculos azuis maiores indicam interações mais fortes. Fonte: Cambridge MedChem Consulting, 2025.</em>
@@ -314,7 +314,7 @@ A **estrutura secundária** refere-se aos arranjos locais e regulares da cadeia 
 As hélices proteicas são estruturas secundárias onde a cadeia polipepeptídica se enrola, estabilizada por ligações de hidrogênio. A distinção entre a $3_{10}$-hélice (A), $\alpha$-hélice (B) e $\pi$-hélice (C) reside no número de resíduos por volta e no padrão de suas ligações de hidrogênio.
 
 <p align="justify">
-  <img src="imgs/helixes.png" alt="XXXXXXXX" width="400">
+  <img src="imgs/helixes.png" alt="XXXXXXXX" width="1000">
 </p>
 <p align="justify">
 <em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
@@ -376,7 +376,7 @@ A gênese das primeiras proteínas funcionais foi fortemente condicionada pela d
 Do ponto de vista estrutural, esse conjunto pré-biótico era intrinsecamente tendencioso à formação de determinadas estruturas secundárias. Diferentes aminoácidos exibem propensões intrínsecas distintas para a formação de α-hélices, propriedade esta extensivamente quantificada em estudos experimentais e computacionais. A Alanina (Ala), um dos aminoácidos pré-bióticos mais simples e provavelmente mais abundantes, apresenta a maior propensão helicoidal, servindo como referência para a estabilidade desse tipo de estrutura. A Leucina (Leu) também demonstra elevada capacidade de estabilização de hélices α. Em contraste, a Glicina (Gly), devido à sua alta flexibilidade conformacional, e a Prolina (Pro), cuja estrutura cíclica restringe a rotação da ligação peptídica, atuam como fortes disruptores de hélices. Assim, a presença de aminoácidos formadores de hélices, como Ala e Leu, sugere que mesmo a polimerização estocástica desses monômeros possuía uma probabilidade estatisticamente significativa de originar sequências capazes de adotar conformações helicoidais estáveis.
 
 <p align="justify">
-  <img src="imgs/helix.png" alt="XXXXXXXX" width="300">
+  <img src="imgs/helix.png" alt="XXXXXXXX" width="1000">
 </p>
 <p align="justify">
 <em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
