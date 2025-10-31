@@ -3,7 +3,10 @@
 ### α-Hélice: Um Fóssil Estrutural
 A α-hélice é considerada um "fóssil estrutural". Sua estabilidade depende apenas de interações locais, tornando-a um módulo autônomo e robusto, provavelmente um dos primeiros a surgir na evolução de proteínas.
 
+
 > Este texto de revisão estará disponível em breve no bioRxiv sob o título: *Everything In Its Right Place: Thermodynamic and Evolutionary Drivers of the Primordial α-Helix Prevalence in Proteins*. Um vez disponível, poderá ser encontrado também em https://madsondeluna.github.io/.
+
+
 
 [ADICIONAR IMAGEM EXPLICATIVA AQUI]
 
