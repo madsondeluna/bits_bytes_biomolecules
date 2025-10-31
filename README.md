@@ -562,21 +562,27 @@ SeqB:  V I I R G A W E
 
 *   **Identidades (`|`):** As posições com `V`, `I`, `G`, `A` são idênticas.
 
-    *   **Cálculo:** 4 resíduos idênticos de um total de 8.
-    *   **Identidade = (4 / 8) * 100 = 50%**
+> **Cálculo:** 4 resíduos idênticos de um total de 8.
+> **Identidade = (4 / 8) * 100 = 50%**
+
+---
 
 *   **Similaridades (`+`):** Além das identidades, temos substituições conservativas:
 
-    *   `L` e `I` (ambos hidrofóbicos).
-    *   `K` e `R` (ambos com carga positiva).
-    *   `D` e `E` (ambos com carga negativa).
-  
-    *   **Cálculo:** 4 resíduos idênticos + 3 resíduos similares = 7.
-    *   **Similaridade = (7 / 8) * 100 = 87.5%**
+> `L` e `I` (ambos hidrofóbicos).
+> `K` e `R` (ambos com carga positiva).
+> `D` e `E` (ambos com carga negativa).
+
+---
+
+> **Cálculo:** 4 resíduos idênticos + 3 resíduos similares = 7.
+> **Similaridade = (7 / 8) * 100 = 87.5%**
 
 Note que a substituição de `T` (polar) por `W` (apolar e grande) não é considerada similar neste contexto.
 
 **Conclusão:** A porcentagem de **similaridade** é sempre maior ou igual à de **identidade**. Para a modelagem por homologia, uma alta similaridade (>50%), mesmo com uma identidade mais baixa (~30%), já pode ser um forte indicativo de que as proteínas compartilham a mesma dobra estrutural.
+
+---
 
 ### Ferramentas e Bancos de Dados para Análise de Sequência e Estrutura
 
