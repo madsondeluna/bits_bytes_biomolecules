@@ -16,10 +16,6 @@
 
 ---
 
-**Link Original:** <a href="https://madsondeluna.github.io/bits_bytes_biomolecules/" target="_blank" rel="noopener noreferrer">Bits, Bytes e Biomoléculas</a>
-
----
-
 ## Sumário
 
 [ADD UM ATUALIZADO NO FINAL COMO OUTLINE DA AULA]
