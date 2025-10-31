@@ -551,9 +551,9 @@ Antes de mergulharmos nos métodos, é essencial entender a diferença entre doi
 Vamos analisar o seguinte alinhamento entre duas sequências curtas:
 
 ```
-V L I K G A T D
-| + | + | | + +
-V I I R G A W E
+  V L I K G A T D
+  | + | + | | + +
+  V I I R G A W E
 ```
 
 > **Identidades (`|`):** As posições com `V`, `I`, `G`, `A` são idênticas.
@@ -577,7 +577,7 @@ V I I R G A W E
 Note que a substituição de `T` (polar) por `W` (apolar e grande) não é considerada similar neste contexto.
 
 <p align="justify">
-  <img src="imgs/graficos_identidade_similaridade.png" alt="Dois gráficos mostrando a relação entre a identidade de sequência e a estrutura proteica" width="1000">
+  <img src="imgs/structure-maintain.png" alt="Dois gráficos mostrando a relação entre a identidade de sequência e a estrutura proteica" width="1000">
 </p>
 <p align="justify">
   <em>Fonte: Gráficos adaptados de estudos clássicos de Chothia e Lesk, ilustrando a relação entre a porcentagem de resíduos idênticos no núcleo proteico (eixo X) e, respectivamente, o desvio médio quadrático (RMSD) da estrutura do esqueleto (gráfico a) e a fração de resíduos no núcleo conservado (gráfico b).</em>
