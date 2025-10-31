@@ -52,6 +52,24 @@
         const container = document.getElementById('content');
         container.innerHTML = html;
 
+        // Corrige caminhos relativos de imagens (docs/ é servido como root do site)
+        // substitui src relativos por URLs para raw.githubusercontent.com
+        try{
+          const imgs = container.querySelectorAll('img');
+          imgs.forEach(img => {
+            const src = img.getAttribute('src') || '';
+            // ignora URLs já absolutas
+            if(!src) return;
+            if(src.startsWith('http:') || src.startsWith('https:') || src.startsWith('//')) return;
+            // remove leading ./ ou / se existirem
+            const path = src.replace(/^\.\/?/, '');
+            const rawBase = 'https://raw.githubusercontent.com/madsondeluna/bits_bytes_biomolecules/main/';
+            img.src = rawBase + path;
+          });
+        }catch(e){
+          console.warn('Erro ao reescrever caminhos de imagem:', e);
+        }
+
         // Após inserir, pede ao MathJax para renderizar fórmulas
         if(window.MathJax && MathJax.typesetPromise){
           MathJax.typesetPromise();
