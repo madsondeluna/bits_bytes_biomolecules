@@ -66,7 +66,7 @@
 ### 1) O Código Genético (O Degenerado)
 
 <p align="justify">
-  <img src="imgs/genetic-code.png" alt="Roda do código genético: leitura 5'→3' do mRNA" width="700">
+  <img src="imgs/genetic-code.png" alt="Roda do código genético: leitura 5'→3' do mRNA" width="1000">
 </p>
 <p align="justify"><em>
 Leitura do mRNA (5'→3') do centro para a borda até o aminoácido correspondente. AUG codifica Met (início); UAA/UAG/UGA são códons de parada.
@@ -82,7 +82,7 @@ Leitura do mRNA (5'→3') do centro para a borda até o aminoácido corresponden
 ### 2) Pareamento códon–anticódon (exemplo de início)
 
 <p align="justify">
-  <img src="imgs/codon-recognition.png" alt="Pareamento AUG com anticódon UAC no tRNA iniciador" width="700">
+  <img src="imgs/codon-recognition.png" alt="Pareamento AUG com anticódon UAC no tRNA iniciador" width="1000">
 </p>
 <p align="justify"><em>
 O tRNA iniciador (anticódon 3'-UAC-5') se pareia antiparalelamente com AUG no sítio P na iniciação.
@@ -97,7 +97,7 @@ O tRNA iniciador (anticódon 3'-UAC-5') se pareia antiparalelamente com AUG no s
 ### 3) “Charging”: aminoacilação do tRNA
 
 <p align="justify">
-  <img src="imgs/trna-syntesis.png" alt="Aminoacil-tRNA sintetase ligando aminoácido ao tRNA com consumo de ATP" width="700">
+  <img src="imgs/trna-syntesis.png" alt="Aminoacil-tRNA sintetase ligando aminoácido ao tRNA com consumo de ATP" width="1000">
 </p>
 <p align="justify"><em>
 Aminoacil-tRNA sintetases ligam o aminoácido correto ao tRNA cognato usando ATP (ATP → AMP + PPi; custo ~2 ligações de alta energia) e possuem mecanismos de edição.
@@ -112,7 +112,7 @@ Aminoacil-tRNA sintetases ligam o aminoácido correto ao tRNA cognato usando ATP
 ### 4) Estrutura do tRNA e modificações
 
 <p align="justify">
-  <img src="imgs/trna-detail.png" alt="Folha-de-trevo do tRNA com loops D, anticódon, variável e TΨC e posições de modificações" width="700">
+  <img src="imgs/trna-detail.png" alt="Folha-de-trevo do tRNA com loops D, anticódon, variável e TΨC e posições de modificações" width="1000">
 </p>
 <p align="justify"><em>
 O tRNA apresenta loops funcionais (D, anticódon, variável, TΨC) e numerosas modificações (Ψ, metilações, queosina, inosina etc.) distribuídas ao longo da molécula.
@@ -127,7 +127,7 @@ O tRNA apresenta loops funcionais (D, anticódon, variável, TΨC) e numerosas m
 ### 5) Efeito Wobble
 
 <p align="justify">
-  <img src="imgs/wobble-effect.png" alt="Um tRNA reconhece múltiplos códons sinônimos via pareamento flexível na 3ª base" width="700">
+  <img src="imgs/wobble-effect.png" alt="Um tRNA reconhece múltiplos códons sinônimos via pareamento flexível na 3ª base" width="1000">
 </p>
 <p align="justify"><em>
 O pareamento entre a 3ª base do códon (mRNA) e a 1ª base do anticódon (posição 34 do tRNA) é geometricamente mais permissivo que nas duas primeiras posições.
@@ -144,7 +144,7 @@ O pareamento entre a 3ª base do códon (mRNA) e a 1ª base do anticódon (posi�
 ### 6) “Wobble” com inosina (exemplo mecanístico)
 
 <p align="justify">
-  <img src="imgs/wobble-effect2.png" alt="Inosina (I) no anticódon pareando com A/C/U na 3ª base do códon" width="700">
+  <img src="imgs/wobble-effect2.png" alt="Inosina (I) no anticódon pareando com A/C/U na 3ª base do códon" width="1000">
 </p>
 <p align="justify"><em>
 A inosina (I) na posição 34 do anticódon pode parear com A, C ou U na 3ª base do códon, permitindo que um tRNA leia múltiplos códons sinônimos.
@@ -165,7 +165,7 @@ A inosina (I) na posição 34 do anticódon pode parear com A, C ou U na 3ª bas
 <p align="justify">No contexto biológico da síntese proteica (tradução), este processo é energeticamente custoso, consumindo energia (na forma de ATP e GTP) para a ativação dos aminoácidos. Esta ativação ocorre através da ligação covalente entre cada aminoácido e seu tRNA cognato (complementar), catalisada pelas aminoacil-tRNA sintetases, enzimas altamente específicas que reconhecem tanto o aminoácido quanto seu tRNA correspondente. Uma vez formado o aminoacil-tRNA, este complexo é direcionado ao ribossomo para participar da tradução. A formação da ligação peptídica em si é catalisada pelo ribossomo, especificamente pela atividade peptidil transferase, uma função catalítica intrínseca ao RNA ribossômico (rRNA) localizado na subunidade maior. Este mecanismo transfere a cadeia polipeptídica crescente do tRNA localizado no sítio P (Peptidil) para o grupo amino do novo aminoácido que está ligado ao seu tRNA no sítio A (Aminoacil), permitindo assim a elongação da cadeia polipeptídica.</p>
 
 <p align="justify">
-  <img src="imgs/ribo.png" alt="XXXXX" width="700">
+  <img src="imgs/ribo.png" alt="XXXXX" width="1000">
 </p>
 <p align="justify">
 <em>Fonte: Amy McDermott, 2024.</em>
@@ -174,7 +174,7 @@ A inosina (I) na posição 34 do anticódon pode parear com A, C ou U na 3ª bas
 <p align="justify">Ao abordar as interações entre aminoácidos, a ligação primordial e mais forte, que estabelece a estrutura primária de uma proteína, é a ligação peptídica. Esta ligação covalente é formada pela união do grupo α-carboxila de um aminoácido ao grupo α-amino do aminoácido subsequente, caracterizando uma reação de condensação (ou desidratação) na qual uma molécula de água (H₂O) é liberada.</p>
 
 <p align="justify">
-  <img src="imgs/pep-bond.png" alt="XXXXXXXX" width="700">
+  <img src="imgs/pep-bond.png" alt="XXXXXXXX" width="1000">
 </p>
 <p align="justify">
 <em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
@@ -183,7 +183,7 @@ A inosina (I) na posição 34 do anticódon pode parear com A, C ou U na 3ª bas
 A ligação peptídica sob outra óptica. 
 
 <p align="justify">
-  <img src="imgs/pep-bond2.png" alt="XXXXXXXX" width="700">
+  <img src="imgs/pep-bond2.png" alt="XXXXXXXX" width="1000">
 </p>
 <p align="justify">
 <em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
@@ -194,7 +194,7 @@ A ligação peptídica sob outra óptica.
 ### Propriedades dos Aminoácidos Canônicos
 
 <p align="justify">
-  <img src="imgs/aas.png" alt="Amino acids width="700">
+  <img src="imgs/aas.png" alt="Amino acids width="1000">
 </p>
 <p align="justify">
 <em>Fonte: JPT Peptide Technologies.</em>
@@ -214,7 +214,7 @@ A ligação peptídica sob outra óptica.
 ### Interações Intermoleculares 
 
 <p align="justify">
-  <img src="imgs/aainteractions.png" alt="Matriz de interações de aminoácidos" width="700">
+  <img src="imgs/aainteractions.png" alt="Matriz de interações de aminoácidos" width="1000">
 </p>
 <p align="justify">
 <em>O gráfico mostra a matriz dos aminoácidos naturais: círculos azuis maiores indicam interações mais fortes. Fonte: Cambridge MedChem Consulting, 2025.</em>
@@ -245,7 +245,7 @@ O problema do enovelamento de proteínas, como uma cadeia polipeptídica linear 
 ### A Paisagem Energética: O Funil de Enovelamento
 
 <p align="justify">
-  <img src="imgs/funnel.png" alt="Diagrama do funil" width="700">
+  <img src="imgs/funnel.png" alt="Diagrama do funil" width="1000">
 </p>
 <p align="justify">
 <em>Fonte: Macošek J, Mas G, Hiller S. Redefining Molecular Chaperones as Chaotropes. Front Mol Biosci. 2021 Jun 14;8:683132. doi: 10.3389/fmolb.2021.683132. PMID: 34195228; PMCID: PMC8237284.</em>
@@ -262,7 +262,7 @@ Para visualizar a complexidade deste processo, utilizamos a metáfora do **funil
 Em biologia molecular, a estabilidade de um sistema é descrita pela **energia livre de Gibbs (ΔG)**. Processos espontâneos, como o enovelamento de proteínas, ocorrem com uma diminuição da energia livre total do sistema (ΔG < 0). Portanto, um valor de **ΔG mais negativo** indica uma conformação mais estável e energeticamente favorável.
 
 <p align="justify">
-  <img src="imgs/deltg.png" alt="Representação do Delta G" width="700">
+  <img src="imgs/deltg.png" alt="Representação do Delta G" width="1000">
 </p>
 <p align="justify">
 <em>Fonte: The Gibbs free energy change (ΔG) and how it's related to reaction spontaneity and equilibrium. https://www.khanacademy.org/science/biology/energy-and-enzymes/free-energy-tutorial/a/gibbs-free-energy</em>
@@ -279,7 +279,7 @@ A relação entre G, H e S (Entropia) é dada pela equação: **ΔG = ΔH - TΔS
 Talvez esse exemplo ajude a pensar melhor:
 
 <p align="justify">
-  <img src="imgs/ts-th.png" alt="Representação do Delta G" width="700">
+  <img src="imgs/ts-th.png" alt="Representação do Delta G" width="1000">
 </p>
 <p align="justify">
 <em>Fonte: Dong, Y., et al., 2025</em>
@@ -307,7 +307,7 @@ A **estrutura secundária** refere-se aos arranjos locais e regulares da cadeia 
 As hélices proteicas são estruturas secundárias onde a cadeia polipepeptídica se enrola, estabilizada por ligações de hidrogênio. A distinção entre a $3_{10}$-hélice (A), $\alpha$-hélice (B) e $\pi$-hélice (C) reside no número de resíduos por volta e no padrão de suas ligações de hidrogênio.
 
 <p align="justify">
-  <img src="imgs/helixes.png" alt="XXXXXXXX" width="700">
+  <img src="imgs/helixes.png" alt="XXXXXXXX" width="1000">
 </p>
 <p align="justify">
 <em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
@@ -322,7 +322,7 @@ As hélices proteicas são estruturas secundárias onde a cadeia polipepeptídic
 Em suma, a nomenclatura das hélices reflete diretamente suas características estruturais primárias, como o número de resíduos por volta e o padrão específico das ligações de hidrogênio intramoleculares.
 
 <p align="justify">
-  <img src="imgs/strucutures-configuration.png" alt="XXXXXXXX" width="700">
+  <img src="imgs/strucutures-configuration.png" alt="XXXXXXXX" width="1000">
 </p>
 <p align="justify">
 <em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
@@ -339,7 +339,7 @@ As **alças** (loops ou turns) são regiões de estrutura secundária irregular 
 As alças são frequentemente classificadas por seu comprimento e geometria. Os **turns** (voltas) são alças curtas, tipicamente contendo 2 a 5 resíduos, sendo as mais comuns as **β-turns** (4 resíduos) e **γ-turns** (3 resíduos). As β-turns são particularmente importantes em folhas β antiparalelas, permitindo a reversão da direção da cadeia. Já os **loops** são segmentos mais longos e variáveis que conectam elementos estruturais distantes. Além de sua função estrutural, muitas alças estão localizadas na superfície das proteínas e participam ativamente do reconhecimento molecular, interações proteína-proteína e formação de sítios catalíticos. A flexibilidade conformacional destas regiões é crucial para a função biológica, permitindo ajustes induzidos pela ligação de substratos ou cofatores.
 
 <p align="justify">
-  <img src="imgs/loop.png" alt="XXXXXXXX" width="700">
+  <img src="imgs/loop.png" alt="XXXXXXXX" width="1000">
 </p>
 <p align="justify">
 <em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
@@ -354,7 +354,7 @@ As **fitas β** (β-strands) representam um importante motivo de estrutura secun
 Quando múltiplas fitas β se associam lateralmente através de ligações de hidrogênio intermoleculares, forma-se uma **folha β** (β-sheet). Esta estrutura pode ser organizada de duas maneiras distintas: **folha β antiparalela**, onde as fitas adjacentes correm em direções opostas (N→C de uma fita alinha-se com C→N da fita vizinha), resultando em um padrão de ligações de hidrogênio direto e mais regular; e **folha β paralela**, onde todas as fitas correm na mesma direção (N→C), criando ligações de hidrogênio mais distorcidas e geometricamente menos favoráveis, tornando esta configuração ligeiramente menos estável. As folhas β podem conter de 2 a mais de 10 fitas, e muitas estruturas proteicas apresentam folhas β mistas, contendo segmentos tanto paralelos quanto antiparalelos. A torção característica das folhas β, observada na maioria das estruturas, resulta em uma conformação levemente helicoidal que otimiza as interações de empacotamento no núcleo hidrofóbico das proteínas.
 
 <p align="justify">
-  <img src="imgs/beta-shet.png" alt="XXXXXXXX" width="700">
+  <img src="imgs/beta-shet.png" alt="XXXXXXXX" width="1000">
 </p>
 <p align="justify">
 <em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
@@ -369,7 +369,7 @@ A gênese das primeiras proteínas funcionais foi fortemente condicionada pela d
 Do ponto de vista estrutural, esse conjunto pré-biótico era intrinsecamente tendencioso à formação de determinadas estruturas secundárias. Diferentes aminoácidos exibem propensões intrínsecas distintas para a formação de α-hélices, propriedade esta extensivamente quantificada em estudos experimentais e computacionais. A Alanina (Ala), um dos aminoácidos pré-bióticos mais simples e provavelmente mais abundantes, apresenta a maior propensão helicoidal, servindo como referência para a estabilidade desse tipo de estrutura. A Leucina (Leu) também demonstra elevada capacidade de estabilização de hélices α. Em contraste, a Glicina (Gly), devido à sua alta flexibilidade conformacional, e a Prolina (Pro), cuja estrutura cíclica restringe a rotação da ligação peptídica, atuam como fortes disruptores de hélices. Assim, a presença de aminoácidos formadores de hélices, como Ala e Leu, sugere que mesmo a polimerização estocástica desses monômeros possuía uma probabilidade estatisticamente significativa de originar sequências capazes de adotar conformações helicoidais estáveis.
 
 <p align="justify">
-  <img src="imgs/helix.png" alt="XXXXXXXX" width="700">
+  <img src="imgs/helix.png" alt="XXXXXXXX" width="1000">
 </p>
 <p align="justify">
 <em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
@@ -382,7 +382,7 @@ Do ponto de vista estrutural, esse conjunto pré-biótico era intrinsecamente te
 A combinação de elementos de estrutura secundária forma **motivos secundários, terciários e quaternários**, os blocos de construção dos **domínios** proteicos (regiões que se enovelam e funcionam de forma independente).
 
 <p align="justify">
-  <img src="imgs/prot-divertisy.png" alt="XXXXXXXX" width="700">
+  <img src="imgs/prot-divertisy.png" alt="XXXXXXXX" width="1000">
 </p>
 <p align="justify">
 <em>Fonte: Braselmann, E., et al., 2013.</em>
@@ -398,7 +398,7 @@ A combinação de elementos de estrutura secundária forma **motivos secundário
 Para explorar a diversidade de dobras, utilizamos bancos de dados como o **CATH (Class, Architecture, Topology, Homologous superfamily)**. O CATH organiza as estruturas em uma hierarquia que nos ajuda a entender as relações evolutivas entre as proteínas. Fica a sugestão de **[Explorar o CATH](https://www.cathdb.info/ "Abrir em nova aba")**!
 
 <p align="justify">
-  <img src="imgs/cath.png" alt="XXXXX" width="700">
+  <img src="imgs/cath.png" alt="XXXXX" width="1000">
 </p>
 <p align="justify">
 <em>Lau, A.M., et al., 2024.</em>
@@ -420,7 +420,7 @@ O "problema do enovelamento de proteínas" divide-se em duas questões:
 O Paradoxo de Levinthal trata do Problema 2 (`a cinética`).
 
 <p align="justify">
-  <img src="imgs/lewontin.png" alt="Richard Lewontin at the chalkboard" width="700">
+  <img src="imgs/lewontin.png" alt="Richard Lewontin at the chalkboard" width="1000">
 </p>
 <p align="justify">
 <em>Fonte: Richard Lewontin (1929-2021) na lousa. Parece que ele está explicando a interação e inseparabilidade do genótipo e do ambiente.</em>
