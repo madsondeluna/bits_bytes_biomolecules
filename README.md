@@ -550,12 +550,11 @@ Antes de mergulharmos nos métodos, é essencial entender a diferença entre doi
 
 Vamos analisar o seguinte alinhamento entre duas sequências curtas:
 
-```bash
-SeqA:  V L I K G A T D
-Alinh: | + | + | | + +
-SeqB:  V I I R G A W E
-
-```
+`
+V L I K G A T D
+| + | + | | + +
+V I I R G A W E
+`
 
 [ADICIONAR IMAGEM EXPLICATIVA AQUI]
 
