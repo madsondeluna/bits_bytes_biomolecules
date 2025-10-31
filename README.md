@@ -66,7 +66,7 @@
 ### 1) O Código Genético (O Degenerado)
 
 <p align="justify">
-  <img src="imgs/genetic-code.png" alt="Roda do código genético: leitura 5'→3' do mRNA" width="1000">
+  <img src="imgs/new-genetic-code.png" alt="Roda do código genético: leitura 5'→3' do mRNA" width="1000">
 </p>
 <p align="justify"><em>
 Leitura do mRNA (5'→3') do centro para a borda até o aminoácido correspondente. AUG codifica Met (início); UAA/UAG/UGA são códons de parada.
