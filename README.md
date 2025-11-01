@@ -291,8 +291,6 @@ As **modificações pós-traducionais (PTMs)** são alterações químicas que o
 
 > Fotografia de microscopia óptica de uma lâmina de sangue corada por Wright-Giemsa, mostrando linfócitos maduros típicos, se destacando pela coloração violeta, também é possível observar outras células sanguíneas como eritrócitos, coradas com um tom mais avermelhado Fonte: Medical Expert Team, 2013.
 
-<br> 
-
 ---
 
 ## Exemplo: A Produção de Anticorpos - Alta Atividade em mRNAs e Secreção de Proteínas
