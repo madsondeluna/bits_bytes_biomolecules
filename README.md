@@ -821,12 +821,28 @@ Abaixo estão os conceitos por trás das principais métricas fornecidas por ess
 
 #### 1. Gráfico de Ramachandran (PROCHECK / MolProbity)
 
-[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+<p align="justify">
+  <img src="imgs/ramachandran-ss.png" alt="XXXXXX" width="1000">
+</p>
+<p align="justify">
+  <em><strong>O Gráfico de Ramachandran.</strong> Fonte: Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
+</p>
 
-O Gráfico de Ramachandran é a ferramenta fundamental para avaliar a qualidade estereoquímica da cadeia principal (*backbone*) de uma proteína.
+O Gráfico de Ramachandran ilustra a distribuição estatística dos ângulos diedros da cadeia principal, $\phi$ (phi, eixo x) e $\psi$ (psi, eixo y), para resíduos de aminoácidos em estruturas de proteínas.
+
+* **Eixos:** O eixo horizontal representa o ângulo $\phi$ (rotação em torno da ligação $N-C_{\alpha}$), e o eixo vertical representa o ângulo $\psi$ (rotação em torno da ligação $C_{\alpha}-C'$), ambos variando de -180° a +180°.
+* **Pontos (Púrpura):** Cada ponto representa a conformação $\phi$/$\psi$ de um único resíduo de aminoácido (tipicamente excluindo Glicina e Prolina) de um grande conjunto de dados de estruturas de proteínas resolvidas experimentalmente (como o PDB).
+* **Regiões Sombreadas (Azul-Claro):** Estas são as regiões "permitidas" ou "favorecidas" do ponto de vista estérico. As combinações de ângulos dentro dessas áreas evitam choques estéricos (colisões) entre átomos da cadeia principal e cadeias laterais. As áreas brancas representam conformações "desfavorecidas" ou "proibidas" devido a tais choques.
+* **Estruturas Secundárias:** As principais estruturas secundárias ocupam regiões distintas e bem definidas no gráfico:
+    * **$\alpha$-hélice dextrogira (Right-handed $\alpha$-helix):** Localizada no quadrante inferior esquerdo ($\phi \approx -57^\circ$, $\psi \approx -47^\circ$).
+    * **Folhas $\beta$ (Antiparallel e Parallel $\beta$-sheet):** Ocupam uma grande região no quadrante superior esquerdo ($\phi$ negativo, $\psi$ positivo).
+    * **$\alpha$-hélice levogira (Left-handed $\alpha$-helix, $\alpha_L$):** Uma região pequena, mas permitida, no quadrante superior direito ($\phi$ positivo, $\psi$ positivo).
+    * **Hélice de colágeno (Collagen triple helix):** Localizada em uma região específica no quadrante superior esquerdo, caracterizada por um $\phi$ altamente negativo.
+* **Outras Conformações:** O gráfico também identifica as localizações da hélice $3_{10}$ (marcada como '3'), hélice $\pi$, e voltas $\beta$ (como a Tipo II, 'II').
+* **Linhas de Contorno:** As linhas diagonais (ex: $n=2$, $n=3$, $n=4$) indicam o número de resíduos por volta (periodicidade helicoidal). Por exemplo, a $\alpha$-hélice tem $n \approx 3.6$, e a folha $\beta$ tem $n=2$.
 
 * **Como Funciona:** Ele plota os ângulos de torção (diedros) φ (phi) e ψ (psi) de cada resíduo da proteína. Devido a restrições estéricas (impedimento entre os átomos da cadeia principal e lateral), apenas certas combinações de φ e ψ são energeticamente favoráveis.
-* **Interpretação:**
+* **Simplificando:**
     * **Regiões "Favorecidas" (Core):** As áreas mais densamente povoadas, correspondendo a conformações estáveis (ex: centros de α-hélices e folhas-β). Um bom modelo deve ter >90% (idealmente >95%) dos resíduos aqui.
     * **Regiões "Permitidas" (Allowed):** Conformações menos ideais, mas ainda fisicamente possíveis.
     * **Regiões "Não Permitidas" (Disallowed/Outliers):** Conformações energeticamente muito desfavoráveis (causando "clashes" atômicos). Resíduos nestas regiões (exceto Glicina ou Prolina em posições específicas) são quase sempre erros de modelagem e devem ser inspecionados.
