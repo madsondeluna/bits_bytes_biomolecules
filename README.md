@@ -37,6 +37,7 @@ Link para o na versão web: <a href="https://madsondeluna.github.io/bits_bytes_b
 
 O Dogma Central da Biologia Molecular descreve o fluxo fundamental da informação genética: o DNA é transcrito em RNA, e o RNA é traduzido em proteína. Esse modelo, proposto por Francis Crick, estabelece a base conceitual sobre como as instruções genéticas são convertidas em função biológica. Assim, o dogma central reúne o grande conjunto de processos canônicos, replicação, transcrição e tradução, que sustentam a herança e a expressão gênica em todos os organismos vivos. No entanto, à medida que a biologia molecular avançou, tornou-se evidente que esses processos estão longe de ser lineares ou simples. Cada etapa do dogma central é regulada por uma imensa rede de mecanismos que modulam a eficiência, a precisão e o contexto da expressão gênica. Fatores como modificações epigenéticas, splicing alternativo, estruturas secundárias de RNA, metilação, interações com proteínas e a ação de pequenos RNAs adicionam camadas de controle que permitem respostas dinâmicas às condições celulares e ambientais. Portanto, embora o dogma central represente o esqueleto conceitual do fluxo de informação genética, é nas suas regulações não canônicas, sutis, versáteis e altamente específicas — que a vida adquire sua complexidade e capacidade de adaptação. 
 
+<br>
 
 <figure class="figure-center">
   <img src="imgs/dogma-central.png" alt="DreamFold" width="800">
@@ -177,7 +178,11 @@ No contexto biológico da síntese proteica (tradução), este processo é energ
 
 > Fonte: Amy McDermott, 2024.
 
+<br>
+
 Ao abordar as interações entre aminoácidos, a ligação primordial e mais forte, que estabelece a estrutura primária de uma proteína, é a ligação peptídica. Esta ligação covalente é formada pela união do grupo α-carboxila de um aminoácido ao grupo α-amino do aminoácido subsequente, caracterizando uma reação de condensação (ou desidratação) na qual uma molécula de água (H₂O) é liberada.
+
+<br>
 
 <p align="justify">
   <img src="imgs/pep-bond.png" alt="XXXXXXXX" width="1000">
@@ -185,8 +190,11 @@ Ao abordar as interações entre aminoácidos, a ligação primordial e mais for
 
 > Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
 
+<br>
 
 A ligação peptídica sob outra óptica. 
+
+<br>
 
 <figure class="figure-center">
   <img src="imgs/pep-bond2.png" alt="XXXXX" width="900">
@@ -205,6 +213,8 @@ A ligação peptídica sob outra óptica.
 </p>
 
 > Fonte: JPT Peptide Technologies.
+
+<br>
 
 | Aminoácido | Propriedades | Tendência Estrutural |
 |:---|:---|:---|
@@ -225,6 +235,8 @@ A ligação peptídica sob outra óptica.
 
 > O gráfico mostra a matriz dos aminoácidos naturais: círculos azuis maiores indicam interações mais fortes. Fonte: Cambridge MedChem Consulting, 2025.
 
+<br>
+
  PDB contém muitos exemplos de interações entre aminoácidos. Embora existam interações específicas bem documentadas (aminoácidos básicos com carga positiva se ligam a aminoácidos ácidos com carga negativa), não havia visto um estudo sistemático de todas as combinações de aminoácidos, por isso, o trabalho de [Andrew White](https://crowsandcats.blogspot.com/2012/03/amino-acid-interactions.html) é notável, pois ele contou sistematicamente o número de interações entre cada par de tipos de aminoácidos e, em seguida, converteu essas contagens em energias de interação.<
 
 | Interação | Distância (Å) | Natureza da Força | Aminoácidos Frequentes |
@@ -235,10 +247,13 @@ A ligação peptídica sob outra óptica.
 | Forças de van der Waals | 3.5–4.0 | Flutuações de dipolos instantâneos | Todos os resíduos, crucial no empacotamento do núcleo |
 | Interação Cátion-π | 3.5–5.0 | Eletrostática entre um cátion e um anel aromático | Arg, Lys com Phe, Tyr, Trp |
 
+<br>
 
 <p align="justify">
   <img src="imgs/pep-interactions.png" alt="XXXXXXXX" width="1000">
 </p>
+
+<br>
 
 > Representação de interações moleculares não-covalentes entre estruturas proteicas. Os quatro painéis exibem exemplos das diferentes forças que estabilizam complexos proteicos, como pontes de hidrogênio, pontes salinas e interações de empilhamento (π-stacking). Para clareza visual, os parceiros de interação são diferenciados pelas cores azul e amarela. As linhas pontilhadas destacam os contatos atômicos específicos que formam essas interações. Fonte: Luna-Aragão, M.A., 2025.
 
@@ -258,6 +273,8 @@ O problema do enovelamento de proteínas, como uma cadeia polipeptídica linear 
 
 > Fonte: Macošek J, Mas G, Hiller S. Redefining Molecular Chaperones as Chaotropes. Front Mol Biosci. 2021 Jun 14;8:683132. doi: 10.3389/fmolb.2021.683132. PMID: 34195228; PMCID: PMC8237284.
 
+<br>
+
 Para visualizar a complexidade deste processo, utilizamos a metáfora do **funil de enovelamento**. Este modelo descreve a paisagem energética que uma proteína atravessa para atingir sua conformação nativa.
 *   **Topo do Funil (Alta Energia, Alta Entropia):** No topo, a proteína recém-sintetizada (desenovelada) existe em um vasto número de conformações possíveis, caracterizando um estado de alta entropia conformacional e alta energia livre de Gibbs.
 *   **Paisagem Rugosa (Estados Intermediários):** À medida que a proteína se enovela, ela "desce" pelo funil, restringindo seu espaço conformacional e diminuindo sua energia livre. As paredes do funil são **rugosas**, com depressões que representam **estados intermediários metaestáveis**. Alguns destes estados podem possuir atividade biológica, indicando que o processo de enovelamento pode ser funcionalmente relevante.
@@ -269,12 +286,15 @@ Para visualizar a complexidade deste processo, utilizamos a metáfora do **funil
 
 Em biologia molecular, a estabilidade de um sistema é descrita pela **energia livre de Gibbs (ΔG)**. Processos espontâneos, como o enovelamento de proteínas, ocorrem com uma diminuição da energia livre total do sistema (ΔG < 0). Portanto, um valor de **ΔG mais negativo** indica uma conformação mais estável e energeticamente favorável.
 
+<br>
+
 <figure class="figure-center">
   <img src="imgs/deltg.png" alt="XXXXX" width="600">
 </figure>
 
 > Fonte: The Gibbs free energy change (ΔG) and how it's related to reaction spontaneity and equilibrium. https://www.khanacademy.org/science/biology/energy-and-enzymes/free-energy-tutorial/a/gibbs-free-energy
 
+<br>
 
 * **G (Energia Livre de Gibbs):** A Energia Livre de Gibbs (ΔG) é um potencial termodinâmico que mede a "utilidade" ou o trabalho máximo e reversível que pode ser realizado por um sistema termodinâmico a temperatura e pressão constantes. Uma mudança negativa em G (ΔG < 0) indica que a reação é espontânea, ou seja, pode ocorrer sem a entrada contínua de energia externa. Uma mudança positiva (ΔG > 0) significa que a reação é não espontânea e requer energia para ocorrer. Se ΔG = 0, o sistema está em equilíbrio.
 
@@ -285,6 +305,8 @@ Em biologia molecular, a estabilidade de um sistema é descrita pela **energia l
 A relação entre G, H e S (Entropia) é dada pela equação: **ΔG = ΔH - TΔS**. A entropia (ΔS) mede o grau de aleatoriedade ou desordem de um sistema.
 
 Talvez esse exemplo ajude a pensar melhor:
+
+<br>
 
 <figure class="figure-center">
   <img src="imgs/ts-th.png" alt="XXXXX" width="600">
@@ -315,11 +337,15 @@ A **estrutura secundária** refere-se aos arranjos locais e regulares da cadeia 
 
 As hélices proteicas são estruturas secundárias onde a cadeia polipepeptídica se enrola, estabilizada por ligações de hidrogênio. A distinção entre a $3_{10}$-hélice (A), $\alpha$-hélice (B) e $\pi$-hélice (C) reside no número de resíduos por volta e no padrão de suas ligações de hidrogênio.
 
+<br>
+
 <figure class="figure-center">
   <img src="imgs/helixes.png" alt="XXXXX" width="600">
 </figure>
 
 > Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
+
+<br>
 
 **(A) $3_{10}$-Hélice:** Mais compacta, possui 3.0 resíduos por volta. As ligações de hidrogênio são formadas entre o C=O de *n* e o N-H de *n*+3. O nome "$3_{10}$" indica 3 resíduos por volta e um anel de 10 átomos formado pela ligação de hidrogênio. É menos comum e geralmente curta.
 
@@ -329,11 +355,15 @@ As hélices proteicas são estruturas secundárias onde a cadeia polipepeptídic
 
 Em suma, a nomenclatura das hélices reflete diretamente suas características estruturais primárias, como o número de resíduos por volta e o padrão específico das ligações de hidrogênio intramoleculares.
 
+<br>
+
 <p align="justify">
   <img src="imgs/strucutures-configuration.png" alt="XXXXXXXX" width="1000">
 </p>
 
 > Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
+
+<br>
 
 A estrutura secundária de proteínas refere-se aos padrões regulares de dobramento local da cadeia polipeptídica, estabilizados por ligações de hidrogênio entre os átomos da cadeia principal (grupos C=O e N-H). Os elementos mais comuns incluem as **α-hélices**, estruturas helicoidais dextrogiras com 3,6 resíduos por volta e ligações de hidrogênio entre resíduos \(i\) e \(i+4\), e as **folhas-β**, formadas pela associação lateral de fitas-β estendidas que podem se arranjar de forma paralela ou antiparalela. Hélices menos frequentes como a **3₁₀** (mais compacta, com 3 resíduos por volta) e a **π** (mais larga, com 4,4 resíduos por volta) são energeticamente menos favoráveis e aparecem tipicamente em regiões de transição. As **voltas e alças** conectam esses elementos regulares, permitindo mudanças na direção da cadeia e sendo cruciais para o dobramento tridimensional da proteína.
 
@@ -345,6 +375,7 @@ As **alças** (loops ou turns) são regiões de estrutura secundária irregular 
 
 As alças são frequentemente classificadas por seu comprimento e geometria. Os **turns** (voltas) são alças curtas, tipicamente contendo 2 a 5 resíduos, sendo as mais comuns as **β-turns** (4 resíduos) e **γ-turns** (3 resíduos). As β-turns são particularmente importantes em folhas β antiparalelas, permitindo a reversão da direção da cadeia. Já os **loops** são segmentos mais longos e variáveis que conectam elementos estruturais distantes. Além de sua função estrutural, muitas alças estão localizadas na superfície das proteínas e participam ativamente do reconhecimento molecular, interações proteína-proteína e formação de sítios catalíticos. A flexibilidade conformacional destas regiões é crucial para a função biológica, permitindo ajustes induzidos pela ligação de substratos ou cofatores.
 
+<br>
 
 <figure class="figure-center">
   <img src="imgs/loop.png" alt="XXXXX" width="700">
@@ -362,6 +393,7 @@ As **fitas β** (β-strands) representam um importante motivo de estrutura secun
 
 Quando múltiplas fitas β se associam lateralmente através de ligações de hidrogênio intermoleculares, forma-se uma **folha β** (β-sheet). Esta estrutura pode ser organizada de duas maneiras distintas: **folha β antiparalela**, onde as fitas adjacentes correm em direções opostas (N→C de uma fita alinha-se com C→N da fita vizinha), resultando em um padrão de ligações de hidrogênio direto e mais regular; e **folha β paralela**, onde todas as fitas correm na mesma direção (N→C), criando ligações de hidrogênio mais distorcidas e geometricamente menos favoráveis, tornando esta configuração ligeiramente menos estável. As folhas β podem conter de 2 a mais de 10 fitas, e muitas estruturas proteicas apresentam folhas β mistas, contendo segmentos tanto paralelos quanto antiparalelos. A torção característica das folhas β, observada na maioria das estruturas, resulta em uma conformação levemente helicoidal que otimiza as interações de empacotamento no núcleo hidrofóbico das proteínas.
 
+<br>
 
 <figure class="figure-center">
   <img src="imgs/beta-shet.png" alt="XXXXX" width="550">
@@ -379,11 +411,15 @@ A gênese das primeiras proteínas funcionais foi fortemente condicionada pela d
 
 Do ponto de vista estrutural, esse conjunto pré-biótico era intrinsecamente tendencioso à formação de determinadas estruturas secundárias. Diferentes aminoácidos exibem propensões intrínsecas distintas para a formação de α-hélices, propriedade esta extensivamente quantificada em estudos experimentais e computacionais. A Alanina (Ala), um dos aminoácidos pré-bióticos mais simples e provavelmente mais abundantes, apresenta a maior propensão helicoidal, servindo como referência para a estabilidade desse tipo de estrutura. A Leucina (Leu) também demonstra elevada capacidade de estabilização de hélices α. Em contraste, a Glicina (Gly), devido à sua alta flexibilidade conformacional, e a Prolina (Pro), cuja estrutura cíclica restringe a rotação da ligação peptídica, atuam como fortes disruptores de hélices. Assim, a presença de aminoácidos formadores de hélices, como Ala e Leu, sugere que mesmo a polimerização estocástica desses monômeros possuía uma probabilidade estatisticamente significativa de originar sequências capazes de adotar conformações helicoidais estáveis.
 
+<br>
+
 <figure class="figure-center">
   <img src="imgs/helix.png" alt="XXXXX" width="600">
 </figure>
 
 > Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
+
+<br>
 
 ---
 
@@ -391,13 +427,15 @@ Do ponto de vista estrutural, esse conjunto pré-biótico era intrinsecamente te
 
 A combinação de elementos de estrutura secundária forma **motivos secundários, terciários e quaternários**, os blocos de construção dos **domínios** proteicos (regiões que se enovelam e funcionam de forma independente).
 
+<br>
+
 <figure class="figure-center">
   <img src="imgs/motifs-domains.png" alt="XXXXX" width="600">
 </figure>
 
 > Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
 
-
+<br>
 
 | Motivo | Descrição | Função/Exemplos |
 |:---|:---|:---|
@@ -414,6 +452,7 @@ Para explorar a diversidade de dobras, utilizamos bancos de dados como o **CATH 
 
 > Fonte: Lau, A.M., et al., 2024.
 
+<br>
 
 A organização hierárquica das estruturas proteicas pode ser explorada através de bases de dados como o **CATH** (Class, Architecture, Topology, Homologous superfamily), que classifica domínios proteicos em níveis que vão desde a composição de estrutura secundária (Classe: α, β ou α/β) até a topologia tridimensional e relações evolutivas. A imagem ilustra a diversidade estrutural dos domínios proteicos representados no CATH, mostrando como diferentes arranjos de α-hélices e folhas-β geram milhares de dobras únicas distribuídas entre os três domínios da vida (bactérias, eucariotos e arqueias). A análise por PCA (componentes principais) revela agrupamentos distintos baseados na composição estrutural, onde domínios predominantemente α (indicados em azul escuro), β (verde) e mistos α/β (roxo) ocupam regiões distintas do espaço conformacional, refletindo tanto restrições físico-químicas do dobramento quanto pressões evolutivas que moldaram o repertório estrutural das proteínas.
 
@@ -430,6 +469,8 @@ O "problema do enovelamento de proteínas" divide-se em duas questões:
 2.  **Cinética (O "Como"):** Como a proteína encontra esse estado tão rápido?
 
 O Paradoxo de Levinthal trata do Problema 2 (`a cinética`).
+
+<br>
 
 <p align="justify">
   <img src="imgs/lewontin.png" alt="Richard Lewontin at the chalkboard" width="1000">
@@ -578,12 +619,16 @@ Antes de mergulharmos nos métodos, é essencial entender a diferença entre doi
 
 > Note que a substituição de `T` (polar) por `W` (apolar e grande) não é considerada similar neste contexto.
 
+<br>
+
 <p align="justify">
   <img src="imgs/structure-maintain.png" alt="Dois gráficos mostrando a relação entre a identidade de sequência e a estrutura proteica" width="1000">
 </p>
 <p align="justify">
   <em>Gráficos adaptados de estudos clássicos de Chothia e Lesk, ilustrando a relação entre a porcentagem de resíduos idênticos no núcleo proteico (eixo X) e, respectivamente, o desvio médio quadrático (RMSD) da estrutura do esqueleto (gráfico a) e a fração de resíduos no núcleo conservado (gráfico b).</em>
 </p>
+
+<br>
 
 **Conclusão:** A porcentagem de **similaridade** é sempre maior ou igual à de **identidade**. Para a modelagem por homologia, uma alta similaridade (>50%), mesmo com uma identidade mais baixa (~30%), já pode ser um forte indicativo de que as proteínas compartilham a mesma dobra estrutural.
 
@@ -602,6 +647,8 @@ As mais comuns são: **[UniProt](https://www.uniprot.org/ "Abrir em nova aba")**
 <figure class="figure-center">
   <img src="imgs/homology.png" alt="DreamFold" width="600">
 </figure>
+
+<br>
 
 A modelagem por homologia parte de um princípio evolutivo fundamental: se duas proteínas compartilham uma sequência de aminoácidos similar, elas provavelmente terão estruturas tridimensionais muito parecidas.
 
@@ -626,6 +673,8 @@ A modelagem por homologia parte de um princípio evolutivo fundamental: se duas 
 
 > Fonte: I-TASSER (Iterative Threading ASSEmbly Refinement).
 
+<br>
+
 E se não houver um homólogo com sequência similar? O Threading entra em cena. Ele se baseia na observação de que o número total de dobras (folds) proteicos existentes na natureza é limitado. O objetivo do Threading não é alinhar sequências, mas sim verificar se uma sequência de aminoácidos é compatível com uma dobra estrutural já conhecida.
 
 *   **Como Funciona:** O algoritmo "passa" (threads) a sequência alvo por uma biblioteca de dobras proteicas conhecidas. Para cada dobra, ele calcula uma pontuação de energia (um *score*) que avalia o quão bem a sequência "se encaixa" naquela estrutura 3D. A dobra que resultar na menor energia é a mais provável.
@@ -648,6 +697,8 @@ E se não houver um homólogo com sequência similar? O Threading entra em cena.
 </figure>
 
 > Fonte: Khor, B.Y., et al., 2015
+
+<br>
 
 Este é o "Santo Graal" da modelagem clássica: prever a estrutura de uma proteína a partir unicamente de sua sequência de aminoácidos, sem usar nenhum template. A ideia é simular o processo de enovelamento físico, buscando a conformação de menor energia livre.
 
@@ -672,6 +723,8 @@ Este é o "Santo Graal" da modelagem clássica: prever a estrutura de uma prote�
 
 > Fonte: Bertoline, L.M.F., et al., 2023.
 
+<br>
+
 Se os métodos clássicos foram a base da modelagem molecular por décadas, a chegada do aprendizado de máquina (Deep Learning) não foi apenas uma melhoria: foi um evento transformador que redefiniu os limites do que é possível na biologia estrutural computacional.
 
 ### Contexto Histórico: A Longa Estrada do CASP e a Promessa do AlphaFold 1
@@ -690,6 +743,8 @@ Em 2018, no CASP13, a DeepMind (uma subsidiária da Google) apresentou o **Alpha
 
 > Fonte: Jumper, J., et al., 2021.
 
+<br>
+
 No CASP14 em 2020, o **AlphaFold 2** foi apresentado, e os resultados chocaram a comunidade científica. O novo modelo alcançou uma precisão mediana de GDT_TS de 92.4, um score onde 100 representa um encaixe perfeito com a estrutura experimental. Pela primeira vez, um método computacional conseguia, em muitos casos, gerar modelos com precisão comparável à de técnicas experimentais como a cristalografia de raios-X. A revista *Nature* declarou que ele havia "resolvido" o problema do enovelamento de proteínas, um desafio de 50 anos.
 
 O impacto do AlphaFold 2 foi amplificado por uma decisão crucial da DeepMind: **tornar o código-fonte e os pesos do modelo totalmente abertos**. Isso desencadeou uma explosão de inovação. Pesquisadores de todo o mundo puderam não apenas usar a ferramenta, mas também dissecá-la, entendê-la e criar novas ferramentas inspiradas em seus módulos, como o **RoseTTAFold** e o **ESMFold**. O AlphaFold 2 democratizou a predição de alta precisão e mudou para sempre a forma como biólogos moleculares abordam seus sistemas de estudo.
@@ -704,6 +759,8 @@ O impacto do AlphaFold 2 foi amplificado por uma decisão crucial da DeepMind: *
 
 > Fonte: Yang, Z., et al., 2023.
 
+<br>
+
 > Críticas científicas significativas foram direcionadas à publicação do AlphaFold 3 na revista Nature, principalmente devido à falta de transparência e ao acesso restrito ao código-fonte do modelo. Os críticos argumentam que isso viola os princípios da ciência aberta, dificultando a verificação independente, a reprodutibilidade e a realização de pesquisas em larga escala pela comunidade científica em geral. Isso levou pesquisadores a desenvolverem alternativas. <a href="https://www.science.org/content/article/limits-access-deepmind-s-new-protein-program-trigger-backlash" target="_blank">Limits on access to DeepMind’s new protein program trigger backlash.</a>
 
 Em 2024, a DeepMind e a Isomorphic Labs lançaram o **AlphaFold 3**. A nova versão representa outro salto monumental, expandindo suas capacidades para muito além de proteínas isoladas. Suas principais melhorias incluem:
@@ -713,9 +770,13 @@ Em 2024, a DeepMind e a Isomorphic Labs lançaram o **AlphaFold 3**. A nova vers
 
 No entanto, a chegada do AlphaFold 3 veio com uma mudança de filosofia drástica: **ele não é open source**. Embora um servidor web permita o uso para pesquisa não-comercial, a comunidade não tem acesso ao código-fonte. Isso impede que outros grupos de pesquisa aprendam com seus avanços arquitetônicos e criem ferramentas derivadas, como aconteceu com o AlphaFold 2. Essa decisão limita o ritmo da inovação comunitária e centraliza o poder de predição em uma única ferramenta "caixa-preta", marcando um contraste acentuado com a era de colaboração aberta inaugurada por seu predecessor.
 
+<br>
+
 <figure class="figure-center">
-  <img src="imgs/reddit.png" alt="XXXXX" width="600">
+  <img src="imgs/reddit.png" alt="XXXXX" width="1000">
 </figure>
+
+<br>
 
 > Recorte proveniente de uma discussão no subreddit [*r/singularity*](https://www.reddit.com/r/singularity/), publicada há aproximadamente dois anos pelo usuário `AlterandPhil`. O conteúdo integra um debate mais amplo sobre os desdobramentos tecnológicos e a ética da degação ao open-source em avanços científicos cruciais, como o AlphaFold 3.
 
