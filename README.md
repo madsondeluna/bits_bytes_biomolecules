@@ -37,7 +37,7 @@ O Dogma Central da Biologia Molecular descreve o fluxo fundamental da informaç�
 
 
 <figure class="figure-center">
-  <img src="imgs/dogma-central.png" alt="DreamFold" width="700">
+  <img src="imgs/dogma-central.png" alt="DreamFold" width="900">
 </figure>
 
 > <strong>Dogma Central da Biologia Molecular.</strong> Representação expandida do Dogma Central da Biologia Molecular. O DNA é transcrito em diferentes classes de RNA, incluindo os RNAs clássicos envolvidos na tradução, como o mRNA, tRNA e rRNA, que juntos participam da síntese proteica. No entanto, a transcrição também gera uma ampla variedade de RNAs não codificantes (ncRNAs), tanto curtos (<200 pb) quanto longos (>200 pb), que desempenham papéis fundamentais na regulação gênica, remodelamento da cromatina, splicing e degradação de RNA. Além disso, alguns vírus utilizam a transcrição reversa para converter RNA em DNA, revelando a flexibilidade e complexidade do fluxo de informação genética. Fonte: Nicolás Delgado Pease, BioRender.
@@ -76,8 +76,8 @@ Nos modelos didáticos e nas representações clássicas da biologia molecular, 
 
 ### 1) O Código Genético (O Filho Degenerado da Natureza)
 
-<figure class="gene-codeeeeeee.png">
-  <img src="imgs/dogma-central.png" alt="DreamFold" width="600">
+<figure class="figure-center">
+  <img src="imgs/gene-codeeeeeee.png" alt="DreamFold" width="700">
 </figure>
 
 > Leitura do mRNA (5'→3') do centro para a borda até o aminoácido correspondente. AUG codifica Met (início); UAA/UAG/UGA são códons de parada. Fonte: Christopher R. Donohue (NIH, 2025).
@@ -91,12 +91,11 @@ Nos modelos didáticos e nas representações clássicas da biologia molecular, 
 
 ### 2) “Charging”: Aminoacilação do tRNA
 
-<p align="justify">
-  <img src="imgs/trna-syntesis.png" alt="Aminoacil-tRNA sintetase ligando aminoácido ao tRNA com consumo de ATP" width="1000">
-</p>
-<p align="justify"><em>
-Aminoacil-tRNA sintetases ligam o aminoácido correto ao tRNA cognato usando ATP (ATP → AMP + PPi; custo ~2 ligações de alta energia) e possuem mecanismos de edição.
-</em></p>
+<figure class="figure-center">
+  <img src="imgs/trna-syntesis.png" alt="XXXXX" width="600">
+</figure>
+
+> Aminoacil-tRNA sintetases ligam o aminoácido correto ao tRNA cognato usando ATP (ATP → AMP + PPi; custo ~2 ligações de alta energia) e possuem mecanismos de edição.
 
 * Por que importa:</b> define o “vocabulário” físico do código genético; a alta especificidade/edição limita a <i>mistranslation</i>, protegendo estrutura e função proteica.</p>
 
