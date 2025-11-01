@@ -544,7 +544,7 @@ Ou seja: é predição supervisionada, não simulação físico-química do cami
 
 Neste módulo, exploramos os três pilares da modelagem de proteínas pré-Deep Learning. Embora ferramentas como o AlphaFold tenham revolucionado a predição de estruturas, os métodos clássicos continuam sendo indispensáveis para cenários específicos, oferecendo controle e abordagens que ainda não são o foco principal das novas tecnologias.
 
-### Uma Nota Crucial - Identidade vs. Similaridade de Sequência
+### Identidade vs. Similaridade de Sequência
 
 Antes de mergulharmos nos métodos, é essencial entender a diferença entre dois termos frequentemente confundidos: **identidade** e **similaridade**. A precisão da modelagem por homologia depende diretamente desses conceitos.
 
@@ -557,26 +557,37 @@ Antes de mergulharmos nos métodos, é essencial entender a diferença entre doi
 Vamos analisar o seguinte alinhamento entre duas sequências curtas:
 
 ```
-SeqA: V L I K G A T D
-Alinh: | + | + | | +
-SeqB: V I I R G A W E
+  V L I K G A T D
+   | + | + | | + +
+   V I I R G A W E
 ```
 
-[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+> **Identidades (`|`):** As posições com `V`, `I`, `G`, `A` são idênticas.
 
+> **Cálculo:** 4 resíduos idênticos de um total de 8.
+> **Identidade = (4 / 8) * 100 = 50%**
 
-*   **Identidades (`|`):** As posições com `V`, `I`, `G`, `A` são idênticas.
-    *   **Cálculo:** 4 resíduos idênticos de um total de 8.
-    *   **Identidade = (4 / 8) * 100 = 50%**
+---
 
-*   **Similaridades (`+`):** Além das identidades, temos substituições conservativas:
-    *   `L` e `I` (ambos hidrofóbicos).
-    *   `K` e `R` (ambos com carga positiva).
-    *   `D` e `E` (ambos com carga negativa).
-    *   **Cálculo:** 4 resíduos idênticos + 3 resíduos similares = 7.
-    *   **Similaridade = (7 / 8) * 100 = 87.5%**
+> **Similaridades (`+`):** Além das identidades, temos substituições conservativas:
+
+> `L` e `I` (ambos hidrofóbicos).
+> `K` e `R` (ambos com carga positiva).
+> `D` e `E` (ambos com carga negativa).
+
+---
+
+> **Cálculo:** 4 resíduos idênticos + 3 resíduos similares = 7.
+> **Similaridade = (7 / 8) * 100 = 87.5%**
 
 Note que a substituição de `T` (polar) por `W` (apolar e grande) não é considerada similar neste contexto.
+
+<p align="justify">
+  <img src="imgs/structure-maintain.png" alt="Dois gráficos mostrando a relação entre a identidade de sequência e a estrutura proteica" width="1000">
+</p>
+<p align="justify">
+  <em>Gráficos adaptados de estudos clássicos de Chothia e Lesk, ilustrando a relação entre a porcentagem de resíduos idênticos no núcleo proteico (eixo X) e, respectivamente, o desvio médio quadrático (RMSD) da estrutura do esqueleto (gráfico a) e a fração de resíduos no núcleo conservado (gráfico b).</em>
+</p>
 
 **Conclusão:** A porcentagem de **similaridade** é sempre maior ou igual à de **identidade**. Para a modelagem por homologia, uma alta similaridade (>50%), mesmo com uma identidade mais baixa (~30%), já pode ser um forte indicativo de que as proteínas compartilham a mesma dobra estrutural.
 
