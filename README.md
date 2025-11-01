@@ -707,7 +707,7 @@ Este é o "Santo Graal" da modelagem clássica: prever a estrutura de uma prote�
 ## Módulo 2: A Revolução do Aprendizado de Máquina e a Nova Era da Biologia Estrutural
 
 <figure class="figure-center">
-  <img src="imgs/timeline.png" alt="XXXXX" width="900">
+  <img src="imgs/timeline.png" alt="XXXXX" width="700">
 </figure>
 
 > Fonte: Bertoline, L.M.F., et al., 2023.
