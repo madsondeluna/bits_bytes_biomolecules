@@ -37,7 +37,7 @@ O Dogma Central da Biologia Molecular descreve o fluxo fundamental da informaç�
 
 
 <figure class="figure-center">
-  <img src="imgs/dogma-central.png" alt="DreamFold" width="900">
+  <img src="imgs/dogma-central.png" alt="DreamFold" width="800">
 </figure>
 
 > <strong>Dogma Central da Biologia Molecular.</strong> Representação expandida do Dogma Central da Biologia Molecular. O DNA é transcrito em diferentes classes de RNA, incluindo os RNAs clássicos envolvidos na tradução, como o mRNA, tRNA e rRNA, que juntos participam da síntese proteica. No entanto, a transcrição também gera uma ampla variedade de RNAs não codificantes (ncRNAs), tanto curtos (<200 pb) quanto longos (>200 pb), que desempenham papéis fundamentais na regulação gênica, remodelamento da cromatina, splicing e degradação de RNA. Além disso, alguns vírus utilizam a transcrição reversa para converter RNA em DNA, revelando a flexibilidade e complexidade do fluxo de informação genética. Fonte: Nicolás Delgado Pease, BioRender.
@@ -120,12 +120,11 @@ O tRNA apresenta loops funcionais (D, anticódon, variável, TΨC) e numerosas m
 
 ### 4) Pareamento Códon–Anticódon
 
-<p align="justify">
-  <img src="imgs/codon-recognition.png" alt="Pareamento AUG com anticódon UAC no tRNA iniciador" width="1000">
-</p>
-<p align="justify"><em>
-O tRNA iniciador (anticódon 3'-UAC-5') se pareia antiparalelamente com AUG no sítio P na iniciação.
-</em></p>
+<figure class="figure-center">
+  <img src="imgs/codon-recognition.png" alt="XXXXX" width="600">
+</figure>
+
+> O tRNA iniciador (anticódon 3'-UAC-5') se pareia antiparalelamente com AUG no sítio P na iniciação.
 
 * Por que importa:</b> o ribossomo monitora rigidamente as <b>duas primeiras bases</b> do códon (geometria Watson–Crick), ancorando a fidelidade do código. Direção de síntese: N→C.
 
