@@ -316,7 +316,7 @@ A **estrutura secundária** refere-se aos arranjos locais e regulares da cadeia 
 As hélices proteicas são estruturas secundárias onde a cadeia polipepeptídica se enrola, estabilizada por ligações de hidrogênio. A distinção entre a $3_{10}$-hélice (A), $\alpha$-hélice (B) e $\pi$-hélice (C) reside no número de resíduos por volta e no padrão de suas ligações de hidrogênio.
 
 <figure class="figure-center">
-  <img src="imgs/helixes.png" alt="XXXXX" width="800">
+  <img src="imgs/helixes.png" alt="XXXXX" width="500">
 </figure>
 
 > Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
