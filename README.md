@@ -190,7 +190,7 @@ Uma vez que o mRNA maduro atravessa o complexo do poro nuclear, ele emerge no ci
 * Próximo ao RER, localiza-se o **complexo de Golgi**.
 
 <figure class="figure-center">
-  <img src="imgs/reticulo-golgi.png" alt="XXXXX" width="600">
+  <img src="imgs/reticulo-golgi.png" alt="XXXXX" width="800">
 </figure>
 
 > Organização espacial do retículo endoplasmático rugoso (RER) e do complexo de Golgi em uma célula eucariótica típica. Mostrando como ocorre a tradução proteica em diferentes compartimentos celulares, até o transporte para secreção ou destinos intracelulares. Fonte: Alberts, B. et al. 2002
