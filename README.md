@@ -997,7 +997,11 @@ Nem toda pergunta de pesquisa exige o poder (e o custo computacional) do AlphaFo
 
 ## Módulo 3: Análise, Validação e Interpretação de Modelos Estruturais
 
-[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+<figure class="figure-center">
+  <img src="imgs/pymol.png" alt="XXXXX" width="1000">
+</figure>
+
+> Screenshot do PyMOL mostrando a estrutura de uma proteína com destaque para as alfa-hélices, loops e folhas-beta, além de moléculas de água e íons presentes no cristal do PDB.
 
 ### Ferramentas de Visualização Molecular
 *   **[PyMOL](https://pymol.org/2/ "Download PyMOL")**: Padrão para geração de figuras de alta qualidade.
@@ -1018,7 +1022,11 @@ onde $N$ é o número de átomos e $\delta_i$ é a distância entre o átomo *i*
 *   **Dinâmica Molecular:** Para avaliar a estabilidade de uma simulação (um RMSD baixo e estável indica que a proteína não está se "desfazendo").
 *   **Docking Molecular:** Para validar um protocolo (re-docking) e avaliar a similaridade entre poses de ligantes geradas.
 
-[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+<figure class="figure-center">
+  <img src="imgs/rmsd.png" alt="XXXXX" width="1000">
+</figure>
+
+> O gráfico de RMSD acima mostra a variação do RMSD ao longo do tempo em uma simulação de dinâmica molecular. A estabilização do RMSD após um certo período indica que a estrutura atingiu um estado estável, ele leva em consideração as variações estruturais durante a simulação paratindo da estrutura inicial.
 
 ---
 
