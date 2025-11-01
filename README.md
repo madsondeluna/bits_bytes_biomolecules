@@ -87,7 +87,7 @@ Nos modelos didáticos e nas representações clássicas da biologia molecular, 
 
 * Implicações práticas:</b> a <b>degenerescência</b> do código faz com que, em <b>grande parte</b> dos conjuntos sinônimos, a <b>3ª base</b> do códon seja a mais variável (ligando com a Seção 5, “wobble”). Isso amortece mutações sinônimas e permite viés de códons que modula taxa de tradução e enovelamento co-traducional.
 
-* Erros acontecem::</b> mutações <i>missense</i> alteram o aminoácido; mutações <i>nonsense</i> criam parada prematura e podem acionar <b>NMD</b> (nonsense-mediated decay), degradando o mRNA antes da tradução completa. Exceções importantes: AUG (Met) e UGG (Trp) têm um único códon; alguns grupos (Leu/Arg/Ser) também variam na 1ª base — portanto não é “todos os códons” com 3ª base degenerada.
+* Erros acontecem:</b> mutações <i>missense</i> alteram o aminoácido; mutações <i>nonsense</i> criam parada prematura e podem acionar <b>NMD</b> (nonsense-mediated decay), degradando o mRNA antes da tradução completa. Exceções importantes: AUG (Met) e UGG (Trp) têm um único códon; alguns grupos (Leu/Arg/Ser) também variam na 1ª base — portanto não é “todos os códons” com 3ª base degenerada.
 
 ---
 
@@ -101,7 +101,7 @@ Nos modelos didáticos e nas representações clássicas da biologia molecular, 
 
 * Implicações práticas:</b> define o “vocabulário” físico do código genético; a alta especificidade/edição limita a <i>mistranslation</i>, protegendo estrutura e função proteica.</p>
 
-* Erros acontecem::</b> defeitos em sintetases ou na edição levam a incorporação errada de aminoácidos (proteínas mal enoveladas, toxicidade); estresse pode alterar níveis de tRNA carregados e reprogramar a priorização traducional.
+* Erros acontecem:</b> defeitos em sintetases ou na edição levam a incorporação errada de aminoácidos (proteínas mal enoveladas, toxicidade); estresse pode alterar níveis de tRNA carregados e reprogramar a priorização traducional.
 
 ---
 
@@ -116,7 +116,7 @@ Nos modelos didáticos e nas representações clássicas da biologia molecular, 
 
 * Implicações práticas:</b> modificações estabilizam a estrutura, ajustam a forma do anticódon e afinam a decodificação (eficiência/fidelidade); algumas agem como “aceleradores/freios” finos na elongação, afetando enovelamento co-traducional e montagem de domínios.
 
-* Erros acontecem::</b> perfis de modificação disfuncionais (doença/estresse) mudam a preferência por códons, promovem pausas, <i>readthrough</i> indesejado ou erros; clivagens geram tRNA-fragments que podem <b>reprimir tradução</b>.
+* Erros acontecem:</b> perfis de modificação disfuncionais (doença/estresse) mudam a preferência por códons, promovem pausas, <i>readthrough</i> indesejado ou erros; clivagens geram tRNA-fragments que podem <b>reprimir tradução</b>.
 
 ---
 
@@ -130,7 +130,7 @@ Nos modelos didáticos e nas representações clássicas da biologia molecular, 
 
 * Implicações práticas:</b> o ribossomo monitora rigidamente as <b>duas primeiras bases</b> do códon (geometria Watson–Crick), ancorando a fidelidade do código. Direção de síntese: N→C.
 
-* Erros acontecem::</b> mutações no códon de início ou no contexto Kozak (eucariontes) reduzem a eficiência de iniciação; parada prematura a montante dispara NMD; estruturas secundárias fortes próximas ao start podem bloquear o escaneamento e impedir a tradução.
+* Erros acontecem:</b> mutações no códon de início ou no contexto Kozak (eucariontes) reduzem a eficiência de iniciação; parada prematura a montante dispara NMD; estruturas secundárias fortes próximas ao start podem bloquear o escaneamento e impedir a tradução.
 
 ---
 
@@ -146,7 +146,7 @@ Nos modelos didáticos e nas representações clássicas da biologia molecular, 
 
 * Conexão com a Figura 1:</b> a degenerescência mostrada na roda do código decorre, em grande parte, dessa tolerância no wobble, por isso a 3ª base é frequentemente a mais variável entre códons sinônimos.
 
-* Erros acontecem::</b> alterações em modificações do anticódon (ex.: queosina/wybutosina) mudam a janela de tolerância → erros, <i>frameshifting</i> e ruído traducional; viés de códons extremo pode pausar excessivamente e prejudicar enovelamento.
+* Erros acontecem:</b> alterações em modificações do anticódon (ex.: queosina/wybutosina) mudam a janela de tolerância → erros, <i>frameshifting</i> e ruído traducional; viés de códons extremo pode pausar excessivamente e prejudicar enovelamento.
 
 ---
 
@@ -161,7 +161,7 @@ Nos modelos didáticos e nas representações clássicas da biologia molecular, 
 
 * Implicações práticas:</b> reduz o número total de tRNAs necessários, mantém eficiência de decodificação e explica a ampla variabilidade da 3ª base na maior parte dos códons.
 
-* Erros acontecem::</b> perda/ganho de inosina ou outras modificações altera o mapa de reconhecimento → <i>mistranslation</i>, mudança de taxa de elongação e, em casos extremos, ativação de respostas de controle de qualidade (por exemplo, ribosome-associated quality control), reduzindo a produção proteica.
+* Erros acontecem:</b> perda/ganho de inosina ou outras modificações altera o mapa de reconhecimento → <i>mistranslation</i>, mudança de taxa de elongação e, em casos extremos, ativação de respostas de controle de qualidade (por exemplo, ribosome-associated quality control), reduzindo a produção proteica.
 
 * Na prática, qual o impacto desse evento?</b> A menor acurácia na 3ª posição do códon não é “por conta da xantina”. O fenômeno clássico de wobble decorre do relaxamento geométrico no sítio A do ribossomo, do pareamento <b>G•U</b> e, principalmente, da <b>inosina/hipoxantina</b> no anticódon. Xantina não é a base típica envolvida na 1ª posição do anticódon em tRNAs celulares.
 
