@@ -246,12 +246,12 @@ Após o processamento no RER, as proteínas destinadas a outros locais são envi
 O destino de uma proteína é determinado, em grande parte, pela presença ou ausência de um **peptídeo sinal** (uma sequência curta de aminoácidos que atua como uma "tag" de endereçamento).
 
 1.  **Proteínas Citosólicas:**
-    * Proteínas destinadas a permanecer funcionais no citosol (ex: enzimas da via glicolítica).
-    * São traduzidas em **ribossomos livres** e lá permanecem.
+* Proteínas destinadas a permanecer funcionais no citosol (ex: enzimas da via glicolítica).
+* São traduzidas em **ribossomos livres** e lá permanecem.
 
 2.  **Proteínas Direcionadas ao RER:**
-    * Possuem o peptídeo sinal que as direciona aos **ribossomos aderidos ao RER**.
-    * A tradução prossegue e a cadeia polipeptídica é inserida no lúmen (espaço interno) do retículo.
+* Possuem o peptídeo sinal que as direciona aos **ribossomos aderidos ao RER**.
+* A tradução prossegue e a cadeia polipeptídica é inserida no lúmen (espaço interno) do retículo.
 
 ---
 
