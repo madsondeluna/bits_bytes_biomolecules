@@ -949,7 +949,7 @@ O Z-score (neste contexto, geralmente do ProSA) mede a qualidade global do model
 #### 3. QMEAN (QMEANDisCo)
 
 <figure class="figure-center">
-  <img src="imgs/qmean.png" alt="xxxxx" width="700">
+  <img src="imgs/qmean2.png" alt="xxxxx" width="700">
 </figure>
 
 > Fonte: SwissModel - QMEAN Server.
