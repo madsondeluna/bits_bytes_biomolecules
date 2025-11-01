@@ -1,4 +1,4 @@
-# Exercícios Práticos — Bits, Bytes e Biomoléculas
+# Bits, Bytes e Biomoléculas - Exercícios Práticos
 
 **Instrutor:** Madson Aragão (Estudante de PhD @ UFMG, MSc em Genética e Biologia Molecular @ UFPE)
 
@@ -6,11 +6,15 @@
 
 **Evento:** XV Jornada PPGGBM - 19 de Novembro de 2025
 
-**Contato:** madsondeluna@gmail.com
+**Contato:** madsondeluna@gmail.com; saulo.rmpenna@ufpe.br
+
+**Portfólio:** <a href="https://madsondeluna.github.io/" target="_blank" rel="noopener noreferrer">https://madsondeluna.github.io/</a>
+
+**Projetos:** <a href="https://github.com/madsondeluna" target="_blank" rel="noopener noreferrer">https://github.com/madsondeluna</a>
 
 ---
 
-> Esta página contém os exercícios práticos que serão realizados durante o curso. Para acessar o conteúdo teórico completo, consulte o [README principal](README.md) ou visite a [página web do curso](https://madsondeluna.github.io/bits_bytes_biomolecules/).
+Esta página contém os exercícios práticos que serão realizados durante o curso. Para acessar o conteúdo teórico completo, consulte o [README principal](README.md) ou visite a [página web do curso](https://madsondeluna.github.io/bits_bytes_biomolecules/).
 
 ---
 
