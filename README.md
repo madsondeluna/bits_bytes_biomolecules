@@ -29,6 +29,8 @@ Link para o na versão web: <a href="https://madsondeluna.github.io/bits_bytes_b
   <img src="imgs/folding-funnel.gif" alt="DreamFold" width="700">
 </figure>
 
+> 
+
 ---
 
 ## O Dogma Central da Biologia Molecular
@@ -107,9 +109,9 @@ Nos modelos didáticos e nas representações clássicas da biologia molecular, 
 <p align="justify">
   <img src="imgs/trna-detail.png" alt="Folha-de-trevo do tRNA com loops D, anticódon, variável e TΨC e posições de modificações" width="1000">
 </p>
-<p align="justify"><em>
-O tRNA apresenta loops funcionais (D, anticódon, variável, TΨC) e numerosas modificações (Ψ, metilações, queosina, inosina etc.) distribuídas ao longo da molécula.
-</em></p>
+
+> O tRNA apresenta loops funcionais (D, anticódon, variável, TΨC) e numerosas modificações (Ψ, metilações, queosina, inosina etc.) distribuídas ao longo da molécula.
+
 
 * Por que importa:</b> modificações estabilizam a estrutura, ajustam a forma do anticódon e afinam a decodificação (eficiência/fidelidade); algumas agem como “aceleradores/freios” finos na elongação, afetando enovelamento co-traducional e montagem de domínios.
 
@@ -170,7 +172,7 @@ O tRNA apresenta loops funcionais (D, anticódon, variável, TΨC) e numerosas m
 No contexto biológico da síntese proteica (tradução), este processo é energeticamente custoso, consumindo energia (na forma de ATP e GTP) para a ativação dos aminoácidos. Esta ativação ocorre através da ligação covalente entre cada aminoácido e seu tRNA cognato (complementar), catalisada pelas aminoacil-tRNA sintetases, enzimas altamente específicas que reconhecem tanto o aminoácido quanto seu tRNA correspondente. Uma vez formado o aminoacil-tRNA, este complexo é direcionado ao ribossomo para participar da tradução. A formação da ligação peptídica em si é catalisada pelo ribossomo, especificamente pela atividade peptidil transferase, uma função catalítica intrínseca ao RNA ribossômico (rRNA) localizado na subunidade maior. Este mecanismo transfere a cadeia polipeptídica crescente do tRNA localizado no sítio P (Peptidil) para o grupo amino do novo aminoácido que está ligado ao seu tRNA no sítio A (Aminoacil), permitindo assim a elongação da cadeia polipeptídica.
 
 <figure class="figure-center">
-  <img src="imgs/ribo.png" alt="XXXXX" width="600">
+  <img src="imgs/ribo.png" alt="XXXXX" width="800">
 </figure>
 
 > Fonte: Amy McDermott, 2024.
@@ -217,9 +219,9 @@ A ligação peptídica sob outra óptica.
 
 ### Interações Intermoleculares 
 
-<p align="justify">
-  <img src="imgs/aainteractions.png" alt="Matriz de interações de aminoácidos" width="1000">
-</p>
+<figure class="figure-center">
+  <img src="imgs/aainteractions.png" alt="XXXXX" width="700">
+</figure>
 
 > O gráfico mostra a matriz dos aminoácidos naturais: círculos azuis maiores indicam interações mais fortes. Fonte: Cambridge MedChem Consulting, 2025.
 
@@ -253,9 +255,8 @@ O problema do enovelamento de proteínas, como uma cadeia polipeptídica linear 
 <p align="justify">
   <img src="imgs/funnel.png" alt="Diagrama do funil" width="1000">
 </p>
-<p align="justify">
-<em>Fonte: Macošek J, Mas G, Hiller S. Redefining Molecular Chaperones as Chaotropes. Front Mol Biosci. 2021 Jun 14;8:683132. doi: 10.3389/fmolb.2021.683132. PMID: 34195228; PMCID: PMC8237284.</em>
-</p>
+
+> Fonte: Macošek J, Mas G, Hiller S. Redefining Molecular Chaperones as Chaotropes. Front Mol Biosci. 2021 Jun 14;8:683132. doi: 10.3389/fmolb.2021.683132. PMID: 34195228; PMCID: PMC8237284.
 
 Para visualizar a complexidade deste processo, utilizamos a metáfora do **funil de enovelamento**. Este modelo descreve a paisagem energética que uma proteína atravessa para atingir sua conformação nativa.
 *   **Topo do Funil (Alta Energia, Alta Entropia):** No topo, a proteína recém-sintetizada (desenovelada) existe em um vasto número de conformações possíveis, caracterizando um estado de alta entropia conformacional e alta energia livre de Gibbs.
@@ -268,12 +269,12 @@ Para visualizar a complexidade deste processo, utilizamos a metáfora do **funil
 
 Em biologia molecular, a estabilidade de um sistema é descrita pela **energia livre de Gibbs (ΔG)**. Processos espontâneos, como o enovelamento de proteínas, ocorrem com uma diminuição da energia livre total do sistema (ΔG < 0). Portanto, um valor de **ΔG mais negativo** indica uma conformação mais estável e energeticamente favorável.
 
-<p align="justify">
-  <img src="imgs/deltg.png" alt="Representação do Delta G" width="1000">
-</p>
-<p align="justify">
-<em>Fonte: The Gibbs free energy change (ΔG) and how it's related to reaction spontaneity and equilibrium. https://www.khanacademy.org/science/biology/energy-and-enzymes/free-energy-tutorial/a/gibbs-free-energy</em>
-</p>
+<figure class="figure-center">
+  <img src="imgs/deltg.png" alt="XXXXX" width="600">
+</figure>
+
+> Fonte: The Gibbs free energy change (ΔG) and how it's related to reaction spontaneity and equilibrium. https://www.khanacademy.org/science/biology/energy-and-enzymes/free-energy-tutorial/a/gibbs-free-energy
+
 
 * **G (Energia Livre de Gibbs):** A Energia Livre de Gibbs (ΔG) é um potencial termodinâmico que mede a "utilidade" ou o trabalho máximo e reversível que pode ser realizado por um sistema termodinâmico a temperatura e pressão constantes. Uma mudança negativa em G (ΔG < 0) indica que a reação é espontânea, ou seja, pode ocorrer sem a entrada contínua de energia externa. Uma mudança positiva (ΔG > 0) significa que a reação é não espontânea e requer energia para ocorrer. Se ΔG = 0, o sistema está em equilíbrio.
 
@@ -285,12 +286,13 @@ A relação entre G, H e S (Entropia) é dada pela equação: **ΔG = ΔH - TΔS
 
 Talvez esse exemplo ajude a pensar melhor:
 
-<p align="justify">
-  <img src="imgs/ts-th.png" alt="Representação do Delta G" width="1000">
-</p>
-<p align="justify">
-<em>Fonte: Dong, Y., et al., 2025</em>
-</p>
+<figure class="figure-center">
+  <img src="imgs/ts-th.png" alt="XXXXX" width="600">
+</figure>
+
+> Fonte: Dong, Y., et al., 2025.
+
+<br>
 
 ---
 
@@ -313,12 +315,11 @@ A **estrutura secundária** refere-se aos arranjos locais e regulares da cadeia 
 
 As hélices proteicas são estruturas secundárias onde a cadeia polipepeptídica se enrola, estabilizada por ligações de hidrogênio. A distinção entre a $3_{10}$-hélice (A), $\alpha$-hélice (B) e $\pi$-hélice (C) reside no número de resíduos por volta e no padrão de suas ligações de hidrogênio.
 
-<p align="justify">
-  <img src="imgs/helixes.png" alt="XXXXXXXX" width="1000">
-</p>
-<p align="justify">
-<em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
-</p>
+<figure class="figure-center">
+  <img src="imgs/helixes.png" alt="XXXXX" width="800">
+</figure>
+
+> Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
 
 **(A) $3_{10}$-Hélice:** Mais compacta, possui 3.0 resíduos por volta. As ligações de hidrogênio são formadas entre o C=O de *n* e o N-H de *n*+3. O nome "$3_{10}$" indica 3 resíduos por volta e um anel de 10 átomos formado pela ligação de hidrogênio. É menos comum e geralmente curta.
 
@@ -417,7 +418,7 @@ A organização hierárquica das estruturas proteicas pode ser explorada atravé
 
 ### O Paradoxo de Levinthal
 
-Formulado por Cyrus Levinthal, este paradoxo destaca a impossibilidade de o enovelamento ocorrer por uma busca aleatória. Ele calculou que uma proteína levaria mais tempo que a idade do universo para testar todas as suas conformações possíveis. Isso demonstra que o enovelamento não é um processo aleatório, mas sim um processo altamente direcionado que segue "caminhos" ou "rotas" específicas, otimizadas ao longo da evolução, para atingir o estado nativo em uma escala de tempo biologicamente viável.
+Formulado por Richard Levinthal, este paradoxo destaca a impossibilidade de o enovelamento ocorrer por uma busca aleatória. Ele calculou que uma proteína levaria mais tempo que a idade do universo para testar todas as suas conformações possíveis. Isso demonstra que o enovelamento não é um processo aleatório, mas sim um processo altamente direcionado que segue "caminhos" ou "rotas" específicas, otimizadas ao longo da evolução, para atingir o estado nativo em uma escala de tempo biologicamente viável.
 
 ### O Paradoxo do Enovelamento (Levinthal)
 
@@ -430,9 +431,10 @@ O Paradoxo de Levinthal trata do Problema 2 (`a cinética`).
 <p align="justify">
   <img src="imgs/lewontin.png" alt="Richard Lewontin at the chalkboard" width="1000">
 </p>
-<p align="justify">
-<em>Fonte: Richard Lewontin (1929-2021) na lousa. Explicando a interação e inseparabilidade do genótipo e do ambiente.</em>
-</p>
+
+> Fonte: Richard Lewontin (1929-2021) na lousa. Explicando a interação e inseparabilidade do genótipo e do ambiente.
+
+<br>
 
 ---
 
