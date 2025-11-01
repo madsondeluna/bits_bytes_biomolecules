@@ -311,7 +311,7 @@ Um exemplo claro é um **plasmócito** (célula B ativada) produzindo **anticorp
 5.  Por fim, é inserido em vesículas que o transportam para o meio extracelular por **exocitose**.
 
 <figure class="figure-center">
-  <img src="imgs/bcell-plasmo.png" alt="XXXXX" width="1000">
+  <img src="imgs/bcell-plasmo2.png" alt="XXXXX" width="1000">
 </figure>
 
 > Micrografia eletrônica de transmissão comparativa mostrando a transformação de um Linfócito B (esquerda) em um Plasmócito (direita). O plasmócito, é considerado a "fábrica de anticorpos", exibe um citoplasma expandido e densamente preenchido com retículo endoplasmático rugoso (RER) e numerosas mitocôndrias, refletindo sua intensa atividade de síntese e secreção de proteínas, essencial para a resposta imune humoral.
