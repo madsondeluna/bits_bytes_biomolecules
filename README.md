@@ -820,14 +820,13 @@ Abaixo estão os conceitos por trás das principais métricas fornecidas por ess
 
 #### 1. Gráfico de Ramachandran (PROCHECK / MolProbity)
 
-<p align="justify">
-  <img src="imgs/ramachandran-ss.png" alt="XXXXXX" width="1000">
-</p>
-<p align="justify">
-  <em><strong>O Gráfico de Ramachandran.</strong> Fonte: Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
-</p>
+> O Gráfico de Ramachandran ilustra a distribuição estatística dos ângulos diedros da cadeia principal, $\phi$ (phi, eixo x) e $\psi$ (psi, eixo y), para resíduos de aminoácidos em estruturas de proteínas.
 
-O Gráfico de Ramachandran ilustra a distribuição estatística dos ângulos diedros da cadeia principal, $\phi$ (phi, eixo x) e $\psi$ (psi, eixo y), para resíduos de aminoácidos em estruturas de proteínas.
+<figure class="figure-center">
+  <img src="imgs/ramachandran-ss.png" alt="DreamFold" width="600">
+</figure>
+
+> Fonte: Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
 
 * **Eixos:** O eixo horizontal representa o ângulo $\phi$ (rotação em torno da ligação $N-C_{\alpha}$), e o eixo vertical representa o ângulo $\psi$ (rotação em torno da ligação $C_{\alpha}-C'$), ambos variando de -180° a +180°.
 * **Pontos (Púrpura):** Cada ponto representa a conformação $\phi$/$\psi$ de um único resíduo de aminoácido (tipicamente excluindo Glicina e Prolina) de um grande conjunto de dados de estruturas de proteínas resolvidas experimentalmente (como o PDB).
