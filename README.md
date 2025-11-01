@@ -695,7 +695,7 @@ E se não houver um homólogo com sequência similar? O Threading entra em cena.
 ### 3. Modelagem *Ab Initio*
 
 <figure class="figure-center">
-  <img src="imgs/abinition.png" alt="XXXXX" width="700">
+  <img src="imgs/abinition.png" alt="XXXXX" width="300">
 </figure>
 
 > Fonte: Khor, B.Y., et al., 2015
