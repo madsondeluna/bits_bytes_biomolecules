@@ -49,10 +49,12 @@ Os exercícios estão organizados por módulos, acompanhando a progressão do co
 
 ## Recursos Úteis
 
-- [Material teórico completo (README principal)](README.md)
-- [Página web do curso](https://madsondeluna.github.io/bits_bytes_biomolecules/)
-- [Repositório GitHub](https://github.com/madsondeluna/bits_bytes_biomolecules)
+- [README Principal](README.md)
+- [Repositório do Curso](https://github.com/madsondeluna/bits_bytes_biomolecules)
+- [Página Web do Curso](https://madsondeluna.github.io/bits_bytes_biomolecules/)
+
 
 ---
 
-*Este documento será atualizado continuamente durante o curso.*
+> Ninhuma dúvida é boba... Qualquer dúvida ou sugestão, sinta-se à vontade para entrar em contato conosco pelos e-mails fornecidos acima. Bom desemprenho e aproveitem os exercícios! 
+
