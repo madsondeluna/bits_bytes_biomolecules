@@ -657,7 +657,7 @@ A modelagem por homologia parte de um princípio evolutivo fundamental: se duas 
 ### 2. Threading (Modelagem por Encaixe de Dobras ou *Fold Recognition*)
 
 <figure class="figure-center">
-  <img src="imgs/I-TASSER-pipeline.png" alt="XXXXX" width="700">
+  <img src="imgs/I-TASSER-pipeline.png" alt="XXXXX" width="1000">
 </figure>
 
 > Fonte: I-TASSER (Iterative Threading ASSEmbly Refinement).
@@ -682,7 +682,7 @@ E se não houver um homólogo com sequência similar? O Threading entra em cena.
 ### 3. Modelagem *Ab Initio*
 
 <figure class="figure-center">
-  <img src="imgs/abinition.png" alt="XXXXX" width="300">
+  <img src="imgs/abinition.png" alt="XXXXX" width="450">
 </figure>
 
 > Fonte: Khor, B.Y., et al., 2015
