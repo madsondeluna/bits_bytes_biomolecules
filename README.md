@@ -136,9 +136,7 @@ O tRNA apresenta loops funcionais (D, anticódon, variável, TΨC) e numerosas m
   <img src="imgs/wobble-effect.png" alt="Um tRNA reconhece múltiplos códons sinônimos via pareamento flexível na 3ª base" width="1000">
 </p>
 
-<p align="justify"><em>
-O pareamento entre a 3ª base do códon (mRNA) e a 1ª base do anticódon (posição 34 do tRNA) é geometricamente mais permissivo que nas duas primeiras posições.
-</em></p>
+> O pareamento entre a 3ª base do códon (mRNA) e a 1ª base do anticódon (posição 34 do tRNA) é geometricamente mais permissivo que nas duas primeiras posições.
 
 * Por que a 3ª posição é menos acurada:</b> o sítio de decodificação do ribossomo impõe checagens estéricas e de geometria Watson–Crick sobretudo nas <b>1ª e 2ª bases</b>; na <b>3ª</b>, há tolerância a pares não canônicos como <b>G•U</b> e a presença de <b>inosina (I)</b> no anticódon (hipoxantina) que amplia o reconhecimento (ver Seção 6). Essa arquitetura, e não “xantina”, explica a menor stringência na 3ª base. 
 
@@ -150,12 +148,12 @@ O pareamento entre a 3ª base do códon (mRNA) e a 1ª base do anticódon (posi�
 
 ### 6) “Wobble” com inosina (Exemplo Mecanístico)
 
-<p align="justify">
-  <img src="imgs/wobble-effect2.png" alt="Inosina (I) no anticódon pareando com A/C/U na 3ª base do códon" width="1000">
-</p>
-<p align="justify"><em>
-A inosina (I) na posição 34 do anticódon pode parear com A, C ou U na 3ª base do códon, permitindo que um tRNA leia múltiplos códons sinônimos.
-</em></p>
+<figure class="figure-center">
+  <img src="imgs/wobble-effect2.png" alt="XXXXX" width="700">
+</figure>
+
+> A inosina (I) na posição 34 do anticódon pode parear com A, C ou U na 3ª base do códon, permitindo que um tRNA leia múltiplos códons sinônimos.
+
 
 * Por que importa:</b> reduz o número total de tRNAs necessários, mantém eficiência de decodificação e explica a ampla variabilidade da 3ª base na maior parte dos códons.
 
@@ -169,31 +167,30 @@ A inosina (I) na posição 34 do anticódon pode parear com A, C ou U na 3ª bas
 
 No contexto biológico da síntese proteica (tradução), este processo é energeticamente custoso, consumindo energia (na forma de ATP e GTP) para a ativação dos aminoácidos. Esta ativação ocorre através da ligação covalente entre cada aminoácido e seu tRNA cognato (complementar), catalisada pelas aminoacil-tRNA sintetases, enzimas altamente específicas que reconhecem tanto o aminoácido quanto seu tRNA correspondente. Uma vez formado o aminoacil-tRNA, este complexo é direcionado ao ribossomo para participar da tradução. A formação da ligação peptídica em si é catalisada pelo ribossomo, especificamente pela atividade peptidil transferase, uma função catalítica intrínseca ao RNA ribossômico (rRNA) localizado na subunidade maior. Este mecanismo transfere a cadeia polipeptídica crescente do tRNA localizado no sítio P (Peptidil) para o grupo amino do novo aminoácido que está ligado ao seu tRNA no sítio A (Aminoacil), permitindo assim a elongação da cadeia polipeptídica.
 
-<p align="justify">
-  <img src="imgs/ribo.png" alt="XXXXX" width="1000">
-</p>
-<p align="justify">
-<em>Fonte: Amy McDermott, 2024.</em>
-</p>
+<figure class="figure-center">
+  <img src="imgs/imgs/ribo.png" alt="XXXXX" width="800">
+</figure>
+
+> Fonte: Amy McDermott, 2024.
 
 Ao abordar as interações entre aminoácidos, a ligação primordial e mais forte, que estabelece a estrutura primária de uma proteína, é a ligação peptídica. Esta ligação covalente é formada pela união do grupo α-carboxila de um aminoácido ao grupo α-amino do aminoácido subsequente, caracterizando uma reação de condensação (ou desidratação) na qual uma molécula de água (H₂O) é liberada.
 
 <p align="justify">
   <img src="imgs/pep-bond.png" alt="XXXXXXXX" width="1000">
 </p>
-<p align="justify">
-<em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
-</p>
+
+> Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
+
 
 A ligação peptídica sob outra óptica. 
 
-<p align="justify">
-  <img src="imgs/pep-bond2.png" alt="XXXXXXXX" width="1000">
-</p>
-<p align="justify">
-<em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
-</p>
+<figure class="figure-center">
+  <img src="imgs/pep-bond2.png" alt="XXXXX" width="600">
+</figure>
 
+> Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
+
+<br>
 ---
 
 ### Propriedades dos Aminoácidos Canônicos
