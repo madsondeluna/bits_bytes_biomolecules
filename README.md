@@ -767,7 +767,7 @@ No entanto, a chegada do AlphaFold 3 veio com uma mudança de filosofia drástic
 
 <br>
 
-> Recorte proveniente de uma discussão no subreddit [*r/singularity*](https://www.reddit.com/r/singularity/), publicada há aproximadamente dois anos pelo usuário `AlterandPhil`. O conteúdo integra um debate mais amplo sobre os desdobramentos tecnológicos e a ética da degação ao open-source em avanços científicos cruciais, como o AlphaFold 3.
+> Recorte proveniente de uma discussão no subreddit <a href="https://www.reddit.com/r/singularity/comments/1cnp5u7/alphafold_3_is_a_fantastic_breakthrough_and/" target="_blank">r/singularity</a>, publicada há aproximadamente dois anos pelo usuário `AlterandPhil`. O conteúdo integra um debate mais amplo sobre os desdobramentos tecnológicos e a ética da degação ao open-source em avanços científicos cruciais, como o AlphaFold 3.
 
 ---
 
