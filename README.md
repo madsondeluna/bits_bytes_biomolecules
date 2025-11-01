@@ -203,7 +203,7 @@ Essa organização espacial não é por acaso, pois a tradução de proteínas �
   <img src="imgs/Screenshot 2025-11-01 at 15.34.37.png" alt="XXXXX" width="1000">
 </figure>
 
-> Ribossomos no citoplasma de uma célula eucariótica. Esta fotomicrografia eletrônica mostra uma fina seção de uma pequena região do citoplasma. Os ribossomos aparecem como pontos pretos (destacados por setas vermelhas). Alguns estão livres no citosol, outros estão ligados a membranas do retículo endoplasmático. (Cortesia de Daniel S. Friend). 
+> Ribossomos no citoplasma de uma célula eucariótica. Esta fotomicrografia eletrônica mostra uma fina seção de uma pequena região do citoplasma. Os ribossomos aparecem como pontos pretos (destacados por setas vermelhas). Alguns estão livres no citosol, outros estão ligados a membranas do retículo endoplasmático. Fonte: Daniel S. Friend. 
 
 A região citoplasmática onde a tradução ocorre ativamente é densamente povoada e forma o que conhecemos como **fração polirribossomal** (um gradiente celular dinâmico e não membranar).
 
@@ -216,7 +216,7 @@ Esta região é rica em:
 ## O Destino Alternativo do mRNA: Grânulos de Estresse e P-Bodies
 
 <figure class="figure-center">
-  <img src="imgs/fracao-poli.png" alt="XXXXX" width="600">
+  <img src="imgs/fracao-poli.png" alt="XXXXX" width="1000">
 </figure>
 
 > Fração polirribossomal e estruturas relacionadas no citoplasma, que regulam a tradução e o destino do mRNA. Em destaque estão os grânulos de estresse e os P-bodies, que desempenham papéis cruciais na modulação da tradução e na degradação do mRNA.
