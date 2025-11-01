@@ -1118,7 +1118,7 @@ Um modelo tridimensional de alta qualidade, devidamente validado, não é o obje
 ### 1. Entendimento de Processos Biológicos e Descrição de Fenômenos
 
 <figure class="figure-center">
-  <img src="imgs/port1.png" alt="xxxxx" width="100">
+  <img src="imgs/port1.png" alt="xxxxx" width="1000">
 </figure>
 
 > Domínios das proteínas E1 e E2 do vírus Chikungunya, e o receptor celular humano MXRA8. Representação do complexo proteína-proteína gerado por modelagem computacional no estilo de surface. Fonte: Luna-Aragão, M.A., et al., 2019.
