@@ -297,7 +297,7 @@ As **modificações pós-traducionais (PTMs)** são alterações químicas que o
 ## Alta Atividade de Tradução e Secreção de Proteínas
 
 <figure class="figure-center">
-  <img src="imgs/plasma-cells.png" alt="XXXXX" width="500">
+  <img src="imgs/plasma-cells.png" alt="XXXXX" width="1000">
 </figure>
 
 > Fotografia de microscopia eletrônica de um plasmócito humano, destacando o retículo endoplasmático rugoso (RER) abundante, característico dessas células especializadas na produção de anticorpos. O halo claro ao redor do núcleo indica o citoplasma rico em RER, e é uma das características morfológicas que ajudam na identificação dessas células. Fonte: Ayman Qasrawi, 2008.
