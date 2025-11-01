@@ -29,7 +29,7 @@ Link para o na versão web: <a href="https://madsondeluna.github.io/bits_bytes_b
   <img src="imgs/folding-funnel.gif" alt="DreamFold" width="700">
 </figure>
 
-> 
+> Um bioinformata estava visivelmente frustrado monitorando seu cluster, que rodava uma simulação de enovelamento *ab initio* há dias. Um colega perguntou qual era o problema, e o bioinformata respondeu: "Estou apenas tentando fazer em 72 horas o que, segundo o Paradoxo de Levinthal, a proteína levaria $10^{30}$ anos para fazer se tentasse aleatoriamente. Aparentemente, o scheduler do cluster não considera a idade do universo um argumento válido para pedir mais tempo de CPU.
 
 ---
 
