@@ -1152,7 +1152,7 @@ Modelos estruturais são essenciais para entender como mutações genéticas cau
 ### 3. Desenvolvimento de Fármacos (Triagem Virtual e Design Racional)
 
 <figure class="figure-center">
-  <img src="imgs/docking.png" alt="xxxxx" width="700">
+  <img src="imgs/docking.png" alt="xxxxx" width="600">
 </figure>
 
 > Estrtura gerada no DiffDock com a proteína mPLpro do SARS-CoV-2 (PDB ID: 7L11) como receptor e o Ensitrelvir como ligante. Esse é um caso de sucesso real de design de fármacos auxiliado por modelagem computacional. O Ensitrelvir foi desenvolvido pela Shionogi Co., Ltd. e aprovado no Japão para o tratamento da COVID-19, sendo o primeiro inibidor oral da protease do SARS-CoV-2 aprovado para uso clínico.
