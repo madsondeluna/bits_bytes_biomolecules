@@ -601,12 +601,11 @@ As mais comuns são: **[UniProt](https://www.uniprot.org/ "Abrir em nova aba")**
 
 ### 1. Modelagem por Homologia (Modelagem Comparativa)
 
-<p align="justify">
-  <img src="imgs/homology.png" alt="XXXXXX" width="1000">
-</p>
-<p align="justify">
-  <em><strong>Workflow da modelagem por homologia (ou comparativa).</strong> Fonte: Bordoli, L., 2009.</em>
-</p>
+> Workflow simplificado da modelagem por homologia/comparativa:
+
+<figure class="figure-center">
+  <img src="imgs/homology.png" alt="DreamFold" width="600">
+</figure>
 
 A modelagem por homologia parte de um princípio evolutivo fundamental: se duas proteínas compartilham uma sequência de aminoácidos similar, elas provavelmente terão estruturas tridimensionais muito parecidas.
 
