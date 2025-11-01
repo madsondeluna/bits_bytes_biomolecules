@@ -132,7 +132,6 @@ Nos modelos didáticos e nas representações clássicas da biologia molecular, 
 
 * Quando dá problema:</b> mutações no códon de início ou no contexto Kozak (eucariontes) reduzem a eficiência de iniciação; parada prematura a montante dispara NMD; estruturas secundárias fortes próximas ao start podem bloquear o escaneamento e impedir a tradução.
 
-
 ---
 
 ### 5) Efeito Wobble
@@ -201,8 +200,6 @@ A ligação peptídica sob outra óptica.
 </figure>
 
 > Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
-
-<br>
 
 ---
 
@@ -314,8 +311,6 @@ Talvez esse exemplo ajude a pensar melhor:
 
 > Fonte: Dong, Y., et al., 2025.
 
-<br>
-
 ---
 
 ## Fundamentos da Sequência e Estrutura Proteica
@@ -383,8 +378,6 @@ As alças são frequentemente classificadas por seu comprimento e geometria. Os 
 
 > Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
 
-<br>
-
 ---
 
 ### Fitas e Folhas Beta
@@ -401,8 +394,6 @@ Quando múltiplas fitas β se associam lateralmente através de ligações de hi
 
 > Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
 
-<br>
-
 ---
 
 ### Estruturas Helicoidais em Proteínas (Um Dobramento Primordial? Fósseis Ancestrais?)
@@ -418,8 +409,6 @@ Do ponto de vista estrutural, esse conjunto pré-biótico era intrinsecamente te
 </figure>
 
 > Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
-
-<br>
 
 ---
 
@@ -477,8 +466,6 @@ O Paradoxo de Levinthal trata do Problema 2 (`a cinética`).
 </p>
 
 > Fonte: Richard Lewontin (1929-2021) na lousa. Explicando a interação e inseparabilidade do genótipo e do ambiente.
-
-<br>
 
 ---
 
