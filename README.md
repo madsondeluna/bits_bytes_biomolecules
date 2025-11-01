@@ -293,8 +293,7 @@ As **modificações pós-traducionais (PTMs)** são alterações químicas que o
 
 ---
 
-## Exemplo: A Produção de Anticorpos
-## Alta Atividade de Tradução e Secreção de Proteínas
+## Exemplo: A Produção de Anticorpos - Alta Atividade em mRNAs e Secreção de Proteínas
 
 <figure class="figure-center">
   <img src="imgs/plasma-cells.png" alt="XXXXX" width="1000">
