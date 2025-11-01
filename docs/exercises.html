@@ -3,28 +3,31 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Bits, Bytes e Biomoléculas — Versão Web</title>
+  <title>Exercícios Práticos — Bits, Bytes e Biomoléculas</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header style="text-align: center;">
-  <h1>Bits, Bytes e Biomoléculas — Versão Lite</h1>
-  <p class="muted">
-    Se preferir ver o a versão bruta do material, abra 
-    <a href="https://github.com/madsondeluna/bits_bytes_biomolecules" target="_blank" rel="noopener noreferrer">
-      Bits, Bytes e Biomoléculas</a>!
-  </p>
-  <p class="muted">
-    🧪 <strong>Exercícios práticos:</strong> <a href="exercises.html">Acesse aqui os exercícios do curso</a>
-  </p>
-</header>
+  <header>
+    <h1>Exercícios Práticos — Bits, Bytes e Biomoléculas</h1>
+    <p class="muted">Esta página contém os exercícios práticos que serão realizados durante o curso.</p>
+    <p class="muted">📖 Para acessar o conteúdo teórico completo, visite a <a href="index.html">página principal do curso</a>.</p>
+  </header>
 
+  <main>
+    <div style="background:#fff3cd;border-left:4px solid #ffc107;padding:16px 20px;margin:20px 0;border-radius:4px;">
+      <h3 style="margin-top:0;color:#856404;">Localização dos Exercícios Práticos</h3>
+      <p style="margin-bottom:0;color:#856404;">
+        Os exercícios práticos estão organizados por módulos e serão atualizados continuamente durante o curso. 
+        Você pode acompanhar diretamente nesta página ou consultar o arquivo <code>EXERCISES.md</code> no repositório.
+      </p>
+    </div>
 
-  <main id="content">Carregando conteúdo do README.md…</main>
+    <div id="content">Carregando exercícios práticos do EXERCISES.md…</div>
+  </main>
 
   <footer>
     <p class="muted">
-      <a href="exercises.html">Exercícios práticos</a> | 
+      <a href="index.html">← Voltar para o conteúdo teórico</a> | 
       Repositório: <a href="https://github.com/madsondeluna/bits_bytes_biomolecules" target="_blank">GitHub</a>
     </p>
   </footer>
@@ -47,12 +50,12 @@
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 
   <script>
-    // Puxa o README.md bruto do GitHub e renderiza
-    async function renderReadme(){
-      const rawUrl = 'https://raw.githubusercontent.com/madsondeluna/bits_bytes_biomolecules/main/README.md';
+    // Puxa o EXERCISES.md bruto do GitHub e renderiza
+    async function renderExercises(){
+      const rawUrl = 'https://raw.githubusercontent.com/madsondeluna/bits_bytes_biomolecules/main/EXERCISES.md';
       try{
         const res = await fetch(rawUrl);
-        if(!res.ok) throw new Error('Não foi possível obter README.md: ' + res.status);
+        if(!res.ok) throw new Error('Não foi possível obter EXERCISES.md: ' + res.status);
         const md = await res.text();
 
         // Converte Markdown para HTML
@@ -62,16 +65,13 @@
         const container = document.getElementById('content');
         container.innerHTML = html;
 
-        // Corrige caminhos relativos de imagens (docs/ é servido como root do site)
-        // substitui src relativos por URLs para raw.githubusercontent.com
+        // Corrige caminhos relativos de imagens (se houver)
         try{
           const imgs = container.querySelectorAll('img');
           imgs.forEach(img => {
             const src = img.getAttribute('src') || '';
-            // ignora URLs já absolutas
             if(!src) return;
             if(src.startsWith('http:') || src.startsWith('https:') || src.startsWith('//')) return;
-            // remove leading ./ ou / se existirem
             const path = src.replace(/^\.\/?/, '');
             const rawBase = 'https://raw.githubusercontent.com/madsondeluna/bits_bytes_biomolecules/main/';
             img.src = rawBase + path;
@@ -85,10 +85,10 @@
           MathJax.typesetPromise();
         }
       }catch(e){
-        document.getElementById('content').textContent = 'Erro ao carregar README.md: ' + e.message;
+        document.getElementById('content').textContent = 'Erro ao carregar EXERCISES.md: ' + e.message;
       }
     }
-    renderReadme();
+    renderExercises();
   </script>
 </body>
 </html>
