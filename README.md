@@ -1138,7 +1138,7 @@ Um modelo 3D transforma uma sequência linear em um mapa funcional, permitindo-n
 ### 2. Estudo de Doenças (Biologia Estrutural de Patologias)
 
 <figure class="figure-center">
-  <img src="imgs/e2b.png" alt="xxxxx" width="500">
+  <img src="imgs/e2b.png" alt="xxxxx" width="1000">
 </figure>
 
 > Domínio E2B da proteína de envelope E2 do vírus Chikungunya. Mutação E2B S159A associada a maior virulência e capacidade de infecção em células humanas. Fonte: Luna-Aragão, M.A., et al., 2019.
@@ -1152,7 +1152,7 @@ Modelos estruturais são essenciais para entender como mutações genéticas cau
 ### 3. Desenvolvimento de Fármacos (Triagem Virtual e Design Racional)
 
 <figure class="figure-center">
-  <img src="imgs/docking.png" alt="xxxxx" width="600">
+  <img src="imgs/docking.png" alt="xxxxx" width="700">
 </figure>
 
 > Estrtura gerada no DiffDock com a proteína mPLpro do SARS-CoV-2 (PDB ID: 7L11) como receptor e o Ensitrelvir como ligante. Esse é um caso de sucesso real de design de fármacos auxiliado por modelagem computacional. O Ensitrelvir foi desenvolvido pela Shionogi Co., Ltd. e aprovado no Japão para o tratamento da COVID-19, sendo o primeiro inibidor oral da protease do SARS-CoV-2 aprovado para uso clínico.
