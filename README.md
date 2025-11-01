@@ -29,7 +29,7 @@ Link para o na versão web: <a href="https://madsondeluna.github.io/bits_bytes_b
   <img src="imgs/folding-funnel.gif" alt="DreamFold" width="700">
 </figure>
 
-> Um bioinformata estava visivelmente frustrado monitorando seu cluster, que rodava uma simulação de enovelamento *ab initio* há dias. Um colega perguntou qual era o problema, e o bioinformata respondeu: "Estou apenas tentando fazer em 72 horas o que, segundo o Paradoxo de Levinthal, a proteína levaria $10^{30}$ anos para fazer se tentasse aleatoriamente. Aparentemente, o scheduler do cluster não considera a idade do universo um argumento válido para pedir mais tempo de CPU.
+> *Vamos imaginar que*... Um bioinformata estava visivelmente frustrado monitorando seu cluster, que rodava uma simulação de enovelamento *ab initio* há dias. Um colega perguntou qual era o problema, e o bioinformata respondeu: "Estou apenas tentando fazer em 72 horas o que, segundo o Paradoxo de Levinthal, a proteína levaria $10^{30}$ anos para fazer se tentasse aleatoriamente. Aparentemente, o scheduler do cluster não considera a idade do universo um argumento válido para pedir mais tempo de CPU.
 
 ---
 
@@ -409,7 +409,7 @@ A combinação de elementos de estrutura secundária forma **motivos secundário
 Para explorar a diversidade de dobras, utilizamos bancos de dados como o **CATH (Class, Architecture, Topology, Homologous superfamily)**. O CATH organiza as estruturas em uma hierarquia que nos ajuda a entender as relações evolutivas entre as proteínas. Fica a sugestão de **[Explorar o CATH](https://www.cathdb.info/ "Abrir em nova aba")**!
 
 <figure class="figure-center">
-  <img src="imgs/cath.png" alt="XXXXX" width="700">
+  <img src="imgs/cath.png" alt="XXXXX" width="1000">
 </figure>
 
 > Fonte: Lau, A.M., et al., 2024.
