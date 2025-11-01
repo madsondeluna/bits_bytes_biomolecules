@@ -49,7 +49,7 @@ O Dogma Central da Biologia Molecular descreve o fluxo fundamental da informaç�
 
 ---
 
-## Os Processos Especiais, ou não Canônicos Ajudam a Vida a Acontecer
+## Os Processos Especiais, ou não Canônicos, Ajudam a Vida a Acontecer
 
 ## Regulando o Dogma Central
 
