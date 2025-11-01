@@ -1042,7 +1042,7 @@ onde $N$ é o número de átomos e $\delta_i$ é a distância entre o átomo *i*
 
 ---
 
-### Métricas Chave de Validação Explicadas
+### Métricas Chave de Validação Explicadas 
 
 Abaixo estão os conceitos por trás das principais métricas fornecidas por esses servidores:
 
