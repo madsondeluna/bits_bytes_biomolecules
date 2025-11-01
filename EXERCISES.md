@@ -28,7 +28,7 @@ Eestrutura tridimensional da p53, em complexo com uma estrtura de DNA. As subuni
 
 ## Sobre a Proteína p53
 
-A **p53** (derivada do gene TP53) é um dos mais importantes supressores de tumor, frequentemente referida como **"a guardiã do genoma"**. Esta proteína é crucial para a regulação do ciclo celular e prevenção do câncer.
+A **p53** (derivada do gene *TP53*) é um dos mais importantes supressores de tumor, frequentemente referida como **"a guardiã do genoma"**. Esta proteína é crucial para a regulação do ciclo celular e prevenção do câncer.
 
 ### Relevância Científica
 
