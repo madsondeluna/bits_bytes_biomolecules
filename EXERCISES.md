@@ -197,7 +197,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 |--------|-----|-----------|
 | **ColabFold** | [AlphaFold2 Notebook](https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb) | Baseado em AlphaFold2 (Google Colab) |
 | **AlphaFold 3 Server** | [https://alphafoldserver.com/](https://alphafoldserver.com/) | Versão mais recente do AlphaFold |
-| **ESMFold** | [https://esmatlas.com/resources](https://esmatlas.com/resources) | Baseado em Modelo de Linguagem de Proteína |
+| **ESMFold** | [https://forge.evolutionaryscale.ai/](https://forge.evolutionaryscale.ai/) | Baseado em Modelo de Linguagem de Proteína e Dados Evolutivos  |
 
 #### Métricas de Confiança
 
