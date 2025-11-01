@@ -17,8 +17,8 @@
 Este repositório contém o material de referência completo para o curso, incluindo conceitos fundamentais, guias de ferramentas e leituras recomendadas. Qualquer sugestão ou feedback pode ser encaminhar uma mensagem para madsondeluna@gmail.com. 
 
 **Links importantes:**
-- 📖 **Versão web do conteúdo teórico:** <a href="https://madsondeluna.github.io/bits_bytes_biomolecules/" target="_blank" rel="noopener noreferrer">Acessar página principal</a>
-- 🧪 **Exercícios práticos:** <a href="https://madsondeluna.github.io/bits_bytes_biomolecules/exercises.html" target="_blank" rel="noopener noreferrer">Acessar exercícios</a> | [Ver EXERCISES.md](EXERCISES.md)
+- **Conteúdo teórico:** <a href="https://madsondeluna.github.io/bits_bytes_biomolecules/" target="_blank" rel="noopener noreferrer">Acessar página principal</a>
+- **Exercícios práticos:** <a href="https://madsondeluna.github.io/bits_bytes_biomolecules/exercises.html" target="_blank" rel="noopener noreferrer">Acessar exercícios</a>
 
 ---
 
