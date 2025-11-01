@@ -244,15 +244,15 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 - Abra o PyMOL e carregue todos os modelos preditos e a estrutura experimental fornecida.
 
 2. **Cálculo de RMSD**
-- Quantificar divergência estrutural de cada modelo vs. 1TUP[.
+- Quantificar divergência estrutural de cada modelo vs. 1TUP.
 - Registrar valores de RMSD para comparação e discutir o que seria um valor aceitável de RMSD para modelos preditos.
 
-4. **Inspeção visual**
+1. **Inspeção visual**
 - Identificar regiões de convergência (alta similaridade).
 - Identificar regiões de divergência (loops, cadeias laterais).
 - Destacar sítios ativos e domínio de ligação ao DNA.
 
-5. **Geração de figuras**
+1. **Geração de figuras**
 - Criar representações ilustrativas das diferenças/similaridades.
 - Destacar regiões de interesse estrutural.
 
