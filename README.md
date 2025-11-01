@@ -644,6 +644,8 @@ As mais comuns são: **[UniProt](https://www.uniprot.org/ "Abrir em nova aba")**
 
 > Workflow simplificado da modelagem por homologia/comparativa:
 
+<br>
+
 <figure class="figure-center">
   <img src="imgs/homology.png" alt="DreamFold" width="600">
 </figure>
