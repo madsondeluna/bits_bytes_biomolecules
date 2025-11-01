@@ -172,7 +172,7 @@ Nos modelos didáticos e nas representações clássicas da biologia molecular, 
 No contexto biológico da síntese proteica (tradução), este processo é energeticamente custoso, consumindo energia (na forma de ATP e GTP) para a ativação dos aminoácidos. Esta ativação ocorre através da ligação covalente entre cada aminoácido e seu tRNA cognato (complementar), catalisada pelas aminoacil-tRNA sintetases, enzimas altamente específicas que reconhecem tanto o aminoácido quanto seu tRNA correspondente. Uma vez formado o aminoacil-tRNA, este complexo é direcionado ao ribossomo para participar da tradução. A formação da ligação peptídica em si é catalisada pelo ribossomo, especificamente pela atividade peptidil transferase, uma função catalítica intrínseca ao RNA ribossômico (rRNA) localizado na subunidade maior. Este mecanismo transfere a cadeia polipeptídica crescente do tRNA localizado no sítio P (Peptidil) para o grupo amino do novo aminoácido que está ligado ao seu tRNA no sítio A (Aminoacil), permitindo assim a elongação da cadeia polipeptídica.
 
 <figure class="figure-center">
-  <img src="imgs/ribo.png" alt="XXXXX" width="800">
+  <img src="imgs/ribo.png" alt="XXXXX" width="700">
 </figure>
 
 > Fonte: Amy McDermott, 2024.
@@ -316,7 +316,7 @@ A **estrutura secundária** refere-se aos arranjos locais e regulares da cadeia 
 As hélices proteicas são estruturas secundárias onde a cadeia polipepeptídica se enrola, estabilizada por ligações de hidrogênio. A distinção entre a $3_{10}$-hélice (A), $\alpha$-hélice (B) e $\pi$-hélice (C) reside no número de resíduos por volta e no padrão de suas ligações de hidrogênio.
 
 <figure class="figure-center">
-  <img src="imgs/helixes.png" alt="XXXXX" width="500">
+  <img src="imgs/helixes.png" alt="XXXXX" width="600">
 </figure>
 
 > Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
@@ -364,7 +364,7 @@ Quando múltiplas fitas β se associam lateralmente através de ligações de hi
 
 
 <figure class="figure-center">
-  <img src="imgs/beta-shet.png" alt="XXXXX" width="400">
+  <img src="imgs/beta-shet.png" alt="XXXXX" width="550">
 </figure>
 
 > Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
@@ -380,7 +380,7 @@ A gênese das primeiras proteínas funcionais foi fortemente condicionada pela d
 Do ponto de vista estrutural, esse conjunto pré-biótico era intrinsecamente tendencioso à formação de determinadas estruturas secundárias. Diferentes aminoácidos exibem propensões intrínsecas distintas para a formação de α-hélices, propriedade esta extensivamente quantificada em estudos experimentais e computacionais. A Alanina (Ala), um dos aminoácidos pré-bióticos mais simples e provavelmente mais abundantes, apresenta a maior propensão helicoidal, servindo como referência para a estabilidade desse tipo de estrutura. A Leucina (Leu) também demonstra elevada capacidade de estabilização de hélices α. Em contraste, a Glicina (Gly), devido à sua alta flexibilidade conformacional, e a Prolina (Pro), cuja estrutura cíclica restringe a rotação da ligação peptídica, atuam como fortes disruptores de hélices. Assim, a presença de aminoácidos formadores de hélices, como Ala e Leu, sugere que mesmo a polimerização estocástica desses monômeros possuía uma probabilidade estatisticamente significativa de originar sequências capazes de adotar conformações helicoidais estáveis.
 
 <figure class="figure-center">
-  <img src="imgs/helix.png" alt="XXXXX" width="650">
+  <img src="imgs/helix.png" alt="XXXXX" width="600">
 </figure>
 
 > Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
