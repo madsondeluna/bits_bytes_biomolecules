@@ -386,7 +386,7 @@ A ligação peptídica sob outra óptica.
 
 <br>
 
- PDB contém muitos exemplos de interações entre aminoácidos. Embora existam interações específicas bem documentadas (aminoácidos básicos com carga positiva se ligam a aminoácidos ácidos com carga negativa), não havia visto um estudo sistemático de todas as combinações de aminoácidos, por isso, o trabalho de [Andrew White](https://crowsandcats.blogspot.com/2012/03/amino-acid-interactions.html) é notável, pois ele contou sistematicamente o número de interações entre cada par de tipos de aminoácidos e, em seguida, converteu essas contagens em energias de interação.<
+ PDB contém muitos exemplos de interações entre aminoácidos. Embora existam interações específicas bem documentadas (aminoácidos básicos com carga positiva se ligam a aminoácidos ácidos com carga negativa), não havia visto um estudo sistemático de todas as combinações de aminoácidos, por isso, o trabalho de <a href="https://crowsandcats.blogspot.com/2012/03/amino-acid-interactions.html" target="_blank">Andrew White</a> é notável, pois ele contou sistematicamente o número de interações entre cada par de tipos de aminoácidos e, em seguida, converteu essas contagens em energias de interação.<
 
 | Interação | Distância (Å) | Natureza da Força | Aminoácidos Frequentes |
 |:---|:---:|:---|:---|
@@ -585,7 +585,7 @@ A combinação de elementos de estrutura secundária forma **motivos secundário
 | **Motivo β-α-β** | Duas fitas-β paralelas conectadas por uma α-hélice. | Componente central de muitas dobras, como o *Rossmann fold*. |
 | **Barril-β** | Uma grande folha-β que se fecha sobre si mesma, formando um cilindro. | Característico de porinas de membrana. |
 
-Para explorar a diversidade de dobras, utilizamos bancos de dados como o **CATH (Class, Architecture, Topology, Homologous superfamily)**. O CATH organiza as estruturas em uma hierarquia que nos ajuda a entender as relações evolutivas entre as proteínas. Fica a sugestão de **[Explorar o CATH](https://www.cathdb.info/ "Abrir em nova aba")**!
+Para explorar a diversidade de dobras, utilizamos bancos de dados como o **CATH (Class, Architecture, Topology, Homologous superfamily)**. O CATH organiza as estruturas em uma hierarquia que nos ajuda a entender as relações evolutivas entre as proteínas. Fica a sugestão de **<a href="https://www.cathdb.info/" target="_blank">Explorar o CATH</a>**!
 
 <figure class="figure-center">
   <img src="imgs/cath.png" alt="XXXXX" width="1000">
@@ -775,7 +775,7 @@ Antes de mergulharmos nos métodos, é essencial entender a diferença entre doi
 
 ### Ferramentas e Bancos de Dados para Análise de Sequência e Estrutura
 
-As mais comuns são: **[UniProt](https://www.uniprot.org/ "Abrir em nova aba")**, **[PDB](https://www.rcsb.org/ "Abrir em nova aba")**, **[InterProScan](https://www.ebi.ac.uk/interpro/ "Abrir em nova aba")**, **[ExPASy ProtParam](https://web.expasy.org/protparam/ "Abrir em nova aba")**, mas não se limitam a essas.
+As mais comuns são: **<a href="https://www.uniprot.org/" target="_blank">UniProt</a>**, **<a href="https://www.rcsb.org/" target="_blank">PDB</a>**, **<a href="https://www.ebi.ac.uk/interpro/" target="_blank">InterProScan</a>**, **<a href="https://web.expasy.org/protparam/" target="_blank">ExPASy ProtParam</a>**, mas não se limitam a essas.
 
 ---
 
@@ -802,7 +802,7 @@ A modelagem por homologia parte de um princípio evolutivo fundamental: se duas 
 | Excelente para modelar mutações e estudar famílias de proteínas. | Erros no template são propagados para o modelo. |
 
 *   **Aplicação Principal:** É o método mais preciso e confiável quando existe um bom template disponível. Ideal para modelar o efeito de pequenas mutações (SNPs), gerar estruturas de proteínas de espécies próximas e estudar famílias de proteínas com um ancestral comum bem caracterizado.
-*   **Servidor Principal:** **[SWISS-MODEL](https://swissmodel.expasy.org/)** é um servidor web automatizado excelente, que escolhe o melhor template, constrói o modelo e realiza uma minimização de energia para otimizar a geometria.
+*   **Servidor Principal:** **<a href="https://swissmodel.expasy.org/" target="_blank">SWISS-MODEL</a>** é um servidor web automatizado excelente, que escolhe o melhor template, constrói o modelo e realiza uma minimização de energia para otimizar a geometria.
 
 ---
 
@@ -827,7 +827,7 @@ E se não houver um homólogo com sequência similar? O Threading entra em cena.
 | Mais poderoso que a homologia quando não há templates óbvios. | A qualidade do modelo final pode ser variável. |
 
 *   **Aplicação Principal:** Útil para proteínas que não possuem homólogos de sequência detectáveis, mas que podem compartilhar uma dobra estrutural com uma proteína de função completamente diferente.
-*   **Servidor Principal:** O **[I-TASSER](https://zhanggroup.org/I-TASSER/)** é um dos serviços mais famosos e bem-sucedidos. Ele é um método híbrido: primeiro, usa Threading para identificar possíveis templates e, em seguida, aplica técnicas de montagem de fragmentos para construir e refinar o modelo final.
+*   **Servidor Principal:** O **<a href="https://zhanggroup.org/I-TASSER/" target="_blank">I-TASSER</a>** é um dos serviços mais famosos e bem-sucedidos. Ele é um método híbrido: primeiro, usa Threading para identificar possíveis templates e, em seguida, aplica técnicas de montagem de fragmentos para construir e refinar o modelo final.
 
 ---
 
@@ -1006,9 +1006,9 @@ Nem toda pergunta de pesquisa exige o poder (e o custo computacional) do AlphaFo
 > Screenshot do PyMOL mostrando a estrutura de uma proteína com destaque para as alfa-hélices, loops e folhas-beta, além de moléculas de água e íons presentes no cristal do PDB.
 
 ### Ferramentas de Visualização Molecular
-*   **[PyMOL](https://pymol.org/2/ "Download PyMOL")**: Padrão para geração de figuras de alta qualidade.
-*   **[VMD](https://www.ks.uiuc.edu/Research/vmd/ "Download VMD")**: Excelente para análise de trajetórias de dinâmica molecular.
-*   **[ChimeraX](https://www.cgl.ucsf.edu/chimerax/ "Download ChimeraX")**: Poderoso e extensível, com ótima integração com bancos de dados.
+*   **<a href="https://pymol.org/2/" target="_blank">PyMOL</a>**: Padrão para geração de figuras de alta qualidade.
+*   **<a href="https://www.ks.uiuc.edu/Research/vmd/" target="_blank">VMD</a>**: Excelente para análise de trajetórias de dinâmica molecular.
+*   **<a href="https://www.cgl.ucsf.edu/chimerax/" target="_blank">ChimeraX</a>**: Poderoso e extensível, com ótima integração com bancos de dados.
 
 ### Análise Comparativa: RMSD e sua Importância
 
@@ -1036,9 +1036,9 @@ onde $N$ é o número de átomos e $\delta_i$ é a distância entre o átomo *i*
 
 | Servidor | Descrição Detalhada |
 |:---|:---|
-| **[SAVES](https://saves.mbi.ucla.edu/ "Abrir em nova aba")** | Um meta-servidor que executa um conjunto de ferramentas clássicas de validação. As principais incluem: **PROCHECK** (análise estereoquímica e Gráfico de Ramachandran), **ERRAT** (analisa estatísticas de interações atômicas não-ligadas), e **Verify3D** (avalia a compatibilidade do ambiente 3D de cada resíduo com sua sequência). |
-| **[MolProbity](http://molprobity.biochem.duke.edu/ "Abrir em nova aba")** | Focado intensamente na geometria de "todos-os-átomos" (all-atom). É excelente para identificar problemas de alta resolução, como "clashes" estéricos (sobreposições), geometria incorreta de ligações/ângulos, e rotâmeros de cadeias laterais desfavoráveis (ex: "outliers" de C$\beta$ ou Ramachandran). |
-| **[QMEANDisCo](https://swissmodel.expasy.org/qmean/ "Abrir em nova aba")** | Parte do pipeline SWISS-MODEL. Fornece o **QMEAN**, um "score de consenso" que avalia a qualidade global do modelo, e o **QMEANDisCo**, um score local (por resíduo) que estima a confiabilidade, indicando regiões problemáticas. |
+| **<a href="https://saves.mbi.ucla.edu/" target="_blank">SAVES</a>** | Um meta-servidor que executa um conjunto de ferramentas clássicas de validação. As principais incluem: **PROCHECK** (análise estereoquímica e Gráfico de Ramachandran), **ERRAT** (analisa estatísticas de interações atômicas não-ligadas), e **Verify3D** (avalia a compatibilidade do ambiente 3D de cada resíduo com sua sequência). |
+| **<a href="http://molprobity.biochem.duke.edu/" target="_blank">MolProbity</a>** | Focado intensamente na geometria de "todos-os-átomos" (all-atom). É excelente para identificar problemas de alta resolução, como "clashes" estéricos (sobreposições), geometria incorreta de ligações/ângulos, e rotâmeros de cadeias laterais desfavoráveis (ex: "outliers" de C$\beta$ ou Ramachandran). |
+| **<a href="https://swissmodel.expasy.org/qmean/" target="_blank">QMEANDisCo</a>** | Parte do pipeline SWISS-MODEL. Fornece o **QMEAN**, um "score de consenso" que avalia a qualidade global do modelo, e o **QMEANDisCo**, um score local (por resíduo) que estima a confiabilidade, indicando regiões problemáticas. |
 
 ---
 
