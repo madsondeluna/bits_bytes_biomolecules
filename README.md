@@ -382,12 +382,11 @@ A gênese das primeiras proteínas funcionais foi fortemente condicionada pela d
 
 Do ponto de vista estrutural, esse conjunto pré-biótico era intrinsecamente tendencioso à formação de determinadas estruturas secundárias. Diferentes aminoácidos exibem propensões intrínsecas distintas para a formação de α-hélices, propriedade esta extensivamente quantificada em estudos experimentais e computacionais. A Alanina (Ala), um dos aminoácidos pré-bióticos mais simples e provavelmente mais abundantes, apresenta a maior propensão helicoidal, servindo como referência para a estabilidade desse tipo de estrutura. A Leucina (Leu) também demonstra elevada capacidade de estabilização de hélices α. Em contraste, a Glicina (Gly), devido à sua alta flexibilidade conformacional, e a Prolina (Pro), cuja estrutura cíclica restringe a rotação da ligação peptídica, atuam como fortes disruptores de hélices. Assim, a presença de aminoácidos formadores de hélices, como Ala e Leu, sugere que mesmo a polimerização estocástica desses monômeros possuía uma probabilidade estatisticamente significativa de originar sequências capazes de adotar conformações helicoidais estáveis.
 
-<p align="justify">
-  <img src="imgs/helix.png" alt="XXXXXXXX" width="1000">
-</p>
-<p align="justify">
-<em>Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.</em>
-</p>
+<figure class="figure-center">
+  <img src="imgs/imgs/helix.png" alt="XXXXX" width="600">
+</figure>
+
+> Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
 
 ---
 
@@ -395,13 +394,12 @@ Do ponto de vista estrutural, esse conjunto pré-biótico era intrinsecamente te
 
 A combinação de elementos de estrutura secundária forma **motivos secundários, terciários e quaternários**, os blocos de construção dos **domínios** proteicos (regiões que se enovelam e funcionam de forma independente).
 
+<figure class="figure-center">
+  <img src="imgs/motifs-domains.png" alt="XXXXX" width="600">
+</figure>
 
-<p align="justify">
-  <img src="imgs/motifs-domains.png" alt="XXXXXXXX" width="1000">
-</p>
-<p align="justify">
-<em>Fonte: Elliott J. Stollar & David P. Smith, 2020.</em>
-</p>
+> Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
+
 
 
 | Motivo | Descrição | Função/Exemplos |
@@ -413,12 +411,12 @@ A combinação de elementos de estrutura secundária forma **motivos secundário
 
 Para explorar a diversidade de dobras, utilizamos bancos de dados como o **CATH (Class, Architecture, Topology, Homologous superfamily)**. O CATH organiza as estruturas em uma hierarquia que nos ajuda a entender as relações evolutivas entre as proteínas. Fica a sugestão de **[Explorar o CATH](https://www.cathdb.info/ "Abrir em nova aba")**!
 
-<p align="justify">
-  <img src="imgs/cath.png" alt="XXXXX" width="1000">
-</p>
-<p align="justify">
-<em>Lau, A.M., et al., 2024.</em>
-</p>
+<figure class="figure-center">
+  <img src="imgs/cath.png" alt="XXXXX" width="700">
+</figure>
+
+> Fonte: Lau, A.M., et al., 2024.
+
 
 A organização hierárquica das estruturas proteicas pode ser explorada através de bases de dados como o **CATH** (Class, Architecture, Topology, Homologous superfamily), que classifica domínios proteicos em níveis que vão desde a composição de estrutura secundária (Classe: α, β ou α/β) até a topologia tridimensional e relações evolutivas. A imagem ilustra a diversidade estrutural dos domínios proteicos representados no CATH, mostrando como diferentes arranjos de α-hélices e folhas-β geram milhares de dobras únicas distribuídas entre os três domínios da vida (bactérias, eucariotos e arqueias). A análise por PCA (componentes principais) revela agrupamentos distintos baseados na composição estrutural, onde domínios predominantemente α (indicados em azul escuro), β (verde) e mistos α/β (roxo) ocupam regiões distintas do espaço conformacional, refletindo tanto restrições físico-químicas do dobramento quanto pressões evolutivas que moldaram o repertório estrutural das proteínas.
 
@@ -826,7 +824,7 @@ Abaixo estão os conceitos por trás das principais métricas fornecidas por ess
   <img src="imgs/ramachandran-ss.png" alt="DreamFold" width="600">
 </figure>
 
-> Fonte: Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
+> Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
 
 * **Eixos:** O eixo horizontal representa o ângulo $\phi$ (rotação em torno da ligação $N-C_{\alpha}$), e o eixo vertical representa o ângulo $\psi$ (rotação em torno da ligação $C_{\alpha}-C'$), ambos variando de -180° a +180°.
 * **Pontos (Púrpura):** Cada ponto representa a conformação $\phi$/$\psi$ de um único resíduo de aminoácido (tipicamente excluindo Glicina e Prolina) de um grande conjunto de dados de estruturas de proteínas resolvidas experimentalmente (como o PDB).
