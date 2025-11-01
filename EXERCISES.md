@@ -13,8 +13,11 @@
 **Projetos:** <a href="https://github.com/madsondeluna" target="_blank" rel="noopener noreferrer">https://github.com/madsondeluna</a>
 
 ---
+<br> 
 
 Esta página contém os exercícios práticos planejados. Para acessar o conteúdo teórico completo, visite a [página web do curso](https://madsondeluna.github.io/bits_bytes_biomolecules/).
+
+<br>
 
 ---
 
