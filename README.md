@@ -283,7 +283,7 @@ As **modificações pós-traducionais (PTMs)** são alterações químicas que o
 
 ---
 
-## Exemplo: Linfócito Maduro (Mínima (em estado constitutivo) Atividade de Tradução)
+## Exemplo: Linfócito Maduro (Mínima Atividade de Tradução)
 
 <figure class="figure-center">
   <img src="imgs/linfo-norm.png" alt="XXXXX" width="1000">
@@ -294,6 +294,7 @@ As **modificações pós-traducionais (PTMs)** são alterações químicas que o
 ---
 
 ## Exemplo: A Produção de Anticorpos
+## Alta Atividade de Tradução e Secreção de Proteínas
 
 <figure class="figure-center">
   <img src="imgs/plasma-cells.png" alt="XXXXX" width="500">
