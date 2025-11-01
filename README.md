@@ -313,7 +313,7 @@ Um exemplo claro é um **plasmócito** (célula B ativada) produzindo **anticorp
   <img src="imgs/bcell-plasmo2.png" alt="XXXXX" width="1000">
 </figure>
 
-> Micrografia eletrônica de transmissão comparativa mostrando a transformação de um Linfócito B (esquerda) em um Plasmócito (direita). O plasmócito, é considerado a "fábrica de anticorpos", exibe um citoplasma expandido e densamente preenchido com retículo endoplasmático rugoso (RER) e numerosas mitocôndrias, refletindo sua intensa atividade de síntese e secreção de proteínas, essencial para a resposta imune humoral.
+> Micrografia eletrônica de transmissão comparativa mostrando a transformação de um Linfócito B (esquerda) em um Plasmócito (direita). O plasmócito, é considerado a "fábrica de anticorpos", exibe um citoplasma expandido e densamente preenchido com retículo endoplasmático rugoso (RER) e numerosas mitocôndrias, refletindo sua intensa atividade de síntese e secreção de proteínas, essencial para a resposta imune humoral. Fonte: Fabien, N. Chapitre 15 – L’immunité adaptative, prolongement de l’immunité innée. Disponível em: https://nfabien-svt.fr/courslycee2019/1ere_spe2019/03theme3/immunologie/chap15_suite.htm.
 
 ---
 
@@ -1117,7 +1117,17 @@ Um modelo tridimensional de alta qualidade, devidamente validado, não é o obje
 
 ### 1. Entendimento de Processos Biológicos e Descrição de Fenômenos
 
-[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+<figure class="figure-center">
+  <img src="imgs/port1.png" alt="xxxxx" width="100">
+</figure>
+
+> Domínios das proteínas E1 e E2 do vírus Chikungunya, e o receptor celular humano MXRA8. Representação do complexo proteína-proteína gerado por modelagem computacional no estilo de surface. Fonte: Luna-Aragão, M.A., et al., 2019.
+
+<figure class="figure-center">
+  <img src="imgs/prot2.png" alt="xxxxx" width="1000">
+</figure>
+
+> Domínios das proteínas E1 e E2 do vírus Chikungunya, e o receptor celular humano MXRA8 em seu modo de interação. Representação do complexo proteína-proteína gerado por modelagem computacional no estilo de cartoon, com a sobreposição de frames de uma simulação de dinâmica molecular. Fonte: Luna-Aragão, M.A., et al., 2019.
 
 Um modelo 3D transforma uma sequência linear em um mapa funcional, permitindo-nos "ver" a biologia em ação.
 
@@ -1127,7 +1137,11 @@ Um modelo 3D transforma uma sequência linear em um mapa funcional, permitindo-n
 
 ### 2. Estudo de Doenças (Biologia Estrutural de Patologias)
 
-[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+<figure class="figure-center">
+  <img src="imgs/e2b.png" alt="xxxxx" width="500">
+</figure>
+
+> Domínio E2B da proteína de envelope E2 do vírus Chikungunya. Mutação E2B S159A associada a maior virulência e capacidade de infecção em células humanas. Fonte: Luna-Aragão, M.A., et al., 2019.
 
 Modelos estruturais são essenciais para entender como mutações genéticas causam doenças em nível molecular.
 
@@ -1137,7 +1151,11 @@ Modelos estruturais são essenciais para entender como mutações genéticas cau
 
 ### 3. Desenvolvimento de Fármacos (Triagem Virtual e Design Racional)
 
-[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+<figure class="figure-center">
+  <img src="imgs/docking.png" alt="xxxxx" width="600">
+</figure>
+
+> Estrtura gerada no DiffDock com a proteína mPLpro do SARS-CoV-2 (PDB ID: 7L11) como receptor e o Ensitrelvir como ligante. Esse é um caso de sucesso real de design de fármacos auxiliado por modelagem computacional. O Ensitrelvir foi desenvolvido pela Shionogi Co., Ltd. e aprovado no Japão para o tratamento da COVID-19, sendo o primeiro inibidor oral da protease do SARS-CoV-2 aprovado para uso clínico.
 
 Esta é uma das aplicações mais diretas. A estrutura de uma proteína-alvo é usada como um "molde" para encontrar moléculas que se liguem a ela.
 
@@ -1147,7 +1165,11 @@ Esta é uma das aplicações mais diretas. A estrutura de uma proteína-alvo é 
 
 ### 4. Desenvolvimento de Plataformas de Diagnóstico e Engenharia de Proteínas
 
-[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+<figure class="figure-center">
+  <img src="imgs/igg.png" alt="xxxxx" width="800">
+</figure>
+
+> Utilização de modelos estruturais para o design de anticorpos monoclonais e peptídeos sintéticos para diagnóstico e terapias, por meio de desenvolvimento de testes ELISA e outras plataformas. Fonte: Caltag Medsystems Ltd., 2025.
 
 O conhecimento estrutural permite o design racional de novas ferramentas biotecnológicas.
 
