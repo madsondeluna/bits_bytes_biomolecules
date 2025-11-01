@@ -736,8 +736,6 @@ No entanto, a chegada do AlphaFold 3 veio com uma mudança de filosofia drástic
 
 ## Métodos Clássicos vs. Métodos de ML/DL? Quando usar?
 
-[ADICIONAR IMAGEM EXPLICATIVA AQUI]
-
 ### Extra 1: Estudando a Dinâmica e Variações Estruturais
 
 O AlphaFold é treinado para prever a conformação de mais baixa energia de uma proteína, resultando em uma estrutura estática de alta confiança. No entanto, a função biológica frequentemente reside na dinâmica e na capacidade da proteína de assumir múltiplos estados.
@@ -869,7 +867,11 @@ Abaixo estão os conceitos por trás das principais métricas fornecidas por ess
 
 #### 2. Z-score (Ex: ProSA-web, parte do SAVES)
 
-[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+<figure class="figure-center">
+  <img src="imgs/z-score.png" alt="xxxx" width="700">
+</figure>
+
+> Fonte: Z-score plot from ProSA-web.
 
 O Z-score (neste contexto, geralmente do ProSA) mede a qualidade global do modelo em termos de energia.
 
@@ -883,7 +885,11 @@ O Z-score (neste contexto, geralmente do ProSA) mede a qualidade global do model
 
 #### 3. QMEAN (QMEANDisCo)
 
-[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+<figure class="figure-center">
+  <img src="imgs/qmean.png" alt="xxxxx" width="700">
+</figure>
+
+> Fonte: SwissModel - QMEAN Server.
 
 O QMEAN (Quality Model Energy ANalysis) é um "score de consenso" (ou *scoring function*) que combina múltiplas métricas diferentes para gerar uma única estimativa de qualidade global.
 
