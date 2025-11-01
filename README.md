@@ -814,7 +814,7 @@ Historicamente, esta era uma grande vantagem dos métodos clássicos. O cenário
 
 --- 
 
-### Extra 3: Design de Proteínas (*De Novo*)
+### Extra 3: Design de Proteínas (*de novo*)
 
 Aqui a distinção é fundamental: predição vs. criação.
 
