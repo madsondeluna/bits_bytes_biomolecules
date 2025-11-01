@@ -620,7 +620,11 @@ A modelagem por homologia parte de um princípio evolutivo fundamental: se duas 
 
 ### 2. Threading (Modelagem por Encaixe de Dobras ou *Fold Recognition*)
 
-[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+<figure class="figure-center">
+  <img src="imgs/I-TASSER-pipeline.png" alt="XXXXX" width="700">
+</figure>
+
+> Fonte: I-TASSER (Iterative Threading ASSEmbly Refinement).
 
 E se não houver um homólogo com sequência similar? O Threading entra em cena. Ele se baseia na observação de que o número total de dobras (folds) proteicos existentes na natureza é limitado. O objetivo do Threading não é alinhar sequências, mas sim verificar se uma sequência de aminoácidos é compatível com uma dobra estrutural já conhecida.
 
@@ -639,7 +643,11 @@ E se não houver um homólogo com sequência similar? O Threading entra em cena.
 
 ### 3. Modelagem *Ab Initio*
 
-[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+<figure class="figure-center">
+  <img src="imgs/abinition.png" alt="XXXXX" width="700">
+</figure>
+
+> Fonte: Khor, B.Y., et al., 2015
 
 Este é o "Santo Graal" da modelagem clássica: prever a estrutura de uma proteína a partir unicamente de sua sequência de aminoácidos, sem usar nenhum template. A ideia é simular o processo de enovelamento físico, buscando a conformação de menor energia livre.
 
@@ -658,7 +666,11 @@ Este é o "Santo Graal" da modelagem clássica: prever a estrutura de uma prote�
 
 ## Módulo 2: A Revolução do Aprendizado de Máquina e a Nova Era da Biologia Estrutural
 
-[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+<figure class="figure-center">
+  <img src="imgs/timeline.png" alt="XXXXX" width="900">
+</figure>
+
+> Fonte: Bertoline, L.M.F., et al., 2023.
 
 Se os métodos clássicos foram a base da modelagem molecular por décadas, a chegada do aprendizado de máquina (Deep Learning) não foi apenas uma melhoria: foi um evento transformador que redefiniu os limites do que é possível na biologia estrutural computacional.
 
@@ -672,7 +684,11 @@ Em 2018, no CASP13, a DeepMind (uma subsidiária da Google) apresentou o **Alpha
 
 ### O Ponto de Inflexão: AlphaFold 2 e o "Problema Resolvido? Nem tanto"
 
-[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+<figure class="figure-center">
+  <img src="imgs/af2.png" alt="XXXXX" width="1000">
+</figure>
+
+> Fonte: Jumper, J., et al., 2021.
 
 No CASP14 em 2020, o **AlphaFold 2** foi apresentado, e os resultados chocaram a comunidade científica. O novo modelo alcançou uma precisão mediana de GDT_TS de 92.4, um score onde 100 representa um encaixe perfeito com a estrutura experimental. Pela primeira vez, um método computacional conseguia, em muitos casos, gerar modelos com precisão comparável à de técnicas experimentais como a cristalografia de raios-X. A revista *Nature* declarou que ele havia "resolvido" o problema do enovelamento de proteínas, um desafio de 50 anos.
 
@@ -682,7 +698,11 @@ O impacto do AlphaFold 2 foi amplificado por uma decisão crucial da DeepMind: *
 
 ### A Próxima Geração: AlphaFold 3 e o Paradoxo do Código Fechado 
 
-[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+<figure class="figure-center">
+  <img src="imgs/af3.png" alt="XXXXX" width="1000">
+</figure>
+
+> Fonte: Yang, Z., et al., 2023.
 
 > Críticas científicas significativas foram direcionadas à publicação do AlphaFold 3 na revista Nature, principalmente devido à falta de transparência e ao acesso restrito ao código-fonte do modelo. Os críticos argumentam que isso viola os princípios da ciência aberta, dificultando a verificação independente, a reprodutibilidade e a realização de pesquisas em larga escala pela comunidade científica em geral. Isso levou pesquisadores a desenvolverem alternativas. <a href="https://www.science.org/content/article/limits-access-deepmind-s-new-protein-program-trigger-backlash" target="_blank">Limits on access to DeepMind’s new protein program trigger backlash.</a>
 
@@ -693,7 +713,11 @@ Em 2024, a DeepMind e a Isomorphic Labs lançaram o **AlphaFold 3**. A nova vers
 
 No entanto, a chegada do AlphaFold 3 veio com uma mudança de filosofia drástica: **ele não é open source**. Embora um servidor web permita o uso para pesquisa não-comercial, a comunidade não tem acesso ao código-fonte. Isso impede que outros grupos de pesquisa aprendam com seus avanços arquitetônicos e criem ferramentas derivadas, como aconteceu com o AlphaFold 2. Essa decisão limita o ritmo da inovação comunitária e centraliza o poder de predição em uma única ferramenta "caixa-preta", marcando um contraste acentuado com a era de colaboração aberta inaugurada por seu predecessor.
 
-[ADICIONAR IMAGEM EXPLICATIVA AQUI]
+<figure class="figure-center">
+  <img src="imgs/reddit.png" alt="XXXXX" width="600">
+</figure>
+
+> Recorte proveniente de uma discussão no subreddit [*r/singularity*](https://www.reddit.com/r/singularity/), publicada há aproximadamente dois anos pelo usuário `AlterandPhil`. O conteúdo integra um debate mais amplo sobre os desdobramentos tecnológicos e a ética da degação ao open-source em avanços científicos cruciais, como o AlphaFold 3.
 
 ---
 
