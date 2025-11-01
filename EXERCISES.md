@@ -34,8 +34,8 @@ A **p53** (derivada do gene TP53) é um dos mais importantes supressores de tumo
 
 | Informação | Valor/Link |
 |------------|------------|
-| **ID UniProt** | [P04637](https://www.uniprot.org/uniprotkb/P04637/) |
-| **PDB Experimental** | [1TUP](https://www.rcsb.org/structure/1tup) (Domínio central complexado com DNA) |
+| **ID UniProt** | <a href="https://www.uniprot.org/uniprotkb/P04637/" target="_blank">P04637</a> |
+| **PDB Experimental** | <a href="https://www.rcsb.org/structure/1tup" target="_blank">1TUP</a> (Domínio central complexado com DNA) |
 | **Massa Molecular** | ~43.7 kDa (aparece como 53 kDa em SDS-PAGE) |
 | **Domínios** | 7 domínios funcionais (TAD, AD2, PRD, DBD, NLS, OD, CTD) |
 
@@ -76,7 +76,7 @@ O PyMOL é o único software que precisará ser instalado localmente para este c
 
 ### A. Obtenção da Licença de Estudante (Gratuita)
 
-1. Acesse o portal educacional da Schrödinger: [https://pymol.org/edu/](https://pymol.org/edu/).
+1. Acesse o portal educacional da Schrödinger: <a href="https://pymol.org/edu/" target="_blank">https://pymol.org/edu/</a>.
 2. Clique em **"Register for an Account"**
 3. **IMPORTANTE:** Utilize seu **e-mail institucional** (ex: `seu.usuario@ufpe.br`).
    - A licença acadêmica está vinculada à verificação de um domínio educacional
@@ -86,7 +86,7 @@ O PyMOL é o único software que precisará ser instalado localmente para este c
 
 ### B. Download e Instalação
 
-Na página de downloads da sua conta Schrödinger, baixe o instalador apropriado para seu sistema operacional pelo site [https://pymol.org/edu/](https://pymol.org/edu/)
+Na página de downloads da sua conta Schrödinger, baixe o instalador apropriado para seu sistema operacional pelo site <a href="https://pymol.org/edu/" target="_blank">https://pymol.org/edu/</a>
 
 
 ### C. Ativação da Licença
@@ -111,8 +111,8 @@ Na página de downloads da sua conta Schrödinger, baixe o instalador apropriado
 
 | Recurso | URL | Descrição |
 |---------|-----|-----------|
-| **UniProt** | [https://www.uniprot.org/](https://www.uniprot.org/) | Informações de sequência e anotações funcionais |
-| **PDB** | [https://www.rcsb.org/](https://www.rcsb.org/) | Estruturas tridimensionais experimentais |
+| **UniProt** | <a href="https://www.uniprot.org/" target="_blank">https://www.uniprot.org/</a> | Informações de sequência e anotações funcionais |
+| **PDB** | <a href="https://www.rcsb.org/" target="_blank">https://www.rcsb.org/</a> | Estruturas tridimensionais experimentais |
 
 #### Ferramentas de Predição
 
@@ -131,10 +131,10 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 | Ferramenta | URL | Função |
 |------------|-----|---------|
-| **ProtParam** | [https://web.expasy.org/protparam/](https://web.expasy.org/protparam/) | Parâmetros físico-químicos |
-| **SignalP 6.0** | [https://services.healthtech.dtu.dk/services/SignalP-6.0/](https://services.healthtech.dtu.dk/services/SignalP-6.0/) | Predição de peptídeos de sinal |
-| **InterProScan** | [https://www.ebi.ac.uk/interpro/search/sequence/](https://www.ebi.ac.uk/interpro/search/sequence/) | Identificação de domínios e famílias |
-| **PROSITE** | [https://prosite.expasy.org/](https://prosite.expasy.org/) | Identificação de sítios funcionais |
+| **ProtParam** | <a href="https://web.expasy.org/protparam/" target="_blank">https://web.expasy.org/protparam/</a> | Parâmetros físico-químicos |
+| **SignalP 6.0** | <a href="https://services.healthtech.dtu.dk/services/SignalP-6.0/" target="_blank">https://services.healthtech.dtu.dk/services/SignalP-6.0/</a> | Predição de peptídeos de sinal |
+| **InterProScan** | <a href="https://www.ebi.ac.uk/interpro/search/sequence/" target="_blank">https://www.ebi.ac.uk/interpro/search/sequence/</a> | Identificação de domínios e famílias |
+| **PROSITE** | <a href="https://prosite.expasy.org/" target="_blank">https://prosite.expasy.org/</a> | Identificação de sítios funcionais |
 
 > Agora vamos discutir os resultados obtidos e suas implicações biológicas? 
 
@@ -149,7 +149,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 #### Modelagem por Homologia
 
 **Plataforma:** SWISS-MODEL  
-**URL:** [https://swissmodel.expasy.org/](https://swissmodel.expasy.org/)
+**URL:** <a href="https://swissmodel.expasy.org/" target="_blank">https://swissmodel.expasy.org/</a>
 
 **Análise:**
 - Avaliar alinhamentos sequência-molde
@@ -158,7 +158,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 #### Modelagem por Threading/Ab Initio
 
 **Plataforma:** I-TASSER  
-**URL:** [https://zhanggroup.org/I-TASSER/](https://zhanggroup.org/I-TASSER/)
+**URL:** <a href="https://zhanggroup.org/I-TASSER/" target="_blank">https://zhanggroup.org/I-TASSER/</a>
 
 **Métricas:**
 - **C-score:** Confiança da predição (-5 a 2, valores mais altos = melhor)
@@ -195,9 +195,9 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 | Método | URL | Descrição |
 |--------|-----|-----------|
-| **ColabFold** | [AlphaFold2 Notebook](https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb) | Baseado em AlphaFold2 (Google Colab) |
-| **AlphaFold 3 Server** | [https://alphafoldserver.com/](https://alphafoldserver.com/) | Versão mais recente do AlphaFold |
-| **ESMFold** | [https://forge.evolutionaryscale.ai/](https://forge.evolutionaryscale.ai/) | Baseado em Modelo de Linguagem de Proteína e Dados Evolutivos  |
+| **ColabFold** | <a href="https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb" target="_blank">AlphaFold2 Notebook</a> | Baseado em AlphaFold2 (Google Colab) |
+| **AlphaFold 3 Server** | <a href="https://alphafoldserver.com/" target="_blank">https://alphafoldserver.com/</a> | Versão mais recente do AlphaFold |
+| **ESMFold** | <a href="https://forge.evolutionaryscale.ai/" target="_blank">https://forge.evolutionaryscale.ai/</a> | Baseado em Modelo de Linguagem de Proteína e Dados Evolutivos  |
 
 #### Métricas de Confiança
 
@@ -210,7 +210,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 > Tamos modelos gerados por homologia, threading e deep learning. Agora vamos baixar um modelos experimental da p53 para comparar todos os modelos gerados. Lembrando que a extrutura experimental sempre será o nosso padrão-ouro para comparação.
 
-> Baixar a estrutura experimental da p53 (PDB ID: 1TUP) do RCSB PDB para servir como referência na comparação dos modelos preditos. Link: [https://www.rcsb.org/structure/1tup](https://www.rcsb.org/structure/1tup)
+> Baixar a estrutura experimental da p53 (PDB ID: 1TUP) do RCSB PDB para servir como referência na comparação dos modelos preditos. Link: <a href="https://www.rcsb.org/structure/1tup" target="_blank">https://www.rcsb.org/structure/1tup</a>
 
 > Baixe a estrtura limpa e pronta para análise (sem água, ligantes ou íons) aqui: ADD LINK DO DRIVE 
 
@@ -223,9 +223,9 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 | Servidor | URL | Métrica Avaliada |
 |----------|-----|------------------|
-| **MolProbity (SAVES)** | [https://saves.mbi.ucla.edu/](https://saves.mbi.ucla.edu/) | Gráfico de Ramachandran, geometria |
-| **QMEAN** | [https://swissmodel.expasy.org/qmean/](https://swissmodel.expasy.org/qmean/) | Qualidade global |
-| **ProSA-web** | [https://prosa.services.came.sbg.ac.at/prosa.php](https://prosa.services.came.sbg.ac.at/prosa.php) | Z-score (energia do enovelamento) |
+| **MolProbity (SAVES)** | <a href="https://saves.mbi.ucla.edu/" target="_blank">https://saves.mbi.ucla.edu/</a> | Gráfico de Ramachandran, geometria |
+| **QMEAN** | <a href="https://swissmodel.expasy.org/qmean/" target="_blank">https://swissmodel.expasy.org/qmean/</a> | Qualidade global |
+| **ProSA-web** | <a href="https://prosa.services.came.sbg.ac.at/prosa.php" target="_blank">https://prosa.services.came.sbg.ac.at/prosa.php</a> | Z-score (energia do enovelamento) |
 
 #### Análise Estrutural no PyMOL
 
@@ -261,8 +261,8 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 ## Referências Teórico (Atividades Práticas)
 
 ### Bases de Dados
-- UniProt: [https://www.uniprot.org/](https://www.uniprot.org/)
-- RCSB PDB: [https://www.rcsb.org/](https://www.rcsb.org/)
+- UniProt: <a href="https://www.uniprot.org/" target="_blank">https://www.uniprot.org/</a>
+- RCSB PDB: <a href="https://www.rcsb.org/" target="_blank">https://www.rcsb.org/</a>
 
 ### Ferramentas de Predição
 - ExPASy ProtParam
@@ -295,9 +295,9 @@ Material educacional - Uso acadêmico.
 
 ## Recursos Úteis
 
-[README Principal](README.md)
-[Repositório do Curso](https://github.com/madsondeluna/bits_bytes_biomolecules)
-[Página Web do Curso](https://madsondeluna.github.io/bits_bytes_biomolecules/)
+<a href="README.md" target="_blank">README Principal</a>
+<a href="https://github.com/madsondeluna/bits_bytes_biomolecules" target="_blank">Repositório do Curso</a>
+<a href="https://madsondeluna.github.io/bits_bytes_biomolecules/" target="_blank">Página Web do Curso</a>
 
 
 ---
