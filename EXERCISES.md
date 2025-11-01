@@ -20,57 +20,15 @@ Este repositório contém o material prático do curso de Biologia Estrutural Co
 
 ---
 
-## Índice
-
-- [Bits, Bytes e Biomoléculas - Exercícios Práticos](#bits-bytes-e-biomoléculas---exercícios-práticos)
-  - [Índice](#índice)
-  - [Sobre a Proteína p53](#sobre-a-proteína-p53)
-    - [Relevância Científica](#relevância-científica)
-    - [Dados de Referência](#dados-de-referência)
-    - [Sequência FASTA](#sequência-fasta)
-  - [🔧 Pré-requisitos](#-pré-requisitos)
-    - [Software Local](#software-local)
-    - [Software Online](#software-online)
-    - [Requisitos do Sistema](#requisitos-do-sistema)
-  - [Instalação do PyMOL](#instalação-do-pymol)
-    - [A. Obtenção da Licença de Estudante (Gratuita)](#a-obtenção-da-licença-de-estudante-gratuita)
-    - [B. Download e Instalação](#b-download-e-instalação)
-    - [C. Ativação da Licença](#c-ativação-da-licença)
-  - [Módulos Práticos](#módulos-práticos)
-    - [Módulo 1: Análise de Sequências e Propriedades](#módulo-1-análise-de-sequências-e-propriedades)
-      - [Bancos de Dados](#bancos-de-dados)
-      - [Ferramentas de Predição](#ferramentas-de-predição)
-    - [Módulo 2: Modelagem por Homologia e Threading](#módulo-2-modelagem-por-homologia-e-threading)
-      - [Modelagem por Homologia](#modelagem-por-homologia)
-      - [Modelagem por Threading/Ab Initio](#modelagem-por-threadingab-initio)
-      - [Primeira Validação](#primeira-validação)
-- [Perguntas:](#perguntas)
-    - [Módulo 3: Predição por Deep Learning (AF2, AF3 e ESM)](#módulo-3-predição-por-deep-learning-af2-af3-e-esm)
-      - [Plataformas de Deep Learning](#plataformas-de-deep-learning)
-      - [Métricas de Confiança](#métricas-de-confiança)
-    - [Módulo 4: Análise Comparativa, Validação e Visualização](#módulo-4-análise-comparativa-validação-e-visualização)
-      - [Servidores de Validação de Dobramento e Termodinâmica](#servidores-de-validação-de-dobramento-e-termodinâmica)
-      - [Análise Estrutural no PyMOL](#análise-estrutural-no-pymol)
-  - [Referências Teórico (Atividades Práticas)](#referências-teórico-atividades-práticas)
-    - [Bases de Dados](#bases-de-dados)
-    - [Ferramentas de Predição](#ferramentas-de-predição-1)
-    - [Modelagem Estrutural](#modelagem-estrutural)
-    - [Validação](#validação)
-    - [Visualização](#visualização)
-  - [Licença](#licença)
-  - [Recursos Úteis](#recursos-úteis)
-
----
-
 ## Sobre a Proteína p53
 
-A **p53** (derivada do gene TP53) é um dos mais importantes supressores de tumor, frequentemente referida como **"a guardiã do genoma"**[web:6][web:9]. Esta proteína é crucial para a regulação do ciclo celular e prevenção do câncer[web:6].
+A **p53** (derivada do gene TP53) é um dos mais importantes supressores de tumor, frequentemente referida como **"a guardiã do genoma"**. Esta proteína é crucial para a regulação do ciclo celular e prevenção do câncer.
 
 ### Relevância Científica
 
-- Mutada em **mais de 50% de todos os cânceres humanos**[web:6]
-- Proteína mais estudada na história da oncologia[web:6]
-- Alvo ideal para comparar diferentes métodos de modelagem computacional[web:9]
+- Mutada em **mais de 50% de todos os cânceres humanos**
+- Proteína mais estudada na história da oncologia.
+- Alvo ideal para comparar diferentes métodos de modelagem computacional.
 
 ### Dados de Referência
 
@@ -78,8 +36,8 @@ A **p53** (derivada do gene TP53) é um dos mais importantes supressores de tumo
 |------------|------------|
 | **ID UniProt** | [P04637](https://www.uniprot.org/uniprotkb/P04637/) |
 | **PDB Experimental** | [1TUP](https://www.rcsb.org/structure/1tup) (Domínio central complexado com DNA) |
-| **Massa Molecular** | ~43.7 kDa (aparece como 53 kDa em SDS-PAGE)[web:9] |
-| **Domínios** | 7 domínios funcionais (TAD, AD2, PRD, DBD, NLS, OD, CTD)[web:6][web:9] |
+| **Massa Molecular** | ~43.7 kDa (aparece como 53 kDa em SDS-PAGE) |
+| **Domínios** | 7 domínios funcionais (TAD, AD2, PRD, DBD, NLS, OD, CTD) |
 
 ### Sequência FASTA
 
@@ -97,17 +55,17 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 ---
 
-## 🔧 Pré-requisitos
+## Pré-requisitos
 
 ### Software Local
-- **PyMOL** (Incentive PyMOL - Licença Educacional Gratuita)[web:7][web:10]
+- **PyMOL** (Incentive PyMOL - Licença Educacional Gratuita).
 
 ### Software Online
-Todos os demais passos utilizarão **servidores web** (não requerem instalação)[web:2].
+Todos os demais passos utilizarão **servidores web** (não requerem instalação).
 
 ### Requisitos do Sistema
 - Acesso à internet
-- E-mail institucional (.edu ou similar) para licença acadêmica[web:7]
+- E-mail institucional (.edu ou similar) para licença acadêmica.
 - Sistema operacional: Windows, macOS ou Linux
 
 ---
@@ -277,7 +235,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 - ColabFold (AlphaFold2)
 - AlphaFold 3 Server
 - ESMFold
-- **1TUP** (Estrutura experimental de referência - X-ray)[web:6]
+- **1TUP** (Estrutura experimental de referência - X-ray).
 
 ---
 
