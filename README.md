@@ -167,6 +167,156 @@ Nos modelos didáticos e nas representações clássicas da biologia molecular, 
 
 ---
 
+### Onde Ocorre a Tradução? Não é Aleatório!
+
+## O Destino do mRNA Maduro no Citoplasma
+
+<figure class="figure-center">
+  <img src="imgs/Screenshot 2025-11-01 at 15.32.28.png" alt="XXXXX" width="1000">
+</figure>
+
+> Transporte de uma grande molécula de mRNA pelo complexo do poro nuclear. (A) A maturação de uma molécula de mRNA conforme ela é sintetizada pela RNA-polimerase e empacotada pelas diversas proteínas nucleares. Esta ilustração de um RNA de inseto incomumente grande e abundante, chamado mRNA do anel de Balbiani, baseia-se em fotomicrografias de microscopia eletrônica como as mostradas em (B). (A, adaptada de B. Daneholt, Cell 88:585–588, 1997. Com permissão de Elsevier; B, de B.J. Stevens e H. Swift, J. Cell Biol. 31:55–77, 1966. Com permissão de The Rockefeller University Press.)
+
+Uma vez que o mRNA maduro atravessa o complexo do poro nuclear, ele emerge no citoplasma, mas não em um local aleatório. O citoplasma eucariótico é altamente organizado.
+
+<figure class="figure-center">
+  <img src="imgs/celula.png" alt="XXXXX" width="600">
+</figure>
+
+> Célula eucariótica típica, destacando a organização espacial dos principais componentes envolvidos na tradução proteica. Fonte: BioRender.
+
+* Ao redor do núcleo, encontramos **ribossomos livres** no citosol.
+* Encontramos também o **retículo endoplasmático rugoso (RER)**, que possui ribossomos aderidos à sua membrana.
+* Próximo ao RER, localiza-se o **complexo de Golgi**.
+
+<figure class="figure-center">
+  <img src="imgs/reticulo-golgi.png" alt="XXXXX" width="600">
+</figure>
+
+> Organização espacial do retículo endoplasmático rugoso (RER) e do complexo de Golgi em uma célula eucariótica típica. Mostrando como ocorre a tradução proteica em diferentes compartimentos celulares, até o transporte para secreção ou destinos intracelulares. Fonte: Alberts, B. et al. 2002
+
+Essa organização espacial não é por acaso, pois a tradução de proteínas é um processo estritamente regulado e localizado.
+
+## A Maquinaria de Tradução: A Fração Polirribossomal
+
+<figure class="figure-center">
+  <img src="imgs/Screenshot 2025-11-01 at 15.34.37.png" alt="XXXXX" width="1000">
+</figure>
+
+> Ribossomos no citoplasma de uma célula eucariótica. Esta fotomicrografia eletrônica mostra uma fina seção de uma pequena região do citoplasma. Os ribossomos aparecem como pontos pretos (destacados por setas vermelhas). Alguns estão livres no citosol, outros estão ligados a membranas do retículo endoplasmático. (Cortesia de Daniel S. Friend). 
+
+A região citoplasmática onde a tradução ocorre ativamente é densamente povoada e forma o que conhecemos como **fração polirribossomal** (um gradiente celular dinâmico e não membranar).
+
+Esta região é rica em:
+* Ribossomos (muitas vezes em grupos chamados polirribossomos)
+* tRNAs (RNAs transportadores)
+* Fatores de iniciação da tradução (ex: fatores eIFs)
+* Proteínas ligadoras de RNA
+
+## O Destino Alternativo do mRNA: Grânulos de Estresse e P-Bodies
+
+<figure class="figure-center">
+  <img src="imgs/fracao-poli.png" alt="XXXXX" width="600">
+</figure>
+
+> Fração polirribossomal e estruturas relacionadas no citoplasma, que regulam a tradução e o destino do mRNA. Em destaque estão os grânulos de estresse e os P-bodies, que desempenham papéis cruciais na modulação da tradução e na degradação do mRNA.
+
+Adjacentes às zonas de tradução ativa, existem regiões especializadas para o controle do mRNA:
+
+* **Grânulos de Estresse:** Locais onde os mRNAs ficam em "fila de espera" (tradução pausada) sob condições adversas ou de estresse celular.
+* **P-bodies (Corpos P):** Centros para onde os mRNAs seguem para serem degradados.
+
+## Transporte Final: O Complexo de Golgi e a Secreção
+
+Após o processamento no RER, as proteínas destinadas a outros locais são enviadas por vesículas de transporte para o **complexo de Golgi**.
+
+* No Golgi, a proteína é processada (ex: finalização da glicosilação) e "endereçada".
+* Ela é encapsulada em **vesículas secretoras** para transporte.
+
+## A Regulação da Tradução: O Peptídeo Sinal
+
+<figure class="figure-center">
+  <img src="imgs/pep-sinal.png" alt="XXXXX" width="1000">
+</figure>
+
+> Tabela resumindo os destinos celulares das proteínas com base na presença ou ausência de peptídeos sinal. Isso ilustra como o código genético e a maquinaria de tradução interagem para direcionar proteínas para seus locais funcionais específicos dentro da célula. Fonte: Biologia Molecular da Célula. Bruce, A., et. al., 2017.
+
+O destino de uma proteína é determinado, em grande parte, pela presença ou ausência de um **peptídeo sinal** (uma sequência curta de aminoácidos que atua como uma "tag" de endereçamento).
+
+1.  **Proteínas Citosólicas:**
+    * Proteínas destinadas a permanecer funcionais no citosol (ex: enzimas da via glicolítica).
+    * São traduzidas em **ribossomos livres** e lá permanecem.
+
+2.  **Proteínas Direcionadas ao RER:**
+    * Possuem o peptídeo sinal que as direciona aos **ribossomos aderidos ao RER**.
+    * A tradução prossegue e a cadeia polipeptídica é inserida no lúmen (espaço interno) do retículo.
+
+---
+
+## Processamento de Proteínas no Retículo Endoplasmático Rugoso (RER)
+
+<figure class="figure-center">
+  <img src="imgs/ret-rug.png" alt="XXXXX" width="800">
+</figure>
+
+> Representação gráfica do retículo endoplasmático rugoso (RER) mostrando ribossomos aderidos à sua membrana e o processamento de proteínas dentro do lúmen do RER. A imagem também destraca a proximidade do núcleo e do complexo de Golgi, ilustrando a rota de secreção proteica. Fonte: Alexis Osseni, 2025.
+
+Dentro do lúmen do RER, ocorrem as principais modificações pós-traducionais:
+
+As **modificações pós-traducionais (PTMs)** são alterações químicas que ocorrem em proteínas após sua síntese, desempenhando um papel crucial na regulação da função, localização e interação proteica. Essas modificações podem ser covalentes ou não covalentes e incluem uma variedade de processos, como fosforilação, glicosilação, acetilação, metilação, ubiquitinação e sumoilação. Cada tipo de PTM pode influenciar a estrutura e a dinâmica da proteína de maneiras específicas. Por exemplo, a **fosforilação** de resíduos de serina, treonina ou tirosina pode alterar a carga elétrica da proteína, afetando sua conformação e capacidade de interação com outras moléculas. A **glicosilação**, que envolve a adição de cadeias de carboidratos, pode influenciar a estabilidade e a localização celular da proteína. As PTMs são frequentemente reversíveis, permitindo uma regulação dinâmica das funções proteicas em resposta a sinais celulares e ambientais.
+
+### Tipos Comuns Mais Comuns de Modificações Pós-Traducionais
+
+<figure class="figure-center">
+  <img src="imgs/prot-mod.png" alt="XXXXX" width="600">
+</figure>
+
+> Representação gráfica das principais modificações pós-traducionais em proteínas, destacando os tipos mais comuns e suas localizações típicas na estrutura proteica. Fonte: Proteintech Group, Inc., 2025.
+
+| Modificação | Descrição | Função/Exemplos |
+|:---|:---|:---|
+| **Fosforilação** | Adição de grupos fosfato a resíduos de serina, treonina ou tirosina. | Regula a atividade enzimática e sinalização celular. |
+| **Glicosilação** | Adição de cadeias de carboidratos a resíduos de asparagina, serina ou treonina. | Influencia o dobramento, estabilidade e localização celular. |
+| **Acetilação** | Adição de grupos acetil a resíduos de lisina. | Modula a interação com DNA e proteínas, importante na regulação gênica. |
+| **Ubiquitinação** | Adição de ubiquitina a resíduos de lisina. | Marca proteínas para degradação pelo proteassoma. |
+| **Metilação** | Adição de grupos metil a resíduos de lisina ou arginina. | Afeta a interação proteína-proteína e a regulação gênica. | 
+
+---
+
+## Exemplo: Linfócito Maduro (Mínima (em estado constitutivo) Atividade de Tradução)
+
+<figure class="figure-center">
+  <img src="imgs/linfo-norm.png" alt="XXXXX" width="1000">
+</figure>
+
+> Fotografia de microscopia óptica de uma lâmina de sangue corada por Wright-Giemsa, mostrando linfócitos maduros típicos, se destacando pela coloração violeta, também é possível observar outras células sanguíneas como eritrócitos, coradas com um tom mais avermelhado Fonte: Medical Expert Team, 2013.
+
+---
+
+## Exemplo: A Produção de Anticorpos
+
+<figure class="figure-center">
+  <img src="imgs/plasma-cells.png" alt="XXXXX" width="500">
+</figure>
+
+> Fotografia de microscopia eletrônica de um plasmócito humano, destacando o retículo endoplasmático rugoso (RER) abundante, característico dessas células especializadas na produção de anticorpos. O halo claro ao redor do núcleo indica o citoplasma rico em RER, e é uma das características morfológicas que ajudam na identificação dessas células. Fonte: Ayman Qasrawi, 2008.
+
+Um exemplo claro é um **plasmócito** (célula B ativada) produzindo **anticorpos IgG**:
+
+1.  O mRNA do anticorpo sai do núcleo.
+2.  É traduzido nos ribossomos aderidos ao RER.
+3.  No RER, sofre dobramento, glicosilação e formação de pontes dissulfeto.
+4.  Passa pelo complexo de Golgi para maturação final.
+5.  Por fim, é inserido em vesículas que o transportam para o meio extracelular por **exocitose**.
+
+<figure class="figure-center">
+  <img src="imgs/bcell-plasmo.png" alt="XXXXX" width="1000">
+</figure>
+
+> Micrografia eletrônica de transmissão comparativa mostrando a transformação de um Linfócito B (esquerda) em um Plasmócito (direita). O plasmócito, é considerado a "fábrica de anticorpos", exibe um citoplasma expandido e densamente preenchido com retículo endoplasmático rugoso (RER) e numerosas mitocôndrias, refletindo sua intensa atividade de síntese e secreção de proteínas, essencial para a resposta imune humoral.
+
+---
+
 ### Como Surgem as Proteínas?
 
 No contexto biológico da síntese proteica (tradução), este processo é energeticamente custoso, consumindo energia (na forma de ATP e GTP) para a ativação dos aminoácidos. Esta ativação ocorre através da ligação covalente entre cada aminoácido e seu tRNA cognato (complementar), catalisada pelas aminoacil-tRNA sintetases, enzimas altamente específicas que reconhecem tanto o aminoácido quanto seu tRNA correspondente. Uma vez formado o aminoacil-tRNA, este complexo é direcionado ao ribossomo para participar da tradução. A formação da ligação peptídica em si é catalisada pelo ribossomo, especificamente pela atividade peptidil transferase, uma função catalítica intrínseca ao RNA ribossômico (rRNA) localizado na subunidade maior. Este mecanismo transfere a cadeia polipeptídica crescente do tRNA localizado no sítio P (Peptidil) para o grupo amino do novo aminoácido que está ligado ao seu tRNA no sítio A (Aminoacil), permitindo assim a elongação da cadeia polipeptídica.
