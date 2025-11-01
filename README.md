@@ -201,9 +201,8 @@ A ligação peptídica sob outra óptica.
 <p align="justify">
   <img src="imgs/aas.png" alt="Amino acids width="1000">
 </p>
-<p align="justify">
-<em>Fonte: JPT Peptide Technologies.</em>
-</p>
+
+> Fonte: JPT Peptide Technologies.
 
 | Aminoácido | Propriedades | Tendência Estrutural |
 |:---|:---|:---|
@@ -221,9 +220,8 @@ A ligação peptídica sob outra óptica.
 <p align="justify">
   <img src="imgs/aainteractions.png" alt="Matriz de interações de aminoácidos" width="1000">
 </p>
-<p align="justify">
-<em>O gráfico mostra a matriz dos aminoácidos naturais: círculos azuis maiores indicam interações mais fortes. Fonte: Cambridge MedChem Consulting, 2025.</em>
-</p>
+
+> O gráfico mostra a matriz dos aminoácidos naturais: círculos azuis maiores indicam interações mais fortes. Fonte: Cambridge MedChem Consulting, 2025.
 
  PDB contém muitos exemplos de interações entre aminoácidos. Embora existam interações específicas bem documentadas (aminoácidos básicos com carga positiva se ligam a aminoácidos ácidos com carga negativa), não havia visto um estudo sistemático de todas as combinações de aminoácidos, por isso, o trabalho de [Andrew White](https://crowsandcats.blogspot.com/2012/03/amino-acid-interactions.html) é notável, pois ele contou sistematicamente o número de interações entre cada par de tipos de aminoácidos e, em seguida, converteu essas contagens em energias de interação.<
 
@@ -239,9 +237,8 @@ A ligação peptídica sob outra óptica.
 <p align="justify">
   <img src="imgs/pep-interactions.png" alt="XXXXXXXX" width="1000">
 </p>
-<p align="justify">
-<em>Representação de interações moleculares não-covalentes entre estruturas proteicas. Os quatro painéis exibem exemplos das diferentes forças que estabilizam complexos proteicos, como pontes de hidrogênio, pontes salinas e interações de empilhamento (π-stacking). Para clareza visual, os parceiros de interação são diferenciados pelas cores azul e amarela. As linhas pontilhadas destacam os contatos atômicos específicos que formam essas interações. Fonte: Luna-Aragão, M.A., 2025.</em>
-</p>
+
+> Representação de interações moleculares não-covalentes entre estruturas proteicas. Os quatro painéis exibem exemplos das diferentes forças que estabilizam complexos proteicos, como pontes de hidrogênio, pontes salinas e interações de empilhamento (π-stacking). Para clareza visual, os parceiros de interação são diferenciados pelas cores azul e amarela. As linhas pontilhadas destacam os contatos atômicos específicos que formam essas interações. Fonte: Luna-Aragão, M.A., 2025.
 
 ---
 
