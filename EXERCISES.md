@@ -14,7 +14,7 @@
 
 ---
 
-Esta página contém os exercícios práticos que serão realizados durante o curso. Para acessar o conteúdo teórico completo, consulte o [README principal](README.md) ou visite a [página web do curso](https://madsondeluna.github.io/bits_bytes_biomolecules/).
+Esta página contém os exercícios práticos planejados. Para acessar o conteúdo teórico completo, visite a [página web do curso](https://madsondeluna.github.io/bits_bytes_biomolecules/).
 
 ---
 
