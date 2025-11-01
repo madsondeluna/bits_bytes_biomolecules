@@ -265,8 +265,6 @@ A ligação peptídica sob outra óptica.
 
 O problema do enovelamento de proteínas, como uma cadeia polipeptídica linear atinge sua complexa e funcional estrutura tridimensional, representa um dos maiores desafios da biologia molecular contemporânea. Avanços notáveis, como o AlphaFold, forneceram soluções preditivas sem precedentes, mas a compreensão fundamental dos mecanismos de enovelamento, regidos pela termodinâmica e pela evolução, permanece um campo de intensa investigação para biólogos, físicos e químicos.
 
----
-
 ### A Paisagem Energética: O Funil de Enovelamento
 
 <p align="justify">
