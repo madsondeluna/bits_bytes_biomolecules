@@ -311,7 +311,7 @@ Simultaneamente, **a proteína PABP (Poly-A Binding Protein) se liga à cauda po
 
 ### Os Ribossomos Localizam as Cicatrizes do Splicing Durante a Tradução e as RBP Ligadas a essas Cicatrizes, Funcionando como Marcadores de Qualidade do mRNA
 
-O primeiro ribossomo que reconhece o AUG inicia a tradução e, **durante sua progressão, encontra as cicatrizes moleculares deixadas pelo splicing—os complexos de junção exon-exon (EJCs)—depositados aproximadamente 24 nucleotídeos upstream de cada junção exon-exon**. Estes **EJCs**, estáo geralmente **ligados a proteínas chamadas de RBPs (Proteínas Ligaoras de RNA)** (especialmente as eIF4A3, Y14 & MAGOH), que servem como **marcadores de controle de qualidade** indicando que aquele mRNA foi processado corretamente, e são removidos progressivamente pelos ribossomos tradutores durante a primeira ronda de tradução.
+O primeiro ribossomo que reconhece o AUG inicia a tradução e, **durante sua progressão, encontra as cicatrizes moleculares deixadas pelo splicing—os complexos de junção exon-exon (EJCs) depositados aproximadamente 24 nucleotídeos upstream de cada junção exon-exon**. Estes **EJCs**, estáo geralmente **ligados a proteínas chamadas de RBPs (Proteínas Ligaoras de RNA)** (especialmente as eIF4A3, Y14 & MAGOH), que servem como **marcadores de controle de qualidade** indicando que aquele mRNA foi processado corretamente, e são removidos progressivamente pelos ribossomos tradutores durante a primeira ronda de tradução.
 
 
 <figure class="figure-center">

@@ -55,30 +55,6 @@ Qual usaremos nas atividades práticas? Vamos escolher juntos...
 
 > Alinhamento das sequências da p53: domínio ligador de DNA (PDB ID: 1TUP) vs. sequência completa (UNIPROT ID: P04637). Note que o domínio cristalizado corresponde apenas a uma fração da proteína completa.
 
-Sequências FASTA do domínio ligador de DNA da p53, cristalizado por X-ray (PDB ID: 1TUP):
-
-```bash
->1TUP_3|Chains C[auth A] |PROTEIN (P53 TUMOR SUPPRESSOR )|Homo sapiens (9606)
-SSSVPSQKTYQGSYGFRLGFLHSGTAKSVTCTYSPALNKMFCQLAKTCPVQLWVDSTPPP
-GTRVRAMAIYKQSQHMTEVVRRCPHHERCSDSDGLAPPQHLIRVEGNLRVEYLDDRNTFR
-HSVVVPYEPPEVGSDCTTIHYNYMCNSSCMGGMNRRPILTIITLEDSSGNLLGRNSFEVR
-VCACPGRDRRTEEENLRKKGEPHHELPPGSTKRALPNNT
-```
-
-Sequência completa da p53 (UNIPROT ID: P04637):
-
-```bash
->sp|P04637|P53_HUMAN Cellular tumor antigen p53 OS=Homo sapiens OX=9606 GN=TP53
-MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGP
-DEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLSSSVPSQKTYQGSYGFRLGFLHSGTAK
-SVTCTYSPALNKMFCQLAKTCPVQLWVDSTPPPGTRVRAMAIYKQSQHMTEVVRRCPHHE
-RCSDSDGLAPPQHLIRVEGNLRVEYLDDRNTFRHSVVVPYEPPEVGSDCTTIHYNYMCNS
-SCMGGMNRRPILTIITLEDSSGNLLGRNSFEVRVCACPGRDRRTEEENLRKKGEPHHELP
-PGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPG
-GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
-```
----
-
 ## Pré-requisitos
 
 ### Software Local
@@ -140,7 +116,7 @@ Na página de downloads da sua conta Schrödinger, baixe o instalador apropriado
 
 #### Ferramentas de Predição
 
-Apqnas para relembrar...
+> Pra deixar ilustrado como é importante conhecer a sequência que você está trabalhando, veja o alinhamento abaixo:
 
 <figure class="figure-center">
   <img src="imgs/alinhamento.png" alt="XXXXX" width="1000">
@@ -149,6 +125,76 @@ Apqnas para relembrar...
 > Alinhamento das sequências da p53: domínio ligador de DNA (PDB ID: 1TUP) vs. sequência completa (UNIPROT ID: P04637). Note que o domínio cristalizado corresponde apenas a uma fração da proteína completa.
 
 Sequências FASTA do domínio ligador de DNA da p53, cristalizado por X-ray (PDB ID: 1TUP):
+
+```bash
+>1TUP_3|Chains C[auth A] |PROTEIN (P53 TUMOR SUPPRESSOR )|Homo sapiens (9606)
+SSSVPSQKTYQGSYGFRLGFLHSGTAKSVTCTYSPALNKMFCQLAKTCPVQLWVDSTPPP
+GTRVRAMAIYKQSQHMTEVVRRCPHHERCSDSDGLAPPQHLIRVEGNLRVEYLDDRNTFR
+HSVVVPYEPPEVGSDCTTIHYNYMCNSSCMGGMNRRPILTIITLEDSSGNLLGRNSFEVR
+VCACPGRDRRTEEENLRKKGEPHHELPPGSTKRALPNNT
+```
+
+Sequência completa da p53 (UNIPROT ID: P04637):
+
+```bash
+>sp|P04637|P53_HUMAN Cellular tumor antigen p53 OS=Homo sapiens OX=9606 GN=TP53
+MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGP
+DEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLSSSVPSQKTYQGSYGFRLGFLHSGTAK
+SVTCTYSPALNKMFCQLAKTCPVQLWVDSTPPPGTRVRAMAIYKQSQHMTEVVRRCPHHE
+RCSDSDGLAPPQHLIRVEGNLRVEYLDDRNTFRHSVVVPYEPPEVGSDCTTIHYNYMCNS
+SCMGGMNRRPILTIITLEDSSGNLLGRNSFEVRVCACPGRDRRTEEENLRKKGEPHHELP
+PGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPG
+GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
+```
+
+> **Atividade guiada:** Temos 5 sequências da p53 (1 referência *wild-type* e 4 variantes associadas a neoplasias) e, juntos, executaremos o alinhamento múltiplo no <a href="https://www.ebi.ac.uk/Tools/msa/clustalo/" target="_blank" rel="noopener noreferrer">Clustal Omega</a>. Analise quais substituições coincidem com domínios funcionais críticos, discuta como essas mudanças podem impactar estabilidade e interação com DNA e, por fim, decidam coletivamente qual variante seguirá para aprofundamento nas etapas práticas.
+
+```bash
+### 1. p53 Wild-Type (Saudável)
+
+>sp|P04637|P53_HUMAN_WT
+MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGPDEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLSSSVPSQKTYQGSYGFRLGFLHSGTAKSSVTVTVVYVGCQSVEQGVQVKNGRPQVDERPPPHFLTQYWEGDGIDKWGVEVWGWGVQPNDSSGSOPPQIVQVNEDLLCHPWVKQVCTVEDLLQDELIMSVYVGDOWSTPSELGHAGTNGTKRSPACTPPIKACVQCCSFRRSSQCVEGEDQQDILRVHFVQEFVPEIAAVEPWKCCSTPPPVSGALPPAQKAVQVKVKALPDAQFEVVHSLAKWKRQTLGWHMFPEVYIPEEVQQ
+
+### 2. p53 R175H (Cancer-Associada)
+
+>sp|P04637|P53_HUMAN_R175H
+MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGPDEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLSSSVPSQKTYQGSYGFRLGFLHSGTAKSSVTVTVVYVGCQSVEQGVQVKNGRPQVDERPPPHFLTQYWEGDGIDKWGVEVWGWGVQPNDSSGSOPPQIVQVNEDLLCHPWVKQVCTVEDLLQDELIMSVYVGDOWSTPSELGHAGTNGTKRSPACTPPIKACVQCCSHRRSSHCVEGEDQQDILRVHFVQEFVPEIAAVEPWKCCSTPPPVSGALPPAQKAVQVKVKALPDAQFEVVHSLAKWKRQTLGWHMFPEVYIPEEVQQ
+
+### 3. p53 R248Q (Cancer-Associada)
+
+>sp|P04637|P53_HUMAN_R248Q
+MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGPDEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLSSSVPSQKTYQGSYGFRLGFLHSGTAKSSVTVTVVYVGCQSVEQGVQVKNGRPQVDERPPPHFLTQYWEGDGIDKWGVEVWGWGVQPNDSSGSOPPQIVQVNEDLLCHPWVKQVCTVEDLLQDELIMSVYVGDOWSTPSELGHAGTNGTKRSPACTPPIKACVQCCSFRRSSQCVEGEDQQDILQVHFVQEFVPEIAAVEPWKCCSTPPPVSGALPPAQKAVQVKVKALPDAQFEVVHSLAKWKRQTLGWHMFPEVYIPEEVQQ
+
+### 4. p53 Y220C (Cancer-Associada)
+
+>sp|P04637|P53_HUMAN_Y220C
+MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGPDEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLSSSVPSQKTYQGSYGFRLGFLHSGTAKSSVTVTVVYVGCQSVEQGVQVKNGRPQVDERPPPHFLTQYWEGDGIDKWGVEVWGWGVQPNDSSGSOPPQIVQVNEDLLCHPWVKQVCTVEDLLQDELIMSVYVGDOWSTPSELGHAGTNGTKRSPACTPPIKACVQCCSFRRSSCVEGEDQQDILRVHFVQEFVPEIAAVEPWKCCSTPPPVSGALPPAQKAVQVKVKALPDAQFEVVHSLAKWKRQTLGWHMFPEVYIPEEVQQ
+
+### 5. p53 R273H (Cancer-Associada)
+
+>sp|P04637|P53_HUMAN_R273H
+MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGPDEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLSSSVPSQKTYQGSYGFRLGFLHSGTAKSSVTVTVVYVGCQSVEQGVQVKNGRPQVDERPPPHFLTQYWEGDGIDKWGVEVWGWGVQPNDSSGSOPPQIVQVNEDLLCHPWVKQVCTVEDLLQDELIMSVYVGDOWSTPSELGHAGTNGTKRSPACTPPIKACVQCCSFRRSSQCVEGEDQQDILRVHFVHEFVPEIAAVEPWKCCSTPPPVSGALPPAQKAVQVKVKALPDAQFEVVHSLAKWKRQTLGWHMFPEVYIPEEVQQ
+```
+
+# Perguntas:
+
+- Em quais posições do alinhamento múltiplo surgem substituições e essas posições são conservadas na sequência *wild-type*?
+- As mutações identificadas representam trocas conservativas ou drásticas em termos de propriedades físico-químicas (ex.: troca de polar para hidrofóbico)?
+- Alguma das substituições cria ou elimina motivos funcionais conhecidos (ex.: sítios de fosforilação, ligações a DNA) sugeridos pelo alinhamento?
+- Comparando as quatro variantes mutadas entre si, existe um padrão recorrente de substituições que aponte para um hotspot funcional?
+
+## Tabela das Mutações Analisadas
+
+| Mutação | Posição | AA Original | AA Mutado | Tipo | Frequência | Mecanismo Molecular |
+|---------|---------|-------------|-----------|------|-----------|-------------------|
+| R175H | 175 | Arginina (R) | Histidina (H) | Missense | Muito Alta (5-10%) | Afeta ligação ao zinco; Loss of DNA contact |
+| R248Q | 248 | Arginina (R) | Glutamina (Q) | Missense | Muito Alta (5-10%) | Contato direto com DNA; Major hotspot |
+| Y220C | 220 | Tirosina (Y) | Cisteína (C) | Missense | Alta (2-5%) | Adjacente à interface de ligação ao DNA |
+| R273H | 273 | Arginina (R) | Histidina (H) | Missense | Muito Alta (5-10%) | Contato direto com DNA; Major hotspot |
+
+---
+
+Agora avoltandos para as nossas duas sequências iniciais (1TUP vs. UNIPROT), vamos analisar algumas propriedades físico-químicas e funcionais utilizando ferramentas online:
 
 ```bash
 >1TUP_3|Chains C[auth A] |PROTEIN (P53 TUMOR SUPPRESSOR )|Homo sapiens (9606)
@@ -246,6 +292,13 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 - **pLDDT** (predicted Local Distance Difference Test): 0-100, >90 = alta confiança
 - **PAE** (Predicted Aligned Error): Confiança na posição relativa entre resíduos
 
+# Perguntas:
+
+- Como os valores de pLDDT distribuídos ao longo da cadeia ajudam a distinguir regiões estruturadas de segmentos desordenados na p53 predita?
+- Ao comparar os mapas de PAE dos diferentes servidores, quais domínios apresentam maior incerteza relativa e como isso impacta a confiança global do modelo?
+- Quais diferenças você espera observar entre as predições de AF2/ColabFold, AF3 e ESM3 em termos de conformação global e métricas de confiança?
+- Se você tivesse de priorizar um único modelo para a próxima etapa de análise comparativa, quais critérios baseados nas saídas desses métodos sustentariam sua escolha?
+
 ---
 
 ### Módulo 4: Análise Comparativa, Validação e Visualização
@@ -299,6 +352,13 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 1. **Geração de figuras**
 - Criar representações ilustrativas das diferenças/similaridades.
 - Destacar regiões de interesse estrutural.
+
+# Perguntas:
+
+- Quais modelos apresentam RMSD mais baixo em relação à estrutura experimental e o que isso revela sobre a qualidade geral de cada predição?
+- Ao inspecionar as sobreposições no PyMOL, quais regiões da p53 mantêm conformação consistente entre todos os modelos e quais divergem com mais intensidade?
+- Como as métricas de validação (MolProbity, QMEAN, ProSA-web) complementam os resultados de RMSD para justificar a seleção de um modelo confiável?
+- De que modo as figuras geradas podem comunicar melhor as diferenças funcionais potenciais entre os modelos analisados?
 
 ---
 
