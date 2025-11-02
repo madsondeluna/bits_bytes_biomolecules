@@ -339,7 +339,6 @@ Material educacional - Uso acadêmico.
 
 ## Recursos Úteis
 
-<a href="README.md" target="_blank">README Principal</a>
 <a href="https://github.com/madsondeluna/bits_bytes_biomolecules" target="_blank">Repositório do Curso</a>
 <a href="https://madsondeluna.github.io/bits_bytes_biomolecules/" target="_blank">Página Web do Curso</a>
 
