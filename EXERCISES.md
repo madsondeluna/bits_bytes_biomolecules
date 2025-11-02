@@ -53,6 +53,8 @@ Qual usaremos nas atividades práticas? Vamos escolher juntos...
   <img src="imgs/alinhamento.png" alt="XXXXX" width="1000">
 </figure>
 
+> Alinhamento das sequências da p53: domínio ligador de DNA (PDB ID: 1TUP) vs. sequência completa (UNIPROT ID: P04637). Note que o domínio cristalizado corresponde apenas a uma fração da proteína completa.
+
 Sequências FASTA do domínio ligador de DNA da p53, cristalizado por X-ray (PDB ID: 1TUP):
 
 ```bash
@@ -140,6 +142,8 @@ Apqnas para relembrar...
 <figure class="figure-center">
   <img src="imgs/alinhamento.png" alt="XXXXX" width="1000">
 </figure>
+
+> Alinhamento das sequências da p53: domínio ligador de DNA (PDB ID: 1TUP) vs. sequência completa (UNIPROT ID: P04637). Note que o domínio cristalizado corresponde apenas a uma fração da proteína completa.
 
 Sequências FASTA do domínio ligador de DNA da p53, cristalizado por X-ray (PDB ID: 1TUP):
 
