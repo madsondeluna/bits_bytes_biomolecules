@@ -114,15 +114,22 @@ Na página de downloads da sua conta Schrödinger, baixe o instalador apropriado
 | **UniProt** | <a href="https://www.uniprot.org/" target="_blank">https://www.uniprot.org/</a> | Informações de sequência e anotações funcionais |
 | **PDB** | <a href="https://www.rcsb.org/" target="_blank">https://www.rcsb.org/</a> | Estruturas tridimensionais experimentais |
 
+---
+
 #### Ferramentas de Predição
 
-> Pra deixar ilustrado como é importante conhecer a sequência que você está trabalhando, veja o alinhamento abaixo:
+As ferramentas abaixo serão utilizadas para analisar propriedades físico-químicas e funcionais utilizando sequências FASTA de proteínas e peptídeos, é uma abordagem exploratória para entender melhor como o seu sistema é representado em termos de características bioquímicas e funcionais.
 
-<figure class="figure-center">
-  <img src="imgs/alinhamento.png" alt="XXXXX" width="1000">
-</figure>
+| Ferramenta | URL | Função |
+|------------|-----|---------|
+| **ProtParam** | <a href="https://web.expasy.org/protparam/" target="_blank">https://web.expasy.org/protparam/</a> | Parâmetros físico-químicos |
+| **SignalP 6.0** | <a href="https://services.healthtech.dtu.dk/services/SignalP-6.0/" target="_blank">https://services.healthtech.dtu.dk/services/SignalP-6.0/</a> | Predição de peptídeos de sinal |
+| **InterProScan** | <a href="https://www.ebi.ac.uk/interpro/search/sequence/" target="_blank">https://www.ebi.ac.uk/interpro/search/sequence/</a> | Identificação de domínios e famílias |
+| **WoLFPSORT** | <a href="https://wolfpsort.hgc.jp/" target="_blank">https://wolfpsort.hgc.jp/</a> | Identificação de localização celular |
 
-> Alinhamento das sequências da p53: domínio ligador de DNA (PDB ID: 1TUP) vs. sequência completa (UNIPROT ID: P04637). Note que o domínio cristalizado corresponde apenas a uma fração da proteína completa.
+> Agora vamos discutir os resultados obtidos e suas implicações biológicas?
+
+> **Atividade 1: Alinhamento 1TUP vs. Sequência Completa (WT):** Vamos alinhar o domínio ligador de DNA cristalizado (PDB ID: 1TUP) com a sequência completa da p53 (UNIPROT ID: P04637) e discutir como essa comparação orienta as próximas etapas práticas.
 
 Sequências FASTA do domínio ligador de DNA da p53, cristalizado por X-ray (PDB ID: 1TUP):
 
@@ -147,13 +154,25 @@ PGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPG
 GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 ```
 
-> **Atividade guiada:** Temos 5 sequências da p53 (1 referência *wild-type* e 4 variantes associadas a neoplasias) e, juntos, executaremos o alinhamento múltiplo no <a href="https://www.ebi.ac.uk/Tools/msa/clustalo/" target="_blank" rel="noopener noreferrer">Clustal Omega</a>. Analise quais substituições coincidem com domínios funcionais críticos, discuta como essas mudanças podem impactar estabilidade e interação com DNA e, por fim, decidam coletivamente qual variante seguirá para aprofundamento nas etapas práticas.
+# Perguntas:
+
+- Em quais trechos o domínio 1TUP se alinha diretamente com a sequência completa e quais regiões ficam sem correspondência?
+- Os limites N- e C-terminais do domínio cristalizado aparecem contíguos no alinhamento ou revelam lacunas/extensions relevantes para estabilidade?
+- Há resíduos-chave do sítio de ligação ao DNA presentes apenas na sequência completa? O que isso implica para os modelos baseados no domínio?
+- Considerando identidade e similaridade ponto a ponto, qual argumento favorece trabalhar com o domínio isolado ou com a proteína completa nas próximas etapas?
+
+> **Atividade 2 (EXTRA):** Temos 5 sequências da p53 (1 referência *wild-type* e 4 variantes associadas a neoplasias) e, juntos, executaremos o alinhamento múltiplo no <a href="https://www.ebi.ac.uk/Tools/msa/clustalo/" target="_blank" rel="noopener noreferrer">Clustal Omega</a>. Analise quais substituições coincidem com domínios funcionais críticos, discuta como essas mudanças podem impactar estabilidade e interação com DNA e, por fim, decidam coletivamente qual variante seguirá para aprofundamento nas etapas práticas.
 
 ```bash
 ### 1. p53 Wild-Type (Saudável)
 
 >sp|P04637|P53_HUMAN_WT
-MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGPDEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLSSSVPSQKTYQGSYGFRLGFLHSGTAKSSVTVTVVYVGCQSVEQGVQVKNGRPQVDERPPPHFLTQYWEGDGIDKWGVEVWGWGVQPNDSSGSOPPQIVQVNEDLLCHPWVKQVCTVEDLLQDELIMSVYVGDOWSTPSELGHAGTNGTKRSPACTPPIKACVQCCSFRRSSQCVEGEDQQDILRVHFVQEFVPEIAAVEPWKCCSTPPPVSGALPPAQKAVQVKVKALPDAQFEVVHSLAKWKRQTLGWHMFPEVYIPEEVQQ
+MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGP
+DEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLSSSVPSQKTYQGSYGFRLGFLHSGTAK
+SSVTVTVVYVGCQSVEQGVQVKNGRPQVDERPPPHFLTQYWEGDGIDKWGVEVWGWGVQP
+NDSSGSOPPQIVQVNEDLLCHPWVKQVCTVEDLLQDELIMSVYVGDOWSTPSELGHAGTN
+GTKRSPACTPPIKACVQCCSFRRSSQCVEGEDQQDILRVHFVQEFVPEIAAVEPWKCCST
+PPPVSGALPPAQKAVQVKVKALPDAQFEVVHSLAKWKRQTLGWHMFPEVYIPEEVQQ
 
 ### 2. p53 R175H (Cancer-Associada)
 
@@ -183,6 +202,8 @@ MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGPDEAPRMPEAAPPVAPAPAAP
 - Alguma das substituições cria ou elimina motivos funcionais conhecidos (ex.: sítios de fosforilação, ligações a DNA) sugeridos pelo alinhamento?
 - Comparando as quatro variantes mutadas entre si, existe um padrão recorrente de substituições que aponte para um hotspot funcional?
 
+---
+
 ## Tabela das Mutações Analisadas
 
 | Mutação | Posição | AA Original | AA Mutado | Tipo | Frequência | Mecanismo Molecular |
@@ -194,17 +215,9 @@ MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGPDEAPRMPEAAPPVAPAPAAP
 
 ---
 
-Agora avoltandos para as nossas duas sequências iniciais (1TUP vs. UNIPROT), vamos analisar algumas propriedades físico-químicas e funcionais utilizando ferramentas online:
+### Módulo 2: Modelagem por Homologia e Threading
 
-```bash
->1TUP_3|Chains C[auth A] |PROTEIN (P53 TUMOR SUPPRESSOR )|Homo sapiens (9606)
-SSSVPSQKTYQGSYGFRLGFLHSGTAKSVTCTYSPALNKMFCQLAKTCPVQLWVDSTPPP
-GTRVRAMAIYKQSQHMTEVVRRCPHHERCSDSDGLAPPQHLIRVEGNLRVEYLDDRNTFR
-HSVVVPYEPPEVGSDCTTIHYNYMCNSSCMGGMNRRPILTIITLEDSSGNLLGRNSFEVR
-VCACPGRDRRTEEENLRKKGEPHHELPPGSTKRALPNNT
-```
-
-Sequência completa da p53 (UNIPROT ID: P04637):
+Sequência FASTA completa da p53 (UNIPROT ID: P04637), que utilizaremos nas atividades práticas de modelagem estrutural:
 
 ```bash
 >sp|P04637|P53_HUMAN Cellular tumor antigen p53 OS=Homo sapiens OX=9606 GN=TP53
@@ -217,18 +230,7 @@ PGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPG
 GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 ```
 
-| Ferramenta | URL | Função |
-|------------|-----|---------|
-| **ProtParam** | <a href="https://web.expasy.org/protparam/" target="_blank">https://web.expasy.org/protparam/</a> | Parâmetros físico-químicos |
-| **SignalP 6.0** | <a href="https://services.healthtech.dtu.dk/services/SignalP-6.0/" target="_blank">https://services.healthtech.dtu.dk/services/SignalP-6.0/</a> | Predição de peptídeos de sinal |
-| **InterProScan** | <a href="https://www.ebi.ac.uk/interpro/search/sequence/" target="_blank">https://www.ebi.ac.uk/interpro/search/sequence/</a> | Identificação de domínios e famílias |
-| **WoLFPSORT** | <a href="https://wolfpsort.hgc.jp/" target="_blank">https://wolfpsort.hgc.jp/</a> | Identificação de localização celular |
-
-> Agora vamos discutir os resultados obtidos e suas implicações biológicas? 
-
 ---
-
-### Módulo 2: Modelagem por Homologia e Threading
 
 **Objetivos:**
 - Construir modelos da p53 utilizando diferentes abordagens.
@@ -266,6 +268,21 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 ---
 
 ### Módulo 3: Predição por Deep Learning (AF2, AF3 e ESM3)
+
+Sequência FASTA completa da p53 (UNIPROT ID: P04637), que utilizaremos nas atividades práticas de modelagem estrutural:
+
+```bash
+>sp|P04637|P53_HUMAN Cellular tumor antigen p53 OS=Homo sapiens OX=9606 GN=TP53
+MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGP
+DEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLSSSVPSQKTYQGSYGFRLGFLHSGTAK
+SVTCTYSPALNKMFCQLAKTCPVQLWVDSTPPPGTRVRAMAIYKQSQHMTEVVRRCPHHE
+RCSDSDGLAPPQHLIRVEGNLRVEYLDDRNTFRHSVVVPYEPPEVGSDCTTIHYNYMCNS
+SCMGGMNRRPILTIITLEDSSGNLLGRNSFEVRVCACPGRDRRTEEENLRKKGEPHHELP
+PGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPG
+GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
+```
+
+---
 
 > Vamos discutir como esses modelos funcionam mais uma vez, focando em suas arquiteturas baseadas em aprendizado profundo?
 
