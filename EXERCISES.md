@@ -47,6 +47,21 @@ A **p53** (derivada do gene *TP53*) é um dos mais importantes supressores de tu
 
 ### Sequência FASTA
 
+Qual usaremos nas atividades práticas? Vamos escolher juntos...
+
+<figure class="figure-center">
+  <img src="imgs/alinhamento.png" alt="XXXXX" width="1000">
+</figure>
+
+Sequências FASTA do domínio ligador de DNA da p53, cristalizado por X-ray (PDB ID: 1TUP):
+
+```bash
+>1TUP_3|Chains C[auth A], D[auth B], E[auth C]|PROTEIN (P53 TUMOR SUPPRESSOR )|Homo sapiens (9606)
+SSSVPSQKTYQGSYGFRLGFLHSGTAKSVTCTYSPALNKMFCQLAKTCPVQLWVDSTPPPGTRVRAMAIYKQSQHMTEVVRRCPHHERCSDSDGLAPPQHLIRVEGNLRVEYLDDRNTFRHSVVVPYEPPEVGSDCTTIHYNYMCNSSCMGGMNRRPILTIITLEDSSGNLLGRNSFEVRVCACPGRDRRTEEENLRKKGEPHHELPPGSTKRALPNNT
+```
+
+Sequência completa da p53 (UNIPROT ID: P04637):
+
 ```bash
 sp|P04637|P53_HUMAN Cellular tumor antigen p53 OS=Homo sapiens OX=9606 GN=TP53 PE=1 SV=4
 MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGP
@@ -57,8 +72,6 @@ SCMGGMNRRPILTIITLEDSSGNLLGRNSFEVRVCACPGRDRRTEEENLRKKGEPHHELP
 PGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPG
 GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 ```
-
-
 ---
 
 ## Pré-requisitos
@@ -122,7 +135,20 @@ Na página de downloads da sua conta Schrödinger, baixe o instalador apropriado
 
 #### Ferramentas de Predição
 
-Utilize a sequência FASTA da p53 nas seguintes ferramentas.
+Apqnas para relembrar...
+
+<figure class="figure-center">
+  <img src="imgs/alinhamento.png" alt="XXXXX" width="1000">
+</figure>
+
+Sequências FASTA do domínio ligador de DNA da p53, cristalizado por X-ray (PDB ID: 1TUP):
+
+```bash
+>1TUP_3|Chains C[auth A], D[auth B], E[auth C]|PROTEIN (P53 TUMOR SUPPRESSOR )|Homo sapiens (9606)
+SSSVPSQKTYQGSYGFRLGFLHSGTAKSVTCTYSPALNKMFCQLAKTCPVQLWVDSTPPPGTRVRAMAIYKQSQHMTEVVRRCPHHERCSDSDGLAPPQHLIRVEGNLRVEYLDDRNTFRHSVVVPYEPPEVGSDCTTIHYNYMCNSSCMGGMNRRPILTIITLEDSSGNLLGRNSFEVRVCACPGRDRRTEEENLRKKGEPHHELPPGSTKRALPNNT
+```
+
+Sequência completa da p53 (UNIPROT ID: P04637):
 
 ```bash
 sp|P04637|P53_HUMAN Cellular tumor antigen p53 OS=Homo sapiens OX=9606 GN=TP53 PE=1 SV=4
@@ -193,7 +219,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 > O **pLDDT (predicted Local Distance Difference Test)** é uma métrica de confiança por resíduo (0-100) que avalia a precisão da predição da estrutura *local* ao redor de cada aminoácido, sendo alta para regiões bem dobradas e baixa para regiões desordenadas.
 
-> O **PAE (Predicted Aligned Error)** é uma métrica inter-resíduo (medida em Ångströms, $\AA$) que avalia a confiança na *orientação relativa* e global entre diferentes domínios ou pares de resíduos, indicando se a montagem 3D geral está correta.
+> O **PAE (Predicted Aligned Error)** é uma métrica inter-resíduo (medida em Ångströms) que avalia a confiança na *orientação relativa* e global entre diferentes domínios ou pares de resíduos, indicando se a montagem 3D geral está correta.
 
 > Em resumo, o pLDDT mede a confiança no dobramento *local* de um resíduo, enquanto o PAE mede a confiança na posição *global* desse resíduo em relação a todos os outros na estrutura.
 
