@@ -291,7 +291,6 @@ A iniciação da tradução em eucariotos depende da montagem coordenada do **co
 
 Simultaneamente, **a proteína PABP (Poly-A Binding Protein) se liga à cauda poli-A 3' do mRNA**, estabelecendo uma comunicação entre as duas extremidades do transcrito através de interações diretas entre PABP e eIF4G, promovendo a circularização do mRNA. **Este complexo eIF4F então recruta a subunidade ribossômica 40S (pré-carregada com eIF3, eIF1, eIF1A e Met-tRNAi)** através de interações entre eIF4G e eIF3, posicionando o mRNA no canal de ligação da **subunidade 40S para iniciar a varredura até o reconhecimento do códon de iniciação AUG**.
 
-
 <figure class="figure-center">
   <img src="imgs/eif4f_a.png" alt="XXXXX" width="700">
 </figure>
