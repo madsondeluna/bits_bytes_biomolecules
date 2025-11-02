@@ -295,7 +295,7 @@ Simultaneamente, **a proteína PABP (Poly-A Binding Protein) se liga à cauda po
   <img src="imgs/eif4f_a.png" alt="XXXXX" width="700">
 </figure>
 
-> Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
+> Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
 
 **Quando a subunidade 40S localiza o AUG, ocorre uma transição conformacional para o estado fechado,** com o **Met-tRNAi firmemente pareado no sítio P,** sinalizando para o **recrutamento da subunidade 60S** que catalisa a formação do ribossomo **80S** completo e o início efetivo da elongação. Entretanto, **a tradução não ocorre por um único ribossomo isolado**, mas sim através da formação de **polissomos**, onde **múltiplos ribossomos se enfileiram ao longo do mesmo mRNA**.
 
@@ -303,7 +303,7 @@ Simultaneamente, **a proteína PABP (Poly-A Binding Protein) se liga à cauda po
   <img src="imgs/eif4f_b.png" alt="XXXXX" width="800">
 </figure>
 
-> Biologia Molecular da Célula. Bruce, A., et. al., 2017.
+> Fonte: Biologia Molecular da Célula. Bruce, A., et. al., 2017.
 
 **A tradução ocorre de forma circular devido à interação entre eIF4G (ligado ao cap 5') e PABP (ligado à cauda poli-A 3')**, criando uma **topologia em anel** do mRNA que facilita a reiniciação ribossômica e coordena espacialmente o início e o término da tradução, permitindo que múltiplos ribossomos percorram ciclicamente a mesma molécula de mRNA de maneira extraordinariamente eficiente.
 
@@ -374,9 +374,11 @@ Um exemplo claro é um **plasmócito** (célula B ativada) produzindo **anticorp
 
 Ao abordar as interações entre aminoácidos, a ligação primordial e mais forte, que estabelece a estrutura primária de uma proteína, é a ligação peptídica. Esta ligação covalente é formada pela união do grupo α-carboxila de um aminoácido ao grupo α-amino do aminoácido subsequente, caracterizando uma reação de condensação (ou desidratação) na qual uma molécula de água (H₂O) é liberada.
 
-[MERELORAR ISSO AQUI]
+<figure class="figure-center">
+  <img src="imgs/eif4f_a.png" alt="XXXXX" width="700">
+</figure>
 
-[COLOCAR UMA IMAGEM DA REACAO QUIMICA]
+> Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
 
 <br>
 
@@ -388,7 +390,7 @@ Ao abordar as interações entre aminoácidos, a ligação primordial e mais for
 
 <br>
 
-A ligação peptídica sob outra óptica. 
+A ligação peptídica sob outra óptica: mostrando as possibilidades angulares e de rotação em torno da ligação peptídica, que é essencialmente planar devido à sua natureza parcial de dupla ligação (ressonância eletrônica entre o par de elétrons do nitrogênio e a carbonila, conferindo aproximadamente 40% de caráter de dupla ligação), resultando em uma conformação rígida e plana. As rotações permitidas ocorrem principalmente em torno das ligações N-Cα (ângulo φ, phi) e Cα-C (ângulo ψ, psi), que são cruciais para a formação das estruturas secundárias das proteínas, como α-hélices e folhas β.
 
 <br>
 
@@ -397,6 +399,14 @@ A ligação peptídica sob outra óptica.
 </figure>
 
 > Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
+
+E assim ocorre a polimerização dos aminoácidos em cadeias polipeptídicas, que posteriormente se dobram em estruturas tridimensionais complexas para formar proteínas funcionais. Como podemos ver na ilustração abaixo, mostrando a porção C-terminal de uma cadeia polipeptídica em crescimento, onde o próximo aminoácido a ser adicionado está posicionado para formar a ligação peptídica com o grupo carboxila do aminoácido anterior, e suas respectivas cadeias laterais (R) estão orientadas para fora, prontas para interagir com o ambiente circundante ou com outras partes da proteína, de acordo com sua natureza fisíco-química.
+
+<figure class="figure-center">
+  <img src="imgs/crescimento.png" alt="XXXXX" width="900">
+</figure>
+
+> Fonte: Biologia Molecular da Célula. Bruce, A., et. al., 2017.
 
 ---
 
