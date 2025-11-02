@@ -370,15 +370,9 @@ Um exemplo claro é um **plasmócito** (célula B ativada) produzindo **anticorp
 
 ---
 
-### Como cada monômero de aminoácido se conecta ao próximo na cadeia polipeptídica? As proteínas são polímeros biológicos formados por longas cadeias de aminoácidos ligados entre si por ligações peptídicas
+## Monômeros e Polímeros: Aminoácidos e Proteínas
 
 Ao abordar as interações entre aminoácidos, a ligação primordial e mais forte, que estabelece a estrutura primária de uma proteína, é a ligação peptídica. Esta ligação covalente é formada pela união do grupo α-carboxila de um aminoácido ao grupo α-amino do aminoácido subsequente, caracterizando uma reação de condensação (ou desidratação) na qual uma molécula de água (H₂O) é liberada.
-
-<figure class="figure-center">
-  <img src="imgs/eif4f_a.png" alt="XXXXX" width="700">
-</figure>
-
-> Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
 
 <br>
 
@@ -410,7 +404,7 @@ E assim ocorre a polimerização dos aminoácidos em cadeias polipeptídicas, qu
 
 ---
 
-### Propriedades dos Aminoácidos Canônicos
+## Propriedades dos Aminoácidos Canônicos
 
 <p align="justify">
   <img src="imgs/aas.png" alt="Amino acids width="1000">
@@ -431,7 +425,7 @@ E assim ocorre a polimerização dos aminoácidos em cadeias polipeptídicas, qu
 
 ---
 
-### Interações Intermoleculares 
+## Interações Intermoleculares 
 
 <figure class="figure-center">
   <img src="imgs/aainteractions.png" alt="XXXXX" width="700">
