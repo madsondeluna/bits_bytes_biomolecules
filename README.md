@@ -285,6 +285,58 @@ As **modificações pós-traducionais (PTMs)** são alterações químicas que o
 
 ---
 
+## A Tradução em Ação: É um Grande Complexo em Ação
+
+A iniciação da tradução em eucariotos depende da montagem coordenada do **complexo eIF4F** e do recrutamento sequencial das subunidades ribossômicas, culminando em um processo circular altamente organizado. O **complexo eIF4F** é formado inicialmente quando **eIF4G** se liga a **eIF4A**, e este **complexo eIF4G-eIF4A** subsequentemente recruta **eIF4E**, que reconhece o **cap 5' do mRNA**, **estabelecendo o complexo eIF4F completo na extremidade do transcrito.**
+
+Simultaneamente, **a proteína PABP (Poly-A Binding Protein) se liga à cauda poli-A 3' do mRNA**, estabelecendo uma comunicação entre as duas extremidades do transcrito através de interações diretas entre PABP e eIF4G, promovendo a circularização do mRNA. **Este complexo eIF4F então recruta a subunidade ribossômica 40S (pré-carregada com eIF3, eIF1, eIF1A e Met-tRNAi)** através de interações entre eIF4G e eIF3, posicionando o mRNA no canal de ligação da **subunidade 40S para iniciar a varredura até o reconhecimento do códon de iniciação AUG**.
+
+
+<figure class="figure-center">
+  <img src="imgs/eif4f_A.png" alt="XXXXX" width="800">
+</figure>
+
+> Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
+
+**Quando a subunidade 40S localiza o AUG, ocorre uma transição conformacional para o estado fechado,** com o **Met-tRNAi firmemente pareado no sítio P,** sinalizando para o **recrutamento da subunidade 60S** que catalisa a formação do ribossomo **80S** completo e o início efetivo da elongação. Entretanto, **a tradução não ocorre por um único ribossomo isolado**, mas sim através da formação de **polissomos**, onde **múltiplos ribossomos se enfileiram ao longo do mesmo mRNA**.
+
+<figure class="figure-center">
+  <img src="imgs/eif4f_b.png" alt="XXXXX" width="800">
+</figure>
+
+> Biologia Molecular da Célula. Bruce, A., et. al., 2017.
+
+**A tradução ocorre de forma circular devido à interação entre eIF4G (ligado ao cap 5') e PABP (ligado à cauda poli-A 3')**, criando uma **topologia em anel** do mRNA que facilita a reiniciação ribossômica e coordena espacialmente o início e o término da tradução, permitindo que múltiplos ribossomos percorram ciclicamente a mesma molécula de mRNA de maneira extraordinariamente eficiente.
+
+---
+
+### Os Ribossomos Localizam as Cicatrizes do Splicing Durante a Tradução e as RBP Ligadas a essas Cicatrizes, Funcionando como Marcadores de Qualidade do mRNA
+
+O primeiro ribossomo que reconhece o AUG inicia a tradução e, **durante sua progressão, encontra as cicatrizes moleculares deixadas pelo splicing—os complexos de junção exon-exon (EJCs)—depositados aproximadamente 24 nucleotídeos upstream de cada junção exon-exon**. Estes **EJCs**, estáo geralmente **ligados a proteínas chamadas de RBPs (Proteínas Ligaoras de RNA)** (especialmente as eIF4A3, Y14 & MAGOH), que servem como **marcadores de controle de qualidade** indicando que aquele mRNA foi processado corretamente, e são removidos progressivamente pelos ribossomos tradutores durante a primeira ronda de tradução.
+
+
+<figure class="figure-center">
+  <img src="imgs/ejc.png" alt="XXXXX" width="600">
+</figure>
+
+> Marcadores de Qualidade nas Junções Exon-Exon. Os EJCs são depositados nas junções exon-exon e ligados progressivamente por proteínas RBP (eIF4A3, Y14, MAGOH), funcionando como selos de autenticidade que indicam ao ribossomo que o mRNA foi processado corretamente no núcleo; durante a tradução, o ribossomo remove estes complexos, garantindo que apenas mRNAs plenamente processados sejam traduzidos em proteínas. Fonte: Hauer, C., et al., 2017.
+
+---
+
+## Um Zoom No Ribossomo: A Fábrica de Proteínas da Célula
+
+> Mas lembrem que para que o ribossomo reconheça o códon de iniciaçao (AUG) -> MET, ele precisa de toda uma maquinaria de fatores de iniciação (eIFs) e do tRNA iniciador (tRNA-Met) dispónivel na fração polirribossomal, é um grande complexo em ação que funciona como um scafoldold para que a tradução ocorra de forma eficiente e regulada.
+
+No contexto biológico da síntese proteica (tradução), este processo é energeticamente custoso, consumindo energia (na forma de ATP e GTP) para a ativação dos aminoácidos. Esta ativação ocorre através da ligação covalente entre cada aminoácido e seu tRNA cognato (complementar), catalisada pelas aminoacil-tRNA sintetases, enzimas altamente específicas que reconhecem tanto o aminoácido quanto seu tRNA correspondente. Uma vez formado o aminoacil-tRNA, este complexo é direcionado ao ribossomo para participar da tradução. A formação da ligação peptídica em si é catalisada pelo ribossomo, especificamente pela atividade peptidil transferase, uma função catalítica intrínseca ao RNA ribossômico (rRNA) localizado na subunidade maior. Este mecanismo transfere a cadeia polipeptídica crescente do tRNA localizado no sítio P (Peptidil) para o grupo amino do novo aminoácido que está ligado ao seu tRNA no sítio A (Aminoacil), permitindo assim a elongação da cadeia polipeptídica.
+
+<figure class="figure-center">
+  <img src="imgs/ribo.png" alt="XXXXX" width="700">
+</figure>
+
+> Fonte: Amy McDermott, 2024.
+
+---
+
 ## Exemplo: Linfócito Maduro (Mínima Atividade de Tradução)
 
 <figure class="figure-center">
@@ -319,19 +371,13 @@ Um exemplo claro é um **plasmócito** (célula B ativada) produzindo **anticorp
 
 ---
 
-### Como Surgem as Proteínas?
-
-No contexto biológico da síntese proteica (tradução), este processo é energeticamente custoso, consumindo energia (na forma de ATP e GTP) para a ativação dos aminoácidos. Esta ativação ocorre através da ligação covalente entre cada aminoácido e seu tRNA cognato (complementar), catalisada pelas aminoacil-tRNA sintetases, enzimas altamente específicas que reconhecem tanto o aminoácido quanto seu tRNA correspondente. Uma vez formado o aminoacil-tRNA, este complexo é direcionado ao ribossomo para participar da tradução. A formação da ligação peptídica em si é catalisada pelo ribossomo, especificamente pela atividade peptidil transferase, uma função catalítica intrínseca ao RNA ribossômico (rRNA) localizado na subunidade maior. Este mecanismo transfere a cadeia polipeptídica crescente do tRNA localizado no sítio P (Peptidil) para o grupo amino do novo aminoácido que está ligado ao seu tRNA no sítio A (Aminoacil), permitindo assim a elongação da cadeia polipeptídica.
-
-<figure class="figure-center">
-  <img src="imgs/ribo.png" alt="XXXXX" width="700">
-</figure>
-
-> Fonte: Amy McDermott, 2024.
-
-<br>
+### Como cada monômero de aminoácido se conecta ao próximo na cadeia polipeptídica? As proteínas são polímeros biológicos formados por longas cadeias de aminoácidos ligados entre si por ligações peptídicas
 
 Ao abordar as interações entre aminoácidos, a ligação primordial e mais forte, que estabelece a estrutura primária de uma proteína, é a ligação peptídica. Esta ligação covalente é formada pela união do grupo α-carboxila de um aminoácido ao grupo α-amino do aminoácido subsequente, caracterizando uma reação de condensação (ou desidratação) na qual uma molécula de água (H₂O) é liberada.
+
+[MERELORAR ISSO AQUI]
+
+[COLOCAR UMA IMAGEM DA REACAO QUIMICA]
 
 <br>
 
