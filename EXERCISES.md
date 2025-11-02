@@ -305,29 +305,29 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 ## Referências Teórico (Atividades Práticas)
 
 ### Bases de Dados
-- UniProt: <a href="https://www.uniprot.org/" target="_blank">https://www.uniprot.org/</a>
-- RCSB PDB: <a href="https://www.rcsb.org/" target="_blank">https://www.rcsb.org/</a>
+- <a href="https://www.uniprot.org/" target="_blank" rel="noopener noreferrer">UniProt</a>
+- <a href="https://www.rcsb.org/" target="_blank" rel="noopener noreferrer">RCSB PDB</a>
 
 ### Ferramentas de Predição
-- ExPASy ProtParam
-- SignalP 6.0
-- InterProScan
-- PROSITE
+- <a href="https://web.expasy.org/protparam/" target="_blank" rel="noopener noreferrer">ExPASy ProtParam</a>
+- <a href="https://services.healthtech.dtu.dk/service.php?SignalP-6.0" target="_blank" rel="noopener noreferrer">SignalP 6.0</a>
+- <a href="https://www.ebi.ac.uk/interpro/search/sequence/" target="_blank" rel="noopener noreferrer">InterProScan</a>
+- <a href="https://prosite.expasy.org/" target="_blank" rel="noopener noreferrer">PROSITE</a>
 
 ### Modelagem Estrutural
-- SWISS-MODEL
-- I-TASSER
-- AlphaFold 2 (ColabFold)
-- AlphaFold 3 Server
-- ESM3
+- <a href="https://swissmodel.expasy.org/" target="_blank" rel="noopener noreferrer">SWISS-MODEL</a>
+- <a href="https://zhanggroup.org/I-TASSER/" target="_blank" rel="noopener noreferrer">I-TASSER</a>
+- <a href="https://colabfold.com/" target="_blank" rel="noopener noreferrer">AlphaFold 2 (ColabFold)</a>
+- <a href="https://alphafoldserver.com/" target="_blank" rel="noopener noreferrer">AlphaFold 3 Server</a>
+- <a href="https://esm.metademolab.com/esm3" target="_blank" rel="noopener noreferrer">ESM3</a>
 
 ### Validação
-- MolProbity/SAVES
-- QMEAN
-- ProSA-web
+- <a href="http://molprobity.biochem.duke.edu/" target="_blank" rel="noopener noreferrer">MolProbity</a> / <a href="https://saves.mbi.ucla.edu/" target="_blank" rel="noopener noreferrer">SAVES</a>
+- <a href="https://swissmodel.expasy.org/qmean/" target="_blank" rel="noopener noreferrer">QMEAN</a>
+- <a href="https://prosa.services.came.sbg.ac.at/prosa.php" target="_blank" rel="noopener noreferrer">ProSA-web</a>
 
 ### Visualização
-- PyMOL (Schrödinger)
+- <a href="https://pymol.org/2/" target="_blank" rel="noopener noreferrer">PyMOL (Schrödinger)</a>
 
 ---
 
