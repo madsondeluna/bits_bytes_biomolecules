@@ -333,7 +333,8 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 ## Licença
 
-Material educacional - Uso acadêmico.
+Uso extriitamente educacional e acadêmico. Proibida a utilização comercial sem autorização prévia dos autores.
+Para qualquer outro tipo de uso, entre em contato com os autores pelos e-mails fornecidos acima.
 
 ---
 
