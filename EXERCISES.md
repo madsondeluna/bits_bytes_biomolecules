@@ -219,7 +219,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 ---
 
-### Módulo 3: Predição por Deep Learning (AF2, AF3 e ESM)
+### Módulo 3: Predição por Deep Learning (AF2, AF3 e ESM3)
 
 > Vamos discutir como esses modelos funcionam mais uma vez, focando em suas arquiteturas baseadas em aprendizado profundo?
 
@@ -239,7 +239,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 |--------|-----|-----------|
 | **ColabFold** | <a href="https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb" target="_blank">AlphaFold2 Notebook</a> | Baseado em AlphaFold2 (Google Colab) |
 | **AlphaFold 3 Server** | <a href="https://alphafoldserver.com/" target="_blank">https://alphafoldserver.com/</a> | Versão mais recente do AlphaFold |
-| **ESMFold** | <a href="https://forge.evolutionaryscale.ai/" target="_blank">https://forge.evolutionaryscale.ai/</a> | Baseado em Modelo de Linguagem de Proteína e Dados Evolutivos  |
+| **ESM3** | <a href="https://forge.evolutionaryscale.ai/" target="_blank">https://forge.evolutionaryscale.ai/</a> | Baseado em Modelo de Linguagem de Proteína e Dados Evolutivos  |
 
 #### Métricas de Confiança
 
@@ -274,9 +274,9 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 **Modelos para Comparação:**
 - SWISS-MODEL (Homologia)
 - I-TASSER (Threading)
-- ColabFold (AlphaFold2)
+- AlphaFold 2 (ColabFold)
 - AlphaFold 3 Server
-- ESMFold
+- ESM3
 - **1TUP** (Estrutura experimental de referência - X-ray).
 
 ---
@@ -315,9 +315,9 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 ### Modelagem Estrutural
 - SWISS-MODEL
 - I-TASSER
-- ColabFold
+- AlphaFold 2 (ColabFold)
 - AlphaFold 3 Server
-- ESMFold
+- ESM3
 
 ### Validação
 - MolProbity/SAVES
