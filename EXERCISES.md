@@ -250,11 +250,13 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 ### Módulo 4: Análise Comparativa, Validação e Visualização
 
-> Tamos modelos gerados por homologia, threading e deep learning. Agora vamos baixar um modelos experimental da p53 para comparar todos os modelos gerados. Lembrando que a extrutura experimental sempre será o nosso padrão-ouro para comparação.
+* Tamos modelos gerados por homologia, threading e deep learning. Agora vamos baixar um modelos experimental da p53 para comparar todos os modelos gerados. Lembrando que a extrutura experimental sempre será o nosso padrão-ouro para comparação.
 
-> Baixar a estrutura experimental da p53 (PDB ID: 1TUP) do RCSB PDB para servir como referência na comparação dos modelos preditos. Link: <a href="https://www.rcsb.org/structure/1tup" target="_blank">https://www.rcsb.org/structure/1tup</a>
+* Baixe a estrtura limpa e pronta para análise (sem água, ligantes ou íons) aqui: <a href="https://drive.google.com/file/d/1p0liOriRtvaYrY2CvTDCWpMGHIO1zfoq/view?usp" target="_blank">Baixe aqui o PDB</a>
 
-> Baixe a estrtura limpa e pronta para análise (sem água, ligantes ou íons) aqui: ADD LINK DO DRIVE 
+> Sugiro fortemente que utilize este arquivo para evitar problemas de formatação ou erros por conta de heteroátomos.
+
+> Opicional: Baixar a estrutura experimental da p53 (PDB ID: 1TUP) do RCSB PDB para servir como referência na comparação dos modelos preditos. Link: <a href="https://www.rcsb.org/structure/1tup" target="_blank">https://www.rcsb.org/structure/1tup</a>
 
 **Objetivos:**
 - Comparar todos os modelos gerados.
