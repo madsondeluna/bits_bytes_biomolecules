@@ -293,7 +293,7 @@ Simultaneamente, **a proteína PABP (Poly-A Binding Protein) se liga à cauda po
 
 
 <figure class="figure-center">
-  <img src="imgs/eif4f_A.png" alt="XXXXX" width="800">
+  <img src="imgs/eif4f_a.png" alt="XXXXX" width="700">
 </figure>
 
 > Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
