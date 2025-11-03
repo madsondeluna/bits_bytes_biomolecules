@@ -41,7 +41,7 @@ A **p53** (derivada do gene *TP53*) é um dos mais importantes supressores de tu
 | Informação | Valor/Link |
 |------------|------------|
 | **ID UniProt** | <a href="https://www.uniprot.org/uniprotkb/P04637/" target="_blank">P04637 (WT)</a> |
-| **PDB Experimental** | <a href="https://www.rcsb.org/structure/1tup" target="_blank">1TUP (DNA Binding Domain)</a> (Domínio central complexado com DNA) |
+| **PDB Experimental** | <a href="https://www.rcsb.org/structure/1tup" target="_blank">1TUP (DNA Binding Domain)</a> |
 | **Massa Molecular** | ~43.7 kDa (aparece como 53 kDa em SDS-PAGE) |
 | **Domínios** | 7 domínios funcionais (TAD, AD2, PRD, DBD, NLS, OD, CTD) |
 
