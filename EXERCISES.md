@@ -193,7 +193,7 @@ PGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPG
 GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 ```
 
-**Mudança na posição 175: R → H** (linha 3, coluna 18)
+**Mudança na posição 175: R → H** 
 
 ### R248Q (Hotspot - Contato Direto com DNA)
 
@@ -208,7 +208,7 @@ PGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPG
 GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 ```
 
-**Mudança na posição 248: R → Q** (linha 5, coluna 8)
+**Mudança na posição 248: R → Q** 
 
 ### Y220C (Cavidade Hidrofóbica)
 
@@ -223,7 +223,7 @@ PGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPG
 GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 ```
 
-**Mudança na posição 220: Y → C** (linha 4, coluna 24)
+**Mudança na posição 220: Y → C** 
 
 ### R273H (Hotspot - Contato Direto com DNA)
 
@@ -238,7 +238,7 @@ PGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPG
 GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 ```
 
-**Mudança na posição 273: R → H** (linha 5, coluna 28)
+**Mudança na posição 273: R → H** 
 
 ---
 
