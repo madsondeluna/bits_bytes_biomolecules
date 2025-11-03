@@ -382,13 +382,13 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 # Módulo 4: Análise Comparativa, Validação e Visualização
 
-* Tamos modelos gerados por homologia, threading e deep learning. Agora vamos baixar um modelos experimental da p53 para comparar todos os modelos gerados. Lembrando que a extrutura experimental sempre será o nosso padrão-ouro para comparação.
+* Agora que temos os modelos gerados por homologia, threading e deep learning. Vamos baixar um modelos experimental, obtido por cristalografia de x-ray, da p53 para comparar os modelos teóricos. Lembrando que a extrutura experimental sempre será o nosso padrão-ouro de comparação.
 
-* Baixe a estrtura limpa e pronta para análise (sem água, ligantes ou íons) aqui: <a href="https://drive.google.com/file/d/1p0liOriRtvaYrY2CvTDCWpMGHIO1zfoq/view?usp" target="_blank">Baixe aqui o PDB</a>
+**Baixe aqui o arquivo PDB da estrutura cristalina da p53 (PDB ID: 1TUP) para utilizar como referência na comparação dos modelos preditos:** <a href="https://drive.google.com/file/d/1p0liOriRtvaYrY2CvTDCWpMGHIO1zfoq/view?usp=sharing" target="_blank">1TUP_cleaned.pdb</a>.
 
 > Sugiro fortemente que utilize este arquivo para evitar problemas de formatação ou erros por conta de heteroátomos.
 
-> Opicional: Baixar a estrutura experimental da p53 (PDB ID: 1TUP) do RCSB PDB para servir como referência na comparação dos modelos preditos. Link: <a href="https://www.rcsb.org/structure/1tup" target="_blank">https://www.rcsb.org/structure/1tup</a>
+> Opicional: Baixar a estrutura experimental da p53 (PDB ID: 1TUP) do RCSB PDB para servir como referência na comparação dos modelos preditos. No entanto, além da proteína, o arquivo possuí íons, águas e ligantes. Link: <a href="https://www.rcsb.org/structure/1tup" target="_blank">https://www.rcsb.org/structure/1tup</a>
 
 **Objetivos:**
 - Comparar todos os modelos gerados.
