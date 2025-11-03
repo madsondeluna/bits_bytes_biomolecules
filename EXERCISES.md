@@ -124,6 +124,8 @@ As ferramentas abaixo serão utilizadas para analisar propriedades físico-quím
 
 **Alinhamento 1TUP vs. Sequência Completa (WT):** Temos as sequências FASTA do domíde ligação ao DNA da p53 e sua sequenência completa (WT), e, juntos, executaremos o alinhamento múltiplo no <a href="https://www.ebi.ac.uk/jdispatcher/msa/clustalo" target="_blank" rel="noopener noreferrer">Clustal Omega</a>. Analise quais regiões se alinham diretamente, discuta as diferenças e vamos entender as implicações biológicas dessas variações. Ter apenas "uma parte" da proteína pode ser suficiente para algumas análises? Isso depende do contexto biológico? 
 
+> Baixe aqui o arquivo multiFASTA com as 2 sequências: <a href="https://drive.google.com/file/d/1qILbrqhwLmvImiNK1Wg469DPcJgOx047/view?usp=sharing" target="_blank">multiFASTA_p53_1TUP_vs_WT.fasta</a>
+
 > Sequências FASTA do domínio ligador de DNA da p53, cristalizado por X-ray (PDB ID: 1TUP):
 
 ```bash
