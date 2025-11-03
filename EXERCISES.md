@@ -26,7 +26,7 @@ Eestrutura tridimensional da p53, em complexo com uma estrtura de DNA. As subuni
 
 ---
 
-## Sobre a Proteína p53
+# Sobre a Proteína p53
 
 A **p53** (derivada do gene *TP53*) é um dos mais importantes supressores de tumor, frequentemente referida como **"a guardiã do genoma"**. Esta proteína é crucial para a regulação do ciclo celular e prevenção do câncer.
 
@@ -90,7 +90,7 @@ Na página de downloads da sua conta Schrödinger, baixe o instalador apropriado
 
 ---
 
-## Módulos Práticos
+# Módulos Práticos
 
 ### Módulo 1: Análise de Sequências e Propriedades
 
@@ -147,7 +147,7 @@ PGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPG
 GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 ```
 
-# Perguntas:
+### Perguntas:
 
 - Em quais trechos o domínio 1TUP se alinha diretamente com a sequência completa e quais regiões ficam sem correspondência?
 - Os limites N- e C-terminais do domínio cristalizado aparecem contíguos no alinhamento ou revelam lacunas/extensions relevantes para estabilidade?
@@ -156,7 +156,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 ---
 
-#Atividade 2 
+# Atividade 2 
 
 
 > **Atividade (EXTRA):** Temos 5 sequências da p53 (1 referência *wild-type* e 4 variantes associadas a neoplasias) e, juntos, executaremos o alinhamento múltiplo no <a href="https://www.ebi.ac.uk/Tools/msa/clustalo/" target="_blank" rel="noopener noreferrer">Clustal Omega</a>. Analise quais substituições coincidem com domínios funcionais críticos, discuta como essas mudanças podem impactar estabilidade e interação com DNA e, por fim, decidam coletivamente qual variante seguirá para aprofundamento nas etapas práticas.
@@ -213,16 +213,7 @@ FRRSSQCVEGEDQQDILRVHFVHEFVPEIAAVEPWKCCSTPPPVSGALPPAQKAVQVKVKALPDA
 QFEVVHSLAKWKRQTLGWHMFPEVYIPEEVQQ
 ```
 
-# Perguntas:
-
-- Em quais posições do alinhamento múltiplo surgem substituições e essas posições são conservadas na sequência *wild-type*?
-- As mutações identificadas representam trocas conservativas ou drásticas em termos de propriedades físico-químicas (ex.: troca de polar para hidrofóbico)?
-- Alguma das substituições cria ou elimina motivos funcionais conhecidos (ex.: sítios de fosforilação, ligações a DNA) sugeridos pelo alinhamento?
-- Comparando as quatro variantes mutadas entre si, existe um padrão recorrente de substituições que aponte para um hotspot funcional?
-
----
-
-## Tabela das Mutações Analisadas
+**Tabela das Mutações Analisadas**
 
 | Mutação | Posição | AA Original | AA Mutado | Tipo | Frequência | Mecanismo Molecular |
 |---------|---------|-------------|-----------|------|-----------|-------------------|
@@ -231,9 +222,17 @@ QFEVVHSLAKWKRQTLGWHMFPEVYIPEEVQQ
 | Y220C | 220 | Tirosina (Y) | Cisteína (C) | Missense | Alta (2-5%) | Adjacente à interface de ligação ao DNA |
 | R273H | 273 | Arginina (R) | Histidina (H) | Missense | Muito Alta (5-10%) | Contato direto com DNA; Major hotspot |
 
+
+### Perguntas:
+
+- Em quais posições do alinhamento múltiplo surgem substituições e essas posições são conservadas na sequência *wild-type*?
+- As mutações identificadas representam trocas conservativas ou drásticas em termos de propriedades físico-químicas (ex.: troca de polar para hidrofóbico)?
+- Alguma das substituições cria ou elimina motivos funcionais conhecidos (ex.: sítios de fosforilação, ligações a DNA) sugeridos pelo alinhamento?
+- Comparando as quatro variantes mutadas entre si, existe um padrão recorrente de substituições que aponte para um hotspot funcional?
+
 ---
 
-### Módulo 2: Modelagem por Homologia e Threading
+# Módulo 2: Modelagem por Homologia e Threading
 
 Sequência FASTA completa da p53 (UNIPROT ID: P04637), que utilizaremos nas atividades práticas de modelagem estrutural:
 
@@ -254,7 +253,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 - Construir modelos da p53 utilizando diferentes abordagens.
 - Analisar alinhamentos sequência-molde e métricas de confiança.
 
-#### Modelagem por Homologia
+### Modelagem por Homologia
 
 **Plataforma:** SWISS-MODEL  
 **URL:** <a href="https://swissmodel.expasy.org/" target="_blank">https://swissmodel.expasy.org/</a>
@@ -263,7 +262,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 - Avaliar alinhamentos sequência-molde
 - Examinar cobertura e identidade de sequência
 
-#### Modelagem por Threading/Ab Initio
+### Modelagem por Threading/Ab Initio
 
 **Plataforma:** I-TASSER  
 **URL:** <a href="https://zhanggroup.org/I-TASSER/" target="_blank">https://zhanggroup.org/I-TASSER/</a>
@@ -285,7 +284,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 ---
 
-### Módulo 3: Predição por Deep Learning (AF2, AF3 e ESM3)
+# Módulo 3: Predição por Deep Learning (AF2, AF3 e ESM3)
 
 Sequência FASTA completa da p53 (UNIPROT ID: P04637), que utilizaremos nas atividades práticas de modelagem estrutural:
 
@@ -314,7 +313,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 > Em resumo, o pLDDT mede a confiança no dobramento *local* de um resíduo, enquanto o PAE mede a confiança na posição *global* desse resíduo em relação a todos os outros na estrutura.
 
-#### Plataformas de Deep Learning
+### Plataformas de Deep Learning
 
 | Método | URL | Descrição |
 |--------|-----|-----------|
@@ -322,12 +321,12 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 | **AlphaFold 3 Server** | <a href="https://alphafoldserver.com/" target="_blank">https://alphafoldserver.com/</a> | Versão mais recente do AlphaFold |
 | **ESM3** | <a href="https://forge.evolutionaryscale.ai/" target="_blank">https://forge.evolutionaryscale.ai/</a> | Baseado em Modelo de Linguagem de Proteína e Dados Evolutivos  |
 
-#### Métricas de Confiança
+### Métricas de Confiança
 
 - **pLDDT** (predicted Local Distance Difference Test): 0-100, >90 = alta confiança
 - **PAE** (Predicted Aligned Error): Confiança na posição relativa entre resíduos
 
-# Perguntas:
+### Perguntas:
 
 - Como os valores de pLDDT distribuídos ao longo da cadeia ajudam a distinguir regiões estruturadas de segmentos desordenados na p53 predita?
 - Ao comparar os mapas de PAE dos diferentes servidores, quais domínios apresentam maior incerteza relativa e como isso impacta a confiança global do modelo?
@@ -336,7 +335,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 ---
 
-### Módulo 4: Análise Comparativa, Validação e Visualização
+# Módulo 4: Análise Comparativa, Validação e Visualização
 
 * Tamos modelos gerados por homologia, threading e deep learning. Agora vamos baixar um modelos experimental da p53 para comparar todos os modelos gerados. Lembrando que a extrutura experimental sempre será o nosso padrão-ouro para comparação.
 
@@ -351,7 +350,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 - Realizar análise estrutural comparativa no PyMOL.
 - Quantificar diferenças estruturais via RMSD.
 
-#### Servidores de Validação de Dobramento e Termodinâmica
+**Servidores de Validação de Dobramento e Termodinâmica**
 
 | Servidor | URL | Métrica Avaliada |
 |----------|-----|------------------|
@@ -359,7 +358,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 | **QMEAN** | <a href="https://swissmodel.expasy.org/qmean/" target="_blank">https://swissmodel.expasy.org/qmean/</a> | Qualidade global |
 | **ProSA-web** | <a href="https://prosa.services.came.sbg.ac.at/prosa.php" target="_blank">https://prosa.services.came.sbg.ac.at/prosa.php</a> | Z-score (energia do enovelamento) |
 
-#### Análise Estrutural no PyMOL
+### Análise Estrutural no PyMOL
 
 **Modelos para Comparação:**
 - SWISS-MODEL (Homologia)
@@ -388,7 +387,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 - Criar representações ilustrativas das diferenças/similaridades.
 - Destacar regiões de interesse estrutural.
 
-# Perguntas:
+### Perguntas:
 
 - Quais modelos apresentam RMSD mais baixo em relação à estrutura experimental e o que isso revela sobre a qualidade geral de cada predição?
 - Ao inspecionar as sobreposições no PyMOL, quais regiões da p53 mantêm conformação consistente entre todos os modelos e quais divergem com mais intensidade?
@@ -397,7 +396,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 ---
 
-## Referências Teórico (Atividades Práticas)
+# Referências Teórico (Atividades Práticas)
 
 ### Bases de Dados
 - <a href="https://www.uniprot.org/" target="_blank" rel="noopener noreferrer">UniProt</a>
@@ -426,14 +425,14 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 ---
 
-## Licença
+# Licença
 
 Uso extriitamente educacional e acadêmico. Proibida a utilização comercial sem autorização prévia dos autores.
 Para qualquer outro tipo de uso, entre em contato com os autores pelos e-mails fornecidos acima.
 
 ---
 
-## Recursos Úteis
+# Recursos Úteis
 
 <a href="https://github.com/madsondeluna/bits_bytes_biomolecules" target="_blank">Repositório do Curso</a>
 <a href="https://madsondeluna.github.io/bits_bytes_biomolecules/" target="_blank">Página Web do Curso</a>
