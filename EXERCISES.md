@@ -36,9 +36,9 @@ A **p53** (derivada do gene *TP53*) é um dos mais importantes supressores de tu
 - Proteína mais estudada na história da oncologia.
 - Alvo ideal para comparar diferentes métodos de modelagem computacional.
 
-<video src="imgs/mov.mp4" autoplay loop muted playsinline controls>
-  Seu navegador não suporta vídeo HTML5.
-</video>
+<figure class="figure-center">
+  <img src="imgs/adobe.gif" alt="XXXXX" width="800">
+</figure>
 
 ### Dados de Referência
 
