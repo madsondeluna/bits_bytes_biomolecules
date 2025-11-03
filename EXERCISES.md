@@ -242,7 +242,17 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 ---
 
-**Não vale clicar nesse link antes de fazer o alinhamento proposto acima**, mas se você já fez, aqui está: <a href="https://drive.google.com/file/d/1zSzitu4daGhJwSUpWxuzzTzBVwkqMo1h/view?usp=sharing" target="_blank">Alinhamento Clustal Omega - multiFASTA_p53_variants.fasta</a>, colorido por percentual de conservação. Podemos ver as mutações destacadas no alinhamento e nas suas a perda da identidade em relação à sequência *wild-type*. Além disso o alinhamento com também mostra um histograma de conservação na parte inferior, onde podemos observar que as posições das mutações são altamente conservadas na família das p53.
+**Não vale clicar nesse link antes de fazer o alinhamento proposto acima**, mas se você já fez, está mais que permitido: <a href="https://drive.google.com/file/d/1zSzitu4daGhJwSUpWxuzzTzBVwkqMo1h/view?usp=sharing" target="_blank">Alinhamento Clustal Omega - multiFASTA_p53_variants.fasta</a>, colorido por percentual de conservação. Podemos ver as mutações destacadas no alinhamento e nas suas a perda da identidade em relação à sequência *wild-type*. Além disso o alinhamento com também mostra um histograma de conservação na parte inferior, onde podemos observar que as posições das mutações são altamente conservadas na família das p53.
+
+> O que vocês acharam desse alinhamento? Vamos discutir as possieveis implicações biológicas dessas mutações?
+
+> Só pra relembrar, aqui abaixo temos uma tambela com todos os aminoácidos e suas características físico-químicas, caso queiram consultar durante a análise das mutações.
+
+<p align="justify">
+  <img src="imgs/aas.png" alt="Amino acids width="1000">
+</p>
+
+> Fonte: JPT Peptide Technologies.
 
 ---
 
