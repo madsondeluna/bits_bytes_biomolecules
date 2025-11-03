@@ -37,7 +37,7 @@ A **p53** (derivada do gene *TP53*) é um dos mais importantes supressores de tu
 - Alvo ideal para comparar diferentes métodos de modelagem computacional.
 
 <figure class="figure-center">
-  <img src="imgs/adobe.gif" alt="XXXXX" width="800">
+  <img src="imgs/adobe.gif" alt="XXXXX" width="400">
 </figure>
 
 ### Dados de Referência
