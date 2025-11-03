@@ -374,8 +374,6 @@ Um exemplo claro é um **plasmócito** (célula B ativada) produzindo **anticorp
 
 Ao abordar as interações entre aminoácidos, a ligação primordial e mais forte, que estabelece a estrutura primária de uma proteína, é a ligação peptídica. Esta ligação covalente é formada pela união do grupo α-carboxila de um aminoácido ao grupo α-amino do aminoácido subsequente, caracterizando uma reação de condensação (ou desidratação) na qual uma molécula de água (H₂O) é liberada.
 
-<br>
-
 <p align="justify">
   <img src="imgs/pep-bond.png" alt="XXXXXXXX" width="1000">
 </p>
@@ -718,7 +716,7 @@ O resultado é:
 ##### Escala de Tempo Física
 
 $$
-t \sim \tau \times \exp\!\big(C \cdot L^{2/3}\big)
+t \sim \tau \times \big(C \cdot L^{2/3}\big)
 $$
 
 Onde:  
@@ -742,8 +740,8 @@ Resumo: o "paradoxo" é só prova de que a hipótese inicial (busca aleatória) 
 Modelos como AlphaFold (ex.: AF3) não "resolvem" o processo físico do enovelamento. Eles pulam todas as etapas intermediárias e entregam só o estado final.
 
 - AlphaFold **não** simula a busca impossível de $\sim 10^{30}$ conformações (que daria $\sim 10^{10}$ anos).  
-- AlphaFold **não** simula a dinâmica física guiada pelo funil energético (escala $\propto L^{2/3}$). Isso quem tenta fazer é Dinâmica Molecular.  
-- AlphaFold aprende uma função estatística entre sequência e estrutura final estável, usando o histórico evolutivo embutido em bancos de dados estruturais (PDB).
+- AlphaFold **não** simula a dinâmica física guiada pelo funil energético (escala $\propto L^{2/3}$). Isso quem tenta fazer é Dinâmica Molecular, mas possui limitações severas de escala temporal e espacial. **Ex.: Simular microsegundos de uma proteína de 100 resíduos pode levar semanas em supercomputadores.**
+- AlphaFold aprende uma função estatística entre sequência e estrutura final estável, usando o histórico evolutivo embutido em bancos de dados estruturais (PDB). Basicamente, ele se utilizada de simplificações matemáticas e aprendizado de máquina para "pular" o enovelamento baseado em todas as tentantivas possíveis, teorizadas por Levinthal.
 
 Podemos escrever essa ideia como:
 
@@ -751,7 +749,7 @@ $$
 f_{\text{AlphaFold}}(\text{sequência 1D}) \;\longrightarrow\; \text{estrutura 3D prevista}
 $$
 
-Ou seja: é predição supervisionada, não simulação físico-química do caminho de enovelamento.
+Ou seja: é predição com dezenas de simplificações matemáticas a nível de termodinãmica, simulando a físico-química do caminho de enovelamento com base em dados experimentais prévios e um modelo estatístico (de prendizado de máquina).
 
 ---
 
@@ -761,7 +759,7 @@ Ou seja: é predição supervisionada, não simulação físico-química do cami
 | :------------------------------ | :------------------------------------------- | :----------------------------------- |
 | **Busca Aleatória (Levinthal)** | Testar $k^N$ estados possíveis                | $\sim 10^{10}$ anos                  |
 | **Física do Enovelamento**      | Ultrapassar a barreira $\propto L^{2/3}$      | microssegundos → minutos             |
-| **AlphaFold (Predição)**        | Prever diretamente o estado final 3D dobrado | segundos → minutos                   |
+| **AlphaFold (Predição)**        | Estima o estado final de um dobrado | segundos → minutos                   |
 
 ---
 
