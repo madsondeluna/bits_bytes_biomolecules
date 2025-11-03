@@ -120,9 +120,11 @@ As ferramentas abaixo serão utilizadas para analisar propriedades físico-quím
 
 > Agora vamos discutir os resultados obtidos e suas implicações biológicas?
 
-> **Atividade 1: Alinhamento 1TUP vs. Sequência Completa (WT):** Vamos alinhar o domínio ligador de DNA cristalizado (PDB ID: 1TUP) com a sequência completa da p53 (UNIPROT ID: P04637) e discutir como essa comparação orienta as próximas etapas práticas.
+# Atividade 1
 
-Sequências FASTA do domínio ligador de DNA da p53, cristalizado por X-ray (PDB ID: 1TUP):
+**Alinhamento 1TUP vs. Sequência Completa (WT):** Temos as sequências FASTA do domíde ligação ao DNA da p53 e sua sequenência completa (WT), e, juntos, executaremos o alinhamento múltiplo no <a href="https://www.ebi.ac.uk/Tools/msa/clustalo/" target="_blank" rel="noopener noreferrer">Clustal Omega</a>. Analise quais regiões se alinham diretamente, discuta as diferenças e vamos entender as implicações biológicas dessas variações. Ter apenas "uma parte" da proteína pode ser suficiente para algumas análises? Isso depende do contexto biológico? 
+
+> Sequências FASTA do domínio ligador de DNA da p53, cristalizado por X-ray (PDB ID: 1TUP):
 
 ```bash
 >1TUP_3|Chains C[auth A] |PROTEIN (P53 TUMOR SUPPRESSOR )|Homo sapiens (9606)
@@ -132,7 +134,7 @@ HSVVVPYEPPEVGSDCTTIHYNYMCNSSCMGGMNRRPILTIITLEDSSGNLLGRNSFEVR
 VCACPGRDRRTEEENLRKKGEPHHELPPGSTKRALPNNT
 ```
 
-Sequência completa da p53 (UNIPROT ID: P04637):
+> Sequência completa da p53 (UNIPROT ID: P04637):
 
 ```bash
 >sp|P04637|P53_HUMAN Cellular tumor antigen p53 OS=Homo sapiens OX=9606 GN=TP53
@@ -152,7 +154,12 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 - Há resíduos-chave do sítio de ligação ao DNA presentes apenas na sequência completa? O que isso implica para os modelos baseados no domínio?
 - Considerando identidade e similaridade ponto a ponto, qual argumento favorece trabalhar com o domínio isolado ou com a proteína completa nas próximas etapas?
 
-> **Atividade 2 (EXTRA):** Temos 5 sequências da p53 (1 referência *wild-type* e 4 variantes associadas a neoplasias) e, juntos, executaremos o alinhamento múltiplo no <a href="https://www.ebi.ac.uk/Tools/msa/clustalo/" target="_blank" rel="noopener noreferrer">Clustal Omega</a>. Analise quais substituições coincidem com domínios funcionais críticos, discuta como essas mudanças podem impactar estabilidade e interação com DNA e, por fim, decidam coletivamente qual variante seguirá para aprofundamento nas etapas práticas.
+---
+
+#Atividade 2 
+
+
+> **Atividade (EXTRA):** Temos 5 sequências da p53 (1 referência *wild-type* e 4 variantes associadas a neoplasias) e, juntos, executaremos o alinhamento múltiplo no <a href="https://www.ebi.ac.uk/Tools/msa/clustalo/" target="_blank" rel="noopener noreferrer">Clustal Omega</a>. Analise quais substituições coincidem com domínios funcionais críticos, discuta como essas mudanças podem impactar estabilidade e interação com DNA e, por fim, decidam coletivamente qual variante seguirá para aprofundamento nas etapas práticas.
 
 ```bash
 ### 1. p53 Wild-Type (Saudável)
