@@ -246,7 +246,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 > O que vocês acharam desse alinhamento? Vamos discutir as possieveis implicações biológicas dessas mutações?
 
-> Só pra relembrar, aqui abaixo temos uma tambela com todos os aminoácidos e suas características físico-químicas, caso queiram consultar durante a análise das mutações.
+> Só para relembrar, abaixo temos uma tambela com todos os aminoácidos e suas características físico-químicas, caso queiram consultar durante a análise das mutações.
 
 <p align="justify">
   <img src="imgs/aas.png" alt="Amino acids width="1000">
