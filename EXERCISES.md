@@ -509,6 +509,150 @@ Para qualquer outro tipo de uso, entre em contato com os autores pelos e-mails f
 
 <br>
 
-> Ninhuma dúvida é boba... Qualquer dúvida ou sugestão, sinta-se à vontade para entrar em contato conosco pelos e-mails fornecidos acima. Bom desemprenho e aproveitem os exercícios! 
+> Ninhuma dúvida é boba... Qualquer dúvida ou sugestão, sinta-se à vontade para entrar em contato conosco pelos e-mails fornecidos acima. Bom desemprenho e aproveitem os exercícios!
+
+<br>
+
+---
+
+# Extra: Ferramenta Educacional CLI - Tradução de Proteínas
+
+Esta seção apresenta um **script educacional interativo** que demonstra, passo a passo, o processo de **tradução de proteínas** via linha de comando (CLI). Esta ferramenta foi desenvolvida para complementar o aprendizado sobre o **Dogma Central da Biologia Molecular**, oferecendo uma visualização didática e interativa de como o mRNA é convertido em proteínas.
+
+## Sobre o Script
+
+O script utiliza **animações em terminal** e **arte ASCII** para ilustrar:
+- O **Dogma Central** (DNA → RNA → Proteína)
+- A **maquinaria de tradução** (ribossomos, tRNA, mRNA)
+- As **três fases da tradução**: Iniciação, Elongação e Terminação
+- O **dobramento proteico** e modificações pós-traducionais
+- **Relevância clínica** e aplicações terapêuticas
+
+## Script Disponível
+
+**Ferramenta de Tradução de Proteínas** (Português)
+
+- [Baixar domrnaparaproteina.py](https://raw.githubusercontent.com/madsondeluna/bits_bytes_biomolecules/main/protein-translation_CLI/domrnaparaproteina.py)
+- [Ver código no repositório](protein-translation_CLI/domrnaparaproteina.py)
+
+### Como Baixar
+
+Você pode baixar o script de **três formas**:
+
+#### Opção 1: Download Direto
+- Clique no link "Baixar domrnaparaproteina.py" acima
+- O arquivo será baixado automaticamente
+- Salve em uma pasta de fácil acesso
+
+#### Opção 2: Clonar o Repositório Completo
+```bash
+git clone https://github.com/madsondeluna/bits_bytes_biomolecules.git
+cd bits_bytes_biomolecules/protein-translation_CLI
+```
+
+#### Opção 3: Download via Terminal (Linux/macOS)
+
+```bash
+curl -O https://raw.githubusercontent.com/madsondeluna/bits_bytes_biomolecules/main/protein-translation_CLI/domrnaparaproteina.py
+chmod +x domrnaparaproteina.py
+```
+
+## Como Executar
+
+### Pré-requisitos
+- **Python 3.6+** instalado no sistema
+- Terminal compatível (Linux, macOS, Windows Terminal, ou PowerShell)
+
+### Instruções de Execução
+
+#### 1. Via Terminal (qualquer sistema operacional)
+
+```bash
+cd protein-translation_CLI
+python3 domrnaparaproteina.py
+```
+
+#### 2. Execução Direta (Linux/macOS)
+
+O script possui permissão de execução. Você pode executá-lo diretamente:
+
+```bash
+./protein-translation_CLI/domrnaparaproteina.py
+```
+
+#### 3. No Windows (PowerShell ou CMD)
+
+```powershell
+cd protein-translation_CLI
+python domrnaparaproteina.py
+```
+
+## Conteúdo Abordado
+
+Os scripts cobrem os seguintes tópicos de forma interativa:
+
+1. **Introdução ao Dogma Central**
+   - Fluxo de informação: DNA → RNA → Proteína
+
+2. **Maquinaria Molecular da Tradução**
+   - Ribossomos (subunidades 40S e 60S)
+   - tRNA e aminoácidos
+   - Fatores de iniciação e elongação
+
+3. **Fase de Iniciação**
+   - Reconhecimento do cap 5' por eIF4E
+   - Recrutamento da subunidade 40S
+   - Identificação do códon de início (AUG)
+
+4. **Fase de Elongação**
+   - Entrada do aminoacil-tRNA no sítio A
+   - Formação da ligação peptídica
+   - Translocação do ribossomo
+
+5. **Fase de Terminação**
+   - Reconhecimento de códons de parada (UAA, UAG, UGA)
+   - Fatores de liberação (eRF1/eRF3)
+   - Desmontagem do ribossomo
+
+6. **Dobramento Proteico**
+   - Estrutura 3D funcional
+   - Chaperonas moleculares
+   - Modificações pós-traducionais
+
+7. **Relevância Clínica**
+   - Doenças neurodegenerativas (Alzheimer, Parkinson)
+   - Câncer e desregulação da tradução
+   - Estratégias terapêuticas (inibidores de mTOR, eIF4E)
+
+8. **Técnicas de Pesquisa**
+   - Ribosome profiling (Ribo-seq)
+   - Proteômica por espectrometria de massa
+   - Abordagens de célula única
+
+## Características Técnicas
+
+- **Animações suaves** com efeito de digitação
+- **Arte ASCII** para representar moléculas e processos
+- **Interatividade**: pressione ENTER para avançar entre as etapas
+- **Código limpo e bem documentado** para uso educacional
+- **Interrupção segura**: use `Ctrl+C` para sair a qualquer momento
+
+## Uso Educacional Recomendado
+
+Esses scripts são ideais para:
+- **Aulas introdutórias** sobre biologia molecular
+- **Revisão visual** de conceitos de tradução proteica
+- **Complemento** aos exercícios práticos de modelagem
+- **Demonstrações interativas** em sala de aula ou workshops
+
+## Autoria
+
+**Desenvolvido por:** Madson Aragão @ UFMG
+**Baseado em:** Jia et al. (2024) - *Signal Transduction and Targeted Therapy*
+DOI: 10.1038/s41392-024-01749-9
+
+---
+
+**Dica:** Execute os scripts em **tela cheia** para uma melhor experiência visual!
 
 <br>
