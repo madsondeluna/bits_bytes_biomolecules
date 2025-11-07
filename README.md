@@ -1230,3 +1230,29 @@ O conhecimento estrutural permite o design racional de novas ferramentas biotecn
 **Nota Final:**
 
 É fundamental ressaltar que um modelo computacional é, por definição, uma predição. A verdadeira força da biologia estrutural moderna reside na união desses dois mundos. Sempre que há uma validação experimental de um modelo teórico, unimos o melhor do mundo computacional (velocidade e escala) com o melhor da biologia molecular (a prova funcional). Usamos o modelo para guiar o experimento (ex: qual mutação fazer) e usamos o experimento (ex: um ensaio de atividade) para validar o modelo.
+
+---
+
+## Encontrou um erro ou ambiguidade?
+
+Se você identificou algum **erro conceitual**, **ambiguidade científica** ou **imprecisão** neste material, ficarei **muito feliz** em corrigir e saber que pessoas atentas estão lendo e contribuindo para a qualidade deste conteúdo.
+
+### Como reportar um problema
+
+1. Acesse o repositório oficial do curso: <a href="https://github.com/madsondeluna/bits_bytes_biomolecules" target="_blank">https://github.com/madsondeluna/bits_bytes_biomolecules</a>
+
+2. Clique na aba **"Issues"** (no topo da página do repositório)
+
+3. Clique no botão verde **"New issue"** (Nova issue)
+
+4. Preencha o formulário com as seguintes informações:
+   - **Título**: Descreva brevemente o problema (ex: "Erro conceitual na seção sobre AlphaFold")
+   - **Descrição**: Explique detalhadamente:
+     - Onde está o erro (arquivo e seção)
+     - Qual é o problema identificado
+     - Sugestão de correção (se possível)
+     - Referências bibliográficas que sustentam a correção (opcional, mas muito apreciado)
+
+5. Clique em **"Submit new issue"** para enviar
+
+Suas contribuições são extremamente valiosas para manter este material atualizado e cientificamente preciso. Obrigado por dedicar seu tempo para melhorar este recurso educacional!

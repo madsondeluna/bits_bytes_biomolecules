@@ -536,7 +536,7 @@ O script utiliza **animações em terminal** e **arte ASCII** para ilustrar:
 
 ## Script Disponível
 
-**Ferramenta de Tradução de Proteínas** (Português)
+**Ferramenta de Tradução de Proteínas** 
 
 - [Baixar domrnaparaproteina.py](https://raw.githubusercontent.com/madsondeluna/bits_bytes_biomolecules/main/protein-translation_CLI/domrnaparaproteina.py)
 - [Ver código no repositório](protein-translation_CLI/domrnaparaproteina.py)
@@ -660,5 +660,33 @@ DOI: 10.1038/s41392-024-01749-9
 ---
 
 **Dica:** Execute os scripts em **tela cheia** para uma melhor experiência visual!
+
+<br>
+
+---
+
+## Encontrou um erro ou ambiguidade?
+
+Se você identificou algum **erro conceitual**, **ambiguidade científica** ou **imprecisão** neste material, ficarei **muito feliz** em corrigir e saber que pessoas atentas estão lendo e contribuindo para a qualidade deste conteúdo.
+
+### Como reportar um problema:
+
+1. Acesse o repositório oficial do curso: <a href="https://github.com/madsondeluna/bits_bytes_biomolecules" target="_blank">https://github.com/madsondeluna/bits_bytes_biomolecules</a>
+
+2. Clique na aba **"Issues"** (no topo da página do repositório)
+
+3. Clique no botão verde **"New issue"** (Nova issue)
+
+4. Preencha o formulário com as seguintes informações:
+   - **Título**: Descreva brevemente o problema (ex: "Erro conceitual na seção de Elongação")
+   - **Descrição**: Explique detalhadamente:
+     - Onde está o erro (arquivo e seção)
+     - Qual é o problema identificado
+     - Sugestão de correção (se possível)
+     - Referências bibliográficas que sustentam a correção (opcional, mas muito apreciado)
+
+5. Clique em **"Submit new issue"** para enviar
+
+Suas contribuições são extremamente valiosas para manter este material atualizado e cientificamente preciso. Obrigado por dedicar seu tempo para melhorar este recurso educacional!
 
 <br>
