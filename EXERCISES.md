@@ -661,8 +661,6 @@ DOI: 10.1038/s41392-024-01749-9
 
 **Dica:** Execute os scripts em **tela cheia** para uma melhor experiência visual!
 
-<br>
-
 ---
 
 ## Encontrou um erro ou ambiguidade?
