@@ -521,6 +521,12 @@ Esta seção apresenta um **script educacional interativo** que demonstra, passo
 
 ## Sobre o Script
 
+<figure class="figure-center">
+  <img src="imgs/prot-translation.png" alt="Screenshot do script de tradução de proteínas em execução" width="800">
+</figure>
+
+> Exemplo de execução do script educacional de tradução de proteínas mostrando a fase de iniciação, com animações ASCII representando o ribossomo, mRNA e os fatores de iniciação (eIF4E, eIF4G, PABP). O script utiliza arte ASCII e efeitos de digitação para demonstrar interativamente cada etapa do processo de tradução proteica.
+
 O script utiliza **animações em terminal** e **arte ASCII** para ilustrar:
 - O **Dogma Central** (DNA → RNA → Proteína)
 - A **maquinaria de tradução** (ribossomos, tRNA, mRNA)
