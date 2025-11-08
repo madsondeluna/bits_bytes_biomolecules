@@ -361,7 +361,7 @@ Nesta seção, o foco não será a submissão ou a espera pelo processamento, ma
 - **C-score:** Confiança da predição (-5 a 2, valores mais altos = melhor)
 - **TM-score:** Similaridade estrutural
 
-#### Primeira Validação
+## Primeira Validação
 
 # Perguntas:
 
