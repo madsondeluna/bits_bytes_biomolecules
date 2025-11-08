@@ -351,7 +351,7 @@ Os resultados completos da predição estão disponíveis no servidor do I-TASSE
 
 Nesta seção, o foco não será a submissão ou a espera pelo processamento, mas sim a análise detalhada dos resultados gerados. Discutiremos o processo de construção da estrutura, a geração de múltiplos modelos (Top 5) e a interpretação das métricas de confiança, como o **C-score** (Confidence Score) e o **TM-score** (Template Modeling score), para avaliar a qualidade e a topologia de cada modelo predito.
 
-<p align="center">
+<p align="figure-center">
   <img src="imgs/prot-comparing.gif" alt="Amino acids width="700">
 </p>
 
