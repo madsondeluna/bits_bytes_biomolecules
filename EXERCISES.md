@@ -352,7 +352,7 @@ Os resultados completos da predição estão disponíveis no servidor do I-TASSE
 Nesta seção, o foco não será a submissão ou a espera pelo processamento, mas sim a análise detalhada dos resultados gerados. Discutiremos o processo de construção da estrutura, a geração de múltiplos modelos (Top 5) e a interpretação das métricas de confiança, como o **C-score** (Confidence Score) e o **TM-score** (Template Modeling score), para avaliar a qualidade e a topologia de cada modelo predito.
 
 <figure class="figure-center">
-  <img src="imgs/prot-comparing.gif" alt="XXXXX" width="7000">
+  <img src="imgs/denovo.png" alt="XXXXX" width="600">
 </figure>
 
 > Uma ilustração do processo de comparação a cada passo que um fragmento (k=3 ou k=9) é extraído da sequência alvo e alinhado a uma estrutura de proteína conhecida. Fonte: <a href="https://zhanggroup.org/I-TASSER/" target="_blank">https://zhanggroup.org/I-TASSER/</a>.
