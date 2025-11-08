@@ -355,7 +355,7 @@ Nesta seção, o foco não será a submissão ou a espera pelo processamento, ma
   <img src="imgs/denovo.png" alt="XXXXX" width="600">
 </figure>
 
-> Uma ilustração do processo de comparação a cada passo que um fragmento (k=3 ou k=9) é extraído da sequência alvo e alinhado a uma estrutura de proteína conhecida. Fonte: <a href="https://zhanggroup.org/I-TASSER/" target="_blank">https://zhanggroup.org/I-TASSER/</a>.
+> Uma ilustração do processo de comparação a cada passo que um fragmento (k=3 ou k=9) é extraído da sequência alvo e alinhado a uma estrutura de proteína conhecida. Fonte: Chen, J.; Siu, S.W.I. Machine Learning Approaches for Quality Assessment of Protein Structures. Biomolecules 2020, 10, 626. https://doi.org/10.3390/biom10040626
 
 **Métricas:**
 - **C-score:** Confiança da predição (-5 a 2, valores mais altos = melhor)
