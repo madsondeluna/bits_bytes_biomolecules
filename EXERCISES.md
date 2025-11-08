@@ -334,6 +334,29 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 **Plataforma:** I-TASSER  
 **URL:** <a href="https://zhanggroup.org/I-TASSER/" target="_blank">https://zhanggroup.org/I-TASSER/</a>
 
+
+<p align="justify">
+  <img src="imgs/itasser.png" alt="Amino acids width="1000">
+</p>
+
+> I-TASSER Server Interface. Fonte: <a href="https://zhanggroup.org/I-TASSER/" target="_blank">https://zhanggroup.org/I-TASSER/</a>.
+
+O I-TASSER (Iterative Threading ASSEmbly Refinement) é um conjunto de métodos para predição de estrutura e função de proteínas. Ele utiliza uma abordagem hierárquica que combina métodos de *threading* e simulações *ab initio* de refinamento.
+
+Devido ao alto custo computacional dos algoritmos e ao tempo de espera significativo em servidores públicos (decorrente de filas de processamento), a sequência da **p53 humana completa** (*full-length*) foi submetida previamente.
+
+Os resultados completos da predição estão disponíveis no servidor do I-TASSER por 30 dias, sob o **Job ID: S814816**.
+
+> Acessível em: https://aideepmed.com/I-TASSER/output/S814816/
+
+Nesta seção, o foco não será a submissão ou a espera pelo processamento, mas sim a análise detalhada dos resultados gerados. Discutiremos o processo de construção da estrutura, a geração de múltiplos modelos (Top 5) e a interpretação das métricas de confiança, como o **C-score** (Confidence Score) e o **TM-score** (Template Modeling score), para avaliar a qualidade e a topologia de cada modelo predito.
+
+<p align="justify">
+  <img src="imgs/prot-comparing.gif" alt="Amino acids width="500">
+</p>
+
+> Uma ilustração do processo de comparação a cada passo que um fragmento (k=3 ou k=9) é extraído da sequência alvo e alinhado a uma estrutura de proteína conhecida. Fonte: <a href="https://zhanggroup.org/I-TASSER/" target="_blank">https://zhanggroup.org/I-TASSER/</a>.
+
 **Métricas:**
 - **C-score:** Confiança da predição (-5 a 2, valores mais altos = melhor)
 - **TM-score:** Similaridade estrutural
