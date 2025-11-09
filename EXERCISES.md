@@ -258,12 +258,12 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 ## Localização das Mutações no Domínio de Ligação ao DNA (aa 102-292)
 
-| Mutação | Posição | Região | AA WT | AA Mut | Contexto |
-|---------|---------|--------|-------|--------|----------|
-| **R175H** | 175 | Loop L2 | R | H | `...GTR**V**RAM...` → `...GTH**V**RAM...` |
-| **Y220C** | 220 | Loop L3 | Y | C | `...RVE**Y**LDD...` → `...RVE**C**LDD...` |
-| **R248Q** | 248 | Loop L3 | R | Q | `...GMN**R**RPI...` → `...GMN**Q**RPI...` |
-| **R273H** | 273 | Folha β | R | H | `...LLG**R**NSF...` → `...LLG**H**NSF...` |
+| Mutação | Posição | Região | AA WT | AA Mut | Contexto | Caráter WT | Caráter Mut | Carga WT | Carga Mut | Volume WT | Volume Mut |
+|---------|---------|--------|-------|--------|----------|------------|-------------|----------|-----------|-----------|------------|
+| **R175H** | 175 | Loop L2 | R | H | `...GTR**V**RAM...` → `...GTH**V**RAM...` | Básico forte | Básico fraco | Positiva (+) | Parcial/pH-dependente | 148 Å³ | 118 Å³ (-40%) |
+| **Y220C** | 220 | Loop L3 | Y | C | `...RVE**Y**LDD...` → `...RVE**C**LDD...` | Aromático polar | Polar alifático (tiol) | Neutro | Neutro | 141 Å³ | 86 Å³ (-65%) |
+| **R248Q** | 248 | Loop L3 | R | Q | `...GMN**R**RPI...` → `...GMN**Q**RPI...` | Básico forte | Polar neutro | Positiva (+) | Neutro | 148 Å³ | 114 Å³ (-15%) |
+| **R273H** | 273 | Folha β | R | H | `...LLG**R**NSF...` → `...LLG**H**NSF...` | Básico forte | Básico fraco | Positiva (+) | Parcial/pH-dependente | 148 Å³ | 118 Å³ (-40%) |
 
 Aqui trago um resumo das mutações mais comuns da p53 associadas ao câncer, localizadas no domínio de ligação ao DNA (DBD). Essas mutações são conhecidas por afetar a capacidade da p53 de se ligar ao DNA e exercer sua função supressora de tumor.
 
