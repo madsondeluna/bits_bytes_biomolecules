@@ -374,7 +374,7 @@ Nesta seção, o foco não será a submissão ou a espera pelo processamento, ma
 
 > Nos próximos módulos, vamos avaliar se o dobramento por cada método foi feito da corretamente. Bem como alinhar estrturalmente os modelos obtidos, calculando RMSD para comparação detalhada.
 
-# Módulo 2: E o *Ab Initio*?
+## Módulo 2: E o *Ab Initio*?
 
 O Rosetta revolucionou a biologia estrutural computacional ao introduzir métodos inovadores para a predição de estruturas de proteínas. Desenvolvido inicialmente por David Baker e sua equipe na Universidade de Washington, o Rosetta utiliza uma abordagem baseada em fragmentos para construir modelos tridimensionais de proteínas a partir de suas sequências de aminoácidos. 
 
