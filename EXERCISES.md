@@ -329,6 +329,24 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 - Avaliar alinhamentos sequência-molde
 - Examinar cobertura e identidade de sequência
 
+---
+
+### Modelagem por Homologia
+
+Nesta parte da atividade iremos utilizar o <a href="https://swissmodel.expasy.org/" target="_blank">https://swissmodel.expasy.org/</a> umas das plataformas mais populares para modelagem por homologia. O SWISS-MODEL é um servidor web automatizado para a construção de modelos tridimensionais de proteínas com base em sequências de aminoácidos. Ele utiliza uma abordagem de modelagem por homologia, onde a estrutura de uma proteína alvo é prevista com base na similaridade com proteínas de estrutura conhecida (modelos).
+
+Existem outras plataformas populares para modelagem por homologia, como o Phyre2 (<a href="http://www.sbg.bio.ic.ac.uk/phyre2/html/page.cgi?id=index" target="_blank">http://www.sbg.bio.ic.ac.uk/phyre2/html/page.cgi?id=index</a>) e o MODELLER (<a href="https://salilab.org/modeller/" target="_blank">https://salilab.org/modeller/</a>), cada uma com suas próprias características e algoritmos.
+
+Mas nesta atividade, focaremos no SWISS-MODEL devido à sua interface amigável e ampla aceitação na comunidade científica as execelentes métricas de avaliação de modelos que ele fornece, além de ser online e gratuito para uso acadêmico.
+
+<p align="justify">
+  <img src="imgs/swissssss.png" alt="Amino acids width="1000">
+</p>
+
+> Fonte: Recorte de tela do SWISS-MODEL em uso. 
+
+---
+
 ### Modelagem por Threading/Ab Initio
 
 **Plataforma:** I-TASSER  
@@ -373,6 +391,8 @@ Nesta seção, o foco não será a submissão ou a espera pelo processamento, ma
 - Ainda não alinhamos as estruturas obtidas até aqui, mas conseguem identificar diferenças visuais entre os modelos gerados?
 
 > Nos próximos módulos, vamos avaliar se o dobramento por cada método foi feito da corretamente. Bem como alinhar estrturalmente os modelos obtidos, calculando RMSD para comparação detalhada.
+
+---
 
 # Aindo no Módulo 2: E o *Ab Initio*?
 
