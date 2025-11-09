@@ -345,6 +345,8 @@ O I-TASSER (Iterative Threading ASSEmbly Refinement) é um conjunto de métodos 
 
 Devido ao alto custo computacional dos algoritmos e ao tempo de espera significativo em servidores públicos (decorrente de filas de processamento), a sequência da **p53 humana completa** (*full-length*) foi submetida previamente.
 
+O cálculo utilizando threading no I-TASSER levou aproximadamente **48 horas** para ser concluído. Por isso, adiantei o processo para que possamos focar na análise dos resultados. Mas vou mostrar rapidamente como foi feita a submissão no <a href="https://zhanggroup.org/I-TASSER/" target="_blank">https://zhanggroup.org/I-TASSER/</a>.
+
 Os resultados completos da predição estão disponíveis no servidor do I-TASSER por 30 dias, sob o **Job ID: S814816**.
 
 > Acessível em: https://aideepmed.com/I-TASSER/output/S814816/
