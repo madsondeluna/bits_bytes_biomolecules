@@ -555,7 +555,7 @@ Foi (e ainda é) um marco na engenharia de proteínas, ilustrando o potencial da
 > Baixem o paper descrevendo a Top-7 pela primeira vez aqui: <a href="https://drive.google.com/file/d/1i55VKkRIEOy2FjWYRb8AQYZoN1JDNSzE/view?usp=sharing" target="_blank">Design of a novel globular protein fold with atomic-level accuracy.</a>
 
 <figure class="figure-center">
-  <img src="imgs/scafold.png" alt="XXXXX" width="600">
+  <img src="imgs/scafold.png" alt="XXXXX" width="650">
 </figure>
 
 > A imagem, no quadro superior, mostra a desindade eletrostática da superfície da proteína Top-7, destacando suas características estruturais de alta acurácia na obtençã pro cristalografia de raios X. No quadro inferior, a representação em fita ilustra a topologia da proteína, evidenciando suas hélices alfa e folhas beta organizadas de forma compacta. Fonte: Baker, D. et al., Science, 2003.
