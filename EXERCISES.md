@@ -407,7 +407,7 @@ Foi (e ainda é) um marco na engenharia de proteínas, ilustrando o potencial da
 | **PyRosetta** | <a href="https://www.pyrosetta.org/" target="_blank">https://www.pyrosetta.org/</a> | Interface Python para Rosetta |
 
 <figure class="figure-center">
-  <img src="imgs/folding_movie.gif" alt="XXXXX" width="800">
+  <img src="imgs/folding_movie-ezgif.com-speed.gif" alt="XXXXX" width="800">
 </figure>
 
 > Animação do processo de dobramento guiado representação de grafos. Modelo meramente ilustrativo. Fonte: Veit Elser, Professor of Physics at Cornell University
