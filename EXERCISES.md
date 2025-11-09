@@ -399,7 +399,7 @@ Foi (e ainda é) um marco na engenharia de proteínas, ilustrando o potencial da
 Seu nome *Top-7* faz referência á sua topilogia, composta por 7 elementos secundários (4 hélices alfa e 3 fitas beta) organizados em uma estrutura globular estável.
 
 <figure class="figure-center">
-  <img src="imgs/1qys_TOP7_design_rib.png" alt="XXXXX" width="800">
+  <img src="imgs/1qys_TOP7_design_rib.png" alt="XXXXX" width="500">
 </figure>
 
 > Fonte: Jane Shelby Richardson, Duke University, 2014
@@ -417,7 +417,7 @@ Hoje o David Baker é dono de um dos maiores legados da biologia estrutural comp
 | **PyRosetta** | <a href="https://www.pyrosetta.org/" target="_blank">https://www.pyrosetta.org/</a> | Interface Python para Rosetta |
 
 <figure class="figure-center">
-  <img src="imgs/folding_movie-ezgif.com-speed.gif" alt="XXXXX" width="800">
+  <img src="imgs/folding_movie-ezgif.com-speed.gif" alt="XXXXX" width="500">
 </figure>
 
 > Animação do processo de dobramento guiado representação de grafos. Modelo meramente ilustrativo. Fonte: Veit Elser, Professor of Physics at Cornell University
