@@ -155,8 +155,6 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 ## Perguntas:
 
-### Perguntas:
-
 - Em quais trechos o domínio 1TUP se alinha diretamente com a sequência completa e quais regiões ficam sem correspondência?
 - Os limites N- e C-terminais do domínio cristalizado aparecem contíguos no alinhamento ou revelam lacunas/extensions relevantes para estabilidade?
 - Há resíduos-chave do sítio de ligação ao DNA presentes apenas na sequência completa? O que isso implica para os modelos baseados no domínio?
@@ -166,13 +164,11 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 > **Atividade (EXTRA):** Temos 5 sequências da p53 (1 referência *wild-type* e 4 variantes associadas a neoplasias) e, juntos, executaremos o alinhamento múltiplo no <a href="https://www.ebi.ac.uk/jdispatcher/msa/clustalo" target="_blank" rel="noopener noreferrer">Clustal Omega</a>. Analise quais substituições coincidem com domínios funcionais críticos, discuta como essas mudanças podem impactar estabilidade e interação com DNA e, por fim, decidam coletivamente qual variante seguirá para aprofundamento nas etapas práticas.
 
-> **Atividade (EXTRA):** Temos 5 sequências da p53 (1 referência *wild-type* e 4 variantes associadas a neoplasias) e, juntos, executaremos o alinhamento múltiplo no <a href="https://www.ebi.ac.uk/jdispatcher/msa/clustalo" target="_blank" rel="noopener noreferrer">Clustal Omega</a>. Analise quais substituições coincidem com domínios funcionais críticos, discuta como essas mudanças podem impactar estabilidade e interação com DNA e, por fim, decidam coletivamente qual variante seguirá para aprofundamento nas etapas práticas.
 > Baixe aqui o arquivo multiFASTA com as 5 sequências: <a href="https://drive.google.com/file/d/1qpbnbvNjTRcvvG-UsXdiJYXvynkdvxYw/view?usp=sharing" target="_blank">multiFASTA_p53_variants.fasta</a>
 
 ## Sequências para Análise
 
 ### Wild-Type (Sequência Canônica - 393 aa)
-## Wild-Type (Sequência Canônica - 393 aa)
 
 ```
 >sp|P04637|P53_HUMAN_WT Cellular tumor antigen p53
@@ -184,9 +180,8 @@ SCMGGMNRRPILTIITLEDSSGNLLGRNSFEVRVCACPGRDRRTEEENLRKKGEPHHELP
 GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 ```
 
-### Mutações Cancer-Associadas
+## Mutações Cancer-Associadas
 
-#### R175H (Hotspot - Contato com Zinco)
 ### R175H (Hotspot - Contato com Zinco)
 
 ```
@@ -199,9 +194,8 @@ SCMGGMNRRPILTIITLEDSSGNLLGRNSFEVRVCACPGRDRRTEEENLRKKGEPHHELP
 PGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPG
 GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 ```
-**Mudança na posição 175: R → H** 
+**Mudança na posição 175: R → H**
 
-#### R248Q (Hotspot - Contato Direto com DNA)
 ### R248Q (Hotspot - Contato Direto com DNA)
 
 ```
@@ -214,9 +208,8 @@ SCMGGMNQRPILTIITLEDSSGNLLGRNSFEVRVCACPGRDRRTEEENLRKKGEPHHELP
 PGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPG
 GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 ```
-**Mudança na posição 248: R → Q** 
+**Mudança na posição 248: R → Q**
 
-#### Y220C (Cavidade Hidrofóbica)
 ### Y220C (Cavidade Hidrofóbica)
 
 ```
@@ -228,9 +221,9 @@ RCSDSDGLAPPQHLIRVEGNLRVECLDDRNTFRHSVVVPYEPPEVGSDCTTIHYNYMCNS
 SCMGGMNRRPILTIITLEDSSGNLLGRNSFEVRVCACPGRDRRTEEENLRKKGEPHHELP
 PGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPG
 GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
-**Mudança na posição 220: Y → C** 
+```
 
-#### R273H (Hotspot - Contato Direto com DNA)
+**Mudança na posição 220: Y → C**
 
 ### R273H (Hotspot - Contato Direto com DNA)
 
@@ -245,7 +238,7 @@ PGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPG
 GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 ```
 
-**Mudança na posição 273: R → H** 
+**Mudança na posição 273: R → H**
 
 ---
 
@@ -286,12 +279,13 @@ Aqui trago um resumo das mutações mais comuns da p53 associadas ao câncer, lo
 ## Verificação das Mutações
 
 Para confirmar as posições exatas:
+
 - **R175H**: Resíduo 175 (Arginina → Histidina)
-- **Y220C**: Resíduo 220 (Tirosina → Cisteína)  
+- **Y220C**: Resíduo 220 (Tirosina → Cisteína)
 - **R248Q**: Resíduo 248 (Arginina → Glutamina)
 - **R273H**: Resíduo 273 (Arginina → Histidina)
 
-## Perguntas:
+## Perguntas para Discussão:
 
 - Em quais posições do alinhamento múltiplo surgem substituições e essas posições são conservadas na sequência *wild-type*?
 - As mutações identificadas representam trocas conservativas ou drásticas em termos de propriedades físico-químicas (ex.: troca de polar para hidrofóbico)?
@@ -886,23 +880,24 @@ Os scripts cobrem os seguintes tópicos de forma interativa:
 - Proteômica por espectrometria de massa
 - Abordagens de célula única
 
-### Características Técnicas- **Animações suaves** com efeito de digitação
+### Características Técnicas
+
+- **Animações suaves** com efeito de digitação
 - **Arte ASCII** para representar moléculas e processos
 - **Interatividade**: pressione ENTER para avançar entre as etapas
 - **Código limpo e bem documentado** para uso educacional
 - **Interrupção segura**: use `Ctrl+C` para sair a qualquer momento
-- **Código limpo e bem documentado** para uso educacional
-- **Interrupção segura**: use `Ctrl+C` para sair a qualquer momento
 
 ### Uso Educacional Recomendado
+
 - **Aulas introdutórias** sobre biologia molecular
 - **Revisão visual** de conceitos de tradução proteica
 - **Complemento** aos exercícios práticos de modelagem
 - **Demonstrações interativas** em sala de aula ou workshops
-- **Complemento** aos exercícios práticos de modelagem
-- **Demonstrações interativas** em sala de aula ou workshops
 
-### Autoriavido por:** Madson Aragão @ UFMG
+### Autoria
+
+**Desenvolvido por:** Madson Aragão @ UFMG
 **Baseado em:** Jia et al. (2024) - *Signal Transduction and Targeted Therapy*
 DOI: 10.1038/s41392-024-01749-9
 
