@@ -372,6 +372,171 @@ Nesta seção, o foco não será a submissão ou a espera pelo processamento, ma
 
 > Nos próximos módulos, vamos avaliar se o dobramento por cada método foi feito da corretamente. Bem como alinhar estrturalmente os modelos obtidos, calculando RMSD para comparação detalhada.
 
+# Módulo 2: E o *Ab Initio*?
+
+> Bem, até agora, utilizamos métodos de modelagem baseados em homologia e threading. Mas e o *ab initio*? Existem pacotes que utilizam essa abordagem para prever estruturas de proteínas sem depender de modelos conhecidos. O  Rosetta é a refêrencia nessa área, e por anos, foi o padrão ouro para predição de estruturas de proteínas quando não havia modelos experimentais disponíveis. 
+
+### Rosetta
+
+| Recurso | URL | Descrição |
+|---------|-----|-----------|
+| **Rosetta** | <a href="https://www.rosettacommons.org/software/license-and-download" target="_blank">https://www.rosettacommons.org/software/license-and-download</a> | pacote de engenharia de proteínas e predição de estruturas |
+| **Robetta** | <a href="http://robetta.bakerlab.org/" target="_blank">http://robetta.bakerlab.org/</a> | Servidor web para predição de estruturas com Rosetta |
+| **PyRosetta** | <a href="https://www.pyrosetta.org/" target="_blank">https://www.pyrosetta.org/</a> | Interface Python para Rosetta |
+
+> Disclaimer (Pessoal): Utilizei o *ab initio* do Rosetta de 2025 a 2019 durante meus mprojetos de engenhria de proteínas e predição estrutural. É uma ferramenta poderosa, mas o tempo de computação e a complexidade de configuração podem ser desafiadores para iniciantes. Por isso, optei por não incluir uma atividade prática com Rosetta neste curso introdutório. No entanto, encorajo os interessados a explorar essa ferramenta, para quem se interessar. 
+
+O Rosetta funciona através de terminal, via CLI (Command Line Interface) e requer instalação local. Portanto, não é tão acessível quanto os servidores web que utilizamos até agora. E se utlizie de dois tipos de abordagens principais: Linha de comando, scripts em XML (linki para mosrar exemplo) e PyRosetta (interface Python).
+
+Para os interesados, deixei disponível o tutrial comentando do Rosetta *ab initio* que utilizei: https://docs.rosettacommons.org/demos/latest/tutorials/denovo_structure_prediction/Denovo_structure_prediction
+
+> Construir um Rosetta Script (XML) é uma tarefa que exige conhecimento prévio sobre a sintaxe e os módulos disponíveis na suíte Rosetta. Ele é o alicerce para definir como sua predição será conduzida, seja para modelagem de estruturas, docking molecular ou design de proteínas. Segue o protocolo de boas práticas para criar um script XML eficaz: https://docs.rosettacommons.org/docs/latest/scripting_documentation/RosettaScripts/RosettaScripts
+
+Aqui temos um exemplo como é um script XML para predição *ab initio* com Rosetta, que eu usei há alguns anos atrás:
+
+```xml
+<ROSETTASCRIPTS>
+    <!-- FUNÇÕES DE PONTUAÇÃO (SCOREFXNS) -->
+    <!-- Define as funções de energia utilizadas durante a predição -->
+    <SCOREFXNS>
+        <!-- Score0-5: funções progressivamente mais detalhadas usadas no ab initio -->
+        <ScoreFunction name="score0" weights="score0.wts"/>
+        <ScoreFunction name="score1" weights="score1.wts"/>
+        <ScoreFunction name="score2" weights="score2.wts"/>
+        <ScoreFunction name="score3" weights="score3.wts"/>
+        <ScoreFunction name="score5" weights="score5.wts"/>
+        <!-- Função de energia completa para refinamento final -->
+        <ScoreFunction name="fullatom" weights="ref2015.wts"/>
+    </SCOREFXNS>
+
+    <!-- SELETORES DE RESÍDUOS (RESIDUE_SELECTORS) -->
+    <!-- Define quais resíduos serão manipulados -->
+    <RESIDUE_SELECTORS>
+        <!-- Seleciona toda a cadeia (1-100) para uma proteína de 100 aminoácidos -->
+        <Index name="full_protein" resnums="1-100"/>
+    </RESIDUE_SELECTORS>
+
+    <!-- FÁBRICAS DE MAPAS DE MOVIMENTO (MOVE_MAP_FACTORIES) -->
+    <!-- Controla quais graus de liberdade podem se mover durante a otimização -->
+    <MOVE_MAP_FACTORIES>
+        <!-- Permite movimento de backbone (bb) e ângulos laterais (chi) de todos os resíduos -->
+        <MoveMapFactory name="movemap_full" bb="1" chi="1">
+            <Backbone residue_selector="full_protein"/>
+            <Chi residue_selector="full_protein"/>
+        </MoveMapFactory>
+    </MOVE_MAP_FACTORIES>
+
+    <!-- MÉTRICAS SIMPLES (SIMPLE_METRICS) -->
+    <!-- Ferramentas para análise e validação do modelo gerado -->
+    <SIMPLE_METRICS>
+        <!-- Tempo de execução do protocolo -->
+        <TimingProfileMetric name="timing"/>
+        <!-- RMSD do backbone em relação à estrutura nativa (se disponível) -->
+        <RMSDMetric name="rmsd_backbone" rmsd_type="rmsd_protein_bb_heavy" 
+                    residue_selector="full_protein" use_native="1"/>
+        <!-- Sequência dos resíduos selecionados -->
+        <SequenceMetric name="sequence" residue_selector="full_protein"/>
+        <!-- Estrutura secundária predita (H=hélice, E=folha, L=loop) -->
+        <SecondaryStructureMetric name="secondary_structure" residue_selector="full_protein"/>
+        <!-- Energia total da estrutura -->
+        <TotalEnergyMetric name="total_energy" scorefxn="fullatom"/>
+    </SIMPLE_METRICS>
+
+    <!-- MOVERS -->
+    <!-- Operações que modificam a estrutura da proteína -->
+    <MOVERS>
+        <!-- PROTOCOLO AB INITIO CLÁSSICO -->
+        <!-- Gera estrutura 3D a partir de fragmentos estruturais e otimização progressiva -->
+        <!-- Requer arquivos de fragmentos (3-mer e 9-mer) gerados previamente -->
+        <ClassicAbinitio name="abinitio" 
+                        score_stage1="score0"
+                        score_stage2="score1"
+                        score_stage3a="score2"
+                        score_stage3b="score5"
+                        score_stage4="score3"
+                        frag_small="/caminho/para/frags.200.3mers"
+                        frag_large="/caminho/para/frags.200.9mers"
+                        cycles="1000"
+                        use_filters="true"
+                        number_3mer_frags="200"
+                        number_9mer_frags="25"/>
+
+        <!-- REFINAMENTO EM FULLATOM -->
+        <!-- Converte o modelo centroide para fullatom e refina a estrutura -->
+        <FastRelax name="refine" 
+                   scorefxn="fullatom" 
+                   movemap_factory="movemap_full"
+                   repeats="5"/>
+
+        <!-- MINIMIZAÇÃO FINAL -->
+        <!-- Otimização local para remover choques estéricos residuais -->
+        <MinMover name="minimize" 
+                  scorefxn="fullatom" 
+                  movemap_factory="movemap_full" 
+                  tolerance="0.01" 
+                  max_iter="200"/>
+
+        <!-- COLETA DE MÉTRICAS -->
+        <!-- Executa as métricas definidas anteriormente -->
+        <RunSimpleMetrics name="run_metrics_initial" 
+                          metrics="sequence,secondary_structure" 
+                          prefix="initial_"/>
+        <RunSimpleMetrics name="run_metrics_final" 
+                          metrics="rmsd_backbone,total_energy,timing,secondary_structure" 
+                          prefix="final_"/>
+    </MOVERS>
+
+    <!-- PROTOCOLO DE EXECUÇÃO (PROTOCOLS) -->
+    <!-- Ordem sequencial das operações -->
+    <PROTOCOLS>
+        <!-- 1. Coleta métricas iniciais -->
+        <Add mover_name="run_metrics_initial"/>
+        
+        <!-- 2. Executa ab initio para gerar modelo inicial -->
+        <Add mover_name="abinitio"/>
+        
+        <!-- 3. Refina o modelo em fullatom -->
+        <Add mover_name="refine"/>
+        
+        <!-- 4. Minimização final -->
+        <Add mover_name="minimize"/>
+        
+        <!-- 5. Coleta métricas finais para validação -->
+        <Add mover_name="run_metrics_final"/>
+    </PROTOCOLS>
+</ROSETTASCRIPTS>
+```
+
+> Vamos discutir as vantagens e desvantagens do *ab initio* em comparação com os métodos que utilizamos até agora?
+
+<figure class="figure-center">
+  <img src="imgs/folding_funnels.png" alt="XXXXX" width="600">
+</figure>
+
+> Rosetta Commons. Fonte: https://www.rosettacommons.org/docs/latest/application_documentation/demos/denovo_structure_prediction
+
+
+### Quantidade de Simulações Necessárias
+
+É possível realizar execuções de enovelamento em domínios separados de até aproximadamente 200 aminoácidos de comprimento, mas é amplamente realatado na literatura que o protocolo ab initio do Rosetta é mais eficaz para proteínas menores, tipicamente abaixo de 100-150 resíduos.
+
+Para proteínas de tamanho moderado **(50-100 resíduos)**, recomenda-se gerar entre **5.000 e 50.000** decoys para garantir amostragem suficiente do espaço conformacional. **A presença de um folding funnel característico, evidenciado pela convergência de estruturas de baixo RMSD e baixa energia (REU - Rosetta Energy Units)**, indica que o protocolo conseguiu identificar a região do estado nativo da proteína.
+
+No gráfico à esquerda (**com formação de funil**), observa-se a **formação clara de um funil energético**: **as estruturas convergem para uma região de baixo RMSD (< 2 Å) e baixo score (~-195 REU)**, sugerindo que o algoritmo identificou corretamente o estado enovelado. **Este padrão é o resultado desejado e indica alta confiabilidade dos modelos de menor energia.**
+
+Por outro lado, **o gráfico à direita (sem funil formado)** demonstra um **cenário problemático** onde **não há convergência aparente**. **As estruturas estão dispersas em uma ampla faixa de RMSD (0-6 Å) sem correlação clara com a energia**, indicando que **o protocolo falhou em identificar o estado nativo ou que a proteína não possui um único estado enovelado bem definido**.
+
+### Critérios de Seleção do Modelo Final
+
+Após a geração dos decoys, os modelos candidatos são selecionados com base em:
+
+1. **Energia (REU)**: modelos no percentil inferior de energia (tipicamente top 1-5%)
+2. **Clustering estrutural**: agrupamento por similaridade estrutural (RMSD) para identificar conformações consenso
+3. **Presença do funil**: modelos na região de convergência energia-RMSD
+4. **Validação estrutural**: análise de Ramachandran, Verify3D, ProSA-web
+
+O modelo final geralmente corresponde ao centroide do maior cluster de baixa energia localizado no fundo do folding funnel.
+
 ---
 
 # Módulo 3: Predição por Deep Learning (AF2, AF3 e ESM3)
