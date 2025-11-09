@@ -30,7 +30,7 @@ Eestrutura tridimensional da p53, em complexo com uma estrtura de DNA. As subuni
 
 A **p53** (derivada do gene *TP53*) é um dos mais importantes supressores de tumor, frequentemente referida como **"a guardiã do genoma"**. Esta proteína é crucial para a regulação do ciclo celular e prevenção do câncer.
 
-### Relevância Científica
+## Relevância Científica
 
 - Mutada em **mais de 50% de todos os cânceres humanos**
 - Proteína mais estudada na história da oncologia.
@@ -42,7 +42,7 @@ A **p53** (derivada do gene *TP53*) é um dos mais importantes supressores de tu
 
 > Fonte: Criado por Madson Aragão no VMD.
 
-### Dados de Referência
+## Dados de Referência
 
 | Informação | Valor/Link |
 |------------|------------|
@@ -67,11 +67,11 @@ Todos os demais passos utilizarão **servidores web** (não requerem instalaçã
 
 ---
 
-## Instalação do PyMOL
+# Instalação do PyMOL
 
 O PyMOL é o único software que precisará ser instalado localmente para este curso. Utilizaremos a versão **Incentive PyMOL**, gratuita para estudantes e educadores.
 
-### A. Obtenção da Licença de Estudante (Gratuita)
+## A. Obtenção da Licença de Estudante (Gratuita)
 
 1. Acesse o portal educacional da Schrödinger: <a href="https://pymol.org/edu/" target="_blank">https://pymol.org/edu/</a>.
 2. Clique em **"Register for an Account"**
@@ -81,12 +81,12 @@ O PyMOL é o único software que precisará ser instalado localmente para este c
 5. Após aprovação, faça o download do arquivo de licença (`license.lic`).
 6. Salve o arquivo em um local de fácil acesso (ex: Área de Trabalho).
 
-### B. Download e Instalação
+## B. Download e Instalação
 
 Na página de downloads da sua conta Schrödinger, baixe o instalador apropriado para seu sistema operacional pelo site <a href="https://pymol.org/edu/" target="_blank">https://pymol.org/edu/</a>
 
 
-### C. Ativação da Licença
+## C. Ativação da Licença
 
 1. Inicie o PyMOL pela primeira vez.
 2. O programa solicitará a ativação.
@@ -96,15 +96,13 @@ Na página de downloads da sua conta Schrödinger, baixe o instalador apropriado
 
 ---
 
-# Módulos Práticos
-
-### Módulo 1: Análise de Sequências e Propriedades
+# Módulo 1: Análise de Sequências e Propriedades
 
 **Objetivos:**
 - Navegar e extrair dados da p53 em bancos de dados estruturais.
 - Utilizar ferramentas web para predição de características bioquímicas.
 
-#### Bancos de Dados
+## Bancos de Dados
 
 | Recurso | URL | Descrição |
 |---------|-----|-----------|
@@ -113,11 +111,11 @@ Na página de downloads da sua conta Schrödinger, baixe o instalador apropriado
 
 ---
 
-#### Ferramentas de Predição
+---
+
+## Ferramentas de Predição
 
 As ferramentas abaixo serão utilizadas para analisar propriedades físico-químicas e funcionais utilizando sequências FASTA de proteínas e peptídeos, é uma abordagem exploratória para entender melhor como o seu sistema é representado em termos de características bioquímicas e funcionais.
-
-| Ferramenta | URL | Função |
 |------------|-----|---------|
 | **ProtParam** | <a href="https://web.expasy.org/protparam/" target="_blank">https://web.expasy.org/protparam/</a> | Parâmetros físico-químicos |
 | **SignalP 6.0** | <a href="https://services.healthtech.dtu.dk/services/SignalP-6.0/" target="_blank">https://services.healthtech.dtu.dk/services/SignalP-6.0/</a> | Predição de peptídeos de sinal |
@@ -126,11 +124,13 @@ As ferramentas abaixo serão utilizadas para analisar propriedades físico-quím
 
 > Agora vamos discutir os resultados obtidos e suas implicações biológicas?
 
-# Atividade 1
+> Agora vamos discutir os resultados obtidos e suas implicações biológicas?
 
-**Alinhamento 1TUP vs. Sequência Completa (WT):** Temos as sequências FASTA do domíde ligação ao DNA da p53 e sua sequenência completa (WT), e, juntos, executaremos o alinhamento múltiplo no <a href="https://www.ebi.ac.uk/jdispatcher/msa/clustalo" target="_blank" rel="noopener noreferrer">Clustal Omega</a>. Analise quais regiões se alinham diretamente, discuta as diferenças e vamos entender as implicações biológicas dessas variações. Ter apenas "uma parte" da proteína pode ser suficiente para algumas análises? Isso depende do contexto biológico? 
+---
 
-> Baixe aqui o arquivo multiFASTA com as 2 sequências: <a href="https://drive.google.com/file/d/1qILbrqhwLmvImiNK1Wg469DPcJgOx047/view?usp=sharing" target="_blank">multiFASTA_p53_1TUP_vs_WT.fasta</a>
+# Atividade 1: Alinhamento 1TUP vs. Sequência Completa
+
+**Alinhamento 1TUP vs. Sequência Completa (WT):** Temos as sequências FASTA do domíde ligação ao DNA da p53 e sua sequenência completa (WT), e, juntos, executaremos o alinhamento múltiplo no <a href="https://www.ebi.ac.uk/jdispatcher/msa/clustalo" target="_blank" rel="noopener noreferrer">Clustal Omega</a>. Analise quais regiões se alinham diretamente, discuta as diferenças e vamos entender as implicações biológicas dessas variações. Ter apenas "uma parte" da proteína pode ser suficiente para algumas análises? Isso depende do contexto biológico?
 
 > Sequências FASTA do domínio ligador de DNA da p53, cristalizado por X-ray (PDB ID: 1TUP):
 
@@ -150,27 +150,28 @@ MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGP
 DEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLSSSVPSQKTYQGSYGFRLGFLHSGTAK
 SVTCTYSPALNKMFCQLAKTCPVQLWVDSTPPPGTRVRAMAIYKQSQHMTEVVRRCPHHE
 RCSDSDGLAPPQHLIRVEGNLRVEYLDDRNTFRHSVVVPYEPPEVGSDCTTIHYNYMCNS
-SCMGGMNRRPILTIITLEDSSGNLLGRNSFEVRVCACPGRDRRTEEENLRKKGEPHHELP
-PGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPG
 GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 ```
+
+## Perguntas:
 
 ### Perguntas:
 
 - Em quais trechos o domínio 1TUP se alinha diretamente com a sequência completa e quais regiões ficam sem correspondência?
 - Os limites N- e C-terminais do domínio cristalizado aparecem contíguos no alinhamento ou revelam lacunas/extensions relevantes para estabilidade?
 - Há resíduos-chave do sítio de ligação ao DNA presentes apenas na sequência completa? O que isso implica para os modelos baseados no domínio?
-- Considerando identidade e similaridade ponto a ponto, qual argumento favorece trabalhar com o domínio isolado ou com a proteína completa nas próximas etapas?
-
 ---
 
-# Atividade 2 
-
+# Atividade 2: Análise de Mutações Oncogênicas
 
 > **Atividade (EXTRA):** Temos 5 sequências da p53 (1 referência *wild-type* e 4 variantes associadas a neoplasias) e, juntos, executaremos o alinhamento múltiplo no <a href="https://www.ebi.ac.uk/jdispatcher/msa/clustalo" target="_blank" rel="noopener noreferrer">Clustal Omega</a>. Analise quais substituições coincidem com domínios funcionais críticos, discuta como essas mudanças podem impactar estabilidade e interação com DNA e, por fim, decidam coletivamente qual variante seguirá para aprofundamento nas etapas práticas.
 
+> **Atividade (EXTRA):** Temos 5 sequências da p53 (1 referência *wild-type* e 4 variantes associadas a neoplasias) e, juntos, executaremos o alinhamento múltiplo no <a href="https://www.ebi.ac.uk/jdispatcher/msa/clustalo" target="_blank" rel="noopener noreferrer">Clustal Omega</a>. Analise quais substituições coincidem com domínios funcionais críticos, discuta como essas mudanças podem impactar estabilidade e interação com DNA e, por fim, decidam coletivamente qual variante seguirá para aprofundamento nas etapas práticas.
 > Baixe aqui o arquivo multiFASTA com as 5 sequências: <a href="https://drive.google.com/file/d/1qpbnbvNjTRcvvG-UsXdiJYXvynkdvxYw/view?usp=sharing" target="_blank">multiFASTA_p53_variants.fasta</a>
 
+## Sequências para Análise
+
+### Wild-Type (Sequência Canônica - 393 aa)
 ## Wild-Type (Sequência Canônica - 393 aa)
 
 ```
@@ -180,12 +181,12 @@ DEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLSSSVPSQKTYQGSYGFRLGFLHSGTAK
 SVTCTYSPALNKMFCQLAKTCPVQLWVDSTPPPGTRVRAMAIYKQSQHMTEVVRRCPHHE
 RCSDSDGLAPPQHLIRVEGNLRVEYLDDRNTFRHSVVVPYEPPEVGSDCTTIHYNYMCNS
 SCMGGMNRRPILTIITLEDSSGNLLGRNSFEVRVCACPGRDRRTEEENLRKKGEPHHELP
-PGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPG
 GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 ```
 
-## Mutações Cancer-Associadas
+### Mutações Cancer-Associadas
 
+#### R175H (Hotspot - Contato com Zinco)
 ### R175H (Hotspot - Contato com Zinco)
 
 ```
@@ -198,9 +199,9 @@ SCMGGMNRRPILTIITLEDSSGNLLGRNSFEVRVCACPGRDRRTEEENLRKKGEPHHELP
 PGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPG
 GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 ```
-
 **Mudança na posição 175: R → H** 
 
+#### R248Q (Hotspot - Contato Direto com DNA)
 ### R248Q (Hotspot - Contato Direto com DNA)
 
 ```
@@ -213,9 +214,9 @@ SCMGGMNQRPILTIITLEDSSGNLLGRNSFEVRVCACPGRDRRTEEENLRKKGEPHHELP
 PGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPG
 GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 ```
-
 **Mudança na posição 248: R → Q** 
 
+#### Y220C (Cavidade Hidrofóbica)
 ### Y220C (Cavidade Hidrofóbica)
 
 ```
@@ -227,9 +228,9 @@ RCSDSDGLAPPQHLIRVEGNLRVECLDDRNTFRHSVVVPYEPPEVGSDCTTIHYNYMCNS
 SCMGGMNRRPILTIITLEDSSGNLLGRNSFEVRVCACPGRDRRTEEENLRKKGEPHHELP
 PGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPG
 GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
-```
-
 **Mudança na posição 220: Y → C** 
+
+#### R273H (Hotspot - Contato Direto com DNA)
 
 ### R273H (Hotspot - Contato Direto com DNA)
 
@@ -290,7 +291,7 @@ Para confirmar as posições exatas:
 - **R248Q**: Resíduo 248 (Arginina → Glutamina)
 - **R273H**: Resíduo 273 (Arginina → Histidina)
 
-### Perguntas:
+## Perguntas:
 
 - Em quais posições do alinhamento múltiplo surgem substituições e essas posições são conservadas na sequência *wild-type*?
 - As mutações identificadas representam trocas conservativas ou drásticas em termos de propriedades físico-químicas (ex.: troca de polar para hidrofóbico)?
@@ -320,7 +321,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 - Construir modelos da p53 utilizando diferentes abordagens.
 - Analisar alinhamentos sequência-molde e métricas de confiança.
 
-### Modelagem por Homologia
+## Modelagem por Homologia (SWISS-MODEL)
 
 **Plataforma:** SWISS-MODEL  
 **URL:** <a href="https://swissmodel.expasy.org/" target="_blank">https://swissmodel.expasy.org/</a>
@@ -331,7 +332,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 ---
 
-### Modelagem por Homologia
+## Atividade Prática: SWISS-MODEL
 
 Nesta parte da atividade iremos utilizar o <a href="https://swissmodel.expasy.org/" target="_blank">https://swissmodel.expasy.org/</a> umas das plataformas mais populares para modelagem por homologia. O SWISS-MODEL é um servidor web automatizado para a construção de modelos tridimensionais de proteínas com base em sequências de aminoácidos. Ele utiliza uma abordagem de modelagem por homologia, onde a estrutura de uma proteína alvo é prevista com base na similaridade com proteínas de estrutura conhecida (modelos).
 
@@ -347,7 +348,7 @@ Mas nesta atividade, focaremos no SWISS-MODEL devido à sua interface amigável 
 
 ---
 
-### Modelagem por Threading/Ab Initio
+## Modelagem por Threading (I-TASSER)
 
 **Plataforma:** I-TASSER  
 **URL:** <a href="https://zhanggroup.org/I-TASSER/" target="_blank">https://zhanggroup.org/I-TASSER/</a>
@@ -381,7 +382,7 @@ Nesta seção, o foco não será a submissão ou a espera pelo processamento, ma
 - **C-score:** Confiança da predição (-5 a 2, valores mais altos = melhor)
 - **TM-score:** Similaridade estrutural
 
-### Primeira Validação
+## Primeira Validação
 
 ### Perguntas:
 
@@ -394,7 +395,7 @@ Nesta seção, o foco não será a submissão ou a espera pelo processamento, ma
 
 ---
 
-# Aindo no Módulo 2: E o *Ab Initio*?
+# Módulo 2 (Continuação): E o *Ab Initio*?
 
 O Rosetta revolucionou a biologia estrutural computacional ao introduzir métodos inovadores para a predição de estruturas de proteínas. Desenvolvido inicialmente por David Baker e sua equipe na Universidade de Washington, o Rosetta utiliza uma abordagem baseada em fragmentos para construir modelos tridimensionais de proteínas a partir de suas sequências de aminoácidos. 
 
@@ -409,7 +410,7 @@ Foi (e ainda é) um marco na engenharia de proteínas, ilustrando o potencial da
 > Baixem o paper descrevendo a Top-7 pela primeira vez aqui: <a href="https://drive.google.com/file/d/1i55VKkRIEOy2FjWYRb8AQYZoN1JDNSzE/view?usp=sharing" target="_blank">Design of a novel globular protein fold with atomic-level accuracy.</a>
 
 <figure class="figure-center">
-  <img src="imgs/scafold.png" alt="XXXXX" width="1000">
+  <img src="imgs/scafold.png" alt="XXXXX" width="800">
 </figure>
 
 > A imagem, no quadro superior, mostra a desindade eletrostática da superfície da proteína Top-7, destacando suas características estruturais de alta acurácia na obtençã pro cristalografia de raios X. No quadro inferior, a representação em fita ilustra a topologia da proteína, evidenciando suas hélices alfa e folhas beta organizadas de forma compacta. Fonte: Baker, D. et al., Science, 2003.
@@ -426,7 +427,7 @@ Seu nome *Top-7* faz referência á sua topilogia, composta por 7 elementos secu
 
 Hoje o David Baker é dono de um dos maiores legados da biologia estrutural computacional, e foi laureado com Nobel de Química em 2023, junto com outros dois cientistas (DeepMind, AlphaFold), por suas contribuições revolucionárias para a predição e design de estruturas de proteínas.
 
-### Rosetta
+## Sobre o Rosetta
 
 > Bem, até agora, utilizamos métodos de modelagem baseados em homologia e threading. Mas e o *ab initio*? Existem pacotes que utilizam essa abordagem para prever estruturas de proteínas sem depender de modelos conhecidos. O  Rosetta é a refêrencia nessa área, e por anos, foi o padrão ouro para predição de estruturas de proteínas quando não havia modelos experimentais disponíveis. 
 
@@ -435,6 +436,8 @@ Hoje o David Baker é dono de um dos maiores legados da biologia estrutural comp
 | **Rosetta** | <a href="https://www.rosettacommons.org/software/license-and-download" target="_blank">https://www.rosettacommons.org/software/license-and-download</a> | pacote de engenharia de proteínas e predição de estruturas |
 | **Robetta** | <a href="http://robetta.bakerlab.org/" target="_blank">http://robetta.bakerlab.org/</a> | Servidor web para predição de estruturas com Rosetta |
 | **PyRosetta** | <a href="https://www.pyrosetta.org/" target="_blank">https://www.pyrosetta.org/</a> | Interface Python para Rosetta |
+
+<br> 
 
 <figure class="figure-center">
   <img src="imgs/folding_movie-ezgif.com-speed.gif" alt="XXXXX" width="500">
@@ -565,7 +568,7 @@ Aqui temos um exemplo como é um script XML para predição *ab initio* com Rose
 </ROSETTASCRIPTS>
 ```
 
----
+<br>
 
 Vamos discutir as vantagens e desvantagens do *ab initio* em comparação com os métodos que utilizamos até agora?
 
@@ -576,7 +579,7 @@ Vamos discutir as vantagens e desvantagens do *ab initio* em comparação com os
 > Rosetta Commons. Fonte: https://www.rosettacommons.org/docs/latest/application_documentation/demos/denovo_structure_prediction
 
 
-### Quantidade de Simulações Necessárias
+## Quantidade de Simulações Necessárias
 
 É possível realizar execuções de enovelamento em domínios separados de até aproximadamente 200 aminoácidos de comprimento, mas é amplamente realatado na literatura que o protocolo ab initio do Rosetta é mais eficaz para proteínas menores, tipicamente abaixo de 100-150 resíduos.
 
@@ -586,7 +589,7 @@ No gráfico à esquerda (**com formação de funil**), observa-se a **formação
 
 Por outro lado, **o gráfico à direita (sem funil formado)** demonstra um **cenário problemático** onde **não há convergência aparente**. **As estruturas estão dispersas em uma ampla faixa de RMSD (0-6 Å) sem correlação clara com a energia**, indicando que **o protocolo falhou em identificar o estado nativo ou que a proteína não possui um único estado enovelado bem definido**.
 
-### Critérios de Seleção do Modelo Final
+## Critérios de Seleção do Modelo Final
 
 Após a geração dos decoys, os modelos candidatos são selecionados com base em:
 
@@ -636,12 +639,12 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 | **AlphaFold 3 Server** | <a href="https://alphafoldserver.com/" target="_blank">https://alphafoldserver.com/</a> | Versão mais recente do AlphaFold |
 | **ESM3** | <a href="https://forge.evolutionaryscale.ai/" target="_blank">https://forge.evolutionaryscale.ai/</a> | Baseado em Modelo de Linguagem de Proteína e Dados Evolutivos  |
 
-### Métricas de Confiança
+## Métricas de Confiança
 
 - **pLDDT** (predicted Local Distance Difference Test): 0-100, >90 = alta confiança
 - **PAE** (Predicted Aligned Error): Confiança na posição relativa entre resíduos
 
-### Perguntas:
+## Perguntas:
 
 - Como os valores de pLDDT distribuídos ao longo da cadeia ajudam a distinguir regiões estruturadas de segmentos desordenados na p53 predita?
 - Ao comparar os mapas de PAE dos diferentes servidores, quais domínios apresentam maior incerteza relativa e como isso impacta a confiança global do modelo?
@@ -665,7 +668,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 - Realizar análise estrutural comparativa no PyMOL.
 - Quantificar diferenças estruturais via RMSD.
 
-**Servidores de Validação de Dobramento e Termodinâmica**
+## Servidores de Validação de Dobramento e Termodinâmica
 
 | Servidor | URL | Métrica Avaliada |
 |----------|-----|------------------|
@@ -673,7 +676,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 | **QMEAN** | <a href="https://swissmodel.expasy.org/qmean/" target="_blank">https://swissmodel.expasy.org/qmean/</a> | Qualidade global |
 | **ProSA-web** | <a href="https://prosa.services.came.sbg.ac.at/prosa.php" target="_blank">https://prosa.services.came.sbg.ac.at/prosa.php</a> | Z-score (energia do enovelamento) |
 
-### Análise Estrutural no PyMOL
+## Análise Estrutural no PyMOL
 
 **Modelos para Comparação:**
 - SWISS-MODEL (Homologia)
@@ -702,7 +705,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 - Criar representações ilustrativas das diferenças/similaridades.
 - Destacar regiões de interesse estrutural.
 
-### Perguntas:
+## Perguntas:
 
 - Quais modelos apresentam RMSD mais baixo em relação à estrutura experimental e o que isso revela sobre a qualidade geral de cada predição?
 - Ao inspecionar as sobreposições no PyMOL, quais regiões da p53 mantêm conformação consistente entre todos os modelos e quais divergem com mais intensidade?
@@ -711,31 +714,31 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 ---
 
-# Referências Teórico (Atividades Práticas)
+# Referências (Atividades Práticas)
 
-### Bases de Dados
+## Bases de Dados
 - <a href="https://www.uniprot.org/" target="_blank" rel="noopener noreferrer">UniProt</a>
 - <a href="https://www.rcsb.org/" target="_blank" rel="noopener noreferrer">RCSB PDB</a>
 
-### Ferramentas de Predição
+## Ferramentas de Predição
 - <a href="https://web.expasy.org/protparam/" target="_blank" rel="noopener noreferrer">ExPASy ProtParam</a>
 - <a href="https://services.healthtech.dtu.dk/service.php?SignalP-6.0" target="_blank" rel="noopener noreferrer">SignalP 6.0</a>
 - <a href="https://www.ebi.ac.uk/interpro/search/sequence/" target="_blank" rel="noopener noreferrer">InterProScan</a>
 - <a href="https://prosite.expasy.org/" target="_blank" rel="noopener noreferrer">PROSITE</a>
 
-### Modelagem Estrutural
+## Modelagem Estrutural
 - <a href="https://swissmodel.expasy.org/" target="_blank" rel="noopener noreferrer">SWISS-MODEL</a>
 - <a href="https://zhanggroup.org/I-TASSER/" target="_blank" rel="noopener noreferrer">I-TASSER</a>
 - <a href="https://colabfold.com/" target="_blank" rel="noopener noreferrer">AlphaFold 2 (ColabFold)</a>
 - <a href="https://alphafoldserver.com/" target="_blank" rel="noopener noreferrer">AlphaFold 3 Server</a>
 - <a href="https://esm.metademolab.com/esm3" target="_blank" rel="noopener noreferrer">ESM3</a>
 
-### Validação
+## Validação
 - <a href="http://molprobity.biochem.duke.edu/" target="_blank" rel="noopener noreferrer">MolProbity</a> / <a href="https://saves.mbi.ucla.edu/" target="_blank" rel="noopener noreferrer">SAVES</a>
 - <a href="https://swissmodel.expasy.org/qmean/" target="_blank" rel="noopener noreferrer">QMEAN</a>
 - <a href="https://prosa.services.came.sbg.ac.at/prosa.php" target="_blank" rel="noopener noreferrer">ProSA-web</a>
 
-### Visualização
+## Visualização
 - <a href="https://pymol.org/2/" target="_blank" rel="noopener noreferrer">PyMOL (Schrödinger)</a>
 
 ---
@@ -767,7 +770,7 @@ Para qualquer outro tipo de uso, entre em contato com os autores pelos e-mails f
 
 Esta seção apresenta um **script educacional interativo** que demonstra, passo a passo, o processo de **tradução de proteínas** via linha de comando (CLI). Esta ferramenta foi desenvolvida para complementar o aprendizado sobre o **Dogma Central da Biologia Molecular**, oferecendo uma visualização didática e interativa de como o mRNA é convertido em proteínas.
 
-## Sobre o Script
+### Sobre o Script
 
 <figure class="figure-center">
   <img src="imgs/prot-translation.png" alt="Screenshot do script de tradução de proteínas em execução" width="1000">
@@ -782,51 +785,51 @@ O script utiliza **animações em terminal** e **arte ASCII** para ilustrar:
 - O **dobramento proteico** e modificações pós-traducionais
 - **Relevância clínica** e aplicações terapêuticas
 
-## Script Disponível
+### Script Disponível
 
 **Ferramenta de Tradução de Proteínas** 
 
 - [Baixar domrnaparaproteina.py](https://raw.githubusercontent.com/madsondeluna/bits_bytes_biomolecules/main/protein-translation_CLI/domrnaparaproteina.py)
 - [Ver código no repositório](protein-translation_CLI/domrnaparaproteina.py)
 
-### Como Baixar
+#### Como Baixar
 
 Você pode baixar o script de **três formas**:
 
-#### Opção 1: Download Direto
+**Opção 1: Download Direto**
 - Clique no link "Baixar domrnaparaproteina.py" acima
 - O arquivo será baixado automaticamente
 - Salve em uma pasta de fácil acesso
 
-#### Opção 2: Clonar o Repositório Completo
+**Opção 2: Clonar o Repositório Completo**
 ```bash
 git clone https://github.com/madsondeluna/bits_bytes_biomolecules.git
 cd bits_bytes_biomolecules/protein-translation_CLI
 ```
 
-#### Opção 3: Download via Terminal (Linux/macOS)
+**Opção 3: Download via Terminal (Linux/macOS)**
 
 ```bash
 curl -O https://raw.githubusercontent.com/madsondeluna/bits_bytes_biomolecules/main/protein-translation_CLI/domrnaparaproteina.py
 chmod +x domrnaparaproteina.py
 ```
 
-## Como Executar
+### Como Executar
 
-### Pré-requisitos
+#### Pré-requisitos
 - **Python 3.6+** instalado no sistema
 - Terminal compatível (Linux, macOS, Windows Terminal, ou PowerShell)
 
-### Instruções de Execução
+#### Instruções de Execução
 
-#### 1. Via Terminal (qualquer sistema operacional)
+**1. Via Terminal (qualquer sistema operacional)**
 
 ```bash
 cd protein-translation_CLI
 python3 domrnaparaproteina.py
 ```
 
-#### 2. Execução Direta (Linux/macOS)
+**2. Execução Direta (Linux/macOS)**
 
 O script possui permissão de execução. Você pode executá-lo diretamente:
 
@@ -834,14 +837,14 @@ O script possui permissão de execução. Você pode executá-lo diretamente:
 ./protein-translation_CLI/domrnaparaproteina.py
 ```
 
-#### 3. No Windows (PowerShell ou CMD)
+**3. No Windows (PowerShell ou CMD)**
 
 ```powershell
 cd protein-translation_CLI
 python domrnaparaproteina.py
 ```
 
-## Conteúdo Abordado
+### Conteúdo Abordado
 
 Os scripts cobrem os seguintes tópicos de forma interativa:
 
@@ -880,28 +883,26 @@ Os scripts cobrem os seguintes tópicos de forma interativa:
 
 8. **Técnicas de Pesquisa**
    - Ribosome profiling (Ribo-seq)
-   - Proteômica por espectrometria de massa
-   - Abordagens de célula única
+- Proteômica por espectrometria de massa
+- Abordagens de célula única
 
-## Características Técnicas
-
-- **Animações suaves** com efeito de digitação
+### Características Técnicas- **Animações suaves** com efeito de digitação
 - **Arte ASCII** para representar moléculas e processos
 - **Interatividade**: pressione ENTER para avançar entre as etapas
 - **Código limpo e bem documentado** para uso educacional
 - **Interrupção segura**: use `Ctrl+C` para sair a qualquer momento
+- **Código limpo e bem documentado** para uso educacional
+- **Interrupção segura**: use `Ctrl+C` para sair a qualquer momento
 
-## Uso Educacional Recomendado
-
-Esses scripts são ideais para:
+### Uso Educacional Recomendado
 - **Aulas introdutórias** sobre biologia molecular
 - **Revisão visual** de conceitos de tradução proteica
 - **Complemento** aos exercícios práticos de modelagem
 - **Demonstrações interativas** em sala de aula ou workshops
+- **Complemento** aos exercícios práticos de modelagem
+- **Demonstrações interativas** em sala de aula ou workshops
 
-## Autoria
-
-**Desenvolvido por:** Madson Aragão @ UFMG
+### Autoriavido por:** Madson Aragão @ UFMG
 **Baseado em:** Jia et al. (2024) - *Signal Transduction and Targeted Therapy*
 DOI: 10.1038/s41392-024-01749-9
 
@@ -910,13 +911,15 @@ DOI: 10.1038/s41392-024-01749-9
 **Dica:** Execute os scripts em **tela cheia** para uma melhor experiência visual!
 
 ---
+**Dica:** Execute os scripts em **tela cheia** para uma melhor experiência visual!
 
-## Encontrou um erro ou ambiguidade?
+---
+
+# Reporte de Erros
 
 Se você identificou algum **erro conceitual**, **ambiguidade científica** ou **imprecisão** neste material, ficarei **muito feliz** em corrigir e saber que pessoas atentas estão lendo e contribuindo para a qualidade deste conteúdo.
 
-### Como reportar um problema:
-
+## Como reportar um problema:
 1. Acesse o repositório oficial do curso: <a href="https://github.com/madsondeluna/bits_bytes_biomolecules" target="_blank">https://github.com/madsondeluna/bits_bytes_biomolecules</a>
 
 2. Clique na aba **"Issues"** (no topo da página do repositório)
