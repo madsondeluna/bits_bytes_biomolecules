@@ -1068,9 +1068,6 @@ Os scripts cobrem os seguintes tópicos de forma interativa:
 **Dica:** Execute os scripts em **tela cheia** para uma melhor experiência visual!
 
 ---
-**Dica:** Execute os scripts em **tela cheia** para uma melhor experiência visual!
-
----
 
 # Reporte de Erros
 
