@@ -597,6 +597,17 @@ O modelo final geralmente corresponde ao centroide do maior cluster de baixa ene
 
 ---
 
+## Take Home Message
+
+### Perguntas:
+
+- Acham que tem algo em comum entre nas metodologias de threading e *ab initio*?
+- Quais são as principais vantagens e limitações do método *ab initio* em comparação com homologia e threading?
+- Em que situações o *ab initio* seria a abordagem preferida para predição estrutural?
+- Como a quantidade de resíduos influencia a eficácia do *ab initio*? Spoiler: Proteínas pequenas são melhores candidatas, devidado a uma melhor sobreposicao dos da bibliotecas de fragmentos e para os dezenas de calculos de angulos torsionais necessários.
+
+---
+
 # Módulo 3: Predição por Deep Learning (AF2, AF3 e ESM3)
 
 Sequência FASTA completa da p53 (UNIPROT ID: P04637), que utilizaremos nas atividades práticas de modelagem estrutural:
