@@ -374,6 +374,28 @@ Nesta seção, o foco não será a submissão ou a espera pelo processamento, ma
 
 # Módulo 2: E o *Ab Initio*?
 
+O Rosetta revolucionou a biologia estrutural computacional ao introduzir métodos inovadores para a predição de estruturas de proteínas. Desenvolvido inicialmente por David Baker e sua equipe na Universidade de Washington, o Rosetta utiliza uma abordagem baseada em fragmentos para construir modelos tridimensionais de proteínas a partir de suas sequências de aminoácidos. 
+
+A proteína Top-7, projetada computacionalmente usando Rosetta, é um exemplo notável de como a modelagem *ab initio* pode ser eficaz. Esta proteína foi criada para ter uma estrutura estável e bem definida, demonstrando a capacidade do Rosetta de prever estruturas de proteínas que não possuem homólogos conhecidos na natureza. **Ela foi a primeira proteína projetada inteiramente por métodos computacionais a ser cristalizada e ter sua estrutura determinada experimentalmente, validando a precisão das predições do Rosetta.**
+
+A Top-7 possui uma estrutura composta por hélices alfa e folhas beta, formando um núcleo hidrofóbico compacto. Sua criação envolveu a seleção cuidadosa de fragmentos estruturais, a otimização da sequência para estabilidade e a validação experimental através de cristalografia de raios X.
+
+Foi (e ainda é) um marco na engenharia de proteínas, ilustrando o potencial da modelagem computacional para projetar novas proteínas com funções específicas, abrindo caminho para avanços em biotecnologia e medicina.
+
+> Kuhlman B, Dantas G, Ireton GC, Varani G, Stoddard BL, Baker D. Design of a novel globular protein fold with atomic-level accuracy. Science. 2003 Nov 21;302(5649):1364-8. doi: 10.1126/science.1089427. PMID: 14631033.
+
+> Baixem o paper descrevendo a Top-7 pela primeira vez aqui: <a href="https://drive.google.com/file/d/1i55VKkRIEOy2FjWYRb8AQYZoN1JDNSzE/view?usp=sharing" target="_blank">Design of a novel globular protein fold with atomic-level accuracy.</a>
+
+<figure class="figure-center">
+  <img src="imgs/scafold.png" alt="XXXXX" width="1000">
+</figure>
+
+> A imagem, no quadro superior, mostra a desindade eletrostática da superfície da proteína Top-7, destacando suas características estruturais de alta acurácia na obtençã pro cristalografia de raios X. No quadro inferior, a representação em fita ilustra a topologia da proteína, evidenciando suas hélices alfa e folhas beta organizadas de forma compacta. Fonte: Baker, D. et al., Science, 2003.
+
+**A Top-7 serve como uma scaffold sintético** com duas alças, fitas beta e hélices alfa, podem ser substituidas por sequencias que tenham a mesma topologia, mas com diferentes propriedades funcionais. Transformando a Top-7 em uma plataforma versátil para engenharia de proteínas. 
+
+> Hoje o David Baker é dono de um dos maiores legados da biologia estrutural computacional, e foi laureado com Nobel de Química em 2023, junto com outros dois cientistas (DeepMind, AlphaFold), por suas contribuições revolucionárias para a predição e design de estruturas de proteínas.
+
 > Bem, até agora, utilizamos métodos de modelagem baseados em homologia e threading. Mas e o *ab initio*? Existem pacotes que utilizam essa abordagem para prever estruturas de proteínas sem depender de modelos conhecidos. O  Rosetta é a refêrencia nessa área, e por anos, foi o padrão ouro para predição de estruturas de proteínas quando não havia modelos experimentais disponíveis. 
 
 ### Rosetta
