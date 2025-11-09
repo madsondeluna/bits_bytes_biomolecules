@@ -396,11 +396,19 @@ Foi (e ainda é) um marco na engenharia de proteínas, ilustrando o potencial da
 
 **A Top-7 serve como uma scaffold sintético** com duas alças, fitas beta e hélices alfa, podem ser substituidas por sequencias que tenham a mesma topologia, mas com diferentes propriedades funcionais. Transformando a Top-7 em uma plataforma versátil para engenharia de proteínas. 
 
-> Hoje o David Baker é dono de um dos maiores legados da biologia estrutural computacional, e foi laureado com Nobel de Química em 2023, junto com outros dois cientistas (DeepMind, AlphaFold), por suas contribuições revolucionárias para a predição e design de estruturas de proteínas.
+Seu nome *Top-7* faz referência á sua topilogia, composta por 7 elementos secundários (4 hélices alfa e 3 fitas beta) organizados em uma estrutura globular estável.
 
-> Bem, até agora, utilizamos métodos de modelagem baseados em homologia e threading. Mas e o *ab initio*? Existem pacotes que utilizam essa abordagem para prever estruturas de proteínas sem depender de modelos conhecidos. O  Rosetta é a refêrencia nessa área, e por anos, foi o padrão ouro para predição de estruturas de proteínas quando não havia modelos experimentais disponíveis. 
+<figure class="figure-center">
+  <img src="imgs/1qys_TOP7_design_rib.png" alt="XXXXX" width="800">
+</figure>
+
+> Fonte: Jane Shelby Richardson, Duke University, 2014
+
+Hoje o David Baker é dono de um dos maiores legados da biologia estrutural computacional, e foi laureado com Nobel de Química em 2023, junto com outros dois cientistas (DeepMind, AlphaFold), por suas contribuições revolucionárias para a predição e design de estruturas de proteínas.
 
 ### Rosetta
+
+> Bem, até agora, utilizamos métodos de modelagem baseados em homologia e threading. Mas e o *ab initio*? Existem pacotes que utilizam essa abordagem para prever estruturas de proteínas sem depender de modelos conhecidos. O  Rosetta é a refêrencia nessa área, e por anos, foi o padrão ouro para predição de estruturas de proteínas quando não havia modelos experimentais disponíveis. 
 
 | Recurso | URL | Descrição |
 |---------|-----|-----------|
@@ -420,7 +428,7 @@ O Rosetta funciona através de terminal, via CLI (Command Line Interface) e requ
 
 Para os interesados, deixei disponível o tutrial comentando do Rosetta *ab initio* que utilizei: https://docs.rosettacommons.org/demos/latest/tutorials/denovo_structure_prediction/Denovo_structure_prediction
 
-> Construir um Rosetta Script (XML) é uma tarefa que exige conhecimento prévio sobre a sintaxe e os módulos disponíveis na suíte Rosetta. Ele é o alicerce para definir como sua predição será conduzida, seja para modelagem de estruturas, docking molecular ou design de proteínas. Segue o protocolo de boas práticas para criar um script XML eficaz: https://docs.rosettacommons.org/docs/latest/scripting_documentation/RosettaScripts/RosettaScripts
+Construir um Rosetta Script (XML) é uma tarefa que exige conhecimento prévio sobre a sintaxe e os módulos disponíveis na suíte Rosetta. Ele é o alicerce para definir como sua predição será conduzida, seja para modelagem de estruturas, docking molecular ou design de proteínas. Segue o protocolo de boas práticas para criar um script XML eficaz: https://docs.rosettacommons.org/docs/latest/scripting_documentation/RosettaScripts/RosettaScripts
 
 Aqui temos um exemplo como é um script XML para predição *ab initio* com Rosetta, que eu usei há alguns anos atrás:
 
@@ -537,7 +545,9 @@ Aqui temos um exemplo como é um script XML para predição *ab initio* com Rose
 </ROSETTASCRIPTS>
 ```
 
-> Vamos discutir as vantagens e desvantagens do *ab initio* em comparação com os métodos que utilizamos até agora?
+---
+
+Vamos discutir as vantagens e desvantagens do *ab initio* em comparação com os métodos que utilizamos até agora?
 
 <figure class="figure-center">
   <img src="imgs/folding_funnels.png" alt="XXXXX" width="600">
