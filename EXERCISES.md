@@ -284,6 +284,155 @@ Para confirmar as posições exatas:
 - **Y220C**: Resíduo 220 (Tirosina → Cisteína)
 - **R248Q**: Resíduo 248 (Arginina → Glutamina)
 - **R273H**: Resíduo 273 (Arginina → Histidina)
+  
+
+## Representação das Mutações (Cadeias Laterais)
+
+### Mutação R175H (Arginina → Histidina)
+
+**ANTES: Arginina (R)**
+```
+        NH₂⁺
+        |
+        C=NH₂⁺
+        |
+        NH
+        |
+        (CH₂)₃
+        |
+    Cα--C
+```
+- **Carga**: Positiva (+1)
+- **pKa**: ~12.5
+- **Características**: Básica, hidrofílica, longa cadeia alifática
+
+**DEPOIS: Histidina (H)**
+```
+        NH⁺
+       /  \
+      HC   CH
+       \\  /
+        N—C
+        |
+        CH₂
+        |
+    Cα--C
+```
+- **Carga**: Positiva/Neutra (dependente do pH)
+- **pKa**: ~6.0
+- **Características**: Básica fraca, imidazol, menor carga que Arg
+
+**Impacto**: Perda de carga positiva forte → Afeta interação com DNA
+
+---
+
+### Mutação Y220C (Tirosina → Cisteína)
+
+**ANTES: Tirosina (Y)**
+```
+        OH
+        |
+       C6H4 (anel benzênico)
+        |
+        CH₂
+        |
+    Cα--C
+```
+- **Carga**: Neutra (polar)
+- **Características**: Aromática, volumosa, hidroxila fenólica
+- **Ligações**: π-π stacking, pontes de hidrogênio
+
+**DEPOIS: Cisteína (C)**
+```
+        SH
+        |
+        CH₂
+        |
+    Cα--C
+```
+- **Carga**: Neutra
+- **Características**: Pequena, tiol reativo, forma pontes dissulfeto
+- **Potencial**: S-S (dimerização ou oxidação)
+
+**Impacto**: Perda de aromático volumoso → Instabilidade estrutural
+
+---
+
+### Mutação R248Q (Arginina → Glutamina)
+
+**ANTES: Arginina (R)**
+```
+        NH₂⁺
+        |
+        C=NH₂⁺
+        |
+        NH
+        |
+        (CH₂)₃
+        |
+    Cα--C
+```
+- **Carga**: Positiva (+1)
+- **pKa**: ~12.5
+- **Características**: Básica, guanidina carregada
+
+**DEPOIS: Glutamina (Q)**
+```
+        O
+        ‖
+        C—NH₂
+        |
+        CH₂
+        |
+        CH₂
+        |
+    Cα--C
+```
+- **Carga**: Neutra
+- **Características**: Polar, amida não carregada
+- **Potencial**: Pontes de hidrogênio fracas
+
+**Impacto**: Perda completa de carga positiva → Perda de contato com DNA
+
+---
+
+### Mutação R273H (Arginina → Histidina)
+
+**ANTES: Arginina (R)**
+```
+        NH₂⁺
+        |
+        C=NH₂⁺
+        |
+        NH
+        |
+        (CH₂)₃
+        |
+    Cα--C
+```
+- **Carga**: Positiva (+1)
+- **pKa**: ~12.5
+- **Características**: Longa, flexível, sempre protonada em pH fisiológico
+
+**DEPOIS: Histidina (H)**
+```
+        NH⁺/N
+       /  \
+      HC   CH
+       \\  /
+        N—C
+        |
+        CH₂
+        |
+    Cα--C
+```
+- **Carga**: Variável (pH dependente)
+- **pKa**: ~6.0
+- **Características**: Anel imidazol, protonação reversível
+
+**Impacto**: Troca de carga permanente por carga pH-dependente
+
+---
 
 ## Perguntas para Discussão:
 
