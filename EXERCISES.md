@@ -115,7 +115,8 @@ Na página de downloads da sua conta Schrödinger, baixe o instalador apropriado
 
 As ferramentas abaixo serão utilizadas para analisar propriedades físico-químicas e funcionais utilizando sequências FASTA de proteínas e peptídeos, é uma abordagem exploratória para entender melhor como o seu sistema é representado em termos de características bioquímicas e funcionais.
 
-|------------|-----|---------|
+| Ferramenta | URL | Descrição |
+|------------|-----|-----------|
 | **ProtParam** | <a href="https://web.expasy.org/protparam/" target="_blank">https://web.expasy.org/protparam/</a> | Parâmetros físico-químicos |
 | **SignalP 6.0** | <a href="https://services.healthtech.dtu.dk/services/SignalP-6.0/" target="_blank">https://services.healthtech.dtu.dk/services/SignalP-6.0/</a> | Predição de peptídeos de sinal |
 | **InterProScan** | <a href="https://www.ebi.ac.uk/interpro/search/sequence/" target="_blank">https://www.ebi.ac.uk/interpro/search/sequence/</a> | Identificação de domínios e famílias |
@@ -405,7 +406,7 @@ Foi (e ainda é) um marco na engenharia de proteínas, ilustrando o potencial da
 > Baixem o paper descrevendo a Top-7 pela primeira vez aqui: <a href="https://drive.google.com/file/d/1i55VKkRIEOy2FjWYRb8AQYZoN1JDNSzE/view?usp=sharing" target="_blank">Design of a novel globular protein fold with atomic-level accuracy.</a>
 
 <figure class="figure-center">
-  <img src="imgs/scafold.png" alt="XXXXX" width="800">
+  <img src="imgs/scafold.png" alt="XXXXX" width="500">
 </figure>
 
 > A imagem, no quadro superior, mostra a desindade eletrostática da superfície da proteína Top-7, destacando suas características estruturais de alta acurácia na obtençã pro cristalografia de raios X. No quadro inferior, a representação em fita ilustra a topologia da proteína, evidenciando suas hélices alfa e folhas beta organizadas de forma compacta. Fonte: Baker, D. et al., Science, 2003.
@@ -415,7 +416,7 @@ Foi (e ainda é) um marco na engenharia de proteínas, ilustrando o potencial da
 Seu nome *Top-7* faz referência á sua topilogia, composta por 7 elementos secundários (4 hélices alfa e 3 fitas beta) organizados em uma estrutura globular estável.
 
 <figure class="figure-center">
-  <img src="imgs/1qys_TOP7_design_rib.png" alt="XXXXX" width="500">
+  <img src="imgs/1qys_TOP7_design_rib.png" alt="XXXXX" width="450">
 </figure>
 
 > Fonte: Jane Shelby Richardson, Duke University, 2014
@@ -449,6 +450,8 @@ Para os interesados, deixei disponível o tutrial comentando do Rosetta *ab init
 Construir um Rosetta Script (XML) é uma tarefa que exige conhecimento prévio sobre a sintaxe e os módulos disponíveis na suíte Rosetta. Ele é o alicerce para definir como sua predição será conduzida, seja para modelagem de estruturas, docking molecular ou design de proteínas. Segue o protocolo de boas práticas para criar um script XML eficaz: https://docs.rosettacommons.org/docs/latest/scripting_documentation/RosettaScripts/RosettaScripts
 
 Aqui temos um exemplo como é um script XML para predição *ab initio* com Rosetta, que eu usei há alguns anos atrás:
+
+<br>
 
 ```xml
 <ROSETTASCRIPTS>
