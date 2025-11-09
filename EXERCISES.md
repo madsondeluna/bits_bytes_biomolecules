@@ -1062,8 +1062,6 @@ Os scripts cobrem os seguintes tópicos de forma interativa:
 ### Autoria
 
 **Desenvolvido por:** Madson Aragão @ UFMG
-**Baseado em:** Jia et al. (2024) - *Signal Transduction and Targeted Therapy*
-DOI: 10.1038/s41392-024-01749-9
 
 ---
 
