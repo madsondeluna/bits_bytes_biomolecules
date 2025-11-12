@@ -124,7 +124,7 @@
   <div id="login-overlay">
     <div id="login-box">
       <h2>🔐 Acesso Restrito</h2>
-      <p style="text-align: center; color: rgba(255, 255, 255, 0.9);">Bits, Bytes e Biomoléculas</p>
+      <p style="text-align: center; color: #1e3a5f; font-weight: 500;">Bits, Bytes e Biomoléculas</p>
       <input type="text" id="username" placeholder="Usuário" autocomplete="username">
       <input type="password" id="password" placeholder="Senha" autocomplete="current-password">
       <button onclick="checkLogin()">Entrar</button>
@@ -252,8 +252,8 @@
       const errorMsg = document.getElementById('error-msg');
 
       if (AUTH_CREDENTIALS[username] === password) {
-        // Login bem-sucedido
-        localStorage.setItem('bbb_auth', btoa(username + ':' + password));
+        // Login bem-sucedido (usando sessionStorage - expira ao fechar o navegador)
+        sessionStorage.setItem('bbb_auth', btoa(username + ':' + password));
         showContent();
         errorMsg.textContent = '';
       } else {
@@ -270,7 +270,7 @@
     }
 
     function logout() {
-      localStorage.removeItem('bbb_auth');
+      sessionStorage.removeItem('bbb_auth');
       document.getElementById('login-overlay').classList.remove('hidden');
       document.getElementById('logout-btn').classList.add('hidden');
       document.getElementById('username').value = '';
@@ -280,7 +280,7 @@
 
     // Verifica se já está autenticado
     function checkAuth() {
-      const auth = localStorage.getItem('bbb_auth');
+      const auth = sessionStorage.getItem('bbb_auth');
       if (auth) {
         try {
           const decoded = atob(auth);
@@ -290,7 +290,7 @@
             return;
           }
         } catch (e) {
-          localStorage.removeItem('bbb_auth');
+          sessionStorage.removeItem('bbb_auth');
         }
       }
     }
