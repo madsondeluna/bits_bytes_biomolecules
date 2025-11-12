@@ -5,8 +5,94 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Exercícios Práticos — Bits, Bytes e Biomoléculas</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    #login-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    #login-box {
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      max-width: 400px;
+      width: 90%;
+    }
+    #login-box h2 {
+      margin-top: 0;
+      color: #333;
+      text-align: center;
+    }
+    #login-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+    #login-box button {
+      width: 100%;
+      padding: 12px;
+      background: #667eea;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    #login-box button:hover {
+      background: #5568d3;
+    }
+    .error-message {
+      color: #d32f2f;
+      font-size: 14px;
+      margin-top: 10px;
+      text-align: center;
+    }
+    #logout-btn {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      padding: 8px 16px;
+      background: #f44336;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      z-index: 1000;
+    }
+    #logout-btn:hover {
+      background: #d32f2f;
+    }
+    .hidden {
+      display: none !important;
+    }
+  </style>
 </head>
 <body>
+  <div id="login-overlay">
+    <div id="login-box">
+      <h2>🔐 Acesso Restrito</h2>
+      <p style="text-align: center; color: #666;">Exercícios Práticos</p>
+      <input type="text" id="username" placeholder="Usuário" autocomplete="username">
+      <input type="password" id="password" placeholder="Senha" autocomplete="current-password">
+      <button onclick="checkLogin()">Entrar</button>
+      <div id="error-msg" class="error-message"></div>
+    </div>
+  </div>
+  <button id="logout-btn" class="hidden" onclick="logout()">Sair</button>
   <header style="text-align: center;">
     <h1>Exercícios Práticos — Bits, Bytes e Biomoléculas</h1>
     <p class="muted">Esta página contém os exercícios práticos que serão realizados durante o curso.</p>
@@ -87,7 +173,91 @@
         document.getElementById('content').textContent = 'Erro ao carregar EXERCISES.md: ' + e.message;
       }
     }
-    renderExercises();
+
+    // ========================================================================
+    // CONFIGURAÇÃO DE USUÁRIOS E SENHAS
+    // ========================================================================
+    // Para adicionar ou modificar credenciais de acesso:
+    // 1. Para ALTERAR uma senha existente: modifique o valor entre aspas
+    // 2. Para ADICIONAR um novo usuário: adicione uma nova linha no formato:
+    //    'nome_usuario': 'senha',
+    // 3. Para REMOVER um usuário: delete a linha correspondente
+    //
+    // Exemplos:
+    //   'joao': 'senha123',
+    //   'maria': 'minhasenha456',
+    //   'turma2025': 'acesso2025'
+    // ========================================================================
+    const AUTH_CREDENTIALS = {
+      'aluno': 'biomol2025',      // ← ALTERE AQUI a senha do usuário 'aluno'
+      'professor': 'admin123'     // ← ALTERE AQUI a senha do usuário 'professor'
+      // Adicione mais usuários abaixo, seguindo o padrão:
+      // 'novo_usuario': 'nova_senha',
+    };
+
+    function checkLogin() {
+      const username = document.getElementById('username').value.trim();
+      const password = document.getElementById('password').value;
+      const errorMsg = document.getElementById('error-msg');
+
+      if (AUTH_CREDENTIALS[username] === password) {
+        // Login bem-sucedido
+        localStorage.setItem('bbb_auth', btoa(username + ':' + password));
+        showContent();
+        errorMsg.textContent = '';
+      } else {
+        // Login falhou
+        errorMsg.textContent = 'Usuário ou senha incorretos!';
+        document.getElementById('password').value = '';
+      }
+    }
+
+    function showContent() {
+      document.getElementById('login-overlay').classList.add('hidden');
+      document.getElementById('logout-btn').classList.remove('hidden');
+      renderExercises();
+    }
+
+    function logout() {
+      localStorage.removeItem('bbb_auth');
+      document.getElementById('login-overlay').classList.remove('hidden');
+      document.getElementById('logout-btn').classList.add('hidden');
+      document.getElementById('username').value = '';
+      document.getElementById('password').value = '';
+      document.getElementById('error-msg').textContent = '';
+    }
+
+    // Verifica se já está autenticado
+    function checkAuth() {
+      const auth = localStorage.getItem('bbb_auth');
+      if (auth) {
+        try {
+          const decoded = atob(auth);
+          const [username, password] = decoded.split(':');
+          if (AUTH_CREDENTIALS[username] === password) {
+            showContent();
+            return;
+          }
+        } catch (e) {
+          localStorage.removeItem('bbb_auth');
+        }
+      }
+    }
+
+    // Permite login com Enter
+    document.addEventListener('DOMContentLoaded', function() {
+      checkAuth();
+      document.getElementById('password').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          checkLogin();
+        }
+      });
+      document.getElementById('username').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          document.getElementById('password').focus();
+        }
+      });
+    });
   </script>
 </body>
 </html>
