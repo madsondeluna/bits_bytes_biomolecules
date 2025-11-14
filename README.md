@@ -613,9 +613,9 @@ O Paradoxo de Levinthal trata do Problema 2 (`a cinética`).
 
 <br>
 
-<p align="figure-center">
-  <img src="imgs/lev.png" alt="Cyrus Levinthal at the chalkboard" width="200">
-</p>
+<figure class="figure-center">
+  <img src="imgs/lev.png" alt="Cyrus Levinthal at the chalkboard" width="400">
+</figure>
 
 > Fonte: Cyrus Levinthal (1929-2021) na lousa. Imagem retirada de <a href="https://en.wikipedia.org/wiki/Cyrus_Levinthal" target="_blank">Wikipedia</a>.
 
