@@ -25,7 +25,7 @@ Este repositório contém o material de referência completo para o curso, inclu
 ## Take Home Message
 
 *"We estimate that if a protein were to fold by randomly trying all possible conformations, it would require a time longer than the age of the universe to arrive at its correct native structure."* 
-<p align="left"><strong>— Richard Lewontin (1929-2021)</strong></p>
+<p align="left"><strong>— Cyrus Levinthal (1929-2021)</strong></p>
 
 <figure class="figure-center">
   <img src="imgs/folding-funnel.gif" alt="DreamFold" width="700">
@@ -285,57 +285,6 @@ As **modificações pós-traducionais (PTMs)** são alterações químicas que o
 
 ---
 
-## A Tradução em Ação: É um Grande Complexo em Ação
-
-A iniciação da tradução em eucariotos depende da montagem coordenada do **complexo eIF4F** e do recrutamento sequencial das subunidades ribossômicas, culminando em um processo circular altamente organizado. O **complexo eIF4F** é formado inicialmente quando **eIF4G** se liga a **eIF4A**, e este **complexo eIF4G-eIF4A** subsequentemente recruta **eIF4E**, que reconhece o **cap 5' do mRNA**, **estabelecendo o complexo eIF4F completo na extremidade do transcrito.**
-
-Simultaneamente, **a proteína PABP (Poly-A Binding Protein) se liga à cauda poli-A 3' do mRNA**, estabelecendo uma comunicação entre as duas extremidades do transcrito através de interações diretas entre PABP e eIF4G, promovendo a circularização do mRNA. **Este complexo eIF4F então recruta a subunidade ribossômica 40S (pré-carregada com eIF3, eIF1, eIF1A e Met-tRNAi)** através de interações entre eIF4G e eIF3, posicionando o mRNA no canal de ligação da **subunidade 40S para iniciar a varredura até o reconhecimento do códon de iniciação AUG**.
-
-<figure class="figure-center">
-  <img src="imgs/eif4f_a.png" alt="XXXXX" width="700">
-</figure>
-
-> Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
-
-**Quando a subunidade 40S localiza o AUG, ocorre uma transição conformacional para o estado fechado,** com o **Met-tRNAi firmemente pareado no sítio P,** sinalizando para o **recrutamento da subunidade 60S** que catalisa a formação do ribossomo **80S** completo e o início efetivo da elongação. Entretanto, **a tradução não ocorre por um único ribossomo isolado**, mas sim através da formação de **polissomos**, onde **múltiplos ribossomos se enfileiram ao longo do mesmo mRNA**.
-
-<figure class="figure-center">
-  <img src="imgs/eif4f_b.png" alt="XXXXX" width="800">
-</figure>
-
-> Fonte: Biologia Molecular da Célula. Bruce, A., et. al., 2017.
-
-**A tradução ocorre de forma circular devido à interação entre eIF4G (ligado ao cap 5') e PABP (ligado à cauda poli-A 3')**, criando uma **topologia em anel** do mRNA que facilita a reiniciação ribossômica e coordena espacialmente o início e o término da tradução, permitindo que múltiplos ribossomos percorram ciclicamente a mesma molécula de mRNA de maneira extraordinariamente eficiente.
-
----
-
-### Os Ribossomos Localizam as Cicatrizes do Splicing Durante a Tradução e as RBP Ligadas a essas Cicatrizes, Funcionando como Marcadores de Qualidade do mRNA
-
-O primeiro ribossomo que reconhece o AUG inicia a tradução e, **durante sua progressão, encontra as cicatrizes moleculares deixadas pelo splicing—os complexos de junção exon-exon (EJCs) depositados aproximadamente 24 nucleotídeos upstream de cada junção exon-exon**. Estes **EJCs**, estáo geralmente **ligados a proteínas chamadas de RBPs (Proteínas Ligaoras de RNA)** (especialmente as eIF4A3, Y14 & MAGOH), que servem como **marcadores de controle de qualidade** indicando que aquele mRNA foi processado corretamente, e são removidos progressivamente pelos ribossomos tradutores durante a primeira ronda de tradução.
-
-
-<figure class="figure-center">
-  <img src="imgs/ejc.png" alt="XXXXX" width="600">
-</figure>
-
-> Marcadores de Qualidade nas Junções Exon-Exon. Os EJCs são depositados nas junções exon-exon e ligados progressivamente por proteínas RBP (eIF4A3, Y14, MAGOH), funcionando como selos de autenticidade que indicam ao ribossomo que o mRNA foi processado corretamente no núcleo; durante a tradução, o ribossomo remove estes complexos, garantindo que apenas mRNAs plenamente processados sejam traduzidos em proteínas. Fonte: Hauer, C., et al., 2017.
-
----
-
-## Um Zoom No Ribossomo: A Fábrica de Proteínas da Célula
-
-> Mas lembrem que para que o ribossomo reconheça o códon de iniciaçao (AUG) -> MET, ele precisa de toda uma maquinaria de fatores de iniciação (eIFs) e do tRNA iniciador (tRNA-Met) dispónivel na fração polirribossomal, é um grande complexo em ação que funciona como um scafoldold para que a tradução ocorra de forma eficiente e regulada.
-
-No contexto biológico da síntese proteica (tradução), este processo é energeticamente custoso, consumindo energia (na forma de ATP e GTP) para a ativação dos aminoácidos. Esta ativação ocorre através da ligação covalente entre cada aminoácido e seu tRNA cognato (complementar), catalisada pelas aminoacil-tRNA sintetases, enzimas altamente específicas que reconhecem tanto o aminoácido quanto seu tRNA correspondente. Uma vez formado o aminoacil-tRNA, este complexo é direcionado ao ribossomo para participar da tradução. A formação da ligação peptídica em si é catalisada pelo ribossomo, especificamente pela atividade peptidil transferase, uma função catalítica intrínseca ao RNA ribossômico (rRNA) localizado na subunidade maior. Este mecanismo transfere a cadeia polipeptídica crescente do tRNA localizado no sítio P (Peptidil) para o grupo amino do novo aminoácido que está ligado ao seu tRNA no sítio A (Aminoacil), permitindo assim a elongação da cadeia polipeptídica.
-
-<figure class="figure-center">
-  <img src="imgs/ribo.png" alt="XXXXX" width="700">
-</figure>
-
-> Fonte: Amy McDermott, 2024.
-
----
-
 ## Exemplo: Linfócito Maduro (Mínima Atividade de Tradução)
 
 <figure class="figure-center">
@@ -370,9 +319,21 @@ Um exemplo claro é um **plasmócito** (célula B ativada) produzindo **anticorp
 
 ---
 
-## Monômeros e Polímeros: Aminoácidos e Proteínas
+### Como Surgem as Proteínas?
+
+No contexto biológico da síntese proteica (tradução), este processo é energeticamente custoso, consumindo energia (na forma de ATP e GTP) para a ativação dos aminoácidos. Esta ativação ocorre através da ligação covalente entre cada aminoácido e seu tRNA cognato (complementar), catalisada pelas aminoacil-tRNA sintetases, enzimas altamente específicas que reconhecem tanto o aminoácido quanto seu tRNA correspondente. Uma vez formado o aminoacil-tRNA, este complexo é direcionado ao ribossomo para participar da tradução. A formação da ligação peptídica em si é catalisada pelo ribossomo, especificamente pela atividade peptidil transferase, uma função catalítica intrínseca ao RNA ribossômico (rRNA) localizado na subunidade maior. Este mecanismo transfere a cadeia polipeptídica crescente do tRNA localizado no sítio P (Peptidil) para o grupo amino do novo aminoácido que está ligado ao seu tRNA no sítio A (Aminoacil), permitindo assim a elongação da cadeia polipeptídica.
+
+<figure class="figure-center">
+  <img src="imgs/ribo.png" alt="XXXXX" width="700">
+</figure>
+
+> Fonte: Amy McDermott, 2024.
+
+<br>
 
 Ao abordar as interações entre aminoácidos, a ligação primordial e mais forte, que estabelece a estrutura primária de uma proteína, é a ligação peptídica. Esta ligação covalente é formada pela união do grupo α-carboxila de um aminoácido ao grupo α-amino do aminoácido subsequente, caracterizando uma reação de condensação (ou desidratação) na qual uma molécula de água (H₂O) é liberada.
+
+<br>
 
 <p align="justify">
   <img src="imgs/pep-bond.png" alt="XXXXXXXX" width="1000">
@@ -382,7 +343,7 @@ Ao abordar as interações entre aminoácidos, a ligação primordial e mais for
 
 <br>
 
-A ligação peptídica sob outra óptica: mostrando as possibilidades angulares e de rotação em torno da ligação peptídica, que é essencialmente planar devido à sua natureza parcial de dupla ligação (ressonância eletrônica entre o par de elétrons do nitrogênio e a carbonila, conferindo aproximadamente 40% de caráter de dupla ligação), resultando em uma conformação rígida e plana. As rotações permitidas ocorrem principalmente em torno das ligações N-Cα (ângulo φ, phi) e Cα-C (ângulo ψ, psi), que são cruciais para a formação das estruturas secundárias das proteínas, como α-hélices e folhas β.
+A ligação peptídica sob outra óptica. 
 
 <br>
 
@@ -392,17 +353,9 @@ A ligação peptídica sob outra óptica: mostrando as possibilidades angulares 
 
 > Fonte: Biochemistry, Seventh Edition. Reginald H. Garrett, Charles M. Grisham.
 
-E assim ocorre a polimerização dos aminoácidos em cadeias polipeptídicas, que posteriormente se dobram em estruturas tridimensionais complexas para formar proteínas funcionais. Como podemos ver na ilustração abaixo, mostrando a porção C-terminal de uma cadeia polipeptídica em crescimento, onde o próximo aminoácido a ser adicionado está posicionado para formar a ligação peptídica com o grupo carboxila do aminoácido anterior, e suas respectivas cadeias laterais (R) estão orientadas para fora, prontas para interagir com o ambiente circundante ou com outras partes da proteína, de acordo com sua natureza fisíco-química.
-
-<figure class="figure-center">
-  <img src="imgs/crescimento.png" alt="XXXXX" width="900">
-</figure>
-
-> Fonte: Biologia Molecular da Célula. Bruce, A., et. al., 2017.
-
 ---
 
-## Propriedades dos Aminoácidos Canônicos
+### Propriedades dos Aminoácidos Canônicos
 
 <p align="justify">
   <img src="imgs/aas.png" alt="Amino acids width="1000">
@@ -423,7 +376,7 @@ E assim ocorre a polimerização dos aminoácidos em cadeias polipeptídicas, qu
 
 ---
 
-## Interações Intermoleculares 
+### Interações Intermoleculares 
 
 <figure class="figure-center">
   <img src="imgs/aainteractions.png" alt="XXXXX" width="700">
@@ -648,7 +601,7 @@ A organização hierárquica das estruturas proteicas pode ser explorada atravé
 
 ### O Paradoxo de Levinthal
 
-Formulado por Cyrus Levinthal, este paradoxo destaca a impossibilidade de o enovelamento ocorrer por uma busca aleatória. Ele calculou que uma proteína levaria mais tempo que a idade do universo para testar todas as suas conformações possíveis. Isso demonstra que o enovelamento não é um processo aleatório, mas sim um processo altamente direcionado que segue "caminhos" ou "rotas" específicas, otimizadas ao longo da evolução, para atingir o estado nativo em uma escala de tempo biologicamente viável.
+Formulado por Richard Levinthal, este paradoxo destaca a impossibilidade de o enovelamento ocorrer por uma busca aleatória. Ele calculou que uma proteína levaria mais tempo que a idade do universo para testar todas as suas conformações possíveis. Isso demonstra que o enovelamento não é um processo aleatório, mas sim um processo altamente direcionado que segue "caminhos" ou "rotas" específicas, otimizadas ao longo da evolução, para atingir o estado nativo em uma escala de tempo biologicamente viável.
 
 ### O Paradoxo do Enovelamento (Levinthal)
 
@@ -661,10 +614,10 @@ O Paradoxo de Levinthal trata do Problema 2 (`a cinética`).
 <br>
 
 <p align="justify">
-  <img src="imgs/lev.png" alt="Richard Lewontin at the chalkboard" width="500">
+  <img src="imgs/lev.png" alt="Cyrus Levinthal at the chalkboard" width="1000">
 </p>
 
-> Fonte: Richard Lewontin (1929-2021) na lousa. Explicando a interação e inseparabilidade do genótipo e do ambiente.
+> Fonte: Cyrus Levinthal (1929-2021) na lousa. Explicando a interação e inseparabilidade do genótipo e do ambiente.
 
 ---
 
@@ -716,7 +669,7 @@ O resultado é:
 ##### Escala de Tempo Física
 
 $$
-t \sim \tau \times \big(C \cdot L^{2/3}\big)
+t \sim \tau \times \exp\!\big(C \cdot L^{2/3}\big)
 $$
 
 Onde:  
@@ -740,8 +693,8 @@ Resumo: o "paradoxo" é só prova de que a hipótese inicial (busca aleatória) 
 Modelos como AlphaFold (ex.: AF3) não "resolvem" o processo físico do enovelamento. Eles pulam todas as etapas intermediárias e entregam só o estado final.
 
 - AlphaFold **não** simula a busca impossível de $\sim 10^{30}$ conformações (que daria $\sim 10^{10}$ anos).  
-- AlphaFold **não** simula a dinâmica física guiada pelo funil energético (escala $\propto L^{2/3}$). Isso quem tenta fazer é Dinâmica Molecular, mas possui limitações severas de escala temporal e espacial. **Ex.: Simular microsegundos de uma proteína de 100 resíduos pode levar semanas em supercomputadores.**
-- AlphaFold aprende uma função estatística entre sequência e estrutura final estável, usando o histórico evolutivo embutido em bancos de dados estruturais (PDB). Basicamente, ele se utilizada de simplificações matemáticas e aprendizado de máquina para "pular" o enovelamento baseado em todas as tentantivas possíveis, teorizadas por Levinthal.
+- AlphaFold **não** simula a dinâmica física guiada pelo funil energético (escala $\propto L^{2/3}$). Isso quem tenta fazer é Dinâmica Molecular.  
+- AlphaFold aprende uma função estatística entre sequência e estrutura final estável, usando o histórico evolutivo embutido em bancos de dados estruturais (PDB).
 
 Podemos escrever essa ideia como:
 
@@ -749,7 +702,7 @@ $$
 f_{\text{AlphaFold}}(\text{sequência 1D}) \;\longrightarrow\; \text{estrutura 3D prevista}
 $$
 
-Ou seja: é predição com dezenas de simplificações matemáticas a nível de termodinãmica, simulando a físico-química do caminho de enovelamento com base em dados experimentais prévios e um modelo estatístico (de prendizado de máquina).
+Ou seja: é predição supervisionada, não simulação físico-química do caminho de enovelamento.
 
 ---
 
@@ -759,7 +712,7 @@ Ou seja: é predição com dezenas de simplificações matemáticas a nível de 
 | :------------------------------ | :------------------------------------------- | :----------------------------------- |
 | **Busca Aleatória (Levinthal)** | Testar $k^N$ estados possíveis                | $\sim 10^{10}$ anos                  |
 | **Física do Enovelamento**      | Ultrapassar a barreira $\propto L^{2/3}$      | microssegundos → minutos             |
-| **AlphaFold (Predição)**        | Estima o estado final de um dobrado | segundos → minutos                   |
+| **AlphaFold (Predição)**        | Prever diretamente o estado final 3D dobrado | segundos → minutos                   |
 
 ---
 
@@ -773,7 +726,7 @@ Antes de mergulharmos nos métodos, é essencial entender a diferença entre doi
 
 *   **Identidade de Sequência:** Refere-se à porcentagem de resíduos de aminoácidos que são **exatamente os mesmos** em posições correspondentes de um alinhamento. É uma contagem direta e rigorosa.
 
-*   **Similaridade de Sequência:** É uma medida mais abrangente. Ela inclui os resíduos idênticos **mais** aqueles que, embora não sejam iguais, compartilham **propriedades físico-químicas semelhantes** (ex: tamanho, carga, polaridade). Uma substituição de Leucina (L) por Isoleucina (I), ambos aminoácidos grandes e hidrofóbicos, é um exemplo de substituição "conservativa" que conta como similaridade. Biologicamente, essas trocas têm menor probabilidade de perturbar a estrutura e a função da proteína.
+*   **Similaridade de Sequência:** É uma medida mais abrangente. Ela inclui os resíduos idênticos **mais*físico-químicas semelhantes** (ex: tamanho, carga, polaridade). Uma substituição de Leucina (L) por Isoleucina (I), ambos aminoácidos grandes e hidrofóbicos, é um exemplo de substituição "conservativa" que conta como similaridade. Biologicamente, essas trocas têm menor probabilidade de perturbar a estrutura e a função da proteína.
 
 **Exemplo Prático:**
 
@@ -1230,29 +1183,3 @@ O conhecimento estrutural permite o design racional de novas ferramentas biotecn
 **Nota Final:**
 
 É fundamental ressaltar que um modelo computacional é, por definição, uma predição. A verdadeira força da biologia estrutural moderna reside na união desses dois mundos. Sempre que há uma validação experimental de um modelo teórico, unimos o melhor do mundo computacional (velocidade e escala) com o melhor da biologia molecular (a prova funcional). Usamos o modelo para guiar o experimento (ex: qual mutação fazer) e usamos o experimento (ex: um ensaio de atividade) para validar o modelo.
-
----
-
-## Encontrou um erro ou ambiguidade?
-
-Se você identificou algum **erro conceitual**, **ambiguidade científica** ou **imprecisão** neste material, ficarei **muito feliz** em corrigir e saber que pessoas atentas estão lendo e contribuindo para a qualidade deste conteúdo.
-
-### Como reportar um problema
-
-1. Acesse o repositório oficial do curso: <a href="https://github.com/madsondeluna/bits_bytes_biomolecules" target="_blank">https://github.com/madsondeluna/bits_bytes_biomolecules</a>
-
-2. Clique na aba **"Issues"** (no topo da página do repositório)
-
-3. Clique no botão verde **"New issue"** (Nova issue)
-
-4. Preencha o formulário com as seguintes informações:
-   - **Título**: Descreva brevemente o problema (ex: "Erro conceitual na seção sobre AlphaFold")
-   - **Descrição**: Explique detalhadamente:
-     - Onde está o erro (arquivo e seção)
-     - Qual é o problema identificado
-     - Sugestão de correção (se possível)
-     - Referências bibliográficas que sustentam a correção (opcional, mas muito apreciado)
-
-5. Clique em **"Submit new issue"** para enviar
-
-Suas contribuições são extremamente valiosas para manter este material atualizado e cientificamente preciso. Obrigado por dedicar seu tempo para melhorar este recurso educacional!
