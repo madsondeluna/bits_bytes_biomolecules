@@ -648,7 +648,7 @@ A organização hierárquica das estruturas proteicas pode ser explorada atravé
 
 ### O Paradoxo de Levinthal
 
-Formulado por Richard Levinthal, este paradoxo destaca a impossibilidade de o enovelamento ocorrer por uma busca aleatória. Ele calculou que uma proteína levaria mais tempo que a idade do universo para testar todas as suas conformações possíveis. Isso demonstra que o enovelamento não é um processo aleatório, mas sim um processo altamente direcionado que segue "caminhos" ou "rotas" específicas, otimizadas ao longo da evolução, para atingir o estado nativo em uma escala de tempo biologicamente viável.
+Formulado por Cyrus Levinthal, este paradoxo destaca a impossibilidade de o enovelamento ocorrer por uma busca aleatória. Ele calculou que uma proteína levaria mais tempo que a idade do universo para testar todas as suas conformações possíveis. Isso demonstra que o enovelamento não é um processo aleatório, mas sim um processo altamente direcionado que segue "caminhos" ou "rotas" específicas, otimizadas ao longo da evolução, para atingir o estado nativo em uma escala de tempo biologicamente viável.
 
 ### O Paradoxo do Enovelamento (Levinthal)
 
@@ -661,7 +661,7 @@ O Paradoxo de Levinthal trata do Problema 2 (`a cinética`).
 <br>
 
 <p align="justify">
-  <img src="imgs/lewontin.png" alt="Richard Lewontin at the chalkboard" width="1000">
+  <img src="imgs/lev.png" alt="Richard Lewontin at the chalkboard" width="500">
 </p>
 
 > Fonte: Richard Lewontin (1929-2021) na lousa. Explicando a interação e inseparabilidade do genótipo e do ambiente.
