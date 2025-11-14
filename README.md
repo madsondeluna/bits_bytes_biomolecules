@@ -614,7 +614,7 @@ O Paradoxo de Levinthal trata do Problema 2 (`a cinética`).
 <br>
 
 <p align="justify">
-  <img src="imgs/lev.png" alt="Cyrus Levinthal at the chalkboard" width="1000">
+  <img src="imgs/lev.png" alt="Cyrus Levinthal at the chalkboard" width="500">
 </p>
 
 > Fonte: Cyrus Levinthal (1929-2021) na lousa. Explicando a interação e inseparabilidade do genótipo e do ambiente.
