@@ -14,7 +14,7 @@
 
 ---
 
-Este repositório contém o material de referência completo para o curso, incluindo conceitos fundamentais, guias de ferramentas e leituras recomendadas. Qualquer sugestão ou feedback pode ser encaminhar uma mensagem para madsondeluna@gmail.com. 
+Este repositório contém o material de referência completo para o curso, incluindo conceitos fundamentais, guias de ferramentas e leituras recomendadas. Qualquer sugestão ou feedback pode ser encaminhado via mensagem para madsondeluna@gmail.com. 
 
 **Links importantes:**
 - **Conteúdo teórico:** <a href="https://madsondeluna.github.io/bits_bytes_biomolecules/" target="_blank" rel="noopener noreferrer">Acessar página principal</a>
@@ -87,9 +87,9 @@ Nos modelos didáticos e nas representações clássicas da biologia molecular, 
 > Leitura do mRNA (5'→3') do centro para a borda até o aminoácido correspondente. AUG codifica Met (início); UAA/UAG/UGA são códons de parada. Fonte: Christopher R. Donohue (NIH, 2025).
 
 
-* Implicações práticas:</b> a <b>degenerescência</b> do código faz com que, em <b>grande parte</b> dos conjuntos sinônimos, a <b>3ª base</b> do códon seja a mais variável (ligando com a Seção 5, “wobble”). Isso amortece mutações sinônimas e permite viés de códons que modula taxa de tradução e enovelamento co-traducional.
+**Implicações práticas:** a **degenerescência** do código faz com que, em **grande parte** dos conjuntos sinônimos, a **3ª base** do códon seja a mais variável (ligando com a Seção 5, "wobble"). Isso amortece mutações sinônimas e permite viés de códons que modula taxa de tradução e enovelamento co-traducional.
 
-* Erros acontecem:</b> mutações <i>missense</i> alteram o aminoácido; mutações <i>nonsense</i> criam parada prematura e podem acionar <b>NMD</b> (nonsense-mediated decay), degradando o mRNA antes da tradução completa. Exceções importantes: AUG (Met) e UGG (Trp) têm um único códon; alguns grupos (Leu/Arg/Ser) também variam na 1ª base — portanto não é “todos os códons” com 3ª base degenerada.
+**Erros acontecem:** mutações *missense* alteram o aminoácido; mutações *nonsense* criam parada prematura e podem acionar **NMD** (nonsense-mediated decay), degradando o mRNA antes da tradução completa. Exceções importantes: AUG (Met) e UGG (Trp) têm um único códon; alguns grupos (Leu/Arg/Ser) também variam na 1ª base — portanto não é "todos os códons" com 3ª base degenerada.
 
 ---
 
@@ -101,9 +101,9 @@ Nos modelos didáticos e nas representações clássicas da biologia molecular, 
 
 > Aminoacil-tRNA sintetases ligam o aminoácido correto ao tRNA cognato usando ATP (ATP → AMP + PPi; custo ~2 ligações de alta energia) e possuem mecanismos de edição.
 
-* Implicações práticas:</b> define o “vocabulário” físico do código genético; a alta especificidade/edição limita a <i>mistranslation</i>, protegendo estrutura e função proteica.</p>
+**Implicações práticas:** define o "vocabulário" físico do código genético; a alta especificidade/edição limita a *mistranslation*, protegendo estrutura e função proteica.
 
-* Erros acontecem:</b> defeitos em sintetases ou na edição levam a incorporação errada de aminoácidos (proteínas mal enoveladas, toxicidade); estresse pode alterar níveis de tRNA carregados e reprogramar a priorização traducional.
+**Erros acontecem:** defeitos em sintetases ou na edição levam a incorporação errada de aminoácidos (proteínas mal enoveladas, toxicidade); estresse pode alterar níveis de tRNA carregados e reprogramar a priorização traducional.
 
 ---
 
@@ -116,9 +116,9 @@ Nos modelos didáticos e nas representações clássicas da biologia molecular, 
 > O tRNA apresenta loops funcionais (D, anticódon, variável, TΨC) e numerosas modificações (Ψ, metilações, queosina, inosina etc.) distribuídas ao longo da molécula.
 
 
-* Implicações práticas:</b> modificações estabilizam a estrutura, ajustam a forma do anticódon e afinam a decodificação (eficiência/fidelidade); algumas agem como “aceleradores/freios” finos na elongação, afetando enovelamento co-traducional e montagem de domínios.
+**Implicações práticas:** modificações estabilizam a estrutura, ajustam a forma do anticódon e afinam a decodificação (eficiência/fidelidade); algumas agem como "aceleradores/freios" finos na elongação, afetando enovelamento co-traducional e montagem de domínios.
 
-* Erros acontecem:</b> perfis de modificação disfuncionais (doença/estresse) mudam a preferência por códons, promovem pausas, <i>readthrough</i> indesejado ou erros; clivagens geram tRNA-fragments que podem <b>reprimir tradução</b>.
+**Erros acontecem:** perfis de modificação disfuncionais (doença/estresse) mudam a preferência por códons, promovem pausas, *readthrough* indesejado ou erros; clivagens geram tRNA-fragments que podem **reprimir tradução**.
 
 ---
 
@@ -130,9 +130,9 @@ Nos modelos didáticos e nas representações clássicas da biologia molecular, 
 
 > O tRNA iniciador (anticódon 3'-UAC-5') se pareia antiparalelamente com AUG no sítio P na iniciação.
 
-* Implicações práticas:</b> o ribossomo monitora rigidamente as <b>duas primeiras bases</b> do códon (geometria Watson–Crick), ancorando a fidelidade do código. Direção de síntese: N→C.
+**Implicações práticas:** o ribossomo monitora rigidamente as **duas primeiras bases** do códon (geometria Watson–Crick), ancorando a fidelidade do código. Direção de síntese: N→C.
 
-* Erros acontecem:</b> mutações no códon de início ou no contexto Kozak (eucariontes) reduzem a eficiência de iniciação; parada prematura a montante dispara NMD; estruturas secundárias fortes próximas ao start podem bloquear o escaneamento e impedir a tradução.
+**Erros acontecem:** mutações no códon de início ou no contexto Kozak (eucariontes) reduzem a eficiência de iniciação; parada prematura a montante dispara NMD; estruturas secundárias fortes próximas ao start podem bloquear o escaneamento e impedir a tradução.
 
 ---
 
@@ -144,11 +144,11 @@ Nos modelos didáticos e nas representações clássicas da biologia molecular, 
 
 > O pareamento entre a 3ª base do códon (mRNA) e a 1ª base do anticódon (posição 34 do tRNA) é geometricamente mais permissivo que nas duas primeiras posições.
 
-* Por que a 3ª posição é menos acurada:</b> o sítio de decodificação do ribossomo impõe checagens estéricas e de geometria Watson–Crick sobretudo nas <b>1ª e 2ª bases</b>; na <b>3ª</b>, há tolerância a pares não canônicos como <b>G•U</b> e a presença de <b>inosina (I)</b> no anticódon (hipoxantina) que amplia o reconhecimento (ver Seção 6). Essa arquitetura, e não “xantina”, explica a menor stringência na 3ª base. 
+**Por que a 3ª posição é menos acurada:** o sítio de decodificação do ribossomo impõe checagens estéricas e de geometria Watson–Crick sobretudo nas **1ª e 2ª bases**; na **3ª**, há tolerância a pares não canônicos como **G•U** e a presença de **inosina (I)** no anticódon (hipoxantina) que amplia o reconhecimento (ver Seção 6). Essa arquitetura, e não "xantina", explica a menor stringência na 3ª base.
 
-* Conexão com a Figura 1:</b> a degenerescência mostrada na roda do código decorre, em grande parte, dessa tolerância no wobble, por isso a 3ª base é frequentemente a mais variável entre códons sinônimos.
+**Conexão com a Figura 1:** a degenerescência mostrada na roda do código decorre, em grande parte, dessa tolerância no wobble, por isso a 3ª base é frequentemente a mais variável entre códons sinônimos.
 
-* Erros acontecem:</b> alterações em modificações do anticódon (ex.: queosina/wybutosina) mudam a janela de tolerância → erros, <i>frameshifting</i> e ruído traducional; viés de códons extremo pode pausar excessivamente e prejudicar enovelamento.
+**Erros acontecem:** alterações em modificações do anticódon (ex.: queosina/wybutosina) mudam a janela de tolerância → erros, *frameshifting* e ruído traducional; viés de códons extremo pode pausar excessivamente e prejudicar enovelamento.
 
 ---
 
@@ -161,11 +161,11 @@ Nos modelos didáticos e nas representações clássicas da biologia molecular, 
 > A inosina (I) na posição 34 do anticódon pode parear com A, C ou U na 3ª base do códon, permitindo que um tRNA leia múltiplos códons sinônimos.
 
 
-* Implicações práticas:</b> reduz o número total de tRNAs necessários, mantém eficiência de decodificação e explica a ampla variabilidade da 3ª base na maior parte dos códons.
+**Implicações práticas:** reduz o número total de tRNAs necessários, mantém eficiência de decodificação e explica a ampla variabilidade da 3ª base na maior parte dos códons.
 
-* Erros acontecem:</b> perda/ganho de inosina ou outras modificações altera o mapa de reconhecimento → <i>mistranslation</i>, mudança de taxa de elongação e, em casos extremos, ativação de respostas de controle de qualidade (por exemplo, ribosome-associated quality control), reduzindo a produção proteica.
+**Erros acontecem:** perda/ganho de inosina ou outras modificações altera o mapa de reconhecimento → *mistranslation*, mudança de taxa de elongação e, em casos extremos, ativação de respostas de controle de qualidade (por exemplo, ribosome-associated quality control), reduzindo a produção proteica.
 
-* Na prática, qual o impacto desse evento?</b> a menor acurácia na 3ª posição do códon não é “por conta da xantina”. O fenômeno clássico de wobble decorre do relaxamento geométrico no sítio A do ribossomo, do pareamento <b>G•U</b> e, principalmente, da <b>inosina/hipoxantina</b> no anticódon. Xantina não é a base típica envolvida na 1ª posição do anticódon em tRNAs celulares.
+**Na prática, qual o impacto desse evento?** a menor acurácia na 3ª posição do códon não é "por conta da xantina". O fenômeno clássico de wobble decorre do relaxamento geométrico no sítio A do ribossomo, do pareamento **G•U** e, principalmente, da **inosina/hipoxantina** no anticódon. Xantina não é a base típica envolvida na 1ª posição do anticódon em tRNAs celulares.
 
 ---
 
@@ -358,7 +358,7 @@ A ligação peptídica sob outra óptica.
 ### Propriedades dos Aminoácidos Canônicos
 
 <p align="justify">
-  <img src="imgs/aas.png" alt="Amino acids width="1000">
+  <img src="imgs/aas.png" alt="Amino acids" width="1000">
 </p>
 
 > Fonte: JPT Peptide Technologies.
@@ -386,7 +386,7 @@ A ligação peptídica sob outra óptica.
 
 <br>
 
- PDB contém muitos exemplos de interações entre aminoácidos. Embora existam interações específicas bem documentadas (aminoácidos básicos com carga positiva se ligam a aminoácidos ácidos com carga negativa), não havia visto um estudo sistemático de todas as combinações de aminoácidos, por isso, o trabalho de <a href="https://crowsandcats.blogspot.com/2012/03/amino-acid-interactions.html" target="_blank">Andrew White</a> é notável, pois ele contou sistematicamente o número de interações entre cada par de tipos de aminoácidos e, em seguida, converteu essas contagens em energias de interação.<
+ PDB contém muitos exemplos de interações entre aminoácidos. Embora existam interações específicas bem documentadas (aminoácidos básicos com carga positiva se ligam a aminoácidos ácidos com carga negativa), não havia visto um estudo sistemático de todas as combinações de aminoácidos, por isso, o trabalho de <a href="https://crowsandcats.blogspot.com/2012/03/amino-acid-interactions.html" target="_blank">Andrew White</a> é notável, pois ele contou sistematicamente o número de interações entre cada par de tipos de aminoácidos e, em seguida, converteu essas contagens em energias de interação.
 
 | Interação | Distância (Å) | Natureza da Força | Aminoácidos Frequentes |
 |:---|:---:|:---|:---|
@@ -564,7 +564,7 @@ Do ponto de vista estrutural, esse conjunto pré-biótico era intrinsecamente te
 
 ---
 
-## Motivos e Domínios Estrturais
+## Motivos e Domínios Estruturais
 
 A combinação de elementos de estrutura secundária forma **motivos secundários, terciários e quaternários**, os blocos de construção dos **domínios** proteicos (regiões que se enovelam e funcionam de forma independente).
 
@@ -726,7 +726,7 @@ Antes de mergulharmos nos métodos, é essencial entender a diferença entre doi
 
 *   **Identidade de Sequência:** Refere-se à porcentagem de resíduos de aminoácidos que são **exatamente os mesmos** em posições correspondentes de um alinhamento. É uma contagem direta e rigorosa.
 
-*   **Similaridade de Sequência:** É uma medida mais abrangente. Ela inclui os resíduos idênticos **mais*físico-químicas semelhantes** (ex: tamanho, carga, polaridade). Uma substituição de Leucina (L) por Isoleucina (I), ambos aminoácidos grandes e hidrofóbicos, é um exemplo de substituição "conservativa" que conta como similaridade. Biologicamente, essas trocas têm menor probabilidade de perturbar a estrutura e a função da proteína.
+*   **Similaridade de Sequência:** É uma medida mais abrangente. Ela inclui os resíduos idênticos **mais** aqueles com propriedades **físico-químicas semelhantes** (ex: tamanho, carga, polaridade). Uma substituição de Leucina (L) por Isoleucina (I), ambos aminoácidos grandes e hidrofóbicos, é um exemplo de substituição "conservativa" que conta como similaridade. Biologicamente, essas trocas têm menor probabilidade de perturbar a estrutura e a função da proteína.
 
 **Exemplo Prático:**
 
