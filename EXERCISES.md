@@ -22,7 +22,7 @@ Este repositório contém o material prático do curso de Biologia Estrutural Co
   <img src="imgs/p53.png" alt="XXXXX" width="550">
 </figure>
 
-Eestrutura tridimensional da p53, em complexo com uma estrtura de DNA. As subunidades da p53, mostradas em azul e roxo, são visualizadas usando uma combinação de representação "cartoon", que revela a estrutura secundária de hélices alfa e fitas beta, e uma "superfície" molecular translúcida, que indica o volume de e a forma da proteína. A p53 é mostrada interagindo diretamente com a dupla hélice do DNA, representada em laranja, através de seu domínio de ligação ao DNA (DBD). A presença de esferas (íons de zinco, em verde) destaca componentes cruciais para a estabilidade estrutural do DBD, formando os zinc fingers. Esta interação é fundamental para a função da p53, permitindo que ela se ligue a regiões específicas do genoma para regular a expressão de genes envolvidos no controle do ciclo celular, no reparo de danos ao DNA e na indução da apoptose, prevenindo assim a oncogênese e assim, mantendo a homestase celular.
+Estrutura tridimensional da p53, em complexo com uma estrutura de DNA. As subunidades da p53, mostradas em azul e roxo, são visualizadas usando uma combinação de representação "cartoon", que revela a estrutura secundária de hélices alfa e fitas beta, e uma "superfície" molecular translúcida, que indica o volume de e a forma da proteína. A p53 é mostrada interagindo diretamente com a dupla hélice do DNA, representada em laranja, através de seu domínio de ligação ao DNA (DBD). A presença de esferas (íons de zinco, em verde) destaca componentes cruciais para a estabilidade estrutural do DBD, formando os zinc fingers. Esta interação é fundamental para a função da p53, permitindo que ela se ligue a regiões específicas do genoma para regular a expressão de genes envolvidos no controle do ciclo celular, no reparo de danos ao DNA e na indução da apoptose, prevenindo assim a oncogênese e assim, mantendo a homeostase celular.
 
 ---
 
@@ -130,7 +130,7 @@ As ferramentas abaixo serão utilizadas para analisar propriedades físico-quím
 
 # Atividade 1: Alinhamento 1TUP vs. Sequência Completa
 
-**Alinhamento 1TUP vs. Sequência Completa (WT):** Temos as sequências FASTA do domíde ligação ao DNA da p53 e sua sequenência completa (WT), e, juntos, executaremos o alinhamento múltiplo no <a href="https://www.ebi.ac.uk/jdispatcher/msa/clustalo" target="_blank" rel="noopener noreferrer">Clustal Omega</a>. Analise quais regiões se alinham diretamente, discuta as diferenças e vamos entender as implicações biológicas dessas variações. Ter apenas "uma parte" da proteína pode ser suficiente para algumas análises? Isso depende do contexto biológico?
+**Alinhamento 1TUP vs. Sequência Completa (WT):** Temos as sequências FASTA do domínio de ligação ao DNA da p53 e sua sequência completa (WT), e, juntos, executaremos o alinhamento múltiplo no <a href="https://www.ebi.ac.uk/jdispatcher/msa/clustalo" target="_blank" rel="noopener noreferrer">Clustal Omega</a>. Analise quais regiões se alinham diretamente, discuta as diferenças e vamos entender as implicações biológicas dessas variações. Ter apenas "uma parte" da proteína pode ser suficiente para algumas análises? Isso depende do contexto biológico?
 
 > Sequências FASTA do domínio ligador de DNA da p53, cristalizado por X-ray (PDB ID: 1TUP):
 
@@ -244,9 +244,9 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 **Não vale clicar nesse link antes de fazer o alinhamento proposto acima**, mas se você já fez, está mais que permitido: <a href="https://drive.google.com/file/d/1zSzitu4daGhJwSUpWxuzzTzBVwkqMo1h/view?usp=sharing" target="_blank">Alinhamento Clustal Omega - multiFASTA_p53_variants.fasta</a>, colorido por percentual de conservação. Podemos ver as mutações destacadas no alinhamento e nas suas a perda da identidade em relação à sequência *wild-type*. Além disso o alinhamento com também mostra um histograma de conservação na parte inferior, onde podemos observar que as posições das mutações são altamente conservadas na família das p53.
 
-> O que vocês acharam desse alinhamento? Vamos discutir as possieveis implicações biológicas dessas mutações?
+> O que vocês acharam desse alinhamento? Vamos discutir as possíveis implicações biológicas dessas mutações?
 
-> Para relembrar, abaixo temos uma tambela com todos os aminoácidos e suas características físico-químicas, caso queiram consultar durante a análise das mutações.
+> Para relembrar, abaixo temos uma tabela com todos os aminoácidos e suas características físico-químicas, caso queiram consultar durante a análise das mutações.
 
 <p align="justify">
   <img src="imgs/aas.png" alt="Amino acids width="1000">
@@ -481,7 +481,7 @@ Nesta parte da atividade iremos utilizar o <a href="https://swissmodel.expasy.or
 
 Existem outras plataformas populares para modelagem por homologia, como o Phyre2 (<a href="http://www.sbg.bio.ic.ac.uk/phyre2/html/page.cgi?id=index" target="_blank">http://www.sbg.bio.ic.ac.uk/phyre2/html/page.cgi?id=index</a>) e o MODELLER (<a href="https://salilab.org/modeller/" target="_blank">https://salilab.org/modeller/</a>), cada uma com suas próprias características e algoritmos.
 
-Mas nesta atividade, focaremos no SWISS-MODEL devido à sua interface amigável e ampla aceitação na comunidade científica as execelentes métricas de avaliação de modelos que ele fornece, além de ser online e gratuito para uso acadêmico.
+Mas nesta atividade, focaremos no SWISS-MODEL devido à sua interface amigável e ampla aceitação na comunidade científica as excelentes métricas de avaliação de modelos que ele fornece, além de ser online e gratuito para uso acadêmico.
 
 <p align="justify">
   <img src="imgs/swissssss.png" alt="Amino acids width="1000">
@@ -533,10 +533,10 @@ Nesta seção, o foco não será a submissão ou a espera pelo processamento, ma
 
 - Qual seria o melhor modelo obtido entre SWISS-MODEL e I-TASSER? Justifique com base nas métricas apresentadas.
 - O tipo de construção (homologia vs threading) influenciou a qualidade do modelo? Explique...
-- Vamos revidar os métodos utilizados até aqui. Quais são as vantagens e limitações de cada abordagem?
+- Vamos revisar os métodos utilizados até aqui. Quais são as vantagens e limitações de cada abordagem?
 - Ainda não alinhamos as estruturas obtidas até aqui, mas conseguem identificar diferenças visuais entre os modelos gerados?
 
-> Nos próximos módulos, vamos avaliar se o dobramento por cada método foi feito da corretamente. Bem como alinhar estrturalmente os modelos obtidos, calculando RMSD para comparação detalhada.
+> Nos próximos módulos, vamos avaliar se o dobramento por cada método foi feito da corretamente. Bem como alinhar estruturalmente os modelos obtidos, calculando RMSD para comparação detalhada.
 
 ---
 
@@ -558,11 +558,11 @@ Foi (e ainda é) um marco na engenharia de proteínas, ilustrando o potencial da
   <img src="imgs/scafold.png" alt="XXXXX" width="650">
 </figure>
 
-> A imagem, no quadro superior, mostra a desindade eletrostática da superfície da proteína Top-7, destacando suas características estruturais de alta acurácia na obtençã pro cristalografia de raios X. No quadro inferior, a representação em fita ilustra a topologia da proteína, evidenciando suas hélices alfa e folhas beta organizadas de forma compacta. Fonte: Baker, D. et al., Science, 2003.
+> A imagem, no quadro superior, mostra a densidade eletrostática da superfície da proteína Top-7, destacando suas características estruturais de alta acurácia na obtenção por cristalografia de raios X. No quadro inferior, a representação em fita ilustra a topologia da proteína, evidenciando suas hélices alfa e folhas beta organizadas de forma compacta. Fonte: Baker, D. et al., Science, 2003.
 
-**A Top-7 serve como uma scaffold sintético** com duas alças, fitas beta e hélices alfa, podem ser substituidas por sequencias que tenham a mesma topologia, mas com diferentes propriedades funcionais. Transformando a Top-7 em uma plataforma versátil para engenharia de proteínas. 
+**A Top-7 serve como uma scaffold sintético** com duas alças, fitas beta e hélices alfa, podem ser substituídas por sequências que tenham a mesma topologia, mas com diferentes propriedades funcionais. Transformando a Top-7 em uma plataforma versátil para engenharia de proteínas.
 
-Seu nome *Top-7* faz referência á sua topilogia, composta por 7 elementos secundários (4 hélices alfa e 3 fitas beta) organizados em uma estrutura globular estável.
+Seu nome *Top-7* faz referência á sua topologia, composta por 7 elementos secundários (4 hélices alfa e 3 fitas beta) organizados em uma estrutura globular estável.
 
 <figure class="figure-center">
   <img src="imgs/1qys_TOP7_design_rib.png" alt="XXXXX" width="450">
@@ -574,7 +574,7 @@ Hoje o David Baker é dono de um dos maiores legados da biologia estrutural comp
 
 ## Sobre o Rosetta
 
-Até agora no curso, utilizamos métodos de modelagem baseados em homologia e threading. Mas e o *ab initio*? Existem pacotes que utilizam essa abordagem para prever estruturas de proteínas sem depender de modelos conhecidos. O  Rosetta é a refêrencia nessa área, e por anos, foi o padrão ouro para predição de estruturas de proteínas quando não havia modelos experimentais disponíveis. 
+Até agora no curso, utilizamos métodos de modelagem baseados em homologia e threading. Mas e o *ab initio*? Existem pacotes que utilizam essa abordagem para prever estruturas de proteínas sem depender de modelos conhecidos. O  Rosetta é a referência nessa área, e por anos, foi o padrão ouro para predição de estruturas de proteínas quando não havia modelos experimentais disponíveis. 
 
 | Recurso | URL | Descrição |
 |---------|-----|-----------|
@@ -590,11 +590,11 @@ Até agora no curso, utilizamos métodos de modelagem baseados em homologia e th
 
 > Animação do processo de dobramento guiado representação de grafos. Modelo meramente ilustrativo. Fonte: Veit Elser, Professor of Physics at Cornell University
 
-> Disclaimer (Pessoal): Utilizei o *ab initio* do Rosetta de 2025 a 2019 durante meus mprojetos de engenhria de proteínas e predição estrutural. É uma ferramenta poderosa, mas o tempo de computação e a complexidade de configuração podem ser desafiadores para iniciantes. Por isso, optei por não incluir uma atividade prática com Rosetta neste curso introdutório. No entanto, encorajo os interessados a explorar essa ferramenta, para quem se interessar. 
+> Disclaimer (Pessoal): Utilizei o *ab initio* do Rosetta de 2015 a 2019 durante meus projetos de pesquisa que envolviam engenharia de proteínas e predição estrutural. É uma ferramenta poderosa, mas o tempo de computação e a complexidade de configuração podem ser desafiadores para iniciantes. Por isso, optei por não incluir uma atividade prática com Rosetta neste curso introdutório. No entanto, encorajo os interessados a explorar essa ferramenta, para quem se interessar.
 
-O Rosetta funciona através de terminal, via CLI (Command Line Interface) e requer instalação local. Portanto, não é tão acessível quanto os servidores web que utilizamos até agora. E se utlizie de dois tipos de abordagens principais: Linha de comando, scripts em XML (linki para mosrar exemplo) e PyRosetta (interface Python).
+O Rosetta funciona através de terminal, via CLI (Command Line Interface) e requer instalação local. Portanto, não é tão acessível quanto os servidores web que utilizamos até agora. E se utilize de dois tipos de abordagens principais: Linha de comando, scripts em XML (linki para mosrar exemplo) e PyRosetta (interface Python).
 
-Para os interesados, deixei disponível o tutrial comentando do Rosetta *ab initio* que utilizei: https://docs.rosettacommons.org/demos/latest/tutorials/denovo_structure_prediction/Denovo_structure_prediction
+Para os interessados, deixei disponível o tutorial comentando do Rosetta *ab initio* que utilizei: https://docs.rosettacommons.org/demos/latest/tutorials/denovo_structure_prediction/Denovo_structure_prediction
 
 Construir um Rosetta Script (XML) é uma tarefa que exige conhecimento prévio sobre a sintaxe e os módulos disponíveis na suíte Rosetta. Ele é o alicerce para definir como sua predição será conduzida, seja para modelagem de estruturas, docking molecular ou design de proteínas. Segue o protocolo de boas práticas para criar um script XML eficaz: https://docs.rosettacommons.org/docs/latest/scripting_documentation/RosettaScripts/RosettaScripts
 
@@ -728,7 +728,7 @@ Vamos discutir as vantagens e desvantagens do *ab initio* em comparação com os
 
 ## Quantidade de Simulações Necessárias
 
-É possível realizar execuções de enovelamento em domínios separados de até aproximadamente 200 aminoácidos de comprimento, mas é amplamente realatado na literatura que o protocolo ab initio do Rosetta é mais eficaz para proteínas menores, tipicamente abaixo de 100-150 resíduos.
+É possível realizar execuções de enovelamento em domínios separados de até aproximadamente 200 aminoácidos de comprimento, mas é amplamente relatado na literatura que o protocolo ab initio do Rosetta é mais eficaz para proteínas menores, tipicamente abaixo de 100-150 resíduos.
 
 Para proteínas de tamanho moderado **(50-100 resíduos)**, recomenda-se gerar entre **5.000 e 50.000** decoys para garantir amostragem suficiente do espaço conformacional. **A presença de um folding funnel característico, evidenciado pela convergência de estruturas de baixo RMSD e baixa energia (REU - Rosetta Energy Units)**, indica que o protocolo conseguiu identificar a região do estado nativo da proteína.
 
@@ -756,7 +756,7 @@ O modelo final geralmente corresponde ao centroide do maior cluster de baixa ene
 - Acham que tem algo em comum entre nas metodologias de threading e *ab initio*?
 - Quais são as principais vantagens e limitações do método *ab initio* em comparação com homologia e threading?
 - Em que situações o *ab initio* seria a abordagem preferida para predição estrutural?
-- Como a quantidade de resíduos influencia a eficácia do *ab initio*? Spoiler: Proteínas pequenas são melhores candidatas, devidado a uma melhor sobreposicao dos da bibliotecas de fragmentos e para os dezenas de calculos de angulos torsionais necessários.
+- Como a quantidade de resíduos influencia a eficácia do *ab initio*? Spoiler: Proteínas pequenas são melhores candidatas, devido a uma melhor sobreposição dos da bibliotecas de fragmentos e para os dezenas de calculos de angulos torsionais necessários.
 
 ---
 
@@ -813,7 +813,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 # Módulo 4: Análise Comparativa, Validação e Visualização
 
-* Agora que temos os modelos gerados por homologia, threading e deep learning. Vamos baixar um modelos experimental, obtido por cristalografia de x-ray, da p53 para comparar os modelos teóricos. Lembrando que a extrutura experimental sempre será o nosso padrão-ouro de comparação.
+* Agora que temos os modelos gerados por homologia, threading e deep learning. Vamos baixar um modelos experimental, obtido por cristalografia de x-ray, da p53 para comparar os modelos teóricos. Lembrando que a estrutura experimental sempre será o nosso padrão-ouro de comparação.
 
 **Baixe aqui o arquivo PDB da estrutura cristalina da p53 (PDB ID: 1TUP) para utilizar como referência na comparação dos modelos preditos:** <a href="https://drive.google.com/file/d/1p0liOriRtvaYrY2CvTDCWpMGHIO1zfoq/view?usp=sharing" target="_blank">1TUP_cleaned.pdb</a>.
 
@@ -903,7 +903,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 # Licença
 
-Uso extriitamente educacional e acadêmico. Proibida a utilização comercial sem autorização prévia dos autores.
+Uso estritamente educacional e acadêmico. Proibida a utilização comercial sem autorização prévia dos autores.
 Para qualquer outro tipo de uso, entre em contato com os autores pelos e-mails fornecidos acima.
 
 ---
@@ -918,7 +918,7 @@ Para qualquer outro tipo de uso, entre em contato com os autores pelos e-mails f
 
 <br>
 
-> Ninhuma dúvida é boba... Qualquer dúvida ou sugestão, sinta-se à vontade para entrar em contato conosco pelos e-mails fornecidos acima. Bom desemprenho e aproveitem os exercícios!
+> Nenhuma dúvida é boba... Qualquer dúvida ou sugestão, sinta-se à vontade para entrar em contato conosco pelos e-mails fornecidos acima. Bom desempenho e aproveitem os exercícios!
 
 <br>
 
