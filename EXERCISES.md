@@ -14,7 +14,7 @@
 
 ---
 
- **Proteína-Alvo:** p53 (*TP53*))
+ **Proteína-Alvo:** p53 (*TP53*)
 
 Este repositório contém o material prático do curso de Biologia Estrutural Computacional, utilizando a proteína supressora de tumor p53 como sistema modelo para explorar diferentes métodos de predição e análise estrutural.
 
