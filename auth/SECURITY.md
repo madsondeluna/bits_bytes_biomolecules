@@ -173,7 +173,7 @@ Redefine senha com token:
    - Letras maiúsculas e minúsculas
    - Números e caracteres especiais
 
-## Referências
+## eReferências
 
 - [OWASP Authentication Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)
 - [OWASP Password Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)
