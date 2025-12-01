@@ -13,6 +13,6 @@ Flask-CORS==4.0.0
 # HTTP requests (para client_example.py)
 requests==2.31.0
 
-# Opcional: Para melhor segurança em produção
-# bcrypt==4.1.2  # Para hash de senhas mais seguro
-# python-dotenv==1.0.0  # Para gerenciar variáveis de ambiente
+# Para melhor segurança em produção
+bcrypt==4.1.2  # Para hash de senhas mais seguro
+python-dotenv==1.0.0  # Para gerenciar variáveis de ambiente

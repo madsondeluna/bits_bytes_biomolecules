@@ -25,6 +25,8 @@ def index():
             "GET /api/verify": "Verificar validade do token",
             "GET /api/profile": "Obter perfil do usuário (requer token)",
             "POST /api/change-password": "Alterar senha (requer token)",
+            "POST /api/forgot-password": "Solicitar redefinição de senha",
+            "POST /api/reset-password": "Redefinir senha com token",
             "GET /api/users": "Listar todos os usuários (requer admin)",
             "DELETE /api/users/<username>": "Deletar usuário (requer admin)",
             "GET /api/protected": "Rota protegida de exemplo (requer token)"
@@ -246,6 +248,87 @@ def change_password(current_user):
     return jsonify({"message": "Senha alterada com sucesso"}), 200
 
 
+@app.route('/api/forgot-password', methods=['POST'])
+def forgot_password():
+    """
+    Endpoint para solicitar redefinição de senha
+
+    Request Body:
+        {
+            "username": "string"
+        }
+
+    Response:
+        {
+            "message": "Se o usuário existir, um email será enviado com instruções"
+        }
+    """
+    data = request.get_json()
+
+    if not data or not data.get('username'):
+        return jsonify({"message": "Username é obrigatório"}), 400
+
+    username = data['username']
+
+    # Sempre retornar a mesma mensagem para evitar enumeração de usuários
+    response_message = "Se o usuário existir, um email será enviado com instruções para redefinir a senha"
+
+    # Tentar criar token e enviar email
+    user = auth_manager.get_user(username)
+
+    if user and user.email:
+        token = auth_manager.create_password_reset_token(username)
+
+        if token:
+            try:
+                # Enviar email com token
+                import os
+                reset_url = os.getenv('RESET_PASSWORD_URL', 'http://localhost:8000/reset-password.html')
+                email_service.send_password_reset_email(username, user.email, token, reset_url)
+            except Exception as e:
+                print(f"[ERRO] Falha ao enviar email de redefinição: {e}")
+
+    return jsonify({"message": response_message}), 200
+
+
+@app.route('/api/reset-password', methods=['POST'])
+def reset_password():
+    """
+    Endpoint para redefinir senha com token
+
+    Request Body:
+        {
+            "username": "string",
+            "token": "string",
+            "new_password": "string"
+        }
+
+    Response:
+        {
+            "message": "Senha redefinida com sucesso"
+        }
+    """
+    data = request.get_json()
+
+    if not data or not data.get('username') or not data.get('token') or not data.get('new_password'):
+        return jsonify({"message": "Username, token e new_password são obrigatórios"}), 400
+
+    username = data['username']
+    token = data['token']
+    new_password = data['new_password']
+
+    # Limpar tokens expirados
+    auth_manager.cleanup_expired_tokens()
+
+    # Tentar redefinir senha
+    success = auth_manager.reset_password_with_token(username, token, new_password)
+
+    if not success:
+        return jsonify({"message": "Token inválido, expirado ou já utilizado"}), 401
+
+    return jsonify({"message": "Senha redefinida com sucesso"}), 200
+
+
 @app.route('/api/users', methods=['GET'])
 @token_required
 @role_required('admin')
@@ -357,13 +440,22 @@ def internal_error(error):
 
 
 if __name__ == '__main__':
+    import os
+
     print("=" * 80)
     print("API de Autenticação via Token JWT")
     print("=" * 80)
-    print("\nUsuários padrão disponíveis:")
-    print("  - admin / admin123 (admin)")
-    print("  - user / user123 (user)")
-    print("  - researcher / research123 (researcher)")
+
+    if os.getenv('CREATE_DEFAULT_USERS', 'false').lower() == 'true':
+        print("\nMODO DESENVOLVIMENTO: Usuários padrão disponíveis:")
+        print("  - admin / admin123 (admin)")
+        print("  - user / user123 (user)")
+        print("  - researcher / research123 (researcher)")
+        print("\nIMPORTANTE: Não use esses usuários em produção!")
+    else:
+        print("\n✓ Modo seguro ativado - sem usuários padrão")
+        print("  Configure CREATE_DEFAULT_USERS=true para ativar usuários de teste")
+
     print("\nServidor rodando em: http://localhost:5000")
     print("Documentação: http://localhost:5000")
     print("=" * 80)

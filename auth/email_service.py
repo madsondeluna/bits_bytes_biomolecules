@@ -460,6 +460,152 @@ class EmailService:
 
         return self._send_email(message)
 
+    def send_password_reset_email(self, username: str, email: str, reset_token: str, reset_url: str = None) -> bool:
+        """
+        Envia email com link para redefinição de senha
+
+        Args:
+            username: Nome de usuário
+            email: Email do usuário
+            reset_token: Token de redefinição
+            reset_url: URL base para redefinição (opcional)
+
+        Returns:
+            True se o email foi enviado com sucesso, False caso contrário
+        """
+        if not reset_url:
+            reset_url = "http://localhost:8000/reset-password.html"
+
+        reset_link = f"{reset_url}?token={reset_token}&username={username}"
+
+        subject = f"Redefinição de Senha - {username}"
+
+        # Conteúdo HTML
+        html_content = f"""
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <style>
+                body {{
+                    font-family: Arial, sans-serif;
+                    line-height: 1.6;
+                    color: #333;
+                }}
+                .container {{
+                    max-width: 600px;
+                    margin: 0 auto;
+                    padding: 20px;
+                    background-color: #f4f4f4;
+                }}
+                .content {{
+                    background-color: white;
+                    padding: 30px;
+                    border-radius: 5px;
+                    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                }}
+                .header {{
+                    background-color: #f44336;
+                    color: white;
+                    padding: 20px;
+                    text-align: center;
+                    border-radius: 5px 5px 0 0;
+                }}
+                .button {{
+                    display: inline-block;
+                    padding: 12px 24px;
+                    background-color: #f44336;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    margin: 20px 0;
+                }}
+                .warning {{
+                    background-color: #ffebee;
+                    border-left: 4px solid #f44336;
+                    padding: 15px;
+                    margin: 20px 0;
+                }}
+                .footer {{
+                    text-align: center;
+                    margin-top: 20px;
+                    color: #666;
+                    font-size: 12px;
+                }}
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="content">
+                    <div class="header">
+                        <h1>Redefinição de Senha</h1>
+                    </div>
+
+                    <p>Olá {username},</p>
+
+                    <p>Recebemos uma solicitação para redefinir a senha da sua conta.</p>
+
+                    <p>Clique no botão abaixo para criar uma nova senha:</p>
+
+                    <div style="text-align: center;">
+                        <a href="{reset_link}" class="button">Redefinir Senha</a>
+                    </div>
+
+                    <p>Ou copie e cole o link abaixo no seu navegador:</p>
+                    <p style="word-break: break-all; background-color: #f9f9f9; padding: 10px; border-radius: 3px;">
+                        {reset_link}
+                    </p>
+
+                    <div class="warning">
+                        <strong>⚠️ Importante:</strong>
+                        <ul>
+                            <li>Este link expira em <strong>30 minutos</strong></li>
+                            <li>Este link só pode ser usado <strong>uma vez</strong></li>
+                            <li>Se você não solicitou esta redefinição, ignore este email</li>
+                        </ul>
+                    </div>
+
+                    <p>Por segurança, se você não reconhece esta solicitação, entre em contato conosco imediatamente.</p>
+
+                    <div class="footer">
+                        <p>Sistema de Autenticação via Token JWT</p>
+                        <p>Este é um email automático, não responda.</p>
+                    </div>
+                </div>
+            </div>
+        </body>
+        </html>
+        """
+
+        # Conteúdo em texto plano
+        text_content = f"""
+        Redefinição de Senha
+
+        Olá {username},
+
+        Recebemos uma solicitação para redefinir a senha da sua conta.
+
+        Para redefinir sua senha, acesse o link abaixo:
+        {reset_link}
+
+        ⚠️ Importante:
+        - Este link expira em 30 minutos
+        - Este link só pode ser usado uma vez
+        - Se você não solicitou esta redefinição, ignore este email
+
+        Por segurança, se você não reconhece esta solicitação, entre em contato conosco imediatamente.
+
+        Sistema de Autenticação via Token JWT
+        """
+
+        message = self._create_message(
+            to_email=email,
+            subject=subject,
+            html_content=html_content,
+            text_content=text_content
+        )
+
+        return self._send_email(message)
+
 
 # Instância global do serviço de email
 email_service = EmailService()

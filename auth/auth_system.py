@@ -6,9 +6,9 @@ Implementação de login e validação de usuários usando tokens JWT
 
 import jwt
 import datetime
-import hashlib
 import secrets
-from typing import Optional, Dict, Any
+import bcrypt
+from typing import Optional, Dict, Any, List
 from functools import wraps
 from flask import Flask, request, jsonify
 
@@ -16,6 +16,28 @@ from flask import Flask, request, jsonify
 SECRET_KEY = secrets.token_hex(32)  # Chave secreta para assinar tokens
 TOKEN_EXPIRATION_HOURS = 24  # Tempo de expiração do token em horas
 ALGORITHM = "HS256"  # Algoritmo de criptografia
+
+
+class PasswordResetToken:
+    """Classe para representar um token de redefinição de senha"""
+
+    def __init__(self, username: str, token: str, expires_at: datetime.datetime):
+        self.username = username
+        self.token_hash = bcrypt.hashpw(token.encode(), bcrypt.gensalt()).decode()
+        self.expires_at = expires_at
+        self.used = False
+
+    def is_valid(self, token: str) -> bool:
+        """Verifica se o token é válido"""
+        if self.used:
+            return False
+        if datetime.datetime.utcnow() > self.expires_at:
+            return False
+        return bcrypt.checkpw(token.encode(), self.token_hash.encode())
+
+    def mark_as_used(self):
+        """Marca o token como usado"""
+        self.used = True
 
 
 class User:
@@ -47,12 +69,16 @@ class AuthManager:
         self.secret_key = secret_key
         # Base de dados simulada (em produção, use um banco de dados real)
         self.users: Dict[str, User] = {}
+        # Armazenamento de tokens de redefinição de senha
+        self.reset_tokens: Dict[str, PasswordResetToken] = {}
 
-        # Criar alguns usuários de exemplo
-        self._create_default_users()
+        # Criar alguns usuários de exemplo APENAS se variável de ambiente permitir
+        import os
+        if os.getenv('CREATE_DEFAULT_USERS', 'false').lower() == 'true':
+            self._create_default_users()
 
     def _create_default_users(self):
-        """Cria usuários padrão para demonstração"""
+        """Cria usuários padrão para demonstração - APENAS PARA DESENVOLVIMENTO"""
         # Usuário admin
         self.create_user("admin", "admin123", "admin", "admin@example.com")
         # Usuário comum
@@ -62,8 +88,13 @@ class AuthManager:
 
     @staticmethod
     def hash_password(password: str) -> str:
-        """Cria um hash da senha usando SHA-256"""
-        return hashlib.sha256(password.encode()).hexdigest()
+        """Cria um hash da senha usando bcrypt (seguro para senhas)"""
+        return bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()
+
+    @staticmethod
+    def verify_password(password: str, password_hash: str) -> bool:
+        """Verifica se a senha corresponde ao hash"""
+        return bcrypt.checkpw(password.encode(), password_hash.encode())
 
     def create_user(self, username: str, password: str, role: str = "user", email: str = "") -> bool:
         """
@@ -101,9 +132,7 @@ class AuthManager:
         if not user:
             return None
 
-        password_hash = self.hash_password(password)
-
-        if password_hash != user.password_hash:
+        if not self.verify_password(password, user.password_hash):
             return None
 
         # Atualizar último login
@@ -173,13 +202,80 @@ class AuthManager:
         if not user:
             return False
 
-        old_password_hash = self.hash_password(old_password)
-
-        if old_password_hash != user.password_hash:
+        if not self.verify_password(old_password, user.password_hash):
             return False
 
         user.password_hash = self.hash_password(new_password)
         return True
+
+    def create_password_reset_token(self, username: str) -> Optional[str]:
+        """
+        Cria um token de redefinição de senha
+
+        Args:
+            username: Nome de usuário
+
+        Returns:
+            Token de redefinição se o usuário existir, None caso contrário
+        """
+        user = self.users.get(username)
+
+        if not user:
+            return None
+
+        # Gerar token criptograficamente seguro
+        token = secrets.token_urlsafe(32)
+
+        # Token expira em 30 minutos
+        expires_at = datetime.datetime.utcnow() + datetime.timedelta(minutes=30)
+
+        # Armazenar token
+        self.reset_tokens[username] = PasswordResetToken(username, token, expires_at)
+
+        return token
+
+    def reset_password_with_token(self, username: str, token: str, new_password: str) -> bool:
+        """
+        Redefine a senha usando um token de redefinição
+
+        Args:
+            username: Nome de usuário
+            token: Token de redefinição
+            new_password: Nova senha
+
+        Returns:
+            True se a senha foi redefinida com sucesso, False caso contrário
+        """
+        user = self.users.get(username)
+
+        if not user:
+            return False
+
+        reset_token = self.reset_tokens.get(username)
+
+        if not reset_token:
+            return False
+
+        if not reset_token.is_valid(token):
+            return False
+
+        # Redefinir senha
+        user.password_hash = self.hash_password(new_password)
+
+        # Marcar token como usado
+        reset_token.mark_as_used()
+
+        return True
+
+    def cleanup_expired_tokens(self):
+        """Remove tokens de redefinição expirados"""
+        now = datetime.datetime.utcnow()
+        expired = [
+            username for username, token in self.reset_tokens.items()
+            if token.expires_at < now or token.used
+        ]
+        for username in expired:
+            del self.reset_tokens[username]
 
     def delete_user(self, username: str) -> bool:
         """Remove um usuário"""

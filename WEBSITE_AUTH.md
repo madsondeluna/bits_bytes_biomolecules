@@ -368,7 +368,15 @@ python -m http.server 8000
 
 ## Usuários de Teste
 
-Para testar rapidamente, a API vem com usuários pré-configurados:
+**⚠️ MODO DESENVOLVIMENTO APENAS**
+
+Para testar rapidamente em ambiente de desenvolvimento, configure a variável de ambiente:
+
+```bash
+export CREATE_DEFAULT_USERS=true
+```
+
+Isso criará os seguintes usuários de teste:
 
 | Username   | Password     | Role       |
 |------------|--------------|------------|
@@ -376,7 +384,10 @@ Para testar rapidamente, a API vem com usuários pré-configurados:
 | user       | user123      | user       |
 | researcher | research123  | researcher |
 
-**IMPORTANTE:** Remova ou altere essas credenciais em produção!
+**🔒 IMPORTANTE PARA PRODUÇÃO:**
+- Por padrão, esses usuários **NÃO** são criados (modo seguro)
+- NUNCA configure `CREATE_DEFAULT_USERS=true` em produção
+- Em produção, crie usuários apenas através do endpoint `/api/register`
 
 ## Suporte
 
