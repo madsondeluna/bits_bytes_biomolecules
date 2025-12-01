@@ -1,0 +1,18 @@
+# Sistema de Autenticação via Token JWT
+# Dependências do projeto
+
+# Framework web
+Flask==3.0.0
+
+# JWT para tokens de autenticação
+PyJWT==2.8.0
+
+# CORS para permitir requisições cross-origin
+Flask-CORS==4.0.0
+
+# HTTP requests (para client_example.py)
+requests==2.31.0
+
+# Opcional: Para melhor segurança em produção
+# bcrypt==4.1.2  # Para hash de senhas mais seguro
+# python-dotenv==1.0.0  # Para gerenciar variáveis de ambiente
