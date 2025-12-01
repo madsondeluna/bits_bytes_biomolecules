@@ -83,23 +83,6 @@
       transform: translateY(-2px);
       box-shadow: 0 5px 15px rgba(30, 58, 95, 0.3);
     }
-    .login-links {
-      margin-top: 15px;
-      text-align: center;
-      font-size: 14px;
-      color: rgba(0, 0, 0, 0.5);
-    }
-    .login-links a {
-      color: #2c5f7c;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s ease;
-      margin: 0 5px;
-    }
-    .login-links a:hover {
-      color: #1e3a5f;
-      text-decoration: underline;
-    }
     .error-message {
       color: #ffffff;
       background: #d32f2f;
@@ -147,10 +130,6 @@
       <input type="password" id="password" placeholder="Senha" autocomplete="current-password">
       <button onclick="checkLogin()">Entrar</button>
       <div id="error-msg" class="error-message"></div>
-      <div class="login-links">
-        <a href="cadastro.html">Criar conta</a> |
-        <a href="forgot-password.html">Esqueci minha senha</a>
-      </div>
     </div>
   </div>
   <button id="logout-btn" class="hidden" onclick="logout()">Sair</button>
