@@ -214,51 +214,27 @@
       }
     }
 
-    // Autenticação via API com tokens JWT
-    const API_URL = 'http://localhost:5000'; // Altere para URL da sua API em produção
+    // Autenticação hardcoded (mesmas credenciais do index.html)
+    const AUTH_CREDENTIALS = {
+      'aluno': 'biomol2025',
+      'professor': 'admin123',
+      'jornada2025': 'metionina'
+    };
 
-    async function checkLogin() {
+    function checkLogin() {
       const username = document.getElementById('username').value.trim();
       const password = document.getElementById('password').value;
       const errorMsg = document.getElementById('error-msg');
-      const button = event.target;
 
-      // Desabilitar botão durante o login
-      button.disabled = true;
-      button.textContent = 'Entrando...';
-
-      try {
-        const response = await fetch(`${API_URL}/api/login`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            username,
-            password
-          })
-        });
-
-        const data = await response.json();
-
-        if (response.ok) {
-          // Login bem-sucedido - salvar token e informações do usuário
-          sessionStorage.setItem('authToken', data.token);
-          sessionStorage.setItem('user', JSON.stringify(data.user));
-          showContent();
-          errorMsg.textContent = '';
-        } else {
-          // Login falhou
-          errorMsg.textContent = data.message || 'Usuário ou senha incorretos!';
-          document.getElementById('password').value = '';
-          button.disabled = false;
-          button.textContent = 'Entrar';
-        }
-      } catch (error) {
-        console.error('Erro:', error);
-        errorMsg.textContent = 'Erro ao conectar com o servidor. Certifique-se de que a API está rodando.';
-        button.disabled = false;
-        button.textContent = 'Entrar';
+      if (AUTH_CREDENTIALS[username] === password) {
+        // Login bem-sucedido (usando sessionStorage - expira ao fechar o navegador)
+        sessionStorage.setItem('bbb_auth', btoa(username + ':' + password));
+        showContent();
+        errorMsg.textContent = '';
+      } else {
+        // Login falhou
+        errorMsg.textContent = 'Usuário ou senha incorretos!';
+        document.getElementById('password').value = '';
       }
     }
 
@@ -269,41 +245,27 @@
     }
 
     function logout() {
-      if (confirm('Tem certeza que deseja sair?')) {
-        sessionStorage.removeItem('authToken');
-        sessionStorage.removeItem('user');
-        document.getElementById('login-overlay').classList.remove('hidden');
-        document.getElementById('logout-btn').classList.add('hidden');
-        document.getElementById('username').value = '';
-        document.getElementById('password').value = '';
-        document.getElementById('error-msg').textContent = '';
-      }
+      sessionStorage.removeItem('bbb_auth');
+      document.getElementById('login-overlay').classList.remove('hidden');
+      document.getElementById('logout-btn').classList.add('hidden');
+      document.getElementById('username').value = '';
+      document.getElementById('password').value = '';
+      document.getElementById('error-msg').textContent = '';
     }
 
-    // Verifica se já está autenticado via token
-    async function checkAuth() {
-      const token = sessionStorage.getItem('authToken');
-      if (token) {
+    // Verifica se já está autenticado
+    function checkAuth() {
+      const auth = sessionStorage.getItem('bbb_auth');
+      if (auth) {
         try {
-          // Verificar se o token ainda é válido
-          const response = await fetch(`${API_URL}/api/verify`, {
-            headers: {
-              'Authorization': `Bearer ${token}`
-            }
-          });
-
-          if (response.ok) {
+          const decoded = atob(auth);
+          const [username, password] = decoded.split(':');
+          if (AUTH_CREDENTIALS[username] === password) {
             showContent();
             return;
-          } else {
-            // Token inválido ou expirado
-            sessionStorage.removeItem('authToken');
-            sessionStorage.removeItem('user');
           }
         } catch (e) {
-          console.error('Erro ao verificar token:', e);
-          sessionStorage.removeItem('authToken');
-          sessionStorage.removeItem('user');
+          sessionStorage.removeItem('bbb_auth');
         }
       }
     }
