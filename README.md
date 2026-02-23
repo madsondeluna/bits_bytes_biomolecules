@@ -1,5 +1,4 @@
-# Bits, Bytes e Biomoléculas: Introdução à Modelagem de Proteínas com Métodos Clássicos e de Aprendizado de Máquina
-## Biologia Estrutural Computacional: Predição, Análise e Validação de Modelos Tridimensionais de Proteínas
+# Biologia Estrutural Computacional: Predição, Análise e Validação de Modelos Tridimensionais de Proteínas
 
 **Instrutor I:** Madson A. de Luna Aragão 
 
