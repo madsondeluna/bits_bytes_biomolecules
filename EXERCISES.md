@@ -1062,11 +1062,6 @@ Os scripts cobrem os seguintes tópicos de forma interativa:
 
 **Desenvolvido por:** Madson Aragão @ UFMG
 
----
-
-**Dica:** Execute os scripts em **tela cheia** para uma melhor experiência visual!
-
----
 -->
 
 # Reporte de Erros
