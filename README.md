@@ -1,17 +1,15 @@
 # Bits, Bytes e Biomoléculas: Introdução à Modelagem de Proteínas com Métodos Clássicos e de Aprendizado de Máquina
 ## Biologia Estrutural Computacional: Predição, Análise e Validação de Modelos Tridimensionais de Proteínas
 
-**Instrutor I:** Madson Aragão 
+**Instrutor I:** Madson A. de Luna Aragão 
 
-**Instrutor II:** André Lucena
+**Instrutor II:** André S. Lira de Lucena
 
 **Evento:** Curso de Férias em Bioinformática - 02 à 06 de março de 2026
 
 **Contato:** madsondeluna@gmail.com; andresllucena@gmail.com
 
-**Portfólio:** <a href="https://madsondeluna.github.io/" target="_blank" rel="noopener noreferrer">https://madsondeluna.github.io/</a>
-
-**Projetos:** <a href="https://github.com/madsondeluna" target="_blank" rel="noopener noreferrer">https://github.com/madsondeluna</a>
+**Outros Projetos:** <a href="https://github.com/madsondeluna" target="_blank" rel="noopener noreferrer">https://github.com/madsondeluna</a>
 
 ---
 
