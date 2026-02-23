@@ -17,6 +17,7 @@ Este repositório contém o material de referência completo para o curso, inclu
 **Links importantes:**
 - **Conteúdo teórico:** <a href="https://madsondeluna.github.io/bits_bytes_biomolecules/" target="_blank" rel="noopener noreferrer">Acessar página principal</a>
 - **Exercícios práticos:** <a href="https://madsondeluna.github.io/bits_bytes_biomolecules/exercises.html" target="_blank" rel="noopener noreferrer">Acessar exercícios</a>
+- **Comandos Linux:** <a href="https://github.com/madsondeluna/unix-commands-for-friends" target="_blank" rel="noopener noreferrer">Guia de Comandos</a>
 
 ---
 
