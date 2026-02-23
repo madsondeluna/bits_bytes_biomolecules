@@ -1,16 +1,14 @@
-# Bits, Bytes e Biomoléculas - Exercícios Práticos
+# Exercícios Práticos
 
-**Instrutor:** Madson Aragão (Estudante de PhD @ UFMG, MSc em Genética e Biologia Molecular @ UFPE)
+**Instrutor I:** Madson A. de Luna Aragão 
 
-**Monitor:** Saulo Penna (BSc em Biomedicina @ UFPE, Pesquisador no LGBV/UFPE)
+**Instrutor II:** André S. Lira de Lucena
 
-**Evento:** XV Jornada PPGGBM - 19 de Novembro de 2025
+**Evento:** Curso de Férias em Bioinformática - 02 à 06 de março de 2026
 
-**Contato:** madsondeluna@gmail.com; saulo.rmpenna@ufpe.br
+**Contato:** madsondeluna@gmail.com; andresllucena@gmail.com
 
-**Portfólio:** <a href="https://madsondeluna.github.io/" target="_blank" rel="noopener noreferrer">https://madsondeluna.github.io/</a>
-
-**Projetos:** <a href="https://github.com/madsondeluna" target="_blank" rel="noopener noreferrer">https://github.com/madsondeluna</a>
+**Outros Projetos:** <a href="https://github.com/madsondeluna" target="_blank" rel="noopener noreferrer">https://github.com/madsondeluna</a>
 
 ---
 
