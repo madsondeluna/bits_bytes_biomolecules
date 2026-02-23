@@ -922,6 +922,7 @@ Para qualquer outro tipo de uso, entre em contato com os autores pelos e-mails f
 
 ---
 
+<!--
 # Extra: Ferramenta Educacional CLI - Tradução de Proteínas
 
 Esta seção apresenta um **script educacional interativo** que demonstra, passo a passo, o processo de **tradução de proteínas** via linha de comando (CLI). Esta ferramenta foi desenvolvida para complementar o aprendizado sobre o **Dogma Central da Biologia Molecular**, oferecendo uma visualização didática e interativa de como o mRNA é convertido em proteínas.
@@ -1066,6 +1067,7 @@ Os scripts cobrem os seguintes tópicos de forma interativa:
 **Dica:** Execute os scripts em **tela cheia** para uma melhor experiência visual!
 
 ---
+-->
 
 # Reporte de Erros
 
