@@ -122,6 +122,7 @@
   </style>
 </head>
 <body>
+<!-- 
   <div id="login-overlay">
     <div id="login-box">
       <h2>🧮 Acesso Restrito</h2>
@@ -133,6 +134,7 @@
     </div>
   </div>
   <button id="logout-btn" class="hidden" onclick="logout()">Sair</button>
+  -->
 <header style="text-align: center;">
   <h1>Bits, Bytes e Biomoléculas — Versão Lite</h1>
   <p class="muted">
@@ -250,6 +252,7 @@
     // Divirta-se e bons estudos!
 
 
+    /*
     const AUTH_CREDENTIALS = {
       'aluno': 'biomol2025',          
       'professor': 'admin123',        
@@ -306,9 +309,12 @@
         }
       }
     }
+    */
 
     // Permite login com Enter
     document.addEventListener('DOMContentLoaded', function() {
+      renderReadme(); // Carrega o conteudo diretamente, sem login
+      /*
       checkAuth();
       document.getElementById('password').addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
@@ -320,6 +326,7 @@
           document.getElementById('password').focus();
         }
       });
+      */
     });
   </script>
 </body>

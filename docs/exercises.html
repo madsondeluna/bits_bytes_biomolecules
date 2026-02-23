@@ -122,6 +122,7 @@
   </style>
 </head>
 <body>
+<!-- 
   <div id="login-overlay">
     <div id="login-box">
       <h2>🧮 Acesso Restrito</h2>
@@ -133,6 +134,7 @@
     </div>
   </div>
   <button id="logout-btn" class="hidden" onclick="logout()">Sair</button>
+  -->
   <header style="text-align: center;">
     <h1>Exercícios Práticos — Bits, Bytes e Biomoléculas</h1>
     <p class="muted">Esta página contém os exercícios práticos que serão realizados durante o curso.</p>
@@ -214,6 +216,7 @@
       }
     }
 
+    /*
     // Autenticação hardcoded (mesmas credenciais do index.html)
     const AUTH_CREDENTIALS = {
       'aluno': 'biomol2025',
@@ -269,9 +272,12 @@
         }
       }
     }
+    */
 
     // Permite login com Enter
     document.addEventListener('DOMContentLoaded', function() {
+      renderExercises(); // Carrega o conteudo diretamente, sem login
+      /*
       checkAuth();
       document.getElementById('password').addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
@@ -283,6 +289,7 @@
           document.getElementById('password').focus();
         }
       });
+      */
     });
   </script>
 </body>
