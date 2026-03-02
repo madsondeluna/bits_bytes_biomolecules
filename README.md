@@ -563,7 +563,11 @@ O IUPred3 retorna um **gráfico de escore de desordem por resíduo**, variando d
 
 A comparação do perfil de desordem com o mapa de pLDDT do AlphaFold é extremamente reveladora: regiões de baixo pLDDT que coincidem com alto escore de desordem no IUPred3 confirmam IDRs genuínas; regiões de baixo pLDDT sem correspondência no IUPred3 merecem investigação adicional.
 
-<!-- 📷 SUGESTÃO DE IMAGEM: Gráfico do IUPred3 para a p53, com a linha de escore de desordem ao longo dos 393 resíduos e anotação dos domínios TAD (IDR), PRD (IDR), DBD (ordenado), OD (ordenado), CTD (IDR); comparação lado a lado com o perfil de pLDDT do AlphaFold -->
+<figure class="figure-center">
+  <img src="imgs/iupred3-p53.png" alt="Perfil de desordem IUPred3 para a p53 (P04637)" width="800">
+</figure>
+
+> Perfil de desordem intrínseco da p53 humana (UniProt P04637) gerado pelo IUPred3. A linha vermelha indica o escore de desordem por resíduo (0–1); valores acima de 0.5 caracterizam regiões desordenadas. As regiões N-terminal (TAD) e C-terminal (CTD) são claramente desordenadas, enquanto o domínio de ligação ao DNA (DBD) é predominantemente ordenado. Fonte: IUPred3 (iupred3.elte.hu).
 
 > O AlphaFold e outros preditores estruturais geram coordenadas para **toda** a sequência, mas atribuem escores de confiança (pLDDT) baixos a IDRs. Identificar IDRs previamente ajuda a **interpretar corretamente** regiões de baixo pLDDT no modelo: não são erros de predição, são regiões genuinamente desordenadas. Para a p53, por exemplo, os domínios TAD e CTD são conhecidos como IDRs funcionais.
 
