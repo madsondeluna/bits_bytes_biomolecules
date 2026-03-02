@@ -409,6 +409,246 @@ A ligação peptídica sob outra óptica.
 
 ---
 
+## Predição de Características a partir da Sequência Primária
+
+Uma das etapas mais importantes — e frequentemente subestimada — no fluxo de trabalho em biologia estrutural computacional é a **análise inicial da sequência primária**. Antes mesmo de tentar prever ou modelar a estrutura tridimensional de uma proteína, é possível extrair um conjunto rico de informações funcionais e estruturais apenas a partir de sua sequência de aminoácidos.
+
+Esses dados permitem formar hipóteses biológicas, identificar domínios e regiões funcionais, antecipar o comportamento físico-químico da proteína e guiar as escolhas de ferramentas de modelagem. A análise de sequência primária forma, portanto, o alicerce de qualquer investigação estrutural bem fundamentada.
+
+<br>
+
+### Categorias de *Features* Preditas a Partir da Sequência Primária
+
+As ferramentas de predição podem ser agrupadas por categoria de análise. Para cada categoria, discutimos o princípio de funcionamento, as ferramentas mais utilizadas e — especialmente — **como interpretar os resultados** gerados.
+
+---
+
+### Propriedades Físico-Químicas Globais
+
+Essas ferramentas calculam parâmetros intrínsecos da sequência, como massa molecular, ponto isoelétrico (pI), coeficiente de extinção molar, índice de instabilidade global, hidrofobicidade média (índice GRAVY) e composição de aminoácidos.
+
+**Como funcionam:** a partir da sequência FASTA, aplicam fórmulas físico-químicas e dados empíricos tabelados — como escalas de hidrofobicidade de Kyte-Doolittle e valores de pKa dos grupos ionizáveis — para calcular os parâmetros. Não utilizam aprendizado de máquina: são cálculos analíticos diretos.
+
+| Ferramenta | URL | O que calcula |
+|:-----------|:----|:-------------|
+| **ProtParam (ExPASy)** | <a href="https://web.expasy.org/protparam/" target="_blank">web.expasy.org/protparam</a> | Massa molecular, pI, GRAVY, instabilidade, extinção molar |
+| **PepCalc** | <a href="https://pepcalc.com/" target="_blank">pepcalc.com</a> | Propriedades de peptídeos sintéticos curtos |
+
+#### Como interpretar os resultados
+
+| Parâmetro | Faixa/Valor | Significado |
+|:----------|:-----------|:------------|
+| **Massa molecular** | Em Daltons (Da) ou kDa | Base para escolher técnicas experimentais (ex: SDS-PAGE, filtração em gel) |
+| **pI (ponto isoelétrico)** | 1–14 | pH onde a carga líquida da proteína é zero. Proteínas com pI < 7 são ácidas; pI > 7, básicas. Usada para definir condições de cristalização e purificação por focalização isoelétrica |
+| **Índice de instabilidade** | < 40 = estável; > 40 = instável | Estimativa da estabilidade *in vivo* baseada na composição dipeptídica |
+| **Índice GRAVY** | Negativo = hidrofílica; Positivo = hidrofóbica | Valores negativos indicam proteínas solúveis em meio aquoso; valores positivos sugerem associação com membranas ou núcleo hidrofóbico exposto |
+| **Coeficiente de extinção molar (ε)** | Em M⁻¹cm⁻¹ | O que determina a absorbância da proteína a 280 nm (A₂₈₀), usada para quantificação de proteína purificada por espectrofotometria |
+
+<!-- 📷 SUGESTÃO DE IMAGEM: Screenshot do output do ProtParam com a p53 como exemplo, destacando pI, GRAVY e índice de instabilidade com setas anotadas -->
+
+> O pI define o pH no qual a proteína tem carga líquida zero, o que afeta solubilidade, condições de cristalização e protocolos de purificação. O índice GRAVY (negativo para proteínas hidrofílicas, positivo para hidrofóbicas) antecipa se a proteína tende a ser solúvel em solução aquosa ou associada a membranas.
+
+---
+
+### Peptídeo Sinal e Destino Subcelular
+
+O peptídeo sinal é uma sequência curta (geralmente 15–30 resíduos no N-terminal) que direciona proteínas recém-sintetizadas para a via secretória (RER). Sua identificação é crítica para entender o destino celular da proteína e para planejar experimentos de expressão recombinante.
+
+**Como funcionam:** modelos treinados com redes neurais profundas (incluindo *transformers*) reconhecem padrões de composição e hidrofobicidade na extremidade N-terminal que caracterizam peptídeos sinal, âncoras GPI, peptídeos de direcionamento mitocondrial ou cloroplástico. O SignalP 6.0, por exemplo, utiliza uma arquitetura baseada em *transformers* treinada em proteínas de organismos dos três domínios da vida.
+
+| Ferramenta | URL | O que prediz |
+|:-----------|:----|:-------------|
+| **SignalP 6.0** | <a href="https://services.healthtech.dtu.dk/services/SignalP-6.0/" target="_blank">services.healthtech.dtu.dk/SignalP-6.0</a> | Peptídeo sinal clássico e local de clivagem |
+| **TargetP 2.0** | <a href="https://services.healthtech.dtu.dk/services/TargetP-2.0/" target="_blank">services.healthtech.dtu.dk/TargetP-2.0</a> | Direcionamento para mitocôndria, cloroplasto ou secreção |
+| **WoLFPSORT** | <a href="https://wolfpsort.hgc.jp/" target="_blank">wolfpsort.hgc.jp</a> | Localização subcelular (citoplasma, núcleo, mitocôndria, etc.) |
+| **DeepLoc 2.0** | <a href="https://services.healthtech.dtu.dk/services/DeepLoc-2.0/" target="_blank">services.healthtech.dtu.dk/DeepLoc-2.0</a> | Localização subcelular multiclasse com alta precisão |
+
+#### Como interpretar os resultados
+
+O SignalP 6.0 retorna um gráfico com probabilidades por posição (resíduo). Os elementos-chave a observar são:
+
+- **Probabilidade de peptídeo sinal (SP):** um pico próximo ao N-terminal com valor alto (> 0.5, idealmente > 0.8) indica presença de sinal.
+- **CS (Cleavage Site):** posição prevista de clivagem do peptídeo sinal pela peptidase sinal. A proteína madura começa **após** esse ponto — isso afeta diretamente o modelo 3D, pois os primeiros N resíduos não estarão presentes na forma funcional.
+- **Outros tipos preditos:** SP (sinal secretório clássico), LIPO (lipoproteína), TAT (via TAT bacteriana), PILIN, ou **OTHER** (ausência de sinal).
+
+Para o WoLFPSORT e DeepLoc, o resultado é um **escore de probabilidade por compartimento** (citoplasma, núcleo, mitocôndria, membrana plasmática, retículo, etc.). O compartimento com maior escore é a predição mais provável.
+
+<!-- 📷 SUGESTÃO DE IMAGEM: Gráfico de saída do SignalP 6.0 mostrando probabilidade de peptídeo sinal ao longo dos resíduos N-terminais, com seta indicando o sítio de clivagem (CS) -->
+
+> Proteínas sem peptídeo sinal são traduzidas em ribossomos livres e ficam no citosol. Proteínas com peptídeo sinal são co-traducionalmente inseridas no RER e seguem a via secretória. Saber isso antes de qualquer modelagem evita interpretar erroneamente regiões do modelo que, na célula, são clivadas.
+
+---
+
+### Domínios, Famílias e Motivos Funcionais
+
+Domínios são regiões da sequência com estrutura e função conservadas ao longo da evolução. A anotação de domínios é fundamental para atribuir função a proteínas desconhecidas pelo princípio da **homologia funcional**.
+
+**Como funcionam:** as ferramentas comparam a sequência-consulta contra bancos de dados de perfis de sequência baseados em *Hidden Markov Models* (HMMs). Um HMM de família é construído a partir de um alinhamento múltiplo de sequências da família, capturando posições conservadas e permitidas. O **InterProScan** integra resultados de múltiplos bancos de dados (Pfam, PRINTS, PANTHER, CDD, SMART, Hamap, etc.) em uma única análise unificada.
+
+| Ferramenta / DB | URL | O que identifica |
+|:----------------|:----|:-----------------|
+| **InterProScan (EBI)** | <a href="https://www.ebi.ac.uk/interpro/search/sequence/" target="_blank">ebi.ac.uk/interpro/search/sequence</a> | Domínios, famílias, sítios funcionais, padrões |
+| **Pfam** | <a href="https://www.ebi.ac.uk/interpro/" target="_blank">ebi.ac.uk/interpro</a> | Famílias e domínios curados por HMM profiles |
+| **SMART** | <a href="https://smart.embl.de/" target="_blank">smart.embl.de</a> | Domínios de sinalização e extracelulares |
+| **PROSITE** | <a href="https://prosite.expasy.org/" target="_blank">prosite.expasy.org</a> | Padrões conservados e sítios ativos por expressão regular |
+
+#### Como interpretar os resultados
+
+O InterProScan retorna uma visualização em **mapa de domínios** — uma representação linear da sequência com blocos coloridos sobreposto às posições dos domínios identificados. Para cada entrada identificada, observe:
+
+- **Banco de dados de origem:** Pfam, PANTHER, CDD, SMART etc. — cada banco tem um nível diferente de curadoria e cobertura.
+- **Posição (início–fim):** os limites do domínio na sequência. Domínios que cobrem a maior parte da sequência são regiões estruturalmente independentes: podem ser modelados separadamente.
+- **E-value:** quanto menor, mais significativa a correspondência. Valores < 1×10⁻⁵ são considerados confiáveis.
+- **Anotação funcional associada (GO terms):** Gene Ontology terms vinculados ao domínio, indicando função molecular, processo biológico e componente celular previstos.
+
+<!-- 📷 SUGESTÃO DE IMAGEM: Mapa de domínios da p53 gerado pelo InterProScan, mostrando TAD, PRD, DBD, OD e CTD com anotações de posição e banco de dados de origem -->
+
+> Encontrar um domínio conhecido em uma sequência nova é uma das formas mais poderosas de anotar função. Se sua proteína contém um domínio de quinase, ela provavelmente adiciona grupos fosfato em substratos. Se contém um domínio de ligação ao DNA (como o DBD da p53), provavelmente regula a transcrição.
+
+---
+
+### Regiões Transmembrana e Topologia de Membrana
+
+A identificação de hélices transmembrana (TM) e da topologia da proteína em relação à bicamada lipídica é indispensável para proteínas de membrana, que representam mais de 25% do proteoma humano e são alvos de >50% dos fármacos aprovados.
+
+**Como funcionam:** utilizam modelos estatísticos ou de aprendizado de máquina treinados com proteínas de membrana resolvidas experimentalmente (*e.g.*, por cristalografia ou Cryo-EM). Identificam segmentos de alta hidrofobicidade (tipicamente ≥20 resíduos apolares consecutivos) que atravessam a bicamada, e inferem a orientação N/C-terminal em relação à membrana.
+
+| Ferramenta | URL | O que prediz |
+|:-----------|:----|:-------------|
+| **TMHMM 2.0** | <a href="https://services.healthtech.dtu.dk/services/TMHMM-2.0/" target="_blank">services.healthtech.dtu.dk/TMHMM-2.0</a> | Hélices TM e topologia (intra/extrafacial) |
+| **Phobius** | <a href="https://phobius.sbc.su.se/" target="_blank">phobius.sbc.su.se</a> | Hélices TM + peptídeo sinal combinados (evita falsos positivos) |
+| **TOPCONS** | <a href="https://topcons.net/" target="_blank">topcons.net</a> | Consenso de topologia por múltiplos preditores |
+
+#### Como interpretar os resultados
+
+O TMHMM 2.0 retorna um **gráfico de topologia por resíduo** com três linhas de probabilidade:
+- **Inside (intracelular):** probabilidade do resíduo estar no lado citosólico da membrana.
+- **Transmembrane:** probabilidade do resíduo estar inserido na bicamada lipídica.
+- **Outside (extracelular/luminal):** probabilidade do resíduo estar no lado oposto ao citosol.
+
+Os segmentos onde a linha **Transmembrane** atinge valores próximos a 1 ao longo de ≥ 17–20 resíduos consecutivos são as hélices TM preditas. O número de hélices TM define a **topologia** da proteína:
+
+| Nº de hélices TM | Classificação comum |
+|:----------------:|:--------------------|
+| 0 | Proteína solúvel ou periférica de membrana |
+| 1 | Proteína de passagem única (*single-pass*) |
+| 2–6 | Proteína de múltiplas passagens (*multi-pass*), frequentemente transportadores ou canais |
+| 7 | Típico de receptores acoplados à proteína G (GPCRs) |
+
+<!-- 📷 SUGESTÃO DE IMAGEM: Gráfico de saída do TMHMM com as três linhas de probabilidade (Inside, TM, Outside) para uma proteína de membrana com 7 hélices (ex: um GPCR como referência didática) -->
+
+> Regiões transmembrana **não** devem ser modeladas com ferramentas voltadas para proteínas solúveis. Identificar a presença e o número de hélices TM antes da modelagem evita erros fundamentais de interpretação estrutural.
+
+---
+
+### Regiões Intrinsecamente Desordenadas (*Intrinsically Disordered Regions*, IDRs)
+
+Muitas proteínas possuem regiões que **não adotam uma estrutura tridimensional estável** em solução fisiológica. Essas **regiões intrinsecamente desordenadas (IDRs)** são biologicamente ativas e frequentemente envolvidas em interações moleculares transitórias, sinalização celular e processos de condensação de fase líquida (*liquid-liquid phase separation*).
+
+**Como funcionam:** utilizam modelos baseados na composição de aminoácidos — regiões desordenadas tendem a ser enriquecidas em Gly, Ser, Pro, Arg, Gln e Glu (resíduos "promotores de desordem") e empobrecidas em resíduos hidrofóbicos do núcleo como Ile, Val, Leu e Phe (resíduos "promotores de ordem"). Modelos modernos também capturam padrões contextuais mais sutis via aprendizado de máquina.
+
+| Ferramenta | URL | O que prediz |
+|:-----------|:----|:-------------|
+| **IUPred3** | <a href="https://iupred3.elte.hu/" target="_blank">iupred3.elte.hu</a> | Desordem por resíduo + motivos de ligação curtos (MoRFs/SLiMs) |
+| **PONDR** | <a href="http://www.pondr.com/" target="_blank">pondr.com</a> | Desordem intrínseca por múltiplos preditores integrados |
+| **flDPnn** | <a href="https://biomine.cs.vcu.edu/servers/flDPnn/" target="_blank">biomine.cs.vcu.edu/servers/flDPnn</a> | Regiões desordenadas funcionalmente relevantes |
+
+#### Como interpretar os resultados
+
+O IUPred3 retorna um **gráfico de escore de desordem por resíduo**, variando de 0 a 1:
+
+- **Escore > 0.5:** o resíduo está em uma região prevista como **desordenada**. Quanto mais próximo de 1, maior a propensão à desordem.
+- **Escore < 0.5:** o resíduo está em uma região prevista como **ordenada** (estruturada).
+- **MoRFs (*Molecular Recognition Features*):** picos abruptos onde uma região desordenada possui alta propensão local para adotar estrutura ao interagir com um parceiro molecular. São "âncoras de interação" dentro das IDRs.
+
+A comparação do perfil de desordem com o mapa de pLDDT do AlphaFold é extremamente reveladora: regiões de baixo pLDDT que coincidem com alto escore de desordem no IUPred3 confirmam IDRs genuínas; regiões de baixo pLDDT sem correspondência no IUPred3 merecem investigação adicional.
+
+<!-- 📷 SUGESTÃO DE IMAGEM: Gráfico do IUPred3 para a p53, com a linha de escore de desordem ao longo dos 393 resíduos e anotação dos domínios TAD (IDR), PRD (IDR), DBD (ordenado), OD (ordenado), CTD (IDR); comparação lado a lado com o perfil de pLDDT do AlphaFold -->
+
+> O AlphaFold e outros preditores estruturais geram coordenadas para **toda** a sequência, mas atribuem escores de confiança (pLDDT) baixos a IDRs. Identificar IDRs previamente ajuda a **interpretar corretamente** regiões de baixo pLDDT no modelo: não são erros de predição, são regiões genuinamente desordenadas. Para a p53, por exemplo, os domínios TAD e CTD são conhecidos como IDRs funcionais.
+
+---
+
+### Predição de Estrutura Secundária
+
+É possível prever o conteúdo de estrutura secundária diretamente da sequência primária, *antes* de qualquer modelagem 3D. Esses preditores são rápidos e úteis como etapa inicial de caracterização e como *sanity check* contra os modelos gerados.
+
+**Como funcionam:** usam redes neurais profundas (incluindo LSTMs bidirecionais e *transformers*) treinadas com proteínas de estrutura experimental conhecida. A entrada é tipicamente a sequência de aminoácidos combinada com um perfil de múltiplo alinhamento de sequências (MSA), que captura a covariação evolutiva entre posições. A saída é uma predição por resíduo do estado de estrutura secundária: **H** (hélice), **E** (fita beta) ou **C** (coil/loop).
+
+| Ferramenta | URL | O que prediz |
+|:-----------|:----|:-------------|
+| **PSIPRED 4.0** | <a href="http://bioinf.cs.ucl.ac.uk/psipred/" target="_blank">bioinf.cs.ucl.ac.uk/psipred</a> | Estrutura secundária por resíduo (H, E, C) |
+| **JPred4** | <a href="https://www.jpred.org/" target="_blank">jpred.org</a> | Estrutura secundária + acessibilidade ao solvente |
+| **NetSurfP-3.0** | <a href="https://services.healthtech.dtu.dk/services/NetSurfP-3.0/" target="_blank">services.healthtech.dtu.dk/NetSurfP-3.0</a> | Estrutura secundária, acessibilidade ao solvente e desordem |
+
+#### Como interpretar os resultados
+
+O PSIPRED retorna uma **visualização gráfica por resíduo** com três linhas de confiança (H, E, C) e uma predição de estado discreta "ganha" pelo estado de maior confiança em cada posição:
+
+- **Linha H (rosa/vermelho):** confiança de que o resíduo pertence a uma α-hélice. Blocos contínuos de H com alta confiança indicam hélices previstas.
+- **Linha E (amarelo/laranja):** confiança de que o resíduo pertence a uma fita-β. Blocos contínuos de E indicam fitas beta.
+- **Linha C (azul):** confiança de que o resíduo pertence a uma alça ou região coil.
+- **Confiança:** a altura da barra de confiança embaixo de cada predição indica o nível de certeza. Barras curtas = predição ambígua naquela posição.
+
+A predição de estrutura secundária por resíduo pode ser comparada diretamente com a estrutura 3D do modelo gerado posteriormente — é uma validação independente rápida do enovelamento previsto.
+
+<!-- 📷 SUGESTÃO DE IMAGEM: Output gráfico do PSIPRED para a p53 (ou um segmento do DBD), mostrando a representação colorida H/E/C por resíduo com as barras de confiança abaixo, anotando as regiões de fitas β do DBD -->
+
+> A predição de estrutura secundária é a ponte entre a sequência e a estrutura 3D. Ela oferece uma estimativa rápida e independente do conteúdo de hélices e fitas, que pode ser validada experimentalmente por **Dicroísmo Circular (CD)** sem a necessidade de um modelo 3D completo.
+
+---
+
+### Sítios de Modificação Pós-Traducional (PTMs)
+
+A predição de sítios de PTM na sequência é fundamental para antecipar regulações que atuam **após** a síntese e que afetam profundamente a função, a estabilidade, a localização e as interações da proteína — mas que não estão visíveis apenas na estrutura 3D.
+
+**Como funcionam:** modelos de aprendizado de máquina são treinados com sítios experimentalmente validados de cada tipo de PTM. Eles aprendem o **contexto de sequência** — a composição de aminoácidos ao redor do sítio modificável (janela de ±5 a 10 resíduos) — que é reconhecido pelas enzimas modificadoras (quinases, glicosiltransferases, ubiquitina-ligases, etc.).
+
+| Ferramenta | URL | PTM predita |
+|:-----------|:----|:------------|
+| **NetPhos 3.1** | <a href="https://services.healthtech.dtu.dk/services/NetPhos-3.1/" target="_blank">services.healthtech.dtu.dk/NetPhos-3.1</a> | Fosforilação (Ser, Thr, Tyr) por quinases específicas |
+| **NetOGlyc 4.0** | <a href="https://services.healthtech.dtu.dk/services/NetOGlyc-4.0/" target="_blank">services.healthtech.dtu.dk/NetOGlyc-4.0</a> | O-glicosilação (GalNAc em Ser/Thr) |
+| **NetNGlyc 1.0** | <a href="https://services.healthtech.dtu.dk/services/NetNGlyc-1.0/" target="_blank">services.healthtech.dtu.dk/NetNGlyc-1.0</a> | N-glicosilação (no motivo NXS/T) |
+| **GPS-Ubiquitin** | <a href="https://gps.biocuckoo.cn/" target="_blank">gps.biocuckoo.cn</a> | Sítios de ubiquitinação (Lys) |
+| **PhosphoSitePlus** | <a href="https://www.phosphosite.org/" target="_blank">phosphosite.org</a> | Banco de dados curado de PTMs experimentais |
+
+#### Como interpretar os resultados
+
+O NetPhos 3.1 retorna uma **tabela e gráfico de escores por resíduo** para cada Ser, Thr e Tyr da sequência. Os campos principais são:
+
+- **Posição e resíduo:** ex. Ser15, Thr18, Tyr205 — indica qual aminoácido é o sítio candidato.
+- **Escore (0–1):** quanto maior, maior a probabilidade de fosforilação. O **limiar padrão é 0.5**: escores acima disso são considerados sítios preditos.
+- **Quinase predita:** quando ativado o modo de quinase específica, a ferramenta indica qual quinase mais provavelmente catalisa a modificação (ex: PKA, CK2, ATM, CDK2).
+
+Para a **p53**, sítios como **Ser15** (alvo da ATM/ATR em resposta a dano ao DNA) e **Ser20** (alvo da Chk2) são exemplos de fosforilações funcionalmente críticas que estabilizam a proteína e ativam a resposta ao estresse genotóxico — e devem aparecer com alto escore no NetPhos.
+
+<!-- 📷 SUGESTÃO DE IMAGEM: Gráfico de barras do NetPhos 3.1 para a p53, com os sítios de Ser/Thr/Tyr ao longo do eixo X e escores no Y; destaque visual para Ser15 e Ser20 com linha de corte em 0.5 -->
+
+> PTMs mudam a carga, a hidrofobicidade local e a conformação da proteína. A p53, por exemplo, é extensivamente regulada por fosforilação (ativação), ubiquitinação (degradação pelo proteassoma) e acetilação (estabilização pós-estresse). Qualquer modelo estático deve ser interpretado à luz do estado de PTM da proteína *in vivo*.
+
+---
+
+### Regiões de Baixa Complexidade e Repetições
+
+Regiões de baixa complexidade composicional são segmentos com um repertório muito restrito de aminoácidos (ex.: repetições de Gln, Ser ou Pro) que geralmente não possuem estrutura tridimensional definida. Podem estar envolvidas em fenômenos de *phase separation* e formação de condensados biomoleculares.
+
+| Ferramenta | URL | O que identifica |
+|:-----------|:----|:----------------|
+| **SEG** | Filtro automático no <a href="https://blast.ncbi.nlm.nih.gov/" target="_blank">NCBI BLAST</a> | Regiões de baixa complexidade compositional |
+| **Dotlet JS** | <a href="https://dotlet.vital-it.ch/" target="_blank">dotlet.vital-it.ch</a> | Repetições internas por dot-plot de sequência |
+
+#### Como interpretar os resultados
+
+- **SEG (via BLAST):** regiões de baixa complexidade aparecem em **letras minúsculas** na sequência filtrada retornada pelo BLAST. Essas posições são excluídas das buscas de homologia para evitar falsos positivos (repetições de um único aminoácido imitam superficialmente sequências de outras proteínas).
+- **Dot-plot (Dotlet):** a sequência é plotada em ambos os eixos. Pontos na **diagonal principal** indicam identidade própria (trivial). **Diagonais paralelas** à diagonal principal indicam **repetições internas diretas**; **diagonais anti-paralelas** indicam **repetições invertidas**. A densidade e regularidade dessas linhas adicionais quantificam o grau de repetitividade da sequência.
+
+<!-- 📷 SUGESTÃO DE IMAGEM: Dot-plot gerado pelo Dotlet JS de uma proteína com repetições internas evidentes (ex: uma proteína com domínios ankyrin ou WD40 como exemplo didático), com setas indicando as diagonais paralelas que revelam as repetições -->
+
+
+> **Nota:** Esses passos formam o **"perfil de sequência"** da proteína e devem guiar toda a estratégia de modelagem e análise estrutural subsequente. Proteínas de membrana, proteínas com IDRs extensas ou proteínas com PTMs críticos requerem estratégias de modelagem e interpretação distintas das proteínas globulares canônicas.
+
+---
+
 ## O Enovelamento de Proteínas
 
 O problema do enovelamento de proteínas, como uma cadeia polipeptídica linear atinge sua complexa e funcional estrutura tridimensional, representa um dos maiores desafios da biologia molecular contemporânea. Avanços notáveis, como o AlphaFold, forneceram soluções preditivas sem precedentes, mas a compreensão fundamental dos mecanismos de enovelamento, regidos pela termodinâmica e pela evolução, permanece um campo de intensa investigação para biólogos, físicos e químicos.
