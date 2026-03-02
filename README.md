@@ -88,7 +88,7 @@ Nos modelos didáticos e nas representações clássicas da biologia molecular, 
 
 **Implicações práticas:** a **degenerescência** do código faz com que, em **grande parte** dos conjuntos sinônimos, a **3ª base** do códon seja a mais variável (ligando com a Seção 5, "wobble"). Isso amortece mutações sinônimas e permite viés de códons que modula taxa de tradução e enovelamento co-traducional.
 
-**Erros acontecem:** mutações *missense* alteram o aminoácido; mutações *nonsense* criam parada prematura e podem acionar **NMD** (nonsense-mediated decay), degradando o mRNA antes da tradução completa. Exceções importantes: AUG (Met) e UGG (Trp) têm um único códon; alguns grupos (Leu/Arg/Ser) também variam na 1ª base — portanto não é "todos os códons" com 3ª base degenerada.
+**Erros acontecem:** mutações *missense* alteram o aminoácido; mutações *nonsense* criam parada prematura e podem acionar **NMD** (nonsense-mediated decay), degradando o mRNA antes da tradução completa. Exceções importantes: AUG (Met) e UGG (Trp) têm um único códon; alguns grupos (Leu/Arg/Ser) também variam na 1ª base, portanto não é "todos os códons" com 3ª base degenerada.
 
 ---
 
@@ -411,7 +411,7 @@ A ligação peptídica sob outra óptica.
 
 ## Predição de Características a partir da Sequência Primária
 
-Uma das etapas mais importantes — e frequentemente subestimada — no fluxo de trabalho em biologia estrutural computacional é a **análise inicial da sequência primária**. Antes mesmo de tentar prever ou modelar a estrutura tridimensional de uma proteína, é possível extrair um conjunto rico de informações funcionais e estruturais apenas a partir de sua sequência de aminoácidos.
+Uma das etapas mais importantes, e frequentemente subestimada, no fluxo de trabalho em biologia estrutural computacional é a **análise inicial da sequência primária**. Antes mesmo de tentar prever ou modelar a estrutura tridimensional de uma proteína, é possível extrair um conjunto rico de informações funcionais e estruturais apenas a partir de sua sequência de aminoácidos.
 
 Esses dados permitem formar hipóteses biológicas, identificar domínios e regiões funcionais, antecipar o comportamento físico-químico da proteína e guiar as escolhas de ferramentas de modelagem. A análise de sequência primária forma, portanto, o alicerce de qualquer investigação estrutural bem fundamentada.
 
@@ -419,7 +419,7 @@ Esses dados permitem formar hipóteses biológicas, identificar domínios e regi
 
 ### Categorias de *Features* Preditas a Partir da Sequência Primária
 
-As ferramentas de predição podem ser agrupadas por categoria de análise. Para cada categoria, discutimos o princípio de funcionamento, as ferramentas mais utilizadas e — especialmente — **como interpretar os resultados** gerados.
+As ferramentas de predição podem ser agrupadas por categoria de análise. Para cada categoria, discutimos o princípio de funcionamento, as ferramentas mais utilizadas e, especialmente, **como interpretar os resultados** gerados.
 
 ---
 
@@ -427,7 +427,7 @@ As ferramentas de predição podem ser agrupadas por categoria de análise. Para
 
 Essas ferramentas calculam parâmetros intrínsecos da sequência, como massa molecular, ponto isoelétrico (pI), coeficiente de extinção molar, índice de instabilidade global, hidrofobicidade média (índice GRAVY) e composição de aminoácidos.
 
-**Como funcionam:** a partir da sequência FASTA, aplicam fórmulas físico-químicas e dados empíricos tabelados — como escalas de hidrofobicidade de Kyte-Doolittle e valores de pKa dos grupos ionizáveis — para calcular os parâmetros. Não utilizam aprendizado de máquina: são cálculos analíticos diretos.
+**Como funcionam:** a partir da sequência FASTA, aplicam fórmulas físico-químicas e dados empíricos tabelados, como escalas de hidrofobicidade de Kyte-Doolittle e valores de pKa dos grupos ionizáveis, para calcular os parâmetros. Não utilizam aprendizado de máquina: são cálculos analíticos diretos.
 
 | Ferramenta | URL | O que calcula |
 |:-----------|:----|:-------------|
@@ -468,7 +468,7 @@ O peptídeo sinal é uma sequência curta (geralmente 15–30 resíduos no N-ter
 O SignalP 6.0 retorna um gráfico com probabilidades por posição (resíduo). Os elementos-chave a observar são:
 
 - **Probabilidade de peptídeo sinal (SP):** um pico próximo ao N-terminal com valor alto (> 0.5, idealmente > 0.8) indica presença de sinal.
-- **CS (Cleavage Site):** posição prevista de clivagem do peptídeo sinal pela peptidase sinal. A proteína madura começa **após** esse ponto — isso afeta diretamente o modelo 3D, pois os primeiros N resíduos não estarão presentes na forma funcional.
+- **CS (Cleavage Site):** posição prevista de clivagem do peptídeo sinal pela peptidase sinal. A proteína madura começa **após** esse ponto, isso afeta diretamente o modelo 3D, pois os primeiros N resíduos não estarão presentes na forma funcional.
 - **Outros tipos preditos:** SP (sinal secretório clássico), LIPO (lipoproteína), TAT (via TAT bacteriana), PILIN, ou **OTHER** (ausência de sinal).
 
 Para o WoLFPSORT e DeepLoc, o resultado é um **escore de probabilidade por compartimento** (citoplasma, núcleo, mitocôndria, membrana plasmática, retículo, etc.). O compartimento com maior escore é a predição mais provável.
@@ -494,9 +494,9 @@ Domínios são regiões da sequência com estrutura e função conservadas ao lo
 
 #### Como interpretar os resultados
 
-O InterProScan retorna uma visualização em **mapa de domínios** — uma representação linear da sequência com blocos coloridos sobreposto às posições dos domínios identificados. Para cada entrada identificada, observe:
+O InterProScan retorna uma visualização em **mapa de domínios**, uma representação linear da sequência com blocos coloridos sobreposto às posições dos domínios identificados. Para cada entrada identificada, observe:
 
-- **Banco de dados de origem:** Pfam, PANTHER, CDD, SMART etc. — cada banco tem um nível diferente de curadoria e cobertura.
+- **Banco de dados de origem:** Pfam, PANTHER, CDD, SMART etc., cada banco tem um nível diferente de curadoria e cobertura.
 - **Posição (início–fim):** os limites do domínio na sequência. Domínios que cobrem a maior parte da sequência são regiões estruturalmente independentes: podem ser modelados separadamente.
 - **E-value:** quanto menor, mais significativa a correspondência. Valores < 1×10⁻⁵ são considerados confiáveis.
 - **Anotação funcional associada (GO terms):** Gene Ontology terms vinculados ao domínio, indicando função molecular, processo biológico e componente celular previstos.
@@ -545,7 +545,7 @@ Os segmentos onde a linha **Transmembrane** atinge valores próximos a 1 ao long
 
 Muitas proteínas possuem regiões que **não adotam uma estrutura tridimensional estável** em solução fisiológica. Essas **regiões intrinsecamente desordenadas (IDRs)** são biologicamente ativas e frequentemente envolvidas em interações moleculares transitórias, sinalização celular e processos de condensação de fase líquida (*liquid-liquid phase separation*).
 
-**Como funcionam:** utilizam modelos baseados na composição de aminoácidos — regiões desordenadas tendem a ser enriquecidas em Gly, Ser, Pro, Arg, Gln e Glu (resíduos "promotores de desordem") e empobrecidas em resíduos hidrofóbicos do núcleo como Ile, Val, Leu e Phe (resíduos "promotores de ordem"). Modelos modernos também capturam padrões contextuais mais sutis via aprendizado de máquina.
+**Como funcionam:** utilizam modelos baseados na composição de aminoácidos, regiões desordenadas tendem a ser enriquecidas em Gly, Ser, Pro, Arg, Gln e Glu (resíduos "promotores de desordem") e empobrecidas em resíduos hidrofóbicos do núcleo como Ile, Val, Leu e Phe (resíduos "promotores de ordem"). Modelos modernos também capturam padrões contextuais mais sutis via aprendizado de máquina.
 
 | Ferramenta | URL | O que prediz |
 |:-----------|:----|:-------------|
@@ -590,7 +590,7 @@ O PSIPRED retorna uma **visualização gráfica por resíduo** com três linhas 
 - **Linha C (azul):** confiança de que o resíduo pertence a uma alça ou região coil.
 - **Confiança:** a altura da barra de confiança embaixo de cada predição indica o nível de certeza. Barras curtas = predição ambígua naquela posição.
 
-A predição de estrutura secundária por resíduo pode ser comparada diretamente com a estrutura 3D do modelo gerado posteriormente — é uma validação independente rápida do enovelamento previsto.
+A predição de estrutura secundária por resíduo pode ser comparada diretamente com a estrutura 3D do modelo gerado posteriormente, é uma validação independente rápida do enovelamento previsto.
 
 <!-- 📷 SUGESTÃO DE IMAGEM: Output gráfico do PSIPRED para a p53 (ou um segmento do DBD), mostrando a representação colorida H/E/C por resíduo com as barras de confiança abaixo, anotando as regiões de fitas β do DBD -->
 
@@ -600,9 +600,9 @@ A predição de estrutura secundária por resíduo pode ser comparada diretament
 
 ### Sítios de Modificação Pós-Traducional (PTMs)
 
-A predição de sítios de PTM na sequência é fundamental para antecipar regulações que atuam **após** a síntese e que afetam profundamente a função, a estabilidade, a localização e as interações da proteína — mas que não estão visíveis apenas na estrutura 3D.
+A predição de sítios de PTM na sequência é fundamental para antecipar regulações que atuam **após** a síntese e que afetam profundamente a função, a estabilidade, a localização e as interações da proteína, mas que não estão visíveis apenas na estrutura 3D.
 
-**Como funcionam:** modelos de aprendizado de máquina são treinados com sítios experimentalmente validados de cada tipo de PTM. Eles aprendem o **contexto de sequência** — a composição de aminoácidos ao redor do sítio modificável (janela de ±5 a 10 resíduos) — que é reconhecido pelas enzimas modificadoras (quinases, glicosiltransferases, ubiquitina-ligases, etc.).
+**Como funcionam:** modelos de aprendizado de máquina são treinados com sítios experimentalmente validados de cada tipo de PTM. Eles aprendem o **contexto de sequência**, a composição de aminoácidos ao redor do sítio modificável (janela de ±5 a 10 resíduos), que é reconhecido pelas enzimas modificadoras (quinases, glicosiltransferases, ubiquitina-ligases, etc.).
 
 | Ferramenta | URL | PTM predita |
 |:-----------|:----|:------------|
@@ -616,11 +616,11 @@ A predição de sítios de PTM na sequência é fundamental para antecipar regul
 
 O NetPhos 3.1 retorna uma **tabela e gráfico de escores por resíduo** para cada Ser, Thr e Tyr da sequência. Os campos principais são:
 
-- **Posição e resíduo:** ex. Ser15, Thr18, Tyr205 — indica qual aminoácido é o sítio candidato.
+- **Posição e resíduo:** ex. Ser15, Thr18, Tyr205, indica qual aminoácido é o sítio candidato.
 - **Escore (0–1):** quanto maior, maior a probabilidade de fosforilação. O **limiar padrão é 0.5**: escores acima disso são considerados sítios preditos.
 - **Quinase predita:** quando ativado o modo de quinase específica, a ferramenta indica qual quinase mais provavelmente catalisa a modificação (ex: PKA, CK2, ATM, CDK2).
 
-Para a **p53**, sítios como **Ser15** (alvo da ATM/ATR em resposta a dano ao DNA) e **Ser20** (alvo da Chk2) são exemplos de fosforilações funcionalmente críticas que estabilizam a proteína e ativam a resposta ao estresse genotóxico — e devem aparecer com alto escore no NetPhos.
+Para a **p53**, sítios como **Ser15** (alvo da ATM/ATR em resposta a dano ao DNA) e **Ser20** (alvo da Chk2) são exemplos de fosforilações funcionalmente críticas que estabilizam a proteína e ativam a resposta ao estresse genotóxico, e devem aparecer com alto escore no NetPhos.
 
 <!-- 📷 SUGESTÃO DE IMAGEM: Gráfico de barras do NetPhos 3.1 para a p53, com os sítios de Ser/Thr/Tyr ao longo do eixo X e escores no Y; destaque visual para Ser15 e Ser20 com linha de corte em 0.5 -->
 
@@ -920,7 +920,7 @@ Onde:
 Por que isso resolve o paradoxo?
 
 - $L^{2/3}$ cresce muito mais lentamente que qualquer coisa do tipo $k^L$.  
-- Para proteínas com $N < 100\text{–}200$, essa equação prevê tempos de enovelamento entre microssegundos e minutos — exatamente o que vemos experimentalmente.  
+- Para proteínas com $N < 100\text{–}200$, essa equação prevê tempos de enovelamento entre microssegundos e minutos, exatamente o que vemos experimentalmente.  
 - Logo, não existe explosão combinatória real. O enovelamento é guiado, não randômico.
 
 Resumo: o "paradoxo" é só prova de que a hipótese inicial (busca aleatória) é ruim.
@@ -1344,7 +1344,7 @@ O QMEAN (Quality Model Energy ANalysis) é um "score de consenso" (ou *scoring f
 
 * **Como Funciona:** Em vez de focar em apenas um aspecto (como o Ramachandran) ou na energia de pares (como o ProSA), o QMEAN combina vários descritores estruturais e estatísticos. Estes incluem:
     1.  Potenciais de interação baseados em distância (nível de C-β e "all-atom").
-    2.  Potenciais de torção (φ/ψ — ângulos phi/psi).
+    2.  Potenciais de torção (φ/ψ, ângulos phi/psi).
     3.  Previsão de acessibilidade ao solvente.
 * **Interpretação:**
     * **Global (QMEAN Score):** O score é normalizado para variar entre 0 e 1. Quanto mais próximo de 1, maior a qualidade e mais o modelo se assemelha a uma estrutura experimental de alta resolução. Um score > 0.6 ou 0.7 é geralmente considerado bom.
