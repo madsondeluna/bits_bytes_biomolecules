@@ -452,7 +452,7 @@ Essas ferramentas calculam parâmetros intrínsecos da sequência, como massa mo
 
 ### Peptídeo Sinal e Destino Subcelular
 
-O peptídeo sinal é uma sequência curta (geralmente 15–30 resíduos no N-terminal) que direciona proteínas recém-sintetizadas para a via secretória (RER). Sua identificação é crítica para entender o destino celular da proteína e para planejar experimentos de expressão recombinante.
+O peptídeo sinal é uma sequência curta (geralmente 15-30 resíduos no N-terminal) que direciona proteínas recém-sintetizadas para a via secretória (RER). Sua identificação é crítica para entender o destino celular da proteína e para planejar experimentos de expressão recombinante.
 
 **Como funcionam:** modelos treinados com redes neurais profundas (incluindo *transformers*) reconhecem padrões de composição e hidrofobicidade na extremidade N-terminal que caracterizam peptídeos sinal, âncoras GPI, peptídeos de direcionamento mitocondrial ou cloroplástico. O SignalP 6.0, por exemplo, utiliza uma arquitetura baseada em *transformers* treinada em proteínas de organismos dos três domínios da vida.
 
