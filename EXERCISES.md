@@ -127,7 +127,219 @@ As ferramentas abaixo serão utilizadas para analisar propriedades físico-quím
 
 ---
 
-# Atividade 1: Alinhamento 1TUP vs. Sequência Completa
+# Atividade 1: Caracterização de Proteínas a partir da Sequência Primária
+
+**Objetivo:** Utilizar as ferramentas de predição apresentadas para caracterizar cinco proteínas humanas com propriedades bem documentadas, comparar os resultados obtidos entre elas e discutir as implicações biológicas de cada *feature* identificada. Esta atividade é o ponto de partida do nosso fluxo de trabalho: toda modelagem estrutural confiável começa com a compreensão profunda da sequência primária.
+
+**Proteínas selecionadas:** as cinco proteínas abaixo foram escolhidas por representarem contextos biológicos distintos — diferentes localizações subcelulares, presença ou ausência de peptídeo de sinal, variação de pI, tamanho e repertório de domínios — permitindo interpretar e comparar resultados de forma rica e contextualizada.
+
+| # | Proteína | Gene | UniProt | Características esperadas |
+|:-:|:---------|:-----|:-------:|:--------------------------|
+| 1 | Albumina sérica humana | *ALB* | <a href="https://www.uniprot.org/uniprotkb/P02768" target="_blank">P02768</a> | Peptídeo sinal + propeptídeo, proteína secretada, pI ácido (~4,9), estável, sem TM, transportadora |
+| 2 | Antígeno tumoral p53 | *TP53* | <a href="https://www.uniprot.org/uniprotkb/P04637" target="_blank">P04637</a> | Sem peptídeo sinal, localização nuclear (NLS), pI ~6,3, instável (*in vivo*), domínios TAD/DBD/OD/CTD |
+| 3 | Pré-pró-insulina | *INS* | <a href="https://www.uniprot.org/uniprotkb/P01308" target="_blank">P01308</a> | Peptídeo sinal + propeptídeo (C-peptídeo), pequena hormona secretada, rica em Cys (pontes S-S) |
+| 4 | Subunidade alfa-1 da hemoglobina | *HBA1* | <a href="https://www.uniprot.org/uniprotkb/P69905" target="_blank">P69905</a> | Sem peptídeo sinal, citoplasmática (eritrócito), pI básico (~8,7), domínio globina, carreadora de O₂ |
+| 5 | Lisozima C | *LYZ* | <a href="https://www.uniprot.org/uniprotkb/P00698" target="_blank">P00698</a> | Peptídeo sinal, secretada (saliva, lágrimas, leite), pI básico (~9,3), enzima (glicosídeo hidrolase), rica em Cys |
+
+---
+
+## Sequências FASTA (incluindo peptídeo de sinal quando presente)
+
+> **Importante:** As sequências abaixo correspondem às proteínas completas, incluindo o peptídeo de sinal e propeptídeos onde existem. Essa é a sequência que será reconhecida pelas ferramentas SignalP, CD-Search e InterProScan.
+
+### Proteína 1 — Albumina sérica humana (P02768 · 609 aa)
+> Peptídeo sinal: resíduos 1–18 · Propeptídeo: resíduos 19–24 · Proteína madura: resíduos 25–609
+
+```
+>sp|P02768|ALBU_HUMAN Albumin OS=Homo sapiens OX=9606 GN=ALB PE=1 SV=2
+MKWVTFISLLFLFSSAYSRGVFRRDTHKSEIAHRFKDLGEENFKALVLIAFAQYLQQCP
+FEDHVKLVNEVTEFAKTCVADESAENCDKSLHTLFGDKLCTVATLRETYGEMADCCAKQ
+EPERNECFLQHKDDNPNLPRLVRPEVDVMCTAFHDNEETFLKKYLYEIARRHPYFYAPE
+LLFFAKRYKAAFTECCQAADKAACLLPKLDELRDEGKASSAKQRLKCASLQKFGERAFKA
+WAVARLSQRFPKAEFAEVSKLVTDLTKVHTECCHGDLLECADDRADLAKYICENQDSISS
+KLKECCEKPLLEKSHCIAEVENDEMPADLPSLAADFVESKDVCKNYAEAKDVFLGMFLYE
+YARRHPDYSVVLLLRLAKTYETTLEKCCAADDPHECYAKVFDEFKPLVEEPQNLIKQNCE
+LFEQLGEYKFQNALLVRYTKKVPQVSTPTLVEVSRNLGKVGSKCCKHPEAKRMPCAEDYL
+SVVLNQLCVLHEKTPVSEKVTKCCTESLVNRRPCFSALEVDETYVPKEFNAETFTFHADI
+CTLPDTEKQIKKQTALVELVKHKPKATAEQLKTVMENFVAFVDKCCAADDKEACFAVEGP
+KLVVSTQTALA
+```
+
+### Proteína 2 — Antígeno tumoral p53 (P04637 · 393 aa)
+> Sem peptídeo de sinal. Proteína nuclear; NLS localizado na região C-terminal do DBD.
+
+```
+>sp|P04637|P53_HUMAN Cellular tumor antigen p53 OS=Homo sapiens OX=9606 GN=TP53 PE=1 SV=4
+MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGP
+DEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLSSSVPSQKTYQGSYGFRLGFLHSGTAK
+SVTCTYSPALNKMFCQLAKTCPVQLWVDSTPPPGTRVRAMAIYKQSQHMTEVVRRCPHHE
+RCSDSDGLAPPQHLIRVEGNLRVEYLDDRNTFRHSVVVPYEPPEVGSDCTTIHYNYMCNS
+SCMGGMNRRPILTIITLEDSSGNLLGRNSFEVRVCACPGRDRRTEEENLRKKGEPHHELP
+GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
+```
+
+### Proteína 3 — Pré-pró-insulina (P01308 · 110 aa)
+> Peptídeo sinal: resíduos 1–24 · Cadeia B: 25–54 · C-peptídeo: 57–87 · Cadeia A: 90–110
+
+```
+>sp|P01308|INS_HUMAN Insulin OS=Homo sapiens OX=9606 GN=INS PE=1 SV=1
+MALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAED
+LQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN
+```
+
+### Proteína 4 — Subunidade alfa-1 da hemoglobina (P69905 · 142 aa)
+> Sem peptídeo de sinal. Proteína citoplasmática (eritrócitos); sem passagem transmembrana.
+
+```
+>sp|P69905|HBA_HUMAN Hemoglobin subunit alpha OS=Homo sapiens OX=9606 GN=HBA1 PE=1 SV=2
+MVLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHG
+KKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLSHCLLVTLAAHLPAEFTP
+AVHASLDKFLASVSTVLTSKYR
+```
+
+### Proteína 5 — Lisozima C (P00698 · 148 aa)
+> Peptídeo sinal: resíduos 1–18 · Proteína madura: resíduos 19–148 · Enzima antimicrobiana secretada.
+
+```
+>sp|P00698|LYC_HUMAN Lysozyme C OS=Homo sapiens OX=9606 GN=LYZ PE=1 SV=1
+MKALIVLGLVLLSVTVQGKVFERCELTRTLKRLGMDGYRGISLANWMCLAKWMSGYNTRA
+TNYNADGRSTDYGIFQINSRYWCNDGKTPGAVNACHLSCSALLQDNIADAVACAKRVVRDP
+QGIRAWVAWRNRFCQNRDVRQYVQGCGV
+```
+
+---
+
+## Passo a Passo — Ferramentas de Predição
+
+Para **cada uma das 5 proteínas**, repita o roteiro abaixo. Registre os resultados na tabela ao final desta seção antes de responder às perguntas.
+
+### Passo 1 — ProtParam (Propriedades físico-químicas)
+
+1. Acesse <a href="https://web.expasy.org/protparam/" target="_blank">https://web.expasy.org/protparam/</a>.
+2. Cole a sequência de aminoácidos (apenas a sequência, sem o cabeçalho FASTA) na caixa de texto e clique em **"Compute parameters"**.
+3. Registre os seguintes valores:
+   - **Número de aminoácidos** (confira se bate com o tamanho esperado)
+   - **Massa molecular** (em Da)
+   - **pI teórico**
+   - **Índice de instabilidade** (< 40 = estável; > 40 = instável)
+   - **Índice GRAVY** (negativo = hidrofílica; positivo = hidrofóbica)
+   - **Coeficiente de extinção molar** a 280 nm
+
+> **Dica:** Para a albumina e a pré-pró-insulina, rode o ProtParam com a sequência completa (incluindo peptídeo sinal). Anote se há diferença relevante no pI ao comparar precursor e proteína madura.
+
+---
+
+### Passo 2 — SignalP 6.0 (Peptídeo de sinal)
+
+1. Acesse <a href="https://services.healthtech.dtu.dk/services/SignalP-6.0/" target="_blank">https://services.healthtech.dtu.dk/services/SignalP-6.0/</a>.
+2. Cole a sequência FASTA completa (incluindo cabeçalho `>`) na caixa de texto.
+3. Selecione o organismo: **Eukarya**.
+4. Clique em **"Submit"** e aguarde o resultado.
+5. Registre:
+   - **Tipo predito** (SP = peptídeo sinal clássico, OTHER = ausente, LIPO, TAT etc.)
+   - **Probabilidade máxima de SP** (se aplicável)
+   - **Posição do sítio de clivagem (CS)** — o primeiro resíduo da proteína madura
+
+> **Atenção:** Para proteínas sem peptídeo de sinal (p53 e hemoglobina), o resultado esperado é tipo **OTHER** com probabilidade baixa de SP. Um resultado inesperado merece discussão.
+
+---
+
+### Passo 3 — CD-Search/NCBI (Domínios conservados)
+
+1. Acesse <a href="https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi" target="_blank">https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi</a>.
+2. Cole a sequência FASTA completa na caixa de texto.
+3. Em **"Database"**, selecione **CDD v3** (padrão — inclui entradas do Pfam, TIGRFAM e SMART).
+4. Clique em **"Submit"** e aguarde.
+5. Na aba de resultados, observe o **mapa gráfico de domínios** e a tabela de *hits*. Registre:
+   - Nome e ID de cada domínio identificado (*Specific hits* prioritariamente)
+   - Posição de início e fim de cada domínio na sequência
+   - E-value de cada hit
+   - Presença de regiões de baixa complexidade (Low-complexity regions)
+
+---
+
+### Passo 4 — InterProScan (Integração multi-banco)
+
+1. Acesse <a href="https://www.ebi.ac.uk/interpro/search/sequence/" target="_blank">https://www.ebi.ac.uk/interpro/search/sequence/</a>.
+2. Cole a sequência FASTA completa na caixa de texto e clique em **"Search"**.
+3. Aguarde o processamento (pode levar 1–3 minutos).
+4. Explore o **mapa de domínios** interativo e a lista de entradas identificadas. Registre:
+   - Bancos de dados que identificaram domínios (Pfam, PANTHER, HAMAP etc.)
+   - Nome dos domínios e seus intervalos na sequência
+   - **GO terms** associados (Função Molecular, Processo Biológico, Componente Celular)
+   - Compare com o resultado do CD-Search: há domínios detectados em um servidor mas não no outro?
+
+---
+
+### Passo 5 — WoLFPSORT (Localização subcelular)
+
+1. Acesse <a href="https://wolfpsort.hgc.jp/" target="_blank">https://wolfpsort.hgc.jp/</a>.
+2. Cole a sequência de aminoácidos (apenas a sequência) na caixa.
+3. Selecione **"animal"** como tipo de organismo e clique em **"predict!"**.
+4. Registre:
+   - Localização subcelular predita com maior escore
+   - Escores das localizações alternativas
+   - Compare com a localização anotada no UniProt: o resultado é consistente?
+
+---
+
+## Tabela de Registro de Resultados
+
+Preencha a tabela abaixo ao longo da atividade:
+
+| Proteína | Massa (kDa) | pI | Instabilidade | GRAVY | Peptídeo sinal? | CS (posição) | Domínios principais (CD-Search) | GO: Componente celular (InterPro) | Localização (WoLFPSORT) |
+|:---------|:-----------:|:--:|:-------------:|:-----:|:---------------:|:------------:|:--------------------------------|:----------------------------------|:-----------------------:|
+| Albumina (P02768) | | | | | | | | | |
+| p53 (P04637) | | | | | | | | | |
+| Insulina (P01308) | | | | | | | | | |
+| Hemoglobina α (P69905) | | | | | | | | | |
+| Lisozima C (P00698) | | | | | | | | | |
+
+---
+
+## Perguntas para Discussão
+
+### Sobre a Albumina (P02768)
+
+1. O ProtParam indica que a albumina possui pI ácido (~4,9). O que isso significa em termos de carga líquida da proteína em pH fisiológico (7,4)? Como essa propriedade contribui para sua função como proteína de transporte no sangue?
+2. O SignalP identificou o peptídeo sinal? Qual é a posição do sítio de clivagem (CS)? A sequência da proteína madura começa em qual resíduo? Se você modelasse estruturalmente a albumina, deveria incluir o peptídeo sinal no modelo?
+3. Quantos domínios foram identificados pelo CD-Search e pelo InterProScan? A albumina possui três domínios homólogos. Esse padrão modular é compatível com uma hipótese de duplicação gênica? Consulte a anotação UniProt para confirmar.
+4. O WoLFPSORT prediz qual localização subcelular para a albumina? Esse resultado é coerente com a função da proteína como albumina sérica?
+
+### Sobre a p53 (P04637)
+
+5. O índice de instabilidade da p53 é maior ou menor que 40? O que isso implica sobre sua meia-vida *in vivo*? Biologicamente, por que faz sentido que a p53 seja uma proteína de curta duração?
+6. O SignalP retornou o tipo **OTHER** para a p53? Caso sim, como a proteína é direcionada ao núcleo sem peptídeo de sinal no N-terminal? Quais sinais determinam sua localização nuclear?
+7. O InterProScan identificou o domínio de ligação ao DNA (DBD) da p53? Em que posições (início–fim) ele está localizado? Como os limites desse domínio se comparam com a região cristalizada no PDB (1TUP: resíduos 94–292)?
+8. O GRAVY da p53 é positivo ou negativo? Isso é consistente com uma proteína citoplasmática/nuclear solúvel?
+
+### Sobre a Pré-pró-insulina (P01308)
+
+9. A pré-pró-insulina tem apenas 110 resíduos, mas passa por dois eventos de processamento proteolítico: clivagem do peptídeo sinal e remoção do C-peptídeo. Após esses cortes, qual é o tamanho aproximado da insulina madura? O SignalP identificou corretamente o sítio de clivagem?
+10. A insulina madura contém duas cadeias (A e B) unidas por duas pontes dissulfeto intercadeias e uma intracadeia. Essa característica foi capturada pelos resultados do CD-Search ou InterProScan? Quais anotações indicam a presença dessas pontes?
+11. Compare a massa molecular prevista pelo ProtParam para a pré-pró-insulina (110 aa) com a massa da insulina madura conhecida (~5,8 kDa). A diferença reflete corretamente os fragmentos removidos durante o processamento?
+
+### Sobre a Hemoglobina α (P69905)
+
+12. A hemoglobina α não possui peptídeo de sinal. Como uma proteína citoplasmática se diferencia de uma proteína secretada em termos de síntese e destino celular? O WoLFPSORT foi capaz de distinguir corretamente entre essas duas classes?
+13. O CD-Search e o InterProScan identificam o domínio globina. Quais bases de dados (Pfam, PANTHER, CDD etc.) capturam esse domínio? Alguma delas faz referência ao bolsão de ligação ao grupo heme? O que os GO terms identificados indicam?
+14. O pI da hemoglobina α é básico (~8,7). Compare com o pI da albumina (~4,9). Ambas estão presentes no sangue, mas com funções diferentes. Como a diferença de pI pode influenciar as interações de cada proteína com seu ambiente?
+
+### Sobre a Lisozima C (P00698)
+
+15. A lisozima tem pI marcadamente básico (~9,3). Como essa propriedade se relaciona com sua função antimicrobiana? Com quais componentes das paredes bacterianas a lisozima interage e o que a alta carga positiva facilita?
+16. O SignalP identificou o peptídeo de sinal da lisozima? Em qual posição ocorre a clivagem? A lisozima é encontrada em saliva, lágrimas e leite; esse resultado de localização é coerente com as predições do WoLFPSORT?
+17. O CD-Search ou InterProScan identificam a lisozima como uma **glicosídeo hidrolase**. Qual é a reação que ela catalisa? Quais resíduos do sítio ativo (Glu e Asp) são essenciais para a catálise? Eles aparecem anotados como sítio ativo nos resultados do InterProScan?
+
+### Comparativas (todas as proteínas)
+
+18. Dentre as 5 proteínas, quais possuem peptídeo de sinal e quais não possuem? Quais ferramentas foram mais informativas para distinguir proteínas secretadas de citoplásmicas/nucleares: SignalP, CD-Search, InterProScan ou WoLFPSORT?
+19. Compare os índices GRAVY das 5 proteínas. Existe alguma correlação entre o índice GRAVY e a localização subcelular predita?
+20. O InterProScan e o CD-Search às vezes diferem no número ou tipo de domínios reportados para uma mesma sequência. Para quais proteínas houve maior concordância entre as duas ferramentas? O que pode explicar as diferenças?
+
+---
+
+# Atividade 2: Alinhamento 1TUP vs. Sequência Completa
 
 **Alinhamento 1TUP vs. Sequência Completa (WT):** Temos as sequências FASTA do domínio de ligação ao DNA da p53 e sua sequência completa (WT), e, juntos, executaremos o alinhamento múltiplo no <a href="https://www.ebi.ac.uk/jdispatcher/msa/clustalo" target="_blank" rel="noopener noreferrer">Clustal Omega</a>. Analise quais regiões se alinham diretamente, discuta as diferenças e vamos entender as implicações biológicas dessas variações. Ter apenas "uma parte" da proteína pode ser suficiente para algumas análises? Isso depende do contexto biológico?
 
@@ -159,7 +371,7 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 - Há resíduos-chave do sítio de ligação ao DNA presentes apenas na sequência completa? O que isso implica para os modelos baseados no domínio?
 ---
 
-# Atividade 2: Análise de Mutações Oncogênicas
+# Atividade 3: Análise de Mutações Oncogênicas
 
 > **Atividade (EXTRA):** Temos 5 sequências da p53 (1 referência *wild-type* e 4 variantes associadas a neoplasias) e, juntos, executaremos o alinhamento múltiplo no <a href="https://www.ebi.ac.uk/jdispatcher/msa/clustalo" target="_blank" rel="noopener noreferrer">Clustal Omega</a>. Analise quais substituições coincidem com domínios funcionais críticos, discuta como essas mudanças podem impactar estabilidade e interação com DNA e, por fim, decidam coletivamente qual variante seguirá para aprofundamento nas etapas práticas.
 
