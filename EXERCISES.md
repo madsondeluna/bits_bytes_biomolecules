@@ -33,7 +33,7 @@ As ferramentas abaixo serão utilizadas para analisar propriedades físico-quím
 
 **Objetivo:** Utilizar as ferramentas de predição apresentadas para caracterizar cinco proteínas humanas com propriedades bem documentadas, comparar os resultados obtidos entre elas e discutir as implicações biológicas de cada *feature* identificada. Esta atividade é o ponto de partida do nosso fluxo de trabalho: toda modelagem estrutural confiável começa com a compreensão profunda da sequência primária.
 
-**Proteínas selecionadas:** as cinco proteínas abaixo foram escolhidas por representarem contextos biológicos distintos — diferentes localizações subcelulares, presença ou ausência de peptídeo de sinal, variação de pI, tamanho e repertório de domínios — permitindo interpretar e comparar resultados de forma rica e contextualizada.
+**Proteínas selecionadas:** as cinco proteínas abaixo foram escolhidas por representarem contextos biológicos distintos, diferentes localizações subcelulares, presença ou ausência de peptídeo de sinal, variação de pI, tamanho e repertório de domínios, permitindo interpretar e comparar resultados de forma rica e contextualizada.
 
 | # | Proteína | Gene | UniProt | Características esperadas |
 |:-:|:---------|:-----|:-------:|:--------------------------|
@@ -49,7 +49,7 @@ As ferramentas abaixo serão utilizadas para analisar propriedades físico-quím
 
 > **Importante:** As sequências abaixo correspondem às proteínas completas, incluindo o peptídeo de sinal e propeptídeos onde existem. Essa é a sequência que será reconhecida pelas ferramentas SignalP, CD-Search e InterProScan.
 
-### Proteína 1 — Albumina sérica humana (P02768 · 609 aa)
+### Proteína 1 - Albumina sérica humana (P02768 · 609 aa)
 > Peptídeo sinal: resíduos 1–18 · Propeptídeo: resíduos 19–24 · Proteína madura: resíduos 25–609
 
 ```
@@ -67,7 +67,7 @@ CTLPDTEKQIKKQTALVELVKHKPKATAEQLKTVMENFVAFVDKCCAADDKEACFAVEGP
 KLVVSTQTALA
 ```
 
-### Proteína 2 — Antígeno tumoral p53 (P04637 · 393 aa)
+### Proteína 2 - Antígeno tumoral p53 (P04637 · 393 aa)
 > Sem peptídeo de sinal. Proteína nuclear; NLS localizado na região C-terminal do DBD.
 
 ```
@@ -80,7 +80,7 @@ SCMGGMNRRPILTIITLEDSSGNLLGRNSFEVRVCACPGRDRRTEEENLRKKGEPHHELP
 GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 ```
 
-### Proteína 3 — Pré-pró-insulina (P01308 · 110 aa)
+### Proteína 3 - Pré-pró-insulina (P01308 · 110 aa)
 > Peptídeo sinal: resíduos 1–24 · Cadeia B: 25–54 · C-peptídeo: 57–87 · Cadeia A: 90–110
 
 ```
@@ -89,7 +89,7 @@ MALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAED
 LQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN
 ```
 
-### Proteína 4 — Subunidade alfa-1 da hemoglobina (P69905 · 142 aa)
+### Proteína 4 - Subunidade alfa-1 da hemoglobina (P69905 · 142 aa)
 > Sem peptídeo de sinal. Proteína citoplasmática (eritrócitos); sem passagem transmembrana.
 
 ```
@@ -99,7 +99,7 @@ KKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLSHCLLVTLAAHLPAEFTP
 AVHASLDKFLASVSTVLTSKYR
 ```
 
-### Proteína 5 — Lisozima C (P00698 · 148 aa)
+### Proteína 5 - Lisozima C (P00698 · 148 aa)
 > Peptídeo sinal: resíduos 1–18 · Proteína madura: resíduos 19–148 · Enzima antimicrobiana secretada.
 
 ```
@@ -111,11 +111,11 @@ QGIRAWVAWRNRFCQNRDVRQYVQGCGV
 
 ---
 
-## Passo a Passo — Ferramentas de Predição
+## Passo a Passo - Ferramentas de Predição
 
 Para **cada uma das 5 proteínas**, repita o roteiro abaixo. Registre os resultados na tabela ao final desta seção antes de responder às perguntas.
 
-### Passo 1 — ProtParam (Propriedades físico-químicas)
+### Passo 1 - ProtParam (Propriedades físico-químicas)
 
 1. Acesse <a href="https://web.expasy.org/protparam/" target="_blank">https://web.expasy.org/protparam/</a>.
 2. Cole a sequência de aminoácidos (apenas a sequência, sem o cabeçalho FASTA) na caixa de texto e clique em **"Compute parameters"**.
@@ -131,7 +131,7 @@ Para **cada uma das 5 proteínas**, repita o roteiro abaixo. Registre os resulta
 
 ---
 
-### Passo 2 — SignalP 6.0 (Peptídeo de sinal)
+### Passo 2 - SignalP 6.0 (Peptídeo de sinal)
 
 1. Acesse <a href="https://services.healthtech.dtu.dk/services/SignalP-6.0/" target="_blank">https://services.healthtech.dtu.dk/services/SignalP-6.0/</a>.
 2. Cole a sequência FASTA completa (incluindo cabeçalho `>`) na caixa de texto.
@@ -140,17 +140,17 @@ Para **cada uma das 5 proteínas**, repita o roteiro abaixo. Registre os resulta
 5. Registre:
    - **Tipo predito** (SP = peptídeo sinal clássico, OTHER = ausente, LIPO, TAT etc.)
    - **Probabilidade máxima de SP** (se aplicável)
-   - **Posição do sítio de clivagem (CS)** — o primeiro resíduo da proteína madura
+   - **Posição do sítio de clivagem (CS)**, o primeiro resíduo da proteína madura
 
 > **Atenção:** Para proteínas sem peptídeo de sinal (p53 e hemoglobina), o resultado esperado é tipo **OTHER** com probabilidade baixa de SP. Um resultado inesperado merece discussão.
 
 ---
 
-### Passo 3 — CD-Search/NCBI (Domínios conservados)
+### Passo 3 - CD-Search/NCBI (Domínios conservados)
 
 1. Acesse <a href="https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi" target="_blank">https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi</a>.
 2. Cole a sequência FASTA completa na caixa de texto.
-3. Em **"Database"**, selecione **CDD v3** (padrão — inclui entradas do Pfam, TIGRFAM e SMART).
+3. Em **"Database"**, selecione **CDD v3** (padrão, inclui entradas do Pfam, TIGRFAM e SMART).
 4. Clique em **"Submit"** e aguarde.
 5. Na aba de resultados, observe o **mapa gráfico de domínios** e a tabela de *hits*. Registre:
    - Nome e ID de cada domínio identificado (*Specific hits* prioritariamente)
@@ -160,7 +160,7 @@ Para **cada uma das 5 proteínas**, repita o roteiro abaixo. Registre os resulta
 
 ---
 
-### Passo 4 — InterProScan (Integração multi-banco)
+### Passo 4 - InterProScan (Integração multi-banco)
 
 1. Acesse <a href="https://www.ebi.ac.uk/interpro/search/sequence/" target="_blank">https://www.ebi.ac.uk/interpro/search/sequence/</a>.
 2. Cole a sequência FASTA completa na caixa de texto e clique em **"Search"**.
@@ -173,7 +173,7 @@ Para **cada uma das 5 proteínas**, repita o roteiro abaixo. Registre os resulta
 
 ---
 
-### Passo 5 — WoLFPSORT (Localização subcelular)
+### Passo 5 - WoLFPSORT (Localização subcelular)
 
 1. Acesse <a href="https://wolfpsort.hgc.jp/" target="_blank">https://wolfpsort.hgc.jp/</a>.
 2. Cole a sequência de aminoácidos (apenas a sequência) na caixa.
@@ -219,9 +219,9 @@ Preencha a tabela abaixo ao longo da atividade:
 
 ---
 
-## Respostas — Perguntas para Discussão
+## Respostas - Perguntas para Discussão
 
-### Resposta 1 — Peptídeo de sinal e destino celular
+### Resposta 1 - Peptídeo de sinal e destino celular
 
 O SignalP 6.0 classifica as cinco proteínas da seguinte forma:
 
@@ -237,11 +237,11 @@ O SignalP 6.0 classifica as cinco proteínas da seguinte forma:
 
 **p53** é direcionada ao núcleo por mecanismo completamente distinto: possui sequências de localização nuclear (NLS) na região C-terminal do domínio de ligação ao DNA (resíduos ~305–322), reconhecidas pelas importinas α/β, que a transportam ativamente pelo poro nuclear. A ausência de peptídeo de sinal é esperada e biologicamente coerente, pois a p53 atua como fator de transcrição no interior do núcleo.
 
-**Hemoglobina α** não possui nem peptídeo de sinal nem NLS: é sintetizada por ribossomos citoplasmáticos livres e permanece no citoplasma dos eritrócitos. Seu direcionamento é, portanto, passivo — a ausência de qualquer sinal de tráfego a retém no compartimento onde foi produzida.
+**Hemoglobina α** não possui nem peptídeo de sinal nem NLS: é sintetizada por ribossomos citoplasmáticos livres e permanece no citoplasma dos eritrócitos. Seu direcionamento é, portanto, passivo, a ausência de qualquer sinal de tráfego a retém no compartimento onde foi produzida.
 
 ---
 
-### Resposta 2 — Ponto isoelétrico e função biológica
+### Resposta 2 - Ponto isoelétrico e função biológica
 
 Valores de pI obtidos pelo ProtParam para as sequências completas (precursores):
 
@@ -257,28 +257,28 @@ Em pH fisiológico (7,4), proteínas com pI < 7,4 apresentam carga líquida nega
 
 ---
 
-### Resposta 3 — Índice GRAVY e solubilidade
+### Resposta 3 - Índice GRAVY e solubilidade
 
 | Proteína | GRAVY (aprox.) | Classificação | Consistência com localização |
 |:---------|:--------------:|:-------------:|:----------------------------|
 | Albumina (P02768) | **−0,424** | Hidrofílica | ✓ Proteína secretada/plasmática, altamente solúvel |
 | p53 (P04637) | **−0,559** | Muito hidrofílica | ✓ Proteína nuclear solúvel; GRAVY muito negativo coerente com ausência de hélices transmembrana |
-| Pré-pró-insulina (P01308) | **−0,196** | Levemente hidrofílica | ✓ Secretada; valor menos negativo reflete o caráter anfifílico — as cadeias A e B possuem superfície hidrofóbica que participa do empilhamento do hexâmero de zinco |
-| Hemoglobina α (P69905) | **−0,017** | Quase neutra | ✓/⚠ Valor próximo de zero pode sugerir caráter anfifílico; contudo, a globina é solúvel no citoplasma — a cavidade hidrofóbica central que acomoda o grupo heme é compensada pela superfície hidrofílica exposta ao solvente |
+| Pré-pró-insulina (P01308) | **−0,196** | Levemente hidrofílica | ✓ Secretada; valor menos negativo reflete o caráter anfifílico, as cadeias A e B possuem superfície hidrofóbica que participa do empilhamento do hexâmero de zinco |
+| Hemoglobina α (P69905) | **−0,017** | Quase neutra | ✓/⚠ Valor próximo de zero pode sugerir caráter anfifílico; contudo, a globina é solúvel no citoplasma, a cavidade hidrofóbica central que acomoda o grupo heme é compensada pela superfície hidrofílica exposta ao solvente |
 | Lisozima C (P00698) | **−0,443** | Hidrofílica | ✓ Secretada e solúvel em fluidos biológicos |
 
-Todas as cinco proteínas apresentam GRAVY negativo, consistente com proteínas globulares solúveis. Nenhuma destoa radicalmente do padrão esperado. A hemoglobina α é o caso mais próximo da frontier entre hidrofílica e anfifílica (GRAVY ≈ −0,02), o que reflete a bolsa hidrofóbica de ligação ao heme — mas ainda assim está corretamente predita pelo WoLFPSORT como citoplasmática, e não como proteína de membrana.
+Todas as cinco proteínas apresentam GRAVY negativo, consistente com proteínas globulares solúveis. Nenhuma destoa radicalmente do padrão esperado. A hemoglobina α é o caso mais próximo da frontier entre hidrofílica e anfifílica (GRAVY ≈ −0,02), o que reflete a bolsa hidrofóbica de ligação ao heme, mas ainda assim está corretamente predita pelo WoLFPSORT como citoplasmática, e não como proteína de membrana.
 
 ---
 
-### Resposta 4 — Estabilidade e meia-vida *in vivo*
+### Resposta 4 - Estabilidade e meia-vida *in vivo*
 
 | Proteína | Índice de instabilidade | Classificação |
 |:---------|:-----------------------:|:-------------:|
 | Albumina (P02768) | **~33,0** | Estável (< 40) |
 | p53 (P04637) | **~64,6** | Instável (> 40) |
 | Pré-pró-insulina (P01308) | **~38,0** | Estável (< 40, limítrofe) |
-| Hemoglobina α (P69905) | **~23,4** | Estável — **mais estável das 5** |
+| Hemoglobina α (P69905) | **~23,4** | Estável, **mais estável das 5** |
 | Lisozima C (P00698) | **~29,1** | Estável (< 40) |
 
 **A hemoglobina α é a proteína mais estável** do conjunto (índice ~23,4), o que faz sentido biológico: eritrócitos não possuem núcleo nem maquinaria de síntese proteica ativa após maturação, portanto a hemoglobina deve ser suficientemente estável para durar os ~120 dias de vida do eritrócito.
@@ -287,7 +287,7 @@ Todas as cinco proteínas apresentam GRAVY negativo, consistente com proteínas 
 
 ---
 
-### Resposta 5 — Domínios conservados: CD-Search vs. InterProScan
+### Resposta 5 - Domínios conservados: CD-Search vs. InterProScan
 
 | Proteína | Domínio principal | CD-Search (CDD/Pfam) | InterProScan (bancos adicionais) | Concordância |
 |:---------|:------------------|:--------------------:|:--------------------------------:|:------------:|
@@ -301,7 +301,7 @@ De modo geral, as duas ferramentas apresentaram **alta concordância** para toda
 
 ---
 
-### Resposta 6 — Localização subcelular predita vs. experimental
+### Resposta 6 - Localização subcelular predita vs. experimental
 
 | Proteína | Localização UniProt (experimental) | WoLFPSORT (predita) | Correto? |
 |:---------|:-----------------------------------:|:-------------------:|:--------:|
@@ -315,7 +315,7 @@ Neste conjunto, o WoLFPSORT prediz **todas as 5 localizações corretamente**, r
 
 ---
 
-### Resposta 7 — Processamento proteolítico e modelagem estrutural
+### Resposta 7 - Processamento proteolítico e modelagem estrutural
 
 | Proteína | Sítio de clivagem SignalP (CS) | Anotação UniProt | Concordância | Tamanho proteína madura |
 |:---------|:------------------------------:|:----------------:|:------------:|:-----------------------:|
@@ -333,26 +333,26 @@ A justificativa geral é que os modelos estruturais existentes no PDB e os molde
 
 ---
 
-### Resposta 8 — Domínio funcional e estrutura experimental
+### Resposta 8 - Domínio funcional e estrutura experimental
 
-**DBD da p53 — InterProScan vs. PDB:**
+**DBD da p53 - InterProScan vs. PDB:**
 
 O InterProScan (via Pfam PF00870 e entradas PANTHER/PRINTS) delimita o domínio de ligação ao DNA da p53 aproximadamente entre os **resíduos 94–292** (Pfam) ou **102–292** (alguns perfis PANTHER). Esse intervalo é altamente consistente com a região cristalizada na estrutura **1TUP** (resíduos 94–292 da sequência canônica), demonstrando que as ferramentas de predição de domínios capturam corretamente os limites do DBD. As pequenas variações (±5–10 resíduos) nos limites N-terminais entre diferentes bancos refletem incertezas nos perfis de HMM nas bordas dos domínios, onde a conservação evolutiva decresce.
 
 **Bolsão de ligação ao heme na hemoglobina α:**
 
-O CD-Search e o InterProScan identificam o domínio **Globin** (Pfam PF00042; CDD cd08925) nos resíduos ~5–141 da hemoglobina α, que compreende toda a estrutura de barril de hélices α responsável por acomodar o grupo heme. Contudo, as ferramentas **não identificam explicitamente o bolsão de ligação ao heme como um subdomínio separado** — essa característica estrutural só é precisamente definida pela análise da estrutura tridimensional experimental (PDB 1HHO / 2HHB), onde a His87 (heme proximal) e a His58 (distal) são identificadas como resíduos-chave do sítio de ligação ao ferro.
+O CD-Search e o InterProScan identificam o domínio **Globin** (Pfam PF00042; CDD cd08925) nos resíduos ~5–141 da hemoglobina α, que compreende toda a estrutura de barril de hélices α responsável por acomodar o grupo heme. Contudo, as ferramentas **não identificam explicitamente o bolsão de ligação ao heme como um subdomínio separado**, essa característica estrutural só é precisamente definida pela análise da estrutura tridimensional experimental (PDB 1HHO / 2HHB), onde a His87 (heme proximal) e a His58 (distal) são identificadas como resíduos-chave do sítio de ligação ao ferro.
 
 **O que isso revela sobre utilidade e limitações das ferramentas:**
 
 | Aspecto | Ferramentas *in silico* | Estrutura experimental |
 |:--------|:------------------------|:-----------------------|
 | Identificação de domínios globais | Excelente (baseada em perfis conservados) | Padrão-ouro |
-| Delimitação precisa de sítios ativos | Limitada — identifica o domínio, não o resíduo catalítico | Precisa ao nível atômico |
+| Delimitação precisa de sítios ativos | Limitada, identifica o domínio, não o resíduo catalítico | Precisa ao nível atômico |
 | Análise de bolsões de ligação a cofatores | Inferida pelo domínio, não mapeada diretamente | Diretamente visível |
 | Custo/rapidez | Imediata, sem custo | Meses/anos de trabalho experimental |
 
-A conclusão central é que as ferramentas de predição de domínios são excelentes para **triagem inicial e anotação funcional global**, mas **não substituem a estrutura experimental** quando se necessita de informação ao nível de resíduos individuais — especialmente para design de inibidores, engenharia de proteínas ou interpretação mecanística detalhada.
+A conclusão central é que as ferramentas de predição de domínios são excelentes para **triagem inicial e anotação funcional global**, mas **não substituem a estrutura experimental** quando se necessita de informação ao nível de resíduos individuais, especialmente para design de inibidores, engenharia de proteínas ou interpretação mecanística detalhada.
 
 ---
 
