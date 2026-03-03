@@ -11,103 +11,7 @@
 **Outros Projetos:** <a href="https://github.com/madsondeluna" target="_blank" rel="noopener noreferrer">https://github.com/madsondeluna</a>
 
 ---
-
- **Proteína-Alvo:** p53 (*TP53*)
-
-Este repositório contém o material prático do curso de Biologia Estrutural Computacional, utilizando a proteína supressora de tumor p53 como sistema modelo para explorar diferentes métodos de predição e análise estrutural.
-
-<figure class="figure-center">
-  <img src="imgs/p53.png" alt="XXXXX" width="550">
-</figure>
-
-Estrutura tridimensional da p53, em complexo com uma estrutura de DNA. As subunidades da p53, mostradas em azul e roxo, são visualizadas usando uma combinação de representação "cartoon", que revela a estrutura secundária de hélices alfa e fitas beta, e uma "superfície" molecular translúcida, que indica o volume de e a forma da proteína. A p53 é mostrada interagindo diretamente com a dupla hélice do DNA, representada em laranja, através de seu domínio de ligação ao DNA (DBD). A presença de esferas (íons de zinco, em verde) destaca componentes cruciais para a estabilidade estrutural do DBD, formando os zinc fingers. Esta interação é fundamental para a função da p53, permitindo que ela se ligue a regiões específicas do genoma para regular a expressão de genes envolvidos no controle do ciclo celular, no reparo de danos ao DNA e na indução da apoptose, prevenindo assim a oncogênese e assim, mantendo a homeostase celular.
-
----
-
-# Sobre a Proteína p53
-
-A **p53** (derivada do gene *TP53*) é um dos mais importantes supressores de tumor, frequentemente referida como **"a guardiã do genoma"**. Esta proteína é crucial para a regulação do ciclo celular e prevenção do câncer.
-
-## Relevância Científica
-
-- Mutada em **mais de 50% de todos os cânceres humanos**
-- Proteína mais estudada na história da oncologia.
-- Alvo ideal para comparar diferentes métodos de modelagem computacional.
-
-<figure class="figure-center">
-  <img src="imgs/adobe.gif" alt="XXXXX" width="500">
-</figure>
-
-> Fonte: Criado por Madson Aragão no VMD.
-
-## Dados de Referência
-
-| Informação | Valor/Link |
-|------------|------------|
-| **ID UniProt** | <a href="https://www.uniprot.org/uniprotkb/P04637/" target="_blank">P04637 (WT)</a> |
-| **PDB Experimental** | <a href="https://www.rcsb.org/structure/1tup" target="_blank">1TUP (DNA Binding Domain)</a> |
-| **Massa Molecular** | ~43.7 kDa (aparece como 53 kDa em SDS-PAGE) |
-| **Domínios** | 7 domínios funcionais (TAD, AD2, PRD, DBD, NLS, OD, CTD) |
-
-
-## Pré-requisitos
-
-### Software Local
-- **PyMOL** (Incentive PyMOL - Licença Educacional Gratuita).
-
-### Software Online
-Todos os demais passos utilizarão **servidores web** (não requerem instalação).
-
-### Requisitos do Sistema
-- Acesso à internet
-- E-mail institucional (.edu ou similar) para licença acadêmica.
-- Sistema operacional: Windows, macOS ou Linux
-
----
-
-# Instalação do PyMOL
-
-O PyMOL é o único software que precisará ser instalado localmente para este curso. Utilizaremos a versão **Incentive PyMOL**, gratuita para estudantes e educadores.
-
-## A. Obtenção da Licença de Estudante (Gratuita)
-
-1. Acesse o portal educacional da Schrödinger: <a href="https://pymol.org/edu/" target="_blank">https://pymol.org/edu/</a>.
-2. Clique em **"Register for an Account"**
-3. **IMPORTANTE:** Utilize seu **e-mail institucional** (ex: `seu.usuario@ufpe.br`).
-   - A licença acadêmica está vinculada à verificação de um domínio educacional
-4. Siga as instruções de verificação enviadas ao seu e-mail
-5. Após aprovação, faça o download do arquivo de licença (`license.lic`).
-6. Salve o arquivo em um local de fácil acesso (ex: Área de Trabalho).
-
-## B. Download e Instalação
-
-Na página de downloads da sua conta Schrödinger, baixe o instalador apropriado para seu sistema operacional pelo site <a href="https://pymol.org/edu/" target="_blank">https://pymol.org/edu/</a>
-
-
-## C. Ativação da Licença
-
-1. Inicie o PyMOL pela primeira vez.
-2. O programa solicitará a ativação.
-3. Escolha a opção **"I have a license file"**.
-4. Navegue até o local do arquivo `license.lic` e selecione-o.
-5. O PyMOL será ativado e estará pronto para uso.
-
----
-
-# Módulo 1: Análise de Sequências e Propriedades
-
-**Objetivos:**
-- Navegar e extrair dados da p53 em bancos de dados estruturais.
-- Utilizar ferramentas web para predição de características bioquímicas.
-
-## Bancos de Dados
-
-| Recurso | URL | Descrição |
-|---------|-----|-----------|
-| **UniProt** | <a href="https://www.uniprot.org/" target="_blank">https://www.uniprot.org/</a> | Informações de sequência e anotações funcionais |
-| **PDB** | <a href="https://www.rcsb.org/" target="_blank">https://www.rcsb.org/</a> | Estruturas tridimensionais experimentais |
-
----
+# I
 
 ## Ferramentas de Predição
 
@@ -120,8 +24,6 @@ As ferramentas abaixo serão utilizadas para analisar propriedades físico-quím
 | **CD-Search (NCBI)** | <a href="https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi" target="_blank">https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi</a> | Identificação de peptídeos de sinal e caracterização de domínios conservados via busca em bases como CDD, Pfam e TIGRFAM |
 | **InterProScan** | <a href="https://www.ebi.ac.uk/interpro/search/sequence/" target="_blank">https://www.ebi.ac.uk/interpro/search/sequence/</a> | Identificação integrada de domínios e famílias proteicas; engloba o Pfam e outras bases como PANTHER, HAMAP, PRINTS, ProSite e SFLD |
 | **WoLFPSORT** | <a href="https://wolfpsort.hgc.jp/" target="_blank">https://wolfpsort.hgc.jp/</a> | Identificação de localização celular |
-
-> Agora vamos discutir os resultados obtidos e suas implicações biológicas?
 
 > Agora vamos discutir os resultados obtidos e suas implicações biológicas?
 
@@ -339,7 +241,108 @@ Preencha a tabela abaixo ao longo da atividade:
 
 ---
 
-# Atividade 2: Alinhamento 1TUP vs. Sequência Completa
+# II
+
+**Proteína-Alvo:** p53 (*TP53*)
+
+Este repositório contém o material prático do curso de Biologia Estrutural Computacional, utilizando a proteína supressora de tumor p53 como sistema modelo para explorar diferentes métodos de predição e análise estrutural.
+
+<figure class="figure-center">
+  <img src="imgs/p53.png" alt="XXXXX" width="550">
+</figure>
+
+Estrutura tridimensional da p53, em complexo com uma estrutura de DNA. As subunidades da p53, mostradas em azul e roxo, são visualizadas usando uma combinação de representação "cartoon", que revela a estrutura secundária de hélices alfa e fitas beta, e uma "superfície" molecular translúcida, que indica o volume de e a forma da proteína. A p53 é mostrada interagindo diretamente com a dupla hélice do DNA, representada em laranja, através de seu domínio de ligação ao DNA (DBD). A presença de esferas (íons de zinco, em verde) destaca componentes cruciais para a estabilidade estrutural do DBD, formando os zinc fingers. Esta interação é fundamental para a função da p53, permitindo que ela se ligue a regiões específicas do genoma para regular a expressão de genes envolvidos no controle do ciclo celular, no reparo de danos ao DNA e na indução da apoptose, prevenindo assim a oncogênese e assim, mantendo a homeostase celular.
+
+---
+
+# Sobre a Proteína p53
+
+A **p53** (derivada do gene *TP53*) é um dos mais importantes supressores de tumor, frequentemente referida como **"a guardiã do genoma"**. Esta proteína é crucial para a regulação do ciclo celular e prevenção do câncer.
+
+## Relevância Científica
+
+- Mutada em **mais de 50% de todos os cânceres humanos**
+- Proteína mais estudada na história da oncologia.
+- Alvo ideal para comparar diferentes métodos de modelagem computacional.
+
+<figure class="figure-center">
+  <img src="imgs/adobe.gif" alt="XXXXX" width="500">
+</figure>
+
+> Fonte: Criado por Madson Aragão no VMD.
+
+## Dados de Referência
+
+| Informação | Valor/Link |
+|------------|------------|
+| **ID UniProt** | <a href="https://www.uniprot.org/uniprotkb/P04637/" target="_blank">P04637 (WT)</a> |
+| **PDB Experimental** | <a href="https://www.rcsb.org/structure/1tup" target="_blank">1TUP (DNA Binding Domain)</a> |
+| **Massa Molecular** | ~43.7 kDa (aparece como 53 kDa em SDS-PAGE) |
+| **Domínios** | 7 domínios funcionais (TAD, AD2, PRD, DBD, NLS, OD, CTD) |
+
+
+## Pré-requisitos
+
+### Software Local
+- **PyMOL** (Incentive PyMOL - Licença Educacional Gratuita).
+
+### Software Online
+Todos os demais passos utilizarão **servidores web** (não requerem instalação).
+
+### Requisitos do Sistema
+- Acesso à internet
+- E-mail institucional (.edu ou similar) para licença acadêmica.
+- Sistema operacional: Windows, macOS ou Linux
+
+---
+
+# Instalação do PyMOL
+
+O PyMOL é o único software que precisará ser instalado localmente para este curso. Utilizaremos a versão **Incentive PyMOL**, gratuita para estudantes e educadores.
+
+## A. Obtenção da Licença de Estudante (Gratuita)
+
+1. Acesse o portal educacional da Schrödinger: <a href="https://pymol.org/edu/" target="_blank">https://pymol.org/edu/</a>.
+2. Clique em **"Register for an Account"**
+3. **IMPORTANTE:** Utilize seu **e-mail institucional** (ex: `seu.usuario@ufpe.br`).
+   - A licença acadêmica está vinculada à verificação de um domínio educacional
+4. Siga as instruções de verificação enviadas ao seu e-mail
+5. Após aprovação, faça o download do arquivo de licença (`license.lic`).
+6. Salve o arquivo em um local de fácil acesso (ex: Área de Trabalho).
+
+## B. Download e Instalação
+
+Na página de downloads da sua conta Schrödinger, baixe o instalador apropriado para seu sistema operacional pelo site <a href="https://pymol.org/edu/" target="_blank">https://pymol.org/edu/</a>
+
+
+## C. Ativação da Licença
+
+1. Inicie o PyMOL pela primeira vez.
+2. O programa solicitará a ativação.
+3. Escolha a opção **"I have a license file"**.
+4. Navegue até o local do arquivo `license.lic` e selecione-o.
+5. O PyMOL será ativado e estará pronto para uso.
+
+---
+
+# Módulo 1: Análise de Sequências e Propriedades
+
+**Objetivos:**
+- Navegar e extrair dados da p53 em bancos de dados estruturais.
+- Utilizar ferramentas web para predição de características bioquímicas.
+
+## Bancos de Dados
+
+| Recurso | URL | Descrição |
+|---------|-----|-----------|
+| **UniProt** | <a href="https://www.uniprot.org/" target="_blank">https://www.uniprot.org/</a> | Informações de sequência e anotações funcionais |
+| **PDB** | <a href="https://www.rcsb.org/" target="_blank">https://www.rcsb.org/</a> | Estruturas tridimensionais experimentais |
+
+---
+
+# Atividade 2: Modelagem Tridimensional 
+
+## Alinhamento 1TUP vs. Sequência Completa
 
 **Alinhamento 1TUP vs. Sequência Completa (WT):** Temos as sequências FASTA do domínio de ligação ao DNA da p53 e sua sequência completa (WT), e, juntos, executaremos o alinhamento múltiplo no <a href="https://www.ebi.ac.uk/jdispatcher/msa/clustalo" target="_blank" rel="noopener noreferrer">Clustal Omega</a>. Analise quais regiões se alinham diretamente, discuta as diferenças e vamos entender as implicações biológicas dessas variações. Ter apenas "uma parte" da proteína pode ser suficiente para algumas análises? Isso depende do contexto biológico?
 
