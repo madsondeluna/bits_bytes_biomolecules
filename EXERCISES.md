@@ -261,11 +261,11 @@ Em pH fisiológico (7,4), proteínas com pI < 7,4 apresentam carga líquida nega
 
 | Proteína | GRAVY (aprox.) | Classificação | Consistência com localização |
 |:---------|:--------------:|:-------------:|:----------------------------|
-| Albumina (P02768) | **−0,424** | Hidrofílica | ✓ Proteína secretada/plasmática, altamente solúvel |
-| p53 (P04637) | **−0,559** | Muito hidrofílica | ✓ Proteína nuclear solúvel; GRAVY muito negativo coerente com ausência de hélices transmembrana |
-| Pré-pró-insulina (P01308) | **−0,196** | Levemente hidrofílica | ✓ Secretada; valor menos negativo reflete o caráter anfifílico, as cadeias A e B possuem superfície hidrofóbica que participa do empilhamento do hexâmero de zinco |
-| Hemoglobina α (P69905) | **−0,017** | Quase neutra | ✓/⚠ Valor próximo de zero pode sugerir caráter anfifílico; contudo, a globina é solúvel no citoplasma, a cavidade hidrofóbica central que acomoda o grupo heme é compensada pela superfície hidrofílica exposta ao solvente |
-| Lisozima C (P00698) | **−0,443** | Hidrofílica | ✓ Secretada e solúvel em fluidos biológicos |
+| Albumina (P02768) | **−0,424** | Hidrofílica | Proteína secretada/plasmática, altamente solúvel |
+| p53 (P04637) | **−0,559** | Muito hidrofílica | Proteína nuclear solúvel; GRAVY muito negativo coerente com ausência de hélices transmembrana |
+| Pré-pró-insulina (P01308) | **−0,196** | Levemente hidrofílica | Secretada; valor menos negativo reflete o caráter anfifílico, as cadeias A e B possuem superfície hidrofóbica que participa do empilhamento do hexâmero de zinco |
+| Hemoglobina α (P69905) | **−0,017** | Quase neutra | Atenção: valor próximo de zero pode sugerir caráter anfifílico; contudo, a globina é solúvel no citoplasma, a cavidade hidrofóbica central que acomoda o grupo heme é compensada pela superfície hidrofílica exposta ao solvente |
+| Lisozima C (P00698) | **−0,443** | Hidrofílica | Secretada e solúvel em fluidos biológicos |
 
 Todas as cinco proteínas apresentam GRAVY negativo, consistente com proteínas globulares solúveis. Nenhuma destoa radicalmente do padrão esperado. A hemoglobina α é o caso mais próximo da frontier entre hidrofílica e anfifílica (GRAVY ≈ −0,02), o que reflete a bolsa hidrofóbica de ligação ao heme, mas ainda assim está corretamente predita pelo WoLFPSORT como citoplasmática, e não como proteína de membrana.
 
@@ -291,11 +291,11 @@ Todas as cinco proteínas apresentam GRAVY negativo, consistente com proteínas 
 
 | Proteína | Domínio principal | CD-Search (CDD/Pfam) | InterProScan (bancos adicionais) | Concordância |
 |:---------|:------------------|:--------------------:|:--------------------------------:|:------------:|
-| Albumina | Serum albumin / Albumin domain (3×) | ✓ Pfam PF00273 | ✓ Pfam, PANTHER, PRINTS | **Alta** |
-| p53 | P53 DBD + TAD + OD | ✓ cd08367, PF00870 | ✓ Pfam, PANTHER, PRINTS, ProSiteProfiles | **Alta** |
-| Pré-pró-insulina | Insulin/IGF/Relaxin B-chain | ✓ PF00049 | ✓ Pfam, PANTHER, PRINTS | **Alta** |
-| Hemoglobina α | Globin | ✓ PF00042, cd08925 | ✓ Pfam, PANTHER, HAMAP, PRINTS | **Alta** |
-| Lisozima C | Lysozyme C | ✓ PF00062 | ✓ Pfam, PANTHER, PRINTS, ProSiteProfiles | **Alta** |
+| Albumina | Serum albumin / Albumin domain (3×) | Pfam PF00273 | Pfam, PANTHER, PRINTS | **Alta** |
+| p53 | P53 DBD + TAD + OD | cd08367, PF00870 | Pfam, PANTHER, PRINTS, ProSiteProfiles | **Alta** |
+| Pré-pró-insulina | Insulin/IGF/Relaxin B-chain | PF00049 | Pfam, PANTHER, PRINTS | **Alta** |
+| Hemoglobina α | Globin | PF00042, cd08925 | Pfam, PANTHER, HAMAP, PRINTS | **Alta** |
+| Lisozima C | Lysozyme C | PF00062 | Pfam, PANTHER, PRINTS, ProSiteProfiles | **Alta** |
 
 De modo geral, as duas ferramentas apresentaram **alta concordância** para todas as proteínas do conjunto, identificando os mesmos domínios estruturais/funcionais core. A principal diferença é o **número de bancos de dados** consultados: o InterProScan integra PANTHER, HAMAP, PRINTS, ProSite, SFLD e outros além do Pfam, enquanto o CD-Search foca na CDD (que já incorpora Pfam, TIGRFAM e SMART). O InterProScan tende a reportar **mais entradas** por proteína (especialmente GO terms associados), mas o domínio funcional principal é capturado por ambos. Divergências ocorrem principalmente em **domínios de baixa complexidade, regiões desordenadas e pequenos motivos lineares** (ex.: NLS da p53 é melhor capturado por ProSite no InterProScan do que pelo CD-Search).
 
@@ -305,11 +305,11 @@ De modo geral, as duas ferramentas apresentaram **alta concordância** para toda
 
 | Proteína | Localização UniProt (experimental) | WoLFPSORT (predita) | Correto? |
 |:---------|:-----------------------------------:|:-------------------:|:--------:|
-| Albumina (P02768) | Secretada / extracelular (plasma) | Extracelular / secreted | ✓ |
-| p53 (P04637) | Nuclear | Nuclear | ✓ |
-| Pré-pró-insulina (P01308) | Secretada / extracelular (circulação) | Extracelular / secreted | ✓ |
-| Hemoglobina α (P69905) | Citoplasmática (eritrócito) | Citoplasmática | ✓ |
-| Lisozima C (P00698) | Secretada / extracelular | Extracelular / secreted | ✓ |
+| Albumina (P02768) | Secretada / extracelular (plasma) | Extracelular / secreted | Sim |
+| p53 (P04637) | Nuclear | Nuclear | Sim |
+| Pré-pró-insulina (P01308) | Secretada / extracelular (circulação) | Extracelular / secreted | Sim |
+| Hemoglobina α (P69905) | Citoplasmática (eritrócito) | Citoplasmática | Sim |
+| Lisozima C (P00698) | Secretada / extracelular | Extracelular / secreted | Sim |
 
 Neste conjunto, o WoLFPSORT prediz **todas as 5 localizações corretamente**, refletindo que as proteínas escolhidas possuem sinais de tráfego canônicos bem reconhecíveis (peptídeo de sinal para as secretadas, NLS para a p53, ausência de qualquer sinal para a hemoglobina α citoplasmática). Em casos reais de falha do WoLFPSORT, as causas mais comuns são: (a) proteínas com localização dual (ex.: proteínas nucleocitoplasmáticas que têm NLS e NES), (b) proteínas com peptídeo de sinal não-clássico, (c) proteínas de membrana com topologia complexa, ou (d) proteínas cuja localização depende de modificações pós-traducionais não codificadas na sequência primária.
 
@@ -319,9 +319,9 @@ Neste conjunto, o WoLFPSORT prediz **todas as 5 localizações corretamente**, r
 
 | Proteína | Sítio de clivagem SignalP (CS) | Anotação UniProt | Concordância | Tamanho proteína madura |
 |:---------|:------------------------------:|:----------------:|:------------:|:-----------------------:|
-| Albumina (P02768) | Posição 18↓19 (sinal) | SP: 1–18; Propeptídeo: 19–24; Madura: 25–609 | ✓ Sinal correto; propeptídeo requer processamento adicional no Golgi | **585 aa** |
-| Pré-pró-insulina (P01308) | Posição 24↓25 | SP: 1–24; Cadeia B: 25–54; C-peptídeo: 57–87; Cadeia A: 90–110 | ✓ | **51 aa** (cadeias A+B ligadas por pontes S-S, C-peptídeo removido) |
-| Lisozima C (P00698) | Posição 18↓19 | SP: 1–18; Madura: 19–148 | ✓ | **130 aa** |
+| Albumina (P02768) | Posição 18↓19 (sinal) | SP: 1–18; Propeptídeo: 19–24; Madura: 25–609 | Sim; propeptídeo requer processamento adicional no Golgi | **585 aa** |
+| Pré-pró-insulina (P01308) | Posição 24↓25 | SP: 1–24; Cadeia B: 25–54; C-peptídeo: 57–87; Cadeia A: 90–110 | Sim | **51 aa** (cadeias A+B ligadas por pontes S-S, C-peptídeo removido) |
+| Lisozima C (P00698) | Posição 18↓19 | SP: 1–18; Madura: 19–148 | Sim | **130 aa** |
 
 **Para modelagem estrutural, recomenda-se usar apenas a sequência da proteína madura:**
 
