@@ -481,29 +481,37 @@ Para o WoLFPSORT e DeepLoc, o resultado é um **escore de probabilidade por comp
 
 ### Domínios, Famílias e Motivos Funcionais
 
-Domínios são regiões da sequência com estrutura e função conservadas ao longo da evolução. A anotação de domínios é fundamental para atribuir função a proteínas desconhecidas pelo princípio da **homologia funcional**.
+Domínios são regiões da sequência com estrutura e função conservadas ao longo da evolução. A anotação de domínios é fundamental para atribuir função a proteínas desconhecidas pelo princípio da **homologia funcional**. A identificação de domínios a partir da sequência primária também é uma etapa anterior à modelagem estrutural, pois permite delimitar regiões que podem ser tratadas como unidades independentes de enovelamento, além de revelar motivos funcionais como peptídeos sinal, sítios de localização nuclear (NLS), sinais de retenção no retículo e sítios ativos catalíticos.
 
-**Como funcionam:** as ferramentas comparam a sequência-consulta contra bancos de dados de perfis de sequência baseados em *Hidden Markov Models* (HMMs). Um HMM de família é construído a partir de um alinhamento múltiplo de sequências da família, capturando posições conservadas e permitidas. O **InterProScan** integra resultados de múltiplos bancos de dados (Pfam, PRINTS, PANTHER, CDD, SMART, Hamap, etc.) em uma única análise unificada.
+**Como funcionam:** as ferramentas comparam a sequência-consulta contra bancos de dados de perfis de sequência baseados em *Hidden Markov Models* (HMMs) ou em *Position-Specific Scoring Matrices* (PSSMs). Um HMM de família é construído a partir de um alinhamento múltiplo de sequências da família, capturando posições conservadas e permitidas. Uma PSSM, por sua vez, registra a frequência e peso estatístico de cada aminoácido em cada posição de um alinhamento curado, permitindo detectar similaridade mesmo quando a identidade de sequência é baixa. O **InterProScan** integra resultados de múltiplos bancos de dados (Pfam, PRINTS, PANTHER, CDD, SMART, Hamap, etc.) em uma única análise unificada. O **CD-Search** do NCBI utiliza PSSMs derivadas da *Conserved Domain Database* (CDD), que incorpora entradas do próprio CDD, do Pfam, do TIGRFAM e do SMART, sendo particularmente eficaz para a identificação rápida de domínios conservados, peptídeos sinal e regiões de baixa complexidade em sequências de qualquer organismo.
 
 | Ferramenta / DB | URL | O que identifica |
 |:----------------|:----|:-----------------|
-| **InterProScan (EBI)** | <a href="https://www.ebi.ac.uk/interpro/search/sequence/" target="_blank">ebi.ac.uk/interpro/search/sequence</a> | Domínios, famílias, sítios funcionais, padrões |
-| **Pfam** | <a href="https://www.ebi.ac.uk/interpro/" target="_blank">ebi.ac.uk/interpro</a> | Famílias e domínios curados por HMM profiles |
+| **InterProScan (EBI)** | <a href="https://www.ebi.ac.uk/interpro/search/sequence/" target="_blank">ebi.ac.uk/interpro/search/sequence</a> | Domínios, famílias, sítios funcionais e padrões; integra Pfam, PANTHER, HAMAP, PRINTS, ProSite, SFLD e outras bases |
+| **Pfam** | <a href="https://www.ebi.ac.uk/interpro/" target="_blank">ebi.ac.uk/interpro</a> | Famílias e domínios curados por HMM profiles; atualmente integrado e acessível via InterPro |
+| **CD-Search (NCBI)** | <a href="https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi" target="_blank">ncbi.nlm.nih.gov/Structure/bwrpsb</a> | Domínios conservados, peptídeos sinal e regiões de baixa complexidade via PSSMs (CDD, Pfam, TIGRFAM, SMART) |
 | **SMART** | <a href="https://smart.embl.de/" target="_blank">smart.embl.de</a> | Domínios de sinalização e extracelulares |
 | **PROSITE** | <a href="https://prosite.expasy.org/" target="_blank">prosite.expasy.org</a> | Padrões conservados e sítios ativos por expressão regular |
 
 #### Como interpretar os resultados
 
-O InterProScan retorna uma visualização em **mapa de domínios**, uma representação linear da sequência com blocos coloridos sobreposto às posições dos domínios identificados. Para cada entrada identificada, observe:
+**InterProScan:** retorna uma visualização em **mapa de domínios**, uma representação linear da sequência com blocos coloridos sobrepostos às posições dos domínios identificados. Para cada entrada identificada, observe:
 
 - **Banco de dados de origem:** Pfam, PANTHER, CDD, SMART etc., cada banco tem um nível diferente de curadoria e cobertura.
 - **Posição (início–fim):** os limites do domínio na sequência. Domínios que cobrem a maior parte da sequência são regiões estruturalmente independentes: podem ser modelados separadamente.
 - **E-value:** quanto menor, mais significativa a correspondência. Valores < 1×10⁻⁵ são considerados confiáveis.
 - **Anotação funcional associada (GO terms):** Gene Ontology terms vinculados ao domínio, indicando função molecular, processo biológico e componente celular previstos.
 
+**CD-Search:** retorna uma tabela ordenada por E-value com as seguintes informações centrais:
+- **Hit (domínio/família identificada):** nome e código do domínio na CDD. Entradas prefixadas com `pfam`, `TIGR` ou `smart` indicam a base de dados de origem do perfil utilizado.
+- **Superfamily / Specific hit:** o CD-Search distingue entre *hits* específicos (domínio preciso, menor E-value) e *hits* de superfamília (anotação mais ampla). Priorize os *specific hits* para a anotação funcional.
+- **Interval (posição):** coordenadas de início e fim do domínio na sequência de entrada. Essencial para delimitar regiões para modelagem ou expressão de domínios isolados.
+- **E-value:** critério de significância. Valores < 1×10⁻⁵ são robustos; valores entre 10⁻⁵ e 10⁻² devem ser avaliados com cautela e confirmados por outras ferramentas.
+- **Regiões de baixa complexidade (Low-complexity regions):** marcadas diretamente no mapa de sequência. Essas regiões (ex: repetições de aminoácidos, caudas poli-Glu) tendem a ser desordenadas e podem comprometer a modelagem estrutural se não forem identificadas previamente.
+
 <!-- 📷 SUGESTÃO DE IMAGEM: Mapa de domínios da p53 gerado pelo InterProScan, mostrando TAD, PRD, DBD, OD e CTD com anotações de posição e banco de dados de origem -->
 
-> Encontrar um domínio conhecido em uma sequência nova é uma das formas mais poderosas de anotar função. Se sua proteína contém um domínio de quinase, ela provavelmente adiciona grupos fosfato em substratos. Se contém um domínio de ligação ao DNA (como o DBD da p53), provavelmente regula a transcrição.
+> Encontrar um domínio conhecido em uma sequência nova é uma das formas mais poderosas de anotar função. Se sua proteína contém um domínio de quinase, ela provavelmente adiciona grupos fosfato em substratos. Se contém um domínio de ligação ao DNA (como o DBD da p53), provavelmente regula a transcrição. O uso combinado do **InterProScan** (cobertura ampla e integrada, inclui Pfam) com o **CD-Search** (alta sensibilidade via PSSMs, rápido e com detecção de peptídeos sinal) é uma prática recomendada: os dois se complementam e aumentam a confiança na anotação.
 
 ---
 
