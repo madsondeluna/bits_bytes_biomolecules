@@ -219,6 +219,143 @@ Preencha a tabela abaixo ao longo da atividade:
 
 ---
 
+## Respostas — Perguntas para Discussão
+
+### Resposta 1 — Peptídeo de sinal e destino celular
+
+O SignalP 6.0 classifica as cinco proteínas da seguinte forma:
+
+| Proteína | Resultado SignalP | Probabilidade SP | Posição CS | Destino |
+|:---------|:-----------------:|:----------------:|:----------:|:--------|
+| Albumina (P02768) | **SP** | > 0,99 | 18–19 | Secretada (plasma) |
+| p53 (P04637) | **OTHER** | < 0,01 | — | Intracelular (núcleo) |
+| Pré-pró-insulina (P01308) | **SP** | > 0,99 | 24–25 | Secretada (circulação) |
+| Hemoglobina α (P69905) | **OTHER** | < 0,02 | — | Intracelular (citoplasma) |
+| Lisozima C (P00698) | **SP** | > 0,99 | 18–19 | Secretada (saliva, lágrimas, leite) |
+
+**Albumina, pré-pró-insulina e lisozima C** possuem peptídeo de sinal N-terminal clássico, são co-traduzionalmente translocadas para o retículo endoplasmático rugoso (RER) e seguem a via secretória convencional (RER → Golgi → vesículas de secreção → meio extracelular).
+
+**p53** é direcionada ao núcleo por mecanismo completamente distinto: possui sequências de localização nuclear (NLS) na região C-terminal do domínio de ligação ao DNA (resíduos ~305–322), reconhecidas pelas importinas α/β, que a transportam ativamente pelo poro nuclear. A ausência de peptídeo de sinal é esperada e biologicamente coerente, pois a p53 atua como fator de transcrição no interior do núcleo.
+
+**Hemoglobina α** não possui nem peptídeo de sinal nem NLS: é sintetizada por ribossomos citoplasmáticos livres e permanece no citoplasma dos eritrócitos. Seu direcionamento é, portanto, passivo — a ausência de qualquer sinal de tráfego a retém no compartimento onde foi produzida.
+
+---
+
+### Resposta 2 — Ponto isoelétrico e função biológica
+
+Valores de pI obtidos pelo ProtParam para as sequências completas (precursores):
+
+| Proteína | pI calculado | Carga líquida em pH 7,4 | Relação com a função |
+|:---------|:------------:|:-----------------------:|:---------------------|
+| Albumina (P02768) | ~5,92 (precursor) / **~4,9** (madura) | Negativa | Proteína mais abundante do plasma; carga negativa repele a filtração glomerular (rim) e favorece a ligação de ligandos catiônicos (Ca²⁺, drogas básicas) |
+| p53 (P04637) | **~6,33** | Ligeiramente negativa | Opera no núcleo (DNA carregado negativamente); pI próximo à neutralidade permite interações tanto com DNA quanto com proteínas reguladoras (MDM2, CBP/p300) |
+| Pré-pró-insulina (P01308) | **~6,77** (precursor) / ~5,3 (madura) | Neutra/levemente negativa | A insulina madura (~5,3) é estável nas vesículas de secreção em pH levemente ácido; ao atingir o sangue (pH 7,4) adquire carga negativa leve que facilita dissociação do hexâmero de zinco |
+| Hemoglobina α (P69905) | **~8,72** | Positiva | pI básico favorece interação com a hemoglobina β (pI ~6,8) para formação do heterotetrâmero α₂β₂ via complementaridade eletrostática; carga positiva também contribui para retenção no citoplasma dos eritrócitos |
+| Lisozima C (P00698) | **~9,28** (precursor) / ~11,4 (madura) | Fortemente positiva | Superfície catiônica é funcional: promove atração eletrostática com a membrana bacteriana carregada negativamente (lipopolissacarídeos, peptidoglicano), potencializando a atividade antimicrobiana |
+
+Em pH fisiológico (7,4), proteínas com pI < 7,4 apresentam carga líquida negativa, e aquelas com pI > 7,4, carga positiva. O pI não é apenas uma propriedade físico-química: ele molda onde e com quem cada proteína interage no ambiente celular e extracelular.
+
+---
+
+### Resposta 3 — Índice GRAVY e solubilidade
+
+| Proteína | GRAVY (aprox.) | Classificação | Consistência com localização |
+|:---------|:--------------:|:-------------:|:----------------------------|
+| Albumina (P02768) | **−0,424** | Hidrofílica | ✓ Proteína secretada/plasmática, altamente solúvel |
+| p53 (P04637) | **−0,559** | Muito hidrofílica | ✓ Proteína nuclear solúvel; GRAVY muito negativo coerente com ausência de hélices transmembrana |
+| Pré-pró-insulina (P01308) | **−0,196** | Levemente hidrofílica | ✓ Secretada; valor menos negativo reflete o caráter anfifílico — as cadeias A e B possuem superfície hidrofóbica que participa do empilhamento do hexâmero de zinco |
+| Hemoglobina α (P69905) | **−0,017** | Quase neutra | ✓/⚠ Valor próximo de zero pode sugerir caráter anfifílico; contudo, a globina é solúvel no citoplasma — a cavidade hidrofóbica central que acomoda o grupo heme é compensada pela superfície hidrofílica exposta ao solvente |
+| Lisozima C (P00698) | **−0,443** | Hidrofílica | ✓ Secretada e solúvel em fluidos biológicos |
+
+Todas as cinco proteínas apresentam GRAVY negativo, consistente com proteínas globulares solúveis. Nenhuma destoa radicalmente do padrão esperado. A hemoglobina α é o caso mais próximo da frontier entre hidrofílica e anfifílica (GRAVY ≈ −0,02), o que reflete a bolsa hidrofóbica de ligação ao heme — mas ainda assim está corretamente predita pelo WoLFPSORT como citoplasmática, e não como proteína de membrana.
+
+---
+
+### Resposta 4 — Estabilidade e meia-vida *in vivo*
+
+| Proteína | Índice de instabilidade | Classificação |
+|:---------|:-----------------------:|:-------------:|
+| Albumina (P02768) | **~33,0** | Estável (< 40) |
+| p53 (P04637) | **~64,6** | Instável (> 40) |
+| Pré-pró-insulina (P01308) | **~38,0** | Estável (< 40, limítrofe) |
+| Hemoglobina α (P69905) | **~23,4** | Estável — **mais estável das 5** |
+| Lisozima C (P00698) | **~29,1** | Estável (< 40) |
+
+**A hemoglobina α é a proteína mais estável** do conjunto (índice ~23,4), o que faz sentido biológico: eritrócitos não possuem núcleo nem maquinaria de síntese proteica ativa após maturação, portanto a hemoglobina deve ser suficientemente estável para durar os ~120 dias de vida do eritrócito.
+
+**Por que faz sentido biológico a p53 ser instável?** A p53 é um supressor de tumor cuja atividade deve ser rigidamente controlada no tempo. Em células normais, ela é mantida em níveis basais baixíssimos pelo ciclo de ubiquitinação mediado pela ligase MDM2 e degradação pelo proteassoma 26S (meia-vida de apenas 5–30 minutos). Essa instabilidade é programada: permite que a célula responda em minutos a danos ao DNA (acúmulo rápido de p53 por inibição da degradação), e retorne ao estado basal rapidamente após o reparo. Uma p53 estável e constitutivamente ativa seria incompatível com a viabilidade celular, pois induziria apoptose ou parada permanente do ciclo celular. O alto índice de instabilidade calculado pelo ProtParam é, portanto, um reflexo de sua curta meia-vida *in vivo* regulada pelo proteassoma.
+
+---
+
+### Resposta 5 — Domínios conservados: CD-Search vs. InterProScan
+
+| Proteína | Domínio principal | CD-Search (CDD/Pfam) | InterProScan (bancos adicionais) | Concordância |
+|:---------|:------------------|:--------------------:|:--------------------------------:|:------------:|
+| Albumina | Serum albumin / Albumin domain (3×) | ✓ Pfam PF00273 | ✓ Pfam, PANTHER, PRINTS | **Alta** |
+| p53 | P53 DBD + TAD + OD | ✓ cd08367, PF00870 | ✓ Pfam, PANTHER, PRINTS, ProSiteProfiles | **Alta** |
+| Pré-pró-insulina | Insulin/IGF/Relaxin B-chain | ✓ PF00049 | ✓ Pfam, PANTHER, PRINTS | **Alta** |
+| Hemoglobina α | Globin | ✓ PF00042, cd08925 | ✓ Pfam, PANTHER, HAMAP, PRINTS | **Alta** |
+| Lisozima C | Lysozyme C | ✓ PF00062 | ✓ Pfam, PANTHER, PRINTS, ProSiteProfiles | **Alta** |
+
+De modo geral, as duas ferramentas apresentaram **alta concordância** para todas as proteínas do conjunto, identificando os mesmos domínios estruturais/funcionais core. A principal diferença é o **número de bancos de dados** consultados: o InterProScan integra PANTHER, HAMAP, PRINTS, ProSite, SFLD e outros além do Pfam, enquanto o CD-Search foca na CDD (que já incorpora Pfam, TIGRFAM e SMART). O InterProScan tende a reportar **mais entradas** por proteína (especialmente GO terms associados), mas o domínio funcional principal é capturado por ambos. Divergências ocorrem principalmente em **domínios de baixa complexidade, regiões desordenadas e pequenos motivos lineares** (ex.: NLS da p53 é melhor capturado por ProSite no InterProScan do que pelo CD-Search).
+
+---
+
+### Resposta 6 — Localização subcelular predita vs. experimental
+
+| Proteína | Localização UniProt (experimental) | WoLFPSORT (predita) | Correto? |
+|:---------|:-----------------------------------:|:-------------------:|:--------:|
+| Albumina (P02768) | Secretada / extracelular (plasma) | Extracelular / secreted | ✓ |
+| p53 (P04637) | Nuclear | Nuclear | ✓ |
+| Pré-pró-insulina (P01308) | Secretada / extracelular (circulação) | Extracelular / secreted | ✓ |
+| Hemoglobina α (P69905) | Citoplasmática (eritrócito) | Citoplasmática | ✓ |
+| Lisozima C (P00698) | Secretada / extracelular | Extracelular / secreted | ✓ |
+
+Neste conjunto, o WoLFPSORT prediz **todas as 5 localizações corretamente**, refletindo que as proteínas escolhidas possuem sinais de tráfego canônicos bem reconhecíveis (peptídeo de sinal para as secretadas, NLS para a p53, ausência de qualquer sinal para a hemoglobina α citoplasmática). Em casos reais de falha do WoLFPSORT, as causas mais comuns são: (a) proteínas com localização dual (ex.: proteínas nucleocitoplasmáticas que têm NLS e NES), (b) proteínas com peptídeo de sinal não-clássico, (c) proteínas de membrana com topologia complexa, ou (d) proteínas cuja localização depende de modificações pós-traducionais não codificadas na sequência primária.
+
+---
+
+### Resposta 7 — Processamento proteolítico e modelagem estrutural
+
+| Proteína | Sítio de clivagem SignalP (CS) | Anotação UniProt | Concordância | Tamanho proteína madura |
+|:---------|:------------------------------:|:----------------:|:------------:|:-----------------------:|
+| Albumina (P02768) | Posição 18↓19 (sinal) | SP: 1–18; Propeptídeo: 19–24; Madura: 25–609 | ✓ Sinal correto; propeptídeo requer processamento adicional no Golgi | **585 aa** |
+| Pré-pró-insulina (P01308) | Posição 24↓25 | SP: 1–24; Cadeia B: 25–54; C-peptídeo: 57–87; Cadeia A: 90–110 | ✓ | **51 aa** (cadeias A+B ligadas por pontes S-S, C-peptídeo removido) |
+| Lisozima C (P00698) | Posição 18↓19 | SP: 1–18; Madura: 19–148 | ✓ | **130 aa** |
+
+**Para modelagem estrutural, recomenda-se usar apenas a sequência da proteína madura:**
+
+- **Albumina:** modelar os resíduos 25–609. O peptídeo de sinal (1–18) e o propeptídeo (19–24) são clivados antes da forma circulante. Incluir essas regiões introduziria segmentos ausentes na estrutura biológicamente relevante.
+- **Pré-pró-insulina:** modelar as cadeias A (resíduos 90–110 no precursor) e B (25–54) unidas por pontes dissulfeto. O C-peptídeo de conexão (57–87) é removido enzimaticamente no Golgi; sua inclusão produziria um modelo irrelevante para a insulina funcional circulante.
+- **Lisozima C:** modelar os resíduos 19–148 (130 aa). O peptídeo de sinal é clivado co-traduzionalmente no RER.
+
+A justificativa geral é que os modelos estruturais existentes no PDB e os moldes usados por ferramentas como SWISS-MODEL e AlphaFold correspondem às formas maduras; usar a sequência completa do precursor criaria regiões sem molde estrutural ou com conformação biologicamente inexistente.
+
+---
+
+### Resposta 8 — Domínio funcional e estrutura experimental
+
+**DBD da p53 — InterProScan vs. PDB:**
+
+O InterProScan (via Pfam PF00870 e entradas PANTHER/PRINTS) delimita o domínio de ligação ao DNA da p53 aproximadamente entre os **resíduos 94–292** (Pfam) ou **102–292** (alguns perfis PANTHER). Esse intervalo é altamente consistente com a região cristalizada na estrutura **1TUP** (resíduos 94–292 da sequência canônica), demonstrando que as ferramentas de predição de domínios capturam corretamente os limites do DBD. As pequenas variações (±5–10 resíduos) nos limites N-terminais entre diferentes bancos refletem incertezas nos perfis de HMM nas bordas dos domínios, onde a conservação evolutiva decresce.
+
+**Bolsão de ligação ao heme na hemoglobina α:**
+
+O CD-Search e o InterProScan identificam o domínio **Globin** (Pfam PF00042; CDD cd08925) nos resíduos ~5–141 da hemoglobina α, que compreende toda a estrutura de barril de hélices α responsável por acomodar o grupo heme. Contudo, as ferramentas **não identificam explicitamente o bolsão de ligação ao heme como um subdomínio separado** — essa característica estrutural só é precisamente definida pela análise da estrutura tridimensional experimental (PDB 1HHO / 2HHB), onde a His87 (heme proximal) e a His58 (distal) são identificadas como resíduos-chave do sítio de ligação ao ferro.
+
+**O que isso revela sobre utilidade e limitações das ferramentas:**
+
+| Aspecto | Ferramentas *in silico* | Estrutura experimental |
+|:--------|:------------------------|:-----------------------|
+| Identificação de domínios globais | Excelente (baseada em perfis conservados) | Padrão-ouro |
+| Delimitação precisa de sítios ativos | Limitada — identifica o domínio, não o resíduo catalítico | Precisa ao nível atômico |
+| Análise de bolsões de ligação a cofatores | Inferida pelo domínio, não mapeada diretamente | Diretamente visível |
+| Custo/rapidez | Imediata, sem custo | Meses/anos de trabalho experimental |
+
+A conclusão central é que as ferramentas de predição de domínios são excelentes para **triagem inicial e anotação funcional global**, mas **não substituem a estrutura experimental** quando se necessita de informação ao nível de resíduos individuais — especialmente para design de inibidores, engenharia de proteínas ou interpretação mecanística detalhada.
+
+---
+
 # Momento II
 
 **Proteína-Alvo:** p53 (*TP53*)
