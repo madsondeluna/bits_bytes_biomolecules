@@ -123,6 +123,8 @@ Para **cada uma das 5 proteínas**, repita o roteiro abaixo. Registre os resulta
 
 ### Passo 1 - ProtParam (Propriedades físico-químicas)
 
+O **ProtParam** (ExPASy) calcula parâmetros físico-químicos diretamente a partir da sequência de aminoácidos, sem necessidade de estrutura 3D. Usaremos essa ferramenta para obter massa molecular, ponto isoelétrico (pI), índice de instabilidade, índice GRAVY e coeficiente de extinção molar de cada proteína. Esses parâmetros são essenciais para compreender o comportamento da proteína em solução, sua estabilidade *in vivo* e suas possíveis interações com outras moléculas, informações que fundamentam qualquer análise estrutural posterior.
+
 1. Acesse <a href="https://web.expasy.org/protparam/" target="_blank">https://web.expasy.org/protparam/</a>.
 2. Cole a sequência de aminoácidos (apenas a sequência, sem o cabeçalho FASTA) na caixa de texto e clique em **"Compute parameters"**.
 3. Registre os seguintes valores:
@@ -139,6 +141,8 @@ Para **cada uma das 5 proteínas**, repita o roteiro abaixo. Registre os resulta
 
 ### Passo 2 - SignalP 6.0 (Peptídeo de sinal)
 
+O **SignalP 6.0** (DTU Health Tech) utiliza redes neurais profundas para predizer se uma proteína possui peptídeo de sinal N-terminal e, caso possua, identifica com precisão o sítio de clivagem. O peptídeo de sinal é a sequência que direciona a proteína recém-sintetizada para o retículo endoplasmático rugoso e, consequentemente, para a via secretória. Identificá-lo é fundamental para determinar a sequência da proteína madura e para compreender o destino celular de cada proteína analisada.
+
 1. Acesse <a href="https://services.healthtech.dtu.dk/services/SignalP-6.0/" target="_blank">https://services.healthtech.dtu.dk/services/SignalP-6.0/</a>.
 2. Cole a sequência FASTA completa (incluindo cabeçalho `>`) na caixa de texto.
 3. Selecione o organismo: **Eukarya**.
@@ -154,6 +158,8 @@ Para **cada uma das 5 proteínas**, repita o roteiro abaixo. Registre os resulta
 
 ### Passo 3 - CD-Search/NCBI (Domínios conservados)
 
+O **CD-Search** (NCBI) realiza buscas de similaridade entre a sequência-consulta e perfis de domínios conservados presentes na *Conserved Domain Database* (CDD), que integra bancos como Pfam, TIGRFAM e SMART. Domínios conservados são regiões da sequência com função e estrutura preservadas ao longo da evolução. Identificá-los permite inferir a função molecular de uma proteína, delimitar regiões estruturais importantes e comparar repertórios de domínios entre proteínas distintas, algo que faremos em seguida com o InterProScan para avaliar consistência entre ferramentas.
+
 1. Acesse <a href="https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi" target="_blank">https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi</a>.
 2. Cole a sequência FASTA completa na caixa de texto.
 3. Em **"Database"**, selecione **CDD v3** (padrão, inclui entradas do Pfam, TIGRFAM e SMART).
@@ -168,6 +174,8 @@ Para **cada uma das 5 proteínas**, repita o roteiro abaixo. Registre os resulta
 
 ### Passo 4 - InterProScan (Integração multi-banco)
 
+O **InterProScan** (EMBL-EBI) é uma plataforma integradora que consulta simultaneamente múltiplos bancos de dados de famílias e domínios proteicos, incluindo Pfam, PANTHER, HAMAP, PRINTS, ProSite e SFLD. Ao contrário do CD-Search, que foca na CDD, o InterProScan oferece cobertura mais ampla e associa automaticamente às entradas identificadas os **termos Gene Ontology (GO)**, que descrevem função molecular, processo biológico e componente celular. Usar ambas as ferramentas permite avaliar a concordância dos resultados e capturar domínios ou motivos que poderiam passar despercebidos em um único banco.
+
 1. Acesse <a href="https://www.ebi.ac.uk/interpro/search/sequence/" target="_blank">https://www.ebi.ac.uk/interpro/search/sequence/</a>.
 2. Cole a sequência FASTA completa na caixa de texto e clique em **"Search"**.
 3. Aguarde o processamento (pode levar 1–3 minutos).
@@ -180,6 +188,8 @@ Para **cada uma das 5 proteínas**, repita o roteiro abaixo. Registre os resulta
 ---
 
 ### Passo 5 - WoLFPSORT (Localização subcelular)
+
+O **WoLFPSORT** prediz a localização subcelular de uma proteína a partir de sua sequência de aminoácidos, analisando sinais de tráfego (como peptídeo de sinal, NLS e sequências de ancoragem a membranas) e composição aminoacídica global. Conhecer a localização subcelular é fundamental para contextualizar a função de uma proteína: uma enzima citoplasmática, uma proteína secretada e um fator de transcrição nuclear operam em ambientes completamente distintos. Utilizaremos essa ferramenta como validação complementar ao SignalP e ao InterProScan, verificando se a localização predita é consistente com a anotação experimental do UniProt.
 
 1. Acesse <a href="https://wolfpsort.hgc.jp/" target="_blank">https://wolfpsort.hgc.jp/</a>.
 2. Cole a sequência de aminoácidos (apenas a sequência) na caixa.
@@ -225,6 +235,7 @@ Preencha a tabela abaixo ao longo da atividade:
 
 ---
 
+<!--
 ## Respostas - Perguntas para Discussão
 
 ### Resposta 1 - Peptídeo de sinal e destino celular
@@ -359,6 +370,7 @@ O CD-Search e o InterProScan identificam o domínio **Globin** (Pfam PF00042; CD
 | Custo/rapidez | Imediata, sem custo | Meses/anos de trabalho experimental |
 
 A conclusão central é que as ferramentas de predição de domínios são excelentes para **triagem inicial e anotação funcional global**, mas **não substituem a estrutura experimental** quando se necessita de informação ao nível de resíduos individuais, especialmente para design de inibidores, engenharia de proteínas ou interpretação mecanística detalhada.
+-->
 
 ---
 
