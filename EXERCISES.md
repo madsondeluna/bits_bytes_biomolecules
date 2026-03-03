@@ -21,7 +21,7 @@ As ferramentas abaixo serão utilizadas para analisar propriedades físico-quím
 |------------|-----|-----------|
 | **ProtParam** | <a href="https://web.expasy.org/protparam/" target="_blank">https://web.expasy.org/protparam/</a> | Parâmetros físico-químicos |
 | **SignalP 6.0** | <a href="https://services.healthtech.dtu.dk/services/SignalP-6.0/" target="_blank">https://services.healthtech.dtu.dk/services/SignalP-6.0/</a> | Predição de peptídeos de sinal |
-| **CD-Search (NCBI)** | <a href="https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi" target="_blank">https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi</a> | Identificação de peptídeos de sinal e caracterização de domínios conservados via busca em bases como CDD, Pfam e TIGRFAM |
+| **CD-Search** | <a href="https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi" target="_blank">https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi</a> | Identificação de peptídeos de sinal e caracterização de domínios conservados via busca em bases como CDD, Pfam e TIGRFAM |
 | **InterProScan** | <a href="https://www.ebi.ac.uk/interpro/search/sequence/" target="_blank">https://www.ebi.ac.uk/interpro/search/sequence/</a> | Identificação integrada de domínios e famílias proteicas; engloba o Pfam e outras bases como PANTHER, HAMAP, PRINTS, ProSite e SFLD |
 | **WoLFPSORT** | <a href="https://wolfpsort.hgc.jp/" target="_blank">https://wolfpsort.hgc.jp/</a> | Identificação de localização celular |
 
