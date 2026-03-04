@@ -213,6 +213,20 @@ Preencha a tabela abaixo ao longo da atividade:
 | Hemoglobina α (P69905) | | | | | | | | | |
 | Lisozima C (P00698) | | | | | | | | | |
 
+**Legenda**
+
+| Campo | Ferramenta |
+|:------|:-----------|
+| Massa (kDa) | **ProtParam** → parâmetro *Molecular weight* |
+| pI | **ProtParam** → parâmetro *Theoretical pI* |
+| Instabilidade | **ProtParam** → parâmetro *Instability index* |
+| GRAVY | **ProtParam** → parâmetro *Grand average of hydropathicity (GRAVY)* |
+| Peptídeo sinal? | **SignalP 6.0** → coluna *Prediction* (SP = sim; OTHER = não) |
+| CS (posição) | **SignalP 6.0** → coluna *CS Position* (posição do sítio de clivagem) |
+| Domínios principais (CD-Search) | **CD-Search** → aba *Domain hits*, coluna *Superfamily/Name* |
+| GO: Componente celular (InterPro) | **InterProScan** → aba *Gene Ontology*, categoria *Cellular component* |
+| Localização (WoLFPSORT) | **WoLFPSORT** → coluna *Localization* (ex.: *nucl*, *cyto*, *extr*) |
+
 ---
 
 ## Perguntas para Discussão
@@ -372,8 +386,6 @@ O CD-Search e o InterProScan identificam o domínio **Globin** (Pfam PF00042; CD
 A conclusão central é que as ferramentas de predição de domínios são excelentes para **triagem inicial e anotação funcional global**, mas **não substituem a estrutura experimental** quando se necessita de informação ao nível de resíduos individuais, especialmente para design de inibidores, engenharia de proteínas ou interpretação mecanística detalhada.
 -->
 
----
-
 # Momento II
 
 **Proteína-Alvo:** p53 (*TP53*)
@@ -404,7 +416,7 @@ A **p53** (derivada do gene *TP53*) é um dos mais importantes supressores de tu
 
 > Fonte: Criado por Madson Aragão no VMD.
 
-## Dados de Referência
+## Dados de Importantes
 
 | Informação | Valor/Link |
 |------------|------------|
@@ -458,7 +470,7 @@ Na página de downloads da sua conta Schrödinger, baixe o instalador apropriado
 
 ---
 
-# Módulo 1: Análise de Sequências e Propriedades
+# Análise Exploratória
 
 **Objetivos:**
 - Navegar e extrair dados da p53 em bancos de dados estruturais.
@@ -473,7 +485,7 @@ Na página de downloads da sua conta Schrödinger, baixe o instalador apropriado
 
 ---
 
-# Atividade 2: Modelagem Tridimensional 
+# Modelagem Tridimensional 
 
 ## Alinhamento 1TUP vs. Sequência Completa
 
@@ -790,7 +802,7 @@ Para confirmar as posições exatas:
 
 ---
 
-# Módulo 2: Modelagem por Homologia e Threading
+# Modelagem por Homologia e Threading
 
 Sequência FASTA completa da p53 (UNIPROT ID: P04637), que utilizaremos nas atividades práticas de modelagem estrutural:
 
@@ -887,7 +899,7 @@ Nesta seção, o foco não será a submissão ou a espera pelo processamento, ma
 
 ---
 
-# Módulo 2 (Continuação): E o *Ab Initio*?
+# E o *Ab Initio*?
 
 O Rosetta revolucionou a biologia estrutural computacional ao introduzir métodos inovadores para a predição de estruturas de proteínas. Desenvolvido inicialmente por David Baker e sua equipe na Universidade de Washington, o Rosetta utiliza uma abordagem baseada em fragmentos para construir modelos tridimensionais de proteínas a partir de suas sequências de aminoácidos. 
 
@@ -1107,7 +1119,7 @@ O modelo final geralmente corresponde ao centroide do maior cluster de baixa ene
 
 ---
 
-# Módulo 3: Predição por Deep Learning (AF2, AF3 e ESM3)
+# Predição por Deep Learning (AF2, AF3 e ESM3)
 
 Sequência FASTA completa da p53 (UNIPROT ID: P04637), que utilizaremos nas atividades práticas de modelagem estrutural:
 
