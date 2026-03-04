@@ -207,11 +207,11 @@ Preencha a tabela abaixo ao longo da atividade:
 
 | Proteína | Massa (kDa) | pI | Instabilidade | GRAVY | Peptídeo sinal? | CS (posição) | Domínios principais (CD-Search) | GO: Componente celular (InterPro) | Localização (WoLFPSORT) |
 |:---------|:-----------:|:--:|:-------------:|:-----:|:---------------:|:------------:|:--------------------------------|:----------------------------------|:-----------------------:|
-| Albumina (P02768) | | | | | | | | | |
-| p53 (P04637) | | | | | | | | | |
-| Insulina (P01308) | | | | | | | | | |
-| Hemoglobina α (P69905) | | | | | | | | | |
-| Lisozima C (P00698) | | | | | | | | | |
+| Albumina (P02768) | 69222.50 | 5.73 | 39.02 | -0.329 | Sec/SPI | 18 and 19 | ALBUMIN domain | extracellular space (GO:0005615) | extr |
+| p53 (P04637) | 36910.59 | 6.07 | 78.83 | -0.677 | Other | - | TAD1, TAD2, P53 Binding domain | nucleus (GO:0005634) | cyto_nucl |
+| Insulina (P01308) | 11980.91 | 5.22 | 40.33 | 0.193 | Sec/SPI | 24 and 25 | I/IGF_like superfamily | extracellular region (GO:0005576) | extr |
+| Hemoglobina α (P69905) | 15257.55 | 8.72 | 6.97 | 0.048 | Other | - | Globin-like superfamily | hemoglobin complex (GO:0005833) | cyto |
+| Lisozima C (P00698) | 16716.30 | 9.50 | 30.78 | -0.155 | Sec/SPI | 18 and 19 | Lyz-like superfamily | None | extr |
 
 **Legenda**
 
