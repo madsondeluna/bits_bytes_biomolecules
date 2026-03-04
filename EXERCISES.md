@@ -219,7 +219,7 @@ Preencha a tabela abaixo ao longo da atividade:
 
 1. **Peptídeo de sinal e destino celular.** O SignalP classificou cada proteína como **SP** (peptídeo de sinal clássico) ou **OTHER**? Monte uma tabela com os resultados das 5 proteínas e identifique quais são secretadas e quais permanecem intracelulares. Para as proteínas sem peptídeo de sinal, p53 e hemoglobina α, como cada uma é direcionada ao seu compartimento correto (núcleo vs. citoplasma)?
 
-2. **Ponto isoelétrico e função biológica.** Compare os valores de pI obtidos pelo ProtParam para as 5 proteínas. Albumina (~4,9), p53 (~6,3), hemoglobina α (~8,7) e lisozima (~9,3) operam no mesmo ambiente fisiológico (pH ≈ 7,4), mas com cargas líquidas diferentes. Como o pI de cada proteína se relaciona com sua função ou com os parceiros moleculares com que ela interage?
+2. **Ponto isoelétrico e função biológica.** Compare os valores de pI obtidos pelo ProtParam para as 5 proteínas. Albumina, p53, hemoglobina α e lisozima operam no mesmo ambiente fisiológico (pH ≈ 7,4), mas com cargas líquidas diferentes. Como o pI de cada proteína se relaciona com sua função ou com os parceiros moleculares com que ela interage?
 
 3. **Índice GRAVY e solubilidade.** Registre o índice GRAVY para as 5 proteínas. Proteínas solúveis tendem a ter GRAVY negativo, enquanto proteínas de membrana tendem a valores positivos. Os resultados obtidos são consistentes com as localizações subcelulares preditas pelo WoLFPSORT? Alguma proteína destoa do padrão esperado?
 
