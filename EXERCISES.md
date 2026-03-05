@@ -1423,8 +1423,60 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 
 - Quais modelos apresentam RMSD mais baixo em relação à estrutura experimental e o que isso revela sobre a qualidade geral de cada predição?
 - Ao inspecionar as sobreposições no PyMOL, quais regiões da p53 mantêm conformação consistente entre todos os modelos e quais divergem com mais intensidade?
-- Como as métricas de validação (MolProbity, QMEAN, ProSA-web) complementam os resultados de RMSD para justificar a seleção de um modelo confiável?
+- Como as métricas de validação (MolProbity, ProSA, QMEAN, ProSA-web) complementam os resultados de RMSD para justificar a seleção de um modelo confiável?
 - De que modo as figuras geradas podem comunicar melhor as diferenças funcionais potenciais entre os modelos analisados?
+
+> **Respostas:**
+>
+> **Quais modelos apresentam RMSD mais baixo e o que isso revela?**
+>
+> O RMSD (*Root Mean Square Deviation*) quantifica a distância média entre átomos equivalentes de duas estruturas sobrepostas, expresso em Ångströms (Å). Para a comparação com o 1TUP, que cobre apenas o DBD (resíduos 94-292), o RMSD deve ser calculado sobre os Cα dessa região, excluindo os terminais desordenados que não existem no cristal.
+>
+> A hierarquia de RMSD esperada para o DBD da p53 (do menor para o maior) é:
+>
+> 1. **SWISS-MODEL**: RMSD entre 0,8 e 1,5 Å, pois usa diretamente estruturas como o 1TUP como molde.
+> 2. **AlphaFold2/ColabFold** e **AlphaFold3**: RMSD entre 1,0 e 2,0 Å, refletindo a excelência no DBD.
+> 3. **ESM3**: RMSD entre 1,5 e 3,0 Å, ligeiramente maior por não usar MSA explícito.
+> 4. **I-TASSER**: RMSD entre 2,0 e 4,0 Å, pois o threading acumula mais imprecisões locais.
+>
+> Um RMSD abaixo de 2 Å para o Cα do DBD é considerado excelente. Entre 2 e 4 Å indica dobramento correto com desvios em loops. Acima de 4 Å sugere erros de topologia mais sérios.
+>
+> **Quais regiões são consistentes e quais divergem entre os modelos?**
+>
+> Ao sobrepor todos os modelos no PyMOL com o comando `align` ou `super`, o comportamento esperado é:
+>
+> **Regiões de alta consistência (baixo RMSD entre modelos):**
+>
+> - As folhas beta centrais do DBD, que formam o núcleo hidrofóbico do domínio sanduiche beta.
+> - As hélices H1 e H2 do DBD.
+> - A região do sítio de coordenação do zinco (C176, H179, C238, C242).
+>
+> **Regiões de alta divergência (alto RMSD entre modelos):**
+>
+> - As alças L1, L2 e L3, que fazem contato direto com o DNA e são mais flexíveis.
+> - Os terminais N e C da cadeia completa (TAD1, TAD2, PRD, CTD), que são intrinsecamente desordenados.
+> - O linker entre o DBD e o OD, que é flexível e não possui conformação definida.
+>
+> **Como MolProbity, QMEAN e ProSA-web complementam o RMSD?**
+>
+> O RMSD mede apenas a semelhança topológica global entre dois modelos, mas não avalia se a geometria interna do modelo é quimicamente razoável. Um modelo pode ter RMSD baixo em relação ao 1TUP e ainda conter erros de geometria local. Por isso, as métricas de validação são complementares e essenciais:
+>
+> O **MolProbity** (via SAVES) avalia a geometria da cadeia principal pelo gráfico de Ramachandran. Modelos de alta qualidade devem ter mais de 95% dos resíduos nas regiões favoráveis. Também avalia clashes estéricos entre átomos. Um modelo com RMSD baixo mas muitos resíduos fora das regiões favoráveis pode ter erros locais que comprometem interpretações funcionais.
+>
+> O **QMEAN** fornece um escore global de qualidade (0 a 1) por comparação com estruturas do PDB de tamanho similar, além de um perfil de qualidade por resíduo para identificar regiões com geometria problemática.
+>
+> O **ProSA-web** calcula o Z-score, que mede o quanto a energia do modelo se desvia da energia média de estruturas experimentais no PDB. Um Z-score dentro do intervalo esperado para proteínas de tamanho similar (-5 a -10 para a p53) indica dobramento energeticamente plausível.
+>
+> A combinação RMSD + Ramachandran + QMEAN + Z-score fornece uma avaliação multidimensional: o RMSD avalia a semelhança topológica global, o Ramachandran avalia a geometria local, o QMEAN avalia o consenso com estruturas experimentais, e o Z-score avalia a plausibilidade energética. Um modelo confiável deve ter bons resultados em todas essas métricas simultaneamente.
+>
+> **Como as figuras comunicam diferenças funcionais entre os modelos?**
+>
+> Figuras estruturais bem elaboradas transmitem informação que tabelas de RMSD não conseguem comunicar visualmente. Algumas estratégias eficazes no PyMOL:
+>
+> - **Colorir por RMSD por resíduo**: usar espectro de cores para mapear a variação ao longo da cadeia. Regiões em azul (baixo desvio) identificam o núcleo conservado; regiões em vermelho (alto desvio) destacam loops variáveis, que frequentemente correspondem a regiões de contato com o DNA.
+> - **Sobrepor todos os modelos em representação cartoon**: a dispersão visual das conformações dos loops L1, L2 e L3 mostra imediatamente quão incertas são as regiões de contato com DNA.
+> - **Destacar resíduos de contato com DNA**: mostrar as cadeias laterais de R248, R273, K120 e S241 em *sticks* em todos os modelos sobrepostos revela se os modelos reproduzem a geometria de ligação observada no 1TUP.
+> - **Comparar superfície eletrostática**: gerar mapas de potencial eletrostático (via plugin APBS no PyMOL) para cada modelo e comparar a distribuição de cargas na interface de ligação ao DNA. Diferenças na superfície eletrostática podem ter implicações diretas na afinidade e especificidade de ligação.
 
 ---
 
