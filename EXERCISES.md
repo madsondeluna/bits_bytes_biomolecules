@@ -548,6 +548,35 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 - Em quais trechos o domínio 1TUP se alinha diretamente com a sequência completa e quais regiões ficam sem correspondência?
 - Os limites N- e C-terminais do domínio cristalizado aparecem contíguos no alinhamento ou revelam lacunas/extensions relevantes para estabilidade?
 - Há resíduos-chave do sítio de ligação ao DNA presentes apenas na sequência completa? O que isso implica para os modelos baseados no domínio?
+
+> **Respostas:**
+>
+> **Quais trechos se alinham e quais ficam sem correspondência?**
+>
+> O domínio cristalizado na estrutura 1TUP corresponde ao DBD (DNA-Binding Domain) da p53, que cobre aproximadamente os resíduos 94 a 292 da sequência completa (393 aa). No alinhamento múltiplo executado no Clustal Omega, você verá que a sequência do 1TUP se alinha diretamente com essa região central da proteína completa. As regiões **sem correspondência** com o 1TUP são:
+>
+> | Domínio | Resíduos (UniProt) | Presente no 1TUP? |
+> |:--------|:-----------------:|:-----------------:|
+> | TAD1 (domínio de ativação transcricio nal 1) | 1-40 | Não |
+> | TAD2 (domínio de ativação transcricional 2) | 41-67 | Não |
+> | PRD (domínio rico em prolina) | 68-93 | Não |
+> | **DBD (domínio de ligação ao DNA)** | **94-292** | **Sim** |
+> | NLS (sinal de localização nuclear) | 293-325 | Não |
+> | OD (domínio de oligomerização) | 326-356 | Não |
+> | CTD (domínio C-terminal regulatório) | 357-393 | Não |
+>
+> Isso significa que, no alinhamento, a sequência do 1TUP aparece com gaps (inserções de "-") nos terminais N e C, enquanto o corpo central se alinha perfeitamente com a sequência completa.
+>
+> **Os limites do domínio cristalizado revelam lacunas relevantes?**
+>
+> Sim. O limite N-terminal do 1TUP começa abruptamente na região do DBD, sem nenhuma das sequências N-terminais de ativação transcricional (TAD1, TAD2 e PRD). O limite C-terminal termina logo após o final do DBD, antes do domínio de oligomerização (OD). Essa ausência tem implicações estruturais importantes: o OD é responsável pela formação do tetrâmero funcional da p53 (quatro subunidades), e o CTD possui sítios de ubiquitinação e acetilação que regulam a atividade da proteína. Portanto, a estrutura cristalizada no 1TUP captura apenas o "coração" funcional da p53 para a ligação ao DNA, mas não a proteína completa.
+>
+> **Há resíduos-chave do sítio de ligação ao DNA presentes apenas na sequência completa?**
+>
+> Não exatamente. Os resíduos que fazem contato direto com o DNA (como R248 e R273, presentes no Loop L3, e K120, S241, R248, presente nas fitas beta do DBD) estão todos dentro da janela do 1TUP (resíduos 94-292). Portanto, a estrutura cristalizada contém todos os resíduos essenciais para a ligação ao DNA.
+>
+> Porém, modelos baseados **apenas no domínio** do 1TUP têm limitações importantes: não é possível modelar a oligomerização (sem o OD, a proteína não forma o tetrâmero), não é possível analisar a regulação pelo CTD (sítios de modificação pós-traducional), e as regiões TAD1 e TAD2 que recrutam cofatores transcricionais ficam completamente ausentes. Portanto, para estudar a ligação ao DNA, o fragmento do 1TUP é suficiente; para estudar a regulação e a função completa da p53, é necessária a sequência *full-length*.
+
 ---
 
 # Atividade 3: Análise de Mutações Oncogênicas
@@ -831,6 +860,37 @@ Para confirmar as posições exatas:
 - Alguma das substituições cria ou elimina motivos funcionais conhecidos (ex.: sítios de fosforilação, ligações a DNA) sugeridos pelo alinhamento?
 - Comparando as quatro variantes mutadas entre si, existe um padrão recorrente de substituições que aponte para um hotspot funcional?
 
+> **Respostas:**
+>
+> **Em quais posições surgem substituições e elas são conservadas?**
+>
+> As substituições surgem exatamente nas posições 175, 220, 248 e 273 do alinhamento, todas localizadas dentro do DBD (resíduos 102-292). Essas posições são altamente conservadas na sequência *wild-type* e entre os ortólogos da p53 em diferentes espécies de vertebrados. No histograma de conservação do Clustal Omega, essas colunas aparecem com marcação de conservação máxima na sequência de referência WT, o que significa que a pressão evolutiva manteve esses resíduos inalterados por milhões de anos em organismos saudáveis. Encontrá-los substituídos em tumores humanos é, portanto, biologicamente muito significativo.
+>
+> **As mutações são conservativas ou drásticas?**
+>
+> | Mutação | Troca | Tipo de mudança | Impacto esperado |
+> |:--------|:-----:|:---------------:|:-----------------|
+> | R175H | Arg (básico, +1) → His (básico fraco, pH-dep.) | Moderadamente drástica | Perda de carga permanente, desestabilização do domínio |
+> | Y220C | Tyr (aromático, polar) → Cys (tiol reativo, pequeno) | Muito drástica | Perda do aromático volumoso, criação de tiol livre reativo |
+> | R248Q | Arg (básico, +1) → Gln (polar neutro) | Muito drástica | Perda completa de carga; R248 faz contato direto com o DNA |
+> | R273H | Arg (básico, +1) → His (básico fraco, pH-dep.) | Moderadamente drástica | Perda de carga permanente; R273 faz contato direto com o DNA |
+>
+> Nenhuma das quatro mutações é conservativa: todas alteram de forma significativa a carga, o volume ou a reatividade química do resíduo original. Isso contrasta com mutações conservativas típicas, como Asp → Glu (ambos ácidos) ou Val → Ile (ambos alifáticos).
+>
+> **Alguma substituição elimina motivos funcionais conhecidos?**
+>
+> Sim, e de forma direta. As mutações R248Q e R273H eliminam dois dos principais contatos da p53 com o DNA. O resíduo R248 insere sua cadeia lateral no sulco menor do DNA e faz pontes de hidrogênio com bases específicas da sequência reconhecida pela p53. Ao ser substituído por Gln (glutamina), a carga positiva e a geometria de ligação são perdidas completamente, abolindo o contato com o DNA. O mesmo vale para R273, que faz contato com o esqueleto fosfato do DNA.
+>
+> A mutação R175H, embora não seja um contato direto com o DNA, afeta a coordenação estrutural de um íon zinco (Zn²+) no DBD. O zinco é coordenado por resíduos C176, H179, C238 e C242, e a arginina 175 está próxima a esse sítio. A substituição por histidina desestabiliza a estrutura tridimensional do DBD inteiro, o que indiretamente elimina o sítio de ligação ao DNA mesmo sem mudar um resíduo de contato.
+>
+> A mutação Y220C cria um tiol livre (grupo -SH da cisteína), que pode formar pontes dissulfeto aberrantes com outras cisteínas do DBD, contribuindo para agregação proteica, uma característica frequentemente observada em células tumorais com p53 mutante.
+>
+> **Existe um padrão recorrente entre as quatro variantes?**
+>
+> Sim, e é bastante evidente. Três das quatro mutações (R175H, R248Q e R273H) envolvem a substituição de uma **arginina** por um aminoácido de carga reduzida ou neutra. A arginina possui o pKa mais alto entre todos os aminoácidos (~12,5) e permanece carregada positivamente em praticamente todo pH fisiológico. Ela é o aminoácido ideal para fazer contato eletrostático com o DNA (carregado negativamente) e para estabilizar estruturas pelo seu grupo guanidínio altamente versátil em pontes de hidrogênio.
+>
+> Esse padrão aponta para um **hotspot funcional de argininas críticas** no DBD da p53. Não por acaso, as posições 175, 248 e 273 estão entre as mutações mais frequentes em tumores humanos catalogadas no banco de dados IARC TP53. Isso revela que a evolução dos tumores não é aleatória: ela seleciona positivamente mutações que inativam especificamente os resíduos mais essenciais para a função supressora da p53.
+
 ---
 
 # Modelagem por Homologia e Threading
@@ -925,6 +985,36 @@ Nesta seção, o foco não será a submissão ou a espera pelo processamento, ma
 - O tipo de construção (homologia vs threading) influenciou a qualidade do modelo? Explique...
 - Vamos revisar os métodos utilizados até aqui. Quais são as vantagens e limitações de cada abordagem?
 - Ainda não alinhamos as estruturas obtidas até aqui, mas conseguem identificar diferenças visuais entre os modelos gerados?
+
+> **Respostas:**
+>
+> **Qual seria o melhor modelo entre SWISS-MODEL e I-TASSER?**
+>
+> Para responder com base em métricas, precisamos comparar os valores reportados por cada ferramenta. O SWISS-MODEL fornece o **GMQE** (*Global Model Quality Estimation*, 0 a 1, quanto maior melhor) e o **QMEANDisCo** (0 a 1, baseado em consenso com estruturas do PDB). O I-TASSER fornece o **C-score** (-5 a 2, quanto maior melhor) e estimativas de **TM-score** e **RMSD** em relação a estruturas similares.
+>
+> Para a p53 *full-length*, é esperado que o **SWISS-MODEL produza um modelo parcial** (cobrindo principalmente o DBD, onde existe molde experimental de alta qualidade como o 1TUP), enquanto o **I-TASSER gera um modelo completo** da cadeia inteira usando threading e montagem por fragmentos. Portanto, a comparação direta deve considerar a cobertura de sequência: um modelo de alta qualidade que cobre apenas 60% da proteína pode ser menos útil do que um modelo de qualidade moderada que cobre 100%.
+>
+> Em termos de GMQE e QMEANDisCo, um modelo do DBD pelo SWISS-MODEL tende a ter valores altos (próximos de 0,8-0,9) porque existe um molde experimental excelente (1TUP). Já o TM-score predito pelo I-TASSER para a p53 completa costuma ficar entre 0,6 e 0,8, indicando dobramento correto na topologia geral mas com imprecisões em loops e regiões desordenadas.
+>
+> **O tipo de abordagem influenciou a qualidade do modelo?**
+>
+> Sim, de forma significativa. A modelagem por **homologia** (SWISS-MODEL) depende diretamente da existência de um molde estrutural com alta identidade de sequência. Para o DBD da p53, que possui dezenas de estruturas experimentais depositadas no PDB, o SWISS-MODEL encontra moldes excelentes e produz modelos de alta fidelidade para essa região. No entanto, para as regiões N-terminais (TAD1, TAD2, PRD) e C-terminais (OD, CTD), que são naturalmente desordenadas ou possuem poucos moldes, o SWISS-MODEL não consegue construir um modelo confiável.
+>
+> O **threading** (I-TASSER) não depende de identidade de sequência direta: ele alinha fragmentos da sequência a perfis de estruturas do PDB mesmo com baixa similaridade, o que permite cobrir toda a cadeia. O resultado é um modelo completo, mas com regiões de confiança variável ao longo da sequência, especialmente nas regiões intrinsecamente desordenadas da p53.
+>
+> **Vantagens e limitações de cada abordagem:**
+>
+> | Critério | Homologia (SWISS-MODEL) | Threading (I-TASSER) |
+> |:---------|:-----------------------:|:--------------------:|
+> | Cobertura | Parcial (depende do molde) | Total da sequência |
+> | Qualidade do núcleo estrutural | Alta (quando molde existe) | Moderada a boa |
+> | Regiões sem molde | Não modela | Modela com menor confiança |
+> | Velocidade | Minutos | Horas a dias |
+> | Interpretação das métricas | GMQE, QMEANDisCo | C-score, TM-score estimado |
+>
+> **Diferenças visuais esperadas entre os modelos:**
+>
+> Mesmo antes de calcular o RMSD, é possível identificar diferenças visuais ao inspecionar os modelos no PyMOL. O modelo do SWISS-MODEL deve apresentar o DBD bem estruturado com folhas beta e alças definidas, mas com cadeias N e C-terminais ausentes ou como extensões desordenadas. O modelo do I-TASSER deve apresentar a proteína completa, mas com regiões TAD1, TAD2 e CTD em conformações estendidas ou aleatórias, refletindo o caráter intrinsecamente desordenado dessas regiões. O núcleo do DBD deve ter topologia similar nos dois modelos, mas com diferenças na posição das alças laterais e na orientação das cadeias terminais.
 
 > Nos próximos módulos, vamos avaliar se o dobramento por cada método foi feito da corretamente. Bem como alinhar estruturalmente os modelos obtidos, calculando RMSD para comparação detalhada.
 
@@ -1147,6 +1237,44 @@ O modelo final geralmente corresponde ao centroide do maior cluster de baixa ene
 - Quais são as principais vantagens e limitações do método *ab initio* em comparação com homologia e threading?
 - Em que situações o *ab initio* seria a abordagem preferida para predição estrutural?
 - Como a quantidade de resíduos influencia a eficácia do *ab initio*? Spoiler: Proteínas pequenas são melhores candidatas, devido a uma melhor sobreposição dos da bibliotecas de fragmentos e para os dezenas de calculos de angulos torsionais necessários.
+
+> **Respostas:**
+>
+> **O que threading e *ab initio* têm em comum?**
+>
+> Apesar de serem abordagens distintas, threading e *ab initio* compartilham uma característica fundamental: **nenhum dos dois depende de um único molde com alta identidade de sequência**, ao contrário da modelagem por homologia clássica. Ambos buscam explorar o espaço conformacional da proteína de forma mais abrangente.
+>
+> O threading alinha fragmentos da sequência a perfis estruturais de proteínas do PDB mesmo sem similaridade de sequência evidente, usando funções de energia para avaliar a compatibilidade de cada alinhamento. O *ab initio* faz algo conceitualmente similar ao nível de fragmentos curtos (3-mers e 9-mers): ele extrai fragmentos estruturais de proteínas conhecidas e os monta iterativamente, guiado por uma função de pontuação energética. Em ambos os casos, o conhecimento estrutural acumulado no PDB é explorado indiretamente, seja como perfis de threading ou como biblioteca de fragmentos.
+>
+> A diferença central está em como esse conhecimento é utilizado: o threading busca um molde global completo; o *ab initio* utiliza apenas fragmentos locais e reconstrói a estrutura global a partir deles.
+>
+> **Vantagens e limitações do *ab initio* em comparação com homologia e threading:**
+>
+> | Critério | Homologia | Threading | *Ab initio* |
+> |:---------|:---------:|:---------:|:-----------:|
+> | Dependência de molde | Alta | Baixa | Nenhuma |
+> | Cobertura de proteínas sem homólogos | Baixa | Moderada | Alta |
+> | Qualidade para proteínas com molde | Muito alta | Alta | Moderada |
+> | Custo computacional | Baixo | Moderado | Muito alto |
+> | Limitação de tamanho | Sem molde = sem modelo | Moderada | Forte (< 150 aa) |
+> | Amostragem conformacional | Restrita ao molde | Semi-restrita | Ampla |
+>
+> A maior vantagem do *ab initio* é a independência total de estruturas homólogas conhecidas, o que o torna a única opção viável para proteínas sem nenhum parente estrutural no PDB. Sua maior limitação é o custo computacional exponencial com o aumento da cadeia, além da dificuldade de gerar um *folding funnel* claro para proteínas maiores.
+>
+> **Em que situações o *ab initio* seria a abordagem preferida?**
+>
+> O *ab initio* é a abordagem preferida quando:
+>
+> 1. A proteína-alvo não possui nenhum homólogo estrutural conhecido no PDB (cobertura de threading abaixo de 10-20%).
+> 2. O objetivo é explorar conformações alternativas que não estejam presentes em moldes conhecidos, como estruturas de proteínas intrinsecamente desordenadas que adquirem estrutura em condições específicas.
+> 3. A proteína é pequena (idealmente abaixo de 100-150 resíduos), tornando a amostragem conformacional computacionalmente viável.
+> 4. O pesquisador quer projetar uma proteína com nova topologia, como foi feito com a Top-7 descrita nesta seção.
+>
+> **Como o tamanho da proteína influencia a eficácia do *ab initio*?**
+>
+> O número de graus de liberdade conformacionais cresce rapidamente com o tamanho da proteína. Cada resíduo possui ao menos dois ângulos de torção da cadeia principal (phi e psi), e o número de combinações possíveis é exponencial. Para uma proteína de 50 resíduos, é computacionalmente viável gerar e avaliar dezenas de milhares de conformações (decoys). Para uma proteína de 393 resíduos como a p53 *full-length*, o espaço conformacional é astronomicamente maior.
+>
+> Além disso, a biblioteca de fragmentos do Rosetta é construída para fragmentos de 3 e 9 resíduos extraídos do PDB. Para proteínas pequenas, esses fragmentos cobrem proporcionalmente mais da estrutura total, levando a uma montagem mais coerente. Para proteínas grandes, os fragmentos cobrem menos contexto local e os erros se acumulam ao longo da montagem. Por isso, proteínas acima de 150-200 resíduos raramente produzem *folding funnels* claros com *ab initio* clássico, e os resultados tendem a ter RMSD elevado em relação à estrutura nativa.
 
 ---
 
