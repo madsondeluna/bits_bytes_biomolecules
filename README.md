@@ -23,7 +23,7 @@ Este repositório contém o material de referência completo para o curso, inclu
 
 <a href="aulas/aula_dia1.pdf" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Aula%20Dia%201-PDF-blue?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Aula Dia 1"></a>
 
-<a href="docs/aulas/aula_dia2.pdf" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Aula%20Dia%202-PDF-blue?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Aula Dia 2"></a>
+<a href="aulas/aula_dia2.pdf" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Aula%20Dia%202-PDF-blue?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Aula Dia 2"></a>
 
 ---
 
