@@ -231,21 +231,189 @@ Preencha a tabela abaixo ao longo da atividade:
 
 ## Perguntas para Discussão
 
-1. **Peptídeo de sinal e destino celular.** O SignalP classificou cada proteína como **SP** (peptídeo de sinal clássico) ou **OTHER**? Monte uma tabela com os resultados das 5 proteínas e identifique quais são secretadas e quais permanecem intracelulares. Para as proteínas sem peptídeo de sinal, p53 e hemoglobina α, como cada uma é direcionada ao seu compartimento correto (núcleo vs. citoplasma)?
+---
 
-2. **Ponto isoelétrico e função biológica.** Compare os valores de pI obtidos pelo ProtParam para as 5 proteínas. Albumina, p53, hemoglobina α e lisozima operam no mesmo ambiente fisiológico (pH ≈ 7,4), mas com cargas líquidas diferentes. Como o pI de cada proteína se relaciona com sua função ou com os parceiros moleculares com que ela interage?
+### Pergunta 1: Peptídeo de sinal e destino celular
 
-3. **Índice GRAVY e solubilidade.** Registre o índice GRAVY para as 5 proteínas. Proteínas solúveis tendem a ter GRAVY negativo, enquanto proteínas de membrana tendem a valores positivos. Os resultados obtidos são consistentes com as localizações subcelulares preditas pelo WoLFPSORT? Alguma proteína destoa do padrão esperado?
+O SignalP classificou cada proteína como **SP** (peptídeo de sinal clássico) ou **OTHER**? Monte uma tabela com os resultados das 5 proteínas e identifique quais são secretadas e quais permanecem intracelulares. Para as proteínas sem peptídeo de sinal, p53 e hemoglobina α, como cada uma é direcionada ao seu compartimento correto (núcleo vs. citoplasma)?
 
-4. **Estabilidade e meia-vida *in vivo*.** O índice de instabilidade do ProtParam distingue proteínas estáveis (< 40) de instáveis (> 40). Compare os valores das 5 proteínas. A p53 apresenta valor elevado, biologicamente, por que faz sentido que um supressor de tumor seja uma proteína de curta duração? Qual das 5 proteínas é a mais estável segundo esse índice?
+> **Resposta:**
+>
+> A tabela abaixo resume o resultado do SignalP para cada proteína:
+>
+> | Proteína | SignalP | Sítio de Clivagem | Destino |
+> |:---------|:-------:|:-----------------:|:-------:|
+> | Albumina | Sec/SPI | Entre aa 18 e 19 | Secretada (plasma sanguíneo) |
+> | p53 | Other | — | Intracelular (núcleo) |
+> | Insulina | Sec/SPI | Entre aa 24 e 25 | Secretada (corrente sanguínea) |
+> | Hemoglobina α | Other | — | Intracelular (citoplasma) |
+> | Lisozima C | Sec/SPI | Entre aa 18 e 19 | Secretada (saliva, lágrimas) |
+>
+> Albumina, insulina e lisozima C possuem peptídeo de sinal clássico (Sec/SPI) e seguem a **via secretória clássica**: o peptídeo de sinal é reconhecido pelo complexo SRP (*Signal Recognition Particle*) ainda durante a tradução, a proteína é inserida no retículo endoplasmático rugoso, o peptídeo é clivado pela peptidase de sinal e a proteína madura segue para o Complexo de Golgi e depois para o meio extracelular.
+>
+> A **p53** não possui peptídeo de sinal. Ela é sintetizada em ribossomos livres no citoplasma e é direcionada ao núcleo por meio de **sequências de localização nuclear (NLS, do inglês *Nuclear Localization Signals*)**, presentes na região C-terminal do domínio de ligação ao DNA. Essas sequências são reconhecidas por proteínas chamadas importinas, que transportam a p53 através do poro nuclear de forma ativa e dependente de energia.
+>
+> A **hemoglobina α** também não possui peptídeo de sinal. Ela é sintetizada em ribossomos livres e **permanece no citoplasma** dos eritrócitos, exatamente onde exerce sua função de transporte de oxigênio. A ausência de qualquer sinal de direcionamento a mantém no compartimento padrão de síntese proteica, que é o citosol.
 
-5. **Domínios conservados: CD-Search vs. InterProScan.** Para cada proteína, quantos domínios foram reportados por cada ferramenta? Monte uma tabela comparativa indicando o domínio principal identificado e as bases de dados que o capturaram (Pfam, PANTHER, CDD, PRINTS etc.). Para quais proteínas as duas ferramentas apresentaram maior concordância e para quais divergiram mais? O que pode explicar essas diferenças?
+---
 
-6. **Localização subcelular predita vs. experimental.** O WoLFPSORT prediz a localização de cada proteína. Compare as predições com a localização experimental descrita no UniProt. Quantas e quais predições estão corretas? Para os casos incorretos ou ambíguos, qual característica de sequência pode ter induzido o erro?
+### Pergunta 2: Ponto isoelétrico e função biológica
 
-7. **Processamento proteolítico e modelagem estrutural.** Albumina, pré-pró-insulina e lisozima passam por clivagem proteolítica após a tradução. Para cada uma, identifique: (a) o sítio de clivagem predito pelo SignalP, (b) o tamanho da proteína madura resultante e (c) se o SignalP identificou corretamente o sítio em relação à anotação UniProt. Se você fosse modelar estruturalmente essas proteínas, usaria a sequência completa ou apenas a cadeia madura? Justifique.
+Compare os valores de pI obtidos pelo ProtParam para as 5 proteínas. Albumina, p53, hemoglobina α e lisozima operam no mesmo ambiente fisiológico (pH ≈ 7,4), mas com cargas líquidas diferentes. Como o pI de cada proteína se relaciona com sua função ou com os parceiros moleculares com que ela interage?
 
-8. **Domínio funcional e estrutura experimental.** O InterProScan identifica o domínio de ligação ao DNA (DBD) da p53 entre quais resíduos? Compare esses limites com a região cristalizada no PDB (entrada **1TUP**, resíduos 94–292). Da mesma forma, o CD-Search ou InterProScan fazem referência ao bolsão de ligação ao heme na hemoglobina α? O que essa comparação entre predição *in silico* e estrutura experimental revela sobre a utilidade e as limitações dessas ferramentas?
+> **Resposta:**
+>
+> O pI indica o pH no qual a proteína tem carga líquida zero. Em pH fisiológico (7,4), proteínas com pI abaixo de 7,4 são carregadas negativamente, e proteínas com pI acima de 7,4 são carregadas positivamente. Essa carga não é um detalhe físico-químico trivial: ela influencia diretamente a solubilidade, a estabilidade e as interações da proteína com seus parceiros moleculares.
+>
+> | Proteína | pI | Carga em pH 7,4 | Relevância funcional |
+> |:---------|:--:|:---------------:|:---------------------|
+> | Albumina | 5,73 | Negativa | Transportadora de ligantes catiônicos (drogas, metais, ácidos graxos) |
+> | p53 | 6,07 | Negativa | Fator de transcrição; liga DNA carregado negativamente via resíduos básicos |
+> | Insulina | 5,22 | Negativa | Hormônio secretado; interage com receptor na membrana celular |
+> | Hemoglobina α | 8,72 | Positiva | Carreadora de O₂; interage com grupo heme e subunidade β |
+> | Lisozima C | 9,50 | Positiva | Enzima antimicrobiana; age sobre superfície bacteriana carregada negativamente |
+>
+> A **albumina** (pI 5,73) é carregada negativamente, o que favorece a interação eletrostática com moléculas catiônicas como ácidos graxos, bilirrubina, íons metálicos e fármacos. Essa carga negativa também contribui para sua longa meia-vida no plasma sanguíneo.
+>
+> A **p53** (pI 6,07) também é levemente negativa. Apesar disso, ela se liga ao DNA (que é altamente negativo) por meio de resíduos de arginina e lisina positivos localizados no domínio de ligação ao DNA. A carga global levemente negativa não impede essa ligação, pois o contato é mediado por regiões específicas e não pela carga global da proteína.
+>
+> A **insulina** (pI 5,22) é a mais ácida entre as cinco. Em pH fisiológico, é bastante negativa, o que favorece sua solubilidade no sangue e a interação com regiões específicas do receptor de insulina.
+>
+> A **hemoglobina α** (pI 8,72) é carregada positivamente em pH 7,4. Isso é relevante para a interação com o grupo heme (que possui carga negativa) e para a associação com a subunidade β da hemoglobina, que possui pI mais ácido, criando complementaridade eletrostática na interface das subunidades.
+>
+> A **lisozima C** (pI 9,50) é a mais básica das cinco. Sua alta carga positiva em pH fisiológico permite a interação eletrostática com a parede celular bacteriana, que é carregada negativamente devido ao peptideoglicano e aos lipopolissacarídeos. Essa afinidade eletrostática é parte essencial do mecanismo de ação antimicrobiana da proteína.
+
+---
+
+### Pergunta 3: Índice GRAVY e solubilidade
+
+Registre o índice GRAVY para as 5 proteínas. Proteínas solúveis tendem a ter GRAVY negativo, enquanto proteínas de membrana tendem a valores positivos. Os resultados obtidos são consistentes com as localizações subcelulares preditas pelo WoLFPSORT? Alguma proteína destoa do padrão esperado?
+
+> **Resposta:**
+>
+> O índice GRAVY (*Grand Average of Hydropathicity*) mede o caráter hidrofóbico médio da sequência. Valores negativos indicam proteína hidrofílica e solúvel; valores positivos indicam maior hidrofobicidade, característica comum em proteínas de membrana ou com regiões transmembrana.
+>
+> | Proteína | GRAVY | Caráter | Localização (WoLFPSORT) | Consistente? |
+> |:---------|:-----:|:-------:|:-----------------------:|:------------:|
+> | Albumina | -0,329 | Hidrofílica | extr | Sim |
+> | p53 | -0,677 | Muito hidrofílica | cyto_nucl | Sim |
+> | Insulina | +0,193 | Levemente hidrofóbica | extr | Atenção |
+> | Hemoglobina α | +0,048 | Quase neutro | cyto | Sim |
+> | Lisozima C | -0,155 | Levemente hidrofílica | extr | Sim |
+>
+> A **albumina** e a **p53** apresentam os valores mais negativos, confirmando seu caráter hidrofílico e solúvel, consistente com as localizações no plasma e no núcleo, respectivamente.
+>
+> A **lisozima C** também é levemente hidrofílica, coerente com sua localização extracelular em fluidos biológicos.
+>
+> A **hemoglobina α** apresenta GRAVY quase neutro (+0,048). Isso reflete a presença de bolsões hidrofóbicos no interior da proteína, necessários para acomodar o grupo heme, combinada com uma superfície externa hidrofílica que garante a solubilidade no citoplasma dos eritrócitos. A localização citoplasmática predita pelo WoLFPSORT é consistente.
+>
+> A **insulina** é a proteína que mais destoa do padrão esperado: GRAVY positivo (+0,193), mas com localização extracelular. Isso pode ser explicado pelo fato de que o cálculo do GRAVY é feito sobre a **sequência completa da pré-pro-insulina** (110 resíduos), que inclui regiões hidrofóbicas do peptídeo sinal e do peptídeo C. A insulina madura (cadeias A e B, 51 resíduos) tem caráter mais hidrofílico. Portanto, o valor positivo não indica uma inconsistência biológica real, mas sim um artefato do uso da sequência precursora completa no cálculo.
+
+---
+
+### Pergunta 4: Estabilidade e meia-vida *in vivo*
+
+O índice de instabilidade do ProtParam distingue proteínas estáveis (< 40) de instáveis (> 40). Compare os valores das 5 proteínas. A p53 apresenta valor elevado, biologicamente, por que faz sentido que um supressor de tumor seja uma proteína de curta duração? Qual das 5 proteínas é a mais estável segundo esse índice?
+
+> **Resposta:**
+>
+> | Proteína | Índice de Instabilidade | Classificação |
+> |:---------|:-----------------------:|:-------------:|
+> | Albumina | 39,02 | Estável (< 40) |
+> | p53 | 78,83 | Muito instável (>> 40) |
+> | Insulina | 40,33 | Levemente instável (> 40) |
+> | Hemoglobina α | 6,97 | Muito estável (<< 40) |
+> | Lisozima C | 30,78 | Estável (< 40) |
+>
+> A **hemoglobina α** é a proteína mais estável, com índice de instabilidade de apenas 6,97. Isso é biologicamente coerente: os eritrócitos não possuem núcleo nem maquinaria de síntese proteica, portanto as proteínas do citoplasma precisam ser extremamente estáveis para durar os aproximadamente 120 dias de vida útil do eritrócito sem serem renovadas.
+>
+> A **albumina** e a **lisozima C** também são estáveis (índice abaixo de 40), o que faz sentido pois ambas precisam manter sua atividade no ambiente extracelular por períodos prolongados.
+>
+> A **insulina** fica ligeiramente acima do limiar de 40, o que é aceitável: hormônios secretados são produzidos em pulsos e degradados após exercerem seu efeito, não necessitando de estabilidade extrema.
+>
+> A **p53** apresenta o valor mais elevado (78,83), indicando alta instabilidade *in vivo*. Isso é biologicamente essencial: a p53 é um supressor de tumor que, se acumulada de forma descontrolada em células saudáveis, poderia induzir apoptose ou parada do ciclo celular de forma inadequada. Em condições normais, a proteína MDM2 se liga à p53 e a direciona para ubiquitinação e degradação pelo proteassoma, mantendo seus níveis muito baixos. Apenas em resposta a danos no DNA ou estresse celular, a degradação é inibida e os níveis de p53 sobem rapidamente. Ou seja, a **curta meia-vida da p53 é um mecanismo de segurança** que permite um controle rígido e rápido da resposta ao dano genômico. Uma proteína de longa duração nesse papel seria perigosa para a célula.
+
+---
+
+### Pergunta 5: Domínios conservados: CD-Search vs. InterProScan
+
+Para cada proteína, quantos domínios foram reportados por cada ferramenta? Monte uma tabela comparativa indicando o domínio principal identificado e as bases de dados que o capturaram (Pfam, PANTHER, CDD, PRINTS etc.). Para quais proteínas as duas ferramentas apresentaram maior concordância e para quais divergiram mais? O que pode explicar essas diferenças?
+
+> **Resposta:**
+>
+> | Proteína | Domínio principal (CD-Search) | GO Celular (InterPro) | Concordância |
+> |:---------|:------------------------------|:----------------------|:------------:|
+> | Albumina | ALBUMIN domain | Espaço extracelular (GO:0005615) | Alta |
+> | p53 | TAD1, TAD2, P53 Binding domain | Núcleo (GO:0005634) | Alta |
+> | Insulina | I/IGF_like superfamily | Região extracelular (GO:0005576) | Alta |
+> | Hemoglobina α | Globin-like superfamily | Complexo hemoglobina (GO:0005833) | Alta |
+> | Lisozima C | Lyz-like superfamily | None | Parcial |
+>
+> A maior concordância entre CD-Search e InterProScan ocorre para **albumina**, **p53** e **hemoglobina α**, pois são proteínas com domínios bem caracterizados em múltiplas bases de dados (Pfam, CDD, PANTHER). Ambas as ferramentas identificam as famílias corretas e as anotações GO são coerentes com o domínio identificado.
+>
+> A maior divergência ocorre para a **lisozima C**: o CD-Search identificou o domínio Lyz-like, mas o InterProScan não retornou nenhum componente celular GO. Isso pode ocorrer por limitações de cobertura da base de dados ou porque a anotação GO de componente celular para a lisozima é menos específica, já que ela é encontrada em vários fluidos biológicos distintos.
+>
+> Do ponto de vista metodológico, o **CD-Search** usa principalmente a base CDD (*Conserved Domain Database*) com extensões de Pfam e TIGRFAM, enquanto o **InterProScan** integra Pfam, PANTHER, HAMAP, PRINTS, ProSite e outras. Quando as bases concordam, a confiança na anotação é maior. Quando divergem, pode indicar que o domínio é bem conservado apenas em algumas famílias, que a proteína possui características únicas não capturadas igualmente por todas as bases, ou simplesmente que a cobertura das bases de dados é diferente para aquela família específica.
+
+---
+
+### Pergunta 6: Localização subcelular predita vs. experimental
+
+O WoLFPSORT prediz a localização de cada proteína. Compare as predições com a localização experimental descrita no UniProt. Quantas e quais predições estão corretas? Para os casos incorretos ou ambíguos, qual característica de sequência pode ter induzido o erro?
+
+> **Resposta:**
+>
+> | Proteína | Predito (WoLFPSORT) | Experimental (UniProt) | Correto? |
+> |:---------|:-------------------:|:-----------------------:|:--------:|
+> | Albumina | extr | Plasma / extracelular | Sim |
+> | p53 | cyto_nucl | Núcleo | Parcialmente |
+> | Insulina | extr | Extracelular (sangue) | Sim |
+> | Hemoglobina α | cyto | Citoplasma (eritrócito) | Sim |
+> | Lisozima C | extr | Secretada (saliva, lágrimas) | Sim |
+>
+> Quatro das cinco predições estão totalmente corretas. Para a **p53**, o WoLFPSORT predisse localização dupla (cyto_nucl), enquanto a localização experimental primária é o núcleo. Essa predição dupla é compreensível: a p53 é sintetizada no citoplasma e importada para o núcleo, portanto a sequência contém características que levam o algoritmo a pontuar ambos os compartimentos. Não se trata de um erro, mas de uma ambiguidade que reflete o trajeto real da proteína na célula.
+>
+> O WoLFPSORT utiliza características da sequência primária (composição de aminoácidos, presença de sinais de localização) sem considerar contexto celular, mecanismos de importação nuclear ativos nem dados evolutivos. Isso explica por que proteínas com sinais de localização múltiplos ou que transitam entre compartimentos podem gerar predições ambíguas. No caso da p53, a presença do NLS (sinal de localização nuclear) combinada com a composição aminoacídica compatível com proteínas citoplasmáticas induz o algoritmo a reportar os dois compartimentos simultaneamente.
+
+---
+
+### Pergunta 7: Processamento proteolítico e modelagem estrutural
+
+Albumina, pré-pró-insulina e lisozima passam por clivagem proteolítica após a tradução. Para cada uma, identifique: (a) o sítio de clivagem predito pelo SignalP, (b) o tamanho da proteína madura resultante e (c) se o SignalP identificou corretamente o sítio em relação à anotação UniProt. Se você fosse modelar estruturalmente essas proteínas, usaria a sequência completa ou apenas a cadeia madura? Justifique.
+
+> **Resposta:**
+>
+> | Proteína | Sítio de clivagem (SignalP) | Proteína madura | Correto vs. UniProt? |
+> |:---------|:--------------------------:|:---------------:|:--------------------:|
+> | Albumina | Entre aa 18 e 19 | 585 aa (resíduos 25-609, após remoção do sinal + propeptídeo) | Sim |
+> | Insulina | Entre aa 24 e 25 | Cadeias A + B (51 aa, após remoção do sinal e do peptídeo C) | Sim |
+> | Lisozima C | Entre aa 18 e 19 | 130 aa (resíduos 19-148) | Sim |
+>
+> A **albumina** possui peptídeo de sinal (aa 1-18) e propeptídeo (aa 19-24). O SignalP identificou corretamente o sítio de clivagem entre os resíduos 18 e 19. A proteína madura começa no resíduo 25 e tem 585 aminoácidos, consistente com a anotação UniProt.
+>
+> A **insulina** representa o caso mais complexo: a pré-pro-insulina (110 aa) possui peptídeo de sinal (aa 1-24), cadeia B (aa 25-54), peptídeo C (aa 57-87) e cadeia A (aa 90-110). O SignalP identificou corretamente o sítio de clivagem do peptídeo de sinal entre os resíduos 24 e 25. Após isso, a pró-insulina (cadeia B + peptídeo C + cadeia A) é processada por endopeptidases nas grânulas secretoras, removendo o peptídeo C. A insulina madura é formada pelas cadeias A e B unidas por duas pontes dissulfeto, totalizando 51 aminoácidos.
+>
+> A **lisozima C** possui peptídeo de sinal de 18 aminoácidos. O SignalP identificou corretamente o sítio entre os resíduos 18 e 19. A proteína madura tem 130 aminoácidos e é secretada em fluidos biológicos.
+>
+> Para a **modelagem estrutural**, deve-se usar **apenas a sequência da proteína madura**, sem o peptídeo de sinal e sem propeptídeos. O motivo é direto: o peptídeo de sinal é uma sequência transitória que não faz parte da estrutura funcional final da proteína. Sua inclusão introduziria regiões desordenadas no modelo que não existem na proteína biologicamente ativa, comprometendo a qualidade da modelagem, a interpretação do modelo e potencialmente os experimentos de *docking* e dinâmica molecular realizados a partir dele.
+
+---
+
+### Pergunta 8: Domínio funcional e estrutura experimental
+
+O InterProScan identifica o domínio de ligação ao DNA (DBD) da p53 entre quais resíduos? Compare esses limites com a região cristalizada no PDB (entrada **1TUP**, resíduos 94-292). Da mesma forma, o CD-Search ou InterProScan fazem referência ao bolsão de ligação ao heme na hemoglobina α? O que essa comparação entre predição *in silico* e estrutura experimental revela sobre a utilidade e as limitações dessas ferramentas?
+
+> **Resposta:**
+>
+> O InterProScan identifica o domínio de ligação ao DNA (DBD) da p53 em uma região que coincide aproximadamente com os resíduos 94-292, exatamente a região cristalizada na estrutura experimental depositada no PDB sob o código **1TUP**. Essa concordância é um exemplo de como as ferramentas de bioinformática são eficazes para identificar domínios evolutivamente conservados e funcionalmente essenciais, como o DBD da p53, que é altamente conservado entre vertebrados e amplamente representado nas bases de dados.
+>
+> Para a **hemoglobina α**, tanto o CD-Search quanto o InterProScan identificam o domínio *Globin-like superfamily*, que é o domínio estrutural correto da família. Porém, **nenhuma das ferramentas descreve explicitamente o bolsão de ligação ao grupo heme** como um domínio separado. Isso ocorre porque esse bolsão é formado pela conformação tridimensional da proteína, especificamente pelos resíduos de histidina proximal e distal que coordenam o ferro do grupo heme. Esse tipo de característica funcional não corresponde a uma sequência linear conservada independente, mas sim a uma estrutura espacial que emerge apenas quando a proteína está dobrada.
+>
+> Essa comparação revela dois pontos importantes sobre o uso de ferramentas *in silico*:
+>
+> **Ponto forte:** as ferramentas são muito eficazes para identificar domínios com sequências conservadas ao longo da evolução, como famílias de fatores de transcrição, domínios enzimáticos e famílias estruturais bem caracterizadas com perfis HMM (*Hidden Markov Models*) robustos em bases como Pfam e PANTHER.
+>
+> **Limitação:** as ferramentas têm desempenho reduzido quando a função depende de características estruturais tridimensionais, como bolsões de ligação a ligantes pequenos (heme, ATP, zinco), interfaces de oligomerização e regiões intrinsecamente desordenadas que adquirem estrutura apenas ao interagir com parceiros moleculares. Para esses casos, a complementação com dados estruturais experimentais obtidos por cristalografia de raios X, crioEM ou NMR continua sendo insubstituível.
 
 ---
 
