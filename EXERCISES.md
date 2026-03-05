@@ -1327,6 +1327,44 @@ GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
 - Quais diferenças você espera observar entre as predições de AF2/ColabFold, AF3 e ESM3 em termos de conformação global e métricas de confiança?
 - Se você tivesse de priorizar um único modelo para a próxima etapa de análise comparativa, quais critérios baseados nas saídas desses métodos sustentariam sua escolha?
 
+> **Respostas:**
+>
+> **Como o pLDDT ajuda a distinguir regiões estruturadas de desordenadas?**
+>
+> O pLDDT (*predicted Local Distance Difference Test*) é atribuído individualmente a cada resíduo e reflete a confiança do modelo no dobramento local daquele aminoácido. Valores acima de 90 indicam alta confiança e correspondem a regiões bem estruturadas; valores entre 70 e 90 indicam confiança moderada; valores abaixo de 50 indicam que o modelo não conseguiu prever uma conformação local consistente, o que geralmente corresponde a regiões intrinsecamente desordenadas (*IDRs, intrinsically disordered regions*).
+>
+> Para a p53, o perfil de pLDDT ao longo da cadeia é bastante informativo. O DBD (resíduos 94-292) deve apresentar os valores mais altos de pLDDT (tipicamente acima de 85-90), pois é uma região compacta e bem estruturada com muitos moldes no PDB. As regiões TAD1 (1-40), TAD2 (41-67) e PRD (68-93) devem apresentar pLDDT baixo (abaixo de 50-60), pois são regiões naturalmente desordenadas que se estruturam apenas ao interagir com parceiros como MDM2, CBP/p300 e o complexo geral de transcrição. O OD (326-356) deve apresentar valores intermediários a altos, e o CTD (357-393) deve apresentar valores baixos por ser desordenado.
+>
+> Essa distribuição é biologicamente coerente: as regiões de pLDDT baixo na p53 não representam falhas do AlphaFold, mas sim regiões que genuinamente não possuem estrutura tridimensional definida em solução.
+>
+> **Quais domínios apresentam maior incerteza no mapa de PAE?**
+>
+> O PAE (*Predicted Aligned Error*) mede a incerteza na posição relativa entre pares de resíduos, sendo expresso em Ångströms. Um mapa de PAE ideal mostraria valores baixos (azul escuro) ao longo de toda a diagonal e em blocos correspondentes a cada domínio, indicando que as posições relativas dentro de cada domínio são bem preditas. Valores altos fora da diagonal (cores quentes) indicam incerteza na orientação relativa entre regiões distantes.
+>
+> Para a p53, espera-se que:
+> - O bloco do DBD (resíduos ~94-292) apresente PAE baixo internamente, indicando alta confiança na estrutura do domínio.
+> - As regiões TAD1, TAD2, PRD e CTD apresentem PAE alto tanto internamente quanto em relação ao DBD, indicando que a orientação dessas regiões em relação ao núcleo estrutural é incerta.
+> - O OD apresente PAE baixo internamente mas PAE alto em relação ao DBD, pois são domínios independentes ligados por um *linker* flexível.
+>
+> Isso impacta a confiança global do modelo: embora o DBD seja predito com alta confiança, a orientação dos domínios terminais em relação a ele é incerta, e os modelos de diferentes servidores provavelmente mostrarão conformações variadas para essas regiões.
+>
+> **Diferenças esperadas entre AF2/ColabFold, AF3 e ESM3:**
+>
+> O **AlphaFold2 (ColabFold)** e o **AlphaFold3** utilizam alinhamentos de sequências múltiplas (MSA) como entrada principal, explorando a co-evolução entre resíduos para inferir contatos. O AF3 adiciona mecanismos de atenção mais sofisticados e suporte nativo a complexos proteína-DNA/RNA/ligantes. Para a p53 isolada, ambos devem gerar predições semelhantes no DBD, com pLDDT alto e PAE baixo nessa região. As diferenças devem aparecer principalmente nas regiões desordenadas: o AF3 tende a representar regiões desordenadas de forma mais diversa entre os modelos gerados, refletindo melhor o ensemble conformacional dessas regiões.
+>
+> O **ESM3** parte de uma abordagem diferente: ele é um modelo de linguagem de proteínas treinado em sequências e estruturas sem usar MSA explícito, capturando padrões evolutivos diretamente na representação aprendida. Para proteínas bem estudadas como a p53, o ESM3 geralmente produz resultados comparáveis aos modelos AlphaFold no DBD. Nas regiões desordenadas, o ESM3 pode divergir mais, pois não utiliza a informação de co-evolução de forma tão explícita.
+>
+> **Qual critério usar para priorizar um modelo?**
+>
+> Para a próxima etapa de análise comparativa (alinhamento estrutural e cálculo de RMSD contra o 1TUP experimental), o modelo prioritário deve ser selecionado com base em:
+>
+> 1. **pLDDT médio do DBD**: priorizar o modelo com pLDDT mais alto na região 94-292, pois é ela que será comparada com o 1TUP.
+> 2. **PAE baixo dentro do DBD**: confirmar que a estrutura interna do domínio é confiante.
+> 3. **Cobertura de sequência**: garantir que o modelo inclui toda a região a ser comparada.
+> 4. **Consistência com o 1TUP visualmente**: verificar no PyMOL se a topologia geral (folhas beta, alças) é compatível antes de calcular RMSD.
+>
+> Com base nesses critérios, qualquer um dos modelos AlphaFold (AF2 ou AF3) tende a ser o melhor candidato para comparação com o 1TUP, dado que utilizam MSA e possuem excelente desempenho em domínios bem conservados como o DBD da p53.
+
 ---
 
 # Módulo 4: Análise Comparativa, Validação e Visualização
