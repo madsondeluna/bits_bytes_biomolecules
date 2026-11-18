@@ -1,14 +1,10 @@
 # Biologia Estrutural Computacional: Predição, Análise e Validação de Modelos Tridimensionais de Proteínas
 
-**Instrutor I:** Madson A. de Luna Aragão 
+**Autor:** Madson A. de Luna-Aragão
 
-**Instrutor II:** André S. Lira de Lucena
+**Afiliações:** Programa Interunidades de Pós-Graduação em Bioinformática, Universidade Federal de Minas Gerais (UFMG), Brasil; Centre National de la Recherche Scientifique (CNRS), Institut de Biologie et Chimie des Protéines (IBCP), Lyon, França
 
-**Evento:** Curso de Férias em Bioinformática - 02 à 06 de março de 2026
-
-**Contato:** madsondeluna@gmail.com; andresllucena@gmail.com
-
-**Outros Projetos:** <a href="https://github.com/madsondeluna" target="_blank" rel="noopener noreferrer">https://github.com/madsondeluna</a>
+**Contato:** madsondeluna@gmail.com | <a href="https://madsondeluna.com" target="_blank" rel="noopener noreferrer">madsondeluna.com</a> | <a href="https://github.com/madsondeluna" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="https://www.linkedin.com/in/madsonaragao/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
 
 ---
 
@@ -19,11 +15,13 @@ Este repositório contém o material de referência completo para o curso, inclu
 - **Exercícios práticos:** <a href="https://madsondeluna.github.io/bits_bytes_biomolecules/exercises.html" target="_blank" rel="noopener noreferrer">Acessar exercícios</a>
 - **Comandos Linux:** <a href="https://github.com/madsondeluna/unix-commands-for-friends" target="_blank" rel="noopener noreferrer">Guia de Comandos</a>
 
+<!--
 **Slides das aulas:**
 
 <a href="aulas/aula_dia1.pdf" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Aula%20Dia%201-PDF-blue?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Aula Dia 1"></a>
 
 <a href="aulas/aula_dia2.pdf" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Aula%20Dia%202-PDF-blue?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Aula Dia 2"></a>
+-->
 
 ---
 
