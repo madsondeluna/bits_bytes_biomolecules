@@ -1,10 +1,12 @@
 # Biologia Estrutural Computacional: Predição, Análise e Validação de Modelos Tridimensionais de Proteínas
 
+---
+
 **Autor:** Madson A. de Luna-Aragão
 
 **Afiliações:** Programa Interunidades de Pós-Graduação em Bioinformática, Universidade Federal de Minas Gerais (UFMG), Brasil; Centre National de la Recherche Scientifique (CNRS), Institut de Biologie et Chimie des Protéines (IBCP), Lyon, França
 
-**Contato:** madsondeluna@gmail.com | <a href="https://madsondeluna.com" target="_blank" rel="noopener noreferrer">madsondeluna.com</a> | <a href="https://github.com/madsondeluna" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="https://www.linkedin.com/in/madsonaragao/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+**Contato:** madsondeluna@gmail.com | <a href="https://madsondeluna.com" target="_blank" rel="noopener noreferrer">madsondeluna.com</a> | <a href="https://github.com/madsondeluna" target="_blank" rel="noopener noreferrer">GitHub</a>
 
 ---
 
